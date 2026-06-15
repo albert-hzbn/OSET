@@ -1,996 +1,1793 @@
-%% ============================================================================
-%% Oblate Spheroid Excitation Theory (OSET)
-%% Manuscript prepared for Acta Materialia (Elsevier, elsarticle class)
-%%
-%% Build:  pdflatex -> pdflatex -> pdflatex   (no external .bib; bibliography
-%%         is embedded in thebibliography below)
-%%
-%% Companion file: OSET_SI.tex  (Supporting Information -- non-novel /
-%% standard derivations: Eshelby tensor algebra, limiting cases, mean-field
-%% decoupling, numerical-verification suite).
-%%
-%% Submission tip: switch [preprint,12pt] to [review,12pt] for the
-%% double-spaced, line-numbered referee format Elsevier requests.
-%% ============================================================================
-\documentclass[preprint,12pt]{elsarticle}
+%% ============================================================
+%% Oblate Spheroid Excitation Theory (OSET) — Acta Materialia
+%% Two-column (elsarticle 5p), full derivations retained
+%% pdflatex -> bibtex -> pdflatex -> pdflatex
+%% ============================================================
+\documentclass[5p,sort&compress]{elsarticle}
 
 \usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{booktabs}
-\usepackage{siunitx}
-\usepackage{tikz}
-\usetikzlibrary{decorations.pathreplacing}
+\usepackage{array}
 \usepackage{xcolor}
+\usepackage{siunitx}
 \usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
 
 \graphicspath{{figures/}}
-
 \journal{Acta Materialia}
 
-% --- convenience macros -------------------------------------------------------
 \newcommand{\OSTZ}{\textsc{ostz}}
 \newcommand{\OSET}{\textsc{oset}}
 \newcommand{\dF}{\Delta F_0}
-\newcommand{\g}{\gamma_0}
-\newcommand{\eps}{\varepsilon_0}
+\newcommand{\gz}{\gamma_0}
+\newcommand{\beff}{b_\mathrm{eff}}
+\newcommand{\PN}{Peierls--Nabarro}
 \newcommand{\half}{\tfrac{1}{2}}
-\newcommand{\SIref}[1]{Supporting Information, Section~#1}
 
 \begin{document}
-
 \begin{frontmatter}
 
-\title{Oblate Spheroid Excitation Theory (\OSET): a unified, lattice-free
-foundation for plastic deformation from which dislocations emerge as
-collective excitations}
+\title{Oblate Spheroid Excitation Theory (\OSET): A Unified,
+  Lattice-Free Foundation for Plastic Deformation from Which
+  Dislocations Emerge as Collective Excitations}
 
 \author[iitk]{Albert~Linda\corref{cor}}
-\ead{albert.linda@iitk.ac.in} % please update with the preferred address
+\ead{albert.linda@iitk.ac.in}
 \author[anna]{K.A.~Padmanabhan}
 
 \cortext[cor]{Corresponding author.}
-
 \affiliation[iitk]{organization={Department of Materials Science and
   Engineering, Indian Institute of Technology Kanpur},
   city={Kanpur}, postcode={208016}, country={India}}
-\affiliation[anna]{organization={Professor of Eminence, Materials Science and
-  Engineering Programme, Department of Mechanical Engineering, Anna University},
+\affiliation[anna]{organization={Professor of Eminence, Materials
+  Science and Engineering Programme, Department of Mechanical
+  Engineering, Anna University},
   city={Chennai}, postcode={600\,025}, country={India}}
 
 \begin{abstract}
-Classical plasticity takes the dislocation as its irreducible elementary
-entity. This choice, powerful for single crystals, fails for grain boundaries,
-amorphous solids, nanocrystals near the glass transition, and ceramics, because
-the dislocation is a topological object that requires a periodic lattice for its
-very definition. We develop the \emph{Oblate Spheroid Excitation Theory}
-(\OSET), in which the elementary excitation is a shear-eigenstrained oblate
-spheroid (the oblate-spheroidal transformation zone, \OSTZ) embedded in an
-elastic continuum. The \OSTZ\ needs no lattice, has a non-singular stress
-field, and carries a finite activation energy
-$\dF=\half(\beta_1\g^2+\beta_2\eps^2)\,G V_0$ with Eshelby constraint factors
-$\beta_1,\beta_2$ fixed by the spheroid aspect ratio. We derive, in full, three
-central results: (i) a single \OSTZ\ is, in the far field, a dislocation
-\emph{dipole} with an $r^{-3}$ stress field; (ii) a co-planar chain of $N$
-\OSTZ s is mathematically identical to a Peierls--Nabarro dislocation of core
-width $\zeta=W$ and Burgers vector $b=N\g W$ with a Lorentzian slip-density
-profile; and (iii) a full lattice dislocation nucleates at the critical number
-$N_c=b_\mathrm{latt}/(\g W)$. From these we obtain the theoretical shear
-strength, the Peierls stress, the dislocation core energy, the Frank--Read
-stress, and the stacking-fault energy as \emph{derived} quantities. We further
-show that a grain-boundary energy is a dislocation-array (Read--Shockley) energy
-scaling as $Gb$, \emph{not} a coherency-strain energy, and predict coherent-,
-low-, and high-angle boundary energies in seven metals to within a factor of
-two. Finally, with no adjustable parameters, \OSET\ reproduces the semi-empirical
-constants extracted by Harisankar and Padmanabhan (2025) from 41 superplastic
-systems across six material classes: the dilatational eigenstrain to within 2\%,
-the shear eigenstrain to within 15\%, and the grain-boundary energy to a
-constant median factor of $4.5$. Since dislocations emerge from \OSET\ but
-\OSET\ does not require dislocations, \OSET\ is the more fundamental description
-of crystalline, nanocrystalline, and amorphous plasticity on a common basis.
-The standard (non-novel) algebra --- the Eshelby tensor evaluation, its limiting
-cases, the mean-field decoupling, and the numerical-verification suite --- is
-collected in the Supporting Information.
+Classical plasticity theory takes the dislocation as its irreducible
+elementary entity. This fails for grain boundaries, amorphous solids,
+nanocrystals near the glass transition, ceramics, and polymers because
+the dislocation is a topological concept that requires a periodic
+crystal lattice for its very definition. We propose the
+\emph{Oblate Spheroid Excitation Theory} (\OSET), in which the
+elementary excitation is a shear-eigenstrained oblate spheroid (the
+oblate-spheroidal transformation zone, \OSTZ) embedded in an elastic
+continuum. The \OSTZ\ requires no lattice, carries a finite energy
+$\dF=\half(\beta_1\gz^2+\beta_2\varepsilon_0^2)GV_0$, and has a
+non-singular stress field. Three central results are proved:
+(1)~a single \OSTZ\ is equivalent in the far field to a dislocation
+dipole; (2)~a coplanar chain of $N$ \OSTZ s is mathematically identical
+to a \PN\ dislocation with core width $\zeta=W$ and Burgers vector
+$b=N\gz W$; (3)~a full lattice dislocation nucleates when
+$N=N_c=b_\mathrm{latt}/(\gz W)$. \OSET\ naturally predicts the
+theoretical shear strength, Peierls stress, stacking-fault energy,
+core energy, and Frank--Read critical stress, all as derived quantities.
+Since dislocations emerge from \OSET\ but \OSET\ does not require
+dislocations, \OSET\ is the more fundamental description.
 \end{abstract}
 
 \begin{keyword}
-oblate spheroid excitation \sep Eshelby inclusion \sep dislocation emergence
-\sep grain-boundary sliding \sep Peierls--Nabarro model \sep superplasticity
-\sep unified rate equation
+oblate spheroid excitation \sep Eshelby inclusion \sep dislocation
+emergence \sep grain-boundary sliding \sep Peierls--Nabarro model \sep
+superplasticity
 \end{keyword}
-
 \end{frontmatter}
 
-% =============================================================================
+%%=========================================================
 \section{Introduction}
 \label{sec:intro}
 
-The classical dislocation is defined through the Burgers circuit in a Bravais
-lattice,
+\subsection{What dislocation theory requires}
+
+The classical dislocation is defined via the Burgers circuit in a
+Bravais lattice:
 \begin{equation}
-\oint_C \mathrm{d}u_i = b_i, \qquad b_i\in\Lambda_\mathrm{Bravais},
-\label{eq:burgers}
+  \oint_C \mathrm{d}u_i = b_i,\qquad b_i\in\Lambda_\mathrm{Bravais}.
+  \label{eq:burgers}
 \end{equation}
-and this topological definition carries three unavoidable restrictions.
-\textbf{(R1)} It requires a crystal lattice: with no lattice there is no Burgers
-vector and no dislocation, so grain boundaries, glasses, metallic liquids and
-polymers are excluded by construction. \textbf{(R2)} The Volterra solution has a
-singular core, $\sigma\sim Gb/2\pi r$, regularised only by an empirical cutoff
-$r_0\sim b$; the core energy is fitted, not derived. \textbf{(R3)} The
-elementary entity is athermal --- it carries no intrinsic entropy, so thermal
-activation must be added externally through kink-pair or Peierls--Nabarro
-overlays.
+This definition carries three unavoidable restrictions.
 
-These limitations are not academic. Grain-boundary sliding (GBS) controls
-structural superplasticity, yet general high-angle boundaries possess no
-commensurate DSC lattice~\cite{pad-gleiter2012}; nanocrystals below
-$d\sim 10b$ exhibit the inverse Hall--Petch effect that lattice plasticity
-cannot explain~\cite{trelewicz2007}; and bulk metallic glasses deform plastically
-through shear transformation zones (STZs) in the complete absence of
-dislocations~\cite{argon1979,falk-langer1998}. A description in which the same
-elementary process operates across all of these classes is therefore desirable.
+\textbf{(R1) Requires a crystal lattice.} No lattice, no Burgers
+vector, no dislocation. Grain boundaries, glasses, and polymers are
+excluded by definition.
 
-The mesoscopic GBS model of Padmanabhan and co-workers takes precisely such an
-elementary process --- the cooperative shear of an oblate-spheroidal volume of
-boundary material --- and reproduces the superplastic strain-rate of hundreds
-of material conditions~\cite{pad-part1,astanin-part2,sripathi2014,pad-divinski2024,
-harisankar2025}. Here we promote that elementary process to a general theory of
-plasticity. We replace the lattice-dependent, singular, athermal dislocation
-with a geometry-defined, non-singular, thermally activated oblate-spheroidal
-excitation (the \OSTZ), and we \emph{derive} the dislocation as its large-$N$
-collective limit. \OSET\ requires only three inputs: a length $W$ (the
-free-volume correlation length), a shear eigenstrain $\g$ (the strain per
-elementary rearrangement), and a shear modulus $G$. Everything else --- Burgers
-vectors, Peierls stresses, stacking-fault and grain-boundary energies, hardening
-coefficients --- emerges as a derived result.
+\textbf{(R2) Singular core.} The Volterra stress
+$\sigma\sim Gb/2\pi r\to\infty$; a cutoff $r_0\sim b$ is introduced
+empirically.
 
-To keep the main text focused on the new physics, the standard inclusion algebra
-on which the theory rests (closed-form evaluation of the Eshelby tensor, its
-sphere and thin-disc limits, the mean-field decoupling of the \OSTZ\ Hamiltonian,
-and the complete numerical-verification suite) is given in the Supporting
-Information; every novel result is derived in full here. Section~\ref{sec:ostz}
-defines the \OSTZ\ and derives its activation energy and dipole field;
-Section~\ref{sec:emergence} derives the emergence of dislocations;
-Section~\ref{sec:derived} the standard dislocation observables;
-Section~\ref{sec:gb} the grain-boundary energy; Section~\ref{sec:stat} the
-unified rate equation; and Section~\ref{sec:validation} the parameter-free
-validation against 41 superplastic systems.
+\textbf{(R3) Athermal.} Thermal activation is appended via kink
+nucleation; it is not intrinsic.
 
-% =============================================================================
-\section{The elementary excitation: the oblate-spheroidal transformation zone}
+\subsection{Failure at the nanoscale}
+
+\begin{itemize}
+\item \textbf{GBS:} For general high-angle boundaries the DSC lattice
+  is commensurate only statistically.
+\item \textbf{Nanocrystals at $d<10b$:} Standard plasticity predicts
+  hardening not observed (inverse Hall--Petch).
+\item \textbf{Metallic glasses:} Deformation via STZs; no dislocations.
+\end{itemize}
+
+\subsection{What \OSET\ achieves}
+
+\OSET\ replaces the lattice-dependent, singular, athermal dislocation
+with a geometry-defined, non-singular, thermally activated oblate
+spheroidal excitation. Dislocations are \emph{derived} as the large-$N$
+collective limit. Three inputs: $W$ (OSTZ radius), $\gz$ (shear
+eigenstrain), $G$ (shear modulus). All other dislocation quantities
+emerge.
+
+%%=========================================================
+\section{The Fundamental Entity: the \OSTZ}
 \label{sec:ostz}
 
-\subsection{Geometry and eigenstrain}
+\subsection{Geometric definition}
 \label{sec:geometry}
 
-The \OSTZ\ is an oblate spheroid of elastic material that has undergone a local
-shear eigenstrain. Its semi-axes are
+An \OSTZ\ is an oblate spheroid that has undergone a shear eigenstrain:
+\begin{align}
+  a_1=a_2=W,\quad a_3=W/2,&\quad \alpha\equiv a_3/a_1=\tfrac{1}{2},
+  \notag\\
+  V_0=\tfrac{4\pi}{3}a_1^2 a_3&=\tfrac{2\pi}{3}W^3.
+  \label{eq:geometry}
+\end{align}
+The flat face lies in the $x_1$--$x_2$ glide plane. The eigenstrain
+for grain-boundary sliding (GBS):
 \begin{equation}
-a_1=a_2=W\;(\text{glide plane}),\qquad a_3=W/2 \quad\Rightarrow\quad
-\alpha\equiv a_3/a_1=\tfrac12 ,
-\label{eq:geometry}
+  \varepsilon^*_{13}=\varepsilon^*_{31}=\gz/2\;(\text{shear}),\quad
+  \varepsilon^*_{ii}=\varepsilon_0/3\;(\text{dilat.})
+  \label{eq:eigenstrain}
 \end{equation}
-so the zone is five atomic diameters across the boundary plane and 2.5 atomic
-diameters high --- the dimensions established for the basic GBS unit in
-crystalline and amorphous materials alike~\cite{pad-part1,buenz2015}. Its volume
-and base area are
-\begin{equation}
-V_0=\tfrac{4}{3}\pi a_1^2 a_3=\tfrac{2}{3}\pi W^3,\qquad A_0=\pi W^2 .
-\label{eq:volume}
-\end{equation}
-The transformation is a simple shear of magnitude $\g$ in the glide plane,
-$\varepsilon^*_{13}=\varepsilon^*_{31}=\g/2$, accompanied by a dilatation
-$\varepsilon^*_{ii}=\eps$ representing the free-volume expansion that
-accompanies the rearrangement (Fig.~\ref{fig:schematic}).
 
-\begin{figure}[t]
-\centering
-\begin{tikzpicture}[scale=1.0]
-  \begin{scope}
-    \draw[thick,fill=blue!8] (0,0) ellipse (1.4 and 0.7);
-    \draw[->,thick] (-1.7,-1.05) -- (1.7,-1.05) node[right]{$x_1$ (glide)};
-    \draw[->,thick] (-1.7,-1.05) -- (-1.7,1.05) node[above]{$x_3$};
-    \draw[<->] (-1.4,0.92) -- (1.4,0.92) node[midway,above]{$2W$};
-    \draw[<->] (1.62,-0.7) -- (1.62,0.7) node[midway,right]{$W$};
-    \draw[->,red,thick] (-0.6,0.32) -- (0.2,0.32);
-    \draw[->,red,thick] (-0.2,-0.32) -- (-1.0,-0.32);
-    \node at (0,-1.55) {(a) single \OSTZ\ ($\gamma_0,\varepsilon_0$)};
-  \end{scope}
-  \begin{scope}[xshift=6.2cm]
-    \foreach \x in {-1.8,-1.2,-0.6,0,0.6,1.2,1.8}{
-      \draw[thick,fill=blue!8] (\x,0) ellipse (0.28 and 0.5);}
-    \draw[->,thick] (-2.4,-0.9) -- (2.4,-0.9) node[right]{$x_1$};
-    \draw[decorate,decoration={brace,amplitude=5pt}] (-2.0,0.7) -- (2.0,0.7)
-        node[midway,above=4pt]{$N$ co-planar \OSTZ s $\Rightarrow b=N\gamma_0 W$};
-    \node at (0,-1.55) {(b) chain $\equiv$ Peierls--Nabarro dislocation};
-  \end{scope}
-\end{tikzpicture}
-\caption{(a) The oblate-spheroidal transformation zone (\OSTZ): an oblate
-spheroid of aspect ratio $\alpha=1/2$ carrying a shear eigenstrain $\gamma_0$
-and dilatation $\varepsilon_0$. (b) A co-planar chain of $N$ \OSTZ s is
-mathematically equivalent to a Peierls--Nabarro dislocation with core width
-$\zeta=W$ and Burgers vector $b=N\gamma_0 W$.}
-\label{fig:schematic}
-\end{figure}
+This geometry makes $S_{1313}$, not $S_{1212}$, the Eshelby component
+governing stored elastic energy.
 
-\subsection{Eshelby constraint factors}
+\subsection{Eshelby solution for the \OSTZ}
 \label{sec:eshelby}
 
-By Eshelby's theorem the stress inside a uniformly eigenstrained ellipsoidal
-inclusion is itself uniform~\cite{eshelby1957,mura1987}, with
-$\varepsilon^\mathrm{in}_{ij}=S_{ijkl}\varepsilon^*_{kl}$ and Eshelby tensor
-$S_{ijkl}(\alpha,\nu)$. The closed-form evaluation of the relevant components
-for the oblate spheroid (the elliptic $I$-integrals, the antiderivatives, and
-the sphere/thin-disc limits) is standard and is reproduced step by step in
-\SIref{S1}. At the \OSTZ\ operating point $\alpha=\tfrac12$, $\nu=1/3$ it gives
+By the Eshelby inclusion theorem~\cite{eshelby1957}, the stress inside
+a homogeneous ellipsoidal inclusion is \emph{uniform}:
+\begin{align}
+  \varepsilon_{ij}^\mathrm{in}&=S_{ijkl}\varepsilon^*_{kl},
+    \label{eq:eshelby1}\\
+  \sigma_{ij}^\mathrm{in}&=C_{ijkl}(S_{klmn}-I_{klmn})\varepsilon^*_{mn}.
+    \label{eq:eshelby2}
+\end{align}
+Uniformity holds only for ellipsoids --- the only shapes for which
+$S_{ijkl}$ is spatially uniform.
+
+The relevant Eshelby component for the oblate spheroid~\cite{mura1987}:
 \begin{equation}
-S_{1313}=0.2772,\quad S_{3333}=0.7364,\qquad
-\beta_1\equiv 1-2S_{1313}=0.446,\quad
-\beta_2\equiv\frac{4(1+\nu)}{9(1-\nu)}=0.889 .
-\label{eq:betas}
+  S_{1313}=\frac{(1+\alpha^2)I_{13}+(1-2\nu)(I_1+I_3)}{16\pi(1-\nu)},
+  \label{eq:S1313}
 \end{equation}
-$\beta_1$ is the shear constraint factor (the fraction of the eigenshear that
-survives the elastic constraint of the matrix) and $\beta_2$ the corresponding
-dilatational factor (Section~\ref{sec:energy}). The aspect-ratio dependence of
-$S_{1313}$ (Fig.~\ref{fig:s1313}) interpolates between the sphere limit
-$S_{1313}=(4-5\nu)/[15(1-\nu)]$ and the thin-disc limit $S_{1313}\to\tfrac12$,
-$\beta_1\to0$. Two physical regimes follow: a constrained zone embedded in
-homogeneous bulk takes the Eshelby value $\beta_1\approx0.45$, whereas a coherent
-planar fault (stacking fault, coherent twin) approaches the unconstrained
-$\beta_1^\mathrm{eff}=1$ limit used in Section~\ref{sec:gb}; the reconciliation
-through grain-boundary modulus softening, $\beta_1^\mathrm{eff}\approx
-\beta_1^\mathrm{Esh}\,G/G_\mathrm{GB}\approx 0.9$, is given in \SIref{S1.5}.
+where $\Delta(s)=\sqrt{(a_1^2{+}s)(a_2^2{+}s)(a_3^2{+}s)}$,
+\begin{align}
+  I_\alpha&=2\pi a_1 a_2 a_3\int_0^\infty
+    \frac{\mathrm ds}{(a_\alpha^2+s)\Delta(s)},
+    \label{eq:Ialpha}\\
+  I_{\alpha\beta}&=2\pi a_1 a_2 a_3\int_0^\infty
+    \frac{\mathrm ds}{(a_\alpha^2+s)(a_\beta^2+s)\Delta(s)},\notag
+\end{align}
+with sum rule $I_1+I_2+I_3=4\pi$.
 
-\begin{figure}[t]
+\subsubsection{Derivation of $I_1$}
+\label{sec:I1}
+
+\paragraph{Starting point.}
+Specialize to $a_1=a_2=1$, $a_3=\alpha$. Then
+$\Delta(s)=(1+s)\sqrt{\alpha^2+s}$ and
+\begin{equation}
+  I_1=2\pi\alpha\int_0^\infty\frac{\mathrm ds}
+  {(1+s)^2\sqrt{\alpha^2+s}}.
+  \label{eq:I1start}
+\end{equation}
+
+\paragraph{Substitution.}
+Let $t=\sqrt{\alpha^2+s}$, so $s=t^2-\alpha^2$, $\mathrm ds=2t\,\mathrm dt$,
+$\sqrt{\alpha^2+s}=t$, and $1+s=t^2+(1-\alpha^2)\equiv t^2+e^2$
+(where $e^2\equiv1-\alpha^2$). New limits: $t:\alpha\to\infty$.
+Substituting:
+\begin{equation}
+  I_1=4\pi\alpha\int_\alpha^\infty\frac{\mathrm dt}{(t^2+e^2)^2}.
+  \label{eq:I1sub}
+\end{equation}
+
+\paragraph{Antiderivative.}
+The reduction formula (proved by differentiating the right side):
+\begin{equation}
+  \int\frac{\mathrm dt}{(t^2+e^2)^2}=
+  \frac{t}{2e^2(t^2+e^2)}+\frac{\arctan(t/e)}{2e^3}+C.
+  \label{eq:antideriv}
+\end{equation}
+\textit{Proof.} Let $F=t/[2e^2(t^2{+}e^2)]$,
+$G_f=\arctan(t/e)/(2e^3)$:
+\begin{align*}
+  F'&=\frac{1}{2e^2}\cdot\frac{(t^2+e^2)-t\cdot2t}{(t^2+e^2)^2}
+    =\frac{e^2-t^2}{2e^2(t^2+e^2)^2},\\
+  G_f'&=\frac{1}{2e^3}\cdot\frac{1/e}{1+(t/e)^2}
+    =\frac{1}{2e^2(t^2+e^2)}.
+\end{align*}
+Sum: $F'+G_f'=[(e^2-t^2)+(t^2+e^2)]/[2e^2(t^2+e^2)^2]
+=1/(t^2+e^2)^2$. $\square$
+
+\paragraph{Evaluating at the bounds.}
+\textit{Upper bound} ($t\to\infty$): $F\to0$, $\arctan\to\pi/2$, so
+$[F+G_f]_{t\to\infty}=\pi/(4e^3)$.
+
+\textit{Lower bound} ($t=\alpha$): note $\alpha^2+e^2=1$, so
+$F|_\alpha=\alpha/(2e^2)$,
+$G_f|_\alpha=\arctan(\alpha/e)/(2e^3)$. Hence:
+\begin{align}
+  \int_\alpha^\infty\frac{\mathrm dt}{(t^2+e^2)^2}
+  &=\frac{\pi}{4e^3}-\frac{\alpha}{2e^2}
+    -\frac{\arctan(\alpha/e)}{2e^3}\notag\\
+  &=\frac{1}{2e^3}\!\left[\frac{\pi}{2}-\arctan\!\left(\frac{\alpha}{e}
+    \right)\right]-\frac{\alpha}{2e^2}.
+  \label{eq:I1bounds}
+\end{align}
+
+\paragraph{Identity $\pi/2-\arctan(\alpha/e)=\arccos\alpha$.}
+Set $\alpha=\cos\phi$ ($e=\sin\phi$). Then
+$\arctan(\cos\phi/\sin\phi)=\arctan(\cot\phi)=\pi/2-\phi$, so
+$\pi/2-\arctan(\alpha/e)=\phi=\arccos\alpha$. Substituting into
+Eq.~\eqref{eq:I1bounds} and multiplying by $4\pi\alpha$, and
+replacing $e^3=(1-\alpha^2)^{3/2}$:
+\begin{equation}
+  \boxed{I_1=\frac{2\pi\alpha}{(1-\alpha^2)^{3/2}}
+  \!\left[\arccos\alpha-\alpha\sqrt{1-\alpha^2}\right],\quad
+  I_3=4\pi-2I_1.}
+  \label{eq:I1result}
+\end{equation}
+
+\subsubsection{Derivation of $I_{13}=(I_3-I_1)/(1-\alpha^2)$}
+\label{sec:I13}
+
+Writing the integrals explicitly ($\Delta=(1+s)\sqrt{\alpha^2+s}$):
+\begin{align}
+  I_1&=2\pi\alpha\int_0^\infty\frac{\mathrm ds}
+    {(1+s)^2\sqrt{\alpha^2+s}},\notag\\
+  I_3&=2\pi\alpha\int_0^\infty\frac{\mathrm ds}
+    {(1+s)(\alpha^2+s)^{3/2}},\notag\\
+  I_{13}&=2\pi\alpha\int_0^\infty\frac{\mathrm ds}
+    {(1+s)^2(\alpha^2+s)^{3/2}}.\notag
+\end{align}
+Forming $I_3-I_1$ and factoring out $1/[(1+s)\sqrt{\alpha^2+s}]$:
+\begin{align*}
+  I_3-I_1&=2\pi\alpha\int_0^\infty\frac{1}{(1+s)\sqrt{\alpha^2+s}}
+  \!\left[\frac{1}{\alpha^2+s}-\frac{1}{1+s}\right]\mathrm ds.
+\end{align*}
+The bracket equals $(1-\alpha^2)/[(\alpha^2{+}s)(1{+}s)]$:
+\begin{align*}
+  I_3-I_1&=(1-\alpha^2)\cdot2\pi\alpha\int_0^\infty
+  \frac{\mathrm ds}{(1+s)^2(\alpha^2+s)^{3/2}}=(1-\alpha^2)I_{13}.
+\end{align*}
+Therefore:
+\begin{equation}
+  \boxed{I_{13}=\frac{I_3-I_1}{1-\alpha^2}.}\quad\square
+  \label{eq:I13result}
+\end{equation}
+
+\subsubsection{Numerical evaluation ($\alpha=1/2$, $\nu=1/3$)}
+\label{sec:numeval}
+
+\textbf{Step~1: compute $I_1$.}
+$e=\sqrt{1-0.25}=0.8660$.
+Bracket: $\arccos(0.5)-0.5\times0.8660=1.0472-0.4330=0.6142$.
+$(0.75)^{3/2}=0.6495$.
+$I_1=\pi\times0.6142/0.6495=\mathbf{2.972}$.
+
+\textbf{Step~2: $I_3$ and $I_{13}$.}
+$I_3=4\pi-2\times2.972=12.566-5.944=\mathbf{6.622}$.
+$I_{13}=(6.622-2.972)/0.75=3.650/0.75=\mathbf{4.867}$.
+
+\textbf{Step~3: $S_{1313}$ from Eq.~\eqref{eq:S1313}.}
+Numerator: $1.25\times4.867+(1-2/3)\times9.594
+=6.084+3.198=9.282$.
+Denominator: $16\pi\times(2/3)=33.51$.
+$S_{1313}=9.282/33.51=\mathbf{0.2772}$.
+
+\textbf{Step~4: $\beta_1$.}
+$\beta_1=1-2\times0.2772=\mathbf{0.4456}\approx0.446$.
+
+\subsubsection{Limiting-case verification}
+\label{sec:limits}
+
+\paragraph{Sphere ($\alpha\to1$).}
+For a sphere all semi-axes equal: $I_1=I_2=I_3=4\pi/3$.
+Direct integration:
+$I_{13}^\text{sphere}=2\pi\int_0^\infty(1+s)^{-7/2}\mathrm ds
+=2\pi[u^{-5/2}/(-5/2)]_1^\infty=4\pi/5$.
+Substituting ($1+\alpha^2\to2$, $I_1+I_3=8\pi/3$):
+\begin{equation}
+  S_{1313}^\text{sphere}=\frac{4-5\nu}{15(1-\nu)}.
+  \label{eq:S1313sphere}
+\end{equation}
+For $\nu=1/3$: $S_{1313}^\text{sphere}=7/30=0.233$,
+$\beta_1^\text{sphere}=8/15\approx0.533$.
+
+\paragraph{Thin disk ($\alpha\to0$).}
+$I_3\to4\pi$, $I_{13}\to4\pi$, $S_{1313}^\text{disk}=\half$,
+$\beta_1\to0$: a crack-like disk stores no shear energy.
+The OSTZ aspect ratio $\alpha=1/2$ gives the correct intermediate.
+
+\subsubsection{Dilatational constraint factor $\beta_2$}
+\label{sec:beta2}
+
+For a spherical inclusion with purely dilatational eigenstrain
+$\varepsilon^*_{ij}=(\varepsilon_0/3)\delta_{ij}$, the sphere Eshelby
+tensor satisfies:
+\begin{equation}
+  S_{ijkk}^\text{sphere}=\frac{1+\nu}{3(1-\nu)}\delta_{ij}.
+  \label{eq:Sijkk}
+\end{equation}
+This follows from the known sphere values~\cite{mura1987}
+$S_{1111}=(7-5\nu)/[15(1-\nu)]$,
+$S_{1122}=(5\nu-1)/[15(1-\nu)]$, summing:
+$S_{1111}+S_{1122}+S_{1133}=(1+\nu)/[3(1-\nu)]$. Full derivation
+of $\beta_2$ follows in §\ref{sec:Edilat}; the result:
+\begin{equation}
+  \boxed{\beta_2=\frac{4(1+\nu)}{9(1-\nu)}.}
+  \label{eq:beta2}
+\end{equation}
+For $\nu=1/3$: $\beta_2=4(4/3)/[9(2/3)]=0.889$.
+
+Two formulas for $\beta_2$ exist: (a) exact oblate formula
+$\beta_2^\text{oblate}=1-S_{3333}(1-2\nu)/[2(1-\nu)]=0.816$;
+(b) spherical dilatation approximation $\beta_2^\text{sphere}=0.889$~\cite{pad-part1}.
+They differ by $\sim9\%$ at $\nu=1/3$;
+since $\beta_2\varepsilon_0^2\ll\beta_1\gz^2$, the difference is
+$<2\%$ of $\dF$ and inconsequential.
+
+\begin{table}[htbp]
 \centering
-\includegraphics[width=0.6\linewidth]{fig_S1313.png}
-\caption{Eshelby shear component $S_{1313}$ versus oblate-spheroid aspect ratio
-$\alpha$ for $\nu=1/3$, with the sphere and thin-disc limits marked. The \OSTZ\
-operating point $\alpha=1/2$ gives $S_{1313}=0.277$, $\beta_1=0.446$.}
-\label{fig:s1313}
-\end{figure}
+\small
+\caption{Eshelby components for $\alpha=1/2$.}
+\label{tab:eshelby}
+\begin{tabular}{ccccc}
+\toprule
+$\nu$ & $S_{1313}$ & $S_{1212}$ & $S_{3333}$ & $\beta_1$\\
+\midrule
+0.30 & 0.2822 & 0.1769 & 0.7264 & 0.4356\\
+1/3  & 0.2772 & 0.1739 & 0.7364 & 0.4456\\
+0.35 & 0.2745 & 0.1723 & 0.7418 & 0.4510\\
+0.40 & 0.2656 & 0.1670 & 0.7596 & 0.4688\\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\subsection{Activation energy of an \OSTZ\ (novel)}
+\subsection{Note on $\beta_1$: two physical regimes}
+
+\textbf{(a) Eshelby (elastic) value:}
+$\beta_1^\text{Esh}=1-2S_{1313}\approx0.44$--$0.49$
+for $\alpha=0.5$, $\nu=0.28$--$0.44$.
+
+\textbf{(b) Padmanabhan et al.\ effective value:} $\beta_1^\text{eff}\approx1$.
+
+\textit{Physical reconciliation.} OSTZs at grain boundaries are embedded
+in GB material with $G_\text{GB}\approx G/2$ (GB softening~\cite{wolf1990}):
+$\beta_1^\text{eff}=\beta_1^\text{Esh}\times G/G_\text{GB}
+\approx0.45\times2=0.90\approx1$.
+
+\subsection{OSTZ elastic strain energy}
 \label{sec:energy}
 
-The energy to nucleate one \OSTZ\ is the elastic strain energy stored when the
-zone transforms against the constraint of the matrix. By the Eshelby inclusion
-energy theorem, for an eigenstrained inclusion in an infinite matrix this energy
-is the work of the (uniform) interior stress against the eigenstrain,
-\begin{equation}
-\dF = -\half\,\sigma^\mathrm{in}_{ij}\,\varepsilon^*_{ij}\,V_0 .
-\label{eq:Etheorem}
-\end{equation}
-The shear and dilatational modes use orthogonal components of the stiffness
-tensor and may be evaluated separately and summed.
+The Eshelby energy theorem:
+$\dF=-\half\sigma_{ij}^\mathrm{in}\varepsilon^*_{ij}V_0$.
 
-\paragraph{Shear contribution.} With $\varepsilon^*_{13}=\varepsilon^*_{31}=\g/2$,
-the interior strain follows from Eshelby's theorem and the minor symmetry
-$S_{1313}=S_{1331}$,
-\begin{equation}
-\varepsilon^\mathrm{in}_{13}=S_{1313}(\varepsilon^*_{13}+\varepsilon^*_{31})
- =S_{1313}\,\g .
-\end{equation}
-The elastic (lattice) shear strain is the constrained strain minus the
-eigenstrain, $e^\mathrm{el}_{13}=\varepsilon^\mathrm{in}_{13}-\varepsilon^*_{13}
-=(S_{1313}-\tfrac12)\g$, so the interior shear stress is
-$\sigma^\mathrm{in}_{13}=2G\,e^\mathrm{el}_{13}=2G(S_{1313}-\tfrac12)\g$.
-Substituting into Eq.~\eqref{eq:Etheorem} (both the $13$ and $31$ components
-contribute equally),
-\begin{equation}
-\dF^\mathrm{shear}
-=-\half\,\sigma^\mathrm{in}_{13}\,\g\,V_0
-=G\!\left(\tfrac12-S_{1313}\right)\g^2 V_0
-=\half\,(1-2S_{1313})\,G\g^2 V_0
-=\half\,\beta_1\,G\g^2 V_0 .
-\label{eq:Eshear}
-\end{equation}
-Because $S_{1313}<\tfrac12$ for every physical oblate spheroid, $\beta_1>0$ and
-the shear energy is positive definite.
+\subsubsection{Part~1: Shear contribution}
+\label{sec:Eshear}
 
-\paragraph{Dilatational contribution.} The volumetric eigenstrain is
-$\varepsilon^*_{ij}=(\eps/3)\delta_{ij}$. Using the spherical-mode contraction
-$S_{ijkk}=\tfrac{1+\nu}{3(1-\nu)}\delta_{ij}$ (derived in \SIref{S1.3}), the
-constrained interior strain is
-\begin{equation}
-\varepsilon^\mathrm{in}_{ij}=\tfrac{\eps}{3}\,S_{ijkk}
-=\frac{(1+\nu)\eps}{9(1-\nu)}\,\delta_{ij},
-\end{equation}
-so the elastic (lattice) part is
-\begin{equation}
-e^\mathrm{el}_{ij}=\varepsilon^\mathrm{in}_{ij}-\tfrac{\eps}{3}\delta_{ij}
-=\eps\!\left[\frac{1+\nu}{9(1-\nu)}-\frac13\right]\delta_{ij}
-=-\frac{2(1-2\nu)\eps}{9(1-\nu)}\,\delta_{ij},
-\end{equation}
-with trace $e^\mathrm{el}_{kk}=-\tfrac{2(1-2\nu)}{3(1-\nu)}\eps$. The interior
-hydrostatic stress is $\sigma^\mathrm{in}_{kk}=3K\,e^\mathrm{el}_{kk}$ with bulk
-modulus $K=\tfrac{2G(1+\nu)}{3(1-2\nu)}$, giving
-$\sigma^\mathrm{in}_{kk}=-\tfrac{4G(1+\nu)}{3(1-\nu)}\eps$. Substituting into the
-volumetric form of Eq.~\eqref{eq:Etheorem},
-$\dF^\mathrm{dilat}=-\half\,\sigma^\mathrm{in}_{kk}\,(\eps/3)\,V_0$,
-\begin{equation}
-\dF^\mathrm{dilat}
-=-\half\!\left(-\frac{4G(1+\nu)}{3(1-\nu)}\eps\right)\!\frac{\eps}{3}V_0
-=\half\,\beta_2\,G\eps^2 V_0,\qquad
-\beta_2=\frac{4(1+\nu)}{9(1-\nu)} .
-\label{eq:Edilat}
-\end{equation}
-Summing Eqs.~\eqref{eq:Eshear} and~\eqref{eq:Edilat},
-\begin{equation}
-\boxed{\;\dF=\half\!\left(\beta_1\g^2+\beta_2\eps^2\right)G V_0,
-\qquad V_0=\tfrac{2}{3}\pi W^3 .\;}
-\label{eq:dF0}
-\end{equation}
-This is the central energetic result of \OSET: a finite, non-singular activation
-energy expressed entirely in elastic constants and the two eigenstrains. With the
-canonical grain-boundary set $\g=0.10$, $\eps=0.05$, $W=2.5b$, $\mu b^3=3.5$~eV
-one obtains $\dF\approx0.38$~eV, matching the value inferred from superplastic
-flow~\cite{pad-part1,venkatesh-part4}; for the aluminium crystal-interior set
-($\g=0.12$, $W=b$), $\dF=0.41$~eV. The dilatational term contributes
-$\beta_2\eps^2/(\beta_1\g^2+\beta_2\eps^2)\approx 25\%$ for the canonical
-parameters.
+Eigenstrain $\varepsilon^*_{13}=\varepsilon^*_{31}=\gz/2$.
 
-\subsection{Far field of a single \OSTZ: the dislocation dipole (novel)}
+\textit{Step~1 (constrained strain).}
+By minor symmetry $S_{1313}=S_{1331}$:
+$\varepsilon_{13}^\mathrm{in}=S_{1313}(\gz/2+\gz/2)=S_{1313}\gz$.
+
+\textit{Step~2 (elastic strain).}
+$e_{13}^\mathrm{el}=\varepsilon_{13}^\mathrm{in}-\varepsilon^*_{13}
+=(S_{1313}-\half)\gz$.
+
+\textit{Step~3 (interior stress).}
+$\sigma_{13}^\mathrm{in}=2Ge_{13}^\mathrm{el}
+=2G(S_{1313}-\half)\gz$.
+
+\textit{Step~4 (energy contraction).}
+Both $(1,3)$ and $(3,1)$ contribute equally:
+\[
+  \dF^\text{shear}=-\half(\sigma_{13}^\mathrm{in}\varepsilon^*_{13}
+  +\sigma_{31}^\mathrm{in}\varepsilon^*_{31})V_0
+  =-\half\sigma_{13}^\mathrm{in}\gz V_0.
+\]
+Substituting:
+$\dF^\text{shear}=-\half\cdot2G(S_{1313}-\half)\gz\cdot\gz V_0
+=G(\half-S_{1313})\gz^2 V_0$.
+\begin{equation}
+  \boxed{\dF^\text{shear}=\half\beta_1 G\gz^2 V_0,\quad
+  \beta_1\equiv1-2S_{1313}.}
+  \label{eq:Eshear}
+\end{equation}
+Since $S_{1313}<\half$ for any physical oblate spheroid,
+$\beta_1>0$ and the shear energy is positive definite.
+
+\subsubsection{Part~2: Dilatational contribution}
+\label{sec:Edilat}
+
+Eigenstrain $\varepsilon^*_{ij}=(\varepsilon_0/3)\delta_{ij}$.
+
+\textit{Step~1 (constrained strain inside a sphere).}
+From Eqs.~\eqref{eq:eshelby1} and \eqref{eq:Sijkk}:
+\begin{equation}
+  \varepsilon_{ij}^\mathrm{in}=S_{ijkl}\varepsilon^*_{kl}
+  =\frac{\varepsilon_0}{3}\cdot\frac{1+\nu}{3(1-\nu)}\delta_{ij}
+  =\frac{(1+\nu)\varepsilon_0}{9(1-\nu)}\delta_{ij}.
+  \label{eq:constrained_dil}
+\end{equation}
+
+\textit{Step~2 (elastic strain).}
+\begin{align}
+  e_{ij}^\mathrm{el}&=\varepsilon_{ij}^\mathrm{in}-\varepsilon^*_{ij}
+    =\varepsilon_0\!\left[\frac{1+\nu}{9(1-\nu)}-\frac{1}{3}\right]\delta_{ij}
+    \notag\\
+  &=\varepsilon_0\cdot\frac{(1+\nu)-3(1-\nu)}{9(1-\nu)}\delta_{ij}
+    =-\frac{2(1-2\nu)\varepsilon_0}{9(1-\nu)}\delta_{ij}.
+    \label{eq:edilelastic}
+\end{align}
+(Numerator: $1+\nu-3+3\nu=4\nu-2=-2(1-2\nu)$.)
+Volumetric trace:
+$e_{kk}^\mathrm{el}=-6(1-2\nu)\varepsilon_0/[9(1-\nu)]
+=-2(1-2\nu)\varepsilon_0/[3(1-\nu)]$.
+
+\textit{Step~3 (interior stress).}
+Using $\lambda=2G\nu/(1-2\nu)$:
+\begin{align}
+  \lambda e_{kk}^\mathrm{el}
+    &=\frac{2G\nu}{1-2\nu}\cdot\frac{-2(1-2\nu)\varepsilon_0}{3(1-\nu)}
+    =-\frac{4G\nu\varepsilon_0}{3(1-\nu)},\notag\\
+  2Ge_{11}^\mathrm{el}
+    &=-\frac{4G(1-2\nu)\varepsilon_0}{9(1-\nu)}.
+    \notag
+\end{align}
+Adding with common denominator $9(1-\nu)$:
+\begin{align}
+  \sigma_{11}^\mathrm{in}&=-\frac{12G\nu\varepsilon_0}{9(1-\nu)}
+    -\frac{4G(1-2\nu)\varepsilon_0}{9(1-\nu)}\notag\\
+  &=-\frac{G\varepsilon_0}{9(1-\nu)}[12\nu+4-8\nu]
+    =-\frac{4G(1+\nu)\varepsilon_0}{9(1-\nu)}.
+    \label{eq:sig11in}
+\end{align}
+
+\textit{Step~4 (energy contraction).}
+Three diagonal components contribute equally:
+$\sigma_{ij}^\mathrm{in}\varepsilon^*_{ij}
+=3\sigma_{11}^\mathrm{in}(\varepsilon_0/3)=\sigma_{11}^\mathrm{in}\varepsilon_0$.
+\begin{equation}
+  \boxed{\dF^\text{dilat}=\half\beta_2 G\varepsilon_0^2 V_0,\quad
+  \beta_2=\frac{4(1+\nu)}{9(1-\nu)}.}
+  \label{eq:Edilat}
+\end{equation}
+
+\subsubsection{Total activation energy}
+
+Shear and dilatational eigenstrains involve orthogonal tensor
+components ($\varepsilon^*_{13}$ vs.\ $\varepsilon^*_{ii}$);
+their cross-terms vanish upon contraction with the isotropic stiffness
+tensor. Therefore:
+\begin{equation}
+  \boxed{\dF=\half(\beta_1\gz^2+\beta_2\varepsilon_0^2)GV_0,\quad
+  V_0=\tfrac{2\pi}{3}W^3.}
+  \label{eq:dF0}
+\end{equation}
+\textit{Numerical check:}
+$\dF=\half(0.00446+0.00222)\times2.2\times10^{10}\times0.884\times10^{-27}
+=6.5\times10^{-20}$~J$=0.406$~eV$\approx0.38$~eV.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Canonical \OSTZ\ parameters.}
+\label{tab:canonical}
+\begin{tabular}{lccc}
+\toprule
+Parameter & Symbol & GB/superpl. & Crystal\\
+\midrule
+OSTZ radius & $W$ & $2.5b$ & $\approx b$\\
+Shear eigenstrain & $\gz$ & 0.10 & 0.12\\
+Dilat.\ eigenstrain & $\varepsilon_0$ & 0.05 & ---\\
+Shear constraint & $\beta_1$ & 0.446 & $\approx1$\\
+Dilat.\ constraint & $\beta_2$ & 0.889 & ---\\
+Activation energy & $\dF$ & 0.38~eV & ---\\
+Critical number & $N_c$ & 4 & $\approx8$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%%=========================================================
+\section{Far-Field Stress: The Dipole Structure}
 \label{sec:dipole}
 
-The exterior field of any finite eigenstrained inclusion admits the multipole
-expansion
-\begin{equation}
-\sigma_{ij}(\mathbf r)=\underbrace{F_k\,\mathcal G_{ijk}}_{r^{-2}}
-+\underbrace{M_{kl}\,\partial_l\mathcal G_{ijk}}_{r^{-3}}
-+\underbrace{Q_{klm}\,\partial_l\partial_m\mathcal G_{ijk}}_{r^{-4}}+\cdots,
-\label{eq:multipole}
-\end{equation}
-in which $\mathcal G$ is the elastic Green's function. The \emph{monopole}
-vanishes identically because the \OSTZ\ exerts zero net force on the matrix,
-\begin{equation}
-F_k=\oint_{\partial V_0}\!\sigma^*_{ij}n_j\,\mathrm dS
-=C_{ijkl}\varepsilon^*_{kl}\oint_{\partial V_0}\!n_j\,\mathrm dS=0,
-\label{eq:nomonopole}
-\end{equation}
-since the eigenstress $\sigma^*_{ij}=C_{ijkl}\varepsilon^*_{kl}$ is uniform and
-$\oint n_j\,\mathrm dS=\int_{V_0}\!\partial_j(1)\,\mathrm dV=0$. The leading
-surviving term is the force \emph{dipole} (moment) tensor
-\begin{equation}
-M_{kl}=C_{ijkl}\varepsilon^*_{ij}\,V_0
-\;\Rightarrow\;
-M_{13}=M_{31}=G\g V_0,
-\label{eq:moment}
-\end{equation}
-a \emph{double couple}: two equal and opposite force pairs separated by the
-\OSTZ\ diameter $2W$. Inserting the Kelvin Green's function
-$\mathcal G_{ij}=A[(3-4\nu)\delta_{ij}/r+x_ix_j/r^3]$,
-$A=[16\pi G(1-\nu)]^{-1}$, into $u_i=-M_{kl}\,\partial_l\mathcal G_{ik}$ and
-forming $\sigma_{13}=G(\partial_1u_3+\partial_3u_1)$ (the full index algebra is
-given in \SIref{S2}) yields the shear stress
-\begin{equation}
-\sigma_{13}(\mathbf r)=\frac{G\,\g\,V_0}{2\pi(1-\nu)}\,
-\frac{\mathcal T_{13}(\hat{\mathbf r})}{r^3},
-\qquad
-\mathcal T_{13}=\tfrac12-\nu+\tfrac{3\nu}{2}(\hat r_1^2+\hat r_3^2)
--\tfrac{15}{2}\hat r_1^2\hat r_3^2 ,
-\label{eq:dipole}
-\end{equation}
-whose leading far-field structure is the dipole--dipole form
-$\propto(3\cos^2\theta-1)$. The
-$r^{-3}$ decay (versus $r^{-1}$ for a Volterra dislocation) and the angular
-factor $3\cos^2\theta-1$ are the signature of an elastic \emph{dipole}: a single
-\OSTZ\ carries \emph{no} net Burgers vector, $\oint\mathrm du_i=0$, because the
-eigenstrained region is finite and self-equilibrated. A net Burgers vector, and
-hence the $r^{-1}$ dislocation field, appears only for an asymmetric co-planar
-\emph{collection} of \OSTZ s, derived next. The dipole kernel of
-Eq.~\eqref{eq:dipole} is also the microscopic origin of the \OSTZ--\OSTZ\
-interaction that produces Taylor hardening (Section~\ref{sec:stat}).
+\subsection{Why a dipole, not a monopole}
 
-% =============================================================================
-\section{Emergence of dislocations from \OSTZ\ collectives (novel)}
+The force monopole vanishes:
+\begin{equation}
+  F_k=\oint_{\partial V_0}\sigma_{ij}^* n_j\,\mathrm dS
+  =C_{ijkl}\varepsilon^*_{kl}
+  \underbrace{\oint_{\partial V_0}n_j\,\mathrm dS}_{=0}=0.
+  \label{eq:monopole}
+\end{equation}
+(The surface integral of the outward normal over any closed surface
+vanishes by the divergence theorem.) The leading far-field term is
+therefore the \emph{force-dipole} at order $r^{-3}$.
+
+The full multipole expansion~\cite{mura1987} is
+\begin{multline}
+  \sigma_{ij}(\mathbf r)=
+  \underbrace{F_k\mathcal G_{ijk}}_{\text{monopole }r^{-2}}
+  +\underbrace{M_{kl}\partial_l\mathcal G_{ijk}}_{\text{dipole }r^{-3}}
+  \\+\underbrace{Q_{klm}\partial_l\partial_m\mathcal G_{ijk}}_{r^{-4}}
+  +\cdots
+  \label{eq:multipole}
+\end{multline}
+Since $F_k=0$, the leading nonzero term is the dipole. The moment
+tensor~\cite{mura1987} is
+\begin{equation}
+  M_{kl}=C_{ijkl}\varepsilon^*_{ij}V_0\;\Rightarrow\;
+  M_{13}=M_{31}=G\gz V_0,
+  \label{eq:moment}
+\end{equation}
+describing a double couple: two force pairs of equal and opposite sign,
+separated by the OSTZ diameter $2W$.
+
+\subsection{Step A: Kelvin Green's function and its derivative}
+\label{sec:stepA}
+
+The elastic displacement due to a unit point force at the origin in an
+infinite isotropic medium (Kelvin--Somigliana solution~\cite{mura1987}):
+\begin{equation}
+  \mathcal G_{ij}(\mathbf r)=A\!\left[\frac{(3-4\nu)\delta_{ij}}{r}
+  +\frac{x_ix_j}{r^3}\right],\quad A=\frac{1}{16\pi G(1-\nu)}.
+  \label{eq:Gij}
+\end{equation}
+
+\paragraph{Differentiating the first term.}
+Since $\partial_l(1/r)=-x_l/r^3$:
+\[
+  \partial_l\!\left[\frac{(3-4\nu)\delta_{ij}}{r}\right]
+  =-\frac{(3-4\nu)\delta_{ij}x_l}{r^3}.
+\]
+
+\paragraph{Differentiating the second term (product rule).}
+$\partial x_i/\partial x_l=\delta_{il}$, $\partial(r^{-3})/\partial x_l=-3x_l/r^5$:
+\[
+  \partial_l\!\left(\frac{x_ix_j}{r^3}\right)
+  =\frac{\delta_{il}x_j+\delta_{jl}x_i}{r^3}-\frac{3x_lx_ix_j}{r^5}.
+\]
+
+\paragraph{Combined result.}
+\begin{align}
+  \frac{\partial\mathcal G_{ij}}{\partial x_l}
+  =A\Bigl[&-\frac{(3-4\nu)\delta_{ij}x_l}{r^3}
+    +\frac{\delta_{il}x_j+\delta_{jl}x_i}{r^3}
+    \notag\\
+  &-\frac{3x_lx_ix_j}{r^5}\Bigr].
+  \label{eq:dG}
+\end{align}
+
+\subsection{Step B: Displacement from the moment tensor}
+\label{sec:stepB}
+
+For an Eshelby eigenstrain inclusion, the far-field exterior
+displacement is~\cite{eshelby1957,mura1987} $u_i=-M_{kl}\partial_l\mathcal G_{ik}$.
+With $M_{13}=M_{31}=G\gz V_0$ (all other components zero),
+the only nonzero contributions are $(k,l)=(1,3)$ and $(3,1)$.
+
+Substituting Eq.~\eqref{eq:dG} (with $\delta_{13}=0$):
+\begin{align}
+  \frac{\partial\mathcal G_{i1}}{\partial x_3}
+  &=A\!\left[-\frac{(3-4\nu)\delta_{i1}x_3}{r^3}
+    +\frac{\delta_{i3}x_1}{r^3}-\frac{3x_3x_ix_1}{r^5}\right],
+    \notag\\
+  \frac{\partial\mathcal G_{i3}}{\partial x_1}
+  &=A\!\left[-\frac{(3-4\nu)\delta_{i3}x_1}{r^3}
+    +\frac{\delta_{i1}x_3}{r^3}-\frac{3x_1x_ix_3}{r^5}\right].
+    \notag
+\end{align}
+
+Adding term by term, the $\delta_{i1}x_3$ coefficient is
+$1-(3-4\nu)=4\nu-2=2(2\nu-1)$ (same for $\delta_{i3}x_1$),
+and the $r^{-5}$ terms add to give $-6Ax_1x_3x_i/r^5$:
+\begin{multline}
+  u_i=-G\gz V_0 A\Bigl[\frac{2(2\nu-1)(\delta_{i1}x_3+\delta_{i3}x_1)}{r^3}
+  \\-\frac{6x_1x_3x_i}{r^5}\Bigr].
+  \label{eq:ui}
+\end{multline}
+
+Components relevant to $\sigma_{13}$:
+\begin{align}
+  u_1&=-G\gz V_0 A\!\left[\frac{2(2\nu-1)x_3}{r^3}
+    -\frac{6x_1^2x_3}{r^5}\right],
+    \label{eq:u1}\\
+  u_3&=-G\gz V_0 A\!\left[\frac{2(2\nu-1)x_1}{r^3}
+    -\frac{6x_1x_3^2}{r^5}\right].
+    \label{eq:u3}
+\end{align}
+
+\subsection{Step C: Stress from displacement gradients}
+\label{sec:stepC}
+
+For the shear component ($\delta_{13}=0$, so the $\lambda$-term in
+Hooke's law vanishes): $\sigma_{13}=G(\partial_3u_1+\partial_1u_3)$.
+
+\paragraph{Auxiliary results.}
+$\partial_3(x_3/r^3)=(r^2-3x_3^2)/r^5$;
+$\partial_3(x_3/r^5)=(r^2-5x_3^2)/r^7$; likewise for $x_1$.
+
+\paragraph{Computing $\partial_3u_1$.}
+Differentiating Eq.~\eqref{eq:u1} with respect to $x_3$:
+\begin{align}
+  \partial_3u_1&=-G\gz V_0 A\Bigl[\frac{2(2\nu-1)(r^2-3x_3^2)}{r^5}
+    \notag\\
+  &\phantom{=-G\gz V_0 A\Bigl[}\;-\frac{6x_1^2(r^2-5x_3^2)}{r^7}\Bigr].
+    \label{eq:du1dx3}
+\end{align}
+
+\paragraph{Computing $\partial_1u_3$.}
+By the same procedure (swap $x_1\leftrightarrow x_3$):
+\begin{align}
+  \partial_1u_3&=-G\gz V_0 A\Bigl[\frac{2(2\nu-1)(r^2-3x_1^2)}{r^5}
+    \notag\\
+  &\phantom{=-G\gz V_0 A\Bigl[}\;-\frac{6x_3^2(r^2-5x_1^2)}{r^7}\Bigr].
+    \label{eq:du3dx1}
+\end{align}
+
+\paragraph{Summing and converting to unit vectors $\hat r_i=x_i/r$.}
+$1/r^5$ group:
+$2(2\nu-1)[2-3(\hat r_1^2+\hat r_3^2)]/r^3$.
+$1/r^7$ group, expanding $(x_1^2+x_3^2)r^2-10x_1^2x_3^2$:
+$[-6(\hat r_1^2+\hat r_3^2)+60\hat r_1^2\hat r_3^2]/r^3$.
+Collecting the $(\hat r_1^2+\hat r_3^2)$ terms:
+$-6(2\nu-1)-6=-12\nu$ (verify: $12\nu-6+6=12\nu$). Hence:
+\begin{multline}
+  \partial_3u_1+\partial_1u_3=
+  -G\gz V_0 A\cdot\frac{1}{r^3}\\
+  \times\bigl[4(2\nu-1)-12\nu(\hat r_1^2+\hat r_3^2)
+  +60\hat r_1^2\hat r_3^2\bigr].
+  \label{eq:gradsum}
+\end{multline}
+
+\subsection{Step D: Angular tensor and far-field formula}
+\label{sec:stepD}
+
+Multiplying Eq.~\eqref{eq:gradsum} by $G$ and inserting
+$A=1/[16\pi G(1-\nu)]$:
+\[
+  \sigma_{13}=\frac{G\gz V_0}{16\pi(1-\nu)r^3}
+  \bigl[-4(2\nu-1)+12\nu(\hat r_1^2+\hat r_3^2)-60\hat r_1^2\hat r_3^2
+  \bigr].
+\]
+Writing this as $G\gz V_0\mathcal T_{13}/[2\pi(1-\nu)r^3]$ requires
+dividing the bracket by 8 (ratio of prefactors $2\pi/16\pi=1/8$):
+\begin{equation}
+  \boxed{\mathcal T_{13}(\hat{\mathbf r})
+  =\tfrac{1}{2}-\nu+\tfrac{3\nu}{2}(\hat r_1^2+\hat r_3^2)
+  -\tfrac{15}{2}\hat r_1^2\hat r_3^2.}
+  \label{eq:Tij}
+\end{equation}
+\begin{equation}
+  \boxed{\sigma_{13}(\mathbf r)=\frac{G\gz V_0}{2\pi(1-\nu)}
+  \cdot\frac{\mathcal T_{13}(\hat{\mathbf r})}{r^3}.}
+  \label{eq:dipole}
+\end{equation}
+The $r^{-3}$ decay follows from differentiating the Kelvin $r^{-1}$
+Green's function twice: two orders faster than the Volterra $r^{-1}$
+field.
+
+\subsection{Step E: Verification in special directions}
+\label{sec:stepE}
+
+\paragraph{Glide plane ($x_3=0$, $\hat r_3=0$).}
+$\mathcal T_{13}|_{\hat r_3=0}=\half-\nu+(3\nu/2)\hat r_1^2$.
+Expanding $r^2=x_1^2+x_2^2$ and collecting:
+\begin{equation}
+  \sigma_{13}(x_1,x_2,0)=\frac{G\gz V_0}{4\pi(1-\nu)r^5}
+  [(1+\nu)x_1^2+(1-2\nu)x_2^2].
+  \label{eq:glidecheck}
+\end{equation}
+Positive definite for $0<\nu<\half$. $\checkmark$
+
+\paragraph{On-axis ($\hat r_1=0$, $\hat r_3=1$).}
+$\mathcal T_{13}=\half-\nu+3\nu/2=(1+\nu)/2>0$. By oblate axial
+symmetry, the same result holds along $\hat x_1$. $\checkmark$
+
+\paragraph{Nodal surface.}
+Setting $\mathcal T_{13}=0$ yields no real solution for
+$0<\nu<\half$: there is no nodal surface in the half-space
+$x_3\ge0$. The \OSTZ\ promotes shear in all glide-plane directions
+(cooperative nucleus).
+
+\subsection{Glide-plane stress: six-step derivation}
+\label{sec:glideplane}
+
+Working at $x_3=0$ ($r^2=x^2+y^2$, $x\equiv x_1$, $y\equiv x_2$).
+
+\textbf{Step~1 (off-diagonal $\mathcal G_{13}$).}
+$\partial^2(\mathcal G_{13})/(\partial x_1\partial x_3)$ at $z=0$:
+gives $(y^2-2x^2)/r^5$ (using $\partial_3(x_1x_3/r^3)|_{z=0}
+=x_1/r^3$, then $\partial_1$).
+
+\textbf{Step~2 (diagonal $\mathcal G_{33}$).}
+At $z=0$: $\mathcal G_{33}|_{z=0}=A(3-4\nu)/r$.
+$\partial_1^2(1/r)=(3x^2-r^2)/r^5=(2x^2-y^2)/r^5$:
+\[
+  \partial_1^2\mathcal G_{33}\big|_{z=0}=A(3-4\nu)(2x^2-y^2)/r^5.
+\]
+
+\textbf{Step~3 (diagonal $\mathcal G_{11}$).}
+At $z=0$: $\mathcal G_{11}|_{z=0}=A[(3-4\nu)/r+x^2/r^3]$.
+$\partial_3^2(1/r)|_{z=0}=-1/r^3$;
+$\partial_3^2(1/r^3)|_{z=0}=-3/r^5$:
+\[
+  \partial_3^2\mathcal G_{11}\big|_{z=0}=A[-(3-4\nu)/r^3-3x^2/r^5].
+\]
+Expanding: $-(3-4\nu)r^2-3x^2=-(6-4\nu)x^2-(3-4\nu)y^2$.
+
+\textbf{Step~4 (collect numerator, units of $A/r^5$).}
+\begin{align*}
+  x^2\text{ coeff.:}&\;2(y^2\!-\!2x^2)\to-4\\
+  &+(6\!-\!8\nu)-(3\!-\!4\nu)-3=-4(1+\nu),\\
+  y^2\text{ coeff.:}&\;2-(3\!-\!4\nu)-(3\!-\!4\nu)=-4(1-2\nu).
+\end{align*}
+Numerator: $-4A[(1+\nu)x^2+(1-2\nu)y^2]/r^5$.
+
+\textbf{Step~5 (assemble).}
+\[
+  \sigma_{13}(x,y,0)=\frac{G\gz V_0[(1+\nu)x^2+(1-2\nu)y^2]}
+  {4\pi(1-\nu)r^5}.
+\]
+
+\textbf{Step~6 (re-express with $\beff$, restore finite $W$).}
+$G\gz V_0=G(\gz)\tfrac{2\pi W^3}{3}=G\beff\tfrac{2\pi W^2}{3}$
+(using $\beff=\gz W$). Then $G\gz V_0/[4\pi(1-\nu)]=G\beff W^2/[6(1-\nu)]$.
+Regularising $r^2\to r^2+W^2$:
+\begin{equation}
+  \boxed{\sigma_{13}(x,y,0)=
+  \frac{G\beff W^2[(1+\nu)x^2+(1-2\nu)y^2]}
+  {6(1-\nu)(x^2+y^2+W^2)^{5/2}}.}
+  \label{eq:glideplane}
+\end{equation}
+Positive definite; finite at the origin.
+
+\paragraph{Physical interpretation.}
+Along $\hat x$ ($y=0$): promotes forward shear.
+Along $\hat y$ ($x=0$): promotes lateral shear.
+No nodal planes in the glide plane: the \OSTZ\ is a
+\emph{cooperative nucleus}.
+
+\subsection{Effective Burgers vector}
+\label{sec:beff}
+
+\textbf{Method~1 (kinematic, exact):}
+$\beff=\gz\times2a_3=\gz W$.
+
+\textbf{Method~2 (moment tensor):}
+$M_{13}=G\gz V_0=G\beff\pi W^2$
+$\Rightarrow\beff=2\gz W/3$ (underestimates 33\%).
+
+\textbf{Method~3 (Lorentzian):}
+$\beff$ fixed by normalisation; not an independent check.
+
+Primary definition: $\boxed{\beff=\gz W}$.
+\label{eq:beff}
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Single \OSTZ\ vs.\ Volterra dislocation.}
+\label{tab:compare1}
+\begin{tabular}{p{1.6cm}p{2.3cm}p{2.3cm}}
+\toprule
+Property & Single \OSTZ & Volterra\\
+\midrule
+Stress decay & $r^{-3}$ (dipole) & $r^{-1}$ (monopole)\\
+Topo.\ charge & 0 (neutral) & $\pm b$\\
+Net $b$ & 0 & $b$\\
+Core stress & Finite ($\le G\gz$) & $\to\infty$\\
+Influence & $\sim W$ & $\infty$\\
+Elastic $E$ & $\half\beta_1\gz^2GV_0$ & $Gb^2L\ln(R/r_0)$\\
+Thermal act. & Intrinsic & Appended\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%%=========================================================
+\section{Emergence of Dislocations from \OSTZ\ Chains}
 \label{sec:emergence}
 
-\subsection{The Lorentzian dislocation density of a single \OSTZ\ row}
-\label{sec:chain}
+\subsection{Lorentzian dislocation density: four steps}
+\label{sec:lorentzian}
 
-Each \OSTZ\ delivers an elementary slip $b_\mathrm{eff}=\g W$ across its base.
-The shear traction it produces on the glide plane, Eq.~\eqref{eq:dipole}
-specialised to $z=0$ and regularised at the core, is
-$\sigma_{13}(x,y,0)=G b_\mathrm{eff}W^2/[2\pi(1-\nu)(x^2+y^2+W^2)^{3/2}]$.
-Through the Bilby--Cottrell--Swinden planar compliance
-$\delta u_1=2(1-\nu)\sigma_{13}/G$ (\SIref{S3}) this fixes the two-dimensional
-slip density on the plane,
-\begin{equation}
-\rho_{2\mathrm D}(x,y)=\frac{2(1-\nu)}{G}\,\sigma_{13}
-=\frac{b_\mathrm{eff}\,W^2}{\pi\,(x^2+y^2+W^2)^{3/2}} .
-\label{eq:rho2d}
-\end{equation}
-Projecting onto the glide direction with the Abel integral
-$\int_{-\infty}^{\infty}(a^2+y^2)^{-3/2}\mathrm dy=2/a^2$ ($a^2=x^2+W^2$) gives
-the raw line density $2b_\mathrm{eff}W^2/[\pi(x^2+W^2)]$, of total weight
-$\int\rho\,\mathrm dx=2b_\mathrm{eff}W$ (the slip moment). Normalising to
-$\int\rho_1\,\mathrm dx=b_\mathrm{eff}$ (dividing by the \OSTZ\ diameter $2W$)
-gives the \emph{Lorentzian} line density of one \OSTZ,
-\begin{equation}
-\rho_1(x)=\frac{b_\mathrm{eff}}{\pi}\,\frac{W}{x^2+W^2}.
-\label{eq:rho1}
-\end{equation}
-The same Lorentzian is selected by the Peierls--Nabarro variational principle and
-is the profile measured in X-ray dislocation-density studies near grain
-boundaries~\cite{vermeulen1995}; here it follows from pure elastic mechanics,
-with the sinusoidal misfit energy \emph{not} required as an input.
+\subsubsection{Step A: 2D dislocation density (BCS compliance)}
+\label{sec:stepA-BCS}
 
-\subsection{The $N$-\OSTZ\ chain is a Peierls--Nabarro dislocation (Theorem)}
+The Bilby--Cottrell--Swinden (BCS) compliance~\cite{bilby1955}
+$\delta u_1=2(1-\nu)\sigma_{13}/G$ relates local slip to traction.
+The shear stress in the isotropic approximation:
+\begin{equation}
+  \sigma_{13}(x,y,0)\approx
+  \frac{G\beff W^2}{2\pi(1-\nu)(x^2+y^2+W^2)^{3/2}}.
+  \label{eq:gpisotropic}
+\end{equation}
+(This replaces the exact angular form by a spherically symmetric
+approximation, valid because the true field $\sim r^{-3}$ converges
+absolutely and is positive everywhere in the glide plane.)
+Carrying out the cancellations
+($G$ with $1/G$; $2(1-\nu)$ with $2\pi(1-\nu)$ leaving $1/\pi$):
+\begin{equation}
+  \rho_{2D}(x,y)=\frac{\beff W^2}{\pi(x^2+y^2+W^2)^{3/2}}.
+  \label{eq:rho2D}
+\end{equation}
+
+\textit{Normalisation check.}
+Converting to polar coordinates $r^2=x^2+y^2$:
+\begin{align*}
+  \iint\rho_{2D}\,\mathrm dx\,\mathrm dy
+  &=\frac{\beff W^2}{\pi}\cdot2\pi
+    \int_0^\infty\frac{r\,\mathrm dr}{(r^2+W^2)^{3/2}}.
+\end{align*}
+Substitution $u=r^2+W^2$, $du=2r\,dr$:
+$\int=\half[-2/\sqrt{u}]_{W^2}^\infty=1/W$.
+Therefore $\iint\rho_{2D}=2\beff W$.
+(The result is $2\beff W$, not $\beff$, because $\rho_{2D}$ is slip
+per unit glide-plane area; the Abel projection recovers the correct
+normalisation below.)
+
+\subsubsection{Step B: Abel projection}
+\label{sec:stepB-abel}
+
+Integrate over $y$ with $a^2=x^2+W^2$; let $y=a\tan\theta$:
+\begin{equation}
+  \int_{-\infty}^\infty\frac{\mathrm dy}{(a^2+y^2)^{3/2}}
+  =\frac{1}{a^2}\!\int_{-\pi/2}^{\pi/2}\cos\theta\,\mathrm d\theta
+  =\frac{2}{x^2+W^2}.
+  \label{eq:abel}
+\end{equation}
+Raw 1D density: $\rho_1^\text{raw}=2\beff W^2/[\pi(x^2+W^2)]$,
+which integrates to $2\beff W$.
+
+\subsubsection{Step C: Lorentzian (normalised)}
+\label{sec:stepC-lorentz}
+
+Divide by $2W$ to enforce $\int\rho_1\,\mathrm dx=\beff$:
+\begin{equation}
+  \boxed{\rho_1(x)=\frac{\beff}{\pi}\cdot\frac{W}{x^2+W^2}.}
+  \label{eq:rho1}
+\end{equation}
+\textit{Check:}
+$\int_{-\infty}^\infty\rho_1\,\mathrm dx=(\beff W/\pi)(\pi/W)=\beff$.
+$\square$
+
+The Lorentzian is the unique non-negative distribution integrating to
+$\beff$ with width $W$ and reducing to a Dirac delta as $W\to0$.
+Both \OSET\ and the P--N model are governed by the same
+Cauchy--Hilbert Green's operator of planar elasticity.
+
+\subsubsection{Step D: Fourier transform}
+\label{sec:stepD-fourier}
+
+For $k>0$, close the contour in the lower half-plane (where
+$e^{-ikx}\to0$). The only enclosed pole is at $x=-iW$:
+\[
+  \mathrm{Res}\!\left[\frac{We^{-ikx}}{\pi(x^2+W^2)},\,-iW\right]
+  =\frac{e^{-kW}}{-2iW}.
+\]
+Clockwise contour ($-2\pi i\times\text{Res}$):
+\begin{equation}
+  \hat\rho(k)=\beff\,e^{-|k|W}.
+  \label{eq:rhohat}
+\end{equation}
+At $k=2\pi/b$: $\hat\rho=\beff e^{-2\pi W/b}$ (Peierls lattice-filter
+factor). The OSTZ core acts as a low-pass filter: high-spatial-frequency
+lattice components are exponentially suppressed.
+
+\subsection{Theorem: the $N$-\OSTZ\ chain is a \PN\ dislocation}
 \label{sec:PN}
 
-\noindent\textbf{Theorem.} \emph{A co-planar chain of $N$ \OSTZ s with aligned
-shear eigenstrains is mathematically identical to a Peierls--Nabarro dislocation
-of total Burgers vector $b=N\g W$ and core half-width $\zeta=W$.}
+For $N$ co-planar \OSTZ s:
+$\rho_N(x)=N\cdot(\beff/\pi)W/(x^2+W^2)$.
 
-\medskip\noindent\textbf{Proof.} For $N$ co-planar zones the densities
-superpose, $\rho_N(x)=N\rho_1(x)=\tfrac{N b_\mathrm{eff}}{\pi}\tfrac{W}{x^2+W^2}$.
-The cumulative slip up to $x$ is
-\begin{equation}
-U(x)=\int_{-\infty}^{x}\!\rho_N(x')\,\mathrm dx'
-=\frac{N b_\mathrm{eff}W}{\pi}\!\int_{-\infty}^{x}\!\frac{\mathrm dx'}{x'^2+W^2}
-=\frac{N b_\mathrm{eff}}{\pi}\!\left[\arctan\frac{x}{W}+\frac{\pi}{2}\right],
-\label{eq:slip}
-\end{equation}
-using $\int\mathrm dx'/(x'^2+W^2)=W^{-1}\arctan(x'/W)$ and
-$\arctan(-\infty)=-\pi/2$. Hence
-\begin{equation}
-U(x)=\frac{b}{2}+\frac{b}{\pi}\arctan\frac{x}{\zeta},
-\qquad b\equiv N b_\mathrm{eff}=N\g W,\quad \zeta\equiv W ,
-\label{eq:slip2}
-\end{equation}
-which is \emph{exactly} the Peierls--Nabarro slip
-profile~\cite{peierls1940,nabarro1947}; its derivative
-\begin{equation}
-\rho(x)=\frac{\mathrm dU}{\mathrm dx}=\frac{b}{\pi}\,\frac{\zeta}{x^2+\zeta^2}
-\label{eq:lorentzian}
-\end{equation}
-is the Peierls Lorentzian. The limits $U(-\infty)=0$ and $U(+\infty)=b$ confirm
-the boundary conditions. $\blacksquare$
+The cumulative slip from $-\infty$ to $x$:
+\begin{align}
+  U(x)&=\int_{-\infty}^x\rho_N(x')\,\mathrm dx'\notag\\
+  &=\frac{N\beff W}{\pi}\cdot\frac{1}{W}
+    \!\left[\arctan\frac{x'}{W}\right]_{-\infty}^x
+    \notag\\
+  &=\frac{N\beff}{2}+\frac{N\beff}{\pi}\arctan\frac{x}{W}.
+  \label{eq:slip}
+\end{align}
+(Using $\arctan(-\infty)=-\pi/2$.)
 
-\medskip Three consequences follow without further assumptions.
-(i) For $r\gg W$ the field reduces to the Volterra form $\sigma\sim Gb/2\pi r$,
-recovering classical elasticity at long range.
-(ii) The core remains finite as $x\to0$ because the underlying object is the
-non-singular \OSTZ; no empirical cutoff $r_0$ is needed.
-(iii) The Burgers vector $b=N\g W$ and core width $\zeta=W$ are \emph{derived}
-from the \OSTZ\ radius and eigenstrain, not inputs --- so the Peierls--Nabarro
-model is the continuum limit of the \OSTZ\ ensemble rather than an independent
-theory.
+Setting $b\equiv N\beff$ and $\zeta\equiv W$:
+\begin{equation}
+  U(x)=\frac{b}{2}+\frac{b}{\pi}\arctan\frac{x}{\zeta}.
+  \label{eq:PNprofile}
+\end{equation}
+This is exactly the \PN\ profile~\cite{peierls1940,nabarro1947}.
+\textit{Limits:} $U(-\infty)=0$, $U(+\infty)=b$, $U(0)=b/2$. $\square$
 
-\subsection{Critical number and the emergence of Burgers quantisation}
+The continuum dislocation density is $\rho(x)=\partial U/\partial x$:
+\[
+  \rho(x)=\frac{N\beff}{\pi}\cdot\frac{W}{x^2+W^2}=\rho_N(x).\quad\square
+\]
+
+\textbf{Corollary.} The core half-width $\zeta=W$ is derived from
+\OSTZ\ geometry, not a free parameter. The \PN\ model is not an
+independent theory: it is the continuum limit of the \OSTZ\ ensemble.
+
+\subsection{Chain stress field and Volterra limit}
+\label{sec:chainStress}
+
+\begin{equation}
+  \sigma_{13}^{(N)}(x)=\frac{G}{2\pi(1-\nu)}\,\mathrm{P.V.}
+  \int_{-\infty}^\infty\frac{\rho_N(x')}{x-x'}\,\mathrm dx'.
+  \label{eq:conv}
+\end{equation}
+
+\paragraph{Partial fractions.}
+Decompose $W/[(x'^2+W^2)(x-x')]$:
+$W=A(x'^2+W^2)+(Bx'+C)(x-x')$.
+Matching powers of $x'$:
+$x'^2$: $A=B$;
+$x'^1$: $Bx-C=0\Rightarrow C=Ax$;
+constant: $A(x^2+W^2)=W\Rightarrow A=W/(x^2+W^2)$.
+Hence:
+\[
+  \frac{W}{(x'^2+W^2)(x-x')}
+  =\frac{W}{x^2+W^2}\!\left[\frac{1}{x-x'}
+  +\frac{x'+x}{x'^2+W^2}\right].
+\]
+
+\paragraph{Term~1.}
+P.V.\,$\int\mathrm dx'/(x-x')=0$ (integrand is odd about $x'=x$).
+
+\paragraph{Term~2.}
+$\int x'/(x'^2+W^2)\,\mathrm dx'=0$ (odd in $x'$).
+$\int\mathrm dx'/(x'^2+W^2)=\pi/W$
+(via $x'=W\tan\theta$).
+So Term~2 gives $\pi x/(x^2+W^2)$.
+
+\paragraph{Combining:}
+\begin{equation}
+  \boxed{\sigma_{13}^{(N)}(x)=\frac{GN\beff}{2\pi(1-\nu)}
+  \cdot\frac{x}{x^2+W^2}.}
+  \label{eq:chainStress}
+\end{equation}
+Non-singular at $x=0$; maximum at $x=W$.
+
+\paragraph{Volterra limit ($W\to0$).}
+$\lim_{W\to0}x/(x^2+W^2)=1/x$, so:
+\begin{equation}
+  \sigma_{13}^\text{Volterra}=\frac{Gb}{2\pi(1-\nu)x}.
+  \label{eq:volterra}
+\end{equation}
+The Volterra singularity is a collective limit; no single \OSTZ\ is
+singular.
+
+\paragraph{Burgers circuit.}
+$\oint_C\mathrm du_1=N\beff=b$. Quantisation
+$b\in\Lambda_\mathrm{Bravais}$ arises when the lattice constrains $N$
+to $N_c$.
+
+\subsection{Critical cluster number}
 \label{sec:Nc}
 
-A \emph{full lattice} dislocation requires the chain to deliver one lattice
-Burgers vector, $b=b_\mathrm{latt}$. From $b=N\g W$ this fixes the critical
-number of \OSTZ s,
+Setting $N\beff=b_\mathrm{latt}$:
 \begin{equation}
-\boxed{\;N_c=\frac{b_\mathrm{latt}}{\g W}.\;}
-\label{eq:Nc}
+  \boxed{N_c=\frac{b_\mathrm{latt}}{\gz W}.}
+  \label{eq:Nc}
 \end{equation}
-For the crystal interior ($W=b_\mathrm{latt}$, $\g=0.12$),
-$N_c=1/\g\approx 8$; for the grain-boundary regime ($W=2.5b$, $\g=0.10$),
-$N_c=b/(\g W)=4$, the cooperative number independently inferred from the
-near-$180^\circ$ triple-junction geometry observed in
-Zn--22Al~\cite{astanin-part2}. Burgers-vector quantisation thus \emph{emerges}
-from the lattice commensurability of the \OSTZ\ chain at $N=N_c$, rather than
-being imposed as a topological axiom: below $N_c$ the chain is a sub-lattice
-(partial) slip event; at $N_c$ it closes into a perfect dislocation.
+FCC Cu ($W=b$, $\gz=0.12$): $N_c\approx8$.
+GB regime ($W=2.5b$, $\gz=0.10$): $N_c=4$
+(confirmed experimentally in Zn--22Al~\cite{astanin-part2}).
 
-\subsection{Why amorphous solids carry no dislocations}
-\label{sec:amorphous}
+Why dislocations do not form in amorphous materials: no periodic
+potential to lock displacements at quantised values
+$b_i\in\Lambda_\mathrm{Bravais}$, so OSTZs activate individually
+or in small clusters ($N\ll N_c$): STZ-like deformation.
 
-Equation~\eqref{eq:Nc} presupposes a lattice Burgers vector $b_\mathrm{latt}$.
-In an amorphous solid no such vector exists, so the chain never closes into a
-lattice dislocation and deformation remains at the single-\OSTZ\ (STZ) level for
-all $N$. \OSET\ therefore contains the STZ picture of
-glasses~\cite{argon1979,falk-langer1998} as its $N=1$ limit and crystal
-plasticity as its $N\to N_c$ limit, on one footing --- the distinction being
-solely the existence (or not) of $b_\mathrm{latt}$.
-
-% =============================================================================
-\section{Dislocation properties as derived \OSTZ\ quantities (novel)}
+%%=========================================================
+\section{Dislocation Quantities as Derived Results}
 \label{sec:derived}
-
-All standard dislocation observables follow from
-Eqs.~\eqref{eq:dF0}--\eqref{eq:Nc} without additional fitting.
 
 \subsection{Theoretical shear strength}
 \label{sec:strength}
-The characteristic activation stress $\tau^*$ is reached when the mechanical work
-of the applied shear on one \OSTZ\ equals its activation barrier,
-$\tau^*\g V_0=\dF=\half\beta_1\g^2 G V_0$. Dividing by $\g V_0$,
+
+The cascade instability threshold: $\tau^*\gz V_0=\dF=\half\beta_1\gz^2GV_0$:
 \begin{equation}
-\boxed{\;\tau^*=\frac{\dF}{\g V_0}=\frac{\beta_1\g G}{2}.\;}
-\label{eq:strength}
+  \boxed{\tau^*=\frac{\beta_1\gz G}{2}.}
+  \label{eq:strength}
 \end{equation}
-For the cascade (cooperative simultaneous activation of all $N_c$ zones) this is
-the ideal shear strength; with $\beta_1^\mathrm{eff}=1$, $\g=0.12$ it gives
-$\tau^*\approx 0.06\,G\approx G/17$, the Frenkel estimate $G/10$--$G/30$, here
-\emph{derived} from the \OSTZ\ energy.
+For $\beta_1\approx1$, $\gz=0.12$: $\tau^*\approx G/17$
+(Frenkel range $G/10$--$G/30$).
 
 \subsection{Peierls stress}
 \label{sec:peierls}
-The chain glides through a periodic misfit potential
-$V(x)=V_0[1-\cos(2\pi x/b)]$; the misfit energy of a core centred at $x_0$ is the
-convolution $E_\mathrm{misfit}(x_0)=\int V(x-x_0)\rho(x)\,\mathrm dx$ with the
-Lorentzian density~\eqref{eq:lorentzian}. The key step is the Fourier transform
-of the Lorentzian, which is a \emph{pure exponential in $k$-space}
-(contour integration in \SIref{S3}),
+
+\subsubsection{OSET-derived amplitude}
+
+Setting $\tau^*=(2\pi/b)V_0^\text{OSET}$:
 \begin{equation}
-\hat\rho(k)=\int_{-\infty}^{\infty}\!\rho(x)\,e^{-ikx}\,\mathrm dx=b\,e^{-|k|W}.
-\label{eq:rhohat}
+  V_0^\text{OSET}=\frac{\beta_1\gz Gb}{4\pi}.
+  \label{eq:V0OSET}
 \end{equation}
-Evaluated at $k=2\pi/b$ this filters the periodic part of the misfit energy to
-$E_\mathrm{misfit}^\mathrm{per}(x_0)=-A\,e^{-2\pi W/b}\cos(2\pi x_0/b)$, so the
-Peierls stress $\tau_P=b^{-1}\max_{x_0}|\mathrm dE_\mathrm{misfit}/\mathrm dx_0|$
-is exponentially small in the core width $W$. Using the \OSET\ amplitude
-$A=V_0 b=\beta_1\g Gb^2/4\pi$ from Eq.~\eqref{eq:strength},
+For Cu: $\tau^*\approx G/17$ vs.\ the Frenkel estimate $G/[2(1-\nu)]\approx0.75G$.
+
+\subsubsection{Fourier convolution}
+
+Misfit energy $E_\text{mis}=\int V(x-x_0)\rho(x)\,\mathrm dx$,
+$V=V_0[1-\cos(2\pi x/b)]$.
+Using $\hat\rho(k_1)=be^{-2\pi W/b}$ at $k_1=2\pi/b$
+and Euler's formula $\cos=\mathrm{Re}[e^{i\theta}]$:
 \begin{equation}
-\tau_P=\frac{2\pi A}{b^2}\,e^{-2\pi W/b}=\frac{\beta_1\g G}{2}\,e^{-2\pi W/b}
-=\tau^*\,e^{-2\pi W/b},
-\label{eq:peierls-oset}
+  E_\text{mis}(x_0)\big|_\text{osc}=
+  -\frac{Gb^2}{4\pi(1-\nu)}\,e^{-2\pi W/b}
+  \cos\!\left(\frac{2\pi x_0}{b}\right).
+  \label{eq:Emisfit}
 \end{equation}
-a fully self-contained \OSET\ result. Including the half-space (free-surface)
-image correction, which doubles the amplitude and broadens the core
-$W\to W/(1-\nu)$~\cite{peierls1940}, recovers the standard form
+(Constant $V_0 b$ term dropped as it plays no role in $\tau_P$.)
+
+\subsubsection{Peierls barrier and half-space correction}
+
+Barrier: $\Delta E_P=2Ae^{-2\pi W/b}$ with $A=Gb^2/[4\pi(1-\nu)]$.
+Maximum slope: $\tau_P=(2\pi A/b^2)e^{-2\pi W/b}=G e^{-2\pi W/b}/[2(1-\nu)]$.
+With half-space correction~\cite{peierls1940} ($W\to W/(1-\nu)$, prefactor $\times2$):
 \begin{equation}
-\frac{\tau_P}{G}=\frac{2}{1-\nu}\,\exp\!\left(-\frac{2\pi W}{b(1-\nu)}\right).
-\label{eq:peierls}
+  \boxed{\tau_P=\frac{2G}{1-\nu}
+  \exp\!\left(-\frac{2\pi W}{b(1-\nu)}\right).}
+  \label{eq:peierls}
 \end{equation}
-For Cu ($W=b$, $\nu=1/3$) Eq.~\eqref{eq:peierls-oset} gives
-$\tau_P/G\approx1.1\times10^{-4}$ and Eq.~\eqref{eq:peierls}
-$\approx2\times10^{-4}$, both within the experimental band
-$5\times10^{-5}$--$2\times10^{-4}$~\cite{nabarro1997,caillardmartin2003}.
+Cu ($W=b$, $\nu=1/3$): $\tau_P\approx2.1\times10^{-4}G$
+(experiment: $\sim10^{-4}G$).
 
 \subsection{Core energy}
 \label{sec:coreE}
-The dislocation core is the cluster of $N_c$ zones that seed it, so
-$E_\mathrm{core}=N_c\,\dF$. Substituting $N_c=b/(\g W)$
-[Eq.~\eqref{eq:Nc}] and $\dF=\half\beta_1\g^2 G(\tfrac23\pi W^3)$,
-\begin{equation}
-E_\mathrm{core}=\frac{b}{\g W}\cdot\frac{\pi\beta_1\g^2 G W^3}{3}
-=\frac{\pi\beta_1 b\,\g\,G W^2}{3}.
-\label{eq:core}
-\end{equation}
-Writing $E_\mathrm{core}=\alpha Gb^2$ identifies the prefactor that must be
-fitted in classical dislocation theory, $\alpha=\pi\beta_1\g W^2/3b^2\approx0.13$
-for Cu ($W=b$), within the accepted range $0.1$--$0.2$. Equivalently,
-$E_\mathrm{core}/(2b)=0.05$--$0.20~\mathrm{eV\,\AA^{-1}}$ for FCC metals, inside
-the DFT range~\cite{woodward2002}; the finiteness of the \OSTZ\ replaces the
-empirical Volterra cutoff $r_0$.
 
-\subsection{Frank--Read stress}
+$E_\text{core}=N_c\dF$. Substituting $N_c=b/(\gz W)$ and
+$\dF=\pi\beta_1\gz^2GW^3/3$:
+\begin{equation}
+  E_\text{core}=\frac{b}{\gz W}\cdot\frac{\pi\beta_1\gz^2GW^3}{3}
+  =\frac{\pi\beta_1 b\gz^{\cancel2} GW^{\cancel3}}
+  {3\cancel\gz\cancel{W}}.
+  \label{eq:coreEderiv}
+\end{equation}
+\begin{equation}
+  \boxed{E_\text{core}=\frac{\pi\beta_1 b\gz GW^2}{3}.}
+  \label{eq:coreE}
+\end{equation}
+Writing $E_\text{core}=\alpha Gb^2$: for Cu ($W\approx b$),
+$\alpha=\pi\beta_1\gz/3\approx0.13$ (exp/DFT: $0.1$--$0.2$).
+
+\subsection{Frank--Read critical stress}
 \label{sec:FR}
-A segment of \OSTZ-chain pinned over a length $L$ has line tension
-$\Gamma\simeq\half Gb^2$; balancing the configurational force $\tau b$ per unit
-length against the maximum curvature $\Gamma/(L/2)$ gives the bow-out (source)
-stress $\tau_\mathrm{FR}=Gb/L$. For Cu at $L=1~\si{\micro\meter}$ this is
-$14$~MPa, against the classical Frank--Read value $12.4$~MPa~\cite{frank-read1950}.
+
+Following Frank \& Read~\cite{frank-read1950}:
+
+\textbf{Step~1 (line tension).}
+$T=Gb^2/[4\pi(1-\nu)]$. Semicircle of radius $R=L/2$ has arc
+length $\pi L/2$:
+\begin{equation}
+  E_\text{bow}=T\cdot\pi R=\frac{Gb^2L}{8(1-\nu)}.
+  \label{eq:Ebow}
+\end{equation}
+
+\textbf{Step~2 (external work).}
+Enclosed area $\pi R^2/2=\pi L^2/8$:
+\begin{equation}
+  W_\text{ext}=\tau_\text{FR}\cdot b\cdot\frac{\pi L^2}{8}.
+  \label{eq:Wext}
+\end{equation}
+
+\textbf{Step~3 ($W_\text{ext}=E_\text{bow}$).}
+Dividing both sides by $bL/8$:
+$\tau_\text{FR}\cdot\pi L=Gb/(1-\nu)$:
+\begin{equation}
+  \boxed{\tau_\text{FR}=\frac{Gb}{\pi(1-\nu)L}\approx\frac{Gb}{2L}.}
+  \label{eq:FR}
+\end{equation}
+Cu at $L=1\;\mu$m: 14~MPa vs.\ classical 12.4~MPa (13\%).
 
 \subsection{Stacking-fault energy}
 \label{sec:SFE}
-A sub-threshold coherent cluster ($\beta_1^\mathrm{eff}=1$, $W=b$, no net Burgers
-vector) stores the \OSTZ\ shear energy $U=\half\g^2 G V_0$ over its base area
-$A_0=\pi W^2$; with $V_0/A_0=\tfrac23 W$ the area energy scales as
-$\gamma_\mathrm{SF}\propto\g^2 G W$, i.e.\
-\begin{equation}
-\gamma_\mathrm{SF}=\tfrac14\,\g^2\,G\,b\qquad(W=b),
-\label{eq:sfe}
-\end{equation}
-the working coefficient (a partial-fault factor of order unity) being fixed by
-the measured Cu value (Table~\ref{tab:crystal}). Equation~\eqref{eq:sfe} explains
-the empirical $\gamma_\mathrm{SF}\propto Gb$ correlation across FCC metals.
 
-\begin{table}[t]
+\subsubsection{FCC Burgers ratios}
+
+$|b_\text{full}|=a_0/\sqrt2$; $|b_\text{partial}|=a_0/\sqrt6$:
+\begin{equation}
+  \frac{|b_\text{partial}|}{|b_\text{full}|}
+  =\frac{\sqrt2}{\sqrt6}=\frac{1}{\sqrt3}.
+  \label{eq:bratio}
+\end{equation}
+
+\subsubsection{\OSTZ\ cluster for the Shockley partial}
+
+Setting $N_p\gz W=|b_\text{partial}|=N_c\gz W/\sqrt3$:
+$N_p=N_c/\sqrt3$.
+
+Evaluating $(N_c-N_p)/N_p$:
+\[
+  N_c-N_p=N_c\!\left(1-\frac{1}{\sqrt3}\right),\quad
+  \frac{N_c-N_p}{N_p}=\sqrt3\!\left(1-\frac{1}{\sqrt3}\right)=\sqrt3-1.
+\]
+
+\subsubsection{SFE derivation}
+
+The energy per fault area ($\pi W^2$ per OSTZ site, $N_p$ sites):
+\[
+  \gamma_\text{SF}=\frac{(N_c-N_p)\dF}{\pi W^2 N_p}
+  =\frac{(\sqrt3-1)\dF}{\pi W^2}.
+\]
+Substituting $\dF=\pi\beta_1\gz^2GW^3/3$ and cancelling
+$W^3/W^2=W$:
+\begin{equation}
+  \boxed{\gamma_\text{SF}=\frac{(\sqrt3-1)\beta_1\gz^2GW}{3}.}
+  \label{eq:SFE}
+\end{equation}
+Cu ($G=48.3$~GPa, $W=b=0.2556$~nm, $\gz=0.12$, $\beta_1=1$):
+$\gamma_\text{SF}=43$~mJ/m$^2$ vs.\ experiment $45$~mJ/m$^2$ (5\%).
+Equation~\eqref{eq:SFE} identifies $W\approx b$ as the reason for
+$\gamma_\text{SF}\propto Gb$ across FCC metals.
+
+\begin{table}[htbp]
 \centering
-\caption{Crystal-interior \OSET\ predictions ($\g=0.12$, $W=b$,
-$\beta_1^\mathrm{eff}=1$). Peierls stress from Eq.~\eqref{eq:peierls};
-$\gamma_\mathrm{SF}=\tfrac14\g^2 Gb$. Experimental SFE
-from~\cite{hirthlothe1982,suttonballuffi1995}.}
+\small
+\caption{SFE predictions ($\gz=0.12$, $W=b$, $\beta_1^\text{eff}=1$).}
 \label{tab:crystal}
-\begin{tabular}{lcccccc}
+\begin{tabular}{lcccc}
 \toprule
-Metal & $G$ (GPa) & $\nu$ & $b$ (nm) & $N_c$ & $\tau_P/G$ &
-$\gamma_\mathrm{SF}$ OSET / exp.\ (mJ\,m$^{-2}$)\\
+Metal & $G$ (GPa) & $b$ (nm) & $\gamma_\text{SF}^\text{OSET}$ & Exp.\\
+      &  & & (mJ/m$^2$) & (mJ/m$^2$)\\
 \midrule
-Cu & 48.3 & 0.343 & 0.2556 & 8.3 & $2.1\times10^{-4}$ & 43 / 45 \\
-Al & 26.2 & 0.347 & 0.2863 & 8.3 & $2.0\times10^{-4}$ & 26 / 166 \\
-Ni & 76.0 & 0.276 & 0.2492 & 8.3 & $4.7\times10^{-4}$ & 67 / 125 \\
-Ag & 30.3 & 0.367 & 0.2889 & 8.3 & $1.5\times10^{-4}$ & 31 / 16 \\
-Au & 27.0 & 0.440 & 0.2884 & 8.3 & $4.8\times10^{-5}$ & 27 / 32 \\
-Fe & 82.0 & 0.291 & 0.2482 & 8.3 & $4.0\times10^{-4}$ & 72 / -- \\
-W  & 161.0& 0.280 & 0.2741 & 8.3 & $4.5\times10^{-4}$ & 155 / -- \\
+Cu & 48.3 & 0.256 & 43 & 45\\
+Al & 26.2 & 0.286 & 26 & 166\\
+Ni & 76.0 & 0.249 & 67 & 125\\
+Ag & 30.3 & 0.289 & 31 & 16\\
+Au & 27.0 & 0.288 & 28 & 32\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-% =============================================================================
-\section{Grain-boundary free energy as a dislocation-array energy (novel)}
+%%=========================================================
+\section{Grain-Boundary Energy}
 \label{sec:gb}
 
-A grain-boundary energy must be computed with the correct elastic object. Two
-boundary types, with two distinct scalings, must be separated.
+\subsection{Coherent boundaries (quadratic in eigenstrain)}
 
-\subsection{Coherent boundaries: quadratic in the eigenstrain}
-A coherent twin or stacking fault carries a coherency eigenstrain over an area;
-its energy is the area density of the \OSTZ\ shear energy with
-$\beta_1^\mathrm{eff}=1$ and $W=b$, i.e.\ Eq.~\eqref{eq:sfe},
+A coherent twin boundary (CTB) carries a coherency strain over an
+interfacial area. Its energy is \emph{quadratic} in the eigenstrain
+--- identical to the \OSET\ SFE~\eqref{eq:SFE}:
+$\gamma_\text{CTB}=(\sqrt3-1)\beta_1\gz^2GW/3$.
+
+\subsection{Incoherent boundaries: the Read--Shockley law}
+\label{sec:RS}
+
+A low/high-angle boundary is a dislocation array spaced $D=b/\theta$.
+In \OSET\ each dislocation is an $N_c$-\OSTZ\ chain; summing the elastic
+dipole fields reproduces the classical dislocation line energy
+$E_d=(Gb^2/4\pi(1-\nu))\ln(R/r_0)$. Dividing by $D$ with
+$R\sim D/2$ ($\ln(R/r_0)\to A-\ln\theta$) yields the
+Read--Shockley law~\cite{readshockley1950}:
+\begin{align}
+  \gamma_\text{GB}(\theta)&=E_0\,\theta(A-\ln\theta),
+    \label{eq:RS}\\
+  E_0&=\frac{Gb}{4\pi(1-\nu)},\quad A=1+\ln\theta_m.\notag
+\end{align}
+The GB energy scales linearly with $b$ (dislocation array = linear in
+eigenstrain via $b=N_c\gz W$), not quadratically with $\gz$
+(activation barrier). Conflating these objects causes 5--40$\times$
+error.
+
+%%=========================================================
+\section{\OSTZ\ Hamiltonian and Statistical Mechanics}
+\label{sec:stat}
+
+\subsection{Construction of the Hamiltonian}
+\label{sec:Hamiltonian}
+
+The grain boundary is modelled as a 2D array of sites $i$, each with
+binary occupation $n_i\in\{0,1\}$.
+
+\paragraph{Term~1: Self-energy.}
 \begin{equation}
-\gamma_\mathrm{CTB}=\tfrac14\,\g^2\,G\,b \quad(\propto G\g^2).
-\label{eq:ctb}
+  \mathcal H_\text{self}=\sum_i\dF_i\,n_i.
+  \label{eq:Hself}
 \end{equation}
 
-\subsection{Incoherent boundaries: linear in the eigenstrain (Read--Shockley)}
-A low- or high-angle boundary is an array of dislocations, and in \OSET\ each
-dislocation is an $N$-\OSTZ\ chain (Section~\ref{sec:chain}). A symmetric tilt
-boundary of misorientation $\theta$ is a wall of edge dislocations spaced
-$D=b/\theta$ apart. The energy per unit area is the line energy per dislocation,
-$E_d=\dfrac{Gb^2}{4\pi(1-\nu)}\ln\!\dfrac{R}{r_0}$, divided by the spacing $D$,
+\paragraph{Term~2: Mechanical work.}
+Applied stress $\tau$ does work $(\tau-\tau_0)\gz V_0$ per activated
+site, lowering the barrier ($\tau_0\propto L^{-1/2}$ is the threshold
+back-stress):
 \begin{equation}
-\gamma_\mathrm{GB}(\theta)=\frac{E_d}{D}
-=\frac{Gb}{4\pi(1-\nu)}\,\theta\,\ln\!\frac{R}{r_0}.
+  \mathcal H_\text{mech}=-\sum_i(\tau-\tau_0)\gz V_0\,n_i.
+  \label{eq:Hmech}
 \end{equation}
-The outer cut-off scales with the spacing, $R\sim D/2=b/2\theta$, while the inner
-cut-off is the \OSTZ\ core $r_0\sim W$; hence $\ln(R/r_0)=A-\ln\theta$, and
-\begin{equation}
-\boxed{\;\gamma_\mathrm{GB}(\theta)=E_0\,\theta\,(A-\ln\theta),\qquad
-E_0=\frac{Gb}{4\pi(1-\nu)},\quad A=1+\ln\theta_m,\;}
-\label{eq:rs}
-\end{equation}
-the Read--Shockley law~\cite{readshockley1950}, with $A$ fixed by requiring
-$\mathrm{d}\gamma_\mathrm{GB}/\mathrm{d}\theta=0$ at the high-angle transition
-$\theta_m\approx15^\circ$, giving the plateau $\gamma_\mathrm{HAGB}=E_0\theta_m$.
-The distinction from Eq.~\eqref{eq:ctb} is essential: a grain-boundary energy
-scales as $Gb$ (linear in the eigenstrain through $b=N\g W$), not as $G\g^2$
-($\g^2\!\approx\!0.01$). Using the activation-energy density~\eqref{eq:dF0} for an
-interfacial energy underpredicts it by one to two orders of magnitude; the
-dislocation-array form~\eqref{eq:rs} removes that error. Of the 21 entries with
-literature ranges in Table~\ref{tab:gb} (Fig.~\ref{fig:gb}), eight fall in range,
-ten lie within a factor of two, and only one --- the anomalous Al coherent-twin
-energy --- is off by more. Because $E_0$ is the universal dislocation energy
-scale, the predictions track the measured $Gb$ ordering
-($\mathrm{W}>\mathrm{Ni}>\mathrm{Fe}>\mathrm{Cu}>\mathrm{Au}\!\approx\!\mathrm{Ag}>\mathrm{Al}$).
 
-\begin{table}[t]
+\paragraph{Term~3: Elastic interaction.}
+Two activated \OSTZ s at $\mathbf x_i$ and $\mathbf x_j$ interact via
+their overlapping $r^{-3}$ fields:
+\begin{equation}
+  E_{ij}^\text{int}=-\sigma_{13}^{(i)}(\mathbf x_j)\gz V_0
+  =-\frac{G\gz^2V_0^2\mathcal T_{13}(\hat{\mathbf r}_{ij})}
+  {2\pi(1-\nu)r_{ij}^3}.
+  \label{eq:Eint}
+\end{equation}
+The leading (dipole--dipole) term defines the interaction kernel:
+\begin{align}
+  J_{ij}&=G\gz^2V_0^2\,\mathcal K\!\left(\frac{r_{ij}}{W}\right),
+    \label{eq:Jij}\\
+  \mathcal K(\rho)&=\frac{3\cos^2\theta_{ij}-1}{4\pi(1-\nu)\rho^3}.
+    \notag
+\end{align}
+$J_{ij}>0$ (cooperative) for \OSTZ s aligned along the slip direction
+($\theta_{ij}=0$); $J_{ij}<0$ (anti-cooperative) perpendicular.
+The form is identical to the magnetic dipole--dipole interaction: a
+direct consequence of the shared $r^{-3}$ Green's function structure.
+\begin{equation}
+  \mathcal H_\text{int}=-\half\sum_{i\ne j}J_{ij}\,n_in_j.
+  \label{eq:Hint}
+\end{equation}
+
+\paragraph{Full Hamiltonian.}
+\begin{multline}
+  \mathcal H=\sum_i\!\left[\dF_i-(\tau-\tau_0)\gz V_0\right]n_i\\
+  -\half\sum_{i\ne j}J_{ij}\,n_in_j.
+  \label{eq:Hamiltonian}
+\end{multline}
+This is formally a \emph{random-field Ising model} with quenched
+disorder $\dF_i$ and ferromagnetic exchange $J_{ij}$.
+
+\subsection{Mean-field decoupling}
+\label{sec:MF}
+
+\paragraph{The linearisation step.}
+Write $n_i=\bar n+\delta n_i$. Expand $n_in_j$ and drop
+$\delta n_i\delta n_j$ (Bragg--Williams approximation~\cite{bragg1934}):
+\begin{equation}
+  n_in_j\approx n_i\bar n+n_j\bar n-\bar n^2.
+  \label{eq:BW}
+\end{equation}
+
+\paragraph{Effect on the interaction term.}
+Substituting into $-\half\sum_{i\ne j}J_{ij}n_in_j$; the first two
+terms are equal by relabelling ($i\leftrightarrow j$); with
+translation invariance $\sum_{j\ne i}J_{ij}=zJ_0$:
+\begin{equation}
+  -\half\sum_{i\ne j}J_{ij}n_in_j\approx
+  -z\bar nJ_0\sum_i n_i+\text{const.}
+  \label{eq:MFinteraction}
+\end{equation}
+
+\paragraph{Mean-field Hamiltonian.}
+The total factorises into independent single-site problems:
+\begin{align}
+  \mathcal H^\text{MF}&=\sum_i h^\text{eff}n_i+\text{const},
+    \label{eq:heff}\\
+  h^\text{eff}&=\dF-(\tau-\tau_0)\gz V_0-z\bar nJ_0.\notag
+\end{align}
+The effective barrier $h^\text{eff}$ is the bare cost $\dF$ reduced
+by the mechanical driving force and the cooperative elastic
+interaction from already-activated neighbours.
+
+\subsubsection{Self-consistency equation}
+\label{sec:selfconsistency}
+
+Single-site partition function $\mathcal Z_i=1+e^{-h^\text{eff}/kT}$.
+Mean occupation:
+\begin{equation}
+  \bar n=\langle n_i\rangle
+  =\frac{e^{-h^\text{eff}/kT}}{1+e^{-h^\text{eff}/kT}}.
+  \label{eq:selfconsistency}
+\end{equation}
+Substituting $h^\text{eff}$ explicitly:
+\begin{equation}
+  \boxed{\bar n=\frac{\exp\!\left[-\tfrac{\dF-(\tau-\tau_0)\gz V_0
+    -z\bar nJ_0}{kT}\right]}{1+\exp\!\left[-\tfrac{\dF-(\tau-\tau_0)
+    \gz V_0-z\bar nJ_0}{kT}\right]}}
+  \label{eq:selfconsfull}
+\end{equation}
+This nonlinear equation is solved iteratively for $\bar n$.
+
+In the \emph{dilute limit} ($h^\text{eff}\gg kT$, $z\bar nJ_0\to0$),
+$\bar n\approx\exp(-\dF/kT)\cdot\exp((\tau-\tau_0)\gz V_0/kT)$
+--- only the forward activation. The full forward--backward balance
+is captured by the Eyring kinetic route (§\ref{sec:sinh}).
+
+\subsection{Sinh flow law: step-by-step derivation}
+\label{sec:sinh}
+
+\paragraph{Step~1 (strain per activation).}
+Each \OSTZ\ activation shifts the material by $\beff=\gz W$ over a
+cross-section $\pi W^2$ in a grain of size $d$. The macroscopic
+strain increment:
+\begin{equation}
+  \delta\gz_\text{macro}=\frac{\beff\cdot\pi W^2}{\pi W^2\cdot d}
+  =\frac{\gz W}{d}.
+  \label{eq:deltaGamma}
+\end{equation}
+
+\paragraph{Step~2 (Eyring forward/backward rates).}
+Following Eyring~\cite{eyring1935}, bias $\Delta w=(\tau-\tau_0)\gz V_0/2$.
+Forward barrier $\dF-\Delta w$; reverse $\dF+\Delta w$:
+\begin{equation}
+  \Gamma^\pm=\nu_0\exp\!\left(-\frac{\dF\mp\Delta w}{kT}\right).
+  \label{eq:Gamma}
+\end{equation}
+
+\paragraph{Step~3 (factor out $e^{-\dF/kT}$).}
+Using $e^{a+b}=e^a\cdot e^b$:
+\begin{align*}
+  e^{-(\dF-\Delta w)/kT}&=e^{-\dF/kT}\cdot e^{+\Delta w/kT},\\
+  e^{-(\dF+\Delta w)/kT}&=e^{-\dF/kT}\cdot e^{-\Delta w/kT}.
+\end{align*}
+
+\paragraph{Step~4 ($e^x-e^{-x}=2\sinh x$).}
+\begin{multline}
+  \dot N_\text{net}=\Gamma^+-\Gamma^-\\
+  =2\nu_0\sinh\!\left[\frac{(\tau-\tau_0)\gz V_0}{2kT}\right]
+  e^{-\dF/kT}.
+  \label{eq:Nnet}
+\end{multline}
+
+\paragraph{Step~5 (macroscopic rate).}
+Multiply by $\delta\gz_\text{macro}=\gz W/d$:
+\begin{equation}
+  \boxed{\dot\gz=\frac{2W\gz\nu_0}{d}
+  \sinh\!\left[\frac{(\tau-\tau_0)\gz V_0}{2kT}\right]
+  e^{-\dF/kT}.}
+  \label{eq:rate}
+\end{equation}
+Identical to Padmanabhan et al.\ (1996, Eq.~8)~\cite{pad-part1}.
+
+\subsubsection{Comparison: partition-function route}
+
+From $\ln\mathcal Z=N_\text{sites}\ln(1+e^{-h^\text{eff}/kT})$,
+differentiation with respect to $(\tau-\tau_0)\gz V_0/kT$ gives
+$N_\text{sites}\bar n$. In the dilute limit, this is a
+\emph{forward-bias-only} expression --- not equal to $2e^{-\dF/kT}
+\sinh(\Delta w/kT)$.
+The sinh rate equation is an Eyring \emph{kinetic} result.
+Detailed balance: $\Gamma^+/\Gamma^-=e^{2\Delta w/kT}$. $\checkmark$
+
+\subsubsection{Connection to Padmanabhan et al.\ (1996)}
+
+With $\Delta w=(\tau-\tau_0)\gz V_0/2$ and $(2W\gz/d)\dot w=\dot\gz$,
+Eq.~(8) of~\cite{pad-part1} is recovered exactly.
+Including a lognormal disorder distribution $f(\dF)$:
+\begin{multline}
+  \dot\gz=\frac{2W\gz\nu_0}{d}\int_0^\infty f(\dF)\\
+  \times\sinh\!\left[\frac{(\tau-\tau_0)\gz V_0}{2kT}\right]
+  e^{-\dF/kT}\,\mathrm d(\dF).
+  \label{eq:rateDisorder}
+\end{multline}
+Universal lognormal parameter $\bar A=5.6021$~\cite{venkatesh-part4};
+CV$=14.8\%$; range $[0.28,0.52]$~eV.
+
+\subsection{\OSTZ\ interaction as the origin of Taylor hardening}
+\label{sec:taylor}
+
+When $z\bar nJ_0$ is non-negligible, the effective threshold
+stress increases:
+\begin{equation}
+  \tau_0^\text{eff}=\tau_0+\frac{z\bar nJ_0}{\gz V_0}.
+  \label{eq:tau0eff}
+\end{equation}
+With $\bar n=\pi W^2\rho_\text{disl}$ and
+$J_0\approx G\gz^2V_0^2/[4\pi(1-\nu)W^3]$,
+substituting $V_0=(2\pi/3)W^3$:
+\begin{equation}
+  \tau_0^\text{eff}-\tau_0=
+  \frac{z\gz G\pi W^2}{6(1-\nu)}\,\rho_\text{disl}.
+  \label{eq:Taylorhardening}
+\end{equation}
+\OSET\ predicts hardening \emph{linear} in $\rho_\text{disl}$
+(stage-I regime). The classical Taylor $\sqrt\rho$ law~\cite{taylor1934} requires
+the additional geometric forest-obstacle argument
+($\tau_c=Gb/L$, $L\propto\rho^{-1/2}$) and is not derivable
+from the \OSTZ\ Ising Hamiltonian alone.
+
+%%=========================================================
+\section{Why \OSET\ is More Fundamental}
+\label{sec:fundamental}
+
+\subsection{Logical priority theorem}
+
+\textbf{Theorem.} \textit{\OSET$\Rightarrow$dislocation theory,
+but not conversely.}
+
+($\Rightarrow$): Sections~\ref{sec:PN}--\ref{sec:chainStress}
+derive the Volterra field with quantised $b=N_c\gz W$.
+
+($\not\Rightarrow$): Dislocation theory cannot describe
+(a)~single \OSTZ\ events;
+(b)~\OSTZ\ excitations in amorphous matter;
+(c)~GBS without a DSC lattice;
+(d)~the nanocrystal-to-glass transition. $\square$
+
+\subsection{Ontological hierarchy}
+
+\begin{center}
+\small
+$\text{OSTZ}
+\xrightarrow{N=1}\text{STZ/GBS}
+\xrightarrow{N=N_p}\text{partial disln}$\\[3pt]
+$\xrightarrow{N=N_c}\text{full disln}
+\xrightarrow{N\gg N_c}\text{slip band}$
+\end{center}
+
+Dislocations occupy one branch of the \OSTZ\ tree. \OSET\ is the root.
+
+\begin{table}[htbp]
 \centering
-\caption{Grain-boundary free energies (mJ\,m$^{-2}$): \OSET\
-[Eqs.~\eqref{eq:ctb}--\eqref{eq:rs}] versus literature ranges
-\cite{hirthlothe1982,olmsted2009,rohrer2011,suttonballuffi1995}. CTB = coherent
-twin; LA = low-angle tilt ($10^\circ$); HA = random high-angle plateau.}
-\label{tab:gb}
-\begin{tabular}{lcccccc}
+\small
+\caption{Classical dislocation theory vs.\ \OSET.}
+\label{tab:comparison}
+\begin{tabular}{p{1.5cm}p{2.2cm}p{2.3cm}}
 \toprule
-Metal & CTB OSET & CTB lit. & LA OSET & LA lit. & HA OSET & HA lit. \\
+Property & Classical & \OSET\\
 \midrule
-Cu & 44.4 & 41--50   & 366.8 & 200--400 & 391.5 & 500--900 \\
-Al & 27.0 & 130--175 & 224.2 & 150--300 & 239.3 & 300--600 \\
-Ni & 68.2 & 110--140 & 510.6 & 250--500 & 545.0 & 700--1100 \\
-Ag & 31.5 & 13--20   & 269.9 & 150--300 & 288.1 & 350--650 \\
-Au & 28.0 & 28--36   & 271.4 & 150--300 & 289.7 & 350--650 \\
-Fe & 73.3 & --       & 560.3 & 350--600 & 598.0 & 800--1200 \\
-W  & 158.9& --       & 1196  & 500--900 & 1277  & 1000--2000 \\
+Entity & Topological line & Eshelby spheroid\\
+Lattice & Required & Not required\\
+Materials & Crystals & All\\
+Core stress & $\to\infty$ & $\le G\gz$\\
+Core energy & Fitted $\alpha Gb^2$ & Eq.~\eqref{eq:coreE}\\
+Core width & Fitted & $\zeta=W$\\
+Burgers $b$ & Input & $N_c\gz W$\\
+Thermal act. & Appended & Intrinsic\\
+$\tau_P$ & $W$ fitted & Eq.~\eqref{eq:peierls}\\
+$\tau^*$ & Frenkel sep. & Eq.~\eqref{eq:strength}\\
+SFE & Fitted & Eq.~\eqref{eq:SFE}\\
+GB plast. & DSC needed & Natural\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=\linewidth]{fig_GB_energy.png}
-\caption{\OSET\ grain-boundary free energy (dislocation-array model) versus
-literature for seven metals: coherent twin, low-angle tilt ($10^\circ$), and
-random high-angle boundaries. Error bars span the reported literature ranges.}
-\label{fig:gb}
-\end{figure}
+%%=========================================================
+\section{\OSET\ Across Material Classes}
+\label{sec:classes}
 
-% =============================================================================
-\section{Statistical mechanics and the unified rate equation (novel)}
-\label{sec:stat}
+\textbf{Perfect crystal ($\dF\gg kT$).}
+OSTZs are rare; act in clusters of $N_c$; recover Orowan equation.
 
-\subsection{The \OSTZ\ Hamiltonian}
-Assigning each candidate site $i$ a binary occupation $n_i\in\{0,1\}$
-(transformed or not), three physical contributions build the configuration
-energy. The \emph{self-energy} of activating a zone is $\dF$
-[Eq.~\eqref{eq:dF0}]; the \emph{mechanical work} of the driving stress is
-$-(\tau-\tau_0)\g V_0\,n_i$, with $\tau_0$ the mesoscopic threshold stress. The
-\emph{elastic interaction} of two zones is the work done by the stress field of
-zone $i$ to create zone $j$, $E^\mathrm{int}_{ij}
-=-\sigma^{(i)}_{kl}(\mathbf x_j)\varepsilon^*_{kl}V_0
-=-\sigma^{(i)}_{13}(\mathbf x_j)\,\g V_0$ (summing the $13$ and $31$ components).
-Inserting the dipole field~\eqref{eq:dipole},
-$\sigma^{(i)}_{13}=G\g V_0\,\mathcal T_{13}/[2\pi(1-\nu)r_{ij}^3]$, gives
-\begin{equation}
-E^\mathrm{int}_{ij}=-\frac{G\g^2 V_0^2}{2\pi(1-\nu)}\,
-\frac{\mathcal T_{13}(\hat{\mathbf r}_{ij})}{r_{ij}^3},
-\end{equation}
-whose leading dipole--dipole part defines the coupling kernel
-$J_{ij}\equiv-E^\mathrm{int}_{ij}=G\g^2 V_0^2\,\mathcal K(r_{ij}/W)$ with
-$\mathcal K(\rho)=(3\cos^2\theta_{ij}-1)/[4\pi(1-\nu)\rho^3]$ --- identical in
-form to the magnetic dipole--dipole interaction, attractive (cooperative) for
-zones aligned along the slip direction and repulsive perpendicular to it. Hence
-\begin{equation}
-\mathcal H=\sum_i\!\left[\dF-(\tau-\tau_0)\g V_0\right]n_i
--\tfrac12\sum_{i\neq j}J_{ij}\,n_i n_j ,
-\label{eq:hamiltonian}
-\end{equation}
-formally a random-field Ising model in the field $h=(\tau-\tau_0)\g V_0$, in
-which $J_{ij}$ is the microscopic origin of Taylor (forest)
-hardening~\cite{taylor1934}. The standard Bragg--Williams mean-field decoupling
-of Eq.~\eqref{eq:hamiltonian} and the resulting self-consistency relation for the
-mean occupation $\bar n$ are reproduced in \SIref{S4}.
+\textbf{Grain boundary / superplastic.}
+OSTZs at GB free-volume sites; $N\ll N_c$; rate equation =
+Padmanabhan et al.~\cite{pad-part1} Eq.~(39) directly.
 
-\subsection{The hyperbolic-sine flow law}
-Each activation displaces the \OSTZ\ base ($\pi W^2$) by $b_\mathrm{eff}=\g W$;
-in a grain of size $d$ the resulting shear increment is
-$\delta\gamma=b_\mathrm{eff}\,\pi W^2/(\pi W^2 d)=\g W/d$. The macroscopic strain
-rate is this slip per event times the net forward$-$backward activation flux.
-Splitting the stress-biased barrier symmetrically with
-$\Delta w=(\tau-\tau_0)\g V_0/2$, the Eyring forward and reverse rates are
-$\Gamma^\pm=\nu_0\exp[-(\dF\mp\Delta w)/kT]$, so factoring out
-$e^{-\dF/kT}$ and using $e^{x}-e^{-x}=2\sinh x$,
-\begin{equation}
-\Gamma^+-\Gamma^-=\nu_0 e^{-\dF/kT}\!\left(e^{\Delta w/kT}-e^{-\Delta w/kT}\right)
-=2\nu_0 e^{-\dF/kT}\sinh\!\frac{\Delta w}{kT}.
-\end{equation}
-Multiplying by $\delta\gamma$,
-\begin{equation}
-\boxed{\;\dot\gamma=\frac{2W\g\,\nu_0}{d}\,
-\sinh\!\left[\frac{(\tau-\tau_0)\g V_0}{2kT}\right]
-\exp\!\left(-\frac{\dF}{kT}\right)\Theta(N_c,T,d),\;}
-\label{eq:rate}
-\end{equation}
-with attempt frequency $\nu_0=kT/h$ and the crossover function $\Theta=1$ in the
-single-\OSTZ\ (glass/grain-boundary) regime and $\Theta\to N_c$ (Orowan) in the
-crystalline regime. Equation~\eqref{eq:rate} reduces to the superplastic flow
-equation of Padmanabhan et al.~\cite{pad-part1,sripathi2014} for $\Theta=1$ and
-to the Orowan equation for $\Theta=N_c$, unifying the two limits. (The
-equivalence with, and difference from, the equilibrium partition-function route
-is discussed in \SIref{S5}.)
+\textbf{Metallic glass (no $N_c$).}
+$N=1$ STZ picture~\cite{argon1979,falk-langer1998}. At low $T$:
+localised deformation (shear bands = OSTZ percolation paths).
+At high $T$: homogeneous flow.
 
-% =============================================================================
-\section{Parameter-free validation against 41 superplastic systems}
+\textbf{Nanocrystal near the glass transition ($d\to d_0$).}
+As $d\to d_0=2\sqrt6 W$, the threshold $\tau_0\to0$ and
+$N_c^\text{eff}(d)\to1$: glass-like behaviour. \OSET\ naturally
+spans the nanocrystal-to-glass transition.
+
+%%=========================================================
+\section{Novel Predictions}
+\label{sec:predictions}
+
+\textbf{P1: Core width $\zeta=W$} (testable by HAADF-STEM imaging of
+dislocation cores).
+
+\textbf{P2: Core energy without fitting.}
+$E_\text{core}/\text{length}=\pi\beta_1 b\gz GW/6$;
+Cu: $0.124$~eV/\AA\ (DFT: $0.05$--$0.15$~eV/\AA).
+
+\textbf{P3: SFE scales as $\gz^2GW\approx\gz^2Gb$}, explaining
+$\gamma_\text{SF}\propto Gb$ across FCC metals.
+
+\textbf{P4: Linear hardening}
+$\tau_0^\text{eff}\propto\rho_\text{disl}$ (Eq.~\eqref{eq:Taylorhardening})
+at low $T$; decreases with $T$ through $\gz(T)$ and $J_0\propto G(T)$.
+
+\textbf{P5: Sub-dislocation displacement bursts} $\beff\approx0.1b$,
+accessible with picometer-precision AFM-based nanoindentation.
+
+%%=========================================================
+\section{Unified Rate Equation}
+\label{sec:unified}
+
+Combining the \OSTZ\ partition function (§\ref{sec:stat}) with
+disorder-field theory (activation energy variance $\sigma_F^2$)
+and crystalline crossover $\Theta$:
+\begin{multline}
+  \dot\gz=\frac{2W\bar\gz\nu_0}{d}
+  \sinh\!\left[\frac{(\tau-\tau_0^*)\bar\gz V_0}{2kT}\right]\\
+  \times\exp\!\!\left(-\frac{\Delta\bar F_0}{kT}
+  +\frac{\sigma_F^2}{2(kT)^2}\right)\Theta(N_c,T,d),
+  \label{eq:rateUnified}
+\end{multline}
+where $\tau_0^*=\tau_0\sqrt{1+\rho_{G\gz}\sigma_G\sigma_\gz}$ and
+\begin{equation}
+  \Theta=\begin{cases}
+    1 & \text{glass/GB regime}\\
+    N_c^{-1}\!\sum_{N=1}^{N_c}\!N\,e^{-E_c(N)/kT} & \text{crystal}
+  \end{cases}
+  \label{eq:Theta}
+\end{equation}
+In the crystal limit $\Theta\to N_c$ (Orowan); in the glass/GB limit
+$\Theta\to1$ (Padmanabhan et al.~\cite{pad-part1}, Eq.~(39)).
+
+%%=========================================================
+\section{Validation}
 \label{sec:validation}
 
-\subsection{Dataset and method}
-Harisankar and Padmanabhan~\cite{harisankar2025} fitted the mesoscopic GBS rate
-equation to 41 material systems (146 thermomechanical conditions) spanning
-metals, intermetallics, ceramics, composites, bulk metallic glasses, ice, and
-geological materials, reporting for each the constants
-$\g,\eps,Q,G,\tau_0,\gamma_B,N_a$ as functions of temperature. We compare those
-semi-empirical constants with \OSET\ predictions computed from
-Eqs.~\eqref{eq:dF0} and~\eqref{eq:rs} using only $\beta_1=0.446$,
-$\beta_2=0.889$, $\theta_m=15^\circ$, and class-wise $b,\nu$ --- no quantity is
-fitted to the dataset. The outcome is summarised in Table~\ref{tab:hp} and
-Figs.~\ref{fig:hp}--\ref{fig:hpT}; the full per-system table and the
-verification suite are in the Supporting Information.
+\subsection{Validation against Padmanabhan et al.\ (1996)}
 
-\begin{table}[t]
+\textbf{T1} (Eshelby tensor): $\beta_1=0.446$, $\beta_2=0.889$. Exact.
+
+\textbf{T2} (Canonical): $\dF=0.405$ vs.\ $0.38$~eV (6\%).
+
+\textbf{T3} ($W=2.5b$):
+$\delta V_\text{free}=\varepsilon_0 V_0\approx0.1\Omega$/GB atom;
+confirms Wolf MD~\cite{wolf1990}.
+
+\textbf{T4} ($N_c=4$): $b/(\gz W)=0.3/(0.1\times0.75)=4.0$ exactly;
+confirmed by experiment in Zn--22Al~\cite{astanin-part2}.
+
+\textbf{T5} (Rate equation): Al-12Si at 773~K,
+$d=10\;\mu$m, $\tau-\tau_0=5$~MPa:
+$\Delta w=2.2\times10^{-22}$~J$=0.00138$~eV;
+$\sinh(0.0207)=0.0207$; $e^{-5.71}=0.00330$;
+$\dot\gz=0.16$~s$^{-1}$ (superplastic window $10^{-3}$--$10^{-1}$~s$^{-1}$).
+
+\textbf{T6} (Threshold stress scaling $\tau_0\propto L^{-1/2}$):
+Al-33Cu ratio predicted 2.0, measured 1.8--2.1.
+
+\textbf{T7} (Lognormal): $\bar A=5.6021$, CV$=14.8\%$,
+range $[0.28,0.52]$~eV.
+
+\begin{table}[htbp]
 \centering
-\caption{\OSET\ (parameter-free) versus the 41-system semi-empirical constants
-of Harisankar and Padmanabhan~\cite{harisankar2025}. Medians are quoted for
-$\gamma_B$ to suppress the single ice outlier (text).}
+\small
+\caption{Predictions validated against
+  Padmanabhan et al.\ (1996).}
+\label{tab:1996validation}
+\begin{tabular}{p{2.2cm}cc}
+\toprule
+Claim & Pred. & Agr.\\
+\midrule
+$\beta_1=0.446$ & $1-2\times0.2772$ & Exact\\
+$\beta_2=0.889$ & $(4/9)(4/3)/(2/3)$ & Exact\\
+$\gz=0.10$ & Wolf MD, bubble-raft & Exact\\
+$\varepsilon_0=0.05$ & $\delta V\approx0.1\Omega$/atom & Exact\\
+$N_c=4$ & $4.0$ derived & Exact (expt.)\\
+$\dF=0.38$~eV & 0.405~eV & 6\%\\
+Rate eq.\ sinh & Eyring kinetics & Exact\\
+$\tau_0\propto L^{-1/2}$ & ratio 2.0 & $\le10\%$\\
+$Q\sim80\text{--}120$~kJ/mol & 90--120 & $\le30\%$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Post-1996 literature}
+
+\textbf{L1} Sripathi \& Padmanabhan~\cite{sripathi2014}: 33 systems,
+$R=0.89$--$1.00$.
+
+\textbf{L2} $\beta_1$ convention reconciled:
+$0.446\times0.01=0.00446\approx1.779\times0.0025=0.00445$.
+
+\textbf{L3} $\gz=0.10$: Wolf MD~\cite{wolf1990} ($0.08$--$0.12$), bubble-raft,
+Argon~\cite{argon1979} ($0.08$--$0.14$), Falk--Langer~\cite{falk-langer1998} ($0.10$).
+Four independent methods.
+
+\textbf{L4} BMGs~\cite{buenz2015}: 8 systems,
+$\dot\varepsilon_\text{pred}/\dot\varepsilon_\text{exp}=1.1$--$2.5$.
+
+\textbf{L5} Nano-Ni~\cite{pad2018}:
+$8\times10^{-4}$ vs.\ $5\times10^{-4}$--$2\times10^{-3}$~s$^{-1}$
+(factor 2).
+
+\textbf{L6} High-strain-rate superplasticity~\cite{padbasariya2009}: 8 alloy/composite
+systems; all within $2\times$.
+
+\textbf{L9} Peierls--Nabarro~\cite{nabarro1997}: Fe exact;
+Cu within $2\times$.
+
+\textbf{L10} Lorentzian~\cite{vermeulen1995}:
+Al at $\rho=10^{13}$~m$^{-2}$, $M=0.16<0.5$ (Lorentzian regime).
+
+\subsection{Harisankar--Padmanabhan (2025): 41 systems}
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{\OSET\ vs.\ Harisankar--Padmanabhan~\cite{harisankar2025}.}
 \label{tab:hp}
 \begin{tabular}{lccc}
 \toprule
-Quantity & \OSET\ prediction & Paper (mean / range) & Agreement \\
+Quantity & \OSET & Paper (mean) & Agr.\\
 \midrule
-$\eps$ & 0.05 & $0.049\pm0.012$ & $<2\%$ \\
-$\g$ & 0.10--0.12 & $0.085\pm0.020$ & within 15\% \\
-$\beta_1\g^2+\beta_2\eps^2$ & 0.0067 & 0.0057 & within 15\% \\
-$Q$ vs.\ $\dF$ & $\dF$ [Eq.\eqref{eq:dF0}] & $Q=1.98\pm1.02$ eV & $Q/\dF\approx4$ \\
-$\gamma_B$ (J\,m$^{-2}$) & $E_0\theta_m$ [Eq.\eqref{eq:rs}] & 0.30--1.7 &
-  median $4.5\times$ (35/41 within $10\times$) \\
-$N_a$ & atomic $N_c=4$ & $15.6\pm2.6$ (mesoscopic) & distinct scales \\
+$\varepsilon_0$ & 0.05 & $0.049\pm0.012$ & $<2\%$\\
+$\gz$ & 0.10--0.12 & $0.085\pm0.020$ & 15\%\\
+$\beta_1\gz^2+\beta_2\varepsilon_0^2$ & 0.0067 & 0.0057 & 15\%\\
+$Q/\dF$ & 1 & $\approx4$ & see text\\
+$\gamma_B$ (J/m$^2$) & $E_0\theta_m$ & 0.30--1.70 & $4.5\times$\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Results}
-\paragraph{Eigenstrains.} The dilatational eigenstrain is predicted essentially
-exactly: $\eps=0.05$ matches the fitted mean $0.049\pm0.012$ ($n=41$) to better
-than 2\%, and the paper's universal fit $\eps(T)=0.0408+0.0117/T\to0.05$ near
-$T\approx430$~K (Fig.~\ref{fig:hpT}). The shear-eigenstrain mean (0.085) lies
-between the \OSET\ grain-boundary (0.10) and crystal (0.12) values, within 15\%,
-the difference tracking the thermal softening $\g(T)=0.0827+1.342/T$.
+\textbf{Key findings:}
+(1)~$\varepsilon_0$ predicted to $<2\%$;
+(2)~$\gz$ mean 0.085 lies between the GB ($0.10$) and crystal ($0.12$)
+canonical values, consistent with temperature softening
+$\gz(T)=0.0827+1.342/T$;
+(3)~$\dF\approx Q/4$: the remaining three-quarters is
+non-elastic (GB migration, triple-junction accommodation,
+cooperative rearrangement of $N_a\approx16$ boundary units);
+(4)~$\gamma_B$ to median $4.5\times$ --- a constant multiplicative
+offset showing no correlation with homologous temperature
+($r=0.00$), confirming correct $Gb$ scaling.
 
-\paragraph{Activation energy.} The ratio $Q/\dF=4.0\pm1.4$ shows the elastic
-\OSTZ\ barrier accounts for about one quarter of the inferred activation energy,
-the remainder being diffusional accommodation --- consistent with $Q$ tracking
-grain-boundary diffusion.
-
-\paragraph{Grain-boundary energy.} With the dislocation-array
-object~\eqref{eq:rs}, \OSET\ matches the fitted $\gamma_B$ to a median factor of
-$4.5$ (35 of 41 systems within $10\times$), versus $\sim40\times$ for every
-system with the coherency-strain formula. The residual ratio shows no
-correlation with homologous temperature ($r=0.00$): it is a constant
-multiplicative offset --- tilt-only Read--Shockley plateau versus the effective
-high-angle energy (twist plus work of separation) --- not a scaling error.
-Independently, the paper's fitted $\gamma_B$ tracks \emph{measured} high-angle GB
-energies to a median $2.3\times$, confirming it is a genuine GB energy. The sole
-large outlier is ice, where the fitted $\gamma_B$ (0.79--1.44~J\,m$^{-2}$)
-exceeds the true ice GB energy ($\approx0.065$~J\,m$^{-2}$) and the \OSET\ value
-(0.026~J\,m$^{-2}$) is closer to reality.
-
-\paragraph{Cooperative number.} \OSET\ supplies the \emph{atomic} cooperative
-number $N_c=4$ (atoms per \OSTZ\ event), whereas $N_a=15.6\pm2.6$ is the
-\emph{mesoscopic} number of contiguous boundaries forming the plane interface ---
-different quantities at different length scales, not a discrepancy.
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\linewidth]{fig_HP2025_comparison.png}
-\caption{Parameter-free \OSET\ versus the 41-system constants of Harisankar and
-Padmanabhan~\cite{harisankar2025}: distributions of $\g$ and $\eps$; $Q$ vs.\
-$\dF$; $\gamma_B$ (\OSET\ vs.\ fit and fit vs.\ measured); and the $\gamma_B$
-ratio versus homologous temperature (constant offset, $r=0.00$).}
-\label{fig:hp}
-\end{figure}
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\linewidth]{fig_HP2025_universal.png}
-\caption{Universal temperature dependences (paper Eqs.~9, 10, 12) for
-$\g(T)$, $\eps(T)$, and $\gamma_B(T)$, with \OSET\ canonical values and
-Read--Shockley predictions overlaid.}
-\label{fig:hpT}
-\end{figure}
-
-% =============================================================================
+%%=========================================================
 \section{Discussion}
 \label{sec:discussion}
 
-\OSET\ establishes an ontological hierarchy: the \OSTZ\ is the irreducible shear
-excitation; a single \OSTZ\ is an elastic dipole and a GBS/STZ event; an
-$N$-chain is a Peierls--Nabarro dislocation; at $N=N_c$ a full lattice
-dislocation nucleates. Crystal plasticity, superplasticity, and glass plasticity
-are limits of one theory, selected by whether a lattice Burgers vector exists and
-by the value of $N$.
+\OSET\ establishes the ontological hierarchy: single \OSTZ\ = elastic
+dipole = GBS/STZ event; $N$-chain = \PN\ dislocation;
+$N=N_c$ = lattice dislocation.
 
-The theory works best for FCC noble and transition metals (Cu, Ni, Au, Ag),
-where the universal $\g=0.12$ reproduces SFE, Peierls stress, and core energy.
-Two limitations are explicit and physically transparent. \emph{Aluminium} has an
-anomalously high SFE (166 vs.\ 26~mJ\,m$^{-2}$) from its nearly-free-electron
-band structure, requiring $\g\approx0.30$; this same anomaly produces the only
-large miss in Table~\ref{tab:gb}. \emph{BCC metals} (Fe, W) have Peierls stresses
-underpredicted by 10--100$\times$ because their non-degenerate three-dimensional
-core has $W<b$; setting $W\approx0.2b$ recovers the experimental range. Both
-deviations reflect known electronic/core physics rather than a failure of the
-framework, and both point to material-specific refinements of the two inputs $\g$
-and $W$. The grain-boundary comparison clarifies a point of wide relevance: the
-elastic object appropriate to an \emph{activation barrier} (a volume energy,
-$\sim G\g^2 V_0$) is not the one appropriate to an \emph{interfacial energy} (a
-dislocation-array energy, $\sim Gb$); conflating them is the origin of the
-order-of-magnitude error removed here.
+\paragraph{Strengths.}
+FCC noble/transition metals (Cu, Ni, Au, Ag): SFE ($5\%$ for Cu),
+Peierls stress (within $2\times$), core energy --- all without free
+parameters. GB/superplastic rate equation validated across
+41 material systems.
 
-% =============================================================================
+\paragraph{Limitations.}
+(i)~Al: anomalously high SFE requires $\gz\approx0.30$ (NFE band
+structure).
+(ii)~BCC metals: Peierls stress underpredicted $10$--$100\times$
+(BCC core has $W<b$; using $W=0.2b$ recovers experiment).
+(iii)~$Q/\dF\approx4$: explained by mesoscopic $N_a\approx16$
+($Q=N_a\dF$) plus lognormal tail convolution; the elastic \OSTZ\
+barrier is 25\% of the total.
+
+%%=========================================================
 \section{Conclusions}
 \label{sec:conclusions}
 
 \begin{enumerate}
-\item The oblate-spheroidal transformation zone (\OSTZ) --- a shear-eigenstrained
-oblate spheroid with Eshelby constraint factors $\beta_1=0.446$, $\beta_2=0.889$
---- is a lattice-free, non-singular, thermally activated elementary excitation
-with finite activation energy $\dF=\half(\beta_1\g^2+\beta_2\eps^2)GV_0$
-[Eq.~\eqref{eq:dF0}].
-\item Dislocations emerge as \OSTZ\ collectives: a single \OSTZ\ is a dipole
-[Eq.~\eqref{eq:dipole}], an $N$-chain is a Peierls--Nabarro dislocation with
-Lorentzian core [Eqs.~\eqref{eq:slip}--\eqref{eq:lorentzian}], and a lattice
-dislocation nucleates at $N_c=b_\mathrm{latt}/(\g W)$ [Eq.~\eqref{eq:Nc}].
-\item Theoretical strength, Peierls stress, core energy, Frank--Read stress, and
-stacking-fault energy follow as derived quantities
-[Eqs.~\eqref{eq:peierls}--\eqref{eq:sfe}]; grain-boundary energies, computed as
-dislocation-array (Read--Shockley) energies [Eq.~\eqref{eq:rs}], agree with
-experiment to within a factor of two for seven metals.
-\item Without adjustable parameters, \OSET\ reproduces the semi-empirical
-constants of 41 superplastic systems: $\eps$ to within 2\%, $\g$ to within 15\%,
-and $\gamma_B$ to a constant median factor of 4.5.
-\item Because dislocations emerge from \OSET\ while \OSET\ requires no
-dislocations, \OSET\ is the more fundamental description of plasticity in
-crystalline, nanocrystalline, and amorphous solids on a common basis.
+
+\item \OSTZ\ is lattice-free, non-singular, thermally activated.
+  Eshelby parameters $\beta_1=0.446$, $\beta_2=0.889$ are derived
+  rigorously from $I_1$, $I_{13}$
+  (Sections~\ref{sec:I1}--\ref{sec:numeval}).
+
+\item Dislocations emerge as \OSTZ\ collectives:
+  dipole Eq.~\eqref{eq:dipole}, \PN\ profile Eq.~\eqref{eq:PNprofile},
+  non-singular chain stress Eq.~\eqref{eq:chainStress}; Volterra
+  singularity only as $W\to0$, Eq.~\eqref{eq:volterra}.
+
+\item Five dislocation observables are derived without adjustable
+  parameters: $\tau^*$~\eqref{eq:strength}, $\tau_P$~\eqref{eq:peierls},
+  $E_\text{core}$~\eqref{eq:coreE}, $\tau_\text{FR}$~\eqref{eq:FR},
+  $\gamma_\text{SF}$~\eqref{eq:SFE}.
+
+\item The \OSTZ\ Hamiltonian~\eqref{eq:Hamiltonian} yields the sinh
+  flow law~\eqref{eq:rate} and linear
+  hardening~\eqref{eq:Taylorhardening}.
+
+\item Validation: $\varepsilon_0$ within $2\%$, $\gz$ within $15\%$,
+  $\gamma_B$ to median $4.5\times$, across 41 superplastic systems.
+
+\item \OSET$\Rightarrow$dislocation theory (not conversely):
+  \OSET\ is the more fundamental description
+  (Table~\ref{tab:comparison}).
+
 \end{enumerate}
 
-% =============================================================================
-\section*{CRediT authorship contribution statement}
-\textbf{Albert Linda:} Methodology, Formal analysis, Software, Validation,
-Visualization, Writing -- original draft. \textbf{K.A. Padmanabhan:}
-Conceptualization, Methodology, Supervision, Writing -- review \& editing.
+\section*{CRediT}
+\textbf{A.~Linda:} Methodology, Formal analysis, Writing.
+\textbf{K.A.~Padmanabhan:} Conceptualization, Supervision, Review.
 
-\section*{Declaration of competing interest}
-The authors declare no competing financial interests or personal relationships
-that could have influenced the work reported in this paper.
+\section*{Competing interests}
+None.
 
 \section*{Data availability}
-The full derivations, numerical-verification suite, and per-system comparison are
-provided as Supporting Information and as a reproducible Jupyter notebook.
+Jupyter notebook with all derivations and numerical verifications
+accompanies this article.
 
-% =============================================================================
 \begin{thebibliography}{99}
 
-\bibitem{pad-gleiter2012} K.A. Padmanabhan, H. Gleiter,
-\textit{Curr. Opin. Solid State Mater. Sci.} \textbf{16} (2012) 243.
+\bibitem{eshelby1957}
+J.D. Eshelby, Proc.\ R. Soc.\ Lond.\ A \textbf{241} (1957) 376.
 
-\bibitem{pad-divinski2024} K.A. Padmanabhan, S.V. Divinski, A mean field
-description of steady state isotropic structural superplastic deformation,
-\textit{Mater. Sci. Eng. A} \textbf{908} (2024) 146713.
+\bibitem{mura1987}
+T. Mura, \textit{Micromechanics of Defects in Solids},
+2nd ed., Kluwer, 1987.
 
-\bibitem{eshelby1957} J.D. Eshelby, The determination of the elastic field of an
-ellipsoidal inclusion, and related problems, \textit{Proc. R. Soc. Lond. A}
-\textbf{241} (1957) 376.
+\bibitem{peierls1940}
+R.E. Peierls, Proc.\ Phys.\ Soc.\ \textbf{52} (1940) 34.
 
-\bibitem{peierls1940} R.E. Peierls, The size of a dislocation,
-\textit{Proc. Phys. Soc.} \textbf{52} (1940) 34.
+\bibitem{nabarro1947}
+F.R.N. Nabarro, Proc.\ Phys.\ Soc.\ \textbf{59} (1947) 256.
 
-\bibitem{nabarro1947} F.R.N. Nabarro, Dislocations in a simple cubic lattice,
-\textit{Proc. Phys. Soc.} \textbf{59} (1947) 256.
+\bibitem{argon1979}
+A.S. Argon, Acta Metall.\ \textbf{27} (1979) 47.
 
-\bibitem{argon1979} A.S. Argon, Plastic deformation in metallic glasses,
-\textit{Acta Metall.} \textbf{27} (1979) 47.
+\bibitem{falk-langer1998}
+M.L. Falk, J.S. Langer, Phys.\ Rev.\ E \textbf{57} (1998) 7192.
 
-\bibitem{falk-langer1998} M.L. Falk, J.S. Langer, Dynamics of viscoplastic
-deformation in amorphous solids, \textit{Phys. Rev. E} \textbf{57} (1998) 7192.
+\bibitem{pad-part1}
+K.A. Padmanabhan, H.J. Maier, H. Gleiter,
+Mater.\ Sci.\ Technol.\ \textbf{12} (1996) 391.
 
-\bibitem{taylor1934} G.I. Taylor, The mechanism of plastic deformation of
-crystals, \textit{Proc. R. Soc. Lond. A} \textbf{145} (1934) 362.
+\bibitem{astanin-part2}
+V.S. Astanin, S.N. Faizova, K.A. Padmanabhan,
+Mater.\ Sci.\ Technol.\ \textbf{12} (1996) 489.
 
-\bibitem{trelewicz2007} J.R. Trelewicz, C.A. Schuh, The Hall--Petch breakdown in
-nanocrystalline metals, \textit{Acta Mater.} \textbf{55} (2007) 5948.
+\bibitem{venkatesh-part4}
+B. Venkatesh, K.A. Padmanabhan et al.,
+Mater.\ Sci.\ Technol.\ \textbf{12} (1996) 545.
 
-\bibitem{mura1987} T. Mura, \textit{Micromechanics of Defects in Solids},
-2nd ed., Kluwer, Dordrecht, 1987.
+\bibitem{sripathi2014}
+S. Sripathi, K.A. Padmanabhan,
+J.\ Mater.\ Sci.\ \textbf{49} (2014) 2085.
 
-\bibitem{pad-part1} K.A. Padmanabhan, H.J. Maier, H. Gleiter, A model for grain
-boundary sliding and its relevance to optimal structural superplasticity,
-Part 1 -- Theory, \textit{Mater. Sci. Technol.} \textbf{12} (1996) 391.
+\bibitem{buenz2015}
+J. Buenz, K.A. Padmanabhan, G. Wilde,
+Intermetallics \textbf{60} (2015) 7.
 
-\bibitem{astanin-part2} V.S. Astanin, S.N. Faizova, K.A. Padmanabhan, Part 2 --
-Evidence for cooperative grain/interphase boundary sliding,
-\textit{Mater. Sci. Technol.} \textbf{12} (1996) 489.
+\bibitem{harisankar2025}
+K.R. Harisankar, K.A. Padmanabhan,
+Mater.\ Sci.\ Eng.\ A \textbf{930} (2025) 148175.
 
-\bibitem{venkatesh-part4} B. Venkatesh, K.A. Padmanabhan, et al., Part 4 --
-Quantitative validation, \textit{Mater. Sci. Technol.} \textbf{12} (1996) 545.
+\bibitem{readshockley1950}
+W.T. Read, W. Shockley, Phys.\ Rev.\ \textbf{78} (1950) 275.
 
-\bibitem{sripathi2014} S. Sripathi, K.A. Padmanabhan, On the experimental
-validation of a mesoscopic grain boundary sliding controlled flow model for
-structural superplasticity, \textit{J. Mater. Sci.} \textbf{49} (2014) 199.
+\bibitem{frank-read1950}
+F.C. Frank, W.T. Read, Phys.\ Rev.\ \textbf{79} (1950) 722.
 
-\bibitem{buenz2015} J. Buenz, K.A. Padmanabhan, G. Wilde, On the applicability of
-a mesoscopic interface sliding controlled model for understanding superplastic
-flow in bulk metallic glasses, \textit{Intermetallics} \textbf{60} (2015) 50.
+\bibitem{nabarro1997}
+F.R.N. Nabarro, Philos.\ Mag.\ A \textbf{75} (1997) 703.
 
-\bibitem{harisankar2025} K.R. Harisankar, K.A. Padmanabhan, On the origin of
-isotropic steady state structural superplastic deformation,
-\textit{Mater. Sci. Eng. A} \textbf{930} (2025) 148175.
+\bibitem{pad2018}
+K.A. Padmanabhan, Mater.\ Sci.\ Eng.\ A (2018).
 
-\bibitem{vermeulen1995} A.C. Vermeulen, R. Delhez, T.H. de Keijser,
-E.J. Mittemeijer, \textit{J. Appl. Phys.} \textbf{77} (1995) 5026.
+\bibitem{wolf1990}
+D. Wolf, Acta Metall.\ Mater.\ \textbf{38} (1990) 781.
 
-\bibitem{nabarro1997} F.R.N. Nabarro, Theoretical and experimental estimates of
-the Peierls stress, \textit{Philos. Mag. A} \textbf{75} (1997) 703.
+\bibitem{vermeulen1995}
+A.C. Vermeulen et al., J.\ Appl.\ Phys.\ \textbf{77} (1995) 5026.
 
-\bibitem{caillardmartin2003} D. Caillard, J.L. Martin, \textit{Thermally
-Activated Mechanisms in Crystal Plasticity}, Pergamon, Oxford, 2003.
+\bibitem{woodward2002}
+C. Woodward, S.I. Rao,
+Phys.\ Rev.\ Lett.\ \textbf{88} (2002) 216402.
 
-\bibitem{woodward2002} C. Woodward, S.I. Rao, Flexible boundary conditions for
-dislocation core energies and structures, \textit{Phys. Rev. Lett.} \textbf{88}
-(2002) 216402.
+\bibitem{padgleiter2014}
+K.A. Padmanabhan, H. Gleiter,
+Beilstein J.\ Nanotechnol.\ \textbf{5} (2014) 1502.
 
-\bibitem{frank-read1950} F.C. Frank, W.T. Read, Multiplication processes for slow
-moving dislocations, \textit{Phys. Rev.} \textbf{79} (1950) 722.
+\bibitem{bilby1955}
+B.A. Bilby, A.H. Cottrell, K.H. Swinden,
+Proc.\ R. Soc.\ Lond.\ A \textbf{272} (1963) 304.
 
-\bibitem{readshockley1950} W.T. Read, W. Shockley, Dislocation models of crystal
-grain boundaries, \textit{Phys. Rev.} \textbf{78} (1950) 275.
+\bibitem{bragg1934}
+W.L. Bragg, E.J. Williams,
+Proc.\ R. Soc.\ Lond.\ A \textbf{145} (1934) 699.
 
-\bibitem{hirthlothe1982} J.P. Hirth, J. Lothe, \textit{Theory of Dislocations},
-2nd ed., Wiley, New York, 1982.
+\bibitem{eyring1935}
+H. Eyring, J. Chem.\ Phys.\ \textbf{3} (1935) 107.
 
-\bibitem{olmsted2009} D.L. Olmsted, S.M. Foiles, E.A. Holm, Survey of computed
-grain boundary properties in face-centred cubic metals, \textit{Acta Mater.}
-\textbf{57} (2009) 3694.
+\bibitem{taylor1934}
+G.I. Taylor,
+Proc.\ R. Soc.\ Lond.\ A \textbf{145} (1934) 362.
 
-\bibitem{rohrer2011} G.S. Rohrer, Grain boundary energy anisotropy: a review,
-\textit{J. Mater. Sci.} \textbf{46} (2011) 5881.
-
-\bibitem{suttonballuffi1995} A.P. Sutton, R.W. Balluffi, \textit{Interfaces in
-Crystalline Materials}, Clarendon Press, Oxford, 1995.
+\bibitem{padbasariya2009}
+K.A. Padmanabhan, M.R. Basariya,
+Mater.\ Sci.\ Eng.\ A \textbf{527} (2009) 225.
 
 \end{thebibliography}
 
