@@ -1,0 +1,1568 @@
+
+--- PAGE 1 ---
+MaterialsScience&EngineeringA908(2024)146713
+Contents lists available at ScienceDirect
+&
+Materials Science Engineering A
+journal homepage: www.elsevier.com/locate/msea
+A mean field description of steady state isotropic structural
+superplastic deformation
+K.A. Padmanabhana,*,1, Sergiy V. Divinskib,**
+aAnna University, Chennai and Formerly of Indian Institutes of Technology in Chennai and Kanpur, India
+bInstitute of Materials Physics, University of Munster, Wilhelm-Klemm-Str. 10, 48149, Munster, Germany
+A R T I C L E I N F O A B S T R A C T
+Keywords: A model developed previously to treat steady state isotropic superplastic deformation turned out to be of generic
+Steady-state isotropic grain boundary sliding value and relevant to many classes of materials from metallic materials, ceramics, intermetallic compounds,
+Grain boundary structure composites, bulk metallic glasses, and geological materials. The present paper demonstrates the applicability of
+Grain boundary diffusion the concept of “oblate spheroidal ensembles of atoms containing quantified excess free volume present in a
+Atom shuffling in the interfaces
+general grain boundary” to predict quantitatively the response of general, high-angle grain boundaries when
+subjected to external stimuli, e.g., an external stress, irrespective of the nature of the atomic bonds (metallic,
+ionic, or covalent) in preference to purely geometric descriptions of the grain boundary. The emergence of
+“oblate spheroids” as a response to an external stimulus is regarded in this analysis as self-organizing and a basic
+phenomenon that cuts across material classes and the nature of the chemical bonds.
+1. Introduction properties, and the phase fractions are nearly equal (both of which en-
+sures a high grain growth resistance) and the grain shape is nearly
+Steady state/stationary, isotropic, structural superplastic deforma- equiaxed. All these features favor easy grain boundary sliding [2].
+tion is manifested as at least a few hundred percent elongation in tensile The use of superplastic forming/diffusion bonding technology has
+tests at high homologous temperatures under the action of stresses suf- led to a decrease in the production cost and weight of aircraft elements
+ficiently small not to trigger dislocation activity within the fine/ultrafine and components by 30–50 %. This reduction is due to making new light-
+grains of polycrystalline superplastic materials. Cast or cast and ho- weight structures with enhanced stiffness out of superplastic materials,
+mogenized alloys of eutectic, eutectoid or polyphase compositions are along with a significant reduction in the number of component parts and
+not superplastic although in the wrought condition the same materials joints (i.e., by producing monolithic parts in view of the enormous
+exhibit significant superplastic flow, see, e.g., Pearson’s ’ tensile spec- stretchability present during superplastic deformation, which allows the
+imen elongated by 1950 %, presented as Fig. 1 (included in our book of replacement of several parts joined together earlier by welding and
+1980 [1] and since then reproduced in many other reviews by different other joining methods). The main advantages of superplastic forming
+authors). This effect of mechanical working has been attributed vari- include high formability, a low flow stress, high design flexibility,
+ously to the lamellar, dendritic, or interlocking nature of grain bound- improved consistency and interchangeability of parts, extreme shape
+aries in the cast alloys or the presence of a very large grain size (in the accuracy, absence of spring back and residual stresses, capability for
+mm range) in the as-cast state. In addition, when the grain boundaries processing difficult-to-form materials, optimal use of expensive mate-
+(GBs) are made up of only low-angle grain boundaries, at which grain rials, elimination of one half of the die through gas pressure forming.
+boundary sliding is extremely difficult, no superplastic flow is seen. In This leads to a reduction in the tooling, die, and fabrication costs,
+contrast, maximum superplastic effects are present in two- or reduction of assembly costs by reducing part counts, which, in turn,
+multi-phase materials consisting predominantly of a fine grain size, leads to weight and fuel savings in service, and improved properties like
+high-angle grain boundaries, when the phases have comparable corrosion resistance and better fatigue and fracture resistance.
+* Corresponding author.
+** Corresponding author.
+E-mail addresses: ananthaster@gmail.com (K.A. Padmanabhan), divin@wwu.de (S.V. Divinski).
+1 Present address: 7200 Kentwood Avenue, Los Angeles, CA 90045.
+https://doi.org/10.1016/j.msea.2024.146713
+Received 8 March 2024; Received in revised form 8 May 2024; Accepted 24 May 2024
+Availableonline3June2024
+0921-5093/©2024ElsevierB.V.Allrightsarereserved,includingthosefortextanddatamining,AItraining,andsimilartechnologies.
+--- PAGE 2 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+Near-random grain rotations, concomitant texture randomization
+predominantly by grain boundary sliding as a result of superplastic
+deformation even when one starts with a cold-rolled material of a highly
+preferred grain orientation, insignificant grain growth compared with
+the enormous specimen elongation, grain aspect ratio increasing from 1
+to only ~ 1.2 even after several hundreds of percent elongation have
+established that grain boundary sliding (GBS), accompanied by rather
+limited GB migration (GBM), particularly compared with the extreme
+tensile elongation, are important features that accompany this phe-
+nomenon. Steady state, isotropic structural superplastic flow is reported
+in FCC, BCC, HCP, and other crystal structures of metals and alloys,
+ceramics, intermetallic compounds, metal-based and ceramic-based
+composites, nanostructured materials, quasi-crystalline materials, bulk
+metallic glasses, and geological materials. The nature of the atomic
+bonds at the grain boundaries could be metallic, ionic, or covalent,
+resulting in a wide variation of local atomic structures in the grain
+boundaries (GBs). These observations clearly reveal that the generic
+nature of this phenomenon is not likely to be explained by specific
+interatomic interactions of a particular kind and/or purely geometric
+grain boundary descriptions [3].
+Grain boundaries are important defects of polycrystalline aggregates
+which influence and often determine a broad spectrum of material
+properties, particularly after miniaturization of parts became a domi-
+Fig. 1. The oft-cited photograph originally presented by Pearson (reproduced
+nant industrial pursuit. In the simplest case, a GB is defined by five
+with the permission of the publisher). The untested specimen is on the right.
+macroscopic parameters (axis and angle of misorientation and the GB
+plane inclination). Continuous and extensive attempts have been made
+Figs. 2 and 3 illustrate two outstanding applications of superplastic
+to classify and quantify the GB properties in terms of these parameters.
+forming and diffusion bonding technology in the aerospace industry.
+For example, based on the Read-Shockley approximation of the energy
+Common commercial superplastic alloys are Ti-, Ni- and Al-based, which
+of low-angle GBs extended by Wolf to high-angle and vicinal GBs,
+are used extensively in aerospace, medical, building construction, sur-
+Bulatov et al. established a 44-parameter fit function which is claimed to
+face, and rail transportation industries, and so on. Two new processes
+describe reasonably well the computed GB energies of FCC metals which
+were invented: post-forming hot isostatic pressing (‘rejuvenation’) to
+depend on the five macroscopic degrees of freedom. However, such ideal
+eliminate cavities, and the Rockwell-patented method of superplastic
+GBs are seldom seen in real materials, especially after they are subjected
+forming using a hydrostatic confining pressure to prevent cavity for-
+to plastic deformation or creep conditions where strong modifications
+mation during forming (Back-Pressure Forming). The latter became the
+are expected due to intricate interactions with dislocations. Even low-
+preferred method because prevention is superior to suppression. Ap-
+energy coherent twin boundaries in severe plastically deformed mate-
+plications of superplastic forming are summarized in Table 1 [3].
+rials may suddenly feature enhanced energies and diffusivities like those
+typical of general high-angle GBs in a polycrystalline material. In our
+opinion, such examples need conceptually different approaches. One
+generally classifies grain boundaries in polycrystalline materials as low-
+or high-angle GBs, twin boundaries, special boundaries, the boundaries
+with purely tilt, twist or mixed character using dislocation, coincidence,
+plane matching and/or polyhedral unit concepts. All these models –
+geometric in their essence – conceptually assume (hidden) regularities in
+the GB structures and were first confined to the 0 K case. As the grain
+boundaries are thermodynamically non-equilibrium defects, finite
+temperatures modify the GB structures and may even induce GB phase
+transformations, sometimes described in terms of complexions.
+To account for the influence of temperature and external stimuli
+(mainly mechanical ones) on the GB structures, concepts of localized
+defects of the GB structures were fruitful. While GB dislocations and
+ledges, vacancies [4] and interstitials were intensively discussed and
+analyzed in moderately deformed materials, there was also a discussion
+in terms of their delocalization, particularly in high-angle grain
+boundaries. Disconnection models were advanced to quantify the defect
+densities in general high-angle GBs.
+O.A. Kaibyshev, who founded the first and only institute dedicated
+exclusively to superplasticity research in Ufa, Russia, concluded after
+studying numerous materials of diverse nature that if suitable treat-
+ments are given to ensure the correct microstructures and in addition
+certain conducive test conditions are established, any material can be
+made structurally superplastic [5]. True to this prediction, to date, more
+than two thousand materials in different microstructural conditions
+consisting of metallic alloys of different kinds, intermetallic compounds,
+Fig. 2. Superplastically formed toroidal shape using a titanium alloy that had ceramics, metal-based and ceramic-based composites, nanostructured
+been pre-assembled using friction stir welding. Courtesy: The Boeing Company. materials, bulk metallic glasses, and geological materials have been
+2
+--- PAGE 3 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+Fig. 3. Superplastic forming-diffusion bonding process reduced 726-part details and eliminated 10,000 fasteners in the fuselage part count in the McDonnell Douglas
+“Strike Eagle” F-15 E multi-role strike fighter.
+Table 1
+Applications of superplastic forming [3].
+Application
+Scale Without requirement for surface finish With moderate requirement for surface finish With highest requirement for surface finish
+Single component Satellite components, design studies components Bodies for heavy vehicles Racing car parts, sports equipment, e.g., golf
+club heads, skates
+Small-scale Tanks, aircraft components Structures for heavy vehicles, hospital utilities, Formula cars, tourist cars
+production aircraft structures
+Medium-scale Balances, interior of automobiles, bus Facade of buildings, Luxury cars, e.g., BMW, Mercedes Benz
+production components, computer frames Truck structures, components for textile and paper
+industries
+Large-scale Fittings, profile joints, inside of seats Visible car interiors, e.g., engine cover, components Car trunk cover, hard tops of cars
+production for railway carriages
+rendered superplastic. More importantly, no negative conclusion that Superplastic flow is a special form of time-dependent creep defor-
+the phenomenon cannot be induced in any material has been drawn. mation reported in materials with ultrafine or nanostructured grain
+As the nature of interatomic bonds in superplastic materials can be sizes, wherein the microstructures are induced by special mechanical
+metallic, ionic, or covalent and the crystal structure can be FCC, BCC, and thermo-mechanical treatments. The appearance of oblate spheroids
+HCP, or any other crystalline structure of lower symmetry, it becomes comprising selected atom aggregates, containing free volume which is
+necessary to think of an approach which is independent of both crystal dependent on the GB misorientation and the nature of the atomic bonds,
+geometry and the nature of the interatomic forces. In 1948, Mott [6] located symmetrically on either side of the grain boundary that is
+conjectured that Grain Boundary Sliding (GBS) may occur by a process formed by the meeting of two grain surfaces, is sketched as Fig. 4 (a) [7].
+akin to melting. This encouraged us to confine the basic unit of defor- How deformation of such an oblate spheroid located at a GB leads to the
+mation to volumes within which one may not find any crystalline order formation of partial dislocations is displayed in Fig. 4 (b), (c) – a process
+and where any kind of regular atomic arrangements may not be that ensures a smooth transition from a continuum-based analysis to discrete
+required/possible. Then, the only way to progress deformation in such a dislocation dynamics.
+region is to conservatively or non-conservatively deform it, consistent The choice of the oblate spheroidal shape as the region of
+with the theories of continuum elastic and plastic deformation. That is, commencement of superplastic deformation owes its origin to Eshelby
+in terms of induced stresses, strains etc. And connecting the observed [8], who pointed out that when an inclusion is embedded inside a matrix
+specific features of deformation with those of the concerned material. In of a different shear modulus, (misfit) stress fields are created inside and
+other words, this is a “mean field description”. We draw here an analogy outside the inclusion. The stress fields inside the boundary of the oblate
+with “Bogolyubov excitations” of Boson condensates in superfluidity spheroid would be elliptic functions which can be easily read off tables
+research. This present paper considers our view on how mean field type and by carefully examining the homogeneous stress fields inside the
+descriptors can simplify the modeling and prediction of grain boundary oblate spheroid some useful engineering properties of the material can
+responses to external stimuli, particularly focusing on grain boundary be estimated. It is pointed out that an oblate spheroid is a special case of
+sliding. The broad appeal to the research community is highlighted by an ellipsoid in which the height is equal to half the radius. We follow
+pointing out that this is a major issue in almost all fields of materials Eshelby (and Newton earlier [9]) in assuming this shape as it makes the
+science where due to miniaturization, grain boundaries and interfaces calculations rigorous (a sphere becomes an ellipsoid when subjected to a
+dominate the properties. It is contrasted with alternative descriptions stress regardless of the size of the sphere and the magnitude and the type
+which connect geometric grain boundary descriptors to grain boundary of stress). In our treatment, the oblate spheroid, which contains more
+properties and behavior under external load. It revises and simplifies excess free volume than the rest of the grain boundary, is treated as an
+that approach and reduces the complexity of the description. The inclusion of a (lower) shear modulus and strength in view of the greater
+enormous efforts already put in and which continues to be put free volume present inside it. In other words, the concept of GB excita-
+(involving huge costs) on the geometric approach necessitates at least a tions, i.e., GB defects induced by an external stimulus, is used to describe
+serious look at this alternative view. The problem acquires paramount the performance of the grain boundary and arrive at quantitative pre-
+importance because in many physical problems, in addition to super- dictions of the material behavior. Following the traditional treatments in
+plastic deformation, such phenomena are is manifest in materials of condensed matter physics, when the actual shape of the boundary
+different crystal structures and interatomic forces that lead to the for- sliding unit is not an oblate spheroid, the irregular shape is replaced by
+mation of grain boundaries and interfaces of different kinds. an oblate spheroid using a correction factor, α f ≈1.0 [8].
+3
+--- PAGE 4 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+Fig. 4. (a) Grain boundary sliding/shear unit containing free volume (schematic) of oblate spheroidal shape, with W =grain boundary width, taken approximately to
+be equal to 2.5 a0, with a0 =atomic diameter; (b) the frontal view of the deformed oblate spheroid, indicating a basic (unit) sliding displacement, which gives rise to a shear
+strain of γ 0, which is calculated in the present model; (c) a plan view of the deformed oblate spheroid showing that a unit sliding event gives rise to a partial dislocation possessing
+a Burgers vector in a Volterra sense, which leads to a shear strain of γ 0 (=ΔW/W), where ΔW is unit sliding displacement [after 7].
+Grain Boundary Sliding is an important mechanism that is present in was examined, it became clear that high-angle grain boundaries pro-
+many phenomena, e.g., steady state, isotropic structural superplastic mote superplastic flow. Low angle grain boundaries transformed into
+deformation, severe-plastic-deformed materials, grain boundary cavitation, high angle-grain boundaries with increasing superplastic strain.
+intergranular fracture etc. We emphasize that the approach is generic and Although it was known for quite some time from bi-crystal experiments
+can, in principle, be applied to all processes where materials display a that the extent of boundary sliding is clearly greater in general/random
+phenomenon independent of their crystal structure (FCC, BCC, HCP etc.), high-angle boundaries than in low-angle as well as low sigma, albeit
+material class (metals and alloys, ceramics, metal- and ceramic-based high-angle boundaries, extrapolation of this result to interpret super-
+composites, intermetallic compounds, nanostructured materials, bulk plastic deformation in polycrystalline materials was not straightforward.
+metallic glasses, geological materials), and the nature of interatomic bonds But this point could be clarified during the development of Al–Li su-
+(metallic, ionic, covalent). perplastic alloys [2]. When the grain boundaries were of the low-angle
+In view of our several reviews of the past [1–3,7,10] and our original type, no superplastic deformation was observed, but the same alloys
+publications, see, e.g. Refs. [11–18], this paper focuses mainly on our became significantly superplastic when the grain boundaries were
+ideas, explained so far only briefly or not all and demonstrates that it is converted into the high-angle type by a modified thermomechanical
+possible to determine all the model constants unequivocally using processing route. The grain size, d, is assumed to be uniform as a
+existing experimental data and the physics-based model. description in terms of a grain size distribution will lead to a stochastic
+A geometric description of any phenomenon that cuts across crystal model.
+structure, material class and interatomic bonding characteristics seems
+unattainable in the foreseeable future. See, for example, the statement of 2. Critical experiments using GB offset measurements, TEM,
+Balluffi and his coworkers, wherein they say “believable approximations texture analysis, tensile testing, and MD simulation
+that simulate tens of millions of particles for microseconds can be per-
+formed by patient researchers with access to state-of-the-art computa- The starting assumption of our model is that the rate controlling
+tional facilities. Such calculations have been used to construct grain boundary sliding process is confined to the grain/interphase
+thermodynamic data as a foundation on which to build kinetic ap- boundary regions [11]. Deformation in the grain boundary regions is by
+proximations. However, simulations for systems with sizes and time atom shuffling through distances much smaller than interatomic dis-
+scales of technological interest do not appear feasible in any current and tance and/or dislocation/partial dislocation emission [12] – which was
+credible long-range forecast” [19]. We present a view here that an a bold anticipation of our model. This was experimentally verified only
+explanation in terms of mean field descriptors will adequately account very recently using high resolution scanning transmission electron
+for the phenomenon of steady state, isotropic, structural superplastic microscopic studies [20–22] and MD simulation [23,24] (and in the
+deformation that cuts across crystal structure, material class and nature present work, see below). Dislocation/partial dislocation emission in our
+of interatomic forces. model is regarded as due to thermal events or events taking place in a
+In our approach grain boundary sliding is treated as a two-scale barrier-free manner to maintain a near-equiaxed microstructure
+process. At the level of atomistics, the initial relative displacement of throughout the deformation. This ensures the continuity/coherence of
+one grain with respect to its neighbor along their common boundary is strain across grains. In our opinion, this model also resolves the paradox
+considered and at the next level, the development of boundary sliding to how measurable/significant grain boundary deformation (mostly by
+a mesoscopic scale (defined to be of the order of a grain diameter or grain boundary sliding) is present at temperatures where Coble and
+more) is examined. Such plane interfaces, which form simultaneously in other similar diffusion creep processes are too slow to account for the
+different regions of the deforming specimen can interconnect and lead to experimental results.
+large-scale boundary sliding, and superplastic deformation. The grain The observation of superplastic flow in nanostructured and bulk
+shape is taken as rhombic dodecahedron, believed to be the closest to the amorphous materials, ceramics, metal-as well as ceramic-based com-
+shape of real grains. The possible variations in the grain shape due to posites, intermetallic compounds, nanostructured materials, bulk
+perturbations and symmetry breaking is ignored. This is the first metallic glasses, and geological materials made our proposals more
+assumption to facilitate the development of a deterministic model over a appealing. There is overwhelming experimental evidence that grain
+stochastic one as we regard the former description as more robust/clear. boundary sliding is the dominant mechanism of deformation during
+When the nature of the grain boundaries that promotes superplastic flow superplastic flow [1–3]. There is also clear evidence for limited
+4
+--- PAGE 5 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+diffusional and dislocation activity in the vicinity of grain boundaries grain rotation. In fact, there is a prediction based on the assumption
+[5], which are accounted for in the model as due to rapid, non-rate that texture weakening in superplastic deformation is due to near-
+controlling accommodation processes. Using quantitative texture anal- random rotation (random walk) of grains because of the unbal-
+ysis, the limited dislocation activity seen using TEM was concluded as a anced GB shear stresses accompanying grain boundary sliding and
+rapid accommodation process (see below). Models based on both the that the extent of grain rotation is proportional to the square root of
+assumptions, viz., diffusion creep is rate controlling or grain boundary the applied tensile strain [15]. This prediction has been experimen-
+sliding is rate controlling, are available. We have explained elsewhere tally validated [15,17].
+why diffusion or dislocation control is not feasible/tenable, e.g., Refs. 2. In diffusional mechanisms, the grain shape change is proportional to
+[1–3,15,17]. the amount of strain imparted and in a tensile test, the grain aspect
+Earlier, this view was not acceptable to most other workers in the ratio will increase in proportion to the extent of superplastic defor-
+field, who believed that grain boundary sliding is an inherently fast mation. Such a process would be self-exhausting because the diffu-
+process, and that at no stage of superplastic deformation it could be the sion path increases with the amount of tensile strain. In contrast,
+rate controlling step [25]. Most such models for steady state structural numerous experiments have revealed that even after superplastic
+superplastic deformation are based on either dislocation or deformation by several hundred percent, the grain shape remains
+diffusion-controlled flow processes [26–28]. But superplastic flow nearly equiaxed and there is extremely limited increase in the grain
+observed in nanostructured and bulk amorphous materials made aspect ratio.
+dislocation-rate controlled mechanisms less attractive [29,30]. In 3. From a theoretical point of view (a) random grain boundary sliding
+addition, there is overwhelming experimental evidence that grain cannot cause any systematic changes in the crystal orientations and,
+boundary sliding is the dominant mechanism of deformation during consequently, that process alone cannot alter the texture. (b) In
+steady state isotropic structural superplastic flow [1,3,5,31]. There is contrast, crystal/grain rotation, which could arise because of un-
+also evidence for limited diffusional and dislocation activity (which balanced shear stresses at the grain boundaries, could weaken the
+could be non-rate controlling) in areas surrounding the grain boundaries existing texture, without changing the overall crystal orientations.
+[5]. All these points have been discussed already in detail. Therefore, dominant GB sliding (where boundary shear dominates)
+Some authors have combined the three mechanisms of GBS, dislo- coupled to accompanying grain rotations has a powerful case. (c)
+cation motion and diffusion in different proportions to predict super- Grain rotations will be absent if diffusion were rate controlling and
+plastic flow behavior. By a mathematical examination it was shown in the boundary shear stresses fall off to zero instantaneously as
+Ref. [10] that physical models based on such a hypothesis cannot ac- assumed in the different diffusion models.
+count for the sigmoidal log (stress) vs. log (strain rate) curves seen
+during superplastic flow, regardless of the proportions in which they are In Fig. (Fig. 5(a–c) [17]), the true orientation distribution function
+combined. So, the overall strain rate equation should be obtained by (ODF) plots of the “statically recrystallizing” superplastic alloys, Al
+considering other ways of combining the individual mechanisms, if at all 5456, and AA 7020 as well as the “dynamically recrystallizing” Supral
+a combination of mechanisms is considered necessary. 100 (Al–6Cu–0.4Zr) alloy, are presented. (Some superplastic alloys ac-
+Evidence for dislocation activity has been obtained using TEM [1–3]. quire an equiaxed grain size when they are heated to the deformation
+But this technique cannot reveal if dislocations seen in the grain interior temperature. These are called the “statically recrystallizing” alloys and
+contribute independently to superplastic deformation or it is just a exhibit limited initial transient flow. The others undergo significant
+dislocation emitted from a grain boundary that is traversing to the initial anisotropic superplastic deformation before steady state, isotropic
+opposite boundary. A study of the changes in the texture of a material superplastic flow sets in. These are referred to as “dynamically recrys-
+due to superplastic deformation, in contrast, can reveal this as it rep- tallizing” superplastic alloys.) The texture changes in all the three
+resents the entire deformation history of a material. Therefore, a case Al-alloys beyond the initial transient flow region (i.e., in the steady state
+exists for the suggestion that optimal superplastic flow rate is the result flow region) could be analyzed as due to the initial crystallite orientation
+of either grain boundary sliding or diffusional flow, or, if necessary, intensity decaying continuously, with a simultaneous broadening of the
+both. However, the physical description should also involve dislocation peak, with increasing superplastic strain. As required when (nearly)
+activity, albeit in a non-rate controlling manner, if the model is to be random grain/interphase boundary sliding is rate controlling, no new
+consistent with the microstructural observations concerning dis- texture peaks were introduced even after 660 % elongation of the Al
+location/partial dislocation activity in the vicinity of the grain 5456 specimen (see Fig. 5). The decay in the texture intensity with su-
+boundary. perplastic strain could be compared with the decay in the (chemical)
+One may attribute the externally observed strain rate either to a concentration with time in the diffusion (couple) problem in a
+diffusion mechanism or grain boundary sliding. Each assumption has its straightforward manner with superplastic strain replacing time and
+predictions regarding the microstructural changes that will accompany texture intensity taking the place of chemical concentration (a random
+superplastic flow. The amounts of strain contributed by each of the two walk problem) to accurately predict the changes in the texture intensity
+mechanisms to the external strain will also change with the mechanism with superplastic strain. An (approximately) square root dependence of
+selected as the rate-controlling process, if the two are regarded as a the texture intensity on superplastic strain was predicted and experi-
+coupled process. Models based on control by diffusion creep as well as mentally verified [15,17]. These observations, along with the
+grain boundary sliding are available. near-equiaxed microstructure after extreme superplastic deformation,
+In brief, we prefer GBS over diffusional models for understanding the absence of dislocation entanglement or pile ups in grain interior,
+steady state, isotropic structural superplastic deformation for the and/or the development of new textures that indicate Taylor slip
+following reasons. indicative of dislocation control, the self-exhausting nature of diffusion
+creep models and the absence of near-random grain rotation in diffusion
+1. In diffusion control, the shear stress component at the GB falls or dislocation controlled models clearly ruled out those models and
+instantaneously to zero and the normal traction supports the grain established that the experimental results provide unequivocal support to
+aggregate. In such a case, there will be no grain rotations and texture the idea that grain rotation caused by rate controlling (stress level, GB
+will not change. In particular, the experimentally observed gradual misorientation dependent) grain boundary sliding is responsible for the
+weakening of texture in a superplastic material with deformation and observation.
+the concomitant grain rotation cannot be explained. In contrast, in Many MD simulations [23,24] and some recent high-resolution
+real superplastic materials due to grain size and shape distributions, scanning transmission electron microscopic studies due to Ikuhara and
+the grain boundary shear stresses are unbalanced and can lead to others [21,22] revealed that the grain boundary deformation process
+5
+--- PAGE 6 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+Fig. 5. ODF of φ 2 =0⁰ section of (a) AA 5456, (b) AA 7020 (two “statically recrystallizing” Al-alloys), and (c) AA 2004 (a “dynamically recrystallizing” Al-alloy). The
+strain rates are indicated in each section (after [17]).
+involves only grain boundary sliding, limited grain boundary migration these later descriptions [30,35–45]. It is important to note that for un-
+(by atom shuffling in a direction normal to the grain boundary by dis- derstanding the mechanical response of materials the description of the
+tances far less than that of interatomic distance) and grain rotation. regions of misfit is of the essence because these are the regions in which
+Some of these papers have also suggested that their observations are in plastic deformation originates and then spreads through the material
+accordance with our physical descriptions (see, e.g., the two papers cited along paths of least resistance. It has been demonstrated that in
+as Refs. [32,33]). This prediction about the isotropic deformation of a high-angle grain boundaries the free volume varies only slightly with
+material of initial equiaxed microstructure has also been verified at the misorientation and that the excess volume due to the expansion present
+macro-level by testing cylindrical specimens with an equiaxed micro- in the grain boundary region is ~0.1 Ω, where Ω is the atomic volume in
+structure and random crystallographic orientation. Then, even after the lattice [45]. This finding, adopted in the present approach, one again
+several hundred percent elongation, the cylindrical shape of the spec- allows the conversion of a stochastic model of grain boundary sliding
+imen was retained [1,5,31,34]. [12] to a deterministic one, as a first order approximation, by treating
+Due to experimental limitations and insufficient statistics, it has been the excess free volume present in a high-angle grain boundary to be
+difficult to say how the structure of high-angle boundaries changed with independent of boundary misorientation by assigning a mean value for
+deformation, e.g., what happens when lattice dislocations are absorbed the excess free volume present in every basic sliding unit.
+by high-angle grain boundaries? In some cases, the dislocation images
+gradually became fainter and disappeared and this was explained in 3. Analysis
+terms of splitting of the dislocation, spreading and overlapping of
+dislocation cores. A theoretical justification was provided that when Every high-angle boundary, conducive to grain boundary sliding, is
+there is no clear long-range order, as in general high-angle boundaries divided into many atomic scale ensembles that surround free volume
+and metallic glasses, at infinite time the spread was complete, and the sites present at discrete locations characteristic of the boundary. These
+shear modulus fell off to zero at the melting temperature. It was known boundaries contribute significantly to boundary sliding and superplastic
+from the Peierls–Nabarro equation that the width of the dislocation flow, albeit at different rates, depending on the degree of openness of
+(defined by its core) becomes infinite in such a situation. To the best of their structure (a function of the grain boundary misorientation). But
+our knowledge, MD simulations provide no evidence for the glide of this has been averaged into a mean free volume for every oblate
+grain boundary dislocations along high-angle boundaries. A contrarian spheroid by using the experimental fact that in the high-angle grain
+view was also presented that in some cases a dislocation dissociates into boundaries the change in free volume due to misorientation is negli-
+DSC (displace-shift-coincide) dislocations with Burgers vectors too small gible. Therefore, only the orientation of the boundary with respect to the
+to be observable, but this idea has not been pursued. It is significant that stress direction matters. This way the influence of the stress magnitude
+all descriptions of high angle boundaries since 1977 describe the regions and the inclination of the applied stress to the grain boundary are
+of misfit in terms of a free volume. Our approach is consistent with all brought into the theoretical framework.
+6
+--- PAGE 7 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+Grain boundary sliding gives rise to an internal stress distribution long-range boundary sliding. To form the plane interface, energy must
+which will depend on the status of deformation in the vicinity of the free be spent which is supplied by the external stress. This gives rise to a long-
+volume site and therefore it will be a function of the deformation status range threshold stress that must be overcome by the external stress
+of the neighborhood as well as the elapsed time of deformation. In the before mesoscopic boundary sliding can set in. The driving force for such
+absence of an external stress, the arrangement of atoms in the basic a plane interface formation process arises from (a) the minimization of
+boundary sliding unit represents the stable equilibrium configuration, the total free energy of the deforming system, or alternatively (b) the
+Ceq. It corresponds to an absolute minimum in free energy. If it is a work done by the external stress reaching its maximum value for this
+nonequilibrium boundary, the initial arrangement of atoms in the basic configuration. These arguments are equivalent based on “the principle
+boundary sliding unit would represent one of the local minima corre- of maximum work done by the system” of G.I. Taylor or “the principle of
+sponding to many possible metastable configurations. It is assumed that minimum external work done on the system” of Bishop and Hill
+because of the presence of excess free volume in the basic boundary respectively.
+sliding unit there are atomic arrangements slightly different from Ceq, The long-range threshold stress (which is athermal in nature) that
+which correspond to metastable configurations C’. Starting from Ceq should be overcome for forming a plane interface is calculated by
+they can be reached and converted into configurations C ʹ of free energy describing the polycrystalline structure as a cubic dense packing of
+eq
+equal to Ceq by appropriate shear transformations (see Fig. 3 of [12]). equisized spheres. The walls of the Wigner–Seitz cell containing one
+sphere represent the grain boundaries. This corresponds to FCC struc-
+These assumptions have been recently verified using HR scanning TEM
+ture on a mesoscopic scale with glide planes and glide directions. Since
+by Ikuhara et al. and others [20,22]. The release of the induced shear
+the roughness is the least on the {111} planes, they are assumed to be
+component will depend, however, on the progress of shear in the vicinity
+the glide planes for long-range boundary sliding. The surface of a {111}
+of the basic boundary sliding unit. It is only after the surroundings have
+plane in the mesoscopic structure consists of a regular arrangement of
+been sheared by the same amount that the induced shear will be relaxed
+peaks and troughs whose height, h, will vary as d, the average grain size.
+completely.
+The stress–strain field that will develop when such an oblate sphe- Likewise, the ground area, A, will vary as d2, regardless of the grain
+shape. To create a plane interface, the peaks, and troughs of the meso-
+roidal shape is deformed has been determined by Eshelby. The very
+scopic {111} plane must be leveled, i.e., the grain boundary area in the
+small dimensions chosen will highly localize the stresses. As pointed out
+mesoscopic glide plane should be decreased by local boundary migra-
+earlier, the presence of free volume inside such atomic ensembles will
+tion and the grain boundary volume increased by the same amount in a
+make the basic sliding unit in the high-angle grain boundary weaker
+perpendicular direction. A 2D section of the three-dimensional micro-
+than the rest of the boundary. The average shear strain associated with a
+structure would appear as in Fig. 6(a). (This is a case of symmetry
+unit boundary sliding event when the ensemble moves from one meta-
+breaking arising from local fluctuations, grain shape irregularity etc.).
+stable position to the next has been calculated. As mentioned earlier,
+The shaded portions in Fig. 6(a) are the 2D sections of the peaks and
+each oblate spheroid will have a slightly varying excess free volume. But
+valleys that are leveled by local boundary migration for plane interface
+because of the assumption of a constant excess free volume (see above),
+formation. In Fig. 6(b), external shear stress-driven movement of a
+the unit GB sliding strain and the corresponding activation energy for
+boundary triple junction is shown. The internal stresses in the vicinity of
+the rate controlling GB shear process will be represented by the average
+values of γ
+0
+and Δ F0 respectively. With such an averaging procedure, a t
+a
+h
+to
+e
+m
+tr i
+s
+p
+h
+le
+u f
+j
+fl
+u
+i
+n
+n
+c
+g
+t i
+t
+o
+o
+n
+fi
+a
+l
+r
+l
+e
+t
+r
+h
+e
+e
+d u
+tr
+c
+i
+e
+a
+d
+n g
+b
+l
+y
+e
+t
+A
+h
+C
+e
+D
+m
+(
+ig
+th
+ra
+u
+t
+s
+i o
+s
+n
+a t
+o
+is
+f
+f
+p
+yi
+o
+n
+in
+g
+t
+H
+A
+e
+t
+r
+o
+ri
+w
+n
+a
+g
+r
+’s
+d s
+e q
+B
+u
+b
+a
+y
+-
+stochastic process is once again converted into a deterministic model.
+tion for equilibrium at a triple junction), i.e., when the semi-angle of the
+When this shear process spreads sequentially to the end of a grain
+triple junction, α, increases with increasing external shear strain. It is
+boundary, an externally measurable grain boundary sliding displace-
+easily shown that in the limit as α → 90⁰, a plane interface is formed and
+ment results. The elastic energy of the shear and volumetric distortions
+(dilatation) accompanying the unit shear, ΔF0, constitutes the activation a minimum in the free energy of the system is reached.
+Evidently, such a process is considerably easier than diffusion by
+energy for the grain boundary sliding process. A (momentary) volu-
+either Nabarro–Herring or Coble creep. The magnitude of the long-range
+metric dilatation arises because the oblate spheroid is embedded in a
+threshold stress, which should be overcome before the plane interface
+solid matrix and the configuration should go over the saddle point to
+can be formed, is calculated by an energy balance. In mechanistic terms,
+reach the next metastable configuration and [t(his )le]ads to a partial
+in the general case, the peaks and troughs are leveled by atom shuffling
+dislocation that causes a shear strain, γ 0 = Δ W W . After detailed or in combination with the non-rate controlling emission of (partial)
+dislocations from the projecting grain boundary corners in a barrier-free
+calculations (see [12,13]), the mean free energy of activation for the
+boundary sliding process, ΔF0, was estimated as manner or during a thermal event. This dislocation emission will happen
+when (a) the misfit in the local region of the (high-angle) boundary
+(cid:0) )
+ΔF0 = 1
+2
+β
+1
+γ2
+0
++β
+2
+ε2
+0
+GV0 (1) i
+c
+n
+a
+c
+ti
+r
+o
+e
+n
+as
+/
+e
+p
+s
+a r
+b
+t
+y
+ia
+a
+l
+t
+d
+o
+i
+m
+slo
+s
+c
+h
+a
+u
+ti
+f
+o
+fl
+n
+in
+(
+g
+if
+t
+t
+o
+h e
+e q
+gr
+u
+a
+a
+i
+l
+n
+t
+s
+h
+i
+e
+z e
+B
+i
+u
+s
+r
+i
+g
+n
+e
+t
+r
+h
+s
+e
+v
+n
+e
+a
+c
+n
+to
+o
+r
+m
+o
+e
+f
+t e
+a
+r
+u
+r
+n
+an
+it
+g
+d
+e
+i
+)
+s
+,
+l
+s
+o
+o
+-
+that the dislocation/partial dislocation can be emitted from specific
+where γ is the average shear strain resulting from a basic sliding event,
+0 spots in one of the two grains which together form the grain boundary
+ε 0 the corresponding dilat (cid:0) ation (cid:0) a √ l ̅ s ̅̅) tr ) ain, which according to von Mises (H. Gleiter, personal communication), and (b) the stress developed as a
+Criterion will be equal t
+(
+o γ
+0(
+/
+)
+3 ,
+)
+G is the shear modulus, V0 is the
+result of atom shuffling equals the stress necessary to trigger the emis-
+volume of the spheroid = 2 πW3 , W is the grain boundary width. sion of the dislocation/partial dislocation [12,13]. The remaining misfit,
+3
+which may not be an integral multiple of the Burgers vector of the
+For an oblate spheroid β 1 =0.944[((1.590(cid:0) p))/(1(cid:0) p)] and β 2 = (partial) dislocations, can only be eliminated by atom shuffling. These
+[4(1+p)/9(1(cid:0) p)], with p the Poisson ratio [8]. If the value of p is not predictions have been confirmed by HR TEM observations cited above.
+known, it is assumed to be (1/3)(≈0.33). The theoretically predicted plane interfaces were indeed observed
+After sliding for a length of the order of a grain diameter/side, a using TEM in both micrometer-grained (our work) and nanometer-
+triple junction is in the way, and this will terminate the relative motion grain-sized materials (ours as well as those of others) [46–51]. The
+between the grains. Thus, steric hindrance renders this kind of boundary case for our model became stronger after the demonstration of super-
+sliding rather limited. plastic flow in nanostructured materials because, to the best of our
+To produce substantial boundary sliding on a mesoscopic scale, two knowledge, in none of the MD simulation results or high-resolution TEM
+or more grain boundaries must align to form a plane interface, which by pictures corresponding to micrometer-, sub-micrometer- or
+further interconnection with other similar plane interfaces can lead to nano-grained materials presented to date there is evidence for the glide
+7
+--- PAGE 8 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+Fig. 6. (a) A 2D section of rhombic dodecahedral grains of equal size, d. Planar interfaces along XY, X’Y’, X″Y″ etc. Result if the “valleys” and “hills” present in the
+dark regions, e.g., in region ABC, move by atom shuffling that are inclined at 45⁰ to the direction of the externally applied shear stress, e.g., boundary DC will extend
+to DB by grain boundary migration; (b) This is a magnification of the process described. Shear stress-driven movement of a boundary triple junction, A (formed by the
+three boundaries AC, AD and AE). When an external shear stress, τ, is applied the internal stresses in the vicinity of the triple junction will be reduced if the triple
+junction migrates from position A towards B and the accompanying physical process of atom shuffling fills the triangular “valley” region ACD. It is shown in Ref. [16]
+that the total free energy decreases when α increases with increasing superplastic strain and reaches a minimum when α =90⁰, i.e., when a plane interface is
+formed [2].
+of grain boundary dislocations along high-angle grain boundaries during Here γ˙ is the external shear strain rate, W is the grain boundary width,
+steady state, isotropic, superplastic deformation. d is the starting/initial average grain size, γ is the unit shear strain
+0
+Using reaction rate theory and mean field approximation for the resulting from a basic sliding event, ν is the thermal vibration frequency
+(cid:0) )
+magnitudes of the shear strains and the required activation energy =1013s(cid:0)1 or (kT/h), with k the Boltzmann constant, h the Planck
+values for the shear of the oblate spheroids and the excess free volume
+present in each of the oblate spheroid, the following equations were constant, τ is the external shear stress, τ 0 is the mean mesoscopic (long-
+range) threshold stress which when overcome, the mesoscopic grain
+derived [12,13].
+[ ] [ ] [ ] boundary glide/sliding process starts, V0 is the volume of the oblate
+γ˙= 2W d γ 0 ν sinh (τ(cid:0) 2 τ k 0 T )γ 0 V0 exp (cid:0) k Δ T F0 ; τ> τ 0 (2) T sp h is e r t o h i e d , t Δ em F p 0 e i r s a t t h u e r e m o ea f n d a e c fo ti r v m at a i t o io n n e n o e n r g t y h f e o r a b g s r o ai l n u t b e o s u c n a d le a , r y G s l i i s d i t n h g e ,
+average shear modulus of the high-angle grain boundary, γ the specific
+At the low stresses present during superplastic flow, the “sin h” term B
+grain boundary energy (which is assumed to be isotropic for the present
+is approximately equal to its argument. Therefore,
+calculations), N is the number of grain boundaries that align to form the
+[ ( )] ( )
+τ 0 =G d d 1 1(cid:0) d d 0 0.5 whered0 =2x60.5W;d1 =21.5x3 (cid:0)0.75xN (cid:0)0.5x G γ α B f , m gr e o s w o t s h co e p x i p c o g n r e a n i t n . boundary glide plane and a is the dynamic grain
+All the model constants can be calculated following the computa-
+(3)
+tional procedure presented in the Appendix using the available experi-
+with α f, a form factor (≈1.0), that comes into play because the basic mental data and the values of experimental variables like test
+sliding unit is often of irregular shape and not just of an oblate sphe- temperature, initial average grain size, external strain rate, and external
+roidal shape. Eq. (3) is the inverse Hall-Petch effect, predicted by Hahn stress for copper-based superplastic alloys, and the value of G and γ B
+and Padmanabhan [14], and experimentally verified in several super- computed using MD simulation (see later) as an illustration of the
+plastic materials by different authors. effectiveness of this analysis.
+An important prediction emerges from Eq. (3) that when the average There are three constants in the equations that go beyond the
+grain size of the material is ~2.5 nm (assuming the average grain problem of steady state isotropic structural superplastic deformation.
+boundary width as 0.50 nm), the long-range threshold stress that leads They are (a) the average shear modulus of the high-angle grain
+to mesoscopic grain boundary sliding falls off to 0. The experimental boundary, G, which can be calculated in principle ab initio using the
+difficulty in preparing a material of average grain size ~2.5 nm and electron theory of materials or by MD simulation employing an assumed
+preventing grain growth throughout the deformation has not allowed interatomic potential, as done here for copper, or a regression equation
+the verification of this prediction so far. MD simulation also has not yet like the ones developed by Frost and Ashby [52] using experimental
+arrived at this conclusion. data. We prefer the former approach involving the use of MD simulation
+When d≫d0 (≈2.45nm, if W is taken as ≈0.50nm), with α f = 1.0, (see the text and the Appendix) as the latter method of Frost and Ashby
+Eq. (3) reduces to, predicts only the average value of G for bulk materials and not for the
+[ ] grain boundary region of interest. (b) The constant “a” in Eq. (4), which
+τ 0 =(2Gγ B )0.5 0 N .6 0. 2 5 0 d 4 a . (4) i d s e f a o r m m e a a t s i u o r n e . o D f e t t a h i e l e d d y a n n a a m ly ic s is g r o a f i n th g e r a o v w a t i h la p b r le e s e e x n p t e d ri u m ri e n n g t a s l u r p e e s r u p l l t a s s r t e ic -
+veals that a mean value of 0.2 for “a” best fits the experimental findings
+8
+--- PAGE 9 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+regarding several (~50) superplastic materials [1,18]. Therefore, this 4. GB defects
+value is used for further computations. (c) The specific grain boundary
+energy of a material also constitutes a separate problem. It is known In the present paper, pure copper is considered as an example. The
+from experiments that in some cases it can be a function of the orien- pictorial and numerical examples presented concern copper.
+tation of the grain boundary. In this paper, assuming an isotropic spe- The embedded atom method (EAM) type interatomic potentials
+cific grain boundary energy we have determined the specific grain developed by Mishin et al. [53] are used in our description, which were
+boundary energy of copper by MD simulation. What has been calculated extensively tested in the past for a wide range of simulations including
+in the Appendix is for copper, a metal which has FCC structure and has numerical investigation of the grain boundary structures and structure
+many isotropic properties. How the general case, where there is no transitions in pure Cu [54–56]. The basic (relaxed) structure of the tilt
+agreement on the interatomic potential and superplastic alloys are of Σ5 (310) [001] grain boundary chosen for the present study was simu-
+duplex or multiphase character should be handled is also discussed in lated following the approach of Suzuki and Mishin [55]. Two single
+the Appendix. crystals misoriented properly contacted along a grain boundary plane
+The geometric approach has a long way to go as describing the GB parallel to the x and z directions, [310] and [001], respectively, for
+structure in the presence of impurities, inclusions, other phases, dislo- which the periodic boundary conditions were applied. Free boundary
+cations etc., all of which are present in superplastic alloys, is beyond the conditions were applied along the perpendicular y direction. The system
+present-day capability of a geometrical approach. Hence the comment of energy (excluding surface and near-surface atoms) was minimized with
+Balluffi et al. quoted earlier. What has been calculated here is for copper, respect to the interatomic positions, including the relative shifts of one
+a metal which has FCC structure and has many isotropic properties. crystal with respect to another. The simulation block was chosen to be
+The model constants γ
+0
+, ε 0, τ 0, and N can be calculated from the reasonably large to incorporate ten to twenty defect regions, approxi-
+equations derived above, MD simulation and the experimental results. G mated by oblate spheroids (or disconnections), see below, and the block
+and γ
+B
+for copper are calculated using MD (see Appendix). Δ F0 and N comprised more than 50,000 atoms.
+can be estimated from the equations derived and compared with the As an example, the ground structure, i.e. of a lowest energy at 0 K for
+experimental results (see the text as well as the Appendix). the given misorientation parameters, of a very simple high-angle
+Residual Stress Distribution Resulting from Grain Boundary Sliding: boundary – a case of symmetric tilt Σ5 (301) [001] GB – is presented
+At present there is no procedure available to determine the residual in Fig. 7(a). The atomic structures are modelled using LAMMPS software
+stress distribution experimentally. Notwithstanding this fact, this prob- [57] and visualized using OVITO package [58]. The middle row i shows
+lem was theoretically addressed in 1996 [12,13] and the following re- the atoms with the value of the centro-symmetry parameter pcsm [59]
+sults were arrived at. larger than unity. The bottom row shows the free volume distribution
+Consider the deformation of a single basic unit of sliding. According determined via Voronoi tessellation. An excess free volume localized at
+to Rate Theory, the general transition frequency is given by, the GB plane is seen in Fig. 7(a), bottom row.
+ω=ν
+[
+exp
+(
+(cid:0)
+( ΔF0 (cid:0) Δw ))
+(cid:0) exp
+(
+(cid:0)
+( ΔF ʹ
+0
++Δw ))]
+. (5) of a
+G
+b
+e
+o
+n
+u
+e
+t
+r
+0
+a
+.
+l
+1
+h
+0
+i
+Ω
+gh
+(
+-
+p
+a
+e
+n
+r
+g
+a
+le
+t o
+G
+m
+B
+)
+s
+[
+a
+4
+r
+5
+e
+, 6
+kn
+0
+o
+–6
+w
+3
+n
+]
+t
+a
+o
+n
+c
+d
+o
+h
+n
+a
+ta
+v
+i
+e
+n
+n
+a
+e
+n
+g l
+e
+i
+x
+g
+c
+ib
+es
+le
+s f
+d
+r
+e
+e
+p
+e
+e
+v
+n
+o
+d
+l
+e
+u
+n
+m
+ce
+e
+kT kT
+on GB misorientation. Here Ω is the volume of an atom in the lattice. The
+Here ΔF0 and ΔF ʹ
+0
+are the activation energy for the forward and the i
+k
+d
+it
+e
+e
+a
+s
+l
+,
+G
+in
+B
+t
+s
+h
+t
+e
+ru
+g
+c
+i
+t
+v
+u
+e
+r
+n
+e c
+c
+a
+a
+n
+se ,
+b e
+F ig
+d
+.
+e c
+7
+o
+(
+m
+a)
+p
+.
+o
+E
+s
+v
+ed
+id e
+in
+n
+t
+t
+o
+ly
+s
+s
+p
+u
+e
+c
+c
+h
+ifi
+s
+c
+t r
+s
+u
+t
+c
+ru
+tu
+c
+r
+t
+e
+u
+s
+r a
+e
+l
+x
+u
+is
+n
+t
+it
+i
+s
+n
+,
+backward jumps, respectively, ν is the thermal vibration frequency, and
+computer simulations, and they were observed in high-resolution
+Δw= 1
+2
+(τγ
+0
+V0 ) (6) t
+m
+ra
+a
+n
+te
+s
+r
+m
+ia
+is
+ls
+s
+,
+i o
+p
+n
+u r
+e
+e
+l e
+t
+c
+il
+t
+t
+r o
+G
+n
+B s
+m
+w
+ic
+it
+r
+h
+o s
+e
+c
+x
+o
+a
+p
+c
+y
+t ly
+( H
+sp
+R
+e
+-T
+ci
+E
+a
+M
+l (
+)
+a n
+st
+d
+u d
+lo
+ie
+w
+s
+s
+a
+ig
+s
+m
+w
+a
+e
+)
+ll
+m
+.
+i
+I
+s
+n
+o r
+r
+ie
+e
+n
+a
+-
+l
+tation and a plane interface over relatively large area are exceptions, not
+represents the work done by the shear component of the applied
+a rule.
+stress along the activation path leading to the saddle point. This work is
+External stimuli, e.g. temperature, plastic deformation, etc., give rise
+gained when the jump is in the forward direction and expended when
+to incorporation of various defects to the original (ideal) GB structure.
+the jump is in the backward direction.
+Disconnections/steps were introduced as GB defects [64] which were
+Evidently,ΔF ʹ 0 =ΔF0 (cid:0) ΔFi , (7) argued to play an important role in, e.g., GB migration [65,66]. Such a
+defect is schematically shown in Fig. 7(b), and it is characterized by a
+where ΔFi is the free energy of activation in the backward direction.
+height
+→
+h and Burger’s vector
+→
+b. The centro-symmetry parameter
+At high temperatures and stresses, as encountered during super-
+mapping clearly shows the changes of the GB structure which are
+plastic deformation, ΔFi ≪kT and Δw≪kT. After some calculations, one
+localized at the GB step. Such defects may contain a shear component,
+gets, →
+( ) b ∕=0, and correspond to localization of excess free volume, Fig. 7(b),
+γ˙= ω 0W
+kT
+γ
+d
+0 V0 f(τʹ),whereτʹ=(τ(cid:0) τ
+0
+) bott
+O
+o
+n
+m
+t
+r
+h
+o
+e
+w .
+o ther hand, an increase of temperature may induce GB
+As in similar problems in condensed matter physics, if it is assumed structure transformation [56] and a new line type defect, indicated in
+that the residual stress distribution is lognormal in character, one can Fig. 7(c), will appear which delimits the two GB phases [67]. Such a
+obtain that, defect is seen both via the centro-symmetry parameter and Voronoi
+[ ]( ( ) ) (
+f(τʹ) = τʹ 1 2 + λπ 1 0.5 ln τ τ m ʹ (cid:0) 1 + λπ τ 0 ʹ 1.5 , where τʹ 1 = τ mexp (cid:0) c G o B n s s t t r r u u c c t t u io r n e , s F w ig e . r e 7 ( e c x ) p . e L r i i n m e e d n e t f a e l c l t y s , o e b . s g e . r , v b e e d tw u e s e in n g p H ea R r - l T a E n M d d fo o r m C i u n o Σ - 1 li 9 k b e
+( ))
+[11_1] tilt boundaries [68]. Such an observation involving a complexion
+λπ 2 0.5 , with τ m and λ the mean and the standard deviation of the cannot be accounted for by a disconnection, though the phase junctions
+might exert forces which would resemble those from dislocation defects
+residual lognormal stress distribution that results from the grain
+[69].
+boundary sliding process.
+These and similar GB defects defined in the past were inspired by
+A verification of this prediction using, e.g., say, x-ray techniques,
+purely geometric constructions and are primarily observable in special
+could be a very good test and a further vindication for the model.
+GBs with well-defined atomic structures. As far as a general high-angle
+GB is concerned, it becomes involved to find and localize regularities
+(GB defect) in progressively more refined and complicated GB
+9
+--- PAGE 10 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+Fig. 7. Upper row: An ideal Σ5 (310) [001] GB with superimposed kite structures (a) and its modifications with a disconnection/step which is characterized by the
+→ →
+height h and the Burgers vector b (b), a line defect delimiting the distinct GB phases (c) and induced (shared) oblate spheroids (d). Middle row: Only atoms with the
+centro-symmetry parameter larger than one, i.e. strongly different from that for ideal FCC lattice, are shown. Bottom row: Voronoi construction with free volume
+shown in black.
+structures. On the other hand, the existence of structural superplastic which the top half of the oblate spheroid shears with respect to the
+flow, which is based on GB sliding and has been reported in FCC, BCC, bottom half, and such shears are essentially independent of each other.
+HCP, and other crystal structures of metals and alloys, ceramics, inter- The resulting atomic structures are visualized via centro-symmetry
+metallic compounds, metal-based and ceramic-based composites, parameter (middle row) and the Voronoi constructions (bottom row).
+nanostructured materials, quasi-crystalline materials, bulk metallic Moreover, it has been shown that deformation of the oblate spheroid
+glasses, and geological materials [1,5], requires an alternative expla- gives rise to (partial) dislocations in the Volterra sense [73], using which
+nation, primarily in view of the generic nature of the observations. The the residual stress distribution around the deforming oblate spheroids
+nature of the atomic bonds at the grain boundaries could be metallic, can be estimated [7].
+ionic, or covalent, resulting in a wide variation of local atomic structures Fig. 7 suggests that even atomically resolved GB structures cannot be
+in the GBs [1,3,5,17,31]. The observation of superplastic flow across all unambiguously used to distinguish GB defects, especially in the case of
+these material classes clearly reveal that the generic nature of this general high-angle GBs. A generic, in fact, a mean-field description is
+phenomenon is not likely to be explained by specific interatomic in- more attractive and even provides predictive power. Yet another factor
+teractions of a particular kind and/or purely geometric grain boundary in its favor is that to define an oblate spheroid, there is no need for any
+descriptions. An atomic ensemble of very small volume around a free well-defined long-range order to be present at the general high-angle
+volume site was suggested [12] as the basic unit of grain boundary boundary – as is well known, a reliable experimental observation of
+sliding, Fig. 7(d). well-defined long-range in high-angle boundaries is missing.
+Fig. 7(b) shows a disconnection that separates two parts of the The mean-field theory says that the response of GBs to external stimuli
+boundary with different atomic structures. To the best of our knowledge, can be described in terms of excitations. But the question remains as to
+this type of disconnection, which represents a glissile GB dislocation the density and distribution of these excitations. This is probably
+with a step, has never been considered theoretically or observed boundary specific (and depends on crystal structure, bond type, etc.).
+experimentally. In fact, it can be defined as a partial disconnection, the But this problem is overcome by the assumption that in high-angle
+mobility of which seems questionable. However, the physical meaning boundaries, the effect of orientation on the free volume present in a
+of glissile disconnections is clear that it is to preserve GB structure GB is negligible. Moreover, in the model grain boundary sliding in an
+during motion of the former. It appears that it is much easier to join individual boundary progresses sequentially by GB shear and covers the
+different GB structures without disconnections, as shown in Fig. 7 (c) whole boundary in due course. Such an assumption is valid so long as the
+and (d). Such a construction is possible for general boundaries exhibit- oblate spheroids maintain their individuality and do not merge/overlap.
+ing multiplicity of grain boundary structures. A well relaxed low-sigma GB provides large resistance against external
+As pointed out earlier, for quantitative calculations, the basic unit is stimuli and a higher density of “spheroids” must be incorporated to
+assumed to be symmetrically located equally on either side of the grain provide sliding. In contrast, an incommensurate GB probably contains
+bound(ary) and is assumed to be of an oblate spheroid shape of volume, such elements inherently and the activation barrier is small.
+V0 = 2
+3
+πW3, where W is the width of the grain boundary (about 2–3
+5. Atomic insights into GBs
+atomic diameters. Such an assumption is supported by atom probe to-
+mography [70], high-resolution transmission electron microscopy [71] Recently, atomic-scale experimental evidence for the GBS and GBM
+or GB diffusion measurements [72]). processes were presented utilizing in situ high-resolution scanning
+In Fig. 7(d), the basic units of flow undergo shear transformations, in transmission electron microscopy [20,21]. Wang et al. [21] observed
+10
+--- PAGE 11 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+using FCC Pt thin foils either pure GB sliding, or GB sliding, coupled with although it is directly relevant to orthotropic, homogeneous materials,
+limited GB migration. In the case of the latter process a local volume we stick with the von Mises yield criterion because it does not require
+compression around an atom column led to its elimination. Simulta- the use of any ad hoc, empirical constants. Using the simulation results
+neously, a local volume expansion around a neighboring atom column of Neier et al. [24] one can estimate the activation energy of GB sliding.
+transferred it to a top core unit. A GB sliding process accompanied by Here pure Cu is considered as an example. Neier et al. [24] imposed a
+atomic plane transfer process by atomic shear displacements of dimen- shear strain γ of 0.1 on the oblate spheroid at a Cu Σ41 grain boundary
+0
+sion far less than inter-atomic spacing inside the crystal lattice is (chosen as representative of a general/high-angle GB) to calculate the
+distinctly different from Coble creep. These findings explain how GB GB shear modulus, G, as equal to 24 GPa and the GB energy γ was
+B
+sliding accompanied by very limited local GB migration can proceed at determined to be equal to 0.72 J/m2. (Actually, in that paper, an excess
+relatively low temperatures. In contrast, Wei et al. [20], who examined free volume of 12 % was introduced into the GB region in excess of the
+Σ7 and Σ31 grain boundaries (who considered the latter akin to general relaxed condition, which works out as a linear stra(in) of (0.25/3) inside
+grain boundaries) of HCP α-Al2O3, did not observe any disconnections.
+the oblate spheroid (anoblatespheroidalvolume = 2 πW3). This value
+Further, for general GBs, the GB went through several meta-stable GB 3
+structures with similar GB energies during GB sliding and migration. of the unit shear strain for basic GB sliding allows one to estimate the
+This was predicted in our model in 1996 [12]. It has been frequently activation energy ΔF0 of GBS (Eq. (1)) as ΔF0 =65.2kJ/mol.
+pointed out that the scaling of strength with grain size described by the So far, only activation energies for diffusion of different kinds, e.g.,
+Hall-Petch relationship breaks down in FCC metals and leads to weak- GB diffusion, lattice diffusion/self-diffusion, dislocation pipe diffusion,
+ening of the material with continued grain refinement (the inverse have been measured experimentally [83]. There are no methods found
+Hall-Petch relation) when the grain size is in the range of 12–15 nm in the literature for determining the activation energy for grain
+[74–76]. This effect is predicted by our model (see, e.g., Ref. [14]). boundary sliding. Our model [13,18] provides a theoretical route to
+Using MD simulation, the authors [23] studied grain boundary sliding in determine the activation energy for Grain Boundary Sliding.
+SmCo5 and the range of grain size employed was 5–65 nm. This material Evidently, this GBS mechanism can operate at lower temperatures at
+has high-energy barriers for dislocation nucleation and motion. In which GB diffusion, as in Coble creep, is limited. Still, the value esti-
+general, suppressing dislocation activity leads to brittleness in poly- mated for pure Cu, ΔF0 =65.2kJ/mol, does not strongly deviate from
+crystalline coarse-grained materials. But they show that the interme- the activation energy of GB self-diffusion in Cu. In fact, the activation
+tallic studied by them can withstand large plastic strain (~18 %) by just energies of Cu self-diffusion were reported as about 72.5kJ/mol. and
+GBS (atom shuffling) without the help of dislocations. This observation 84.8kJ/mol. for 6 N and 5N9 pure polycrystalline Cu [84] or
+is easily explained by our model. 88.8kJ/mol.2 The exact value of ΔF0 depends strongly on the approxi-
+Evidently the correlations between the theoretical proposals con- mations used both for the unit shear and excess free volume related to
+cerning structural superplastic deformation and the experimental the oblate spheroids and their distribution, i.e. the number of spheroids
+atomic scale scanning transmission electron microscopic observations per unit area. The numerical agreement of the activation energies of GBS
+and the MD simulations summarized above are excellent. Apropos of the and GB self-diffusion in this case may be a pure coincidence, but this
+MD simulation and the atomic scale TEM studies, it should be possible, point requires further discussion.
+by a frame-by-frame examination, to study the regions where GB sliding It is once again pointed out that the rate-controlling process during
+commences, along with the atomic arrangement in such locations to steady state isotropic structural superplastic deformation is assumed to
+check whether they contain excess free volume (compared with the be confined to the grain/interphase boundary regions and that atom
+crystal lattice) or not. This is another prediction that needs experimental shuffling parallel and perpendicular to the grain boundary ensures the
+verification. Another question should concern GB sliding when it gets continuity of strain across grains and coherence of deformation [7,12,
+blocked by a grain boundary obstacle, e.g., a triple junction. Accom- 13,16]. These suggestions concur with the very recent HR TEM obser-
+modation at triple junctions in the present model has been considered in vations and MD simulation results [20–24].
+detail in Ref. [16] using Herring’s analysis for equilibrium at an inter-
+section of three boundaries as the starting point, see also Fig. 3 in
+7. Oblate spheroids as elemental excitations for steady state GBs
+Ref. [16]. The model includes the details of the atom movements both
+normal (migration) and parallel (sliding) to the grain boundary in the
+A question arises if it is possible or desirable to describe the atom
+vicinity of the triple junctions and these theoretical descriptions are akin
+configurations inside the oblate spheroids in crystallographic terms. It
+to what are seen experimentally. A detailed comparison will be helpful.
+could be said that the basic/unit shear volume (the oblate spheroid) has
+been taken to be so small that its shear gives rise to a partial dislocation
+6. Activation energy of GB sliding
+in the Volterra [73] framework. Chemical complexity can complicate
+the description of GB structures further. A discussion of this last aspect
+An analysis of steady-state superplastic flow resulted in the expres-
+has been postponed to a future investigation.
+sion for the shear strain rate γ˙, presented here as Eq. (2). The activation
+As observed by Wei et al. [22], migration of a general grain boundary
+energy equation is presented as Eq. (1).
+results in the formation of several metastable phases in the GB and there
+Von Mises yield criterion [77] has been used for the present calcu-
+are no other atomic scale processes observed other than localized atomic
+lations. It should be noted that when this argument is applied to an
+scale shears and atom shuffling by distances significantly less than
+oblate spheroid embedded inside a crystal lattice, in certain locations
+interatomic spacing in the lattice on either side of the GB plane. External
+inside the oblate spheroid there is a dilatation because of the discrete
+stimulus (e.g., applied shear stress during plastic deformation) leads to a
+positions occupied by the individual atoms and the need for the atoms in
+transformation of GB structure, which, in our opinion, can be under-
+one half of the oblate spheroid to go past the saddle point of its atom
+stood without invoking any notions derived from crystallography about
+neighbors to its next metastable configuration. When one applies the
+the structure inside the oblate spheroids postulated in the analysis. The
+concepts of elasticity to such a structure, there could be a role for hy-
+drostatic pressure in the deformation process. Therefore, in our papers
+[78,79] we compared the predictions based on the Mises criterion with 2 There is an important comment on the latter value in the work of Surholt
+those based on the Mohr-Coulomb yielding theory [80] and showed that
+and Herzig [84]. In his evaluations, Gupta [85] used the volume diffusion data
+there is very little change in the predictions. One could also use other yield of Rothman and Peterson [86]. If more reliable data of Maier [87] are used, one
+criteria that propose anisotropic yield behavior, e.g., arrives at the activation energy of Cu GB self-diffusion of 80.9 kJ/mol that
+Gurson-Tetelman-Rice criterion [81,82]. In the present calculations, agrees with the data of Surholt and Herzig [84].
+11
+--- PAGE 12 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+HRTEM observations of Wei et al. [22] that (shear deformation and) describe the response to an external stimulus, we introduce “oblate
+migration along a general GB proceeds by the formation of metastable spheroids” containing free volume as excitations present in the GB and
+configurations/ensembles of atoms of similar free energy are clearly do not consider the individual defects (in crystallographic terms) and
+anticipated/predicted in our model, see Fig. 3 of [12]. Consider a their interactions. As already mentioned, so long as these oblate spher-
+geometrically perfect GB. Formation, propagation, and evolution of any oids are non-interacting, this assumption will be valid. The defect den-
+type of a GB defect (step, disconnection, etc.) can be followed. One may sity depends on the specimen dimensions, and it increases with
+construct atomically resolved strains and see local dilatations and shears increasing specimen dimensions/volume. In a mathematical develop-
+and their attribution to a defect (confined to a single defect). In the real ment, the response of an oblate spheroid over a distance on a mesoscopic
+situation, however, complex (general or random) GBs determine the scale is assumed to be equal to that of the whole by treating it as a
+response of polycrystalline materials used for technological representative volume element.
+applications. In contrast, in the existing approaches, GB sliding is assumed to be an
+One may try to describe even such real GBs in term of a huge density inherently fast process and is reduced to a process rate controlled by either
+of the defects introduced and with enormous time and effort, one may diffusional or dislocation motion. As regards GB migration, irretrievably
+also find a description accounting for some density of GB steps, GB linked to grain growth, it is explained in terms of the action of capillary
+dislocations, GB disconnections, synthetic/artificial structural units, forces and the boundary sweeping into regions of high dislocation
+nano-facets, and so on. But this approach fails since even when one density etc. As is well known, grain growth is an unsolved problem in
+knows “everything”, one cannot predict the GB response in view of the open literature.
+complexity.
+Alternatively, we may use a kind of a mean-field description (as done 8. Concluding comments
+here) and consider the initial structure (of any atom cluster of some
+complexity) as the ground state. An external stimulus (e.g., shear stress; Geometrical models of GBs are useful for teaching and visualization
+it could also be temperature, entry of foreign atoms, a precipitate etc.) of basic ideas (structural units, defects, GB dislocations, disconnections
+introduces new kinds of localized excitations, which in the model for etc.). But, in our opinion, they meet with problems while predicting the
+superplastic deformation are referred to as “oblate spheroids” contain- macroscopic behavior of real interfaces. On an atomic scale one may
+ing quantified excess free volume. These carry the mechanical response even follow GB sliding and migration in terms of formation of kinks
+of the complex boundary. And interaction of the millions of the (disconnections, steps, facets, etc.) and their propagation so long as one
+geometrical defects can be neatly represented as the final density of confines oneself to low sigma or vicinal boundaries. However, these
+well-determined excitations which define the mechanical response of sketches cannot be generalized to describe the macroscopic deformation
+the GB, i.e., the oblate spheroids containing free volume present in the modes and what is more important – they cannot be extended to cover
+GBs. These excitations are characterized by local shears and dilatations large scale deformation quantitatively in a representative manner.
+(not atomistically resolved but defined on a nanoscale). In other words, It is found that throughout nature, simple elements self-organize and
+these excitations, i.e., formation of “oblate spheroids” containing free unexpectedly complex behavior can emerge - the so called phenomenon
+volume, are regarded by us as the response of any GB structure which of “emergence” [89]. What is discussed here is one such example.
+experiences a stress/GB sliding. S.D. acknowledges partial financial support from the Deutsche For-
+In an initial state, the oblate spheroids may (or may not) be identified schungsgemeinschaft (DFG) via the research project DI 1419/19–1.
+as “fertile” configurations to carry plastic deformation. Still, since we are
+interested in the process of GB sliding in a stationary/steady state, it is CRediT authorship contribution statement
+safe to consider the oblate spheroids as excitations (in analogy with the
+Bogolyubov excitations [88] proposed for the interacting bosons) in an K.A. Padmanabhan: Writing – review & editing, Writing – original
+ensemble of atoms. These excitations probably do not have specific draft, Methodology, Investigation, Formal analysis, Data curation,
+atomistic structure describable in crystallographic terms – since they are Conceptualization. Sergiy V. Divinski: Writing – review & editing,
+of a generic nature applicable to different classes of materials displaying Investigation, Formal analysis, Data curation.
+different types of interatomic bonds – but are always characterized by
+elastic strain/stress fields. Since these excitations carry a mechanical Declaration of competing interest
+response, they are well-defined objects. It is already shown how such a
+description can be further developed in terms of reaction rate theory The authors declare that they have no known competing financial
+based rigorously on statistical mechanics [3,7,12,14,16]. interests or personal relationships that could have appeared to influence
+Thus, one need not look for atomistically defined defects in the GBs the work reported in this paper.
+or find a one-to-one correspondence with “an oblate spheroid” and, e.g.,
+“a disconnection”. But, the distributions of the excitations, elastic fields Data availability
+around them and their contribution to grain boundary sliding are the
+important entities/quantities to be quantified. In other words, to Data will be made available on request.
+APPENDIX
+In this Appendix, written in collaboration with Arsath Abbas Ali Ayub Ali it is demonstrated that the phenomenon of steady state, isotropic,
+structural superplastic deformation in a superplastic copper alloy can be understood starting from molecular dynamics in a hybrid manner using some
+already available experimental data and MD simulation results. It is further suggested that what is advocated in the paper is a generic method and the
+case analyzed here is just an example.
+It is recalled that the governing equations of the model [7,12,14,16,18] are,
+[ ] ( )
+γ˙= 2W d γ 0 ν sinh (τ(cid:0) τ k 0 T )γ 0 V0 exp (cid:0) k Δ T F0 ; τ >τ 0 (A.1)
+γ˙=0whenτ≤0 (A.2)
+12
+--- PAGE 13 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+( )
+1 (cid:0) ) γ
+ΔF0 = 2 β 1 γ2 0 +β 2 ε2 0 GV0 ; ε 0 = 30 0 .5 (vonMisesyieldingisassumed). (A.3)
+[ ]
+τ 0 =(2Gγ B )0.5 0 N .6 0 2 .5 0 d 4 a (A.4)
+Here, the basic sliding unit is assumed to be of oblate spheroidal shape with an equatorial diameter equal to 5.0 a0, where a0 is the diameter of the
+major constituent element in the material under consideration and W, the grain boundary thickness (=2.5 a0). It is well known that both static and
+dynamic grain growth is present during steady state isotropic structural superplastic deformation because superplastic deformation at high tem-
+peratures takes place over a considerable length of time. Grain growth in materials, including superplastic materials, is an unsolved problem. By
+examining nearly 50 superplastic materials of different kinds and interatomic bond types, in Ref. [18] the average grain growth exponent, a, in Eq.
+(A.4) was estimated as 0.20.
+It has already been shown elsewhere that the results do not change significantly if other yield criteria, e.g., Mohr-Coulomb, are used or the value of
+ν =(kT/h), with h the Planck constant, is used instead of ν=1013s(cid:0)1 [18,78,79].
+Neir et al. [24], have computed that for copper G =24 GPa and γ =0.72 J m2 (see the main text for details). The data of Shei and Langdon [90]
+B
+were used. In Eq. (A.3) all values other than γ
+0
+(=√3. ε 0) are known. Therefore, the latter values also can be calculated for the 7 combinations of grain
+size and temperature from the already calculated Δ F0 values (using Eq. (A.3)). Then, in Eq. (2) all values other than τ 0 are known and the best fit
+values of τ 0 at different temperatures and grain sizes of a copper-based superplastic alloy are calculated by the method of least squares. In Eq. (A.4) all
+values other than N are known. Thus, the value of N as a function of grain size and temperature can also be easily obtained. From these values, the
+mean values of γ
+0
+, ε 0, τ 0, G, γ
+B
+, ΔF0, a and N can be calculated. Using these values in Equations (A.1), (A.3), (A.4), the predicted strain rates can be
+calculated and compared with the experimental results. The results reveal that the predictions are very accurate. Please see Tables A.1, A.2 and A.3
+and Fig. A1. In calculations of this kind, the fits are excellent if the predictions are within an order of magnitude of the experimental values. In this case
+it is seen that the predictions are extremely close – in fact, within a factor of 2 – see the Tables and Fig. A2, A3.
+Table A 1
+The predicted values of the model constants, corresponding to different temperatures and grain sizes.
+( )
+S. No Min. Stress (expt.) used. MPa Grain size, d,μm Temp., K γ 0 ε 0 (=γ 0 /(√3)) τ 0, MPa G (GPa) ΔF0 KJ.mol (cid:0)1 a γ J B .m (cid:0)2 N
+1 31.95 7 723 0.1443 0.0833 12.71 24 174.23 0.20 0.72 3.9
+2 17.88 773 0.1454 0.0839 9.32 176.41 5.3
+3 10.79 823 0.1465 0.0846 5.18 178.75 7.9
+4 8.08 873 0.1472 0.0850 3.21 180.12 11.2
+5 28.59 3 673 0.1387 0.0801 11.41 162.95 4.3
+6 18.19 723 0.1398 0.0807 8.25 165.21 7.29
+7 13.97 773 0.1420 0.0820 6.33 169.52 9.12
+Mean Values 0.1434 0.0828 8.05 172.45 7.001
+Table A 2
+Average starting grain size =3μm. The experimental and predicted γ values are presented below.
+Temp 673 723 773
+S. No Expt. γ˙ Pred. γ˙ Expt. γ˙ Pred. γ˙ Expt. γ˙ Pred. γ˙
+1 5.28E-06 4.89E-06 5.18E-06 4.46E-06 5.40E-06 4.89E-06
+2 1.13E-05 1.03E-05 1.26E-05 1.16E-05 1.21E-05 1.10E-05
+3 2.36E-05 2.05E-05 1.26E-05 1.11E-05 2.56E-05 2.38E-05
+4 5.37E-05 4.61E-05 2.56E-05 2.35E-05 2.56E-05 2.31E-05
+5 2.56E-05 2.20E-05 5.37E-05 4.86E-05
+6 5.14E-05 4.38E-05 5.37E-05 4.93E-05
+7 5.14E-05 4.73E-05 1.30E-04 1.19E-04
+8 2.79E-04 2.40E-04 2.67E-04 2.36E-04
+9 2.84E-04 2.54E-04
+10 6.08E-04 5.56E-04
+Table A 3
+Average starting grain size =7μm. The experimental and predicted γ˙ values are presented below.
+S. No 723 773 823 873
+Expt. γ˙ Pred. γ˙ Expt. γ˙ Pred. γ˙ Expt. γ˙ Pred. γ˙ Expt. γ˙ Pred. γ˙
+1 5.63E-06 5.24E-06 5.51E-06 4.66E-06 5.99E-06 5.24E-06 5.75E-06 4.91E-06
+2 1.43E-05 1.34E-05 1.40E-05 1.24E-05 5.89E-06 5.39E-06 1.49E-05 1.35E-05
+3 1.43E-05 1.26E-05 1.43E-05 1.28E-05 1.43E-05 1.29E-05 2.91E-05 2.48E-05
+4 2.62E-05 2.33E-05 2.96E-05 2.61E-05 2.91E-05 2.53E-05 6.01E-05 5.15E-05
+5 2.74E-05 2.49E-05 2.96E-05 2.47E-05 2.91E-05 2.54E-05 1.41E-04 1.26E-04
+(continued on next page)
+13
+--- PAGE 14 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+Table A 3 (continued)
+S. No 723 773 823 873
+Expt. γ˙ Pred. γ˙ Expt. γ˙ Pred. γ˙ Expt. γ˙ Pred. γ˙ Expt. γ˙ Pred. γ˙
+6 5.42E-05 4.61E-05 4.88E-05 4.31E-05 5.65E-05 5.24E-05 3.10E-04 2.74E-04
+7 5.09E-05 4.43E-05 1.38E-04 1.23E-04 1.35E-04 1.25E-04 6.17E-04 5.35E-04
+8 8.04E-05 7.48E-05 1.35E-04 1.15E-04 2.86E-04 2.53E-04 1.60E-03 1.41E-03
+2.79E-04 2.44E-04 5.54E-04 5.01E-04
+Fig. A 1. Comparison between the experimental and the predicted strain rates of a copper-based superplastic alloy tested at different temperatures: (a) 7μm,and (b)
+3μm, respectively. (The points represent the experimental measurements [90]and the full lines represent the predicted values.)
+What has been provided here is a hybrid solution. G and γ values were obtained by MD simulation. The other constants were obtained using the
+B
+model equations. The grain growth exponent was obtained in an earlier paper [18] from already published experimental results concerning nearly 50
+superplastic materials of different classes and different interatomic bond types.
+The major hurdles to be crossed if one persists with a geometric modeling approach are: Considering that the interatomic potential changes with
+every alloy addition, impurity present etc. Here in the calculations it is assumed that the potential for Cu can be used for all Cu-alloys. It is unlikely to
+be true although earlier, Frost and Ashby [52] assumed the same G value for all the alloys that have the same major constituent. While this may be
+valid for the G and γ values, whether it will be true for the activation energy and the other flow characteristics is not clear. If this is not true, the
+B
+calculations will have to be redone. There are already over 2000 material conditions of widely varying complexity in which superplastic flow has been
+reported. This number will increase with time. Unless a generic technique to determine the interatomic potentials of all such alloys is developed, the
+use geometric descriptors may be found wanting.
+Therefore, it is better to develop a method for solving equations which is more traditional/is along an established route. In a future publication (the
+calculations are nearly completed) a method of developing a physical model to arrive as the equations (already done in this paper) and solving the
+unknown constants using available experimental results will be advocated and shown to be possible.
+References [12] K.A. Padmanabhan, J. Schlipf, Model for grain boundary sliding and its relevance
+to optimal structural superplasticity Part 1—theory, Mater. Sci. Technol. 12 (1996)
+391–399, https://doi.org/10.1179/026708396790165920.
+[1] K.A. Padmanabhan, G.J. Davies, Superplasticity, Springer, Berlin, Heidelberg, New
+[13] T.A. Venkatesh, S.S. Bhattacharya, K.A. Padmanabhan, J. Schlipf, Model for grain
+York, NY, 1980.
+boundary sliding and its relevance to optimal structural superplasticity, Mater. Sci.
+[2] K.A. Padmanabhan, Grain boundary sliding controlled flow and its relevance to Technol. 12 (1996) 635–643, https://doi.org/10.1179/mst.1996.12.8.635.
+superplasticity in metals, alloys, ceramics and intermetallics and strain-rate
+[14] H. Hahn, K.A. Padmanabhan, A model for the deformation of nanocrystalline
+dependent flow in nanostructured materials, J. Mater. Sci. 44 (2009) 2226–2238, materials, Phil. Mag. B 76 (1997) 559–571, https://doi.org/10.1080/
+https://doi.org/10.1007/s10853-008-3076-1.
+01418639708241122.
+[3] K.A. Padmanabhan, S. Balasivanandha Prabu, R.R. Mulyukov, A. Nazarov, R.
+[15] O. Engler, K.A. Padmanabhan, K. Lücke, A model for superplastic flow induced
+M. Imayev, S.G. Chowdhury, Superplasticity, Springer Berlin Heidelberg, Berlin, texture annihilation, Model. Simulat. Mater. Sci. Eng. 8 (2000) 477–490, https://
+Heidelberg, 2018.
+doi.org/10.1088/0965-0393/8/4/306.
+[4] H. Gleiter, On the structure of grain boundaries in metals, in: R.M. Latanision, J.
+[16] K.A. Padmanabhan, H. Gleiter, Optimal structural superplasticity in metals and
+R. Pickens (Eds.), Atomistics of Fracture, Springer US, Boston, MA, 1970,
+ceramics of microcrystalline- and nanocrystalline-grain sizes, Mater. Sci. Eng., A
+pp. 433–464. 381 (2004) 28–38, https://doi.org/10.1016/j.msea.2004.02.054.
+[5] O.A. Kaibyshev, Structural superplasticity, in: O.A. Kaibyshev (Ed.), Superplasticity
+[17] K. Arun Babu, V. Subramanya Sarma, C.N. Athreya, K.A. Padmanabhan,
+of Alloys, Intermetallides and Ceramics, Springer Berlin Heidelberg, Berlin,
+Experimental verification of grain boundary-sliding controlled steady state
+Heidelberg, 1992, pp. 4–29.
+superplastic flow in both continually and statically recrystallizing Al alloys, Mater.
+[6] N.F. Mott, Slip at grain boundaries and grain growth in metals, Proc. Phys. Soc. 60 Sci. Eng., A 657 (2016) 185–196, https://doi.org/10.1016/j.msea.2016.01.054.
+(1948) 391–394, https://doi.org/10.1088/0959-5309/60/4/309.
+[18] K.A. Padmanabhan, M.R. Basariya, A theory of steady state structural
+[7] K.A. Padmanabhan, H. Gleiter, A mechanism for the deformation of disordered
+superplasticity in different classes of materials: a materials-agnostic analysis,
+states of matter, Curr. Opin. Solid State Mater. Sci. 16 (2012) 243–253, https://doi. Mater. Sci. Eng., A 744 (2019) 704–715, https://doi.org/10.1016/j.
+org/10.1016/j.cossms.2012.05.001.
+msea.2018.12.086.
+[8] J.D. Eshelby, The determination of the elastic field of an ellipsoidal inclusion, and
+[19] R.W. Balluffi, S.M. Allen, W.C. Carter, Kinetics of Materials, Wiley-Interscience,
+related problems, Proc. Roy. Soc. Lond. A 241 (1957) 376–396, https://doi.org/
+Hoboken, N.J., 2005.
+10.1098/rspa.1957.0133.
+[20] J. Wei, B. Feng, R. Ishikawa, T. Yokoi, K. Matsunaga, N. Shibata, Y. Ikuhara, Direct
+[9] Isaac Newton, Principia: Book III Proposition XIX Problem III, 1687. imaging of atomistic grain boundary migration, Nat. Mater. 20 (2021) 951–955,
+[10] K.A. Padmanabhan, R.A. Vasin, F.U. Enikeev, Superplastic Flow: Phenomenology
+https://doi.org/10.1038/s41563-020-00879-z.
+and Mechanics, Springer, Berlin, New York, 2010.
+[21] L. Wang, Y. Zhang, Z. Zeng, H. Zhou, J. He, P. Liu, M. Chen, J. Han, D.J. Srolovitz,
+[11] K.A. Padmanabhan, A theory of structural superplasticity, Mater. Sci. Eng. 29
+J. Teng, Y. Guo, G. Yang, D. Kong, E. Ma, Y. Hu, B. Yin, X. Huang, Z. Zhang, T. Zhu,
+(1977) 1–18, https://doi.org/10.1016/0025-5416(77)90140-9.
+X. Han, Tracking the sliding of grain boundaries at the atomic scale, Science 375
+(2022) 1261–1265, https://doi.org/10.1126/science.abm2612.
+14
+--- PAGE 15 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+[22] J. Wei, B. Feng, E. Tochigi, N. Shibata, Y. Ikuhara, Direct imaging of the Mater. Sci. Eng., A 463 (2007) 238–244, https://doi.org/10.1016/j.
+disconnection climb mediated point defects absorption by a grain boundary, Nat. msea.2006.08.123.
+Commun. 13 (2022) 1455, https://doi.org/10.1038/s41467-022-29162-2. [52] H.J. Frost, M.F. Ashby, Deformation-mechanism Maps: the Plasticity and Creep of
+[23] H. Luo, H. Sheng, H. Zhang, F. Wang, J. Fan, J. Du, J. Ping Liu, I. Szlufarska, Metals and Ceramics, First. Aufl, Pergamon Press, Oxford, New York, Toronto,
+Plasticity without dislocations in a polycrystalline intermetallic, Nat. Commun. 10 Sydney, Paris, Frankfurt [Main i.e.] Kronberg-Taunus, 1982.
+(2019) 3587, https://doi.org/10.1038/s41467-019-11505-1. [53] Y. Mishin, M.J. Mehl, D.A. Papaconstantopoulos, A.F. Voter, J.D. Kress, Structural
+[24] L. Neier, K.A. Padmanabhan, S. Divinski, G. Wilde, Effects of severe-strain-induced stability and lattice defects in copper: ab initio tight-binding, and embedded-atom
+defects on the mechanical response of two kinds of high-angle grain boundaries, calculations, Phys. Rev. B 63 (2001), https://doi.org/10.1103/
+Phil. Mag. 100 (2020) 2365–2385, https://doi.org/10.1080/ PhysRevB.63.224106.
+14786435.2020.1767310. [54] T. Frolov, D.L. Olmsted, M. Asta, Y. Mishin, Structural phase transformations in
+[25] P.M. Hazzledine (Ed.), Roskilde, Denmark, 1983. metallic grain boundaries, Nat. Commun. 4 (2013) 1899, https://doi.org/10.1038/
+[26] A. Basak, A. Gupta, Simultaneous grain boundary motion, grain rotation, and ncomms2919.
+sliding in a tricrystal, Mech. Mater. 90 (2015) 229–242, https://doi.org/10.1016/j. [55] A. Suzuki, Y. Mishin, Atomistic modeling of point defects and diffusion in copper
+mechmat.2015.01.012. grain boundaries, Interface Sci. 11 (2003) 131–148, https://doi.org/10.1023/A:
+[27] T.G. Langdon, Grain boundary sliding revisited: developments in sliding over four 1021599310093.
+decades, J. Mater. Sci. 41 (2006) 597–609, https://doi.org/10.1007/s10853-006- [56] T. Frolov, S.V. Divinski, M. Asta, Y. Mishin, Effect of interface phase
+6476-0. transformations on diffusion and segregation in high-angle grain boundaries, Phys.
+[28] T.G. Langdon, A unified approach to grain boundary sliding in creep and Rev. Lett. 110 (2013) 255502, https://doi.org/10.1103/PhysRevLett.110.255502.
+superplasticity, Acta Metall. Mater. 42 (1994) 2437–2443, https://doi.org/ [57] A.P. Thompson, H.M. Aktulga, R. Berger, D.S. Bolintineanu, W.M. Brown, P.
+10.1016/0956-7151(94)90322-0. S. Crozier, P.J. in ’t Veld, A. Kohlmeyer, S.G. Moore, T.D. Nguyen, R. Shan, M.
+[29] M. Ashby, R. Verrall, Diffusion-accommodated flow and superplasticity, Acta J. Stevens, J. Tranchida, C. Trott, S.J. Plimpton, Lammps - a flexible simulation tool
+Metall. 21 (1973) 149–163, https://doi.org/10.1016/0001-6160(73)90057-6. for particle-based materials modeling at the atomic, meso, and continuum scales,
+[30] M.F. Ashby, F. Spaepen, A new model for the structure of grain boundaries: Comput. Phys. Commun. 271 (2022) 108171, https://doi.org/10.1016/j.
+packing of polyhedra, Scripta Metall. 12 (1978) 193–195, https://doi.org/ cpc.2021.108171.
+10.1016/0036-9748(78)90162-X. [58] A. Stukowski, Visualization and analysis of atomistic simulation data with
+[31] T.G. Nieh, J. Wadsworth, O.D. Sherby, Superplasticity in Metals and Ceramics, OVITO–the Open Visualization Tool, Model. Simulat. Mater. Sci. Eng. 18 (2010)
+Cambridge University Press, New York, 2007. 15012, https://doi.org/10.1088/0965-0393/18/1/015012.
+[32] H. van Swygenhoven, A. Caro, Molecular dynamics computer simulation of [59] C.L. Kelchner, S.J. Plimpton, J.C. Hamilton, Dislocation nucleation and defect
+nanophase Ni: structure and mechanical properties, Nanostruct. Mater. 9 (1997) structure during surface indentation, Phys. Rev. B 58 (1998) 11085–11088,
+669–672, https://doi.org/10.1016/S0965-9773(97)00147-5. https://doi.org/10.1103/PhysRevB.58.11085.
+[33] H. van Swygenhoven, A. Caro, Plastic behavior of nanophase Ni: a molecular [60] T. Uesugi, K. Higashi, First-principles calculation of grain boundary excess volume
+dynamics computer simulation, Appl. Phys. Lett. 71 (1997) 1652–1654, https:// and free volume in nanocrystalline and ultrafine-grained aluminum, J. Jpn. Inst.
+doi.org/10.1063/1.119785. Light Metals 62 (2012) 464–471, https://doi.org/10.2464/jilm.62.464.
+[34] J.W. Edington, K.N. Melton, C.P. Cutler, Superplasticity, Prog. Mater. Sci. 21 [61] S. Pal, K.V. Reddy, T. Yu, J. Xiao, C. Deng, The spectrum of atomic excess free
+(1976) 61–170, https://doi.org/10.1016/0079-6425(76)90005-0. volume in grain boundaries, J. Mater. Sci. 56 (2021) 11511–11528, https://doi.
+[35] R.C. Pond, D.A. Smith, On the absorption of dislocations by grain boundaries, Phil. org/10.1007/s10853-021-06028-4.
+Mag. 36 (1977) 353–366, https://doi.org/10.1080/14786437708244939. [62] B. Oberdorfer, D. Setman, E.-M. Steyskal, A. Hohenwarter, W. Sprengel,
+[36] D.A. Smith, V. Vitek, R.C. Pond, Computer simulation of symmetrical high angle M. Zehetbauer, R. Pippan, R. Würschum, Grain boundary excess volume and defect
+boundaries in aluminium, Acta Metall. 25 (1977) 475–483, https://doi.org/ annealing of copper after high-pressure torsion, Acta Mater. 68 (2014) 189–195,
+10.1016/0001-6160(77)90187-0. https://doi.org/10.1016/j.actamat.2013.12.036.
+[37] R.C. Pond, D.A. Smith, V. Vitek, A model for grain boundary structure based on [63] G. Reglitz, B. Oberdorfer, N. Fleischmann, J.A. Kotzurek, S.V. Divinski,
+random close packing, Scripta Metall. 12 (1978) 699–702, https://doi.org/ W. Sprengel, G. Wilde, R. Würschum, Combined volumetric, energetic and
+10.1016/0036-9748(78)90311-3. microstructural defect analysis of ECAP-processed nickel, Acta Mater. 103 (2016)
+[38] M.F. Ashby, F. Spaepen, S. Williams, The structure of grain boundaries described as 396–406, https://doi.org/10.1016/j.actamat.2015.10.004.
+a packing of polyhedra, Acta Metall. 26 (1978) 1647–1663, https://doi.org/ [64] J.P. Hirth, R.C. Pond, J. Lothe, Spacing defects and disconnections in grain
+10.1016/0001-6160(78)90075-5. boundaries, Acta Mater. 55 (2007) 5428–5437, https://doi.org/10.1016/j.
+[39] A.P. Sutton, V. Vitek, On the coincidence site lattice and DSC dislocation network actamat.2007.06.004.
+model of high angle grain boundary structure, Scripta Metall. 14 (1980) 129–132, [65] J. Han, D.J. Srolovitz, M. Salvalaglio, Disconnection-mediated migration of
+https://doi.org/10.1016/0036-9748(80)90140-4. interfaces in microstructures: I. continuum model, Acta Mater. 227 (2022) 117178,
+[40] A.P. Sutton, V. Vitek, The dislocation structure of high angle grain boundaries, in: https://doi.org/10.1016/j.actamat.2021.117178.
+A.P. Sutton, V. Vitek (Eds.), Dislocation Modelling of Physical Systems, Elsevier, [66] L. Zhang, J. Han, D.J. Srolovitz, Y. Xiang, Equation of motion for grain boundaries
+1981, pp. 549–553. in polycrystals, npj Comput. Mater. 7 (2021), https://doi.org/10.1038/s41524-
+[41] A.P. Sutton, R.W. Balluffi, V. Vitek, Intrinsic Secondary Grain-Boundary 021-00532-6.
+Dislocation Arrays in High-Angle Grain Boundaries, 1981. [67] I.S. Winter, T. Oppelstrup, T. Frolov, R.E. Rudd, Characterization and Visualization
+[42] A.P. Sutton, On the structure of (001) twist boundaries in f.c.c. metals, Philos. Mag. of Grain Boundary Disconnections, 2022 arXiv.
+A 46 (1982) 171–176, https://doi.org/10.1080/01418618208236216. [68] T. Meiners, T. Frolov, R.E. Rudd, G. Dehm, C.H. Liebscher, Observations of grain-
+[43] A.P. Sutton, V. Vitek, On the structure of tilt grain boundaries in cubic metals I. boundary phase transformations in an elemental metal, Nature 579 (2020)
+Symmetrical tilt boundaries, Phil. Trans. Roy. Soc. Lond. A 309 (1983) 1–36, 375–378, https://doi.org/10.1038/s41586-020-2082-6.
+https://doi.org/10.1098/rsta.1983.0020. [69] I.S. Winter, T. Frolov, Phase pattern formation in grain boundaries, Phys. Rev. Lett.
+[44] D. Schwartz, V. Vitek, A.P. Sutton, Atomic structure of (001) twist boundaries in f. 132 (2024), https://doi.org/10.1103/PhysRevLett.132.186204.
+c.c metals Structural unit model, Philos. Mag. A 51 (1985) 499–520, https://doi. [70] Z. Peng, T. Meiners, Y. Lu, C.H. Liebscher, A. Kostka, D. Raabe, B. Gault,
+org/10.1080/01418618508237573. Quantitative analysis of grain boundary diffusion, segregation and precipitation at
+[45] D. Wolf, Structure-energy correlation for grain boundaries in F.C.C. metals—III. a sub-nanometer scale, Acta Mater. 225 (2022) 117522, https://doi.org/10.1016/j.
+Symmetrical tilt boundaries, Acta Metall. Mater. 38 (1990) 781–790, https://doi. actamat.2021.117522.
+org/10.1016/0956-7151(90)90030-K. [71] Y. Buranova, H. Ro¨sner, S.V. Divinski, R. Imlau, G. Wilde, Quantitative
+[46] V.V. Astanin, S.N. Faizova, K.A. Padmanabhan, Model for grain boundary sliding measurements of grain boundary excess volume from HAADF-STEM micrographs,
+and its relevance to optimal structural superplasticity Part 2 – evidence for Acta Mater. 106 (2016) 367–373, https://doi.org/10.1016/j.actamat.2016.01.033.
+cooperative grain/interphase boundary sliding and plane interface formation, [72] D. Prokoshkina, V.A. Esin, G. Wilde, S.V. Divinski, Grain boundary width, energy
+Mater. Sci. Technol. 12 (1996) 489–494, https://doi.org/10.1179/ and self-diffusion in nickel: effect of material purity, Acta Mater. 61 (2013)
+mst.1996.12.6.489. 5188–5197, https://doi.org/10.1016/j.actamat.2013.05.010.
+[47] V.V. Astanin, K.A. Padmanabhan, S.S. Bhattacharya, Model for grain boundary [73] V. Volterra, Sur l’´equilibre des corps ´elastiques multiplement connexes, Ann. Sci.
+sliding and its relevance to optimal structural superplasticity Part 3 – effect of flow E ´ cole Norm. Sup. 24 (1907) 401–517, https://doi.org/10.24033/asens.583.
+localisation and specimen thickness on superplasticity in alloy Supral 100, Mater. [74] C.E. Carlton, P.J. Ferreira, What is behind the inverse Hall–Petch effect in
+Sci. Technol. 12 (1996) 545–550, https://doi.org/10.1179/mst.1996.12.7.545. nanocrystalline materials? Acta Mater. 55 (2007) 3749–3756, https://doi.org/
+[48] K. Gouthama, Transmission electron microscopic evidence for cavity nucleation 10.1016/j.actamat.2007.02.021.
+during superplastic flow, Scripta Mater. 49 (2003) 761–766, https://doi.org/ [75] C.S. Pande, K.P. Cooper, Nanomechanics of Hall–Petch relationship in
+10.1016/S1359-6462(03)00427-5. nanocrystalline materials, Prog. Mater. Sci. 54 (2009) 689–706, https://doi.org/
+[49] J. Markmann, Microstructure evolution during rolling of inert-gas condensed 10.1016/j.pmatsci.2009.03.008.
+palladium, Scripta Mater. 49 (2003) 637–644, https://doi.org/10.1016/S1359- [76] A.H. Chokshi, A. Rosen, J. Karch, H. Gleiter, On the validity of the hall-petch
+6462(03)00401-9. relationship in nanocrystalline materials, Scripta Metall. 23 (1989) 1679–1683,
+[50] A.V. Sergueeva, N.A. Mara, R.Z. Valiev, A.K. Mukherjee, Elevated temperature https://doi.org/10.1016/0036-9748(89)90342-6.
+behavior of SePD materials: superplasticity or enhanced ductility? Mater. Sci. Eng., [77] R.V. Mises, Mechanik der festen Ko¨rper im plastisch- deformablen Zustand,
+A 410–411 (2005) 413–416, https://doi.org/10.1016/j.msea.2005.08.020. Mathematisch-Physikalische Klasse (1913) 582–592.
+[51] N.A. Mara, A.V. Sergueeva, T.D. Mara, S.X. McFadden, A.K. Mukherjee, [78] K.A. Padmanabhan, M.R. Basariya, A mesoscopic grain boundary sliding controlled
+Superplasticity and cooperative grain boundary sliding in nanocrystalline Ni3Al, flow model for superplasticity in intermetallics, Int. J. Mater. Res. 100 (2009)
+1543–1551, https://doi.org/10.3139/146.110218.
+15
+--- PAGE 16 ---
+K.A. Padmanabhan and S.V. Divinski M a t e r i a l s S c i e n c e & E n g i n e e r i n g A 9 0 8(2024)146713
+[79] K.A. Padmanabhan, M.R. Basariya, Mesoscopic grain boundary sliding as the rate [85] D. Gupta, Comparative Cu diffusion studies in advanced metallizations of Cu and
+controlling process for high strain rate superplastic deformation, Mater. Sci. Eng., Al-Cu based thin films, MRS Proc 337 (1994), https://doi.org/10.1557/PROC-337-
+A 527 (2009) 225–234, https://doi.org/10.1016/j.msea.2009.07.059. 209.
+[80] C.A. Coulomb, Essai sur une Application des Regles des Maximis et Minimis a [86] S.J. Rothman, N.L. Peterson, Isotope effect and divacancies for self-diffusion in
+Quelquels Problemesde Statique Relatifs, a la Architecture, Mem. Acad. Roy. Div. copper, Phys. Status Solidi 35 (1969) 305–312, https://doi.org/10.1002/
+Sav 7 (1776) 343–387. pssb.19690350131.
+[81] A.L. Gurson, Continuum theory of ductile rupture by void nucleation and growth. [87] K. Maier, Self-diffusion in copper at ’low’ temperatures, Phys. Status Solidi A 44
+Part I. Yield Criteria and Flow Rules for Porous Ductile Media, 1975. (1977) 567–576.
+[82] J.R. Rice, D.M. Tracey, On the ductile enlargement of voids in triaxial stress fields, [88] N.N. Bogoliubov, On the theory of superfluidity, Izv. Akad. Nauk. USSR 11 (1947).
+J. Mech. Phys. Solid. 17 (1969) 201–217, https://doi.org/10.1016/0022-5096(69) [89] J. Rennie, How complex wholes emerge from simple parts. https://www.quantam
+90033-7. agazine.org/emergencehow-complex-wholes-emerge-from-simple-parts-
+[83] A. Paul, T. Laurila, V. Vuorinen, S.V. Divinski, Thermodynamics, Diffusion and the 20181220/, 2018.
+Kirkendall Effect in Solids, Springer International Publishing, Cham, 2014. [90] S.-A. Shei, T.G. Langdon, The activation energies for plastic flow in a superplastic
+[84] T. Surholt, C. Herzig, Grain boundary self-diffusion in Cu polycrystals of different copper alloy, Acta Metall. 26 (1978) 1153–1158, https://doi.org/10.1016/0001-
+purity, Acta Mater. 45 (1997) 3817–3823, https://doi.org/10.1016/S1359-6454 6160(78)90143-8.
+(97)00037-2.
+16

@@ -1,0 +1,718 @@
+FILE: d:\Work\Others\Padmanabhan\venkatesh1996.pdf
+Total pages: 9
+
+
+--- PAGE 1 ---
+Model for grain boundary sliding and its relevance to
+optil11al structural superplasticity
+Part 4* - Experil11ental verification
+T. A. Venkatesh, S. S. Bhattacharya, K.A. Padmanabhan, and J. Schlipf
+The conclusions reached based on agrain/interphase boundary sliding controlled flow modelfor optimal structural
+superplasticity are verified using experimental datafrom three aluminium alloy systems. Isostructural strain rate-stress
+relationships could be calculated very accurately usingfive experimentally determined, physically meaningful constants (three of
+which could also be calculatedfrom theory; twofully and one partially). The true activation energy for the rate controlling
+boundary sliding process, the variations of the internal stress distribution arising from sliding, the stressfunction that is
+proportional to the measured isostructural isothermal strain rate, and the apparent viscosity, were calculated. It issuggested that
+the basic units ofmicroscopic boundary sliding inthe three aluminium alloys examined have acommon structure. MST/3077
+© 1996 The Institute ofMaterials. Manuscript received 2June 1994; infinalform 6July 1995. Mr Venkatesh, Dr Bhattacharya,
+and Professor Padmanabhan are inthe Department ofMetallurgical Engineering, Indian Institute of Technology (lIT), Madras,
+India and the late Professor Schlipf was in the Institut fur Metallkunde und Metallphysik, Rheinisch- Westfalische Technische
+Hochschule, Aachen, Germany.
+of least squares using equation (1) and then solving them
+Introduction
+by trial and error. The true activation energy for the rate
+controlling process can be calculated using equation (2)
+A mathematical development of the ideas presented in from'the C values corresponding to various temperatures,
+1
+Part 1revealed that isostructural optimal superplastic flow again using a least squares analysis.
+can be predicted using five physically meaningful, experi- Ifthe effective stress at a boundary (a- ao)isrepresented
+mentally determined constants. Three of these constants as a', from Part 1it follows that
+can also be calculated theoretically (two fully and one
+-(1IU;J2] . . . . . .
+partially) as set out in the Appendix. gl(U') = U'A~l/2 exp[ (4)
+In this paper experimental data pertaInIng to three
+and
+superplastic aluminium alloy systems are analysed to verify
+[~+A: (In:~-1)] +
+some of the conclusions reached in Part 1. ' A:~/2 . . .
+(l(U') =u' l/2 (5)
+where
+Analytical procedure A~/2)
+u~= Um exp( _
+For convenience, the pertinent equations have been collated gl(a') is the internal stress distribution arising from sliding
+here. (Fo
+(
+r
+~
+th
+D
+e meaning of symbols please see Part 1.) caused by an effective stress a' and f1(a') is the stress
+function that is directly related to B at a constant
+sp
+t,p; = {(U;- uo)[u m + II(U, - Uo- 2u m)] temperature and grain size through a constant of pro-
+D} portionality.
++ u;, II exp( - (1) exp T e h ri e m re e f n o t r a e l , i d f at C a b u a s o in , g am th ' e an a d bov A e ar e e qu c a a ti l o cu n l s a , ted the f n rom it w th il e l
+be possible to predict flow properties of interest associated
+The suffix i corresponds to the ith pair of the B versus
+sp with steady state optimal structural superplasticity. For the
+a data. The constant C is given by
+1 analysis to be regarded as physically valid, however, it is
+W (I1S)
+Le~l'O k essential to verify that the values of C b I1Fo,I1Uo, and ao
+C1=2 kT exp vexp(-I1Uo/kT) obtained by the above calculations fall in the ranges
+predicted by theory (see Appendix). (The values of am and
+e~vo
+LW A can only be calculated theoretically from molecular
+=2 kT vexp(-I1Fo/kT) . . . . . (2)
+dynamics and this is yet to be done.)
+while ao is estimated from the equation
+]a
+AA/A Method of calculation
+a o =31/2'[ 0 =31/2(2I1Y r B )1/2 [-c-x-f(NA)I/2 =(C 2 /La) (3)
+As the equations listed in the previous section were both
+where C is a constant that has absorbed other constants
+2 non-linear and transcendental in some of the variables,
+and a is a constant lying between 0 and 1,which can only
+even the use of a powerful software package like
+be determined experimentally in the present state of
+'Mathematica' did not give the required solutions. A new
+development of the model.
+program based on a numerical procedure therefore had to
+As equation (1) is transcendental in cx, the best fit values
+be developed.
+of ao, am' cx, and C 1 are obtained from the isothermal,
+isostructural experimental data by setting up the simul-
+EVALUATION OF EMPIRICAL CONSTANTS
+taneous equations involving these unknowns by the method
+Isostructural isothermal case
+*Earlier parts appeared in MST, 1996as follows:Part 1in MST, For this case the extrema or the boundary limits of each of
+(5), 391;Part 2inMST, (6),489;and Part 3in MST, (7), 545. the unknowns in equation (1) were first fixed. Then, the
+Materials Science and Technology August 1996 Vol. 12 635
+
+--- PAGE 2 ---
+636 Venkatesh et al. Grain boundary sliding in structural superplasticity: Part4
+simultaneous equations containing the unknowns were absence of concrete alternative proposals, this is merely
+generated from equation (1), the experimental data, and a speculation.
+least squares analysis. Subsequently the entire spectrum of A final selection was made based on the 'minimum
+values of the unknowns from the left extreme to the right variance unbiased estimate' criterion. Sincethe distribution
+was scanned at suitable increments for possible solutions. concerned was of a two parameter lognormal type, it is
+In this way all possible combinations of C b lX,O"m, and 0"0 justifiable in terms of the above criterion to select the
+that lay within the prescribed limits were tried and those combination which has the lowest value for standard
+combinations forwhichtherecalculated strain rates showed deviation A or the largest value oflX, as lX= (2j,11t1/2).
+very good correlation with the experimentally observed However, in certain situations when there exists a
+values were taken up for further consideration. (This combination which exhibits adistinctly better 'reprediction'
+method ispopularly known as 'solving by brute force' and of the strain rate (e.g.an improvement in the degree of fit
+in the present work gave rise to several hundred thousand from 85 to 950/0), albeit at a marginally lower value of lX,
+combinations of the four unknowns.) To automate this then this second combination istaken as 'the solution'.
+process, a computer program written in Pascal was Once the value corresponding to each grain size is
+0"0
+developed. In this procedure, the boundary limits for each estimated as described above, then using equation (3) and
+of the constants to be evaluated are determined by the a least squares analysis, C 2 and a can be evaluated in a
+experimental data that form the starting point for the straightforward manner.
+analysis. For example, since is the threshold stress, it is
+0"0
+constrained to take up a positive value which should not
+DETERMINATION OF FLOW PROPERTIES
+exceed the lowest stress employed in the experiment.
+Similarly, the acceptable values for should fall in the True activation energy
+O"m
+region between the lowest and the highest stress values The procedure described for the isostructural isothermal
+recorded in an experiment, as O"m, by definition, is the case above was used with different sets of is 0 structural
+mean. experimental data obtained at differenttemperatures. While
+The computer program was designed to take in the calculating the true activation energy i1U for the rate
+o
+isostructural tensile strain rate-stress data at each temper- controlling process from equation (2) and a least squares
+ature for a given material as input, and output a listing analysis, v can be taken as equal to either kTjh (Ref.1)or
+(based on equation (1) and a least squares analysis) of all 1013S-1 (Ref.2). Evidently, for the former case
+possible combinations of C and for which the
+b lX,O"m, 0"0
+r v e a c l a u l e c s u . la A te n d a s d tr d a i i t n ion r a a l tes co c n o s r t r r e a l i a n te t d w w a e s ll in w tr it o h du th ce e d ob a s t erv th e i d s - i1 k U - o = - (0 o I l n jT C 1) . . . . . . . . . . . (6)
+stage that only those combinations containing values of C
+and that fellvery closeto or within the ranges predicted 1 where i1U0 corresponding to v= 1013S- 1 can be evaluated
+0"0
+as
+bytheory (seeAppendix) wereto beregarded asacceptable.
+This implied an assumption that the model predicted the i1Uo -o(ln C
+1
++In T)
+correct values for C 1 and 0"0 which is an essential k - o . . . . . . . . . (7)
+IjT
+assumption in any verification process. However, the
+rejected combinations that gave good estimates of the
+strain rate of deformation could also become relevant if Other flow properties
+alternative explanations can be developed that predict From a knowledge of the values of A, and for each
+O"m, 0"0
+other values for C 1 and 0"0' Until this is done, the present temperature and grain size, g1(0"') and f1(0"') can be
+procedure should be regarded as legitimate. calculated using equations (4) and (5) respectively. This
+In order to arrive at a 'unique' solution for further use, process can be repeated for different alloy systems at
+the following procedure was followed. All the plausible various temperatures and grain sizes.
+'solutions' (i.e.those that fulfilledthe statistical criteria and Knowing C A, and values for each temperature
+b O"m, (Jo
+the check for the values of C 1 and 0"0 against theory) were and grain size, the strain rate-stress relationship can be
+tested with the n-(J relationship derived from the InBsp-In 0" estimated usingequation (1)forallexperimental conditions
+data and the equation n= (0 InBspjO InO"h,L'The combi- for the alloy systems chosen.
+nation that best described the n-O" relation wasthen chosen As pointed out in Part 1, the apparent viscosity of
+as the solution. a superplastic alloy of constant grain size undergoing
+deformation at a fixedtemperature isgiven by
+Grain size dependence of threshold stress
+0"0
+Isothermal experimental data from a given system four I1cal=(O"j3Bspcal) (8)
+different grain sizeswere used as the input. The computer
+where I1caland Bspcaalre the calculated values (using the
+program, the algorithm of which· was described in the
+above constants) of the apparent viscosity and the super-
+previous section, was also used here.
+plastic tensile strain rate respectively and BSPcaisl obtained
+To begin with, a listing of all the combinations of the
+from equation (1). From equation (8) the apparent
+four unknowns for which exhibited an inverse relation-
+0"0 viscosity-applied stress plots can be generated for all
+ship with grain size,wasmade. It followsfrom equation (2)
+temperatures and grain sizesfor different alloy systems.
+that C should vary inversely with grain sizeand hence all
+1
+the combinations which did not follow this trend were
+eliminated. Then, it was additionally ensured that only
+those values of C and that fell close to the ranges Results and discussion
+1 0"0
+predicted by theory (see Appendix) were to be regarded as
+acceptable. Here again, the inherent assumption was that FLOW PARAMETERS AND PROPERTIES
+the model predicts the right dependencies for C 1 and 0"0 on Experimental strain rate-stress data from AI-12Si,3
+grain size and that their approximate estimates given in AI-33Cu,4 and AI-33Cu-0'4Zr5 systems were used (all
+the Appendix are ofthe right order. Ifthe model iscorrect, compositions are in wt-%). For the AI-12Si and
+at least one combination that satisfiesthe above constraints AI-33Cu-0'4Zr alloys data pertaining to a single initial
+and also recalculates the strain rates accurately should' be microstructure but different test temperatures were used,
+found. It is conceivable that from among the rejected but in the case of the AI-33Cu alloy, data obtained at
+combinations new explanations may be found, but in the differenttemperatures and initial grain sizeswereexamined.
+Materials Science and Technology August 1996 Vol. 12
+
+--- PAGE 3 ---
+Venkatesh et a/. Grain boundary sliding in structural superplasticity: Part 4 637
+Following the procedure outlined in the section on the Table 2 Verification of relationship 0'0 =ao+(a,IT)
+isostructural isothermal case, above, the data for the
+AI-12Si, AI-33Cu, and AI-33Cu-0'4Zr alloy systems were Alloy system, Degree of
+wt-% ao a, fit*, %
+analysed to obtain the best fitvalues for lI., ao, am' and C1.
+These are given in Table 1. AI-12Si -5-460 4715-3 92'2
+From Table2 it is clear that on an empirical basis the AI-33Cu -6'384 5319'5 98'7
+following relationship isverified AI-33Cu-0'4Zr -4-587 3615'7 94-1
+a1 *A value of 100% would correspond to aperfect fit; 0'0 is in MN m-2.
+ao=ao+ T . . . . . . . . . (9)
+of the internal stress distribution resulting from boundary
+where ao and a1 are grain size and system dependent slidingduring optimal superplastic flowwith applied stress_
+constants and T is the test temperature on the absolute The function f1(a') is the stress function corresponding
+scale.This form has been preferred because ao in the most to each applied stress which is directly related to the
+general case can be postulated to be a suitable (unknown)
+superplastic strain rate, i_e_(esp)L,T ocf1(a'), where the
+function of l/T and expanded in a Taylor series. Then,
+suffixes indicate the variables that are kept constant.
+equation (9) would correspond to a linear approximation
+Figure 2givesthef(a') valuesforeach stresscorresponding
+of the above general formulation. A function in terms of 1
+to different experimental conditions for the three alloy
+l/T has been preferred to one involving T because T» 1 systems studied_
+for superplasticity and so an expansion based on l/T will It is pertinent to note that all the constants used in the
+pose no problems ofconvergence.
+analysis, except for lI., am' and a, can be calculated
+It should be noted that the analysis presented in Part 1 theoretically without recourse to any experiments (see
+has yet to consider the temperature dependence of ao. Appendix)_The constants lI. and am can only be calculated
+Future effortswillbedirected at incorporating equation (9)
+from molecular dynamics and so far this has not been
+into the theoretical framework either as a rigorous possible_ Similarly, the estimation of a will involve con-
+relationship or as an approximate formulation of a more
+sideration of stress concentrations at the boundary nodes
+complicated equation.
+that connect to form the plane interface as well as of
+Using the procedures outlined above, the best fit values the irregular shapes and sizes of real grain/interphase
+of lI., ao, am' and C1as wellas Cz and a were obtained for boundaries_
+the AI-33Cu alloy samples with different grain sizestested
+Using the best fitvalues obtained in the present analysis,
+at 793K (Table 3). the'superplastic strain rate-stress relationship was calcu-
+The true activation energy ~Uo for the rate controlling lated for the systems analysed_ The results are shown in
+grain/interphase boundary slidingprocess can becalculated Fig_3. It can be seen that the calculations correlate very
+by taking v to be equal to either kT/h (equation (6)) or wellwith the experimentally measured values_
+1013S-l (equation (7)). The values of ~Uo calculated from e
+Using the values of given in Fig_3 and equation (8)
+sp
+the above equations (and the values of C1and T given in it was possible to estimate the apparent viscosity of the
+Table 1) for the AI-12Si, AI-33Cu, and AI-33Cu-0'4Zr superplastic alloys for different experimental conditions
+alloys are given in Table4. Bhattacharya6 has solved (Fig_4)_ As m=1= 1, superplastic flow is non-Newtonian
+equation (1) approximately by setting ao=O.The values of viscous and it is therefore understandable that in Fig_4
+~Uo obtained for these systems using this approximation
+the apparent viscosity changes with the stress level as
+as well as those obtained using the phenomenological
+well as the grain size even when the temperature is kept
+analysis for grain/interphase boundary sliding controlled constant.
+superplastic flow presented earlier7 are also included in
+Table4 for comparison. It can be seen that the results
+STRUCTURE OF BASIC UNITS OF
+obtained by the three analyses are in good agreement. The
+MICROSCOPIC BOUNDARY SLIDING IN THREE
+extent ofthis agreement becomes evenmore apparent when
+ALUMINIUM ALLOYS
+it is realised that the ~Uo values are calculated from an
+exponential relationship and so the scatter/error associated It was useful to check ifthe structures ofthe basic units of
+with the ~Uo value for the usual errors in the measured microscopic boundary sliding were common for different
+values ofesp' a, and T can be quite significant.8 test conditions in the three aluminium alloys examined_
+Using equations (4) and (5), gl(a') and f1(a') were (Stress-strain rate data corresponding to 18combinations
+calculated for the three alloy systems under different of temperature and grain size for the three aluminium
+experimental conditions. The results are shown in Figs. 1 alloys were analysed_) This verification was carried out
+and 2respectively.The function gl(a') reflectsthe variation as follows.
+From Fig. 1 it can be seen that the experimentally
+accessible part of gl(a') is the tail of the gl(a')-a curve
+Table 1 Best fit values for given constants for given
+alloys
+Table 3 Estimation of grain size dependence* of 0'0 and
+T, rx 0'0, O'rn, C" C,for AI-33Cu alloy tested at 793K
+K (=2/A1!'/2) MN m-2 MN m-2 Pa-' s-'
+Grain size, rx O'rn, C" 0'0,
+AI-12Si Jim (=2/A1!'I2) MN m-2 Pa-' s-' MN m-2
+831 0'1 0'27 0'53 0·000140
+811 0·3 0·32 0'40 0-000120 1-7 0-10 0·93 0'000380 0'45
+791 0-2 0'43 0-68 0'000090 2-3 0·21 0·92 0-000240 0-44
+763 0'2 0'77 1-20 0·000066 2'8 0'19 1'50 0'000190 0'42
+AI-33Cu 3'8 0'20 1-80 0'000120 0'40
+793 0-26 0·048 0'05 0'00160 4-6 0-10 1-40 0-000098 0-40
+753 0'33 0-250 0'37 0'00130 5'5 0'21 1'50 0·000078 0·39
+713 0·23 0-300 0'57 0-00040 7-7 0·20 2-20 0'000060 0·38
+633 0'21 1'200 1-90 0'00004
+A 7 7 9 5 I- 3 3 33Cu-O'4Zr 0 0 - '1 1 0 0 ' - 3 6 5 3 0 1 - - 8 2 0 0 ' ' 0 0 0 0 0 0 0 0 9 2 0 8 9 * -0 6 F ' · 1 3 o 1 3 r 7 % t 7 h _ es T e h in e res t r h u e e l s ts ult e s th q e u w at e b io r e e n st fi f t i I t t n ed v 0 a '0 lu t = o e I a n of C re I 2 n la + t C io 2 a n I w n a I L s n . C -0 T , ' h 7 = e 38 In 4 d K eg , r a e -I n e n d o o L f f w a f h it w e a re s is
+K, is a grain size independent constant_ With InK, as -7'60243, a
+713 0'3 1-10 2'3 0'000012
+degree of fit of 98-6% could be obtained.
+Materials Science and Technology August 1996 Vol. 12
+
+--- PAGE 4 ---
+638 Venkatesh et al. Grain boundary sliding in structural superplasticity: Part 4
+1·60 2·50
+(a) (b)
+2·00
+1.20
+1.50
+~O.~O
+c>
+1·00 .
+o T= 831K
+o T = 811K 0 T=793K
+0·40 ~ • T T = = 7 7 9 6 1 3 K K 0 ~ • T T T= = = 7 6 7 5 3 1 3 3 3K K K
+0·00 0·00
+a 0·50 1·00 1·50 2·00 2·50 a 1.00 2.00 3.00 4.00
+0.20 0.50
+(c) (d)
+0·40
+0.15
+0·30
+o T= 793K Grain Siz@
+~ 0·10 o T=753K 0 1·7pm
+c> ~ T=713K 0 2.3 J.Jm
+0.20 • 2·8 J.Jm
+~ 3·8 J.Jm
+• 4·6 J-lm
+0·05 X 5.5 J.Jm
+0·10 • 7.7 JJm
+0·00 0·00
+0·00 1.00 2.00 3·00 4·00 5·00 6.00 0.00 1·00 2·00 3·00 4.00 5.00 6·00
+STRESS, MN m-2
+aAI-12Si; band dAI-33Cu; cAI-33Cu-0'4Zr
+Plots of internal stress distribution of given alloys arising from microscopic grain/interphase boundary sliding
+during superplastic flow g,(0") asfunction of applied stress
+where the stress varies essentially as l/a'. Putting The form of equation (10) is almost linear. It is
+x==(am/a'), equation (4) can be rewritten as conceivable that the different values of A found for the
+different alloy systems are due to experimental scatter. If
+gz(x)==n1/ zAa
+m
+gl(a') =xexp{-[(I/A) Inx]Z} . . (10)
+this assumption is valid, a universal gz(x) curve should
+or exist from which a universal A value may be extracted. To
+test this assumption a common plot of the gz(x) values of
+. . (11)
+all data points pertaining to the three alloy systems and
+In this formulation am has been eliminated by normali~ing test conditions is thus required from which the average
+it with respect to a'. Thus, the internal stress distribution A value can be determined by a least squares procedure
+and the structure of basic units of microscopic boundary based on equation (10) (or equation (11». If the scatter
+sliding can be described in terms of x, which has been appears to be reasonably limited, this may be taken as an
+made independent ofthe system considered, and A. indication that the basic units of microscopic boundary
+Table4 True activation energy AUo for rate controlling process, kJmol-1
+Mechanistic model*
+Alloy 0'0#0 0'0=0 Phenomenological model*
+system,
+wt-% v= kT/h v= 1013S-1 V=kT/h v= 1013S-1 v= kT/h v= 1013S-1
+AI-12Si 59'9 66'7 63'5 70'1 70'0 76'7
+AI-33Cu 101'3 107'4 137'7 143'6 131'5 137'4
+AI-33Cu-0'4Zr 117'9 124'7 108'8 115'0 116·0 122'2
+*Forsimple cases v=kT/h holds, for others v=1013S-1. One orthe other value can beobtained based on different assumptions instatistical mechanics.
+Materials Science and Technology August 1996 Vol. 12
+
+--- PAGE 5 ---
+Venkatesh et a/. Grain boundary sliding in structural superplasticity: Part4 639
+0·60 2·00
+(a) (b)
+1.50
+0·40
+. ~ .= 1·00
+0.20
+0·50
+b 0 T= 793K
+0 T= 753K
+t::. T = 713K
+•
+T =633K
+0·00 0·00
+0·00 0·50 1.00 1·50 2·00 2·50 0·00 1·00 2.00 3·00 4·00
+2·50 4·00
+(c) (d)
+2·00
+3·00
+1·50
+~ 2·00
+..=
+1·00
+Grain Size
+1·00 o 1·7J.Jm
+o 2·3J.Jm
+0·50
+t::.2·8 J.Jm
+.3·
+8fJm
+• 4· 6}Jm
+X5.5 fJm
+0'00 0'00 • 7·7 }Jm
+0·00 1.00 2·00 3·00 4·00 5·00 6.00 0.00 1·00 2·00 3·00 4·00 5·00 6.00
+STRESS, MN m-2
+aAI-12Si; band dAI-33Cu; cAI-33Cu-O'4Zr
+2 Plots of isothermal stress function f,(0") of given alloys asfunction of applied stress
+sliding in the three aluminium alloys investigated have a rates and those calculated using the above constants
+common structure. isexcellent.
+Figure 5 shows the g2(X)versus x relationship for the 2. From among the 'solutions' obtained from the rate
+three aluminium alloys. As suggested earlier based on the equation by a trial and error procedure, a solution could
+mathematical form of equation (10), the relationship is be found (using a rigorous statistical procedure) for which
+indeed nearly linear. The scatter ofthe experimental points C varied as llL and as liLa (where L is the grain size
+l 0"0
+about the best fit curve based on equation (10) is also and a is a constant) as required by the theory presented in
+indicated for different values of x. It can be seen that the Part 1.At the same time excellent estimates of the strain
+fitis reasonable. An average (best fit)value for A of5,6021 rate ofdeformation resulted.
+(or 0·2014 for 0:) was obtained. 3. It was possible to estimate theoretically the values of
+Thus there is reason to believe that the basic units of C b t1.Fo (t1.Uo), and 0"0 (in fullfor interphase interfaces and
+microscopic boundary slidinginthe three aluminium alloys partially for intercrystalline boundaries).
+studied had a common structure. 4. On an empirical basis =ao+aliT, where aoand al
+0"0
+are constants and T is the absolute temperature of
+deformation. This dependence is yet to be included in the
+theoretical framework.
+Conclusions
+5. The values of t1.U0 for the rate controlling boundary
+sliding process for the three alloys analysed here are very
+1. Steady state isostructural isothermal superplasticity in simIlar to those obtained in an earlier phenomenological
+the optimal range can be predicted using four experi- model and to those obtained by setting 0"0 =0 in the
+mentally determined, physically meaningful constants present analysis.
+described in the text: C b 0:,O"m, and 0"0' From a set of C l 6. The internal stress distribution arising from sliding
+values at different temperatures, the true activation energy and the stress function that isproportional to the external
+for the rate controlling process t1.Uo can be determined. strain rate have been calculated as functions ofthe applied
+The agreement between the experimentally observed strain .stress for the three alloys.
+Materials Science and Technology August 1996 Vol. 12
+
+--- PAGE 6 ---
+640 Venkatesh et al. Grain boundary sliding in structural superplasticity: Part 4
+AI-33 Cu eutectic alloy [5J (b)
+AI -12Si Eutectic Alloy [4] (a) -- --793 K pred
+°
+793K expt
+0·0001 I>-- I - - o -75 7 3 53K K e p x re p d t "/0 / °
+----713 K pred ",'0
+A 713K expt ,"0
+0·001 -633 K pred ~O
+X633K expt,o
+,,0
+oPO
+0'
+,0
+1°
+0·0001 I
+-- -- -831K prC!d
+°
+0·00001 ~ X 831K expt
+a 811K expt I
+--- 811K pred
+A 791K expt
+'en I ---791 K pred
+ui X 763K expt i
+~ --763K pred
+a: 0'00001
+z 0·1
+«
+a.-: AI-33C ° u -0·4Zr [6] 9,1) (c) AI-3 o 3 1. C 7J u .1m eut e e x c p ti t c alloy [5] (d)
+en 793K expt ,,00
+- --- a 7 7 5 9 3 3 K K e p x re p d t ,,<> ,,0 -----1 a ·7 2·3 J p . m lm e p x re p d t
+,-6'6 ----2·3 pm pred
+----753 K pred
+A 713Kexpt p,..o 0'001 ----2·8 A2·8 J J J J m m p ex re p d t
+0.0001 I- -- 713K pred .r::f X3.8JJm expt
+~~ 0" -- 3·8J.lm pred
+,,~
+,,0 .4.6}Jm expt
+/0 ----4.6 IJm pred
+/60/
+• 5.5}Jm expt
+,,/0 ---5·5 JJm pred
+"0 • 7.7 JJm expt
+;:{6 .---7·7 JJm pred
+P 0·0001
+o/
+0·00001 -
+0-00001
+0.1
+STRESS, MN m-2
+aAI-12Si; band dAI-33Cu; cAI-33Cu-O'4Zr
+3 Comparison between predicted and experimentally measured values of strain rate as function of applied stress
+corresponding to different experimental conditions for given alloys
+7. The apparent viscosity-applied stress relationship has and
+been calculated for the three alloys. The dependence [:1~-2~- G~2- D
+observed of the isothermal apparent viscosity on the stress Pi = 3(1~ p) p] . . . . (13)
+level and the grain size is understandable because super-
+plastic flow is non-Newtonian viscous (m=1= 1). (See Part 1for the definition of symbols.)
+8. In the three aluminium alloys examined, the basic units
+Elastic energy of uniform expansion BO confined to
+ofboundary sliding appear to have a common structure. volume lIOis given by
+1
+Appendix t1F2 ="2/32J.lllOBo 2
+where
+Calculation of AFo(AU o), C" and (To using (1 p)
+model presented in Part 1 =~ +
+pR 2 (independent of shape) . . . (14)
+9 1-p
+FREE ENERGY OF ACTIVATION FOR GRAIN
+For p= 1/3, /31= 0·446 and /32= 0·889. Assuming W= Ro=
+BOUNDARY SLIDING
+(5/2)b; Yo = 0'1; Bo= 0,05; and J.lb3 = 3·5eV (6'04 x 10-19 J);
+Elastic energy of 'stress free' shear Yo confined to volume t1Fo (=t1F 1 +t1F 2) =0·38 eV/atom =39·5kJ mol-I. Since
+lIO(see equations (2) to (4) of Part 1 and Eshelby9) is Yo and Bo enter the expressions quadratically, any number
+given by for t1Fo between 10and 100kJ mol-1 can be obtained with
+relatively small deviations from the values actually chosen
+t1F1=" 1 2/31J.lllOYo 2 . . . . . . . . . . . . (12) in the calculations shown above (100/0 for Yo and 50/0for
+Bo respectively). These values have been chosen according
+For an oblate spheroid with W/2Ro =0·5 to existing estimates for metallic glasses and bubble raft
+experiments.1o Thus, ~Fo has to be determined experimen-
+lIO=3 2n Ro 3 tally. The local strains to be postulated can then be made
+compatible with the value determined experimentally.
+Materials Science and Technology August 1996 Vol. 12
+
+--- PAGE 7 ---
+Venkatesh et al. Grain boundary sliding in structural superplasticity: Part4 641
+10000·0
+(a)
+15000·0
+(b)
+8000·0
+11000·0
+6000·0
+7000·0
+4000·0
+o T =793 K
+o T =753 K
+2000·0 o T =831K .3000'·0 6 T = 713K
+o T =811K • T :: 633K
+6 T =791K
+• T =763K
+0·0 -1000·0
+0·00 0·50 1.00 1·50 2·00 2·50 0·00 1.00 2·00 3·00 4·00
+STRESS, MN m-2 STRESS, MN m-2
+59000·0
+(d)
+(c) Grain Size
+o 1·7fJm
+en 12000·0 o 2·3 fJm
+&. 6 2.81Jm
+~ • 3·8 JJm
+~39000.0 • "'6}Jm
+6 5.5 JJm
+U5
+o X 7.7 }Jm
+u 8000·0
+en
+:;
+....
+z
+U0:J:19000'0
+~ - 4000·0
+a..
+«
+o T =793K
+o T =753K .
+6 T =713K
+-1000·0
+0.00 1·00 2.00 3·00 4.00 5·00 6·00 0·0 0.00 1·00 2·00 3·00 4·00 5·00 6.00
+STRESS, MN m-2 STRESS, MN m-2
+8000·00
+(e)
+6000·00
+4000·00
+2000·00 o U =1·5MNm-2
+o 0- =2.0MNm-2
+6 U =2.5MNm-2
+6 a- =3.0MNm-2
+• U ::3·5MNm-2
+0·00
+0·00 2·00 4·00 6·00 8·00
+GRAIN SIZE, ~m
+aAI-12Si; b,d, and eAI-33Cu; cAI-33Cu-O'4Zr
+4 Calculated apparent viscosity-applied stress relationship for different materials and conditions
+Materials Science and Technology August 1996 Vol. 12
+
+--- PAGE 8 ---
+642 Venkatesh et al. Grain boundary sliding in structural superplasticity: Part4
+12·0 For the data analysed in this paper L varied between
+1x 10-6 and 8x 10-6 m.In the calculations N,the number
+ALUMINIUM AllOYS
+ofgrain boundaries participating in the mesoscopic sliding
+92(X) Master curve
+event,wasallowed to vary between 2and 10.(Experimental
+10.0 000 Experimental data
+- Master curve data in this regard are rare; the only result to date
+(presented in Part 2) givesN =4.)
+8·0
+CASE I: (Jo AT INTERPHASE BOUNDARY
+Based on the geometry of a rhombic dodecahedron and
+~N 6·0 ·thephysical picture forlocal boundary migration presented
+CI in Part 1,the area reduction in the mesoscopic glide plane
+~A isgiven by
+4.0
+3
+~A=-qr
+2
+2.0 where q is the projection of the edge of the triangular
+pyramid oftherhombic dodecahedron ontothemesoscopic
+(111)glide plane (=L/31/2) and r is the residual misfit left
+o
+after the completion of non-rate controlling dislocation
+o 4·0 8·0 12·0 16·0
+motion. For the present calculations r has been taken to
+X vary between 0'015 and 0·15nm.
+5 Curve of 92(X) versus x for all three aluminium alloys
+studied (see equation (10))
+CASE II: (Jo AT INTERCRYSTALLINE BOUNDARY
+.Here local boundary migration takes place by diffusion.
+As~UO =~Fo +T~S, itisevident that the values of~uo
+Then
+reported in Table4 from experimental results agree very
+well with the range predicted here theoretically. (As ~S is 3
+absorbed into the fittingparameters, itcan not beestimated ~A=-q(h-b)
+2
+experimentally.) The system dependence of ~Fo in the
+theoretical calculations comes from J.l and Yo and the where h is the height of the pyramid to be flattened by
+dependence on the shape of the base units is reflected by diffusion (for a rhombic dodecahedron equal to (61/2/12)L)
+110and Pl' and b is the grain boundary width (taken, as before, as
+equal to 2·5b where b=0·3 nm).
+CALCULATION OF C, Therefore
+From Part 1
+W e~lIO
+C =2 L kT vexp(-~Fo/kT) . . . . . . . (15)
+1
+For the present calculations an interatomic spacing b of
+3A (0'3nm)inthe boundary region isassumed. Wistaken Results
+as 2'5b, 110=(4n/3)R~(W/2) (with Ro= W), and eo=0·05.
+The ~Fo range for estimating the range of C
+1
+values For case I, a
+(fo
+range of 0·34-1·26 MN m-2 is predicted.
+permissible istaken as 10-100 kJ mol-1. This is generally in good agreement with the experimental
+Based on the experimental data, the range of T values values obtained by numerical solution (Tables 1 and 3)
+is taken to lie between 650 and 850K and the that liepredominantly in the range 0·25-1·2 MN m-~.
+grain size range as 1x 10-6-8 X 10-6 m. From the above For case II, a (fo range of 36·0-149·4 MN m-2 is
+values and equation (15), C 1 is estimated to lie in the predicted. This is an interesting result that reveals the
+range 2·7x 10-9-0,6959 Pa-1 S-l. For a ~Fo value of following.
+39·5kJ mol- \ calculated based on results obtained 1. Resistance to plane interface formation' by local
+for metallic glasses and bubble raft experiments10 (see boundary migration at the intercrystalline boundaries of a
+above), C 1 is found to lie in the range 1·94x 10-4- material ofuniform grain sizeand shape isextremely high.
+3·74 X 10-4 Pa-1 S-l. This isbecause in this case ~A, the area to be removed by
+diffusion, is equal to 39·3-40·8% of the total ground area
+CALCULATION OF LONG RANGE THRESHOLD ofa grain in the mesoscopic glideplane. This explains why
+STRESS (Jo the grain coarsening resistance of materials is high when
+the grain size distribution is very narrow and the shapes
+From Part 1and equation (3) ofPart 4
+ofthe grains are similar.
+J
+~A/A 12 2. When the magnitude of the external. stress plus the
+(fo - _ 31/2(2j1YB) 1/2[ (Xf(NA)1/2 / . (16) internal stress resulting from boundary sliding is large
+enough to force lattice dislocations into the grains from
+The value of J1 is calculated from j1b3 =3'5eV (= grain boundary bends (see Part 1),this mechanism.oflocal
+6·04 X 10-19 J) (see above), i.e. J1=2·2 X 1010N m -2. The boundary migration will operate more readily than the
+speCificgrain boundary energy YB for aluminium is taken mechanism involving diffusion even at an intercrystalline
+as 0·400Jm- 2 (Ref.11)and (Xl ~ 1. boundary.
+The grains are assumed to have a grain size L and a 3. In superplastic alloys made up of grains of non-
+rhombic dodecahedron shape (often suggested to be close uniform sizes and shapes, the long range threshold stress
+to the shape of real crystals). Then, from the geometry of needed formesoscopic slidingisconsiderably lessthan that
+rhombic dodecahedron, the ground area per grain on the predicted by equation (16) (see, e.g.Tables 1and 3).
+(111) mesoscopic glide plane A =(31/2/4)L2• For an intercrystalline boundary, when the grain size is
+Materials Science and Technology August 1996 Vol. 12
+
+--- PAGE 9 ---
+Venkatesh et aJ. Grain boundary sliding in structural superplasticity: Part4 643
+uniform
+Acknowledgements
+~AjA
+(J.f(NA)1/2 This paper is dedicated to Professor C. V. Sundaram for
+having helped nucleate superplasticity research 'at lIT,
+varies as L-1/2 (see above).
+Madras.
+But in Table 3it is seen that experimentally varies as
+(Jo
+The authors thank Professors R. Subramanian and
+L-0·12. Using this result, ifequation (16) ismodified as
+P. R.Parthasarathy for ausefuldiscussion on the statistical
+[_~A_I_A_Ja. techniques adopted in this paper. Financial support for
+(J Or = B 31/2(2I1Y )1/2 (J.f(NA)1/2 ' a=0·12 . . . (17) the work was derived from the Indo-US Project
+No. DSTjlNTjUSHRFj211j88 of the Department of
+a (Jo range of 0·77-1'09 MNm-2 is predicted, which is in Science and Technology, Government of India Grant
+accordance with the experimental values obtained by a No. N00014-93-1-0041jR&T Project Code: US-India
+numerical best fitsolution. 0501ofthe OfficeofNaval Research, Arlington, VA,USA.
+At this stage, it has not been possible to show that One of the authors (KAP) thanks the Alexander-von-
+a~ 0·12for real materials ofnon-uniform grain shapes and Humboldt-Stiftung, Bonn, for financial support.
+sizes or for the situation where intercrystalline as well as
+interphase boundaries align together to form a plane
+interface. However, a parallel between this result and the
+References
+empirical modification made to the classical equation
+predicting grain growth can be drawn. There also, the
+predicted grain size increase is as L-1/2. This is then 1. S.GLASSTONE, K. J.LAIDLER, and H. EYRING: 'The theory ofrate
+empirically modified to L-a, with a~ 0'18, 0'25, etc. processes', 516;1941,New York, McGraw-Hill.
+according to the system considered. 2. P. SHEWMON: 'Diffusion in solids', 2nd edn, 74, 75, 79; 1989,
+Warrendale, PA,TMS.
+Thus, at the present stage of development, the theory is
+3. D. W. CHUNG and J.R. CAHOON: Met. Sci., 1979,13,635.
+unable to reveal a priori the values of (Jm, (J., and a. 4. D. L. HOLT and w. A. BACKOFEN: Trans. ASM, 1966,59,755.
+However, (Jm and (J. may be obtained by examining the 5. K. MATSUKI, K. MINAMI, M. TOKIZAWA, and Y. MURAKAMI: Met.
+basic unit ofmicroscopic sliding using molecular dynamics Sci., 1979,13,619.
+and a may be obtained by analysing the problem of local 6. s.s.BHATTACHARYA:PhD thesis,Indian Institute ofTechnology,
+boundary migration in real materials ofnon-uniform grain Madras, 1993.
+sizesand shapes. 7. s.S.BHATTACHARYAand K. A.PADMANABHAN: in'Superplasticity
+This situation appears reasonably practicable when it is in advanced materials', (ed.S.Hori et al.), 459; 1991,Osaka,
+The Japan Societyfor Research on Superplasticity.
+noted that the alternative Dorn equation used to explain
+8. K. A. PADMANABHAN and G. J. DAVIES:'Superplasticity', 71-74;
+steady state isostructural superplasticity intwophase alloys
+1980,Berlin,Springer Verlag.
+requires 10adjustables, most ofwhichcan not becalculated 9. J.D. ESHELBY: Proc.R. Soc. (London) A, 1957,A241,376.
+from theory. In addition, regions I and II are attributed to 10.A. s. ARGON: Acta Metall., 1979,27,47.
+two different mechanisms. 11.H. J. HOFLER: Personal communication.
+CORRIGENDA
+The following corrections should bemade to Part 1in this seriesofpapers 'Model for grain boundary
+sliding and its relevance to optimal structural superplasticity', MST, May 1996, Volume 12,
+pp.391-399
+Page 393
+In the fourth line of the right hand column
+should replace
+'ti 'r1
+In equation (13)
+should replace
+'ri 'to
+In the line immediately below equation (13)
+'r~ 'ri should replace 'r~ 'r1
+Page 394
+The last sentence in the left hand column should read:
+'No specificshape ofthe grains is assumed because expressions for mesoscopic boundary sliding
+(and hence structural superplasticity) can be derived independent of the grain shape.'
+In the ninth line ofthe section on 'Optimal superplastic deformation'
+g( should replace g( d
+O'i) 0'
+Materials Science and Technology August 1996 Vol. 12

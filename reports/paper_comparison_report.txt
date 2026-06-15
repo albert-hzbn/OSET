@@ -1,0 +1,810 @@
+﻿COMPARISON REPORT: OSET Theory vs. Published Papers
+====================================================
+
+Generated from:
+  - OSET theory document: OSET_oblate_spheroid_theory.md
+  - Paper 1: MSEA_IN_PRINT.pdf  (extracted: extracted_MSEA.txt)
+  - Paper 2: KAP-Gleiter_COSSMS.pdf  (extracted: extracted_KAP_Gleiter.txt)
+
+Date of analysis: Based on full-text extraction and line-by-line comparison.
+
+====================================================
+PART I: EXTRACTION SUMMARY
+====================================================
+
+Paper 1 — MSEA_IN_PRINT.pdf
+  Journal: Materials Science & Engineering A 908 (2024) 146713
+  Authors: K.A. Padmanabhan, Sergiy V. Divinski
+  Title: "A mean field description of steady state isotropic structural superplastic deformation"
+  Pages: 16 (including Appendix, Tables, References)
+  Extracted characters: 104,942
+  Extraction quality: GOOD — text-based PDF. Body text and equations extracted
+    reasonably. Some equation rendering is garbled with CID encodings (e.g.
+    "(cid:0)" for minus sign, "(cid:0)" for various symbols in dense equation
+    regions). Key equations on pages 7–8 and Appendix (pages 12–13) are
+    recoverable. Figures not extracted (image-based). Table A1 data intact.
+
+Paper 2 — KAP-Gleiter_COSSMS.pdf
+  Journal: Current Opinion in Solid State and Materials Science 16 (2012) 243–253
+  Authors: K.A. Padmanabhan, H. Gleiter
+  Title: "A mechanism for the deformation of disordered states of matter"
+  Pages: 11
+  Extracted characters: 74,222
+  Extraction quality: FAIR-GOOD — text-based PDF but with heavy CID encoding
+    artifacts. Key equations are present but symbols render as "(cid:2)", "(cid:3)",
+    "(cid:4)", etc., representing minus, comparison, and other signs. Equations (2)–(12)
+    recoverable with context. Figures 1–4 not extracted.
+
+OSET Theory Document (OSET_oblate_spheroid_theory.md)
+  Type: Markdown, fully readable.
+  Length: ~1032 lines, 81.9 KB
+  Sections I–X covering OSTZ geometry, Eshelby tensor derivation, collective OSTZ
+    configurations, dislocation derivations, statistical mechanics, and predictions.
+
+====================================================
+PART II: MSEA_IN_PRINT.pdf — Point-by-Point Analysis
+====================================================
+
+-----------------------------------------------
+Item 1: ΔF0 equation form
+-----------------------------------------------
+OSET claim: ΔF0 = (1/2)(β1·γ0² + β2·ε0²)·G·V0   [Eq. 8]
+
+MSEA paper (Eq. 1, page 7):
+  "ΔF0 = (1/2)(β1·γ0² + β2·ε0²)·G·V0"
+  (extracted as: "ΔF0 = 1/2(β1·γ0² + β2·ε0²)·G·V0 (1)")
+
+MSEA Appendix (Eq. A.3, page 12):
+  "ΔF0 = (1/2)(β1·γ0² + β2·ε0²)·G·V0;  ε0 = γ0/√3  (von Mises yielding is assumed)"
+
+STATUS: MATCHES. The functional form of the activation energy equation is
+  identical in OSET (Eq. 8) and both MSEA equations (Eq. 1 and A.3).
+  The MSEA paper additionally specifies the von Mises relationship ε0 = γ0/√3,
+  which is consistent with the KAP-Gleiter paper's equation (8): "3γ0 = C·(ΔV/V0),
+  C = √3 for von Mises".
+
+NOTE: The MSEA Appendix note says "ε0 = γ0/√3" while OSET's Table (§2.3) says
+  G0 = ε0 = 0.05 for γ0 = 0.10. These differ slightly: γ0/√3 = 0.10/1.732 = 0.0577,
+  not 0.05. Minor discrepancy (~13%).
+
+-----------------------------------------------
+Item 2: Values of γ0, W, β1, β2, G0
+-----------------------------------------------
+OSET canonical values (§2.3, for Al grain boundaries):
+  W = 2.5b ≈ 0.75 nm;  γ0 = 0.10;  G0 = ε0 = 0.05;  β1 = 0.446;  β2 = 0.889
+
+MSEA paper (page 7–8):
+  W = "grain boundary width, W = 2.5 a0" (a0 = atomic diameter of major constituent)
+  For Al: a0 ≈ b = 0.286 nm → W ≈ 0.715 nm.
+  For Cu: a0 ≈ b = 0.256 nm → W ≈ 0.64 nm.
+  V0 = (2/3)πW³  [confirmed on page 7: "volume of the spheroid = (2/3)πW³"]
+
+  β1 formula (page 7):
+    "For an oblate spheroid β1 = 0.944[(1.590 − p)/(1 − p)]  and
+     β2 = [4(1+p)/9(1 − p)], with p the Poisson ratio [8]."
+    [Reference [8] = Eshelby 1957]
+
+  Computed β1 for ν = p = 1/3:
+    β1 = 0.944 × (1.590 − 0.333)/(1 − 0.333) = 0.944 × 1.257/0.667 = 0.944 × 1.884 ≈ 1.779
+
+  Computed β2 for ν = 1/3:
+    β2 = 4(1 + 1/3)/[9(1 − 1/3)] = 4(4/3)/[9(2/3)] = (16/3)/6 = 8/9 ≈ 0.889
+
+  γ0 values (Appendix Table A1, computed for Cu via iterative fitting):
+    Row-by-row: 0.1443, 0.1454, 0.1465, 0.1472, 0.1387, 0.1398, 0.1420
+    Mean γ0 ≈ 0.1434  (range 0.139–0.147)
+
+  ε0 = γ0/√3 ≈ 0.0828 mean (Table A1 column confirmed: 0.0833, 0.0839, …, 0.0828 mean)
+
+STATUS — W: MATCHES OSET's W = 2.5b (same formula, slightly different
+  numerical result depending on whether a0 or b is used).
+
+STATUS — β2: MATCHES OSET's spherical approximation β2 = 4(1+ν)/[9(1-ν)] = 0.889.
+
+STATUS — β1: ✗ MAJOR DISCREPANCY.
+  MSEA paper gives β1 = 0.944(1.590−ν)/(1−ν) ≈ 1.779 for ν=1/3.
+  OSET claims β1 = 1 − 2S1313 = 0.4456 ("Eshelby value", §2.2).
+  OSET also claims "Padmanabhan et al. framework uses β1^eff ≈ 1" (§2.2a).
+  NEITHER 0.446 NOR 1.0 matches the paper's explicit formula of ≈1.78.
+  The paper's β1 formula is approximately 4× larger than OSET's Eshelby value.
+  Origin of discrepancy: The papers cite Eshelby (1957) [Ref. 8] for β1, but OSET
+  derives β1 = 1 − 2S1313 directly from the Eshelby inclusion theorem with
+  eigenstrain ε*13 = γ0/2. The formula 0.944(1.590−ν)/(1−ν) does not appear
+  derivable from S1313 for α=0.5, and must come from either a different reference
+  or a different approximation (possibly Argon 1979 or an earlier calculation).
+
+STATUS — γ0: PARTIAL MATCH / DISCREPANCY.
+  KAP-Gleiter paper (2012) says γ0 ≈ 0.10 (from Argon/bubble raft experiments).
+  MSEA paper (2024) COMPUTES γ0 iteratively from Cu GB data: mean γ0 ≈ 0.143
+  (range 0.139–0.147). This is significantly higher than OSET's "canonical γ0 = 0.10".
+  The value 0.10 appears to be a legacy assumption that the newer MSEA paper revises.
+
+STATUS — G0 = ε0: PARTIAL MATCH.
+  OSET: G0 = 0.05 for γ0 = 0.10 (= γ0/2).
+  Papers: ε0 = γ0/√3 (von Mises), which for γ0 = 0.10 gives 0.0577, and for the
+  computed mean γ0 = 0.143 gives 0.0828. OSET's value of 0.05 corresponds to
+  γ0 = 0.087 using von Mises, or to γ0/2 = 0.05 using a non-standard convention.
+  Minor to moderate discrepancy depending on choice of γ0.
+
+-----------------------------------------------
+Item 3: Rate equation form (matches OSET Eq. 39?)
+-----------------------------------------------
+OSET Eq. 39:
+  γ̇ = (2Wγ0ν/d) · sinh[(τ−τ0)γ0V0/(2kT)] · exp(−ΔF0/kT)
+
+MSEA paper Eq. (2) (page 8):
+  "γ̇ = [2W/d · γ0 · ν] · sinh[(τ−τ0)γ0V0/(2kT)] · exp(−ΔF0/kT);  τ > τ0"
+  (partial extraction; argument confirmed as (τ−τ0)γ0V0/2kT from context)
+
+MSEA paper Appendix Eq. (A.1) (page 12):
+  "γ̇ = [2W/d · γ0 · ν] · sinh[(τ−τ0)γ0V0/kT] · exp(−ΔF0/kT);  τ > τ0"
+  NOTE: In A.1 the extraction shows the argument without the factor of 2 in the
+  denominator. This may be a CID rendering artifact or a genuine discrepancy
+  between Eq. (2) and Eq. (A.1). The main-text Eq. (2) is consistent with OSET.
+
+MSEA paper also presents (page 9):
+  General form: ω = ν[exp(−(ΔF0−Δw)/kT) − exp(−(ΔF0+Δw)/kT)]  [Eq. 5]
+  Work term: Δw = (1/2)(τγ0V0)  [Eq. 6]
+  This gives γ̇ = ω·(Wγ0/d) = (2Wγ0ν/d)·sinh(Δw/kT)·exp(−ΔF0/kT)
+
+STATUS: MATCHES. The fundamental form of the rate equation in OSET (Eq. 39)
+  exactly matches MSEA Eq. (2) and is derivable from MSEA Eqs. (5)–(6).
+
+-----------------------------------------------
+Item 4: N_c value
+-----------------------------------------------
+OSET claim: N_c = 4 (critical OSTZ number for GB sliding; from Eq. 19a:
+  N_c = b/(γ0·2.5b) = 1/(0.1×2.5) = 4).
+
+MSEA paper: Uses "N" = number of grain boundaries that align to form the
+  mesoscopic plane interface (threshold stress formula Eq. 3 / Appendix Eq. A.4):
+  "τ0 = G·d1·(1−(d0/d)^0.5)  where  d1 = 2^1.5 × 3^(−0.75) × N^(−0.25) × G·γ_B·α_f"
+  Table A1 (page 13) computed values of N for Cu at various T and grain size:
+    N = 3.9, 5.3, 7.9, 11.2, 4.3, 7.29, 9.12;  Mean N ≈ 7.0
+
+STATUS: ✗ THESE ARE DIFFERENT QUANTITIES. OSET's N_c = 4 is the number of
+  OSTZs that must cooperate to produce one lattice Burgers vector in the GB regime
+  (a microscopic / OSTZ-chain quantity derived in §3.3). The MSEA paper's N is
+  the mesoscopic number of grain boundaries forming a plane interface (computed
+  from the threshold stress equation by fitting to experimental data). Mean N ≈ 7
+  for Cu. OSET does not acknowledge this distinction. While OSET claims N_c = 4
+  for the GB sliding regime, the MSEA paper computes N = 4–11 (mean ≈ 7) for Cu
+  as the mesoscopic cooperativity — these are conceptually and numerically distinct.
+
+-----------------------------------------------
+Item 5: S1313 Eshelby tensor mention
+-----------------------------------------------
+OSET: S1313 = 0.2772 for α=0.5, ν=1/3  (derived in §2.2, Table §2.2)
+
+MSEA paper: The paper references Eshelby (1957) for the β1 and β2 formulae but
+  does NOT give the numerical value of S1313 at any point. The specific formula
+  β1 = 0.944(1.590−ν)/(1−ν) is presented without decomposition into S-tensor
+  components.
+
+STATUS: NOT MENTIONED in MSEA paper. OSET's S1313 = 0.2772 and the full
+  Eshelby tensor table (§2.2) are new content added by OSET not present in papers.
+
+-----------------------------------------------
+Item 6: Lorentzian dislocation density
+-----------------------------------------------
+OSET Eq. 13: ρ1(x) = (b_eff/π)·W/(x² + W²)
+
+MSEA paper: No mention of Lorentzian dislocation density anywhere.
+
+STATUS: NOT MENTIONED. This is an OSET theoretical extension/derivation.
+
+-----------------------------------------------
+Item 7: Nanocrystal-glass transition d0
+-----------------------------------------------
+OSET: d0 = 2√6·W  (from KAP-Gleiter COSSMS; for W=0.5nm: d0 ≈ 2.45 nm)
+
+MSEA paper (pages 8–9, Eq. 3 region):
+  "τ0 = G·d1·(1−(d0/d)^0.5)  where  d0 = 2×6^0.5×W = 2√6·W"
+  (extracted: "d0 = 2×6^0.5×W")
+  Text: "An important prediction emerges from Eq. (3) that when the average grain
+  size of the material is ~2.5 nm (assuming the average grain boundary width as
+  0.50 nm), the long-range threshold stress that leads to mesoscopic grain boundary
+  sliding falls off to 0."
+  2√6 × 0.50 nm = 4.899 × 0.50 = 2.45 nm
+
+STATUS: MATCHES OSET. The MSEA paper explicitly states d0 = 2√6·W and
+  confirms d0 ≈ 2.45 nm for W = 0.50 nm. OSET's attribution is correct.
+
+-----------------------------------------------
+Item 8: Strain rate sensitivity m and cooperativity
+-----------------------------------------------
+OSET claim: m = d(ln τ)/d(ln γ̇) depends on N_c; m→1 for individual OSTZ events
+  (glass/GB); m decreases as N_c increases (crystalline).
+
+MSEA paper (pages 9–10 and Section 3):
+  Does NOT derive m directly from N_c. Instead uses the internal stress distribution
+  approach. From the lognormal internal stress distribution with parameters τ_m, λ:
+  "n (= 1/m) is given by: [Eq. 12 — complex expression involving τ_m, λ, τ0]"
+  The paper states: "once τ_m and k are known, it is possible to determine the value
+  of the stress exponent, and hence the strain-rate sensitivity index, for any given
+  material in any material class."
+  The paper references the cooperativity N in the context of the threshold stress
+  (Eq. 3), not strain-rate sensitivity directly.
+
+  For bulk metallic glasses / poly-glasses: "the rate equation gives b = 1 [i.e., m=1]
+  and minimal grain deformation" — matches OSET's m→1 for glass/GB limit.
+
+STATUS: PARTIAL MATCH. The qualitative trend (m→1 for glasses, m<1 for crystalline
+  materials) is consistent. However, the quantitative link between m and OSET's N_c
+  is not explicit in the MSEA paper — the paper uses the lognormal stress distribution
+  to compute m, not the OSTZ cooperativity number.
+
+-----------------------------------------------
+Item 9: ΔF0 numerical values from MSEA paper
+-----------------------------------------------
+OSET: ΔF0 = 0.38 eV = 39.5 kJ/mol  (for Al, using β1=0.446, γ0=0.10)
+
+MSEA paper Appendix Table A1 (computed for Cu, G_GB = 24 GPa, W from Cu a0):
+  ΔF0 values: 174.23, 176.41, 178.75, 180.12, 162.95, 165.21, 169.52 kJ/mol
+  Mean ΔF0 ≈ 172.5 kJ/mol = 1.79 eV
+  Range: 163–180 kJ/mol (1.69–1.87 eV)
+
+  Separately, Section 6 (page 11) cites MD simulation result:
+  "Neier et al. ... compute G = 24 GPa and γ_B = 0.72 J/m² ... γ0 = 0.1 on the
+  oblate spheroid at a Cu Σ41 grain boundary ... ΔF0 = 65.2 kJ/mol"
+  [This lower value uses γ0 = 0.10 with different G and V0 assumptions]
+
+STATUS: ✗ MAJOR DISCREPANCY.
+  OSET's "canonical" ΔF0 = 0.38 eV = 39.5 kJ/mol is for Al with β1 = 0.446.
+  The MSEA paper's iteratively computed ΔF0 for Cu is 163–180 kJ/mol (1.7–1.9 eV),
+  which is ≈4–5× larger.
+  
+  The discrepancy traces primarily to β1: OSET uses β1 = 0.446, the MSEA paper
+  uses β1 = 0.944(1.590−ν)/(1−ν) ≈ 1.78, giving β1 approximately 4× larger.
+  Additional factors: γ0 = 0.143 (Cu) vs. 0.10 (OSET), different G_GB values.
+  
+  Even the paper's MD-assisted estimate of 65.2 kJ/mol (using γ0=0.10) differs
+  significantly from OSET's 39.5 kJ/mol.
+
+  OSET's claim that "ΔF0 = 0.38 eV = 39.5 kJ/mol" as "canonical parameter values
+  from Padmanabhan et al. 1996" is NOT supported by the 2024 MSEA paper's
+  computed values.
+
+-----------------------------------------------
+Item 10: Additional relevant content
+-----------------------------------------------
+
+(a) OSTZ as elemental excitations (Section 7, page 10):
+  The MSEA paper explicitly calls oblate spheroids "elemental excitations", consistent
+  with OSET's core premise. Quote: "oblate spheroids containing quantified excess
+  free volume ... are regarded by us as the response of any GB structure which
+  experiences a stress/GB sliding ... these excitations probably do not have specific
+  atomistic structure describable in crystallographic terms."
+  STATUS: CONSISTENT with OSET philosophy.
+
+(b) Dislocation emergence from OSTZ (pages 5, 10, 12):
+  "deformation of the oblate spheroid gives rise to (partial) dislocations in the
+  Volterra sense [73]"  and  "the basic/unit shear volume (the oblate spheroid) has
+  been taken to be so small that its shear gives rise to a partial dislocation in the
+  Volterra [73] framework."
+  STATUS: CONSISTENT with OSET Section III. The papers support OSET's claim
+  that dislocations emerge from OSTZ collective behavior.
+
+(c) Aspect ratio / geometry:
+  MSEA page 3: "an oblate spheroid is a special case of an ellipsoid in which the
+  height is equal to half the radius" → a3 = a1/2, aspect ratio α = 1/2.
+  STATUS: MATCHES OSET's α = 1/2.
+
+(d) Eigenstrain / shear strain: 
+  MSEA Fig. 4 caption (page 4): "a unit sliding event gives rise to a partial dislocation
+  possessing a Burgers vector in a Volterra sense, which leads to a shear strain of
+  γ0 (= ΔW/W), where ΔW is unit sliding displacement"
+  STATUS: CONSISTENT with OSET's b_eff = γ0·W (Eq. 12).
+
+====================================================
+PART III: KAP-Gleiter_COSSMS.pdf — Point-by-Point Analysis
+====================================================
+
+-----------------------------------------------
+Item 1: d0 formula (nanocrystal-glass transition)
+-----------------------------------------------
+OSET: d0 = 2√6·W  (also written as: grain size at which τ0 → 0)
+
+KAP-Gleiter paper Eq. (6) (page 5-6):
+  "σ0 = [21.5·G·C_B·(L−L0)^0.5] / [3^0.75·L·N^0.25];  L0 = 2×6^0.5·W"
+  L0 here is the critical grain size = d0.
+  So d0 = L0 = 2×6^0.5·W = 2√6·W
+
+Text (page 9): "From Eq. (6) it follows that when the grain size is equal to
+  2×6^0.5·W, the threshold stress necessary for the onset of mesoscopic boundary
+  sliding becomes zero. Then, even with a small perturbation the microstructure
+  could collapse, i.e., there could be a nanocrystalline to the metallic glass transition.
+  If the grain boundary width is taken as equal to 0.50 nm, then this changeover
+  would take place at 2.45 nm."
+
+STATUS: MATCHES OSET. 2√6 × 0.50 nm = 2.449 nm ≈ 2.45 nm
+  The KAP-Gleiter paper is the PRIMARY SOURCE for this formula.
+  Also: "this estimate of 2.45 nm for the nanocrystalline to metallic glass transition
+  in this model is very close to what is suggested by Trelewicz and Schuh [22]."
+
+-----------------------------------------------
+Item 2: Formula linking d0 to W
+-----------------------------------------------
+OSET: "d0 = 2√6·W (grain size at which threshold stress → 0)"
+
+KAP-Gleiter paper: Explicitly L0 = 2×6^0.5·W as the lower critical grain size in Eq. (6).
+  ALSO appears in MSEA paper Eq. (3): d0 = 2×6^0.5·W (confirmed).
+
+STATUS: MATCHES OSET. Both papers give the same formula. OSET correctly
+  attributes d0 = 2√6·W to "KAP-Gleiter COSSMS" (in the comparison table §6.2).
+
+-----------------------------------------------
+Item 3: Peierls stress formula
+-----------------------------------------------
+OSET Eq. 20: τP = [2G/(1−ν)] · exp[−2πW/(b(1−ν))]
+
+KAP-Gleiter paper (pages 2–3, around grain boundary dislocation discussion):
+  Conceptual mention: "it was known from the Peierls–Nabarro equation that the
+  width of the dislocation (defined by its core) becomes infinite in such a situation
+  [no long-range order, shear modulus → 0]"
+  No explicit presentation of the Peierls stress formula τP is given anywhere in
+  the paper. The paper uses this only conceptually to argue that dislocations
+  delocalize in high-angle grain boundaries.
+
+STATUS: NOT PRESENT in KAP-Gleiter paper as a formula.
+  The formula τP = [2G/(1−ν)] exp[−2πW/(b(1−ν))] is an OSET derivation
+  (§4.1). The papers reference the concept but do not present the equation.
+
+-----------------------------------------------
+Item 4: Stacking fault energy formula
+-----------------------------------------------
+OSET Eq. 30: γSF = (√3−1)·β1·γ0²·G·W/3
+
+KAP-Gleiter paper: No stacking fault energy formula or discussion anywhere.
+
+STATUS: NOT PRESENT. Stacking fault energy is entirely an OSET derivation/extension.
+
+-----------------------------------------------
+Item 5: Frank-Read mechanism
+-----------------------------------------------
+OSET Eqs. 26–28: τFR = Gb/(πL(1−ν)) ≈ Gb/(2L)  with b = Nc·γ0·W
+
+KAP-Gleiter paper: No Frank-Read formula or explicit discussion.
+
+STATUS: NOT PRESENT. Frank-Read critical stress is an OSET derivation/extension.
+
+-----------------------------------------------
+Item 6: β1, β2 values
+-----------------------------------------------
+KAP-Gleiter paper Eq. (3) (page 5):
+  "ΔF0 = (1/2)(β1·c0² + β2·ε0²)·G·V0  (3)
+  where for an oblate spheroid β1 = 0.944(1.590−p)/(1−p),
+  β2 = 4(1+p)/[9(1−p)], with p the Poisson ratio"
+  V0 = (2/3)πW³ [confirmed on same page]
+
+  Computed for ν = 1/3:
+    β1 = 0.944 × (1.590−0.333)/(1−0.333) = 0.944 × 1.884 ≈ 1.779
+    β2 = 4(4/3)/[9(2/3)] = 8/9 ≈ 0.889
+
+  Additional note from page 5: "c0 has been assumed to be ~0.10" (γ0 ≈ 0.10)
+  "e0 = 0.57·c0" (i.e., ε0 = γ0/√3 ≈ 0.577·γ0 — von Mises criterion)
+
+STATUS — β2 = 0.889: MATCHES OSET's spherical approximation.
+
+STATUS — β1 ≈ 1.78: ✗ DOES NOT MATCH OSET's β1 = 0.446 (Eshelby).
+  Same discrepancy as in MSEA paper. The KAP-Gleiter formula gives β1 ≈ 1.78.
+  OSET's claim of β1 = 0.446 ("Eshelby value") is NOT what either paper actually uses.
+  OSET's claim that papers use β1^eff ≈ 1 is also INCORRECT — papers give ≈1.78.
+
+STATUS — γ0 ≈ 0.10: MATCHES OSET canonical value (for the 2012 paper).
+
+STATUS — ε0 = γ0/√3 ≈ 0.0577: Consistent with OSET's G0 = 0.05 within ~13%.
+
+-----------------------------------------------
+Item 7: Rate equation
+-----------------------------------------------
+KAP-Gleiter Eq. (4) (page 5):
+  "γ̇ = A·(σ−σ0)·exp(−ΔF0/kT);  A = [2.0944·W⁴·c0²·ν] / (kT·L)"
+  at LOW STRESSES (linear regime where sinh ≈ argument)
+
+  General form [consistent with sinh at higher stresses]:
+  Same as MSEA Eq. (2) and OSET Eq. 39.
+
+STATUS: MATCHES (low-stress linear form shown; high-stress sinh form consistent).
+
+-----------------------------------------------
+Item 8: Nanocrystal-glass transition in detail
+-----------------------------------------------
+KAP-Gleiter paper (pages 9-10):
+  "If the grain size is equal to 2×6^0.5·W, the threshold stress necessary for the
+  onset of mesoscopic boundary sliding becomes zero. If grain boundary width =
+  0.50 nm, changeover at 2.45 nm."
+  "this estimate of 2.45 nm for the nanocrystalline to metallic glass transition is
+  very close to what is suggested by Trelewicz and Schuh [22]"
+
+STATUS: FULLY MATCHES OSET. KAP-Gleiter (2012) is the primary source.
+
+-----------------------------------------------
+Item 9: Strain rate sensitivity and cooperativity
+-----------------------------------------------
+KAP-Gleiter paper (pages 9–10, Section 5):
+  Uses internal stress distribution with lognormal distribution g1(σ0i) (Eq. 11).
+  Strain rate sensitivity derived from Eq. (12):
+  "n = [1−1/(1−σ0i/σm)] / [1 + σm/(4σ0i) × (1−σ0i/σm)^5]"
+  [Complex formula depending on internal stress distribution parameters σm, k]
+
+  Key statement: "in our model b [coupling factor] has a value of unity and minimal
+  grain deformation by faster (non-rate controlling) dislocation emission from
+  the grain boundaries and diffusion ... take place only to the extent required to
+  ensure coherency of strain. Therefore, there will be no coupling."
+  This is consistent with m=1 in the glass/GB limit.
+
+STATUS: PARTIAL MATCH. The qualitative conclusion (m→1 for pure GBS) matches
+  OSET. The quantitative formula in KAP-Gleiter uses lognormal internal stress
+  approach, not OSET's direct N_c-based approach.
+
+-----------------------------------------------
+Item 10: N1, cooperativity (GB mechanism)
+-----------------------------------------------
+KAP-Gleiter Eq. (10): "ΔS·N1·cosθ = b1"
+where N1 = number of sliding sites that shear sequentially, ΔS = mean displacement
+per unit shear, b1 = Burgers vector of emitted dislocation, θ = angle.
+This N1 is the sequential cooperativity number needed to emit one partial/full dislocation.
+
+NOTE: The paper (page 5, Section 5) discusses N1 in the context of dislocation emission
+from the boundary (mesoscopic process), not in terms of OSTZ cooperativity.
+
+STATUS: RELATED but not identical to OSET's N_c. The paper's N1 connects sequential
+  GBS events to dislocation emission (a macroscopic result), while OSET's N_c = 4
+  connects OSTZ number to Burgers vector magnitude. The concept is analogous but
+  the derivation and formula are different.
+
+-----------------------------------------------
+Item 11: V0 and aspect ratio
+-----------------------------------------------
+KAP-Gleiter paper (page 5): "V0 = (2/3)πW³"
+  "the radius along the grain boundary plane equal to the grain boundary width W,
+  and the height of the basic sliding unit will be located symmetrically about the
+  grain boundary plane, with a height (W/2) on either side of the boundary.
+  This shape of the basic sliding unit corresponds to an oblate spheroid."
+  → a1 = a2 = W, a3 = W/2, aspect ratio α = 1/2
+
+STATUS: MATCHES OSET's geometry (Eqs. 2–4).
+
+====================================================
+PART IV: OVERALL COMPARISON SUMMARY
+====================================================
+
+-----------------------------------------------------------------------
+A. Claims SUPPORTED by the papers (with page/equation references)
+-----------------------------------------------------------------------
+
+1. OSTZ geometry: a1=a2=W, a3=W/2, α=1/2, V0=(2π/3)W³
+   SOURCE: MSEA p.7 "oblate spheroid in which height = half the radius"; 
+   KAP-Gleiter p.5 "height W/2 on either side ... corresponds to an oblate spheroid";
+   Both papers: "V0 = (2/3)πW³"
+
+2. Activation energy formula: ΔF0 = (1/2)(β1·γ0² + β2·ε0²)·G·V0
+   SOURCE: MSEA Eq. (1) p.7, Appendix Eq. (A.3) p.12; KAP-Gleiter Eq. (3) p.5
+   Both papers give IDENTICAL functional form.
+
+3. Rate equation: γ̇ = (2Wγ0ν/d)·sinh[(τ−τ0)γ0V0/(2kT)]·exp(−ΔF0/kT)
+   SOURCE: MSEA Eq. (2) p.8, Appendix Eq. (A.1) p.12; KAP-Gleiter Eq. (4) p.5
+   (Note: KAP-Gleiter shows linear limit; MSEA shows sinh form)
+
+4. β2 spherical approximation = 4(1+ν)/[9(1-ν)] = 0.889 for ν=1/3
+   SOURCE: MSEA p.7; KAP-Gleiter Eq. (3) p.5
+
+5. W = 2.5 × a0 (atomic diameter) ≈ 2.5b
+   SOURCE: MSEA p.8 "(equatorial diameter = 5.0a0, so W = 2.5a0)";
+   KAP-Gleiter p.5 "radius along GB plane equal to GB width W, height W/2"
+
+6. γ0 ≈ 0.10 (for GB/superplastic regime, from Argon bubble raft analogy)
+   SOURCE: KAP-Gleiter p.5 "c0 has been assumed to be ~0.10"
+
+7. ε0 = γ0/√3 (von Mises yield criterion)
+   SOURCE: MSEA Appendix Eq. A.3 "ε0 = γ0/√3 (von Mises yielding assumed)";
+   KAP-Gleiter p.5 "e0 = 0.57c0" (≈ 1/√3 × c0)
+
+8. Nanocrystal-glass transition at d0 = 2√6·W ≈ 2.45 nm (for W = 0.5 nm)
+   SOURCE: KAP-Gleiter Eq. (6) "L0 = 2×6^0.5·W", p.9 "2.45 nm"; MSEA Eq. (3)
+
+9. OSTZ as elemental excitations of GB structure
+   SOURCE: MSEA Section 7 p.10 "oblate spheroids containing free volume as
+   excitations ... of a generic nature applicable to different classes of materials"
+
+10. Dislocation emergence from OSTZ shear (Volterra sense)
+    SOURCE: MSEA p.10 "deformation of oblate spheroid gives rise to (partial)
+    dislocations in the Volterra sense"; p.12 "gives rise to a partial dislocation"
+
+11. Aspect ratio α = 1/2 (height = half the radius)
+    SOURCE: MSEA p.3, KAP-Gleiter p.5
+
+12. Internal stress is lognormal; this enables calculation of n=1/m
+    SOURCE: MSEA Section 3 / KAP-Gleiter Eq. (11)–(12)
+
+-----------------------------------------------------------------------
+B. Claims that DIFFER in the papers (exact differences documented)
+-----------------------------------------------------------------------
+
+1. β1 VALUE — MAJOR DISCREPANCY
+
+   OSET claims:
+     (a) "Exact Eshelby value: β1 = 1 − 2S1313 = 0.4456 for ν=1/3, α=0.5" (§2.2)
+     (b) "Padmanabhan et al. framework uses β1^eff ≈ 1" (§2.2a, due to GB softening)
+   
+   Papers actually state:
+     MSEA p.7: "β1 = 0.944[(1.590 − p)/(1 − p)]"   → 1.779 for ν=1/3
+     KAP-Gleiter Eq.(3): "β1 = 0.944(1.590−p)/(1−p)"   → 1.779 for ν=1/3
+   
+   Comparison: 0.4456 (OSET) ≠ 0.944(1.257/0.667) ≈ 1.78 (papers) ≠ 1.0 (OSET §2.2a)
+   
+   This is a factor of ~4 difference. The papers consistently use the formula
+   0.944(1.590−ν)/(1−ν). Neither OSET's "Eshelby-derived 0.446" nor its
+   "effective GB-softened 1.0" matches what the papers actually compute.
+   
+   NOTE: The papers cite Eshelby (1957) as the source of β1, but OSET's own
+   derivation from the same Eshelby formalism gives 0.4456. The formula
+   0.944(1.590−ν)/(1−ν) may originate from the 1977 Padmanabhan paper or from
+   Gittus (1975), using a different approximation for the oblate spheroid shear
+   constraint — this requires further investigation.
+
+2. ΔF0 NUMERICAL VALUE
+
+   OSET:  ΔF0 = 0.38 eV = 39.5 kJ/mol  (for Al GB, using β1=0.446, γ0=0.10,
+          G_Al=22 GPa, W=2.5b≈0.75nm)
+   
+   MSEA paper (Table A1, for Cu, iteratively fitted):
+     ΔF0 = 162–180 kJ/mol (mean 172.5 kJ/mol = 1.79 eV)
+   
+   MSEA paper (Section 6, MD-assisted, Cu Σ41 GB):
+     ΔF0 = 65.2 kJ/mol (using Neier et al. γ0=0.10, G_GB=24 GPa)
+   
+   Discrepancy factors:
+     OSET's 0.38 eV vs. MSEA computed 1.79 eV: factor ≈ 4.7×
+     OSET's 0.38 eV vs. MSEA MD-based 65.2 kJ/mol: factor ≈ 1.7×
+   
+   The 4.7× discrepancy arises mainly from β1 (×4 difference) and the difference
+   in γ0 and G values. OSET's value of 39.5 kJ/mol is significantly lower than
+   the values the papers actually compute for any material.
+
+3. γ0 VALUE (2024 MSEA paper vs. earlier papers)
+
+   OSET canonical: γ0 = 0.10 (for GB regime)
+   KAP-Gleiter (2012): γ0 ≈ 0.10 (assumed, consistent with OSET)
+   MSEA (2024, Cu): γ0 = 0.139–0.147 (mean 0.143, computed iteratively from Eq. A.3)
+   
+   The MSEA 2024 paper computes γ0 ≈ 0.143 for Cu, which is ~43% higher than
+   the canonical value of 0.10. The OSET "canonical" value is consistent with the
+   older papers but not the 2024 computation.
+
+4. N (MESOSCOPIC COOPERATIVITY) vs. N_c (OSTZ COOPERATIVITY)
+
+   OSET: N_c = 4 (number of OSTZs to form one Burgers vector; §3.3, Eq. 19a)
+   MSEA paper: N = mean ≈ 7.0 (number of grain boundaries forming plane interface;
+     Table A1, range 3.9–11.2 depending on T and grain size)
+   
+   These are different physical quantities. OSET's N_c is a microscopic OSTZ-chain
+   parameter; the papers' N is mesoscopic (related to grain-scale geometry).
+   Direct comparison is not appropriate, but both indicate a cooperativity of
+   order 4–11 at some relevant scale.
+
+-----------------------------------------------------------------------
+C. Claims NOT MENTIONED in either paper (OSET extensions)
+-----------------------------------------------------------------------
+
+The following OSET claims/derivations do NOT appear in either paper:
+
+1. S1313 = 0.2772 for α=0.5, ν=1/3 (or any numerical Eshelby tensor)
+   → OSET §2.2 new derivation with step-by-step verification
+
+2. Lorentzian dislocation density: ρ1(x) = (b_eff/π)·W/(x²+W²)   [Eq. 13]
+   → OSET §3.1 derivation from Eshelby exterior solution
+
+3. Peierls stress: τP = [2G/(1-ν)]·exp[−2πW/(b(1-ν))]   [Eq. 20]
+   → OSET §4.1 derivation from OSTZ-lattice misfit. Papers mention concept
+     only qualitatively.
+
+4. Stacking fault energy: γSF = (√3−1)·β1·γ0²·G·W/3   [Eq. 30]
+   → OSET §4.5 new derivation. Papers do not discuss SFE.
+
+5. Frank-Read critical stress: τFR = Gb/(πL(1-ν)) ≈ Gb/(2L)   [Eqs. 26–28]
+   → OSET §4.4 derivation. Papers do not discuss Frank-Read.
+
+6. Theoretical shear strength: τ_th = β1·γ0·G/2 ≈ G/17   [Eqs. 21–23]
+   → OSET §4.2. Papers do not derive theoretical shear strength.
+
+7. Dislocation core energy: E_core = π·β1·b·γ0·G·W²/3   [Eq. 25]
+   → OSET §4.3 derivation. Papers do not give core energy formula.
+
+8. Taylor hardening from OSTZ interactions   [Eqs. 40–41]
+   → OSET §5.3. Papers do not derive Taylor hardening.
+
+9. OSTZ Hamiltonian and partition function   [Eqs. 32–38]
+   → OSET §5.1–5.2. Papers use rate theory directly without lattice Hamiltonian.
+
+10. N_c derivation: N_c = b/(γ0·W) = a0/(√2·γ0·W) for FCC   [Eqs. 18–19]
+    → OSET §3.3. Papers implicitly relate unit sliding to Burgers vectors (KAP-Gleiter
+      Eq. 10: ΔS·N1·cosθ = b1) but do not give the OSET Nc formula.
+
+11. Dipole structure of single OSTZ, far-field r^-3 decay   [Eqs. 10–11]
+    → OSET §2.4. Papers describe the deformed oblate spheroid as a dislocation dipole
+      qualitatively (KAP-Gleiter p.7: "the deformed state may be considered as having
+      been produced by the passage of a dislocation dipole ... net Burgers vector is
+      zero") but do not present the explicit r^-3 stress field formula.
+
+12. Volterra dislocation stress field as W→0 limit of N-OSTZ chain   [Eqs. D–E]
+    → OSET §4.0.3. Papers do not derive this explicitly.
+
+-----------------------------------------------------------------------
+D. Claims in the papers NOT in the OSET document
+-----------------------------------------------------------------------
+
+1. Mesoscopic threshold stress formula and grain-shape derivation:
+   MSEA Eqs. (3),(A.4) and KAP-Gleiter Eqs. (5),(6):
+   "τ0 = G·d1·(1−(d0/d)^0.5)"  with d1 involving G_B (GB energy), α_f (form factor)
+   The full mesoscopic threshold stress formula including grain shape (rhombic
+   dodecahedron model, Gittus analysis) is given in the papers but not derived
+   in OSET. OSET only quotes the final result d0 = 2√6·W.
+
+2. Lognormal internal stress distribution with parameters τ_m, k:
+   KAP-Gleiter Eqs. (11)–(12); MSEA Eq. (8) region.
+   This formalism for computing the stress exponent n=1/m from grain boundary
+   disorder is developed in the papers but not presented in OSET (OSET only
+   mentions the mean-field / low-disorder limit).
+
+3. Grain growth kinetic equation (grain size evolution during superplastic flow):
+   MSEA Appendix Eq. (A.4) with grain growth exponent a ≈ 0.20 fitted across ~50
+   superplastic materials. OSET treats d as a fixed parameter.
+
+4. MD simulation results for Cu GB:
+   MSEA Section 6 and Appendix: G_GB(Cu) = 24 GPa, γ_B(Cu) = 0.72 J/m² from
+   Neier et al. (2020) MD simulation of Cu Σ41 GB.
+
+5. Low-stress (linear regime) form of rate equation:
+   KAP-Gleiter Eq. (4): when σ−σ0 is small, sinh(x) ≈ x, giving:
+   γ̇ = A·(σ−σ0)·exp(−ΔF0/kT)  with A = [2.0944W⁴c0²ν]/(kTL)
+   This linear form is not explicitly shown in OSET.
+
+6. Treatment of poly-glasses and nanoglasses:
+   KAP-Gleiter Section 5.1 (page 10) discusses free volume fractions in poly-glasses
+   being higher than in metallic glasses; predicts premature cracking if internal stress
+   exceeds fracture stress. OSET does not discuss poly-glasses in detail.
+
+7. Atom shuffling as rate-controlling process at temperatures too low for GB diffusion:
+   MSEA p.11: "Evidently, this GBS mechanism can operate at lower temperatures at
+   which GB diffusion, as in Coble creep, is limited."
+   Comparison: ΔF0(GBS, Cu) = 65.2 kJ/mol ≈ ΔF0(GB self-diffusion, Cu) ≈ 72.5–88.8 kJ/mol
+   The papers discuss the relationship between GBS and GB diffusion activation energies;
+   OSET does not address this.
+
+====================================================
+PART V: RECOMMENDATIONS FOR OSET DOCUMENT CORRECTIONS
+====================================================
+
+Based on the comparison, the following corrections and clarifications are recommended
+in the OSET theory document:
+
+-------------------------------------------------------------------
+CORRECTION 1 (CRITICAL): β1 formula discrepancy
+-------------------------------------------------------------------
+CURRENT OSET TEXT (§2.2, Table §2.3):
+  "β1 = 1 − 2S1313 = 0.4456 for ν=1/3"
+  "Padmanabhan et al. framework uses β1^eff ≈ 1"
+
+ACTUAL PAPERS (MSEA p.7; KAP-Gleiter Eq.3):
+  β1 = 0.944(1.590 − ν)/(1 − ν) ≈ 1.779 for ν = 1/3
+
+REQUIRED CORRECTION:
+  Acknowledge explicitly that the published papers use the formula
+  β1 = 0.944(1.590−ν)/(1−ν) ≈ 1.78, NOT the Eshelby-derived 0.446 or the
+  GB-softened effective value of 1.0. The OSET claims of "canonical β1 = 0.446"
+  and "papers use β1^eff ≈ 1" both misrepresent what the papers say.
+  
+  Action: Investigate the origin of the formula 0.944(1.590−ν)/(1−ν). It may come
+  from Argon (1979), Gittus (1975), or the original 1977 Padmanabhan paper. Add
+  a clarifying note distinguishing:
+    (a) OSET Eshelby value: β1 = 1 − 2S1313 = 0.4456
+    (b) Papers' formula: β1 = 0.944(1.590−ν)/(1−ν) ≈ 1.78
+    (c) Where they come from and why they differ
+
+-------------------------------------------------------------------
+CORRECTION 2 (MAJOR): ΔF0 "canonical" value
+-------------------------------------------------------------------
+CURRENT OSET TEXT (§2.3):
+  "ΔF0 = 0.38 eV = 39.5 kJ/mol (canonical parameter values from Padmanabhan et al. 1996)"
+
+ACTUAL PAPERS:
+  KAP-Gleiter (2012): Uses β1 ≈ 1.78, γ0 ≈ 0.10 → computes ΔF0 per material
+  MSEA (2024), Table A1: ΔF0(Cu) = 162–180 kJ/mol (mean 1.79 eV)
+  MSEA (2024), Section 6: ΔF0(Cu, MD-based) = 65.2 kJ/mol (0.675 eV)
+
+REQUIRED CORRECTION:
+  Remove the claim that "0.38 eV = 39.5 kJ/mol" is a canonical value from
+  the papers. This value is derived using OSET's own β1 = 0.446, which the
+  papers do NOT use. The papers compute ΔF0 iteratively and get much larger
+  values (1.7–1.9 eV for Cu). State clearly that:
+  - 39.5 kJ/mol is OSET's calculation with its own β1 = 0.446
+  - The papers compute 65–180 kJ/mol (depending on material and method)
+
+-------------------------------------------------------------------
+CORRECTION 3 (MODERATE): γ0 "canonical" value
+-------------------------------------------------------------------
+CURRENT OSET TEXT (§2.3):
+  "γ0 = 0.10 (canonical, for Al grain boundaries)"
+
+ACTUAL STATUS:
+  KAP-Gleiter (2012): γ0 ≈ 0.10 (matches, based on Argon analogy)
+  MSEA (2024), Table A1: γ0 = 0.139–0.147 (mean 0.143) for Cu (computed)
+
+RECOMMENDED CORRECTION:
+  Clarify that γ0 = 0.10 is an approximation adopted from Argon's bubble raft
+  work (KAP-Gleiter 2012), not a precisely measured universal constant. The
+  MSEA (2024) paper computes γ0 = 0.143 for Cu via iterative fitting. Add a note
+  that γ0 depends on material and may range from 0.10 to ~0.15 or higher.
+
+-------------------------------------------------------------------
+CORRECTION 4 (MODERATE): N_c = 4 interpretation
+-------------------------------------------------------------------
+CURRENT OSET TEXT (§3.3, Table §2.3):
+  "N_c = 4 (critical OSTZ number for GB sliding regime)"
+  Derived as: N_c = b/(γ0·2.5b) = 1/(0.1×2.5) = 4
+
+ACTUAL PAPERS:
+  The papers use N for the number of grain boundaries forming a mesoscopic plane
+  interface (MSEA Table A1: mean N ≈ 7 for Cu). KAP-Gleiter uses N1 for the number
+  of sequential sliding events needed to emit a Burgers-vector dislocation (Eq. 10).
+  Neither paper derives or uses OSET's "N_c = 4 OSTZs per Burgers vector" concept.
+
+RECOMMENDED CORRECTION:
+  Clarify that "N_c = 4" is a new OSET derivation, NOT taken directly from the
+  papers. State explicitly that the papers' "N" refers to a different quantity
+  (mesoscopic plane-interface boundary count). The relationship between these
+  two quantities should be discussed.
+
+-------------------------------------------------------------------
+CORRECTION 5 (MINOR): ε0 / G0 value
+-------------------------------------------------------------------
+CURRENT OSET TEXT (§2.3):
+  "G0 = ε0 = 0.05 for γ0 = 0.10"
+
+ACTUAL PAPERS:
+  Von Mises criterion gives ε0 = γ0/√3 ≈ 0.0577 for γ0 = 0.10.
+  MSEA Appendix explicitly: "ε0 = γ0/√3"
+
+RECOMMENDED CORRECTION:
+  Update to ε0 = γ0/√3 ≈ 0.0577, consistent with the von Mises criterion
+  explicitly stated in both papers. The OSET value of 0.05 corresponds to
+  γ0/2, not γ0/√3.
+
+-------------------------------------------------------------------
+CORRECTION 6 (CLARIFICATION): What is NOT in the papers
+-------------------------------------------------------------------
+The OSET document should clearly identify which results are original OSET
+extensions not found in the published papers:
+  - S1313 numerical values and derivation (new)
+  - Lorentzian dislocation density ρ1(x) (new)
+  - Peierls stress formula τP (new)
+  - Stacking fault energy formula γSF (new)
+  - Frank-Read critical stress derivation (new)
+  - Theoretical shear strength from OSTZ cascade (new)
+  - N_c derivation from b/(γ0·W) (new OSET result)
+  - Taylor hardening from OSTZ interactions (new)
+  - OSTZ Hamiltonian / partition function (new)
+
+Currently some of these are presented as if they flow naturally from the papers
+when in fact they are new OSET theoretical contributions.
+
+-------------------------------------------------------------------
+CORRECTION 7 (CLARIFICATION): Eshelby formula sourcing for β1
+-------------------------------------------------------------------
+The OSET document states β1 = 0.944(1.590−ν)/(1−ν) is what "Padmanabhan et al.
+use" and separately that β1 = 1−2S1313 is "the exact Eshelby value." Both are
+attributed to Eshelby (1957). This requires clarification:
+
+  - The exact Eshelby computation (OSET §2.2) gives β1 = 1−2S1313 = 0.4456.
+  - The formula β1 = 0.944(1.590−ν)/(1−ν) appears in the published papers as cited
+    from Eshelby (1957), but it does not follow from the S1313 formula directly.
+  - One plausible resolution: the papers' formula uses a DIFFERENT Eshelby tensor
+    component (e.g., S for in-plane shear with a different orientation convention),
+    or is from an older approximation (Argon 1979, Gittus 1975). This should be
+    investigated and documented explicitly in OSET.
+
+====================================================
+END OF REPORT
+====================================================

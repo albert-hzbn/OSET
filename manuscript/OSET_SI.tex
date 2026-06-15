@@ -1,0 +1,556 @@
+%% ============================================================================
+%% SUPPORTING INFORMATION (detailed) for
+%% "Oblate Spheroid Excitation Theory (OSET): a unified, lattice-free
+%%  foundation for plastic deformation ..."
+%% A. Linda, K.A. Padmanabhan -- prepared for Acta Materialia
+%%
+%% Full step-by-step standard/mechanical derivations referenced from the main
+%% text, plus the numerical-verification material:
+%%   S1  Eshelby tensor for the oblate spheroid (full closed-form derivation)
+%%   S2  Far-field dipole: complete Kelvin Green's-function derivation
+%%   S3  Lorentzian density: compliance, Abel projection, Fourier transform
+%%   S4  Mean-field (Bragg-Williams) decoupling of the OSTZ Hamiltonian
+%%   S5  Partition-function route and detailed balance
+%%   S6  Numerical-verification suite and the full 41-system comparison table
+%%
+%% Build: pdflatex -> pdflatex
+%% ============================================================================
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\graphicspath{{figures/}}
+
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thesubsection}{S\arabic{section}.\arabic{subsection}}
+\renewcommand{\theequation}{S\arabic{equation}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\newcommand{\OSTZ}{\textsc{ostz}}
+\newcommand{\OSET}{\textsc{oset}}
+\newcommand{\dF}{\Delta F_0}
+\newcommand{\g}{\gamma_0}
+\newcommand{\eps}{\varepsilon_0}
+\newcommand{\half}{\tfrac{1}{2}}
+\newcommand{\rh}{\hat{r}}
+
+\title{Supporting Information\\[4pt]
+\large Oblate Spheroid Excitation Theory (\OSET): a unified, lattice-free
+foundation for plastic deformation from which dislocations emerge as
+collective excitations}
+\author{Albert Linda \and K.A. Padmanabhan}
+\date{}
+
+\begin{document}
+\maketitle
+
+This document gives the complete step-by-step standard (non-novel) derivations
+and the mechanical algebra on which the main-text results rest. Equation, figure
+and table numbers are prefixed ``S''; references to main-text equations are
+written ``Eq.~(main)''.
+
+\tableofcontents
+
+% =============================================================================
+\section{Eshelby tensor for the oblate spheroid}
+\label{si:eshelby}
+
+By Eshelby's theorem the strain inside a uniformly eigenstrained ellipsoidal
+inclusion in an isotropic matrix is uniform,
+$\varepsilon^\mathrm{in}_{ij}=S_{ijkl}\varepsilon^*_{kl}$, with the Eshelby
+tensor expressible through the elliptic $I$-integrals~\cite{S_mura1987}
+\begin{align}
+I_\alpha&=2\pi a_1a_2a_3\!\int_0^\infty\!\frac{\mathrm{d}s}{(a_\alpha^2+s)\Delta(s)},
+\label{eq:Ialpha}\\
+I_{\alpha\beta}&=2\pi a_1a_2a_3\!\int_0^\infty\!\frac{\mathrm{d}s}
+{(a_\alpha^2+s)(a_\beta^2+s)\Delta(s)},\qquad
+\Delta(s)=\sqrt{(a_1^2+s)(a_2^2+s)(a_3^2+s)},
+\end{align}
+which satisfy the sum rule $I_1+I_2+I_3=4\pi$. The shear component required for
+the \OSTZ\ is
+\begin{equation}
+S_{1313}=\frac{(1+\alpha^2)\,I_{13}+(1-2\nu)(I_1+I_3)}{16\pi(1-\nu)} .
+\label{eq:S1313}
+\end{equation}
+The stress inside the inclusion is uniform because the Newtonian potential of a
+uniform-density ellipsoid is a quadratic polynomial inside the body; the elastic
+strain, set by its second derivatives, is therefore constant. Ellipsoids are the
+only shapes for which $S_{ijkl}$ is spatially uniform.
+
+\subsection{Closed-form evaluation of $I_1$}
+\label{si:I1}
+
+Specialise Eq.~\eqref{eq:Ialpha} to the oblate spheroid $a_1=a_2=1$,
+$a_3=\alpha<1$, so $\Delta(s)=(1+s)\sqrt{\alpha^2+s}$ and
+\begin{equation}
+I_1=2\pi\alpha\!\int_0^\infty\!\frac{\mathrm ds}{(1+s)^2\sqrt{\alpha^2+s}} .
+\end{equation}
+
+\paragraph{Substitution.} Let $t=\sqrt{\alpha^2+s}$, so $s=t^2-\alpha^2$,
+$\mathrm ds=2t\,\mathrm dt$; the lower limit $s=0$ maps to $t=\alpha$ and
+$s\to\infty$ to $t\to\infty$. Writing $e^2\equiv1-\alpha^2$ gives
+$1+s=t^2+e^2$, hence
+\begin{equation}
+I_1=2\pi\alpha\!\int_\alpha^\infty\!\frac{2t\,\mathrm dt}{(t^2+e^2)^2\,t}
+=4\pi\alpha\!\int_\alpha^\infty\!\frac{\mathrm dt}{(t^2+e^2)^2}.
+\end{equation}
+
+\paragraph{Antiderivative.} The standard reduction (verified below) is
+\begin{equation}
+\int\!\frac{\mathrm dt}{(t^2+e^2)^2}=\frac{t}{2e^2(t^2+e^2)}
++\frac{1}{2e^3}\arctan\!\frac{t}{e}+C .
+\label{eq:antideriv}
+\end{equation}
+\emph{Proof.} With $F=t/[2e^2(t^2+e^2)]$ and $G=\arctan(t/e)/(2e^3)$,
+\begin{equation}
+F'=\frac{e^2-t^2}{2e^2(t^2+e^2)^2},\quad
+G'=\frac{1}{2e^2(t^2+e^2)},\quad
+F'+G'=\frac{(e^2-t^2)+(t^2+e^2)}{2e^2(t^2+e^2)^2}=\frac{1}{(t^2+e^2)^2}.
+\end{equation}
+
+\paragraph{Bounds.} At $t\to\infty$ the first term vanishes and
+$\arctan(t/e)\to\pi/2$, giving $\pi/(4e^3)$. At $t=\alpha$, using
+$\alpha^2+e^2=1$, the bracket is $\alpha/(2e^2)+\arctan(\alpha/e)/(2e^3)$.
+Subtracting,
+\begin{equation}
+\int_\alpha^\infty\!\frac{\mathrm dt}{(t^2+e^2)^2}
+=\frac{1}{2e^3}\!\left[\frac{\pi}{2}-\arctan\frac{\alpha}{e}\right]-\frac{\alpha}{2e^2},
+\end{equation}
+so that
+\begin{equation}
+I_1=\frac{2\pi\alpha}{e^3}\!\left[\frac{\pi}{2}-\arctan\frac{\alpha}{e}-e\alpha\right].
+\end{equation}
+
+\paragraph{Trigonometric identity.} Setting $\alpha=\cos\phi$ ($e=\sin\phi$,
+$\phi=\arccos\alpha$) gives
+$\arctan(\alpha/e)=\arctan(\cot\phi)=\pi/2-\phi$, hence
+$\tfrac{\pi}{2}-\arctan(\alpha/e)=\arccos\alpha$. With $e^3=(1-\alpha^2)^{3/2}$,
+\begin{equation}
+\boxed{\,I_1=\frac{2\pi\alpha}{(1-\alpha^2)^{3/2}}
+\!\left[\arccos\alpha-\alpha\sqrt{1-\alpha^2}\right],\qquad I_3=4\pi-2I_1 .}
+\end{equation}
+
+\subsection{The relation $I_{13}=(I_3-I_1)/(1-\alpha^2)$}
+\label{si:I13}
+
+With $a_1=a_2=1$, $a_3=\alpha$,
+\begin{equation}
+I_3-I_1=2\pi\alpha\!\int_0^\infty\!\frac{1}{(1+s)\sqrt{\alpha^2+s}}
+\!\left[\frac{1}{\alpha^2+s}-\frac{1}{1+s}\right]\mathrm ds .
+\end{equation}
+The bracket equals $\dfrac{(1+s)-(\alpha^2+s)}{(\alpha^2+s)(1+s)}
+=\dfrac{1-\alpha^2}{(\alpha^2+s)(1+s)}$, so
+\begin{equation}
+I_3-I_1=(1-\alpha^2)\,2\pi\alpha\!\int_0^\infty\!
+\frac{\mathrm ds}{(1+s)^2(\alpha^2+s)^{3/2}}=(1-\alpha^2)\,I_{13}
+\;\Rightarrow\; I_{13}=\frac{I_3-I_1}{1-\alpha^2}.
+\end{equation}
+
+\subsection{Numerical evaluation at $\alpha=1/2$, $\nu=1/3$}
+\label{si:numeval}
+
+With $e=\sqrt{0.75}=0.8660$,
+\begin{align}
+I_1&=\frac{2\pi(0.5)}{0.75^{3/2}}\big[\arccos 0.5-0.5(0.8660)\big]
+   =4.835\times0.6142=2.972,\\
+I_3&=4\pi-2(2.972)=6.622,\qquad I_{13}=\frac{6.622-2.972}{0.75}=4.867,\\
+S_{1313}&=\frac{1.25(4.867)+\tfrac13(9.594)}{16\pi(\tfrac23)}
+=\frac{6.084+3.198}{33.51}=0.2772,\quad
+\beta_1=1-2(0.2772)=0.4456 .
+\end{align}
+
+\subsection{Spherical-mode contraction and $\beta_2$}
+\label{si:sphere-contraction}
+
+For the dilatational \OSTZ\ mode ($\varepsilon^*_{ij}=(\eps/3)\delta_{ij}$) the
+sphere Eshelby tensor obeys
+$S_{1111}=\frac{7-5\nu}{15(1-\nu)}$, $S_{1122}=\frac{5\nu-1}{15(1-\nu)}$, so
+\begin{equation}
+S_{ijkk}=(S_{1111}+2S_{1122})\delta_{ij}
+=\frac{(7-5\nu)+2(5\nu-1)}{15(1-\nu)}\delta_{ij}
+=\frac{1+\nu}{3(1-\nu)}\,\delta_{ij}.
+\end{equation}
+The interior dilatation is then
+$\varepsilon^\mathrm{in}_{ij}=\tfrac{\eps}{3}S_{ijkk}
+=\tfrac{(1+\nu)\eps}{9(1-\nu)}\delta_{ij}$, and the elastic part
+\begin{equation}
+e^\mathrm{el}_{ij}=\varepsilon^\mathrm{in}_{ij}-\tfrac{\eps}{3}\delta_{ij}
+=\eps\!\left[\frac{1+\nu}{9(1-\nu)}-\frac13\right]\delta_{ij}
+=-\frac{2(1-2\nu)\eps}{9(1-\nu)}\delta_{ij},
+\end{equation}
+with trace $e^\mathrm{el}_{kk}=-\tfrac{2(1-2\nu)}{3(1-\nu)}\eps$. Carrying this
+through the inclusion-energy theorem (Eq.~main) gives the dilatational factor
+\begin{equation}
+\beta_2=\frac{4(1+\nu)}{9(1-\nu)}\quad\Rightarrow\quad
+\beta_2(\nu=\tfrac13)=0.889 .
+\end{equation}
+
+\subsection{Limiting cases}
+\label{si:limits}
+
+\paragraph{Sphere ($\alpha\to1$).} $I_1=I_2=I_3=4\pi/3$ by symmetry and the sum
+rule; with $\Delta=(1+s)^{3/2}$,
+$I_{13}=2\pi\!\int_1^\infty u^{-7/2}\,\mathrm du=4\pi/5$. Then
+\begin{equation}
+S_{1313}^\mathrm{sphere}
+=\frac{2(\tfrac{4\pi}{5})+(1-2\nu)\tfrac{8\pi}{3}}{16\pi(1-\nu)}
+=\frac{1}{2(1-\nu)}\!\left[\frac15+\frac{1-2\nu}{3}\right]
+=\frac{4-5\nu}{15(1-\nu)},
+\end{equation}
+i.e.\ $0.2333$ at $\nu=1/3$, with $S_{1313}=S_{1212}$ as required by isotropy.
+
+\paragraph{Thin disc ($\alpha\to0$).} $I_1\to0$, $I_3\to4\pi$, $I_{13}\to4\pi$,
+giving $S_{1313}^\mathrm{disc}=\frac{4\pi+(1-2\nu)4\pi}{16\pi(1-\nu)}=\tfrac12$,
+$\beta_1\to0$: a crack-like disc stores no shear energy.
+
+\begin{table}[h]
+\centering
+\caption{Numerically verified Eshelby components and shear constraint factor for
+the oblate spheroid $\alpha=1/2$.}
+\begin{tabular}{ccccc}
+\toprule
+$\nu$ & $S_{1313}$ & $S_{1212}$ & $S_{3333}$ & $\beta_1=1-2S_{1313}$\\
+\midrule
+0.30  & 0.2822 & 0.1769 & 0.7264 & 0.4356\\
+1/3   & 0.2772 & 0.1739 & 0.7364 & 0.4456\\
+0.35  & 0.2745 & 0.1723 & 0.7418 & 0.4510\\
+0.40  & 0.2656 & 0.1670 & 0.7596 & 0.4688\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The two constraint regimes of $\beta_1$}
+\label{si:beta1}
+
+The Eshelby value $\beta_1^\mathrm{Esh}=1-2S_{1313}\approx0.44$--$0.49$
+($\nu=0.28$--$0.44$) applies to a zone in homogeneous bulk. \OSTZ s in
+grain-boundary material of reduced modulus $G_\mathrm{GB}\approx G/2$ feel a
+larger effective constraint,
+$\beta_1^\mathrm{eff}\approx\beta_1^\mathrm{Esh}\,G/G_\mathrm{GB}\approx0.9\approx1$,
+reconciling the elastic value with the $\beta_1^\mathrm{eff}=1$ used for coherent
+faults; single-crystal interiors use $\beta_1^\mathrm{Esh}\approx0.45$.
+
+% =============================================================================
+\section{Far-field dipole: complete Kelvin Green's-function derivation}
+\label{si:dipole}
+
+\subsection{Why the monopole vanishes and the dipole survives}
+The exterior field of a finite inclusion has the multipole structure
+$\sigma_{ij}=F_k\mathcal G_{ijk}+M_{kl}\partial_l\mathcal G_{ijk}+\cdots$. The
+net force is
+$F_k=\oint_{\partial V_0}\sigma^*_{ij}n_j\,\mathrm dS
+=C_{ijkl}\varepsilon^*_{kl}\oint_{\partial V_0}n_j\,\mathrm dS=0$,
+because $\oint n_j\,\mathrm dS=\int_{V_0}\partial_j(1)\,\mathrm dV=0$, so there is
+no $r^{-2}$ monopole. The dipole (moment) tensor is
+$M_{kl}=C_{ijkl}\varepsilon^*_{ij}V_0$; for the \OSTZ\ eigenstrain
+$\varepsilon^*_{13}=\varepsilon^*_{31}=\g/2$ this gives $M_{13}=M_{31}=G\g V_0$,
+a double couple producing the leading $r^{-3}$ field.
+
+\subsection{Step A: the Kelvin Green's function and its derivative}
+The displacement at $\mathbf r$ from a unit point force at the origin is
+\begin{equation}
+\mathcal G_{ij}=A\!\left[\frac{(3-4\nu)\delta_{ij}}{r}+\frac{x_ix_j}{r^3}\right],
+\qquad A=\frac{1}{16\pi G(1-\nu)} .
+\end{equation}
+Using $\partial_l r=x_l/r$, $\partial_l(1/r)=-x_l/r^3$,
+$\partial_l x_i=\delta_{il}$ and $\partial_l(r^{-3})=-3x_l/r^5$, differentiation
+of the two terms gives
+\begin{equation}
+\partial_l\mathcal G_{ij}=A\!\left[-\frac{(3-4\nu)\delta_{ij}x_l}{r^3}
++\frac{\delta_{il}x_j+\delta_{jl}x_i}{r^3}-\frac{3x_lx_ix_j}{r^5}\right].
+\label{eq:dG}
+\end{equation}
+
+\subsection{Step B: the displacement field}
+The exterior displacement from the moment tensor is
+$u_i=-M_{kl}\,\partial_l\mathcal G_{ik}$ (the sign is the Eshelby exterior
+convention). With $M_{13}=M_{31}=G\g V_0$ only $(k,l)=(1,3),(3,1)$ contribute,
+\begin{equation}
+u_i=-G\g V_0\!\left[\partial_3\mathcal G_{i1}+\partial_1\mathcal G_{i3}\right].
+\end{equation}
+Adding the two copies of Eq.~\eqref{eq:dG}, the $\delta_{i1}x_3$ terms combine
+with coefficient $1-(3-4\nu)=2(2\nu-1)$ (and likewise $\delta_{i3}x_1$), and the
+two $r^{-5}$ pieces add to $-6x_1x_3x_i/r^5$, giving
+\begin{equation}
+u_i=-G\g V_0\,A\!\left[\frac{2(2\nu-1)(\delta_{i1}x_3+\delta_{i3}x_1)}{r^3}
+-\frac{6x_1x_3x_i}{r^5}\right].
+\end{equation}
+The relevant components are
+\begin{equation}
+u_1=-G\g V_0A\!\left[\tfrac{2(2\nu-1)x_3}{r^3}-\tfrac{6x_1^2x_3}{r^5}\right],
+\quad
+u_3=-G\g V_0A\!\left[\tfrac{2(2\nu-1)x_1}{r^3}-\tfrac{6x_1x_3^2}{r^5}\right].
+\end{equation}
+
+\subsection{Step C: the stress from displacement gradients}
+For the shear component, $\sigma_{13}=G(\partial_1u_3+\partial_3u_1)$. Using
+$\partial_3(x_3/r^3)=(r^2-3x_3^2)/r^5$ and
+$\partial_3(x_3/r^5)=(r^2-5x_3^2)/r^7$ (and the $1\!\leftrightarrow\!3$ images),
+\begin{align}
+\partial_3u_1&=-G\g V_0A\!\left[\frac{2(2\nu-1)(r^2-3x_3^2)}{r^5}
+-\frac{6x_1^2(r^2-5x_3^2)}{r^7}\right],\\
+\partial_1u_3&=-G\g V_0A\!\left[\frac{2(2\nu-1)(r^2-3x_1^2)}{r^5}
+-\frac{6x_3^2(r^2-5x_1^2)}{r^7}\right].
+\end{align}
+Adding and converting to direction cosines $\rh_i=x_i/r$, the $r^{-5}$ group
+gives $2(2\nu-1)(2-3\rh_1^2-3\rh_3^2)/r^3$ and the $r^{-7}$ group
+$[-6(\rh_1^2+\rh_3^2)+60\rh_1^2\rh_3^2]/r^3$. Using
+$6(2\nu-1)+6=12\nu$,
+\begin{equation}
+\partial_3u_1+\partial_1u_3=-\frac{G\g V_0A}{r^3}
+\!\left[4(2\nu-1)-12\nu(\rh_1^2+\rh_3^2)+60\rh_1^2\rh_3^2\right].
+\end{equation}
+
+\subsection{Step D: the angular tensor}
+Multiplying by $G$ and writing $A=[16\pi G(1-\nu)]^{-1}$,
+\begin{equation}
+\sigma_{13}=\frac{G\g V_0}{16\pi(1-\nu)r^3}
+\!\left[4-8\nu+12\nu(\rh_1^2+\rh_3^2)-60\rh_1^2\rh_3^2\right]
+=\frac{G\g V_0}{2\pi(1-\nu)}\,\frac{\mathcal T_{13}(\hat{\mathbf r})}{r^3},
+\end{equation}
+where, dividing the bracket by $8$ (the prefactor ratio $2\pi/16\pi$),
+\begin{equation}
+\boxed{\;\mathcal T_{13}(\hat{\mathbf r})=\tfrac12-\nu
++\tfrac{3\nu}{2}(\rh_1^2+\rh_3^2)-\tfrac{15}{2}\rh_1^2\rh_3^2 .\;}
+\end{equation}
+The two derivatives of $\mathcal G$ each lower the power of $r$ by one, turning
+the $r^{-1}$ displacement into the $r^{-3}$ dipole stress.
+
+\subsection{Step E: verification in special directions}
+On the glide plane ($\rh_3=0$),
+$\mathcal T_{13}=\tfrac12-\nu+\tfrac{3\nu}{2}\rh_1^2$, which rearranges to
+\begin{equation}
+\sigma_{13}(x_1,x_2,0)=\frac{G\g V_0}{4\pi(1-\nu)r^5}
+\!\left[(1+\nu)x_1^2+(1-2\nu)x_2^2\right],
+\end{equation}
+positive definite for $0<\nu<\tfrac12$. On axis ($\rh_1=0,\rh_3=1$),
+$\mathcal T_{13}=(1+\nu)/2>0$, identical to the value along $\hat x_1$ by the
+axial symmetry of the spheroid. No real nodal surface exists for
+$0<\nu<\tfrac12$, so $\sigma_{13}$ does not change sign in the half-space ---
+the cooperative-nucleus character of the \OSTZ. The leading far-field structure
+reduces to the dipole--dipole form $\propto(3\cos^2\theta-1)$.
+
+% =============================================================================
+\section{Lorentzian density: compliance, Abel projection, Fourier transform}
+\label{si:lorentzian}
+
+\subsection{Step A: Bilby--Cottrell--Swinden planar compliance}
+A shear traction $\sigma_{13}$ on a planar slip distribution in an isotropic
+solid produces local slip $\delta u_1=2(1-\nu)\sigma_{13}/G$; the factor
+$2(1-\nu)/G$ is the BCS shear compliance, equivalently the Peierls--Nabarro
+relation $\sigma=G\rho/[2(1-\nu)]$ with $\rho=\mathrm du/\mathrm dx$
+\cite{S_hirthlothe1982}. Because the \OSTZ\ stress decays as $r^{-3}$ the
+compliance integral converges absolutely without a short-distance cut-off.
+
+\subsection{Step B: two-dimensional planar density}
+With the regularised \OSTZ\ glide-plane traction
+$\sigma_{13}=Gb_\mathrm{eff}W^2/[2\pi(1-\nu)(x^2+y^2+W^2)^{3/2}]$, the
+compliance gives, after cancellation of $G$, $2(1-\nu)$ and the factor $2$,
+\begin{equation}
+\rho_{2\mathrm D}(x,y)=\frac{2(1-\nu)}{G}\,\sigma_{13}
+=\frac{b_\mathrm{eff}\,W^2}{\pi(x^2+y^2+W^2)^{3/2}} .
+\end{equation}
+A normalisation check in polar coordinates,
+$\int\!\!\int\rho_{2\mathrm D}\,\mathrm dx\,\mathrm dy
+=\frac{b_\mathrm{eff}W^2}{\pi}\,2\pi\!\int_0^\infty\!\frac{r\,\mathrm dr}
+{(r^2+W^2)^{3/2}}=\frac{b_\mathrm{eff}W^2}{\pi}\,2\pi\,\frac{1}{W}
+=2b_\mathrm{eff}W$, recovers the slip moment (displacement $\times$ length).
+
+\subsection{Step C: Abel projection to one dimension}
+Integrating over $y$ with $a^2=x^2+W^2$ and $y=a\tan\theta$,
+\begin{equation}
+\int_{-\infty}^{\infty}\!\frac{\mathrm dy}{(a^2+y^2)^{3/2}}
+=\frac{1}{a^2}\!\int_{-\pi/2}^{\pi/2}\!\cos\theta\,\mathrm d\theta=\frac{2}{a^2},
+\end{equation}
+so the raw line density is $2b_\mathrm{eff}W^2/[\pi(x^2+W^2)]$ with total weight
+$2b_\mathrm{eff}W$. Normalising to $\int\rho_1\,\mathrm dx=b_\mathrm{eff}$
+(dividing by the \OSTZ\ diameter $2W$),
+\begin{equation}
+\boxed{\;\rho_1(x)=\frac{b_\mathrm{eff}}{\pi}\,\frac{W}{x^2+W^2}\;}
+\quad\Big(\textstyle\int\rho_1\,\mathrm dx
+=\frac{b_\mathrm{eff}W}{\pi}\cdot\frac{\pi}{W}=b_\mathrm{eff}\Big),
+\end{equation}
+the Lorentzian dislocation density. The same kernel is selected by the
+Peierls--Nabarro variational principle; here it follows from pure elastic
+mechanics, with no sinusoidal misfit energy as input.
+
+\subsection{Step D: Fourier transform of the Lorentzian}
+With the convention $\hat\rho(k)=\int\rho\,e^{-ikx}\mathrm dx$ and $k>0$, close
+the contour in the lower half-plane (where $e^{-ikx}$ decays). The denominator
+$x^2+W^2=(x-iW)(x+iW)$ has the single enclosed pole $x=-iW$, with residue
+$e^{-kW}/(-2iW)$; the clockwise contour gives $\oint=-2\pi i\sum\mathrm{Res}$,
+\begin{equation}
+\int_{-\infty}^{\infty}\!\frac{e^{-ikx}}{x^2+W^2}\,\mathrm dx
+=-2\pi i\,\frac{e^{-kW}}{-2iW}=\frac{\pi}{W}e^{-kW},
+\qquad\hat\rho(k)=b\,e^{-|k|W}.
+\end{equation}
+This pure exponential in $k$-space, evaluated at $k=2\pi/b$, produces the
+$e^{-2\pi W/b}$ Peierls factor of Eq.~(main): the \OSTZ\ core width $W$ filters
+the short-wavelength components of the lattice potential.
+
+\subsection{Step E: cumulative slip and the Peierls--Nabarro profile}
+For $N$ co-planar zones the densities superpose, $\rho_N=N\rho_1$, and the
+cumulative slip is
+\begin{equation}
+U(x)=\int_{-\infty}^{x}\!\rho_N(x')\,\mathrm dx'
+=\frac{Nb_\mathrm{eff}W}{\pi}\!\left[\frac{1}{W}\arctan\frac{x'}{W}\right]_{-\infty}^{x}
+=\frac{Nb_\mathrm{eff}}{2}+\frac{Nb_\mathrm{eff}}{\pi}\arctan\frac{x}{W},
+\end{equation}
+exactly the Peierls--Nabarro profile with $b=Nb_\mathrm{eff}=N\g W$ and core
+half-width $\zeta=W$ (Eq.~main); $U(-\infty)=0$, $U(+\infty)=b$.
+
+% =============================================================================
+\section{Mean-field decoupling of the \OSTZ\ Hamiltonian}
+\label{si:meanfield}
+
+The \OSTZ\ Hamiltonian [Eq.~(main)] is
+$\mathcal H=\sum_i[\dF-(\tau-\tau_0)\g V_0]n_i-\tfrac12\sum_{i\neq j}J_{ij}n_in_j$.
+Writing $n_i=\bar n+\delta n_i$ and expanding,
+$n_in_j=\bar n^2+\bar n\,\delta n_i+\bar n\,\delta n_j+\delta n_i\delta n_j$, the
+Bragg--Williams approximation drops the fluctuation product
+$\delta n_i\delta n_j$, leaving
+\begin{equation}
+n_in_j\approx n_i\bar n+n_j\bar n-\bar n^2 .
+\end{equation}
+Substituting into the interaction term, using
+$\sum_{j\neq i}J_{ij}=zJ_0$ (coordination $z$, mean coupling $J_0$), and
+absorbing the constant $\propto\bar n^2$,
+\begin{equation}
+-\tfrac12\!\sum_{i\neq j}\!J_{ij}n_in_j\approx-zJ_0\bar n\sum_i n_i+\text{const},
+\qquad
+\mathcal H^\mathrm{MF}=\sum_i h^\mathrm{eff}n_i+\text{const},
+\end{equation}
+with $h^\mathrm{eff}=\dF-(\tau-\tau_0)\g V_0-zJ_0\bar n$. The single-site
+partition function $\mathcal Z_i=1+e^{-h^\mathrm{eff}/kT}$ gives the
+self-consistency relation
+\begin{equation}
+\bar n=\frac{e^{-h^\mathrm{eff}/kT}}{1+e^{-h^\mathrm{eff}/kT}},
+\qquad h^\mathrm{eff}=h^\mathrm{eff}(\bar n),
+\end{equation}
+which in the dilute, weak-coupling limit ($zJ_0\bar n\ll kT$, $\bar n\ll1$)
+reduces to $\bar n\approx e^{-\dF/kT}\,e^{(\tau-\tau_0)\g V_0/kT}$.
+
+% =============================================================================
+\section{Partition-function route and detailed balance}
+\label{si:detailed-balance}
+
+The equilibrium occupation follows from
+$\langle N_\mathrm{active}\rangle
+=kT\,\partial\ln\mathcal Z/\partial[(\tau-\tau_0)\g V_0]$ with
+$\ln\mathcal Z=N_\mathrm{sites}\ln(1+e^{-h^\mathrm{eff}/kT})$, giving
+$\langle N_\mathrm{active}\rangle=N_\mathrm{sites}\bar n$. This \emph{static}
+route yields, in the dilute limit, a forward-bias-only factor $e^{2\Delta w/kT}$,
+whereas the kinetic Eyring balance of the main text gives $2\sinh(\Delta w/kT)$:
+the two are complementary descriptions of the same process. The factor-of-two
+relation between the full work $2\Delta w=(\tau-\tau_0)\g V_0$ in the Boltzmann
+energy difference and the half-work $\Delta w$ in each kinetic barrier is
+required by detailed balance, $\Gamma^+/\Gamma^-=e^{2\Delta w/kT}$, consistent
+with the Hamiltonian. The hyperbolic-sine flow law [Eq.~(main)] is an Eyring
+kinetic result and does not follow from the equilibrium partition function alone.
+
+% =============================================================================
+\section{Numerical-verification suite and the 41-system comparison}
+\label{si:numerics}
+
+All algebraic identities and numerical values quoted in the main text are
+reproduced to the stated precision by an accompanying Jupyter notebook
+(\texttt{OSET\_derivations.ipynb}), which executes automated cross-checks: the
+geometry identities $V_0=\tfrac43\pi\alpha W^3=\tfrac23\pi W^3$ and
+$V_0/A_0=\tfrac23 W$; the Eshelby values of Table~S1; the Read--Shockley
+saturation identity $\gamma_\mathrm{GB}(\theta_m)=E_0\theta_m$; the limit
+$\gamma_\mathrm{GB}\to0$ as $\theta\to0$; and the per-system statistics below.
+
+Table~\ref{si:tab:hp} gives the full 41-system comparison underlying Table~3 and
+Figs.~5--6 of the main text. Columns: $\g,\eps$ (paper fit); $\dF$ (\OSET\
+activation barrier, eV); $Q$ (paper activation energy per event, eV);
+$\gamma_B^{\mathrm{lit}}$ (paper fit, J\,m$^{-2}$); $\gamma_B^{\mathrm{OSET}}$
+(\OSET\ Read--Shockley, J\,m$^{-2}$); ratio $=\gamma_B^{\mathrm{lit}}/
+\gamma_B^{\mathrm{OSET}}$.
+
+\renewcommand{\arraystretch}{0.95}
+\begin{longtable}{rlccccccc}
+\caption{Full 41-system comparison: \OSET\ (parameter-free) versus the
+semi-empirical constants of Harisankar and Padmanabhan~\cite{S_harisankar2025}.}
+\label{si:tab:hp}\\
+\toprule
+\# & System & $\g$ & $\eps$ & $\dF$ & $Q$ & $\gamma_B^{\mathrm{lit}}$ &
+$\gamma_B^{\mathrm{OSET}}$ & ratio\\
+\midrule
+\endfirsthead
+\multicolumn{9}{l}{\small Table~\ref{si:tab:hp} (continued)}\\
+\toprule
+\# & System & $\g$ & $\eps$ & $\dF$ & $Q$ & $\gamma_B^{\mathrm{lit}}$ &
+$\gamma_B^{\mathrm{OSET}}$ & ratio\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+1 & Zn--22Al (2.5\,$\mu$m)   & 0.059 & 0.034 & 0.195 & 0.609 & 1.29 & 0.29 & 4.5\\
+2 & Zn--22Al (0.9\,$\mu$m)   & 0.061 & 0.035 & 0.200 & 0.811 & 1.31 & 0.28 & 4.7\\
+3 & Al--33Cu--0.4Zr          & 0.066 & 0.038 & 0.263 & 1.449 & 1.61 & 0.31 & 5.2\\
+4 & Al--MgScMn (3\,$\mu$m)   & 0.089 & 0.051 & 0.264 & 1.310 & 1.57 & 0.17 & 9.1\\
+5 & Al--MgScMn (1\,$\mu$m)   & 0.083 & 0.048 & 0.260 & 1.274 & 0.92 & 0.19 & 4.8\\
+6 & Al--3Mg--0.2Sc           & 0.086 & 0.050 & 0.269 & 1.147 & 1.46 & 0.19 & 7.9\\
+7 & Al--8.9Zn--2.6Mg--Sc     & 0.080 & 0.046 & 0.267 & 1.299 & 1.47 & 0.21 & 6.8\\
+8 & Al--5Mg--Mn--Sc (24\,$\mu$m) & 0.090 & 0.052 & 0.266 & 1.370 & 0.87 & 0.17 & 5.2\\
+9 & Al--17Si--Fe--Mg--Cu--Ni & 0.089 & 0.051 & 0.306 & 1.126 & 0.88 & 0.20 & 4.4\\
+10 & Mg--6Zn--0.8Zr          & 0.080 & 0.046 & 0.264 & 1.232 & 1.54 & 0.16 & 9.8\\
+11 & Mg--4Y--0.7Zr--Nd       & 0.087 & 0.050 & 0.263 & 1.265 & 1.35 & 0.13 & 10.2\\
+12 & Mg--5.8Zn--1Y--Zr       & 0.088 & 0.051 & 0.274 & 1.088 & 1.37 & 0.13 & 10.3\\
+13 & Ti--6Al--4V             & 0.116 & 0.067 & 0.585 & 2.491 & 1.14 & 0.20 & 5.6\\
+14 & Cu--2.8Al--Si--Co (7\,$\mu$m) & 0.096 & 0.056 & 0.394 & 1.499 & 1.48 & 0.27 & 5.5\\
+15 & Cu--2.8Al--Si--Co (3\,$\mu$m) & 0.095 & 0.055 & 0.392 & 1.504 & 0.99 & 0.28 & 3.6\\
+16 & IN836 (Cu--Ni--Zn)      & 0.081 & 0.047 & 0.290 & 1.272 & 1.34 & 0.27 & 5.0\\
+17 & Ti--43Al                & 0.144 & 0.088 & 0.505 & 2.939 & 1.45 & 0.10 & 14.2\\
+18 & Ti--48Al                & 0.138 & 0.080 & 0.461 & 2.962 & 1.20 & 0.11 & 11.3\\
+19 & Ti--46.2Al--2.2Cr       & 0.125 & 0.072 & 0.460 & 2.723 & 1.07 & 0.13 & 8.2\\
+20 & Co$_3$Ti                & 0.096 & 0.055 & 0.414 & 2.824 & 0.86 & 0.28 & 3.1\\
+21 & Ni$_3$Si                & 0.092 & 0.053 & 0.465 & 2.288 & 0.87 & 0.34 & 2.6\\
+22 & ZrO$_2$                 & 0.082 & 0.047 & 1.256 & 3.481 & 1.65 & 0.57 & 2.9\\
+23 & ZrO$_2$--3Y             & 0.088 & 0.051 & 1.261 & 3.790 & 0.85 & 0.49 & 1.7\\
+24 & ZrO$_2$--4Y             & 0.089 & 0.051 & 1.253 & 3.909 & 1.57 & 0.48 & 3.3\\
+25 & Al$_2$O$_3$--ZrO$_2$--mullite & 0.067 & 0.039 & 1.130 & 3.473 & 0.86 & 0.75 & 1.1\\
+26 & Al$_2$O$_3$--NiAl$_2$O$_4$--ZrO$_2$ & 0.064 & 0.037 & 1.244 & 3.690 & 1.35 & 0.91 & 1.5\\
+27 & 6061 / 20\% SiC         & 0.071 & 0.041 & 0.439 & 1.556 & 1.05 & 0.45 & 2.3\\
+28 & 7075 / 20\% SiC         & 0.069 & 0.040 & 0.421 & 1.537 & 0.97 & 0.45 & 2.1\\
+29 & Zr$_{65}$ BMG           & 0.074 & 0.043 & 0.253 & 1.438 & 1.35 & 0.26 & 5.2\\
+30 & Zr$_{52.5}$ BMG         & 0.075 & 0.043 & 0.268 & 1.518 & 0.78 & 0.27 & 2.9\\
+31 & La$_{55}$ BMG           & 0.059 & 0.034 & 0.151 & 1.015 & 1.60 & 0.21 & 7.7\\
+32 & La$_{60}$ BMG           & 0.073 & 0.042 & 0.213 & 0.963 & 0.82 & 0.19 & 4.3\\
+33 & Fe$_{72}$ BMG           & 0.079 & 0.046 & 0.346 & 1.452 & 0.78 & 0.35 & 2.2\\
+34 & Limestone               & 0.073 & 0.042 & 1.045 & 2.554 & 0.57 & 0.29 & 2.0\\
+35 & Anorthite--Diopside (dry) & 0.062 & 0.036 & 1.601 & 3.117 & 1.12 & 0.61 & 1.8\\
+36 & Anorthite--Diopside (wet) & 0.062 & 0.036 & 1.624 & 2.697 & 1.27 & 0.62 & 2.1\\
+37 & Ice (10\,$\mu$m)        & 0.115 & 0.067 & 0.169 & 0.332 & 0.79 & 0.03 & 31.0\\
+38 & Ice (1700\,$\mu$m)      & 0.117 & 0.068 & 0.173 & 0.408 & 1.44 & 0.03 & 57.1\\
+39 & Si$_3$N$_4$             & 0.085 & 0.049 & 2.765 & 3.168 & 1.05 & 1.15 & 0.9\\
+40 & Zirconia--Alumina       & 0.069 & 0.040 & 1.311 & 3.166 & 0.94 & 0.83 & 1.1\\
+41 & Zirconia--Spinel        & 0.075 & 0.043 & 1.180 & 3.434 & 1.62 & 0.64 & 2.5\\
+\end{longtable}
+
+\noindent\textbf{Summary statistics ($n=41$).}
+$\eps=0.049\pm0.012$ (\OSET: 0.05); $\g=0.085\pm0.020$ (\OSET: 0.10--0.12);
+$Q/\dF=4.05\pm1.39$; $\gamma_B$ ratio median 4.5 (15/41 within $3\times$,
+24/41 within $5\times$, 35/41 within $10\times$); the ratio is uncorrelated with
+homologous temperature ($r=0.00$). Ice (\#37--38) is the only large outlier: its
+fitted $\gamma_B$ exceeds the true ice grain-boundary energy
+($\approx0.065$\,J\,m$^{-2}$), so the \OSET\ value is in fact closer to reality.
+
+% =============================================================================
+\begin{thebibliography}{9}
+\bibitem{S_mura1987} T. Mura, \textit{Micromechanics of Defects in Solids},
+2nd ed., Kluwer, Dordrecht, 1987.
+\bibitem{S_hirthlothe1982} J.P. Hirth, J. Lothe, \textit{Theory of Dislocations},
+2nd ed., Wiley, New York, 1982.
+\bibitem{S_harisankar2025} K.R. Harisankar, K.A. Padmanabhan, On the origin of
+isotropic steady state structural superplastic deformation,
+\textit{Mater. Sci. Eng. A} \textbf{930} (2025) 148175.
+\end{thebibliography}
+
+\end{document}

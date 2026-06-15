@@ -1,0 +1,370 @@
+FILE: d:\Work\Others\Padmanabhan\astanin1996.pdf
+Total pages: 6
+
+
+--- PAGE 1 ---
+Model for grain boundary sliding and its relevance
+to optimal structural superplasticity
+Part 2 - Evidence for cooperative grain/interphase
+boundary sliding and plane interface formation
+v. v.
+Astanin, S. N. Faizova, and K.A. Padmanabhan
+A Zn-22 wt-%Al alloy was superplastically deformed inthe optimal range to obtain experimental evidence based on scanning
+electron and transmission electron microscopy for mesoscopic grain/interphase boundary sliding and plane interface formation
+thatfacilitates the cooperative boundary sliding process. It was seen that such localised shear surfaces hadformed inthe entire
+specimen bulk inaninterconnected manner. At boundaries thatformed part ofacooperative shear surface the triplejunctions
+had migrated to anear 1800 orientation. Mesoscopic grain/interphase boundary sliding appeared to be accommodated by local
+boundary migration brought about by diffusion at intercrystalline boundaries and lattice dislocation motion at interphase
+interfaces inaccordance with the requirements of the model presented inPart 1. MST/3075
+©1996 The Institute of Materials. Manuscript received 2 June 1994; infinal form 6 July 1995. Dr Astanin and Ms Faizova
+are at the Institute ofMetals Superplasticity Problems, Russian Academy of Sciences, Ufa, Russia, and Professor Padmanabhan
+is at the Department of Metallurgical Engineering, Indian Institute of Technology, Madras, India.
+Plane interface formation needed for mesoscopic (cooper-
+Introduction
+ative) sliding is caused at an intercrystalline boundary by
+local boundary migration brought about by diffusion. (If
+Models for structural superplastic flow available in the the boundary obstacle is severe, local boundary migration
+literature1-6 consider sliding along individual grain bound- may also result from non-rate controlling lattice dislocation
+aries only and in many cases the analysis is two- motion as occurs at interphase interfaces (see below).)
+dimensional. In recent times it has become clear that as a However, at an interphase> interface this can only be
+result ofits complex spatial configuration a grain may have brought about by non-rate controlling lattice' dislocation
+boundaries that are located favourably for sliding and motion originating at interphase boundary obstacles or
+others at which grain/interphase boundary sliding isdifficult regions of high curvature.12
+or absent. According to Karl Popper, a good theory must contain
+Cooperative sliding at grain/interphase boundaries in an element that can be either proved or disproved by a
+which a number of grains slide as an entity along shear direct experiment, i.e. the theory should have 'the quality
+surfaces located in different regions of the bulk of the of falsifiability'.13 In the present case the plane interface
+specimen has been reported.7- 10 These surfaces are produced needed for mesoscopic sliding should form in the first
+by the joining together of grain boundaries that are instance and when this involves an interphase boundary,
+oriented favourably to the maximum shear stress directions lattice dislocation motion should be a concomitant of this
+in the deforming specimen. Sliding of grains along surfaces process. Experimental evidence concerning the formation
+has been examined by Raj and Ashby,!1 but their analysis of the interface needed for mesoscopic sliding is presented
+involves considerable diffusional accommodation for which below.
+there is no experimental support in superplastic flow.
+Further, they regard diffusional accommodation as the rate
+controlling process while the contemporary view favours
+Material and experimental procedures
+grain/interphase boundary sliding as the rate determining
+mechanism in superplasticity (see Part 1(Ref. 12)).
+Grain/interphase boundary sliding isatwo scale phenom- In order to obtain an optimal microstructure, 10mm thick
+enon.12 At the atomic level, sliding at a boundary operates ingots of the Zn-22 wt-O/oAI alloy were water quenched
+on a microscopic scale. Steric hindrance makes this kind from 623 K and during the period of spontaneous heat
+of sliding relatively ineffective in bringing about large release from spinodal decomposition were rolled down to
+plastic deformation without help from additional mechan- a thickness of '"0·6 mm. Specimens (14'0 x 5·0 x 0·6mm)
+isms. Such atomic scale boundary sliding is common in were prepared by filing, and annealed at 523 K for 2·5h. A
+high temperature creep, where it leads to cavitation, triple stable two phase microstructure with an average grain size
+point cracking, and premature failure. If boundary sliding of 1·1Ilm was obtained. For making quantitative measure-
+is to be as extensive as that seen during superplastic flow, ments, marker lines along and transverse to the extension
+sliding of the order of a grain diameter and more must be axis were introduced using diamond paste.
+present (referred to in Part 1 (Ref. 12) as 'meso scopic The specimens were tensile tested on an Instron universal
+sliding'). testing machine at a temperature of 523 K and an initial
+Mesoscopic sliding gives rise to a predictable long range strain rate of 6·9 x 10-3 s-t, which corresponded to the
+threshold stress which has to be overcome by the applied optimal conditions for superplasticity in this alloy.4,6 To
+stress, in addition to the short range internal stresses arising maximise the relief, a thin film of carbon was applied on
+from microscopic sliding. It is these internal and threshold the specimen surface by vacuum deposition. This film broke
+stresses that are responsible for regions I and IIa of at the sites of intense deformation, revealing them as bands
+superplastic flow4 having different strain rate sensitivity of contrast when examined in an SEM.
+indices (m values) even though both these regions are After a pre-determined degree of deformation, reference
+controlled by the same physical processes (see Part 4 for points were introduced into the specimen using a diamond
+numerical results). indentor and the region between the reference points
+Materials Science and Technology June 1996 Vol. 12 489
+
+--- PAGE 2 ---
+490 Astanin et al. Grain boundary sliding in structural superplasticity: Part 2
+7
+1 2
+6
+5
+N
+I
+b~ E
+4
+2:
+~
+en
+(wJ) 3
+a:
+I-
+(J)
+Z
+t
+1
+Q
+aalong tensile axis; bacross tensile axis; cat 45°to tensile axis
+0
+Schematic diagram showing measurement of angles
+between adjoining grain boundaries in different 0 10 20
+directions
+ELONGATION, %
+2 Dependence offlow stress on specimen elongation in
+photographed in an SEM. A layer of two to three grains initial stage of extension
+in thickness was removed by electrolytic polishing and'
+another photograph of the same region at this depth was
+taken in the SEM. The two photographs were compared stage at which a continuous network in three dimensions
+by superposition and the traces of cooperative grain/ of the cooperatively slid bands had formed.14 A rigorous
+interphase boundary sliding bands were identified. Similar analysisforthisunsteady region offlowwould beextremely
+photographs were used to measure the angles between complex and has yet to be given~However, a simplified
+the adjoining members of the boundary chains, along quantitative description was presented some time ago.is
+the tensile direction, in the transverse direction, and at 45° At an elongation of 3·0% (corresponding to the end of
+to the tensile axis. The scheme of measurement is shown stage (i) above) at the optimal strain rate, thin (0·1~m),
+in Fig. 1. winding shear bands 15-20 ~mlong began to appear along
+To determine the structure at a high magnification, thin grain boundaries at a distance of 5-8 ~m apart (Fig. 3a).
+foilswereprepared at - 60°Cby electrop'olishing in a 100/0 The bands were arranged across the specimen from one of
+solution of HCI0 in ethanol. The foils were examined in its edges to the other. They were not distributed hom-
+4
+a JEM-2000 type TEM. ogeneously in the sheet plane but were concentrated in
+certain areas. At places in the specimen where such
+concentrations of shear bands were present, macroscopic
+neckswereseen.The displacements ofmarker linescrossing
+Results these bands revealed evidence for the relative shear of one
+group ofgrains with respect to another along the direction
+From thetrue stress-elongation data fortheZn-22 wt-%AI of the bands, i.e. the shear bands were the result of
+alloy (Fig.2) and similar results for other systems reported cooperative grain/interphase boundary sliding.8- io
+in the literature, two regions are clearly discernible: To establish that the above changes were indeed due to
+(i) a region where the true stress a depends strongly on deformation, an SEM image of an undeformed sample is
+the true strain e shown in Fig. 3b for comparison. The shear band formed
+(ii) a region where the strain dependence of stress is in Fig.3a by cooperative boundary sliding appears to be
+weak (the region of stable flow). The mechanical normal to the stress axis. That this is not really so can be
+response in these two regions correlated well with seen from the schematic shown in Fig.3c. What is seen in
+the details ofboundary shear band formation. Fig. 3a is the trace in the plane bounded by the specimen
+The microstructural changes present in the initial region of length and breadth ofthe cooperatively slidboundary that
+deformation in which the stress was strongly dependent on is at approximately 45° to the stress axis in the plane
+the strain were described earlier.9,14 In this range, flow bounded by the specimen length and thickness. The
+commenced at very low stresses and no visible elastic appearance of the cooperatively slid boundaries in three
+(a ex:e) deformation was present. Bands of intense shear dimensions was described earlier.9,14
+deformation due to cooperative grain/interphase boundary Evidence ofcooperative boundary shear band formation
+sliding were seen to develop (see below). The rapid rise in after an elongation of 2000/0 was observed even after
+the flow stress correlated well with the increase in the removal of a surface layer by electropolishing, which
+number and dimensions of these directional, cooperatively implied that along these lines of cooperative boundary
+slid bands. This process continued until a steady state sliding the angles between adjoining boundaries differed
+(in terms of both the number and the dimensions of significantly from the equilibrium value of 120°and in fact
+these bands) was reached, beyond which point the strain approached 180°, i.e. the boundaries had become less
+dependence ofthe flow stress became very weak. angular or a nearly straightened chain had formed as a
+The formation of each band of mesoscopic sliding result ofcooperative boundary sliding(Fig.4).Data on the
+involves overcoming a long range threshold stress (Part 1). angles at triple junctions measured in different directions
+So,·it is understandable that the stress required to enforce are shown in Fig.5 while their mean values and those of
+deformation increased with strain until these bands reached the 'saw tooth' parameters for mesoscopic sliding, which is
+their steady state number and dimensions, i.e. until that described more fully in the following section, are given in
+Materials Science and Technology June 1996 Vol. 12
+
+--- PAGE 3 ---
+Astanin et al. Grain boundary sliding in structural superplasticity: Part 2 491
+a
+4 Microstructure after 200% elongation and removal of
+surface layer by electropolishing: arrows indicat.e
+bands ofcooperative grain/interphase boundary shear
+that are identified by superposition of photographs of
+same region before and after electropolishing; tensile
+axis isvertical
+plane interface formation (i.e. an interphase interface was
+involved), the process continued by dislocation motion
+through the f3 grain which appears to have given rise to a
+low angle boundary within the f3 grain (indicated by a
+concentration of dislocations) for continuing cooperative
+sliding. Grain boundaries that formed part of a coopera-
+tively slid boundary band often looked like 'fringes' while
+the other boundaries had a smooth appearance.
+Discussion
+.. Interface
+••.....--'"
+_ of CGBS
+The present results concerning cooperative (mesoscopic)
+grain/interphase boundary sliding are best understood in
+I! /;. /// . / S di h re e c a t r ion terms ofFig. 1ofPart 1.12In that analysis the polycrystal-
+line structure on a mesoscopic scale isdescribed as a cubic
+Z
+Cn dense packing of equisized spheres. The walls of the
+Wigner-Seitz cellcontaining one sphere represent the grain
+boundaries. This corresponds to a face centred cubic
+structure on a mesoscopic scale. Since roughness islowest
+••..• 1 ~....--. •.•
+on the {Ill} planes, these are assumed to be the glide
+I---- """'lIIIIf----~-..- ..---..:::::.-.
+I -- planes for long range (mesoscopic)sliding.The surface ofa
+I Traces of CGBS {Ill} plane in the mesoscopic structure consists of a
+regular arrangement of peaks and troughs whose height,
+I ~ regardless ofgrain shape, willvary as L, the average grain
+L ,
+size. The problem of plane interface formation along the
+.... .;.-.:---.-.Frontal surface mesoscopic {Ill} plane has been treated mathematically
+(c) /" of specimen in Part 1.12
+Initially slidingcommences at boundaries that experience
+3 a Boundary shear relief in initial stage of specimen
+extension: arrows show bands of cooperative grain the largest shear stresses. Here again, sliding willbe easier
+boundary shear, tensile axis isvertical; bSEM picture whenthegrain boundary misfitisgreater. In Zn-22 wt-%AI
+of undeformed specimen for comparison; cschematic and some other two phase alloys, sliding at interphase
+diag'ram illustrating why shear band in a appears interfaces is easier than along intercrystalline bound-
+normal to stress axis: CGBS=cooperative grain
+boundary shear
+Table 1 Average values of angles at triple junctions and
+'saw tooth' parameters: for definitions of sand
+Table 1. It was also evident that after an elongation of h: see Fig. 6b
+200% chains of f3 phase grains had formed as part of the
+cooperative grain/interphase boundary sliding bands Average angle at
+(Fig.4). Direction triple junctions,
+(see Fig. 1) deg h,* Jlm s,Jlm
+Figure 6a shows a TEM image of a specimen deformed
+up to the onset of steady state flow. A cooperative a 122 0'43 1'56
+grain/interphase boundary sliding band is present along b 123 0'40 1'43
+one of the diagonals of this figure. The location where a c 142 0'30 1'62
+triple junction has migrated to form a near plane interface *Represents aregion near the grain boundary disturbed by deformation
+isindicated byan arrow. Where af3 phase grain interrupted and should not be confused with grain boundary width.
+Materials Science and Technology June 1996 Vol. 12
+
+--- PAGE 4 ---
+492 Astanin et al. Grain boundary sliding in structural superplasticity: Part 2
+(b)
+6 aTransmission electron micrograph corresponding to
+3% elongation: arrow indicates where triple junction
+hasmigrated to form near plane interface; bschematic
+diagram for formation in initial stage of extension of
+cooperatively slid grain/interphase boundary band
+cause cooperative boundary sliding observed here is not
+predicted by the analysis of Kaibyshev et al.6,18 Moreover,
+theconcept ofachange inthedegreeofthenon-equilibrium
+aries.16-18This isverified in the present study where it has nature of a boundary when a lattice dislocation enters it,
+been seen above that f3 phase grains are aligned along the has yet to be quantified.
+cooperative boundary sliding bands (Fig.4). In the analyses by Ashby and Verrall1 and Raj and
+According to Kaibyshev and co-workers,6,18 lattice Ashby the starting two-dimensional array consists of
+ll
+dislocations that originate at a grain boundary traverse the regular hexagons of uniform size.However, inthe present
+grain and are absorbed at an opposite bounda'ry, making experiments at a number of sites the grain shape was
+it of a 'more non-equilibrium' nature. This process makes irregular and the angle at triple junctions significantly
+sliding easier and faster ('stimulated grain boundary differed from 120°. Figure 6b is a schematic representation
+sliding'). As the number of such dislocations can be ofa region similar to that shown in Fig.6a. Evidently, as s
+expected to increase with stress (strain rate), it may be increases and/or h decreases, sliding between a pair, of
+argued that superplasticity will be more significant in grains can be more easily transferred to an adjoining pair
+region II than inregion I.Whiletheevidencefordislocation ,of grains to cause cooperative grain/interphase boundary
+motion commencing from a boundary and traversing the sliding. However, a point such as b in Fig.6b would
+grain to become absorbed at an opposite boundary found correspond to the grain boundary discontinuity involving
+in the present experiments (Fig. 6a) can be reconciled with an interphase interface discussed in Part 1.12To continue
+the above view, the plane interface formation needed to cooperative sliding and plane interface formation beyond
+Materials Science and Technology June 1996 Vol. 12
+
+--- PAGE 5 ---
+Astanin etat. Grain boundary sliding in structural superplasticity: Part2 493
+a-b to a-c, lattice dislocation motion will have to
+commence at the boundary at b, traverse the f3 grain, and Conclusions
+become absorbed at the boundary at c. Such a process is
+indeed seen in Fig.6a. It is pertinent to note at this stage 1. Experimental evidence shows that superplasticity
+that using TEM it isnot possible to determine ifthe lattice in Zn-22 wt-%AI alloy is the result of interconnected co-
+dislocation motion observed in Fig.6a is non-rate con- operative sliding along localised shear surfaces situated
+trolling. This can only be determined by texture results throughout the volume of the specimen. This shear is
+based on a study oftrue crystallite orientation distribution accomplished by cooperative grain/interphase boundary
+functions. It has already been shown that under optimal sliding involving a number of boundaries that slide to-
+conditions of superplastic flow, texture intensity decreases gether as an entity. On the specimen surface coopera-
+continuously as a result of boundary sliding and grain tive boundary sliding manifests itself as wavy, localised
+rotation, and there is no evidence for crystallographic slip shear bands.
+acting as an independent rate controlling mechanism (see, 2. Along boundaries that give rise to cooperative
+for example, Fig. 10of Ref.19). Thus it can be concluded grain/interphase boundary sliding, triplejunctions move to
+that what is observed in Fig.6a is evidence for plane nearly 180° to orient themselves favourably to the shear
+interface formation involving an interphase interface by stresses that result from the external load. Boundaries that
+non-rate controlling dislocation motion through the f3 are conducive to easy sliding, e.g. high angle boundaries,
+grain, which is in accordance with the requirement of the boundaries of large misfit ('more open boundaries'), and
+model presented in Part 1.12In other words, the model interphase interfacesintheZn-22 wt-%AI alloy,participate
+presented in Part 1passes the test based on 'the quality of preferentially in the cooperative grain/interphase boundary
+falsifiability'13(see 'Introduction' above). sliding process.
+In contrast, the curvature present at an intercrystalline 3. When plane interface formation involvesan interphase
+boundary is removed by local boundary migration caused interface, cooperative sliding is accommodated by dislo-
+by diffusion. (If the boundary obstacle is severe, this can cation motion through the lattice and this provides direct
+alsobeachieved bydislocation motion,'asdescribed above.) experimental support for the model proposed in Part 1.12
+The energy needed to form the plane interface can be 4. Cooperative grain/interphase boundary sliding results
+estimated usingequations (33)and (34)and therelationship in an increased number ofnon-equilibrium triple junctions
+L1W;=L1lt2/2=L1Vli, as defined in Part 1. Likewise the that meet at angles significantly different from 120°.This
+long range threshold stress to be overcome before a plane observation is indicative of local boundary migration
+interface can form can be obtained from equations (caused by diffusion at intercrystalline boundaries and
+(36)-(38). It is also clear that in Fig.6b the ground area lattice dislocation motion at interphase interfaces) being
+indicated in terms ofsin cross-section varies as L2and the present as a process that accommodates boundary sliding.
+height h to be removed before a plane interface can be
+formed varies as L, where L isthe grain size.
+Plane interface formation, as described above, will also Acknowledgements
+be present in section d-c ofFig.6b.Asin the model,12this
+process can take place simultaneously in a number of
+This paper isdedicated to Professor K. Lucke who recently
+regions of the deforming specimen, when the plane inter-
+celebrated his 75th birthday.
+faces a-c and d-c meet, the stress concentration at
+This work was supported under the integrated long term
+c will be reduced by a local boundary smoothing (migra-
+programme of collaboration in science and technology
+tion) process brought about by diffusion. Then, as experi-
+between the Department of Science and Technology, the
+mentally observed, the surfaces along which cooperative
+Government ofIndia, and theRussian Academy ofSciences.
+boundary sliding is present will acquire a wavy or curved
+One of the authors (KAP) thanks the above authorities
+appearance (Fig. 3).
+for facilitating a short visit to Ufa. The encouragement
+From the present results it is also clear that the grain
+of Dr P. Rama Rao and Professor O. A. Kaibyshev
+boundaries inwhich the dissociation ofthe absorbed lattice
+is gratefully acknowledged. This paper was finalised
+dislocations isincomplete acquire a fringelike appearance.
+when KAP was at the TH Darmstadt, Germany, as a
+In Fig.6a, one ofthe grains meeting at a triple junction
+'Forschungspreistdiger' of the Alexander-von-Humboldt-
+(indicated by an arrow) has migrated so as to extend the
+Stiftung, Bonn.
+plane interface causing cooperative boundary sliding. The
+presence of such local boundary migration (caused by
+diffusion at an intercrystalline boundary and non-rate
+References
+controlling lattice dislocation motion at an interphase
+interface, asdescribed inPart 112),that leads to cooperative
+boundary sliding on an extensive scale is a unique feature 1. M.F.ASHBYand R. A. VERRALL:Acta Metall., 1973,21,149.
+of superplastic flow which is absent in high temperature 2. J. W.EDINGTON, K. N. MELTON,and c. P.CUTLER: Prog. Mater.
+creep in which atomic scale grain boundary sliding is Sci., 1976,21,61.
+also present. 3. R. c. GIFKINS: J.Mater. Sci., 1978,13,1926.
+The limitations of the Ashby-Verrall1 and Raj-Ashby 4. K. A. PADMANABHAN and G. J. DAVIES:'Superplasticity'; 1980,
+ll Berlin, Springer Verlag.
+analyses, both of which treat diffusional flow as the rate
+5. I.I.NOVIKOVand v. K. PORTNOY:'Superplasticity ofalloyswith
+controlling process, have already been discussed.4•6 Of ultrafine grains'; 1981,Moscow, Metallurgia (in Russian).
+special relevance are the two results presented in Fig.6a, 6. o. A. KAIBYSHEV:'Superplasticity ofalloys,intermetallides and
+neither of which can be accounted for by the above ceramics'; 1992,Berlin,Springer Verlag.
+diffusion based models, i.e. plane interface formation 7. v. V. ASTANIN,R. Z. VALlEV,and s.N. DUDINA: in Abstracts of
+involving several grain/interphase boundaries which makes 3rd All-Union Conf. on 'Superplasticity of metals', Tula,
+them behave as an entity, and the evidence for accommo- Russia, 1986,Part 1,17(in Russian).
+dation of sliding at an interphase interface by dislocation 8. v. V. ASTANIN,O. A. KAIBYSHEV,and s.N. FAIZOVA:Dokl. Akad.
+Nauk SSSR, 1991,319,1366.
+motion to cause cooperative boundary sliding in the
+9. v. V. ASTANIN,O. A. KAIBYSHEV,and s.N. FAIZOVA:Scr. Metall.
+optimal range ofsuperplastic flow.These observations are,
+Mater., 1991,25,2663.
+however, essential features ofthemodel presented in Part 1. 10.M. G. ZELlN, M. R. DUNLAP, R. ROSEN, and A. K. MUKHERJEE:
+Numerical verification of the proposals is presented in J.Appl. Phys., 1993,74,4972.
+Part 4. 11.R. RAJand M.F.ASHBY:Metall. Trans., 1971,2, 1113.
+Materials Science and Technology June 1996 Vol.12
+
+--- PAGE 6 ---
+494 Astanin et al. Grain boundary sliding in structural superplasticity: Part 2
+12. K.A. PADMANABHANAND J. SCHLlPF: Mater. Sci. Technol., 1996, 16.T. WATANABE,M. YAMADA,S. SHIMA, and s. KARASHIMA:Phi/os.
+12,391-399~ Mag.A, 1979,40A,667.
+13.R. W. CARN; in 'Advances in physical metallurgy', (ed. 17. P. G. PARTRlDGE, D. S. McDARMAID, and A. W. BOWEN: Acta
+J. A. Charles and G. C. Smith), 195; 1990, London, The Metall., 1985,33,571.
+Institute ofMetals. 18. R. Z. VALlEV, O. A. KAIBYSHEV, V. V. ASTANIN, and
+14.v.V.ASTANIN,O.A. KAIBYSHEV,and s.N. FAIZOVA:Acta Metall. A. K. EMALETDINOV: Phys. Status Solidi raj, 1983, 78,
+Mater., 1994,42,2617. 439.
+15.R. K. YADAVAand K. A. PADMANABHAN:Mater. Sci. Eng., 1979, 19.K. A. PADMANABHAN: Trans. Indian Inst. Met., 1992, 45,
+37,127. 357.
+New from The In$titute ofMaterials
+THE PROFESSOR ANTHONY KELLY SYMPOSIUM
+ADVANCED MATERIALS
+IN THE
+MARKETPLACE
+Edited by
+J.E. CASTLE and M. J. KELLY
+Contribu tions by
+Professor Rustum Roy Professor A. G. Evans
+Dr J. Morton Dr M.A. Kinsella Dr J. S.Campbell
+Dr M.J. Goulette Professor D. C. Phillips Dr A. D. Batte
+Dr A. R.Begg Professor R.Clift Dr D.A. Melford
+Mr G. H. Sage Dr E.D. Hondros
+Sir Geoffrey Allen
+Book 609ISBN0901716928246mm x172mm 224pp
+ED:£55/Members £44
+Non-ED $110/Members $88
+p&p £3.50ED/$8.00 non-ED
+Orders to:The Institute ofMaterials, Accounts Department, 1Carlton House Terrace,
+London, SW1Y5DB Tel:01718394071 Fax:0171839 2078
+Materials Science and Technology June 1996 Vol. 12

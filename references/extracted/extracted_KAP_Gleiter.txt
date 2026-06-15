@@ -1,0 +1,1217 @@
+
+--- PAGE 1 ---
+CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253
+ContentslistsavailableatSciVerseScienceDirect
+Current Opinion in Solid State and Materials Science
+journal homepage: www.elsevier.com/locate/cossms
+A mechanism for the deformation of disordered states of matter
+K.A. Padmanabhana,⇑ , H. Gleiterb
+aSchoolofEngineeringSciences&TechnologyandCentreforNanotechnology,UniversityofHyderabad,Hyderabad500046,India
+bKITCampusNorth,InstituteofNanotechnology,P.O.Box3640,0721Karlsruhe,Germany
+a r t i c l e i n f o a b s t r a c t
+Articlehistory: Asthefrontierinadvancedmaterialsdevelopmenthasshiftedintohighlydisorderedsystems,concepts
+Availableonline26May2012 ofdeformationbasedoncrystallatticedislocationsoftenbecometoocoarsetobeofrelevance.Therefore,
+anewdeformationprocess,localizedtodimensionssmallerthanthoseinvolvedindislocationmecha-
+Keywords: nisms,wasproposedsometimeago.Someofitsimportantfeaturesarediscussedheretosuggestthatthis
+Superplasticdeformation mechanismislikely tobeofuseinunderstandingthe superplastic deformation ofmetals andalloys,
+Ratecontrollingdeformationprocess ceramics,metal-matrix-andceramic-matrix-composites,dispersionhardenedmaterials,intermetallics,
+Mesoscopicgrainboundarysliding geologicalmaterials,metallicglassesandpoly-glassesofgrainsizesinthelm-,sub-lm-ornm-range
+Crystallineandglassymaterials
+–amuchwiderareaofapplicationthanoriginallyanticipated.Thiswillallowonetodefine‘‘superplas-
+Grainboundarystructure
+ticity’’asduetoauniquephysicalmechanism,ratherthanbytheextremeelongationsobtainableinten-
+siletestingorthestrainratesensitivityindexbeingmorethan(cid:2)0.30.
+(cid:2)2012ElsevierLtd.Allrightsreserved.
+1.Introduction madetoexplainthephenomenonofsuperplasticityintermsofa
+single mechanism of deformation, which applies equally well to
+Advanced materials development has moved on from slightly the different kinds of disordered states of matter listed above.
+imperfect materials to highly disordered systems, e.g., glassy al- Needless to say, under unfavorable experimental conditions, less
+loys, vapor-quenched or rapidly solidified materials, sputtered strain-ratesensitivemechanismswouldinterveneandsuperplastic
+films,superplasticalloys,micro-,sub-micro-andnano-crystalline elongationsmaynotresulteveninmaterialsthatareknowntoex-
+materials. ‘‘The concept of a crystal dislocation loses much of its hibitsuperplasticity.
+valueonce thereisno longera good long-range crystal structure Inthepresentviewpoint,theatomisticdetailsofaunitbound-
+in which to define it. For breach of order, there must first be a ary sliding event are considered to be the same regardless of
+frameworkoforder’’[1]. whether one is concerned with a material of grain size in the
+The phenomenon of superplasticity, during the occurrence of micrometer,sub-micrometeror nanometerrange in the different
+which specimens subjected to a small tensile stress can be classes of materials. The distribution/arrangement of atoms and
+stretchedbyseveralhundredpercent,hasemergedasanear-ubiq- freevolumefractionwithinthebasicunitofsliding,thepresence
+uitous phenomenon, present within well-defined grain size – of free volume sites along the boundary and the propagation of
+strainrate–temperaturedomainsinmetalsandalloys,ceramics, deformationalongtheinterfacesinagivenmaterial,however,will
+metal-matrix- and ceramic-matrix-composites, dispersion hard- depend on the atomic configurations present in the basic unit of
+ened materials, intermetallics, geological materials and metallic sliding (which are governed, among other things, by the inter-
+glasses.Thephenomenonisalsopresentinmicrocrystalline,sub- atomicforces)anditsneighborhoodintheboundary.Toadvocate
+microcrystalline and nanocrystalline forms of these classes of thestrengthinourarguments,weusethemathematicalproofpro-
+materials. There is near-universal agreement that bulk of the videdbyHutter[21]that‘‘shortercomputabletheorieshavemore
+superplasticdeformationistraceabletograinboundary/interphase weightwhencalculatingtheexpectedvalueofanactionacrossall
+interfacesliding[2–7]. computable theories which perfectly describe previous observa-
+Theaimofthispaperistohighlightsomeofthefeaturesofa tions’’. The applicability of the physics underlying the model to
+mechanism proposed earlier [8–20] to suggest that that mecha- all the classes of materials listed of grain size in the lm-, sub-
+nism could be important in all situations where concepts based lm or nm range, in which the phenomenon of superplasticity is
+on dislocations are of limited use. Therefore, an attempt will be observed,isclaimedtobeitsmajorstrength.Wehaveadoptedthis
+line of argument because then even after conceding that there
+⇑ couldbeotherexplanations,whichmaybeabletoexplainthephe-
+Correspondingauthor.Tel.:+914023134455;fax:+914023012800.
+nomenonofsuperplasticitywell,onecanclaimsuperiorityforthe
+E-mailaddresses:kapse@uohyd.ernet.in(K.A.Padmanabhan),Herbert.gleiter@
+kit.edu(H.Gleiter). presentapproachbecauseofitsuniversality.Aswillbeseenlater,
+1359-0286/$-seefrontmatter(cid:2)2012ElsevierLtd.Allrightsreserved.
+http://dx.doi.org/10.1016/j.cossms.2012.05.001
+--- PAGE 2 ---
+244 K.A.Padmanabhan,H.Gleiter/CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253
+thepresentapproachalsowillhelprationalizewhatTrelewiczand boundary.Needlesstosay,theaccuracyofpredictionofthebound-
+Schuh [22] have stated on the nanocrystalline–metallic glass ary structure in terms of this model will improve significantly if
+transition. precise inter-atomic potentials are used. While such potentials
+A proper description of boundary sliding pre-supposes a clear are available for some elements, which are then used as model
+understanding ofthestructureofgeneral high-angleboundaries1 materialstotestthevalidityofthetheory,thesituationisrather
+and the interfaces present in severe plastic deformed materials, badforengineeringmaterials,oftenconsistingofseveralalloyele-
+metallic glasses, poly-glasses etc., in addition to the boundaries of ments. Focused research for obtaining precise potentials for the
+metallic materials. Our knowledge about the structure of grain engineeringmaterialswillbeextremelyuseful.
+boundariesandinterfacesinnon-metallicmaterials,metallicglasses Thecoincidencesitelattice(CSL)conceptdoesnotalsotellone
+and poly-glasses is rather limited. Therefore, the usefulness of the whichoftheshortperiodicboundariesisa‘‘special’’one,i.e.,alow
+present mechanism for understanding the deformation of the energyboundary.Therotatingsphereexperiments[35,36]demon-
+boundariesofthelatterclassesofmaterialsisduetotherateequa- strated that for two materials with identical CSL, the special
+tiondevelopedbeingabletofitexperimentaldatapertainingtothe boundaries could be different. Crystal structure and a consider-
+different classes of materials equally well, i.e., the justification is ation of the geometry of grain boundaries alone do not tell one
+basedonempiricalvalidationandverification. about the thermodynamic stability of a boundary. For example,
+without knowing the inter-atomic forces, one cannot understand
+whyGewithdiamondstructureisbrittle,whileFCCGeisductile
+2.Structureofhigh-anglegrainboundariesandinterfaces
+orindeedwhythesameelementGeshouldcrystallizeintwodif-
+ferentforms.Aswithcrystals,onemaycomparethepropertiesand
+Theideasconcerningthestructureofhigh-anglegrainbound-
+structuresofboundariesinmaterialsofsimilarinter-atomicforces.
+arieshavebeenderivedmostlybasedonworkrelatedtometallic
+The rotating sphere experiments revealed the same low energy
+materials.Assimilarsuperplasticflowisobservedintheotherclas-
+boundariesinAg,Au,CuandevenNi.
+ses of materials also, in the absence of evidence to the contrary,
+TheapproachofcombiningtheCSLconceptandthedislocation
+theseideasareconsideredtoberelevanttoalltheclassesofmate-
+model of grain boundaries to describe high-angle boundaries
+rialsthatexhibitsuperplasticity.
+[37,38] suggests that when the orientation relationship of the
+Several reviews have examined the models used to describe
+two grains deviates from the ideal coincidence relationship, in
+high-anglegrainboundariesfortwoearlyreviews,see[23,24].Of
+analogywiththeRead-Shockleydislocationmodelforsmall-angle
+the different approaches, the amorphous boundary model was
+boundaries [39], off-coincidence high-angle boundary is describ-
+foundtobeinadequate,2whilethedislocationmodelswereuseful
+ableasanetworkofdislocationssuperimposedonthecorrespond-
+for understanding the behavior of small-angle boundaries. Island
+ing ideal coincidence boundary. This idea of describing the ‘‘bad
+models were incomplete. The coincidence site lattice model [25–
+fit’’regionsofthehigh-anglegrainboundaryintermsofmisfit-dis-
+28],whichisbasedontheoriginalsuggestionofKronbergandWil-
+locations (whose density increases significantly with increasing
+son [29], considers only geometry. This is surprising because, long
+deviationfromidealcoincidencerelationship)hasbeenabandoned
+beforethismodelwasproposed,itwasknownthatallelementsof
+since 1977 for the following reasons. (a) The suggestion that in
+a given structure, e.g., FCC, are not identical and that CSL being
+some cases the dislocation could dissociate into DSC (displace-
+purelygeometrical,doesnotevenrequiregrainboundaries[23,24].
+shift-coincide) dislocations with Burgers vectors too small to be
+Thestructuralunitmodel,incontrast,takesintoaccountgeometry
+observable using TEM [40] has not been followed up since the
+and the inter-atomic forces present among the boundary atoms.
+1970s.(b)Bypostulatingthatingeneralhigh-anglegrainbound-
+Thelattermodelsuggeststhatthemoststableboundariesareknown
+aries and metallic glasses there is no long range order and so at
+by minimizing the total free energy of the system [23,24,30–32].
+infinitetimetheshearmoduluswouldfallofftozero[20],itcould
+However, there are also situations in which thermodynamic non-
+bepredictedusingthePeierls–Nabarroequationthatthewidthof
+equilibrium introduces selection rules where it is not the free en-
+thedislocation(definedbyitscore)willbecomeinfinite(Eqs.(5)–
+ergy,butthefastreactionrate,thatdeterminesthestructureofgrain
+(9) of [41]). This prediction is confirmed by the TEM observation
+boundaries.Suchstructuresmustberelatedtothemaximizationof
+[42,43] that when a lattice dislocation enters a high-angle grain
+entropy dissipation rate [33,34]. In such cases metastable grain
+boundary, the dislocation image gradually becomes fainter and
+boundarystructureswillresult.Itwillbeseenbelowthattheanal-
+disappears.Thishasbeeninterpretedintermsofsplittingofdislo-
+ysispresentedinthispaperappliesequallywelltosuchboundaries
+cation, spreading and overlap of dislocation cores. (c) It could be
+also. Geometrical elegance, often seen in crystalline materials is,
+shown that solitons, e.g. dislocations, vacancies, get delocalized
+therefore,aconsequenceofthermodynamic/kineticcauses.
+in high-angle boundariesand metallicglasses [44] and therefore,
+Using computer simulations, Gleiter, Chalmers and Weins
+thepresenceofdislocationsinhigh-angleboundariesisanunsus-
+[23,24,30–32] showed that there were actually no coincidence
+tainableconcept.(d)Tothebestofourknowledge,MDsimulations
+atoms,butthattheparameterthatcharacterizedthecoincidence
+also have provided no evidence during grain boundary sliding
+boundarieswastheirperiodicity.Eveninnon-coincidencebound-
+along general high-angle grain boundaries for the presence and
+aries,thesameatomicgroupsthatcharacterizedtheadjacentcoin-
+glide of grain boundary dislocations. As a result, since 1977
+cidence boundaries appeared in an alternating sequence. These
+descriptionsofhigh-anglegrainboundaries,e.g.,[45–59],useonly
+groupsformedtwo-dimensionalarraysofgroupsofatoms,known
+freevolumetodescribetheregionsofpoorfit.
+as the ‘‘structural units’’. The atomic structure of any high-angle
+Thus, in contemporary view, the general high-angle boundary
+grain boundary was suggested to comprise a two-dimensional
+doesnothavelong-rangeorder.Itismadeofnumerousstructural
+arrangement of these units mixed in a form that corresponds to
+unitsandfreevolumetogiverisetothemyriadsofgeneralhigh-
+the orientation relationship of the two crystals that form the
+angle grain boundaries of different orientations. As already men-
+tioned,theinter-atomicforcespresentineachcasewilldetermine
+1 It has been known that grain boundary sliding is the easiest at high-angle thesize,combinationanddistributionofsuchshort-andinterme-
+boundariesandinfactduring thedevelopmentofsuperplastic aluminum-lithium diate-rangeorderingofatoms,whichisaconsequenceoftheten-
+alloys, when thermomechanical processing led to microstructures of small-angle
+dency of grain boundaries to minimize the total free energy. The
+grainboundariesonly,superplasticitycouldnotbeinduced(fordetails,see[20]).
+2 However, in case of ceramic materials in which strong segregation of glass structure becomes less orderly, when one considers metallic
+formingsolutesispresent,thegrainboundarystructurecouldbeamorphous. glassesandpoly-glasses.Intheselattercases,theneedtopreserve
+--- PAGE 3 ---
+K.A.Padmanabhan,H.Gleiter/CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253 245
+crystallographic relationships is eliminated, but still short- and e_ ¼Krð m 1Þexp
+(cid:2)
+(cid:3)
+Q(cid:3)
+orr¼e_mexp
+(cid:2)Q(cid:3)
+ð1Þ
+intermediate-range ordered clusters of atoms are found, along kT kT
+withfreevolume.Dependingonthe degreeofamorphousnessof
+the glasses, the density and formation of full or frustrated short- expressedinadimensionlessform,wheree_ isthestrainrate,rthe
+rangeorderedicosahedralandothertypesofclustersandclusters appliedstress,ktheBoltzmannconstant,Tthetemperatureonthe
+ofintermediate-orderdifferandwhenonereachesapoly-glassthe absolute scale, and K and K are constants, suggestions are made
+1
+interfacebetweentheatomclustersoneithersideismademostly abouttherate-controllingmechanism.Inafewcases,microstruc-
+of atomic ensembles of short-range order in an otherwise non- tural findings are also included in a qualitative discussion. But, in
+crystalline medium. The free volume fraction in this case can be all these cases, as in the analysis of Mukherjee et al. [62], (a) no
+larger than what is found in a general high-angle boundary or a method of calculating the activation energy for the deformation
+metallicglass[44].Itisemphasizedthatthearrangementofatoms processandthestrainratesensitivityindexusingphysicalconcepts
+intheshort-rangeorderedensemblesinalltheclassesofmaterials hasbeensuggested,and(b)contrarytoexperimentalresults,n(=(1/
+will depend on the inter-atomic forces present among the ele- m)),thestressexponent,isassumedtobeindependentofstressand
+mentsthatconstitutethematerial/glass. temperature and Q independent of the value of the (r/G) ratio,
+Inbrief,thefollowingideasarewellestablishedsofarasinter- which is maintained constant for determining Q (G is the shear
+facesinmetallicmaterialsareconcerned.Inthisanalysisthesame modulus).Moreover,asaresultofthesestudies,differentrate-con-
+ideasareregardedasvalidfortheotherclassesofmaterialsalso,so trollingmechanismshavebeensuggestedfordifferentsuperplastic
+longasthereisnoevidencetothecontrary. materialsystems[2–5].Consequently,thenumberofmechanisms
+and empirical constants needed to explain the phenomenon of
+1.Fordeducingusefulinformationregardingthestructureand superplasticitybecomeverylarge.
+propertiesofgrainboundaries,itisessentialtoconsiderboth In a contradistinctive approach, it was suggestedin 1977 that
+theboundarygeometryandthenatureandmagnitudeofthe the rate-controlling process during superplastic deformation in
+inter-atomicforces. thedifferenttypesofmaterialsofseveralgrainsizerangesisgrain
+2.The CSL model and the method of inserting dislocations boundarysliding(GBS).Nodoubt,inordertoensurestraincoher-
+into the CSL lattice to account for grain boundary orienta- ency,partsofthegrainnearitsboundariesalsowillbedeformed
+tion away from the ideal CSL [37,38] are useful concepts byaccommodationprocesses.Thelatterprocessisassumedtobe
+for a description of low energy boundaries, including the a faster mechanism. (This can now be proved by comparing the
+low-angle variants. But, as the CSL model is based purely rate equations of the accommodation processes with that for
+on geometry, this method does not suggest a way of GBS.) As there was no consensus on the structure of high-angle
+knowing the boundaries of low energy. Moreover, it is grainboundariesin1977,theoriginaltreatmentavoidedadetailed
+debatable if under the above restricted conditions the discussionoftheatomisticsoftheboundaryslidingprocess[8].
+CSL description is any different from the Read–Shockley Allmodelsforhigh-anglegrainboundariesproposedintheper-
+model for small-angle grain boundaries [39], except that iod 1977–1984 [45–59] accepted (a) the structural unit concept,
+the grain boundary in the latter case is described in the and(b)thedescriptionoftheregionsofpoorfitinthegrainbound-
+former by the CSL lattice. ariesintermsoffreevolume.Theabsenceofaneedtodescribethe
+3.In case of high-angle boundaries, it is better to discuss in regionsofpoorfitintermsofgrainboundarydislocationsensures
+termsofstructuralunits,ratherthantheCSL. that general high-angle grain boundaries form an interconnected
+4.There is experimental and MD simulation evidence for the 3D network, which can be viewed as an infinite continuum. In
+presence of free volume in high-angle grain boundaries. In addition, the conclusion of Wolf [58,59] that the excess free vol-
+all models of high-angle boundaries proposed since 1977, umeofhigh-anglegrainboundariesvariesonlyslightlywithmis-
+the bad fit regions in the boundary are described only in orientation allows the development of a deterministic model of
+terms of free volume and dislocations are considered to be grainboundaryslidingbyignoringthisdependenceasafirstorder
+unstableinsuchboundaries.Itcanbeshownthatfreevol- approximation.In theearlypapers,a modelwas proposedtoex-
+ume and compressibility of a boundary are also material- plain superplasticity in microcrystalline metallic materials [9–
+dependentparameters,i.e.,thesizeanddistributionoffree 13].But,overtimeithasbeenshowntobeusefulforunderstand-
+volume depend on the inter-atomic forces present among ingsuperplasticflowintheotherclassesofmaterialsalso,regard-
+thegrainboundaryatoms[60]. lessofwhetherthegrainsizeisin thelm-,sub-lm-orthenm-
+5.Tothebestofourknowledge,thereisnoevidence-theoreti- range[9–20,63].Thedifferencesin theanalysisfor eachmaterial
+cal or experimental for the presence of intrinsic/geometri- andclassofmaterialsliein(a)thefrequencyandarrangement/dis-
+cally necessary dislocations and extrinsic grain boundary tribution of short-range and intermediate-range ordered clusters
+dislocationsingeneralhigh-angleboundaries. ofatomsandthedensityandsizeofthestructuralunits(present
+6.Whenacrystallatticedislocationentersa high-anglegrain in crystalline materials), (b) the size and distribution of free vol-
+boundary, that region in the boundary gets more disor- umeinthegrainboundaries,and(c)theinter–atomicforcespres-
+dered, which cannot be described usefully in terms of entamongtheatomsthatconstitutethegrainboundaries.Factor
+ideas used to describe lattice dislocations, e.g., O-lattice, (c) affects significantly the other two microstructural parameters
+DSC lattice. mentionedin(a) and(b).Thesedifferenceswillaffecttherateof
+boundary sliding, the internal stress distribution that will result
+3.Amechanismofdeformationfordisorderedstatesofmatter from boundary sliding and the strain-rate sensitivity of flow
+(whichwilldependontheinternalstressdistribution,asthelatter
+A dominant view has been that grain boundary sliding is an determinestheresistanceofthematerialtodeformationatanygi-
+inherently fast process and that at no stage it can be controlling venlocation).Thesefactorsgiverisetothedifferencesbetweenthe
+the rate of deformation [61]. Therefore, attention is focused in mechanical response of materials of different classes and among
+many studies on analyzing the process that accommodates grain materials within a given class. However, in case of poly-glasses,
+boundarysliding.Often,basedonanexperimentaldetermination therelativedensitycouldbemuchlessthanwhatisfoundinthe
+ofactivationenergy,Q,andthestrain-ratesensitivityindexofflow, other types of materials. This could have a significant effect on
+m,inthesuperplasticityrateequation the internal stress distribution present in that class of materials
+--- PAGE 4 ---
+246 K.A.Padmanabhan,H.Gleiter/CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253
+after deformation, which, in turn, may affect the ductility. This
+pointisdevelopedlater.
+Topresentthisanalysisinperspective,itisnotedthatinavery
+early view [64] plastic deformation implied deformation over an
+entire plane – Fig. 1. However, once it was realized that such a
+deformationmechanismoverestimatesthetheoreticalstrengthof
+a material by about 1000 times, the concept of dislocation was
+introduced–Fig.2.Dislocationsareone-dimensionaldefectsintro-
+ducedtoexplain3Dflow.Inthatcase,intheplaneofthesheetat
+any instant deformation is confined to distances of 2–3 atomic
+diameters only. But, in the perpendicular direction, the distance
+coveredduringunitdeformationcanbeconsiderablymore.Incon-
+trast, deformation of a grain boundary is almost 2D because the
+grain boundary width is only of 2–3 atomic diameters, while its
+areaoftenismuchlarger.Tomaketheiranalysisconsistentwith
+that of Argon [65] for metallicglasses, Padmanabhan and Schlipf
+[9,10] suggested that the basic unit of sliding will have a radius
+alongthegrainboundaryplaneequaltothegrainboundarywidth,
+W,andtheheight,W,ofthebasicslidingunitwillbelocatedsym-
+metricallyaboutthegrainboundaryplane,withaheight(W/2)on
+eithersideoftheboundary.Thisshapeofthebasicslidingunitcor-
+respondstoanoblatespheroid.Thereisnothingspecialaboutthis Fig. 2. Disturbed region present during the movement of a lattice dislocation
+shape.Argon[65],forexample,haschosentheshapetobespher- (schematic;fromthelecturenotesofStrudel).
+ical.Wechosetheoblatespheroidshapeformathematicalconve-
+nience, as Eshelby [66] has pointed out that when an oblate
+spheroid (ellipsoid) gets deformed, it still remains an ellipsoid
+andbydeterminingthehomogeneousstressandstrainfieldsthat
+woulddevelopinsideadeformedellipsoid,itwouldbepossibleto
+deduce useful information on many physical and engineering
+propertiesofthematerial.Incontrast,thestressandstrainfields
+outside the deformed basic unit (or inside and outside other de-
+formedshapes)wouldbehighlynon-uniformandextremelydiffi-
+culttodetermine.Infact,thisoblatespheroidshapeforinclusion/
+reinforcementisthepreferredkindinthefieldofcompositemate-
+rialsmechanicsfordeterminingtheaverageinternalstresses[67]
+resultingfromthermalandmechanicaleffects.Fig.3isaschematic
+ofthebasicslidingunitthatcontainsfreevolume.
+Based on the deformation of such oblate spheroids how it is
+possible to calculate the stress, strain, the activation energy for
+rate-controlling deformation and the stress–strain rate-tempera- Fig.3. Sliding/shearunit,accordingtothepresentmodel.
+ture-grainsizeinterdependencehasbeenexplainedinaseriesof
+publications for many systems [8–20]. As mentioned earlier, the
+shapeanddimensionsofthebasicslidingunitintheanalysisfor arrangementwithinthisunitandtheinter-atomicdistance,which
+different classes of materials is the same. However, the atomic willdeterminethebondstrength,theshearmodulus,andthefree
+volumewillalldependonthenatureandmagnitudeoftheinter-
+atomicforces.Withrespecttothesequentialoperationofsuchunit
+sliding/shearingeventsalso,whicheventuallyleadtomesoscopic
+boundarysliding,therearedifferences,asonemovesfromagen-
+eral high-angle boundary of one misorientation to another in a
+metallicorceramicmaterialtoacomposite,amaterialcontaining
+dispersions,ametallicglassorapoly-glass.Thisisbecauseinthe
+grainboundaries/interfacesofthesedifferentclassesofmaterials,
+short-range and intermediate-range order present in the clusters
+ofatoms,freevolumeandthefrequencyanddistributionofthese
+microstructuralfeaturesaredissimilar.
+Astresss>s isnecessarytoachieveunitshearinabasicsliding
+i
+unit(see Fig.3of[9]),wheres isthethresholdstressneededto
+i
+initiate an atomic scale sliding event. Wolf’s [58,59] finding that
+excessfree volumepresentin high-anglegrainboundariesvaries
+onlyslightlywithmisorientationallowsthisdependencetobeig-
+noredasafirstorderapproximation,withoutintroducingserious
+errorsinthecalculations.Onanexperimentalbasis,thisnear-mis-
+orientation independence of free volume appears to be the case,
+regardless of the route of manufacture, which could vary from
+physical/chemical vapor deposition and powder metallurgy at
+Fig. 1. Frenkel’s model for determining the shear yield stress of a material
+(schematic;fromthelecturenotesofStrudel). one extreme to severe plastic deformation (SPD) at the other.
+--- PAGE 5 ---
+K.A.Padmanabhan,H.Gleiter/CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253 247
+Again,basedonexperimentsitalsoappearstobethecaseformany without even going into the merits and demerits of the other
+bulk metallic glasses in which grain boundaries are replaced by mechanisms. The fact that there are no adjustable constants in
+interfaces between atomic clusters (which corresponds to grains the analysis is another point in favor of this approach. It is
+in crystalline materials) at which deformation gets concentrated. importanttonotethatthepresentanalysiscanapplytoallkinds
+Carefuldiffusionstudies[68]haverevealedthatinmetallicmate- ofinterfacesthatarenotamenabletophysicallyrealisticcrystallo-
+rials, when substitutional diffusion is involved, diffusivity is the graphicdescriptionsandwherethefractionoffreevolumepresent
+highest at ‘‘non-equilibrium’’ boundaries (produced by SPD), attheinterfaceispracticallyindependentofthemisorientationan-
+followed by relaxed high-angle grain boundaries and then glassy gle that the coming together of two grains/atom clusters intro-
+alloys/metallicglasses,inthatdecreasingorder.3Thisobservation duces. Based on this deterministic model [8–20], the following
+seemstosuggestthatthepresentargumentaboutthecommonality keyequationshavebeenderived.
+amongthecrystallinemetallicandceramicmaterialsofgrainsizes Takingthegrainboundarywidthtobe(cid:2)3atomicdiameters,the
+in all ranges and metallic glasses is valid. Such an assumption has meanshearstrain,c ,resultingfromaunitboundaryslidingevent
+o
+twoconsequences: hasbeenestimatedas[9]
+S
+1. Forstresss>s,theatomicconfigurationfoundinanybasic c (cid:4) 0 orS (cid:4)Wc ð2Þ
+i 0 2a 0 0
+slidingunitC0 istopologicallyequivalenttoC (theequilib- 0
+eq
+rium configuration in which the basic sliding unit is found whereS isthelocaldisplacementoftheatomsinthebasicsliding
+0
+initially) and forms the new equilibrium configuration C0 . unitinasingleslidingevent,a theinter-atomicdistanceandWis
+eq 0
+Again there will be metastable states C00 nearby, which are thegrainboundarywidth.Themeanfreeenergyofactivation,DF
+0
+transformed by the action of s i to a lower energy state of (whichreplacesaspectrumoffreeenergiesofactivationatdifferent
+C0 e 0 q equaltoC eq ,sothatgrainboundarysliding(GBS)canpro- basicslidingunitsintheboundaryateachofwhichthefreevolume
+ceed by a sequence of shear transformations. The equiva- fractioncouldbeslightlydifferent),fortherate-controllingprocess
+lence of C eq and C0 eq constitutes iso-configurational flow isgivenby
+kinetics, which can be described by transition state theory
+1
+[9,65]. DF ¼ ðb c2þb (cid:2)2ÞGV ð3Þ
+2. Theindividualsheartransformationsc andthemomentary 0 2 1 0 2 0 0
+i
+volumeexpansionse i (asthebasicunitgoesfromonemeta- where for an oblate spheroid b 1 =0.944(1.590(cid:3)p)/(1(cid:3)p), b 2 =4
+stableconfigurationtoanother,asitisembeddedinasolid (1+p)/[9(1(cid:3)p)],withpthePoissonratio,e themomentarydilata-
+0
+matrix) will not differ much for different basic units or for tionexperiencedbythebasicslidingunitasitmovesfromoneequi-
+thedifferentmetastablestateswithinabasicunit. librium to another equilibrium position under the action of an
+external shear stress inside a solid matrix, G the shear modulus
+Using this simplification how the deformation kinetics can be and V is equal to the volume of the basic sliding unit (an oblate
+0
+workedouthasbeenexplainedindetailintheearlierpapers[9– spheroid), i.e.,(2/3)pW3. e is related to c through an appropriate
+0 0
+20].Presentlyitisreiteratedthatinourviewthisistherate-con- yield criterion, e.g., von Mises, Tresca, Mohr–Coulomb, Gurson,
+trolling deformation mechanism for superplastic deformation in Drucker–Prager etc. When the von Mises criterion is used,
+metallicmaterialsofgrainsizesinthelm,sub-lmandnmrange, e =0.57c .
+0 0
+intermetallics, metal-matrix composites and metallic materials Thestrainrateofdeformation,c_,fortheratecontrollingprocess
+containingdispersoids.(Thelasttwogiveriseto‘‘highstrain-rate isgivenby[9,13,15–19]
+superplasticity’’,i.e.,e_P10(cid:3)2s(cid:3)1).Asthefeaturesofsuperplastic
+(cid:2) DF (cid:3) (cid:2)2:0944w4c2v(cid:3)
+deformation are very similar in ceramic materials, ceramic-com- c_ ¼Aðs(cid:3)s Þexp (cid:3) 0 ; A¼ 0 ð4Þ
+0 kT kTL
+posites, bulk metallic glasses and geological materials also, it is
+conjecturedthataverysimilarmechanismoperatesinthesemate- wheresistheexternallyappliedshearstress,mthethermalvibra-
+rialsaswell.Inpoly-glasses,wherethefreevolumefractioncould
+tion frequency and L is the average grain size of the material. (In
+behigherthanwhatisfoundinmetallicglasses,however,thelocal
+realmaterials,therewouldbeagrainsizedistribution.Inaddition,
+internalstressesdevelopedbyboundaryslidingcouldexceedthe
+duringsuperplasticflow,thereisgraingrowth.Therefore,LinEq.
+fracturestrengthofthematerialatcertainlocationsandthenthere
+(4) is obtained using standard statistical methods to take care of
+could be premature failure. Another point worthy of note is that
+grain size distribution and a secondary kinetic equation for grain
+dislocation processes can be present dominantly in materials of growth.)s ,thethresholdstress,whichshouldbeovercometocon-
+grainsizeinthelmrange.Therefore,manyauthorshaveproposed 0
+vertslidingatasinglegrainboundarytomesoscopicboundaryslid-
+dislocation mechanisms, rate-controlled by dislocation climb, as
+ing(planeinterfaceformation),whichisdefinedtobeoftheorder
+therate-controllingprocessduringsuperplasticityinmaterialsof
+ofagraindiameterormore,isestimatedusingenergybalance.Fol-
+lm and sub-lm grain sizes. But, most of these analyses make
+lowing Gittus [68], the grain shape is assumed to be rhombic
+use of the ‘‘largely empirical’’ equation due to Mukherjee et al.
+dodecahedron.Thesurfaceofthemesoscopicboundaryplanewill
+[62]andobtainfitstothedata,withoutpresentingabinitiophys-
+consistofaregulararrangementoftriangularpyramidsandvalleys
+ics-basedderivations.Inaddition,fordifferentmaterialsdifferent ofheighth=[(60.5/12)L]andgroundareaA=[(30.5/4)L2](seeFig.1
+rate-controlling processes have been suggested. Using Hutter’s
+of[16]).Levelingofthepeaksandvalleysbylocalboundarymigra-
+[21] mathematical proof referred to in Section 1, it is suggested
+tionresultsinanenlargementingrainboundaryareapergrain,DA,
+that the present analysis, in view of its universal applicability,
+perpendicular to the boundary. A decrease in the grain boundary
+could/should be regarded as better than the other approaches,
+areawillbepresentalongthedirectionsofplaneinterfaceforma-
+tion.4 These processes need energy expenditure and give rise to
+the long-range threshold stress, s . By matching the work done in
+3 This trend, however, could change in the presence of interstitial diffusion, 0
+segregation or co-segregation to the boundaries, if covalent bonding, instead of
+metallicbonding,ispresentamongtheatoms(aboutwhichnotmuchisknown),the 4 Thisisasymmetrybreakingproblembecauseiftheplaneinterfacesforminthe
+presenceoflocallychargedlayersetc.Nosystematicstudyalsoexistsincaseofglassy orthogonaldirectionalso,therewillbenochangeingrainshape.(Thispossibilitywas
+alloys,atleastinsomeofwhichcovalentbondingisimportantforglassformation brought to the notice of the authors by late Prof. FRN Nabarro.) Such symmetry
+(Divinski,personalcommunication). breakingcanresultfromlocaldifferencesingrainshape,stressconcentrationetc.
+--- PAGE 6 ---
+248 K.A.Padmanabhan,H.Gleiter/CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253
+boundaryslidingbytheexternalstresswiththeenergychangeasso-
+ciated with the rearrangements in the grain boundary region, the
+threshold stress needed for plane interface formation/mesoscopic
+boundary sliding is calculated. In materials of grain size in the
+lm-,sub-mandtheupperendofthenm-range,wherefaster(than
+GBS)dislocationemissionfrom/absorptionatgrainboundarieswill
+bethedominantaccommodationprocess,s isgivenby[13,16]
+0
+(cid:4)8GC r(cid:5)(cid:2)1(cid:3)
+s ¼ B ð5Þ
+0 30:25 L
+whereC istheisotropic,specificgrainboundary/interfaceenergy
+B
+and r is the average residual grain boundary/interface misfit re-
+movedbydiffusion.But,attheverylowendofthenm-grainsize
+rangeinsingle-phasematerials,where(faster)grainboundarydif-
+fusionmayaccommodateboundarysliding
+" #" #
+21:5GC ðL(cid:3)L Þ0:5
+s ¼ B 0 ; L ¼2(cid:5)60:5W ð6Þ
+0 30:75 LN0:25 0
+where N is the number of grain boundaries that have aligned to
+form the plane interface. Then, in the range where L can be ne-
+0
+glectedincomparisonwithL,Eq.(6)reducestothemuch-discussed
+inverseHall–Petchrelationship[14,15].
+4.Someadditionalpredictions
+Itshouldbenotedthatsincethelatestproposals[17–20]con-
+cerningourmodel,considerableknowledgehasbeengeneratedon
+the structure of nanostructured materials, bulk metallic glasses,
+nano-andpoly-glasses.Moreimportantly,thesedevelopmentshave
+helpedusrejecttheideathatinthesematerialstheatomclusters
+exhibitingshort-andintermediate-rangeorderarepackedinran-
+domclosepacking(RCP)(originallysuggestedbyBernall;see[49]
+fordetails)andsettlefortheviewthatinthesecasesalsotheatomic
+packingisdecidedbythenatureandmagnitudeoftheinter-atomic
+forcescharacteristicofthematerial.Asaresult,somemorerelation-
+shipscouldbepredictedandthesearesummarizedhere.
+Oblatespheroids,inwhichunitslidingeventstakeplaceinde-
+pendent of each other, are constructed around free volume sites
+foundincharacteristiclocationsofgeneralhigh-angleboundaries Fig.4. Descriptionofunitshearevent:(a)undeformedoblatespheroid,(b)deformed
+oblatespheroid,viewinelevation,(c)planviewofdeformedspheroid,withclosure
+andtheinterfacesofmetallic,nano-andpoly-glasses.Suchsitesde-
+failureatthetwoextremitiesindicatedin(b)and(c),(d)isometricview.
+pend on the misorientation of the boundary and the nature and
+strengthoftheinter-atomicforces.Theunit-slidingeventatanob-
+late spheroid of this kind is depicted in different perspectives in
+place by the motion of ‘‘extrinsic’’ grain boundary dislocations
+Fig.4.Thedirectionofshear,aswellastheappearanceoftheellip-
+alongthegrainboundary.However,wefindtheuseofthisconcept
+soidbeforeandaftertheunit-slidingevent,isindicatedinthefigure.
+assuperfluous.Weprefertothinkoftheoblatespheroidsasanex-
+Thedeformedoblatespheroid,therefore,isthe‘‘slippedregion’’,
+tremelylocalizedpartofacontinuum,which,becauseofthepres-
+whichissurroundedbytherestofthegrainboundaryandthema-
+enceoffreevolumeinsideit,isoflowerdensity/strengthcompared
+trix,the‘‘unslippedregion’’.Theboundarybetweenthesetwore-
+with the rest of the grain boundary. Notwithstanding this, it is
+gions represents a ‘‘dislocation’’, in the sense in which Volterra
+notedthatsomeauthorshavefoundadislocation-basedapproach
+defined it. But, in view of what has been discussed already, such
+to be useful in deriving some relationships. But, it is not easy to
+a ‘‘dislocation’’ cannot be rationalized in terms of a crystal lat-
+provideaphysicaljustification.
+tice/structure.Itcanbeseenfromtheviewinelevationofthede- Therefore,theshearstrain,c ,duetoasingleboundarysliding
+0
+formedstatethatthereisapositiveclosurefailureandanegative
+eventisgivenby(seeFig.4),
+closurefailurerespectivelyofequalmagnitude(DW)attheleftand
+therightextremitiesofthedeformedellipsoid,i.e.,thedeformed
+(cid:2)DW(cid:3)
+c / ð7Þ
+statemaybeconsideredashavingbeenproducedbythepassage 0 W
+ofadislocationdipole.Then,thenet‘‘Burgersvector’’isofmagni-
+Itfollowsfromthetheoryofelasticityandyieldingthatforaniso-
+tudezeroiftheBurgerscircuitisdrawnaroundthedeformedob-
+tropicsolid
+late spheroid (see p. 13 [69]). In other words, this unit-sliding
+eventmaybeviewedasaresultofthepassageofanextrinsicgrain (cid:2)DV(cid:3)
+boundary dislocation (in the Volterra sense) along the boundary 3c 0 ¼C V ð8Þ
+0
+plane, which does not change the boundary misorientation. We
+have mentioned this merely to point out that our description of whereV istheoriginalvolumeoftheellipsoid(=2/3)pW3)andDV
+0 pffiffiffi
+the unit sliding event may provide a ‘‘justification’’ for the state- isthefreevolumepresentinthebasicunitofsliding.C= 3forthe
+ment found in the literature that grain boundary sliding takes von Mises criterion and 2 for the Tresca criterion. Similar
+--- PAGE 7 ---
+K.A.Padmanabhan,H.Gleiter/CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253 249
+conversion factors (i.e., conversion from the shear to the normal whereb istheBurgersvectorofthepartial(orfull)dislocationthat
+1
+modeofloadapplicationorviceversa)canbeobtainedfortheother willbeemittedfromagivenpointintheboundary,htheanglebe-
+yieldcriterialikeMohr–Coulomb,Drucker–Prager,Gursonetc.also. tweenthegrainboundaryatthepointofemissionofthedislocation
+In our approach, flattening of ‘‘peaks’’ or filling of ‘‘valleys’’ (see and the slip direction of the dislocation into the grain. Thus the
+Fig.1of[16])toformthe‘‘planeinterfaces’’/mesoscopicboundary point of emission of the dislocation at the grain boundary can be
+slidingplanes,alongwhichsignificantboundaryslidingcanproceed predicteduniquelyintermsofEq.(10).Thisisapredictionofthe
+toresultinlargestrains,isachievedbythefaster(thanGBS)emis- analysis that could be verified using MD simulation. Finally, in a
+sionofdislocationsfromgrainboundariesanddiffusion(detailsare real, general high-angle boundary small misorientations between
+givenin[9,16,70])whichdonotentertherateequation. grains could be present locally due to the presence of structural
+From elasticity theory for isotropic solids, it also follows that units. In those regions faster dislocation-based grain boundary
+DV=3((1–2p)/E)r ,wherepisPoisson’sratio,EtheYoung’smod- deformationcouldbepresent(asinasmall-angleboundary).But,
+m
+ulusoftheoblatespheroidandr isthehydrostaticcomponentof assuchregionsareboundedbyregionsoflargemisorientationcon-
+m
+theexternalstressactingonthegrainboundary/oblatespheroid. taining free volume,the overalldeformationrate of the boundary
+Hence, willbegovernedbytheslowerstrainandstrainrateequationsde-
+(cid:2)CDV(cid:3) (cid:2) 2p(cid:3) rivedabove.
+c¼ ¼ 1(cid:3) Cr ð9Þ
+3V VE m
+AsEismuchlargerthanr ,theshearstrainassociatedwitha 5.Understandingthedeformationofdifferentmaterials/classes
+m
+unit-slidingevent,c ,willbeextremelysmall. ofmaterials
+0
+FromMDsimulationsitispossibletocalculateEandp,assum-
+ingasuitablefreevolumefractioninsidetheoblatespheroidand The manner of analyzing deformation in high-angle grain
+inter-atomic bonding among the boundary atoms appropriate to boundaries of different misorientations in superplastic alloys of
+thematerial.Foruniaxialtension,iftheexternalstressisrandh grain size in the lm-range (Eqs. (2)–(6)) was spelt out in
+istheanglebetweenthetensileaxisandtheboundaryorientation, [9,10,13]. How this analysis could be extended to explain super-
+thentheshearstress,s,actingalongthegrainboundaryisequalto plastic deformation in nanostructured materials [16], intermetal-
+(rcosh).Thehydrostaticcomponentofthestresssystemisgiven lics [18] and composites and alloys containing dispersoids (high-
+by r =(r2(cid:3)s2)0.5. In a uniaxialtension test, this will be tensile strain rate superplasticity) [19] was also outlined. In [9,10,13] it
+m
+innatureandsothehydrostaticpressurewillbenegative. was further shown how the analysis could be used to determine
+Inviewoftheabove,abinitiocalculationofc becomespossi- theinternalstressesthatwoulddevelopinthevicinityofthegrain
+0
+ble. In the numerical validation of the model carried out so far, boundariesinlm-grainedmaterialsasaresultofgrainboundary
+based on bubble raft experiments and the analysis of Argon [65] sliding.Thatanalysisenablesonetoconnectthestressexponent,
+formetallicglasses,c hasbeenassumedtobe(cid:2)0.10.Ifthevalue n (=(1/m)), to the internal stresses that develop due to boundary
+0
+ofc computedonthelinesoutlinedinthisSectionisusedinstead slidingandthusgiveaphysicalmeaningtothisimportantpractical
+0
+and if that value is different from 0.10, then there would be parameter(m)ofsuperplasticflow.Severalstudieshaverevealed
+changesinthecomputedvaluesofDF andr ors .Theiterative thattoagoodapproximationtheelongationatfractureincreases
+0 0 0
+procedure for determining these two unknowns (DF and r ), asthesquareofthemagnitudeofthestrain-ratesensitivityindex,
+0 0
+whichhasevolvedovertime,hasbeenspeltout[13,16–19].Afur- m[2–5].Inthissection,theproceduresspeltoutearlieraregener-
+therprogresswillbereportedshortly.Infact,inthefirstpaperit- alizedtoexplainhowtheycanbeusedtoconnectboundarysliding
+self[13]itwasmentionedthatthevaluesofc (ore )andDF have withminthedifferentclassesofmaterialslistedinSection1and
+0 0 0
+tobedeterminedexperimentally(oriteratively,asoutlinedinthe inadditionhowEqs.(2)–(10)canbeusedtounderstandsuperplas-
+abovepapersfromtheexperimentalstress–strainratedata)andby ticflowinthesematerials.
+comparingthisDF valuewiththeoneobtainedusingtheEshelby AscrutinyofEqs.(2)–(10)revealsthatDF ,s (orr ),c (which
+0 0 0 0 0
+equation,thevaluesofc ande shouldbefound(seetheAppendix isrelatedtoe ),DS,N andb alldependonthecompositionofthe
+0 0 0 1 1
+of[13])5. materialaswellasthenatureandmagnitudeoftheforcespresent
+Consider any general high-angle boundary (for example, a amongtheatomsoftheboundary.Thisisalsothecasewithrespect
+boundaryin ananocrystallinematerial,forwhichMD simulation tothetwoexternalinputsofGandC ,whichareneededtoesti-
+B
+ispossible)thatissubjectedtoashearstress.Inourpicture,unit mate the values of DF and s respectively. Although for mathe-
+0 0
+sliding takes place in those regions of this boundary where free matical convenience the shape of the basic sliding unit has been
+volumesitesarepresent.Letthenumberofslidingsitesthatactu- assumedto beanoblatespheroidfor all classesof materials, the
+allyshearsequentiallytocauseGBSbeN .Themagnitudeandnat- realshapeofthebasicslidingunitcouldbeirregularandcouldalso
+1
+ureoftheinter-atomicforceswilldeterminethemagnitudeofDS, changewiththecompositionandtheclassofmaterial.Thiscanbe
+themeandisplacementresultingfromunit-shearatabasicunitof taken care of by introducing a form factor of the order of unity
+sliding.Then, [9,10].)However,theatomicarrangementwithintheoblatespher-
+oidandthefreevolumefractioninthebasicslidingunitwillde-
+DSN cosh¼b ð10Þ
+1 1 pend on the nature and magnitude of the inter-atomic forces.
+Thelatter,alongwiththeboundarymisorientation,willalsodecide
+thedistributionandlocationsofthebasicunitsofslidingandthe
+5 IntranscendentalEq.(4),therearetwounknowns,DF0ands 0.(Theequationcan free volume fraction present along the grain boundary/interface.
+alsobeexpressedinthetensilemodebyusinganappropriateyieldcriterion.Then,s
+0 ThusEqs.(2)–(10)canbeusedtounderstandsuperplasticflowin
+0 w 6 ill s c o h < an s g m e in, to w r h 0 e . r ) e T s h m e in la i t s es t t h n e u m m i e n r i i m ca u l m me st t r h e o s d s o a f t s w o h lv i i c n h g fl E o q w .(4 is ) o is bs a e s rv fo e l d lo , w ta s k . in A g s anymateriallistedinSection1.Theatomisticdetailsofthepresent
+valuesfors 0intherange0.001s minto0.999mininincrementsof0.001s min,starting analysis are consistent with the structural unit model [23,24,30–
+fromthelowestvalue,thecorrespondingDF0valuesarefound.Foreachoftheses 0, 32]andtheresultsofMDsimulations[71].
+DF0combination,thestrainratesarepredictedatdifferentappliedstressesusingEq. Averyimportantpointtonoteisthatnotonlyinthedifferent
+(4)andcomparedwiththecorrespondingexperimentalvalues.Thecombinationof
+classesofmaterials,butalsoatboundariesofdifferentmisorienta-
+s
+ch
+0,
+o
+D
+se
+F
+n
+0f
+a
+o
+s
+r
+t
+w
+he
+hi
+‘
+c
+‘b
+h
+es
+th
+t’
+e
+’s
+e
+o
+r
+l
+r
+u
+o
+t
+r
+io
+in
+n.
+p
+T
+r
+h
+e
+e
+d
+n
+ic
+,
+t
+t
+i
+h
+on
+ec
+of
+0
+t
+v
+h
+a
+e
+lu
+s
+e
+tr
+i
+a
+n
+in
+th
+ra
+e
+te
+Es
+v
+h
+a
+e
+l
+l
+u
+b
+e
+y
+s
+e
+is
+qu
+th
+at
+e
+io
+m
+n
+in
+is
+im
+ch
+u
+o
+m
+se
+i
+n
+s
+tionsinthesamematerial,theinternalstressesthatdevelopasa
+suchthatitisconsistentwiththe‘‘best’’estimateofDF0. resultofboundaryslidingcanvarywidelybecauseofdifferences
+--- PAGE 8 ---
+250 K.A.Padmanabhan,H.Gleiter/CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253
+inthearrangementofatomsinthebasicunitsofslidingandthe 5.1.Generalization
+amount and distribution of free volume along the boundary. A
+method of determining the internal stress distribution at the Thispaperdealswiththedeformationofhighlydisorderedsol-
+boundariesofdifferentmaterialsandcorrelatingittonormhas ids.Butweseesomeparallelsincaseofotherpropertiesalsoand
+already been presented [9,13].Briefly, the procedure is as follows asaresultbelievethattheideaspresentedherecouldbeusefulin
+[9,10,13].Consideranymaterial.Thefreevolumeisnotdistributed otherareasaswell.Thewayweseeit,everymicrostructuralfea-
+continuously along the boundary, but is concentrated at certain tureincrystallinematerialshasitsanaloginnon-crystallinemate-
+locations, which depend on the orientation and misfit of the rials.Toillustrate,perfectcrystalvis-à-vistheslowlycooledglass;
+boundary in these places and the inter-atomic forces present. vacancysuper-saturatedcrystalvs.rapidlyquenchedglass; poly-
+Therefore, although the magnitude of the unit shear strain will crystallinematerialandapoly-glass;localizedvacanciesincrystal
+beapproximatelythesameinallcases,thereleaseoftheinduced and delocalized vacancies in glass; localized inter-crystalline
+shear component of the strain in the vicinity of the basic sliding boundaries and localized or delocalized inter-glassy boundaries;
+unitwouldbedifferent.Itisonlyafterthesurroundingshavebeen theshearbandsinglassanddislocationsliponslipplanesincrys-
+shearedbythesameamountthattheinducedshearwillberelaxed tallinematerial.Thequestionarisesastothereasonforthediffer-
+completely.Thepresenceofsuchaninternal/‘‘back’’stressimplies ence between each of the microstructural features in crystalline
+thatthefreeenergyofactivationfordifferentbasicslidingevents and glassy materials. The reason seems to be that solitons exist
+willnotbethesameforallthelocationsindependentoftime,but in crystals, while they are not stable in highly disordered solids.
+will hover around a mean value. Therefore, the sequential shear Inthelatterclassofmaterialstheshearmodulusapproacheszero
+deformationpresentinthebasicslidingunits,whichinthemodel atinfinitetime.Aconsequenceisthatthedisorderedsolidcande-
+isresponsibleformesoscopicboundarysliding,willgiverisetoan form by local shuffling of atoms (as described in the paper),
+internal stress distribution, g(s), which is strain-dependent. By whereasacrystalcanonlydeformbyalatticecompatibleprocess
+i
+assuming the internal stress distribution to be lognormal, [9,13] involving the movement of dislocations or vacancies. As a corol-
+haveexpressedtheinternalstressdistributionresultinginauniax- lary,ifacrystallinematerialisplasticallydeformedseverely,inter-
+ialtensiontestas nal stresses are generated, but the pair correlation functions are
+g 1 ðr0 i Þ¼
+(cid:7)
+r0 i kpð1 2 Þ
+(cid:8)(cid:3)1
+exp
+(
+(cid:3)
+(cid:4)(cid:2)1
+k
+(cid:3)
+ln
+(cid:2)
+r
+r
+m
+0
+i
+(cid:3)(cid:5)2 )
+ð11Þ
+u
+n af
+n
+e t r
+c
+e ,
+h
+r t
+a
+d h
+n
+i e f
+g
+f
+e
+e p
+d
+r a e
+.
+i n
+I
+r
+n
+t c
+c
+s o t
+o
+r r
+n
+a r
+t
+e i
+r
+n l
+a
+a s
+s
+ti
+t
+t o
+,
+h
+w
+n e
+h
+g fu
+e
+la
+n
+n s c s
+a
+t y i
+g
+o r
+l
+n e
+a
+s g
+ss
+io c
+i
+h n
+s
+a s
+d
+n n
+e
+g
+f
+o
+o
+e
+r
+, lo
+m
+w n
+e
+g h
+d
+e ic r
+i
+h
+n
+m
+a
+i a n
+s
+t d
+i
+c
+m
+i h c
+i
+a p
+l
+t
+a
+e e
+r
+r s f
+m
+e t c
+a
+h t
+n
+a ly
+-
+t
+between specimens [72, Yu, Shao, Shi, Yu, Hahn, Gleiter, unpub-
+where g (r0) is the functional form of the internal stress distribu-
+1 i lishedwork].
+tion, expressed in the tensile mode. r0=(r(cid:3)r), where r is the
+i i Takingthecomparisonforward,wenotethattheoblatespher-
+externaltensilestressthatactsonthebasicslidingunit‘‘i’’andr
+i oidofouranalysisistheanalogofthedislocationcorewherethe
+isthethresholdstressneededfortheoccurrenceoftheunitsliding
+localatomicmotiontakesplace.Thecrucialdifferenceinthetwo
+eventinthatslidingunit.r isthemeanofthestressdistribution
+m cases, however, is that behind the dislocation core all the atoms
+andkisthestandarddeviation.Averagingtheinternalstressdistri-
+areinplaceafterthedeformation,butbehindtheoblatespheroid
+butionoveralltheboundariesandconnectingthe resultwiththe
+thecorrelationfunctionischangedafterthedeformation.
+overallstress–strainrateresponse,ithasbeenshownthat[9,10,13]
+Iftheseargumentsbasedonanalogyarecorrect,theideaspre-
+0 1 18 < u 2 1 39 =(cid:2) r (cid:3) sented in the paper could also be useful in understanding other
+n¼@
+1(cid:3)/ð1(cid:3) r
+r
+m
+0
+iÞ
+A
+:
+1þ r
+m
+41þ/(cid:3)
+1(cid:3)/
+(cid:7)
+1(cid:3) r
+r
+m
+0
+i
+(cid:8)5
+;
+r(cid:3)r
+0
+p
+h
+r
+ig
+o
+h
+ce
+ly
+ss
+d
+e
+i
+s
+s
+,
+o
+e
+r
+.
+d
+g
+e
+.,
+re
+d
+d
+iff
+s
+u
+o
+s
+l
+i
+i
+o
+d
+n
+s.
+,allprocessesinvolvingatomicmotionin
+Asanexample,wecitethecaseofFeScnanoglass,inwhichthe
+ð12Þ
+atomic distortions in the cores of the defects appear to be much
+whereuisobtainedfromtherelationshipsr0=(r +u),r0=(r(cid:3)r ) largerthanthedistortionsinthecoresofthecorrespondingdefects
+m 0
+(r0istheeffectivestressactingontheboundary;r thelongrange inacrystallinematerial.Asaconsequence,theatomicdistortions
+0
+threshold stress needed for the commencement of mesoscopic intheglass/glassboundariesinFeScnanoglassresultinahyperfine
+boundarysliding),a=(2/kp1/2)andr0=r exp((cid:3)kp0.5/2),thelower fieldthatisevenabovetheoneduetoa-Fe.Incontrast,themelt-
+i m
+bound of the effective stress range present in the experiments. spunglassandthegrainsandthegrainboundariesinacrystalline
+Therefore,itisclearthatoncer andkareknown,itispossibleto alloy of the same composition remain paramagnetic, which indi-
+m
+determinethe valueof the stress exponent,and hence the strain- catesmuchsmallerdistortions[Witte,Fang,Gleiter,Hahn,unpub-
+ratesensitivityindex,foranygivenmaterialinanymaterialclass. lishedwork].
+Thevalueofn(=(1/m))willgiveusanideaoftheelongationobtain-
+ableinthematerial.Inpoly-glasses,wherethefreevolumefraction
+canbemorethaninothertypesofmaterials,becauseoftheinternal 6.Concludingremarks
+stress distribution exceeding at certain points along the grain
+boundarythefracturestressofthegivenmaterial,prematurecrack- Preoccupation with the ‘‘rate-controlling’’ accommodation
+ingandfailureofthespecimenmaytakeplace.Thiswillalsohappen mechanismforGBShaspreventedmanyworkersfromexamining
+inmaterials,whichunderoptimalconditionsexhibitsuperplasticity, the details of the present model carefully. After a highly critical
+iftheexperimentalvaluesofgrainsize,appliedstressandtempera- assessment [73,74], more recently it has been accepted [75] that
+turearewellremovedfromthedesiredvaluesandundesirablelev- the present mechanism could be important in the nm-range of
+elsandformsoftheinternalstressdistributiondevelop.In[13],with grainsizes.Thisisbecauseinthisgrainsizerangeithasbeenpos-
+thehelpofdatapertainingtothreesuperplasticalloysystemsthat sibleinseveralstudiesthatusedMDsimulationstodemonstrate
+havegrainsizeinthemicrometer-range,themethodofdetermining the shuffling of atoms, which leads to grain boundary sliding, as
+ther andkvalues,theinternalstressdistributionandthestress– predicted by the model. For reasons unknown to the present
+m
+strainraterelation(and,byimplication,thestressexponent/strain authors,equalemphasishasnotbeenplacedontheTEM(experi-
+ratesensitivityindex)foragivenalloyhasbeenexplained.Analyz- mental)observationofplaneinterfaceformation,whichsupports
+ingtheexperimentaldatapertainingtootherclassesofmaterialsof the idea of mesoscopic/cooperative boundary sliding leading to
+grainsizeinanyrangeisstraightforward. superplasticity in nanostructured materials [76–82]. Even on the
+--- PAGE 9 ---
+K.A.Padmanabhan,H.Gleiter/CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253 251
+fastest computers available today, it is not possible to simulate energyofactivation.)Thereisalsoonehigh-angleboundarymis-
+grainboundariesoflengthin themicrometer-range. Therefore,it orientation(h=22(cid:3))forwhichb=1[90].
+has not been possible to verify the model in the lm-range using Asurveyofliteraturerevealsthatthisproblemofcouplingbe-
+MDsimulation.But,directexperimentalevidenceforplaneinter- tweengrain andgrain boundarydeformationwas also addressed
+faceformationhasbeenobtainedusingTEM[11,80]inthisrange byStevens[93]andCannon[94]incaseofgrainboundarysliding
+also.Ofequalimportanceinthislattercaseisthetexturerandom- –diffusioncoupledflow.Theyconcludedthatregardlessoftherate
+izationresult[63],whichclearlyshowsthatonlygrainboundary controllingprocess,thegeometryofthegrainsdefinesthevalueof
+sliding,accompaniedbynear-randomgrainrotationresultingfrom b.Thisseemstobethecaseintherecentworksalso.Infactthis
+unbalanced shear stresses at the grain boundaries arising from willbethecasesolongastheoveralldeformationresultsfroma
+GBS,canreduceaninitialtextureof142timesrandomtoanearly couplingofgrainboundaryandgraindeformation,bothofwhich
+randomtexture,withouttheintroductionofanynewtextureori- inprinciplecouldoperateindependentlyofeachother,exceptfor
+entations during the texture randomization process (random some accommodating deformation in the less deforming region
+walk). There will be no grain rotation at all when the boundary needed to ensure coherency of strain in the specimen. The pres-
+shear stresses drop to zero almost instantaneously and diffusion ence of an activation energy for the boundary migration process
+controlstherateofflow[81].Likewise,slipasarapidaccommoda- differentfromthatforboundaryslidingshowsthatthesetwopro-
+tionmechanismhasnoneteffectonthetexturepresent[82].Tex- cessesaregovernedbydifferentrateequationsandtheslowerof
+turechanges,rate-controlledbydislocationprocesses,ontheother the two will be rate controlling when they are coupled. (Often,
+hand, have well understood features, which are quite different theslowerprocessistheoneconcernedwithgraindeformation.)
+from those seen in the superplasticity experiments. A prediction Evidently,inourmodelbhasavalueofunityandminimalgrain
+isalsomadethattheangleofgrainrotationaccompanyingsuper- deformation by faster (non-rate controlling) dislocation emission
+plasticdeformationisproportionaltothesquarerootofthesuper- from the grain boundaries and diffusion in the vicinity of the
+plasticstrain[63].Theusefulnessofthemodelforunderstanding boundariestakeplaceonlytotheextentrequiredtoensurecoher-
+superplastic flow in metallic materials of grain size in the lm- encyofstrain.Therefore,therewillbenocoupling.However,local
+range [9,13,16], nanocrystalline materials [16,17,83], intermetal- boundary movement is necessary for plane interface formation
+lics [18], composites and alloys containing dispersoids that give (see above) and this will lead to some grain size evolution, but
+risetohighstrainratesuperplasticity[19]hasbeendemonstrated. much smaller than in the conventional case notwithstanding the
+Recently, it has been possible to modify the deformation mecha- severityofdeformationsufferedbythesuperplasticmaterial.This
+nism map of nickel by taking the present GBS rate equation also pointisreinforcedbytherecentMDsimulationstudyofSchaefer
+intoaccount,inadditiontothemechanismsthathavealreadybeen andAlbe[95]ofthecompetitionbetweencoupledgrainboundary
+considered[84].Byanalyzingafewmoresystemsinaddition,itis motion and mesoscopic grain boundary sliding in nc-Cu. They
+shownthatthereisadistinctregioninthegrainsize-strainrate- found(a)thatcoupledgrainboundarymotioncontributestoplas-
+temperaturespacewhereGBSistheratecontrollingprocess.These ticdeformationof3Dmicrostructuresandleadstothesuppression
+findingswillbereportedelsewhere. of grain boundary sliding, and (b) that segregating solutes effec-
+From Eq. (6) it follows that when the grain size is equal to tivelypinthegrainboundariesinplaceandallowforgrainbound-
+2(cid:5)60.5W, the threshold stress necessary for the onset of meso- ary sliding on a mesoscopic scale. In other words, solutes are
+scopic boundary sliding becomes zero. Then, even with a small important to ensure that mesoscopic grain boundary sliding is
+perturbation the microstructure could collapse, i.e., there could availableasaroom/relativelylowhomologoustemperaturedefor-
+be a nanocrystalline to the metallic glass transition. If the grain mationprocessinpolycrystallinemetals.Theseconclusionsarein
+boundary width is taken as equal to 0.50nm, then this change- line with our view that the coupling between grain and grain
+over would take place at 2.45nm. Using different experimental boundary deformation is a consequence of the geometry of the
+techniques, Divinswie et al. [85] have arrived at a value of grains,whichcouldevolveduringdeformation.Thestudy,inaddi-
+0.50nm for the width of the grain boundary of a nanocrystalline tion,allowsustounderstand(a)whygraingrowth(causedbyhigh
+material.It is interesting(a) that the estimateof 2.45nm for the boundary mobility) is considerable in pure metals, which do not
+nanocrystalline to metallic glass transition in this model is very exhibit superplasticity, and (b) why two- and poly-phase micro-
+close to what is suggested by Trelewicz and Schuh [22], and (b) structures, particularly where the composition of the phases are
+that this value is very close to the smallest grain size that has distinctlydifferent,aremostconducivefor superplasticdeforma-
+been producedso far. tion. Like in the case of segregating solutes, in these cases also
+Inrecenttimestheimportanceofacouplingbetweenthegrain grainboundary mobilityissuppressed by thelarge diffusiondis-
+boundary deformation process and boundary migration in an tances necessary for the occurrence of grain growth [2–5]. An
+orthogonal direction has been emphasized and it has been sug- inferencefromthisdiscussionisthatsuchacouplingisnotlikely
+gested that even at high-angle boundaries the Frank–Bilby equa- to be present during ‘‘true’’ superplastic deformation, i.e., where
+tion, originally derived for small-angle boundaries, is formally grain growth is minimal/negligible in comparison with the large
+valid [86–88].A couplingfactor,b=(v/v ), wherev isthelateral strains and no rate controlling mechanism, other than grain
+l n l
+translationrate alongthe grain boundaryand v is the boundary boundarysliding,isoperating(thelimitingcase;m=1.00).
+n
+migration velocity in the orthogonal direction, has been defined The present mechanism is proposed for systems that do not
+asameasureofthiscouplingeffect.Carefulexperimentalverifica- havelong-rangeorder,which,accordingtocrystallographers,sets
+tionofthemodel[89–92]hasrevealed(a)thatinthehigh-angle crystals apart from glasses and amorphous materials. But, the
+boundary range, even though the structural dislocations could high-angle boundary (or boundary between atomic clusters) is a
+not be resolved, the Frank–Bilby equation is formally obeyed, feature that is common to both crystalline and non-crystalline
+whichisaneffectofthegeometryoftheproblem,(b)thatinthe (glassy, amorphous) materials. As these boundaries become the
+high-angleboundarymigrationratestronglydependsonthemis- lowenergy,lowsigmatype,thetraditionalapproachbasedondis-
+orientation, and (c) a misorientation-dependent, relatively high location mechanisms becomes important. As the high-angle
+activation energy is needed for the boundary migration process boundaries deviate clearly away from the coincidence boundary,
+totakeplace.(Thelasttwopointsareconsistentwiththepresent the present mechanism becomes dominant. In the last section,
+model because the boundary misorientation determines the free evenananocrystalline–glasstransitioncouldbesuggested.This
+volume fraction inside a basic sliding unit and hence the free isinlinewiththerecognitionofthecondensed-matterphysicists
+--- PAGE 10 ---
+252 K.A.Padmanabhan,H.Gleiter/CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253
+that there is a structural continuum between ideal crystals and [(cid:6)(cid:6)20] PadmanabhanKA.Grainboundaryslidingcontrolledflowanditsrelevance
+amorphoussolids,i.e.,avarietyoforderingcanbesampledifone tosuperplasticityinmetals,alloys,ceramicsandintermetallicsandstrain
+rate dependent flow in nanostructured materials. J Mater Sci
+moves along the reaction coordinate of crystallization [96]. Such
+2009;44:2226–38.
+a view makes it difficult for one to define the different areas of [21] HutterMarcus.Universalartificialintelligence.Sequentialdecisionsbasedon
+applicabilityofthepresentmodelfullyinastraightforwardman- algorithmicportability.ISBN:3-540-22139-5;2005.
+[22] TrelewiczJR,SchuhCA.TheHall–Petchbreakdowninnanocrystallinemetals:
+ner. For example, should the deformation of quasicrystals, which
+acrossovertoglass–likedeformation.ActaMater2007;55:5948–58.
+havelong-rangeorder,butnostructuralperiodicityliketheclassi- [23] Gleiter H. The structure and properties of high-angle grain boundaries in
+cal crystals(buthave quasi-periodicity),be understood as due to metals.PhysStatusSolidi(b)1971;45:9–38.
+[24] Gleiter H, Chalmers B. Structure of grain boundaries. Prog Mater Sci
+the movement of dislocations in hyper space or there also one
+1972;16:1–12.
+couldlookforlocalizeddefects,whicharetoosmalltobeamena- [25] Ranganathan S. On the geometry of coincidence-site lattices. Acta Cryst
+bletoadislocationdescription,anddevelopadeformationmodel 1966;21:197–9.
+[26] BollmannW.OnthegeometryofgrainandphaseboundariesI.Generaltheory.
+akintothepresentoneinthreedimensionalspace?Atthisstage,
+PhilosMag1967;16:363–81.
+weareundecided. [27] BollmannW.OnthegeometryofgrainandphaseboundariesII.Applicationsof
+generaltheory.PhilosMag1967;16:383–99.
+[28] Frank FC. A symposium on the plastic deformation of crystalline solids.
+Acknowledgment Pittsburgh,USA:MellonInstitute;Rept.NAVEXOS-P-834.Washington,DC:Off.
+ofNavalRes.;May1950.
+[29] KronbergML,WilsonFH.Secondaryrecrystallizatonincopper.TransAIME
+TheauthorsthankDr.S.V.Divinskiforaveryusefuldiscussion. 1946;185:501–14.
+[30] WeinsMJ,GleiterH,ChalmersB.Structureofsymmetrictiltboundariesin
+F.C.C.metals.ScrMetall1970;45:235–8.
+References [(cid:6)(cid:6)31] Chalmers B,Gleiter H. A Re-interpretation of the‘Coincidence Model’ for
+grainboundaries.PhilosMag1971;23:1541–6.
+[32] WeinsMJ,GleiterH,ChalmersB.Computercalculationsofthestructureand
+⁄⁄Extremelyimportantreferencestothepresentpaper.
+energyofhighanglegrainboundaries.JApplPhys1971;42:2639–45.
+⁄ImportantreferencestothePresentPaper. [33] Christian JW. The theory of transformation in metals and
+alloys.Oxford:PergamonPress;1975.
+[34] LoikowskiW,FechtHJ.Thestructureofintercrystallineinterfaces.ProgMater
+[1] Cottrell AH. In: Lorretto MH, editor. Closing address in dislocations and
+Sci2000;45:339–568.
+properties of real crystals proc conf to celebrate 50th anniversary of the
+[35] FechtHJ,GleiterH.Alock-in-modelfortheatomicstructureofinterphase
+conceptofdislocationsincrystals.London:TheInstituteofMetals;1985.p.
+boundariesbetweenmetalsandioniccrystals.ActaMetall1985;33:557–62.
+378–81.
+[36] Fecht HJ. Lock-in structures obtained in AgNaCl and AuMgO interfaces at
+[2] Padmanabhan KA, Davies GJ. Superplasticity. Heidelberg-Berlin: Springer-
+elevatedtemperatures.ActaMetall1988;36:689–93.
+Verlag;1980.
+[37] BrandonDG,RalphB,RanganathanS,WaldMS.Afieldionmicroscopystudyof
+[3] Pilling J, Ridley N. Superplasticity in crystalline solids. London: Institute of
+atomicconfigurationsatgrainboundaries.ActaMetall1964;12:813–21.
+Materials;1989.
+[38] Brandon DG. The structure of high-angle grain boundaries. Acta Metall
+[4] Kaibyshev OA. Superplasticity in alloys, intermetallides and ceramics.
+1966;14:1479–84.
+Heidelberg-Berlin:Springer-Verlag;1992.
+[39] ReadWT,ShockleyW.Dislocationmodelsofcrystalgrainboundaries.Phys
+[5] Nieh TG, Wadsworth J, Sherby OD. Superplasticity in metals and
+Rev1950;78:275–89.
+ceramics.Cambridge,UK:CambridgeUniversityPress;1997.
+[40] BollmannW,MichantB,SainfortG.Pseudo-subgrain-boundariesinastainless
+[6] ZhuYT,LoweTC,LangdonTG.Performanceandapplicationsofnanostructured
+steel.PhysStatusSolidi(a)1972;13:637–49.
+materialsproducedbysevereplasticdeformation.ScrMater2004;51:825–30.
+[41] BulloughR,TewariVK.In:NabarroFRN,editor.Latticetheoriesofdislocations,
+[7] Kolobov YR, Ratochka IV. Grain boundary diffusion and plasticity/
+dislocationsinsolids,vol.2.Co.,Oxford,UK:NorthHollandPublishing;1979.
+superplasticity of polycrystalline and nanostructured metals and alloys.
+p.1–66.
+MaterSciEngA2005;410–411:468–71.
+[(cid:6)(cid:6)42] PumphreyPH,GleiterH.Theannealingofdislocationsinhighangle-grain
+[8] Padmanabhan KA. A theory of structural superplasticity. Mater Sci Eng
+boundaries.PhilosMag1974;30:593–602.
+1977;29:1–18.
+[(cid:6)(cid:6)9] Padmanabhan KA, Schlipf J. Model for grain boundary sliding and its [43] PumphreyPH,GleiterH.Onthestructureofnon-equilibriumhigh-anglegrain
+boundaries.PhilosMag1975;32:881–5.
+relevance to optimal structural superplasticity Part 1 – theory. Mater Sci
+[(cid:6)(cid:6)44] SopuD,AlbeK,RitterY,GleiterH.Fromnanoglassestobulkmassiveglasses.
+Technol1996;12:391–9.
+ApplPhysLett2009;94(191911–1):3.
+[10] PadmanabhanKA,SchlipfJ.Ontheoriginofstructurallysuperplasticflow.In:
+[45] SmithDA,VitekV,PondRC.Computersimulationofsymmetricalhighangle
+Proceedingsofthefirstinternationalconferenceontransportphenomenain
+boundariesinaluminium.ActaMetall1977;25:475–83.
+processing.Lancaster,USA: TechnomicPublishingCompany; 1993.p.491–
+[46] PondRC,SmithDA.Ontheabsorptionofdislocationsbygrainboundaries.
+505.
+[(cid:6)11] AstaninVV,FaizovaSN,PadmanabhanKA.Modelforgrainboundarysliding PhilosMag1977;36:353–66.
+[47] Ashby MF,Spaepen F.A newmodel forthestructure of grain boundaries:
+anditsrelevancetooptimalstructuralsuperplasticityPart2–evidencefor
+packingofpolyhedra.ScrMetall1978;12:193–5.
+cooperativegrain/interphaseboundaryslidingandplaininterfaceformation.
+[48] PondRc,SmithDA,VitekV.Amodelforgrainboundarystructurebasedon
+MaterSciTechnol1996;12:489–94.
+randomclosepacking.ScrMetall1978;12:699–702.
+[12] Astanin VV, Padmanabhan KA, Bhattacharya SS. Model for grain boundary
+[49] AshbyMF,SpaepenF,WilliamsS.Thestructureofgrainboundariesdescribed
+slidinganditsrelevancetooptimalstructuralsuperplasticityPart3–effectof
+asapackingofpolyhedra.ActaMetall1978;26:1647–63.
+flowlocalisation and specimenthickness on superplasticityin alloy Supral
+[50] SuttonAP,VitekV.OnthecoincidencesitelatticeandDSCdislocationnetwork
+100.MaterSciTechnol1996;12:545–50.
+[(cid:6)(cid:6)13] VenkateshTA,BhattacharyaSS,PadmanabhanKA,SchlipfJ.Modelforgrain modelofhighanglegrainboundarystructure.ScrMetall1980;14:129–32.
+[51] SuttonAP,VitekV.In:AshbyMFetal.,editors.Proc.Intconfondislocation
+boundary sliding and its relevance to optimal structural superplasticity.
+modellingofphysicalsystems.Oxford,UK:Pergamon;1980.
+MaterSciTechnol1996;12:635–43.
+[52] Sutton AP, Baluffi RW, Vitek V. On intrinsic secondary grain boundary
+[14] Padmanabhan KA, Nitsche R, Hahn H. The fourth European conference on
+dislocationarraysinhighanglesymmetricaltiltgrainboundaries.ScrMetall
+advancedmaterialsandprocesses(EUROMAT95),symposiumG:specialand
+1981;15:989–94.
+functional materials. Milano: Associazone Italiana Di Metallurgia; 1995.p.
+[53] SuttonAP.Onthestructureof(001)twistboundariesinF.C.C.metals.Philos
+289–98.
+[(cid:6)(cid:6)15] HahnH,PadmanabhanKA.Amodelforthedeformationofnanocrystalline MagA1982;46:171–6.
+[54] SuttonAP,VitekV.Onthestructureoftiltgrainboundariesincubicmetals.I.
+materials.PhilosMagB1997;76:559–71.
+[(cid:6)(cid:6)16] PadmanabhanKA,GleiterH.Optimalstructuralsuperplasticityinmetalsand Symmetricaltiltboundaries.PhilosTransRoySocA1983;309:1–36.
+[55] SuttonAP,VitekV.Onthestructureoftiltgrainboundariesincubicmetals.II.
+ceramicsofmicrocrystallineandnanocrystallinegrainsizes.MaterSciEngA
+Asymmetricaltiltboundaries.PhilosTransRoySocA1983;309:37–54.
+2004;381:28–38.
+[(cid:6)(cid:6)17] PadmanabhanKA,DindaGP,HahnH,GleiterH.InverseHall–Petcheffectand [56] SuttonAP,VitekV.Onthestructureoftiltgrainboundariesincubicmetals.III.
+Generalizationsofthestructuralstudyandimplicationsforthepropertiesof
+grainboundaryslidingcontrolledflowinnanocrystallinematerials.Mater
+grainboundaries.PhilosTransRoySocA1983;309:55–68.
+SciEngA2007;452–453:462–8.
+[57] SwartzD,VitekV,SuttonAP.Atomicstructureof(001)twistboundariesin
+[18] PadmanabhanKA,BasariaMR.Amesoscopicgrainboundaryslidingcontrolled
+F.C.C.metalsstructuralunitmodel.PhilosMagA1985;51:499–520.
+flow model for superplasticity in intermetallics. Int J Mater Sci
+[58] WolfD.Structure-energycorrelationforgrainboundariesinF.C.C.metals–III.
+2009;100:1543–51.
+Symmetricaltiltboundaries.ActaMetallMater1991;38:781–90.
+[19] PadmanabhanKA,BasariaMR.Mesoscopicgrainboundaryslidingastherate
+[59] WolfD.Structure-energycorrelationforgrainboundariesinF.C.C.metals–IV.
+controllingprocessforhighstrainratesuperplasticdeformation.MaterSciEng
+Asymmetricaltwist(general)boundaries.ActaMetallMater1990;38:791–8.
+A2009;527:225–34.
+--- PAGE 11 ---
+K.A.Padmanabhan,H.Gleiter/CurrentOpinioninSolidStateandMaterialsScience16(2012)243–253 253
+[(cid:6)(cid:6)60] Gleiter H. Nanoglasses: a way to solid materials with tunable atomic [(cid:6)78] Sergueeva AV, Mara NA, Valiev RZ, Mukherjee AK. Elevated temperature
+structureandproperties.Mater.Sci.Forum2008;584–586:41–8. behaviorofSePDmaterials:superplasticityofenhancedductility?MaterSci
+[61] HazzledinePM.In:BildeJB,SorensenHansenN,HorsewellA,LeffersT,LilholtH, EngA2005;410–411:413–6.
+editors.ProceedingsofthefourthRisointernationalsymposiumonmetallurgy [(cid:6)79] IvanisenkoYU,KurmanaevaL,WeissmuellerJ,YangK,MarkmannJ,Roesner
+andmaterialsscience.Roskilde,Denmark:RisoNationalLab.;1983. H, et al. Deformation mechanisms in nanocrystalline palladium at large
+[62] MukherjeeAK,BirdJE,DornJE.TransAmSocMet1969;62:155–79. strains.ActaMater2009;57:3391–401.
+[(cid:6)63] Engler O, Padmanabhan KA, Luecke K. Superplastic flow induced texture [(cid:6)80] GouthamaPadmanabhanKA.Transmissionelectronmicroscopicevidencefor
+annihilation,modellingandsimulation.MaterSciEng2000;8:477–90. cavitynucleationduringsuperplasticflow.ScrMater2003;49:761–6.
+[64] FrenkelJ.ZurTheorieDerElastizitätsGrenzeundderFestigkeitKristallinischer [81] AshbyMF,VerrallRA.Diffusion-accomodatedflowandsuperplasticity.Acta
+Körper.ZfuerPhysik1926;37:572–609. Metall1973;21:149–63.
+[(cid:6)65] AsArgon.Plasticdeformationinmetallicglasses.ActaMetall1979;27:47–58. [82] BowenAW.TexturechangesinanAl–Lialloysheetsuperplasticallydeformed
+[66] EshelbyJD.Thedeterminationoftheelasticfieldofanellipsoidalinclusion, tohighstrains.TextMicrostr1988;8–9:233–46.
+andrelatedproblems.ProcRoySocA1957;241:376–96. [(cid:6)83] BetzU,PadmanabhanKA,HahnH.Superplasticflowinnanocrystallineand
+[67] ClyneTW,WithersPJ.Anintroductiontometalmatrixcomposites.Cambridge, sub-microcrystalline yttria-stabilized tetragonal zirconia. J Mater Sci
+UK:CambridgeUniversityPress;1993. 2001;36:5811–21.
+[68] GittusJH.Creep,viscoelasticityandcreepfractureinsolids.London:Applied [84] FrostHJ,AshbyMF.Deformationmechanismmaps:theplasticityandcreepof
+SciencePublishers;1975. metalsandceramics.Oxford,UK:PergamonPress;1982.
+[69] Kroener E. Kontinuumstheorie der Versetzungen und Eigenspannungen, [85] DivinskiSV,ReglitzG,WildeG.Grainboundaryselfdiffusioninpolycrystalline
+Ergebnisse der Angewanten Mathematik, Berlin-Goettingen-Heidelberg: nickelofdifferentpuritylevels.ActaMater2010;58:386–95.
+Springer-Verlag;1958. [86] CahnJW,TaylorJE.Aunifiedapproachtomotionofgrainboundaries,relative
+[70] Perevezentsev VN, Rybin VV, Chuvil’deev VN. The theory of structural tangentialtranslationalonggrainboundariesandgrainrotation.ActaMater
+superplasticity – II. Accumulation of defects on the intergranular and 2004;52:4887–98.
+interphaseboundaries.Accommodationofgrain-boundarysliding.Theupper [87] Cahn JW, Mishin Y, Suzuki A. Duality of dislocation content in grain
+boundofsuperplasticstrainrate.ActaMetallMater1992;40:895–905. boundaries.PhilosMag2006;86:3965–80.
+[(cid:6)71] Sopu D, Ritter Y, Gleiter H, Albe K. Deformation behavior of bulk and [88] Cahn JW, Mishin Y, Suzuki A. Coupling grain boundary motion to shear
+nanostructuredmetallicglassesstudiedviamoleculardynamicssimulations. deformation.ActaMater2006;54:4953–75.
+PhysRevB2011;83.100202-1-100202-4. [89] MolodovDA,GorkayaT,GotsteinG.Mechanicallydrivenmigrationofh100i
+[72] WangXD,CaoQP,JiangJZ,FranzH,SchroersJ,ValievRZ,etal.Atomic-level tiltgrainboundariesinAl-bicrystals.MaterSciForum2007;558–559:927–32.
+structuralmodificationsinducedbyseverplasticdeformationinbulkmetallic [(cid:6)90] GorkayaT,MolodovDA,GottsteinG.Stress-drivenmigrationofsymmetrical
+glasses.ScrMater2011;64:81–4. h100itiltgrainboundariesinAlbicrystals.ActaMater2009;57:5396–405.
+[73] GifkinsRC,LangdonTG.Commentsontheoriesofstructuralsuperplasticity. [91] GorkayaT,BurletT,MolodovDA,GotsteinG.Experimentalmethodfortrue
+MaterSciEng1978;36:27–33. insitumeasurementsofshear-coupledgrainboundarymigration.ScrMater
+[74] Gifkins RC, Langdon TG. Further comments on theories of structural 2010;63:633–6.
+superplasticity.MaterSciEng1979;40:293–5. [(cid:6)92] MolodovDA,GorkayaT,GottsteinG.Dynamicsofgrainboundariesunder
+[75] LangdonTG.Grainboundaryslidingrevisited:developmentsinslidingover appliedmechanicalstress.JMaterSci2011;46:4318–26.
+fourdecades.JMaterSci2006;41:597–609. [93] Stevens RN. Grain-boundary sliding and diffusion creep in polycrystalline
+[(cid:6)(cid:6)76] MarkmannJ,BunzelP,RoesnerH,LiuKW,PadmanabhanKA,BirringerR, solids.PhilosMag1971;23:265–83.
+et al. Microstructural evolution during rolling of inert-gas condensed [94] CannonWR.Thecontributionofgrainboundaryslidingtoaxialstrainduring
+palladium.JScrMater2003;49:637–44. diffusioncreep.PhilosMag1972;25:1489–97.
+[(cid:6)(cid:6)77] Mara NA, Sergueeva AV, Mara TD, McFadden SX, Mukherjee AK. [(cid:6)(cid:6)95] SchaeferJ,AlbeK.ScrMater2012;66:315–7.
+Superplasticityandcooperatevegrainboundaryslidinginnanocrystalline [96] DesirajuGR.Crystal:insearchofclarity.Nature2003;423:485–6.
+Ni3Al.MaterSciEngA2007;463:238–44.

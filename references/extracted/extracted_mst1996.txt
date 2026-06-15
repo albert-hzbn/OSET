@@ -1,0 +1,592 @@
+FILE: d:\Work\Others\Padmanabhan\mst.1996.12.7.545.pdf
+Total pages: 7
+
+
+--- PAGE 1 ---
+Model for grain boundary sliding and its relevance to
+optil11alstructural superplasticity
+Part 3 - Effect of flo\N localisation and specil11en
+thicl<ness on superplasticity in alloy Supral 100
+v. v.
+Astanin, K.A. Padmanabhan, and S. S. Bhattacharya
+The effect offlow localisation and specimen thickness on the superplastic deformation ofthe commercial alloy Suprall 00
+(AI-6Cu) isdiscussed. Optimal flow was accompanied by theformation and spread of intense 'shear bands' along
+grain/interphase boundaries. The spacing between the shear bands depended on both the strain rate ofdeformation and the
+specimen thickness. Superplasticity drastically decreased when the specimen thickness fell below about 10grain diameters.
+The apparent activation volume was afunction ofstrain rate but was independent ofspecimen thickness, while the strain rate
+sensitivity index depended on both the strain rate and specimen thickness. The results are explained interms of the theory that
+as well asbeing influenced by specimen geometry, the degree ofsuperplasticity depends on the extent to which cooperative
+boundary sliding and boundary shear bandformation are present duringflow. MST/3076
+© 1996 The Institute of Materials. Manuscript received 2 June 1994; infinal form 6 July 1995. Dr Astanin is at the Institute
+ofMetals Superplasticity Problems, Russian Academy ofSciences, Ufa, Russia and Professor Padmanabhan and DrBhattacharya
+are in the Department of Metallurgical Engineering, Indian Institute of Technology (lIT), Madras, India.
+superplastic tensiletesting system.Thecontrol specimenwas
+Introduction
+r~moved from the furnace just before the start ofdeforma-
+tion. Only the results from those specimens which had
+Supral 100is a commercial superplastic alloy used exten- reproducible microstructures wereusedforfurther analysis.
+sivelyin sheet thermoforming. The superplastic properties Superplastic tensile tests were carried out on a Schenck
+of this alloy have been well documented.1 In the thermo- Trebel electromechanical testing machine at a temperature
+forming of sandwich structures the sheet may become of 450°C and an initial strain rate of 1·4x 10-3 S-1
+extremely thin and give rise to failure in service.It is also (constant crosshead speed tests) which lay in the region of
+known that the deformation behaviour of extremely thin optimal superplastic flow.1 Tests for comparison were
+sheets of superplastic alloys is different from that of thick also carried out at strain rates of 1·4x 10- 2 and
+sheets.2 To the best ofthe present authors' knowledge, the 1·4x 10-4 S-1 in regions III and I ofsuperplastic deforma-
+deformation behaviour of very thin sheets of Supral 100 tion, respectively. Microstructural studies were carried out
+alloy has not been studied. It is ofpractical importance to using a Leitz Metallovert optical microscope. Metallo-
+understand the deformation behaviour since superplastic graphic specimens wereprepared by polishing on a buffing
+forming will be unsuccessful when the sheet thickness is wheel using diamond paste and subsequently etching
+below acertain value.Therefore, astudy ofthedeformation with freshly prepared Keller's reagent. Unetched polished
+behaviour of very thin sheets of this alloy was conducted specimens were used to observe deformation relief. Fine
+to determine why the superplastic properties are altered scratches present on the surface ofthe specimens were used
+when the sheet thickness is drastically decreased. A as marker lines to measure the shear deformation at
+comparison was also made with the behaviour of thicker boundaries. Strain rate jump tests were carried out at 25,
+specimens. The difference in the deformation behaviour of 100,and 400% strain to determine the strain rate sensitivity
+the two types ofspecimens isaccounted for. index m. The apparent activation volume V* wasestimated
+using the wellknown relationship
+3
+In8)
+Material and experimental procedures V*=kT (0 (1)
+o(J L,T
+where 8is the true strain rate, is the true stress, L is the
+Cold rolled sheets of Supral 100 (supplied by Alcan (J
+grain size,k isBoltzmann's constant, and T isthe absolute
+International, UK) were used. The sheets were 2-2'1 mm
+temperature of deformation. The subscripts indicate the
+thick in the as received condition and had a composition
+variables that were kept constant.
+(wt-0/0) of AI-5'99Cu-0'002Mg-0'06Si-0'16Fe-0'03 3Zn-
+0·004Ti-0·39Zr. Strips were cut from the sheets and rolled
+down further at room temperature using carbide rolls to
+Results
+thicknesses of 0·20, 0·10, 0·08, and 0·06mm. Two micro-
+structural conditions were developed by heat treatment.
+Annealing for 30min at 450°C (723K) gave an average MECHANICAL BEHAVIOUR
+two-dimensional grain sizeof2·5±0·3Jlm,while annealing The mechanical behaviour ofSupral100, in particular that
+for 75min yielded an average two-dimensional grain size of material with a grain size of 2·511m, was found to be
+of3·5±0·311m. (It must benoted that testing ofsuperplastic similar to that found earlier. From the literature1 it is seen
+materials in the laboratory at 450°C requires about 30min that for a material of grain size 2·5Jlm, a strain rate of
+for temperature equilibriation, whereas industrial and 1·4x 10-3 S-1 falls in the range of optimal superplastic
+technological processes usually take about 1 to 1·5h for flow.In the present work it can be seenfrom the values of
+the stabilisation of temperature.) For the sake ofcompari- elongation to failure b and strain rate sensitivity index m
+son,acontrol specimen(whichdidnot undergo anydeform- for both thick and thin specimens with a grain size of
+ation) was also placed inside the furnace surrounding the 3·511m (Table 1) that a strain rate of 1·4x 10-3 S-1 does
+Materials Science and Technology July 1996 Vol. 12 545
+
+--- PAGE 2 ---
+546 Astanin et al. Grain boundary sliding in structural superplasticity: Part3
+change with further strain, the strain needed to reach
+14-
+steady state flow increased with the specimen thickness.
+12- For specimens with smaller grain size,the stress increased
+continuously with strain (flow hardening arising mainly
+from microstructural evolution/grain coarsening). Figure 2
+shows the variation of b, m, and V*, as functions of
+specimen thickness.
+h=2mm
+(:1 The value of b decreased sharply when the thickness of
+*
+h=O.2mm the specimen was below 100 Jlm (Fig.2a). For the alloy
+h:O.06mm with a grain size of 3·5Jlm, at a specimen thickness of
+r;;
+60-80 Jlmb was less than 1000/0 and the value of m was
+lessthan 0·3.Theseobservations indicate that thesuperplas-
+tic behaviour had decreased drastically. For the same
+conditions, the change in V* was negligible. The value of
+V* was slightly lower for the alloy with a grain size of
+3·5Jlmcompared with that for the alloy with a grain size
+of 2·5Jlm(Fig.2c).Although V* appeared to be virtually
+independent of specimen thickness, the results given in
+Table 1show that V* was clearly dependent on the strain
+rate ofdeformation.
+h=2mm MICROSTRUCTURES
+(:I
+From an observation of the microstructure of the control
+h=O.2mm
+:1: specimen, it became clear that the Supral alloy had fine,
+h:O.06mm
+r;; equiaxed grains. Theintermetallic particles werenot present
+,~ aschains but weredistributed randomly. Beforesuperplastic
+deformation the grain boundaries were not clearly visible
+~ U ~~ ,. . ' (b) even when freshly prepared Keller's reagent was used for
+o 20 I 40 60 so '100 etching. (Such a situation is typical of aluminium alloys
+s,%
+which do not have afullyrecrystallised microstructure.1,4,5)
+In most cases the grain boundaries were more darkly
+a2'5 Ilm grain size; b3'51lm grain size etched after deformation. By careful observation of
+Stress-strain plots for Supral 100specimens of given the microstructure and the etching characteristics after
+thickness h for given grain size: test temperature deformation, it was possible to determine the 'active' (i.e.
+450°C,initial strain rate 1'4x 10-3 S-1 where the deformation was concentrated) and the 'passive'
+grain boundaries, since the active boundaries were more
+fall within the optimal range of superplastic flow. Typical darkly etched than the passive ones.
+stress-strain plots are shown in Fig. 1. It could be seen The overall microstructure of the specimen following
+from these plots that further study was necessary with deformation was as previously reported.1 Grain elongation
+regard to the initial portion ofthe stress-strain curve where in the tensile direction, grain growth, and nucleation of
+the stress increases sharply with strain, and the steady state cavities were seen in the microstructure. These results are
+region of superplastic flowwhere the stress remains nearly given in Table2.In addition, a fewnew observations were
+constant with strain. made in this study. It was seen that the active boundaries
+From Fig. 1it was seen that the increase in stress with formed interlinked bands that were inclined to the tensile
+strain in the early part of the stress-strain curve was axis.In these bands, the boundaries had a very small angle
+dependent on the thickness of the specimen being tested. of inclination between each other. The grain boundaries
+With decreasing thickness, the stress rose more sharply appeared to be aligned along the direction of these 'shear
+with strain. This effectwas clearly seen in specimens with bands'. (In the literature these have also been described as
+a grain size of 3·5Ilm(Fig. 1b). In specimens with a grain 'deformation bands', but the term shear bands is to be
+size of 2·5Jlm (Fig. 1a) the effect was less significant: the preferred because in crystallographic terminology deforma-
+stress-strain curvesforthetwothicker specimenspractically tion band has a distinct meaning.6) Microcavities resulting
+coincided in the early part of the stress-strain curve (and from deformation werenucleated at these grain boundaries
+in fact in the region beyond) and the flow curve for the
+specimen of intermediate thickness was lower than those
+Table2 Average number of grains atfailure within each
+for the other two thicknesses. A possible explanation for
+domain bounded by interlinked microcavities in
+this is discussed below. Conversely, for the coarser grain
+specimens of given thickness: test temperature
+size specimens, where a steady state was reached, i.e. the 450°C, initial grain size 3'5 Jim,initial strain rate
+stress reached a constant value beyond which it did not 1'4 x 10-3 S-1
+Average Average No. of
+Table1 Variation of elongation at fracture ~,strain rate Specimen Elongation grain size domain grains per
+sensitivity index m, and activation volume V* thickness, atfracture atfracture size domain
+Ilm b,% d,llm H,llm HId
+for specimens of given thickness h (mm)
+deformed at given initial strain rates: test 2100 540 7'7 79 10·2
+----- t - em - perature 450°C,initial grain size3'5 Jim 2100 542 5'4 47 8'6
+220 225 5'5 65 11·8
+b,% m V*, nm3 220 392 5'6 63 11'3
+Initial strain 120 208 5'6 63 11'3
+rate, S-1 h=2 h=0'2 h=2 h=0'2 h=2 h=0'2 100 260 5'9 45 7'6
+80 78 5'6 58 10'3
+1'4 x 10-2 292 101 0'35 0'23 0'779 1'093 70 57 7'7 85 11·0
+1'4 x 10-3 540 225 0'43 0'49 1'602 1'405 60 215 5'1 50 9'8
+1'4 x 10-4 400 163 0'78 0·36 5'452 5·930 60 175 5'5 45 8'2
+Materials Science and Technology July 1996 Vol. 12
+
+--- PAGE 3 ---
+Astanin et al. Grain boundary sliding in structural superplasticity: Part 3 547
+(a)
+600
+cf2.
+~
+oZ400
+~
+<.9
+Z
+o
+....J
+W 200
+o
+o 500 1000 1500 2000 2500
+E0.8 (b)
+X
+w
+o
+Z
+~ 0.6
+:>
+i=
+r~ ' rg====================::::::J:l=D
+4
+acooperatively slid boundary bands inclined to tensile axis indicated
+«Z
+by arrows; bshear band with cavitation indicated by arrows
+0.2
+a:: 3 Microstructures of Supral 100: average initial grain
+el-n
+size 3'5 Jim,test temperature 450°C, initial strain rate
+1'4 x10-3 s-1,specimen thickness 2'1 mm, tensile axis
+o runs vertically up page
+o 500 1000 1500 2000 2500
+At high strain rates, the degree of cavitation was less and
+(c)
+the cavities were also distributed more uniformly. At lower
+3
+ME strain rates, cavitation wasmore pronounced and networks
+c ofcavity linked bands wereclearly visible(Fig.4).On large
+* deformation the microcavities coalesced to form elongated
+>
+w macrocavities. These macrocavities were aligned along the
+~
+tensile direction. Beforefracture thesemacrocavities caused
+=> 2
+....J a significant reduction in the cross-section ofthe specimen
+0
+> and gave the specimen volume the appearance of being
+Z partitioned into different domains. The average cross-
+0
+i= sectional size of these domains at the moment of fracture
+«
+was 8-12 grain diameters (Table 2).
+> 1
+i= For the thin specimens the grain size was non-uniform
+u
+« after deformation. Bands offinegrains ofabout 6Ilm with
+boundaries that etched dark were observed. These bands
+were separated by regions of grains with boundaries that
+o etched poorly. In profile, well formed macronecks and
+o 500 1000 1500 2000 2500 shear bands were visible (Fig. 5). When the thickness of
+SPECIMEN THICKNESS, ~m the specimen was reduced, cavitation also decreased.
+o3'5 Jlm grain size; D 2'5 Jlm grain size Fracture took place when the thickness of the specimen
+was about 10grain diameters. Further insight was gained
+2 Variation of a percentage elongation to failure ~, b
+strain ratesensitivity index m, andcactivation volume when the deformation relief of the prepolished specimen
+V*, with specimen thickness in Supral 100: test was studied after a strain ofabout 4-7%, i.e.in the region
+temperature 450°C,initial strain rate "4 x10-3 S-1 just before the onset ofsteady state superplastic flow.Thin
+wavy lines which covered the boundaries of several grains
+were visible on the surface of the specimen (Fig. 6). These
+lines seemed to be predominantly at 90°to the tensile axis.
+and appeared as bands or arrays of bands inclined to the As explained in Part 2,7 with· the aid of Fig.3c of that
+tensile axis. This could easily be seen when the specimen paper, the lines are the trace on the specimen
+wasviewedunder an optical microscope (Fig. 3).Figure 3a, (length xwidth) plane of a boundary shear band inclined
+which is at a higher magnification than Fig.3b, reveals at 45° to the stress axis in the (length x thickness) plane.
+evidence for two cooperatively slid boundary bands that Horizontal as wellas vertical displacements of the marker
+are shown by two mutually pointing arrows. Figure 3b lines were observed on the wavy lines. Table 3 gives the
+shows a wide shear band containing a number of cavities. frequency with which these bands were observed.
+Materials Science and Technology July 1996 Vol. 12
+
+--- PAGE 4 ---
+548 Astanin atal. Grain boundary sliding in structural superplasticity: Part 3
+4 Microstructure showing cavity linked bands at the
+boundaries of dark etched grains indicated by arrows:
+average initial grain size 3'5Jim, test temperature
+450°C, initial strain rate 1'4x10-4s-1, specimen
+thickness 2'1mm, tensile axis vertical up page
+Discussion
+Deformation localisation during superplastic flow was
+found by one of the present authors in a model Zn-
+22wt-%AI alloy.8Therefore, it was decided to extend the
+study to a commercial superplastic alloy, namely, Supral
+100.As noted in the introduction, for successful thermo-
+6 Deformation relief of prepolished specimen after 5-4%
+forming ofsandwich structures, the behaviour ofvery thin
+strain: wavy lines covering several grain boundaries
+specimens has to be understood, and so the scope o~the
+that are indicative of development of cooperative
+work was extended to include the effect of specImen
+boundary sliding are indicated by arrows:. average
+thickness. initial grain size3-5Jim,test temperature 450°C, initial
+Supral 100 is processed to develop a fine grain micro- strain rate 1'4 x 10-3 s-1, specimen thickness 0-07 mm,
+structure by strain enhanced recrystallisation in the early tensile axis runs vertically up page
+stages of superplastic flow, as the pinning of subgrain
+boundaries by ultrafine ZrAl precipitates confers on this
+3 structural evolution.) Thus, the conclusions that in the
+material a very high resistance to static recrystallisation.9
+early part of the stress-strain curve the stress rose more
+The variable amount of cold deformation imparted to the
+sharply with strain with decreasing specimen thickness, and
+specimens in the present study to obtain different thick-
+that the strain needed to reach steady state flowincreased
+nessescould have influenced the static and strain enhanced
+with specimen thickness, are based on measurements
+recrystallisation behaviour. Therefore the results have to
+corresponding to a single grain size (3'5Jlm). The con-
+be interpreted carefully.
+clusions with regard to the effects of specimen thickness
+A comparison of Fig. 1a and b reveals that true steady
+on £5,m, and V* (see section on 'Mechanical behaviour'
+state flow conditions were established only when initial
+above), however, appear to be valid for both grain sizes,
+static recrystallisation had been sufficientlylong to obtain
+notwithstanding the microstructural evolution present in
+a starting grain sizeof 3·5Jlm (Fig. 1b). (In Fig. 1a there is the material with starting grain sizeof2·5 Jlm.
+continuous flow hardening, which is indicative of micro-
+It could be argued that in thinner tensile specimens the
+effectsofinhomogeneities, e.g.thickness and compositional
+variations, would be relatively more significant, and that
+for a critical cross-section at failure a smaller reduction in
+area only would be necessary. This can account for the
+lower value of £5and the earlier peaking of the true stress
+as a function of true strain in the case of the thinner
+specimens. However, the higher flow stresses at a fixed
+strain observed for the thinner specimens (Fig. 1b) can not
+easily be explained by this line ofargument, particularly in
+Table3 Average distance between boundary shear
+bands along longitudinal and transverse
+directions of tensile specimen: test temperature
+450°C, initial grain size 3-5Jim, specimen
+thickness 0-07 mm
+Average distance between shear bands, Jlrn
+Initial strain
+5 Well developed macronecks and shear bands, rate, S-1 Longitudinal direction Transverse direction
+indicated by pairs of arrows, in profile: average initial
+grain size3'5 Jim,test temperature 450°C, initial strain 0-014 9-8 12-5
+rate =1'4 x 10-3 s-1, specimen thickness 0'06 mm, 0·0014 14·8 18·2
+0-00014 17-4 23-5
+tensile axis is horizontal
+Materials Science and Technology July 1996 Vol. 12
+
+--- PAGE 5 ---
+Astanin et al. Grain boundary sliding in structural superplasticity: Part 3 549
+view of the results in the literature that the strength of very 10 grains thick the shear bands need not be as long as in
+thin material is greater than that of thicker sections. thicker specimens, but the results, which are presented in
+Further experimental work is necessary before it can be Table 2, do not provide support for this argument. Thus,
+unequivocally established that the material properties are at least in the range of thicknesses presently studied, the
+changed perceptibly when the specimen sections are very minimum length of the shear bands formed seems to be
+thin. For the present, it is suggested that this possibility independent of specimen thickness.)
+can not be ruled out. When the specimen thickness dropped to less than about
+As the microstructural stability during· superplastic flow 10grain diameters, superplasticity was drastically decreased
+was greater when the starting grain size was 3·5 Jlm than and the fracture of the specimen was similar to that seen
+when it was 2·5 Jlm, further observations were made using during conventional high temperature fracture. (Scanning
+only the 3·5 Jlm grain size (see Tables 1-3 and Figs. 3-6). electron microscopy studies of this will be reported
+From the present experimental data as well as the elsewhere.) This conclusion could also be drawn from the
+previously published results1 the formation and spread of microstructure of the fractured sample in which the
+intense shear bands at grain boundaries during optimal specimen thickness was less than 10 grain diameters (see,
+superplastic flow has been clearly demonstrated. for example, Fig. 10 of Paton and Hamilton10). This
+In the initial stage of deformation, plane interfaces that observation explains why the elongation decreased when
+connected two or more grain/interphase boundaries during the specimen became thin. In the case of thick specimens,
+optimal superplastic flow, and bands that were the result the overall thickness was less important than the cross-
+of cooperative boundary sliding, formed at different places section of the specimen ligaments, i.e. the area between
+in the tensile specimen surface as well as in the interior of large interlinked cavities. Similarly, the distance between the
+the specimen. Over a significant distance, such a band voids or holes, as in the experiments of Tait and Taplin, 11
+appeared as a wavy interface inclined to the loading and between the reinforced fibres in the case of composites,
+direction. (A number of plane interfaces of shorter length became extremely important compared with the bulk
+joined together and became smoothed during further sliding thickness of the specimen.
+to give the wavy appearance of the shear bands (see When the number of shear bands was large enough for
+Part 2).7)This interface comprised parts ofgrain boundaries continual cooperative boundary sliding to be achieved, the
+that were oriented favourably to the maximum shear stress steady state flow region of superplasticity sets in. In this
+direction. This was evident from the deformation relief condition the shear bands were transformed into macro-
+studies of the surface of the specimen and the micro- bands along which intense deformation took place (the
+structural analysis in the bulk of the deformed specimen, boundary sliding equivalent of Chernov-Liider's bands).
+in particular from the difference in the etching character- The width of these bands was of the order of a few grain
+istics of different grain boundaries. It is known that diameters. In these bands, apart from boundary sliding,
+the degree of etching of grain boundaries is dependent on rotation of grains and cavitation were also seen. From the
+the energy of the boundaries. When the energy is greater, shape of the cavities and their linkages, it was clear that
+the grain boundaries are etched more darkly. Boundaries extensive deformation also took place along these bands in
+with high energy are more mobile in general and more the interior of the specimen. Between these bands were
+suitable for grain/interphase boundary sliding compared zones that underwent only a relatively small degree of
+with boundaries oflower energy, e.g.small angle boundaries deformation. The number of the bands and the size of the
+and special boundaries. It is known that the energy of a passive zones depended on the strain rate of deformation
+boundary can increase as a result of grain/interphase and the thickness of the specimen. When the strain rate or
+boundary sliding. Thus, it may be concluded that the dark the thickness of the specimen was reduced, there was a
+etching (high energy) interconnected boundaries were the greater degree of non-uniform. deformation. (With a
+result of cooperative boundary sliding. These boundaries decrease in strain rate (i.e. stress), the number of grain
+tended to become aligned more or less linearly along a boundaries at which the critically resolved shear stress
+shear band and facilitated continual cooperative boundary necessary to bring about cooperative boundary sliding was
+sliding (see Part 2, Ref. 7). It is at these favourably oriented available, decreased.) Further work is necessary to include
+boundaries that sliding started. An increase in the applied the flow localisation reported here quantitatively into the
+stress would be necessary to overcome the local stress mechanistic model presented in Part 1.12
+concentrations created at unfavourably oriented boundaries It is seen from Table 1 that V* is a function of the
+in order to facilitate the continuation of cooperative applied strain rate and that it increases with decreasing
+boundary sliding along those boundaries. strain rate. If superplasticity is explained in terms of
+When the volume of the specimen was large, the stimulated boundary sliding and the movement of grain
+probability of the development of favourably configured boundary dislocations, as has been done by Kaibyshev and
+shear bands for continual boundary sliding was high, and co-workers,9,13 then it could be suggested that, at lower
+therefore the rate of increase in stress with deformation in strain rates (or stresses), fewer lattice dislocations will
+the initial stage ofdeformation was low. When the thickness originate at a boundary and traverse the grain to be-
+of the specimen was about 10-20 grain diameters, the come absorbed at an opposite boundary. Thus, the grain
+probability of generating a favourable configuration for boundary structure is disturbed to a lesser extent and V*
+cooperative boundary sliding was reduced and so the rate is larger. At higher strain rates more lattice dislocations
+of increase of stress with deformation was higher. This will run into the opposite boundaries and stimulate sliding.
+makes sense because a higher stress would be necessary for This process will reduce the size of V*. This approach has
+cooperative boundary sliding to take place along the yet to be quantified.
+reduced number of bands available in the specimen. Using In contrast, in the approach of Padmanabhan and
+this argument it becomes possible to explain qualitatively Schlipf,12 from their equations (12) and (30) the strain rate
+e
+the differences in the initial part of the stress-strain curves during optimal superplastic flow sp is given by
+o
+H
+b
+o
+t
+w
+ai
+e
+n
+v
+e
+e
+d
+r, i
+f
+t
+or
+mus
+d
+t
+iffe
+b
+r
+e
+en
+e
+t
+mph
+s
+a
+p
+s
+e
+i
+c
+s
+i
+e
+m
+d
+en
+that
+thic
+th
+k
+i
+n
+s
+ess
+a
+e
+rg
+s
+ume
+(
+n
+F
+t
+ig.
+o
+1
+n
+b
+ly
+).
+8
+.
+s
+(
+p=2vexp
+----!y1F;ro)
+L
+W 8
+k
+6
+T
+VO
+holds good for the case of cooperative boundary sliding, as
+a minimum of about 10 grains initially in the through x {( (In
+thickness direction ofthe specimen appeared to be necessary <T- <To{ 1+ a <T~m<T 0 - 1)] + <T,a} (2)
+for cooperative sliding to take place in a significant manner.
+(It is possible to argue that when the specimen is less than where ('J.. =2/ArrY2and 0\= (jm exp(-}o1C1/2/2), and (jm and
+Materials Science and Technology July 1996 Vol. 12
+
+--- PAGE 6 ---
+550 Astanin et a/. Grain boundary sliding in structural superplasticity: Part 3
+A are the mean and standard deviation, respectively, ofthe thickness of the specimen. When the specimen thickness
+internal stress distribution resulting from mesoscopic was lessthan about 10grain diameters, cooperative sliding
+cooperative sliding. (For other definitions see Ref.12.)As and boundary shear band formation became difficult and
+equation (1) defines V* as equal to kT(o Ini./o(J), it follows this led to a significant decrease in superplasticity.
+that in this analysis 3. The apparent activation volume is independent of
+specimen thickness asitisan indicator ofthemicromechan-
+ismofboundary slidingwhichdoesnot depend onspecimen
+thickness. However, the activation volume isdependent on
+the strain rate ofthe deformation and this can beexplained
+in two different ways.
+4. The strain rate sensitivity index m depended on the
+. (3) specimen thickness as well as the strain rate as it is a
+measure of the degree to which cooperative boundary
+Sincethe strain rate isa function of (J, it isnatural that V* sliding is present during superplastic flow. This explains
+depends on both f;and T.The activation volume willreflect
+why m is relatively low in high temperature power law
+theproperties ofthebasicunit ofsliding(anoblate spheroid
+creep deformation even though boundary sliding is pres-
+ofvolume ~ defined in Ref.12)via A and but it should
+(Jm, ent. This is because in creep cooperative boundary
+not be identified with ~. The latter would be obtainable
+sliding/boundary shear band formation is not significant
+experimentally onlyfromamore sophisticated measurement
+and so coherent strain can only be produced with the aid
+or theoretically from atomistic calculations based on
+of an additional low strain rate sensitive mechanism, e.g.
+molecular dynamics. (The dependence of ~ on i. and T is
+dislocation motion. This leads to a lowering ofthe overall
+yet to be determined.)
+m value in high temperature creep.
+It can also beseenfrom Fig.2cthat V* remains relatively
+unchanged whenthespecimenthickness ischanged, whereas
+m isdependent on specimen thickness. This isexplained by
+the fact that V* concerns the micromechanism ofboundary
+sliding, which is independent of the thickness of the Acknowledgements
+specimen being tested. However, m is indicative of the
+degree of cooperative boundary sliding, i.e.plane interface This paper is dedicated to the memory of Professor
+formation (see Parts 1 and 2, Refs.12 and 7), and the J. Schlipf.The material used in this study was supplied by
+formation of networks of shear bands to ensure smooth Dr Roger Grimes ofAlcan Ltd, UK. The financial·support
+and continual sliding over large areas. Sincethe formation was derived from the Integrated Long Term Programme
+of these bands is dependent on the thickness of the of Cooperation in Science and Technology between the
+specimen (see above), it can easily be seen that m would be Government of India's Department of Science and Tech-
+strongly dependent on the thickness ofthe specimen,which nology (DST) and the Russian Academy of Sciences.One
+iswhat has been observed. It isnoted at this stage that the of the authors (VVA) thanks the DST and the Russian
+propensity for neck formation changes with specimen Academy of Sciences for enabling him to work at IIT
+thickness. Therefore, this geometric factor willalso have to Madras. The authors are grateful to Dr P. Rama Rao and
+be considered when deriving expressions for the effect of Professor O. A. Kaibyshev for encouragement. A very
+specimen thickness on the value of m. (In the model of useful discussion with Professor J. Schlipf on the concept
+Padmanabhan and Schlipf, m can be obtained from of activation volume is acknowledged. This paper was
+equation (29) of Ref.12(m=n-1). The effectof specimen finalised when one of the authors (KAP) was at the TH
+thickness on the value of m is yet to be included in this Darmstadt, Germany, as a 'Forschungspreistrager' of the
+analysis.) Therefore, a major conclusion of this study is Alexander-von-Humboldt-Stiftung, Bonn.
+that V* is a measure of the micromechanism of boundary
+sliding,whereas m isameasure ofthe extent ofcooperative
+sliding present in the deforming specimen. This explains
+why in the case of high temperature power law creep of
+References
+alloys, although boundary sliding ispresent and V* isalso
+nearly of the same order as that for superplastic flow,the
+value ofm israther low.Evidently, this isdue to the degree 1. R. H. BRICKNELL and J. w. EDINGTON: Metall. Trans. A, 1979,
+of cooperative sliding being considerably less during high lOA, 1257.
+temperature power law creep than during optimal super- 2. v. V. ASTANINand A. A. SERINKO:!ZV. Akad. Nauk SSSR, Met.,
+plastic flow. For coherent deformation in the former case, 1990, 4, 132.
+in addition to boundary sliding less strain rate sensitive 3. J.H. GITTUS:'Creep, viscoelasticity and creep fracture in solids',
+355; 1975, London, Applied Science.
+dislocation processes will also be necessary and this will
+4. B. M. WATTS,M. J. STOWELL, B. L. BAIKIE, and D. G. E. OWEN:
+lower the overall value ofm.
+Met. Sci., 1976, 10, 189.
+5. B. M. WATTS,M. J. STOWELL, B. L. BAIKIE, and D. G. E. OWEN:
+Met. Sci., 1976, 10, 198.
+Conclusions 6. G.E.DIETER:'Mechanical metallurgy', 137,534; 1988, Singapore,
+McGraw-Hill.
+7. v. V. ASTANIN, K. A. PADMANABHAN, and s. S. BHATTACHARYA:
+1. Intense shear bands formed and spread along
+Mater. Sci. Technol., 1996, 12, (6), 489.
+grain/interphase boundaries during optimal superplastic 8. v. V.ASTANIN,O.A.KAIBYSHEV,and s.N. FAIZOVA:Acta Metall.
+flow. This is attributed to cooperative boundary sliding Mater., 1994,42,2617.
+involving a number of grain/interphase boundaries. This 9. o. A. KAIBYSHEV:'Superplasticity of alloys, intermetallics and
+process, which connects the differently oriented bounda- ceramics', 76-84; 1992, Berlin, Springer Verlag.
+ries by sliding to form a continuous network in which 10. N. E. PATON and c. H. HAMILTON: Metall. Trans. A, 1979,
+deformation becomes concentrated, is responsible for the lOA, 241.
+strong dependence ofstress on strain in the early stages of 11. R. A. TAITand D. M.R. TAPLIN: Scr. Metall., 1979, 13, 77.
+12. K. A.PADMANABHANand J.SCHLlPF: Mater. Sci. Technol., 1996,
+superplastic flow.
+12, (5), 391.
+2. The spacing between the boundary shear bands was
+13. R. Z. VALlEV, O. A. KAIBYSHEV, V. V. ASTANIN, and A. K.
+a function of both the strain rate of deformation and the EMALETDINOV:Phys. Status Solidi (aj, 1983,78,439.
+Materials Science and Technology July 1996 Vol. 12
+
+--- PAGE 7 ---
+New from The Institute of Materials
+'The
+%ly Sma((man Symyosium
+TOWARDS THE
+MILLENNIUM
+A MATERIALS PERSPECTIVE
+Contributed papers on
+Population increases and technological change; The future of materials in the
+market place; Power generation in the 21st century: The challenges for
+materials technology; Fast footwork and quick wits - commercialising materials
+for the 21st century; Materials technology in the USA;
+Towards 1997 - Materials research in Hong Kong with China; Materials for the
+new South Africa; Successful materials research and technology in Sweden;
+Cost-effective quality enhancement of materials education; Metallurgy - A
+digression; Ductility, malleability, education and training; Back to chemistry in
+the theory of metals; Permanent magnets: Past, present and future; From the
+Schrodinger equation to the rolling mill; Microstructure: From the micro-scale
+to the nano-scale; How ordered are intermetallics; Twenty years of diffraction
+studies on intermetallic compounds; Electron microscopy at Birmingham;
+Microscopy memories; The Santa Catharina Meteorite and low temperature
+ordering in iron-nickel alloys; Cast iron - areal advanced material;
+From loops to hips; Some simple inventions;
+Professor Ray Smallman - Published work 1953-1995; Index
+Book 611 ISBN 0901716839 247mm x 174mm
+ED:£45 / Members £36
+Non-ED $90 / Members $72
+p&p£3.50ED / $8.00Non-ED
+Orders to:The Institute ofMaterials, Accounts Department, 1Carlton House Terrace,
+London, SWI Y5DB Tel: 0171 8394071 Fax: 0171 8392078
+N.American orders to: Ashgate Publishing Co., Old Post Road, Brookfield, VT 05036, USA
+Tel: 8022763162 Fax: 8022763837
