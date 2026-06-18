@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {S1}Stacking-fault energy predictions across crystal systems}{1}{section.1}%
+\contentsline {paragraph}{Extension to HCP basal-plane stacking faults.}{2}{section*.2}%
+\contentsline {paragraph}{BCC metals: no comparable quantitative test.}{2}{section*.3}%
+\contentsline {section}{\numberline {S2}Grain-boundary energy verification across crystal systems}{2}{section.2}%
+\contentsline {paragraph}{HCP metals.}{4}{section*.4}%
+\contentsline {section}{\numberline {S3}Validation against Padmanabhan et al.\ (1996)}{4}{section.3}%
+\contentsline {paragraph}{Rate-equation numerical example.}{4}{section*.5}%
+\contentsline {paragraph}{Lognormal disorder distribution.}{4}{section*.6}%
+\contentsline {section}{\numberline {S4}Independent post-1996 literature validation}{5}{section.4}%
+\contentsline {section}{\numberline {S5}Comparison with Harisankar \& Padmanabhan (2025): 41 systems}{5}{section.5}%
+\contentsline {section}{\numberline {S6}Supplementary derivation figures}{9}{section.6}%

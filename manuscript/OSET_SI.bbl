@@ -1,0 +1,95 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{S_wang2014mg}
+W.~Y. Wang, S.~L. Shang, Y.~Wang, Z.-G. Mei, K.~A. Darling, L.~J. Kecskes,
+  S.~N. Mathaudhu, X.~D. Hui, Z.-K. Liu, Effects of alloying elements on
+  stacking fault energies and electronic structures of binary mg alloys: a
+  first-principles study, Materials Research Letters 2~(1) (2014) 29--36.
+\newblock \href {https://doi.org/10.1080/21663831.2013.858085}
+  {\path{doi:10.1080/21663831.2013.858085}}.
+
+\bibitem{S_yu2016ti}
+A.~Yu, First-principles calculations of stacking fault energy in titanium
+  alloys, SCIREA Journal of Physics 1~(1) (2016).
+
+\bibitem{S_pad-part1}
+K.~A. Padmanabhan, J.~Schlipf, Model for grain boundary sliding and its
+  relevance to optimal structural superplasticity: Part 1 -- theory, Materials
+  Science and Technology 12~(5) (1996) 391--399.
+\newblock \href {https://doi.org/10.1179/026708396790165920}
+  {\path{doi:10.1179/026708396790165920}}.
+
+\bibitem{S_sripathi2014}
+S.~Sripathi, K.~A. Padmanabhan, On the experimental validation of a mesoscopic
+  grain boundary sliding-controlled flow model for structural superplasticity,
+  Journal of Materials Science 49 (2014) 199--210.
+\newblock \href {https://doi.org/10.1007/s10853-013-7693-y}
+  {\path{doi:10.1007/s10853-013-7693-y}}.
+
+\bibitem{S_wolf1990}
+D.~Wolf, Structure-energy correlation for grain boundaries in f.c.c.\ metals:
+  Iii. symmetrical tilt boundaries, Acta Metallurgica et Materialia 38 (1990)
+  781--790.
+\newblock \href {https://doi.org/10.1016/0956-7151(90)90030-K}
+  {\path{doi:10.1016/0956-7151(90)90030-K}}.
+
+\bibitem{S_argon1979}
+A.~S. Argon, Plastic deformation in metallic glasses, Acta Metallurgica 27
+  (1979) 47--58.
+\newblock \href {https://doi.org/10.1016/0001-6160(79)90055-5}
+  {\path{doi:10.1016/0001-6160(79)90055-5}}.
+
+\bibitem{S_falklanger1998}
+M.~L. Falk, J.~S. Langer, Dynamics of viscoplastic deformation in amorphous
+  solids, Physical Review E 57 (1998) 7192--7205.
+\newblock \href {https://doi.org/10.1103/PhysRevE.57.7192}
+  {\path{doi:10.1103/PhysRevE.57.7192}}.
+
+\bibitem{S_buenz2015}
+J.~Buenz, K.~A. Padmanabhan, G.~Wilde, On the applicability of a mesoscopic
+  interface sliding controlled model for understanding superplastic flow in
+  bulk metallic glasses, Intermetallics 60 (2015) 7--15.
+\newblock \href {https://doi.org/10.1016/j.intermet.2015.01.012}
+  {\path{doi:10.1016/j.intermet.2015.01.012}}.
+
+\bibitem{S_pad2018}
+K.~A. Padmanabhan, M.~R. Basariya, A theory of steady state structural
+  superplasticity in different classes of materials: a materials-agnostic
+  analysis, Materials Science and Engineering A 744 (2019) 704--715.
+\newblock \href {https://doi.org/10.1016/j.msea.2018.11.039}
+  {\path{doi:10.1016/j.msea.2018.11.039}}.
+
+\bibitem{S_padbasariya2009}
+K.~A. Padmanabhan, M.~R. Basariya, Mesoscopic grain boundary sliding as the
+  rate controlling process for high strain rate superplastic deformation,
+  Materials Science and Engineering A 527 (2009) 225--234.
+\newblock \href {https://doi.org/10.1016/j.msea.2009.07.059}
+  {\path{doi:10.1016/j.msea.2009.07.059}}.
+
+\bibitem{S_nabarro1997}
+F.~R.~N. Nabarro, Theoretical and experimental estimates of the peierls stress,
+  Philosophical Magazine A 75 (1997) 703--711.
+\newblock \href {https://doi.org/10.1080/01418619708207197}
+  {\path{doi:10.1080/01418619708207197}}.
+
+\bibitem{S_vermeulen1995}
+A.~C. Vermeulen, T.~H. de~Keijser, E.~J. Mittemeijer, Changes in the densities
+  of dislocations on distinct slip systems during stress relaxation in thin
+  aluminium layers: the interpretation of x-ray diffraction line broadening and
+  line shift, Journal of Applied Physics 77 (1995) 5026--5049.
+\newblock \href {https://doi.org/10.1063/1.359300}
+  {\path{doi:10.1063/1.359300}}.
+
+\bibitem{S_harisankar2025}
+K.~R. Harisankar, K.~A. Padmanabhan, On the origin of isotropic steady state
+  structural superplastic deformation, Materials Science and Engineering A 930
+  (2025) 148175.
+\newblock \href {https://doi.org/10.1016/j.msea.2025.148175}
+  {\path{doi:10.1016/j.msea.2025.148175}}.
+
+\end{thebibliography}
