@@ -348,9 +348,9 @@ def fig_GB_energy():
     x = np.arange(len(names))
     bw = 0.36
 
-    fig, axes = plt.subplots(1, 3, figsize=(14.5, 4.8))
+    fig, axes = plt.subplots(1, 3, figsize=(14.5, 5.0))
     fig.suptitle("OSET grain-boundary free energy vs. literature, FCC + BCC + HCP (dislocation-array model)",
-                 fontweight="bold", fontsize=12)
+                 fontweight="bold", fontsize=12, y=0.99)
     panels = [("Coherent twin / SF boundary", "ctb", gb_ctb_lit),
               (r"Low-angle tilt $10^\circ$", "la", gb_la_lit),
               ("Random high-angle boundary", "ha", gb_ha_lit)]
@@ -376,10 +376,10 @@ def fig_GB_energy():
     legend_struct = [Patch(facecolor=FCC_COLOR, label="FCC"),
                       Patch(facecolor=BCC_COLOR, label="BCC"),
                       Patch(facecolor=HCP_COLOR, label="HCP")]
-    axes[0].legend(handles=axes[0].get_legend_handles_labels()[0] + legend_struct,
-                   labels=axes[0].get_legend_handles_labels()[1] + ["FCC", "BCC", "HCP"],
-                   frameon=False, fontsize=7, ncol=2)
-    fig.tight_layout(rect=[0, 0, 1, 0.92])
+    fig.legend(handles=legend_struct, labels=["FCC", "BCC", "HCP"],
+               frameon=False, fontsize=9, ncol=3, loc="upper center",
+               bbox_to_anchor=(0.5, 0.90))
+    fig.tight_layout(rect=[0, 0, 1, 0.86])
     fig.savefig(os.path.join(OUTDIR, "fig_GB_energy.png"))
     plt.close(fig)
     print("Saved fig_GB_energy.png (now FCC+BCC+HCP, 9 systems)")
@@ -587,13 +587,12 @@ def fig_rate_equation():
         ax.plot([lo, hi], [yi, yi], color="steelblue", lw=3, solid_capstyle="round")
         ax.plot(mid, yi, "o", color="navy", ms=7, zorder=5)
         ax.text(hi * 1.08, yi, f"$n={n}$", va="center", fontsize=8, color="dimgray")
-    ax.axvline(1.0, color="green", ls=":", lw=1.3, label="perfect agreement")
+    ax.axvline(1.0, color="green", ls=":", lw=1.3)
     ax.set_xscale("log")
     ax.set_yticks(y); ax.set_yticklabels([e[0] for e in entries], fontsize=9)
     ax.set_xlabel(r"$\dot\gamma_\mathrm{pred}/\dot\gamma_\mathrm{exp}$ (Unified Rate Equation)")
     ax.set_title("Predicted-to-measured strain-rate ratio")
     ax.set_xlim(0.2, 6)
-    ax.legend(frameon=False, loc="lower right", fontsize=8)
 
     ax2 = axes[1]
     win_lo, win_hi = 1e-3, 1.0e-1

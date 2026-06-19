@@ -3,6 +3,7 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \emailauthor{albert.hzbn@gmail.com}{Albert~Linda\corref {cor}}
+\emailauthor{ananthaster@gmail.com}{K.A.~Padmanabhan\corref {cor}}
 \Newlabel{cor}{1}
 \citation{taylor1934,orowan1934,polanyi1934}
 \citation{hall1951,petch1953}
@@ -39,28 +40,33 @@
 \newlabel{eq:Ialpha}{{7}{3}{Eshelby solution for the \OSTZ }{equation.7}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Derivation of $I_1$}{3}{subsubsection.2.2.1}\protected@file@percent }
 \newlabel{sec:I1}{{2.2.1}{3}{Derivation of $I_1$}{subsubsection.2.2.1}{}}
-\@writefile{toc}{\contentsline {paragraph}{Starting point.}{3}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Starting point}{3}{section*.1}\protected@file@percent }
 \newlabel{eq:I1start}{{8}{3}{Starting point}{equation.8}{}}
-\@writefile{toc}{\contentsline {paragraph}{Substitution.}{3}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Substitution}{3}{section*.2}\protected@file@percent }
 \newlabel{eq:I1sub}{{9}{3}{Substitution}{equation.9}{}}
-\@writefile{toc}{\contentsline {paragraph}{Antiderivative.}{3}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Antiderivative}{3}{section*.3}\protected@file@percent }
 \newlabel{eq:antideriv}{{10}{3}{Antiderivative}{equation.10}{}}
+\@writefile{toc}{\contentsline {paragraph}{Proof}{3}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Evaluating at the bounds}{3}{section*.5}\protected@file@percent }
+\newlabel{eq:I1bounds}{{11}{3}{Evaluating at the bounds}{equation.11}{}}
 \citation{mura1987}
 \citation{pad-part1}
-\@writefile{toc}{\contentsline {paragraph}{Evaluating at the bounds.}{4}{section*.4}\protected@file@percent }
-\newlabel{eq:I1bounds}{{11}{4}{Evaluating at the bounds}{equation.11}{}}
-\@writefile{toc}{\contentsline {paragraph}{Identity $\pi /2-\arctan (\alpha /e)=\arccos \alpha $.}{4}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Identity $\pi /2-\arctan (\alpha /e)=\arccos \alpha $}{4}{section*.6}\protected@file@percent }
 \newlabel{eq:I1result}{{12}{4}{Identity $\pi /2-\arctan (\alpha /e)=\arccos \alpha $}{equation.12}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Derivation of $I_{13}=(I_3-I_1)/(1-\alpha ^2)$}{4}{subsubsection.2.2.2}\protected@file@percent }
 \newlabel{sec:I13}{{2.2.2}{4}{Derivation of $I_{13}=(I_3-I_1)/(1-\alpha ^2)$}{subsubsection.2.2.2}{}}
 \newlabel{eq:I13result}{{13}{4}{Derivation of $I_{13}=(I_3-I_1)/(1-\alpha ^2)$}{equation.13}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Numerical evaluation ($\alpha =1/2$, $\nu =1/3$)}{4}{subsubsection.2.2.3}\protected@file@percent }
 \newlabel{sec:numeval}{{2.2.3}{4}{Numerical evaluation ($\alpha =1/2$, $\nu =1/3$)}{subsubsection.2.2.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~1: compute $I_1$}{4}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~2: $I_3$ and $I_{13}$}{4}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~3: $S_{1313}$ from Eq.~\eqref  {eq:S1313}}{4}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~4: $\beta _1$}{4}{section*.10}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Limiting-case verification}{4}{subsubsection.2.2.4}\protected@file@percent }
 \newlabel{sec:limits}{{2.2.4}{4}{Limiting-case verification}{subsubsection.2.2.4}{}}
-\@writefile{toc}{\contentsline {paragraph}{Sphere ($\alpha \to 1$).}{4}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Sphere ($\alpha \to 1$)}{4}{section*.11}\protected@file@percent }
 \newlabel{eq:S1313sphere}{{14}{4}{Sphere ($\alpha \to 1$)}{equation.14}{}}
-\@writefile{toc}{\contentsline {paragraph}{Thin disk ($\alpha \to 0$).}{4}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Thin disk ($\alpha \to 0$)}{4}{section*.12}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.5}Dilatational constraint factor $\beta _2$}{4}{subsubsection.2.2.5}\protected@file@percent }
 \newlabel{sec:beta2}{{2.2.5}{4}{Dilatational constraint factor $\beta _2$}{subsubsection.2.2.5}{}}
 \newlabel{eq:Sijkk}{{15}{4}{Dilatational constraint factor $\beta _2$}{equation.15}{}}
@@ -69,37 +75,47 @@
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Eshelby components for $\alpha =1/2$.}}{5}{table.1}\protected@file@percent }
 \newlabel{tab:eshelby}{{1}{5}{Eshelby components for $\alpha =1/2$}{table.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Note on $\beta _1$: two physical regimes}{5}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Physical reconciliation}{5}{section*.13}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}OSTZ elastic strain energy}{5}{subsection.2.4}\protected@file@percent }
 \newlabel{sec:energy}{{2.4}{5}{OSTZ elastic strain energy}{subsection.2.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Part~1: Shear contribution}{5}{subsubsection.2.4.1}\protected@file@percent }
 \newlabel{sec:Eshear}{{2.4.1}{5}{Part~1: Shear contribution}{subsubsection.2.4.1}{}}
-\newlabel{eq:Eshear}{{17}{5}{Part~1: Shear contribution}{equation.17}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~1 (constrained strain)}{5}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~2 (elastic strain)}{5}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~3 (interior stress)}{5}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~4 (energy contraction)}{5}{section*.17}\protected@file@percent }
+\newlabel{eq:Eshear}{{17}{5}{Step~4 (energy contraction)}{equation.17}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Part~2: Dilatational contribution}{5}{subsubsection.2.4.2}\protected@file@percent }
 \newlabel{sec:Edilat}{{2.4.2}{5}{Part~2: Dilatational contribution}{subsubsection.2.4.2}{}}
-\newlabel{eq:constrained_dil}{{18}{5}{Part~2: Dilatational contribution}{equation.18}{}}
-\newlabel{eq:edilelastic}{{19}{5}{Part~2: Dilatational contribution}{equation.19}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~1 (constrained strain inside a sphere)}{5}{section*.18}\protected@file@percent }
+\newlabel{eq:constrained_dil}{{18}{5}{Step~1 (constrained strain inside a sphere)}{equation.18}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~2 (elastic strain)}{5}{section*.19}\protected@file@percent }
+\newlabel{eq:edilelastic}{{19}{5}{Step~2 (elastic strain)}{equation.19}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~3 (interior stress)}{5}{section*.20}\protected@file@percent }
 \citation{mura1987}
 \citation{mura1987}
 \citation{mura1987}
-\newlabel{eq:sig11in}{{20}{6}{Part~2: Dilatational contribution}{equation.20}{}}
-\newlabel{eq:Edilat}{{21}{6}{Part~2: Dilatational contribution}{equation.21}{}}
+\newlabel{eq:sig11in}{{20}{6}{Step~3 (interior stress)}{equation.20}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~4 (energy contraction)}{6}{section*.21}\protected@file@percent }
+\newlabel{eq:Edilat}{{21}{6}{Step~4 (energy contraction)}{equation.21}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Total activation energy}{6}{subsubsection.2.4.3}\protected@file@percent }
 \newlabel{eq:dF0}{{22}{6}{Total activation energy}{equation.22}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Far-Field Stress: The Dipole Structure}{6}{section.3}\protected@file@percent }
-\newlabel{sec:dipole}{{3}{6}{Far-Field Stress: The Dipole Structure}{section.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Numerical check}{6}{section*.22}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Canonical \textsc  {ostz}\ parameters.}}{6}{table.2}\protected@file@percent }
 \newlabel{tab:canonical}{{2}{6}{Canonical \OSTZ \ parameters}{table.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Far-Field Stress: The Dipole Structure}{6}{section.3}\protected@file@percent }
+\newlabel{sec:dipole}{{3}{6}{Far-Field Stress: The Dipole Structure}{section.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Why a dipole, not a monopole}{6}{subsection.3.1}\protected@file@percent }
 \newlabel{eq:monopole}{{23}{6}{Why a dipole, not a monopole}{equation.23}{}}
 \newlabel{eq:multipole}{{24}{6}{Why a dipole, not a monopole}{equation.24}{}}
 \newlabel{eq:moment}{{25}{6}{Why a dipole, not a monopole}{equation.25}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Step A: Kelvin Green's function and its derivative}{6}{subsection.3.2}\protected@file@percent }
 \newlabel{sec:stepA}{{3.2}{6}{Step A: Kelvin Green's function and its derivative}{subsection.3.2}{}}
-\newlabel{eq:Gij}{{26}{6}{Step A: Kelvin Green's function and its derivative}{equation.26}{}}
 \citation{eshelby1957,mura1987}
-\@writefile{toc}{\contentsline {paragraph}{Differentiating the first term.}{7}{section*.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Differentiating the second term (product rule).}{7}{section*.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Combined result.}{7}{section*.10}\protected@file@percent }
+\newlabel{eq:Gij}{{26}{7}{Step A: Kelvin Green's function and its derivative}{equation.26}{}}
+\@writefile{toc}{\contentsline {paragraph}{Differentiating the first term}{7}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Differentiating the second term (product rule)}{7}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Combined result}{7}{section*.25}\protected@file@percent }
 \newlabel{eq:dG}{{27}{7}{Combined result}{equation.27}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Step B: Displacement from the moment tensor}{7}{subsection.3.3}\protected@file@percent }
 \newlabel{sec:stepB}{{3.3}{7}{Step B: Displacement from the moment tensor}{subsection.3.3}{}}
@@ -108,12 +124,12 @@
 \newlabel{eq:u3}{{30}{7}{Step B: Displacement from the moment tensor}{equation.30}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Step C: Stress from displacement gradients}{7}{subsection.3.4}\protected@file@percent }
 \newlabel{sec:stepC}{{3.4}{7}{Step C: Stress from displacement gradients}{subsection.3.4}{}}
-\@writefile{toc}{\contentsline {paragraph}{Auxiliary results.}{7}{section*.11}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Computing $\partial _3u_1$.}{7}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Auxiliary results}{7}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Computing $\partial _3u_1$}{7}{section*.27}\protected@file@percent }
 \newlabel{eq:du1dx3}{{31}{7}{Computing $\partial _3u_1$}{equation.31}{}}
-\@writefile{toc}{\contentsline {paragraph}{Computing $\partial _1u_3$.}{7}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Computing $\partial _1u_3$}{7}{section*.28}\protected@file@percent }
 \newlabel{eq:du3dx1}{{32}{7}{Computing $\partial _1u_3$}{equation.32}{}}
-\@writefile{toc}{\contentsline {paragraph}{Summing and converting to unit vectors $\hat  r_i=x_i/r$.}{7}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Summing and converting to unit vectors $\hat  r_i=x_i/r$}{7}{section*.29}\protected@file@percent }
 \newlabel{eq:gradsum}{{33}{7}{Summing and converting to unit vectors $\hat r_i=x_i/r$}{equation.33}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Step D: Angular tensor and far-field formula}{7}{subsection.3.5}\protected@file@percent }
 \newlabel{sec:stepD}{{3.5}{7}{Step D: Angular tensor and far-field formula}{subsection.3.5}{}}
@@ -121,20 +137,30 @@
 \newlabel{eq:dipole}{{35}{7}{Step D: Angular tensor and far-field formula}{equation.35}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Step E: Verification in special directions}{8}{subsection.3.6}\protected@file@percent }
 \newlabel{sec:stepE}{{3.6}{8}{Step E: Verification in special directions}{subsection.3.6}{}}
-\@writefile{toc}{\contentsline {paragraph}{Glide plane ($x_3=0$, $\hat  r_3=0$).}{8}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Glide plane ($x_3=0$, $\hat  r_3=0$)}{8}{section*.30}\protected@file@percent }
 \newlabel{eq:glidecheck}{{36}{8}{Glide plane ($x_3=0$, $\hat r_3=0$)}{equation.36}{}}
-\@writefile{toc}{\contentsline {paragraph}{On-axis ($\hat  r_1=0$, $\hat  r_3=1$).}{8}{section*.16}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Nodal surface.}{8}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{On-axis ($\hat  r_1=0$, $\hat  r_3=1$)}{8}{section*.31}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Nodal surface}{8}{section*.32}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.7}Glide-plane stress: six-step derivation}{8}{subsection.3.7}\protected@file@percent }
 \newlabel{sec:glideplane}{{3.7}{8}{Glide-plane stress: six-step derivation}{subsection.3.7}{}}
-\newlabel{eq:glideplane}{{37}{8}{Glide-plane stress: six-step derivation}{equation.37}{}}
-\@writefile{toc}{\contentsline {paragraph}{Physical interpretation.}{8}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~1 (off-diagonal $\mathcal  G_{13}$)}{8}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~2 (diagonal $\mathcal  G_{33}$)}{8}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~3 (diagonal $\mathcal  G_{11}$)}{8}{section*.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~4 (collect numerator, units of $A/r^5$)}{8}{section*.36}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~5 (assemble)}{8}{section*.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~6 (re-express with $b_\mathrm  {eff}$, restore finite $W$)}{8}{section*.38}\protected@file@percent }
+\newlabel{eq:glideplane}{{37}{8}{Step~6 (re-express with $\beff $, restore finite $W$)}{equation.37}{}}
+\@writefile{toc}{\contentsline {paragraph}{Physical interpretation}{8}{section*.39}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.8}Effective Burgers vector}{8}{subsection.3.8}\protected@file@percent }
 \newlabel{sec:beff}{{3.8}{8}{Effective Burgers vector}{subsection.3.8}{}}
+\@writefile{toc}{\contentsline {paragraph}{Method~1 (kinematic, exact)}{8}{section*.40}\protected@file@percent }
 \citation{bilby1963}
 \citation{rice1968}
 \citation{hirth1982}
-\newlabel{eq:beff}{{38}{9}{Effective Burgers vector}{equation.38}{}}
+\@writefile{toc}{\contentsline {paragraph}{Method~2 (moment tensor)}{9}{section*.41}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Origin of the discrepancy}{9}{section*.42}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Method~3 (Lorentzian normalisation)}{9}{section*.43}\protected@file@percent }
+\newlabel{eq:beff}{{38}{9}{Method~3 (Lorentzian normalisation)}{equation.38}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Single \textsc  {ostz}\ vs.\ Volterra dislocation.}}{9}{table.3}\protected@file@percent }
 \newlabel{tab:compare1}{{3}{9}{Single \OSTZ \ vs.\ Volterra dislocation}{table.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.9}Why a single \textsc  {ostz}\ cannot drive macroscopic slip}{9}{subsection.3.9}\protected@file@percent }
@@ -145,40 +171,47 @@
 \newlabel{sec:lorentzian}{{4.1}{9}{Lorentzian dislocation density: four steps}{subsection.4.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Step A: 2D dislocation density (BCS compliance)}{9}{subsubsection.4.1.1}\protected@file@percent }
 \newlabel{sec:stepA-BCS}{{4.1.1}{9}{Step A: 2D dislocation density (BCS compliance)}{subsubsection.4.1.1}{}}
-\newlabel{eq:gpisotropic}{{39}{9}{Step A: 2D dislocation density (BCS compliance)}{equation.39}{}}
+\@writefile{toc}{\contentsline {paragraph}{Physical basis}{9}{section*.44}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Applicability to the \textsc  {ostz}\ $r^{-3}$ field}{9}{section*.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why an isotropic approximation is needed}{9}{section*.46}\protected@file@percent }
 \citation{muskhelishvili1953,bilby1963}
 \citation{peierls1940,nabarro1947}
-\newlabel{eq:rho2Dsub}{{40}{10}{Step A: 2D dislocation density (BCS compliance)}{equation.40}{}}
-\newlabel{eq:rho2D}{{41}{10}{Step A: 2D dislocation density (BCS compliance)}{equation.41}{}}
+\newlabel{eq:gpisotropic}{{39}{10}{Why an isotropic approximation is needed}{equation.39}{}}
+\newlabel{eq:rho2Dsub}{{40}{10}{Why an isotropic approximation is needed}{equation.40}{}}
+\newlabel{eq:rho2D}{{41}{10}{Why an isotropic approximation is needed}{equation.41}{}}
+\@writefile{toc}{\contentsline {paragraph}{Normalisation check}{10}{section*.47}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Step B: Abel projection}{10}{subsubsection.4.1.2}\protected@file@percent }
 \newlabel{sec:stepB-abel}{{4.1.2}{10}{Step B: Abel projection}{subsubsection.4.1.2}{}}
 \newlabel{eq:abel}{{42}{10}{Step B: Abel projection}{equation.42}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.3}Step C: Lorentzian (normalised)}{10}{subsubsection.4.1.3}\protected@file@percent }
 \newlabel{sec:stepC-lorentz}{{4.1.3}{10}{Step C: Lorentzian (normalised)}{subsubsection.4.1.3}{}}
 \newlabel{eq:rho1}{{43}{10}{Step C: Lorentzian (normalised)}{equation.43}{}}
+\@writefile{toc}{\contentsline {paragraph}{Check}{10}{section*.48}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.4}Step D: Fourier transform}{10}{subsubsection.4.1.4}\protected@file@percent }
 \newlabel{sec:stepD-fourier}{{4.1.4}{10}{Step D: Fourier transform}{subsubsection.4.1.4}{}}
 \newlabel{eq:rhohat}{{44}{10}{Step D: Fourier transform}{equation.44}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Theorem: the $N$-\textsc  {ostz}\ chain is a Peierls--Nabarro\ dislocation}{10}{subsection.4.2}\protected@file@percent }
 \newlabel{sec:PN}{{4.2}{10}{Theorem: the $N$-\OSTZ \ chain is a \PN \ dislocation}{subsection.4.2}{}}
-\newlabel{eq:slip}{{45}{10}{Theorem: the $N$-\OSTZ \ chain is a \PN \ dislocation}{equation.45}{}}
-\newlabel{eq:PNprofile}{{46}{10}{Theorem: the $N$-\OSTZ \ chain is a \PN \ dislocation}{equation.46}{}}
+\@writefile{toc}{\contentsline {paragraph}{Theorem (dislocation emergence)}{10}{section*.49}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Proof}{10}{section*.50}\protected@file@percent }
+\newlabel{eq:slip}{{45}{10}{Proof}{equation.45}{}}
+\newlabel{eq:PNprofile}{{46}{11}{Proof}{equation.46}{}}
+\@writefile{toc}{\contentsline {paragraph}{Corollary}{11}{section*.51}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Chain stress field and Volterra limit}{11}{subsection.4.3}\protected@file@percent }
 \newlabel{sec:chainStress}{{4.3}{11}{Chain stress field and Volterra limit}{subsection.4.3}{}}
 \newlabel{eq:conv}{{47}{11}{Chain stress field and Volterra limit}{equation.47}{}}
-\@writefile{toc}{\contentsline {paragraph}{Partial fractions.}{11}{section*.19}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Term~1.}{11}{section*.20}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Term~2.}{11}{section*.21}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Combining.}{11}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Partial fractions}{11}{section*.52}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Term~1}{11}{section*.53}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Term~2}{11}{section*.54}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Combining}{11}{section*.55}\protected@file@percent }
 \newlabel{eq:chainStress}{{48}{11}{Combining}{equation.48}{}}
-\@writefile{toc}{\contentsline {paragraph}{Volterra limit ($W\to 0$).}{11}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Volterra limit ($W\to 0$)}{11}{section*.56}\protected@file@percent }
 \newlabel{eq:volterra}{{49}{11}{Volterra limit ($W\to 0$)}{equation.49}{}}
-\@writefile{toc}{\contentsline {paragraph}{Burgers circuit.}{11}{section*.24}\protected@file@percent }
 \citation{astanin-part2}
 \citation{frenkel1926}
 \citation{frenkel1926}
 \citation{peierls1940}
-\citation{nabarro1997}
+\@writefile{toc}{\contentsline {paragraph}{Burgers circuit}{12}{section*.57}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Critical cluster number}{12}{subsection.4.4}\protected@file@percent }
 \newlabel{sec:Nc}{{4.4}{12}{Critical cluster number}{subsection.4.4}{}}
 \newlabel{eq:Nc}{{50}{12}{Critical cluster number}{equation.50}{}}
@@ -186,7 +219,8 @@
 \newlabel{sec:derived}{{5}{12}{Dislocation Quantities as Derived Results}{section.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Theoretical shear strength}{12}{subsection.5.1}\protected@file@percent }
 \newlabel{sec:strength}{{5.1}{12}{Theoretical shear strength}{subsection.5.1}{}}
-\newlabel{eq:strength}{{51}{12}{Theoretical shear strength}{equation.51}{}}
+\@writefile{toc}{\contentsline {paragraph}{Physical argument}{12}{section*.58}\protected@file@percent }
+\newlabel{eq:strength}{{51}{12}{Physical argument}{equation.51}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Peierls stress}{12}{subsection.5.2}\protected@file@percent }
 \newlabel{sec:peierls}{{5.2}{12}{Peierls stress}{subsection.5.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}OSET-derived amplitude}{12}{subsubsection.5.2.1}\protected@file@percent }
@@ -194,58 +228,60 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Fourier convolution}{12}{subsubsection.5.2.2}\protected@file@percent }
 \newlabel{eq:Emisfit}{{53}{12}{Fourier convolution}{equation.53}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Peierls barrier and half-space correction}{12}{subsubsection.5.2.3}\protected@file@percent }
-\newlabel{eq:peierls}{{54}{12}{Peierls barrier and half-space correction}{equation.54}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Core energy}{12}{subsection.5.3}\protected@file@percent }
-\newlabel{sec:coreE}{{5.3}{12}{Core energy}{subsection.5.3}{}}
+\citation{nabarro1997}
 \citation{woodward2002}
 \citation{frank-read1950}
-\citation{readshockley1950}
+\newlabel{eq:peierls}{{54}{13}{Peierls barrier and half-space correction}{equation.54}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Core energy}{13}{subsection.5.3}\protected@file@percent }
+\newlabel{sec:coreE}{{5.3}{13}{Core energy}{subsection.5.3}{}}
 \newlabel{eq:coreE}{{55}{13}{Core energy}{equation.55}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Frank--Read critical stress}{13}{subsection.5.4}\protected@file@percent }
 \newlabel{sec:FR}{{5.4}{13}{Frank--Read critical stress}{subsection.5.4}{}}
-\newlabel{eq:Ebow}{{56}{13}{Frank--Read critical stress}{equation.56}{}}
-\newlabel{eq:Wext}{{57}{13}{Frank--Read critical stress}{equation.57}{}}
-\newlabel{eq:FR}{{58}{13}{Frank--Read critical stress}{equation.58}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~1 (line tension)}{13}{section*.59}\protected@file@percent }
+\newlabel{eq:Ebow}{{56}{13}{Step~1 (line tension)}{equation.56}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~2 (external work)}{13}{section*.60}\protected@file@percent }
+\newlabel{eq:Wext}{{57}{13}{Step~2 (external work)}{equation.57}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~3 ($W_\text  {ext}=E_\text  {bow}$)}{13}{section*.61}\protected@file@percent }
+\newlabel{eq:FR}{{58}{13}{Step~3 ($W_\text {ext}=E_\text {bow}$)}{equation.58}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Stacking-fault energy}{13}{subsection.5.5}\protected@file@percent }
 \newlabel{sec:SFE}{{5.5}{13}{Stacking-fault energy}{subsection.5.5}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1}FCC Burgers ratios}{13}{subsubsection.5.5.1}\protected@file@percent }
 \newlabel{eq:bratio}{{59}{13}{FCC Burgers ratios}{equation.59}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2}\textsc  {ostz}\ cluster for the Shockley partial}{13}{subsubsection.5.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Physical picture}{13}{section*.62}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.3}SFE derivation}{13}{subsubsection.5.5.3}\protected@file@percent }
 \newlabel{eq:SFE}{{60}{13}{SFE derivation}{equation.60}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Grain-Boundary Energy}{13}{section.6}\protected@file@percent }
-\newlabel{sec:gb}{{6}{13}{Grain-Boundary Energy}{section.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Coherent boundaries (quadratic in eigenstrain)}{13}{subsection.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Incoherent boundaries: the Read--Shockley law}{13}{subsection.6.2}\protected@file@percent }
-\newlabel{sec:RS}{{6.2}{13}{Incoherent boundaries: the Read--Shockley law}{subsection.6.2}{}}
+\citation{readshockley1950}
 \citation{pad-part1}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Grain-Boundary Energy}{14}{section.6}\protected@file@percent }
+\newlabel{sec:gb}{{6}{14}{Grain-Boundary Energy}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Coherent boundaries (quadratic in eigenstrain)}{14}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Incoherent boundaries: the Read--Shockley law}{14}{subsection.6.2}\protected@file@percent }
+\newlabel{sec:RS}{{6.2}{14}{Incoherent boundaries: the Read--Shockley law}{subsection.6.2}{}}
 \newlabel{eq:RS}{{61}{14}{Incoherent boundaries: the Read--Shockley law}{equation.61}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {7}\textsc  {ostz}\ Hamiltonian and Statistical Mechanics}{14}{section.7}\protected@file@percent }
 \newlabel{sec:stat}{{7}{14}{\OSTZ \ Hamiltonian and Statistical Mechanics}{section.7}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Construction of the Hamiltonian}{14}{subsection.7.1}\protected@file@percent }
 \newlabel{sec:Hamiltonian}{{7.1}{14}{Construction of the Hamiltonian}{subsection.7.1}{}}
-\@writefile{toc}{\contentsline {paragraph}{Term~1: Self-energy.}{14}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Term~1: Self-energy}{14}{section*.63}\protected@file@percent }
 \newlabel{eq:Hself}{{62}{14}{Term~1: Self-energy}{equation.62}{}}
-\@writefile{toc}{\contentsline {paragraph}{Term~2: Mechanical work.}{14}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Term~2: Mechanical work}{14}{section*.64}\protected@file@percent }
 \newlabel{eq:Hmech}{{63}{14}{Term~2: Mechanical work}{equation.63}{}}
-\@writefile{toc}{\contentsline {paragraph}{Term~3: Elastic interaction.}{14}{section*.27}\protected@file@percent }
-\newlabel{eq:Eint}{{64}{14}{Term~3: Elastic interaction}{equation.64}{}}
-\newlabel{eq:Jij}{{65}{14}{Term~3: Elastic interaction}{equation.65}{}}
+\@writefile{toc}{\contentsline {paragraph}{Term~3: Elastic interaction}{14}{section*.65}\protected@file@percent }
 \citation{bragg1934}
 \citation{eyring1935}
-\citation{pad-part1}
-\citation{pad-part1}
-\citation{venkatesh-part4}
+\newlabel{eq:Eint}{{64}{15}{Term~3: Elastic interaction}{equation.64}{}}
+\newlabel{eq:Jij}{{65}{15}{Term~3: Elastic interaction}{equation.65}{}}
 \newlabel{eq:Hint}{{66}{15}{Term~3: Elastic interaction}{equation.66}{}}
-\@writefile{toc}{\contentsline {paragraph}{Full Hamiltonian.}{15}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Full Hamiltonian}{15}{section*.66}\protected@file@percent }
 \newlabel{eq:Hamiltonian}{{67}{15}{Full Hamiltonian}{equation.67}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Mean-field decoupling}{15}{subsection.7.2}\protected@file@percent }
 \newlabel{sec:MF}{{7.2}{15}{Mean-field decoupling}{subsection.7.2}{}}
-\@writefile{toc}{\contentsline {paragraph}{The linearisation step.}{15}{section*.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The linearisation step}{15}{section*.67}\protected@file@percent }
 \newlabel{eq:BW}{{68}{15}{The linearisation step}{equation.68}{}}
-\@writefile{toc}{\contentsline {paragraph}{Effect on the interaction term.}{15}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Effect on the interaction term}{15}{section*.68}\protected@file@percent }
 \newlabel{eq:MFinteraction}{{69}{15}{Effect on the interaction term}{equation.69}{}}
-\@writefile{toc}{\contentsline {paragraph}{Mean-field Hamiltonian.}{15}{section*.31}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Mean-field Hamiltonian}{15}{section*.69}\protected@file@percent }
 \newlabel{eq:heff}{{70}{15}{Mean-field Hamiltonian}{equation.70}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.1}Self-consistency equation}{15}{subsubsection.7.2.1}\protected@file@percent }
 \newlabel{sec:selfconsistency}{{7.2.1}{15}{Self-consistency equation}{subsubsection.7.2.1}{}}
@@ -253,19 +289,22 @@
 \newlabel{eq:selfconsfull}{{72}{15}{Self-consistency equation}{equation.72}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Sinh flow law: step-by-step derivation}{15}{subsection.7.3}\protected@file@percent }
 \newlabel{sec:sinh}{{7.3}{15}{Sinh flow law: step-by-step derivation}{subsection.7.3}{}}
-\@writefile{toc}{\contentsline {paragraph}{Step~1 (strain per activation).}{15}{section*.32}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~1 (strain per activation)}{15}{section*.70}\protected@file@percent }
 \newlabel{eq:deltaGamma}{{73}{15}{Step~1 (strain per activation)}{equation.73}{}}
-\@writefile{toc}{\contentsline {paragraph}{Step~2 (Eyring forward/backward rates).}{15}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step~2 (Eyring forward/backward rates)}{15}{section*.71}\protected@file@percent }
 \newlabel{eq:Gamma}{{74}{15}{Step~2 (Eyring forward/backward rates)}{equation.74}{}}
-\@writefile{toc}{\contentsline {paragraph}{Step~3 (factor out $e^{-\Delta F_0/kT}$).}{15}{section*.34}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Step~4 ($e^x-e^{-x}=2\sinh x$).}{15}{section*.35}\protected@file@percent }
-\newlabel{eq:Nnet}{{75}{15}{Step~4 ($e^x-e^{-x}=2\sinh x$)}{equation.75}{}}
-\@writefile{toc}{\contentsline {paragraph}{Step~5 (macroscopic rate).}{15}{section*.36}\protected@file@percent }
-\newlabel{eq:rate}{{76}{15}{Step~5 (macroscopic rate)}{equation.76}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}Comparison: partition-function route}{15}{subsubsection.7.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}Connection to Padmanabhan et al.\ (1996)}{15}{subsubsection.7.3.2}\protected@file@percent }
-\newlabel{eq:rateDisorder}{{77}{15}{Connection to Padmanabhan et al.\ (1996)}{equation.77}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~3 (factor out $e^{-\Delta F_0/kT}$)}{15}{section*.72}\protected@file@percent }
+\citation{pad-part1}
+\citation{pad-part1}
+\citation{venkatesh-part4}
 \citation{taylor1934}
+\@writefile{toc}{\contentsline {paragraph}{Step~4 ($e^x-e^{-x}=2\sinh x$)}{16}{section*.73}\protected@file@percent }
+\newlabel{eq:Nnet}{{75}{16}{Step~4 ($e^x-e^{-x}=2\sinh x$)}{equation.75}{}}
+\@writefile{toc}{\contentsline {paragraph}{Step~5 (macroscopic rate)}{16}{section*.74}\protected@file@percent }
+\newlabel{eq:rate}{{76}{16}{Step~5 (macroscopic rate)}{equation.76}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}Comparison: partition-function route}{16}{subsubsection.7.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}Connection to Padmanabhan et al.\ (1996)}{16}{subsubsection.7.3.2}\protected@file@percent }
+\newlabel{eq:rateDisorder}{{77}{16}{Connection to Padmanabhan et al.\ (1996)}{equation.77}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.4}\textsc  {ostz}\ interaction as the origin of Taylor hardening}{16}{subsection.7.4}\protected@file@percent }
 \newlabel{sec:taylor}{{7.4}{16}{\OSTZ \ interaction as the origin of Taylor hardening}{subsection.7.4}{}}
 \newlabel{eq:tau0eff}{{78}{16}{\OSTZ \ interaction as the origin of Taylor hardening}{equation.78}{}}
@@ -273,16 +312,17 @@
 \@writefile{toc}{\contentsline {section}{\numberline {8}Why \textsc  {oset}\ is More Fundamental}{16}{section.8}\protected@file@percent }
 \newlabel{sec:fundamental}{{8}{16}{Why \OSET \ is More Fundamental}{section.8}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Logical priority theorem}{16}{subsection.8.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Ontological hierarchy}{16}{subsection.8.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Classical dislocation theory vs.\ \textsc  {oset}.}}{16}{table.4}\protected@file@percent }
-\newlabel{tab:comparison}{{4}{16}{Classical dislocation theory vs.\ \OSET }{table.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}A quantum-mechanical representability argument}{16}{subsection.8.3}\protected@file@percent }
-\newlabel{sec:quantum}{{8.3}{16}{A quantum-mechanical representability argument}{subsection.8.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Theorem}{16}{section*.75}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Proof of $\Rightarrow $}{16}{section*.76}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Proof that the converse fails}{16}{section*.77}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Ontological hierarchy}{17}{subsection.8.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Classical dislocation theory vs.\ \textsc  {oset}.}}{17}{table.4}\protected@file@percent }
+\newlabel{tab:comparison}{{4}{17}{Classical dislocation theory vs.\ \OSET }{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}A quantum-mechanical representability argument}{17}{subsection.8.3}\protected@file@percent }
+\newlabel{sec:quantum}{{8.3}{17}{A quantum-mechanical representability argument}{subsection.8.3}{}}
 \citation{orowan1940}
 \citation{pad-part1}
 \citation{argon1979,falk-langer1998}
-\@writefile{toc}{\contentsline {section}{\numberline {9}\textsc  {oset}\ Across Material Classes}{17}{section.9}\protected@file@percent }
-\newlabel{sec:classes}{{9}{17}{\OSET \ Across Material Classes}{section.9}{}}
 \citation{pad-part1}
 \citation{harisankar2025}
 \citation{wolf1990}
@@ -296,18 +336,26 @@
 \citation{padbasariya2009}
 \citation{nabarro1997}
 \citation{vermeulen1995}
-\citation{harisankar2025}
+\@writefile{toc}{\contentsline {section}{\numberline {9}\textsc  {oset}\ Across Material Classes}{18}{section.9}\protected@file@percent }
+\newlabel{sec:classes}{{9}{18}{\OSET \ Across Material Classes}{section.9}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {10}Unified Rate Equation}{18}{section.10}\protected@file@percent }
 \newlabel{sec:unified}{{10}{18}{Unified Rate Equation}{section.10}{}}
 \newlabel{eq:rateUnified}{{80}{18}{Unified Rate Equation}{equation.80}{}}
 \newlabel{eq:Theta}{{81}{18}{Unified Rate Equation}{equation.81}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {11}Validation}{18}{section.11}\protected@file@percent }
 \newlabel{sec:validation}{{11}{18}{Validation}{section.11}{}}
-\newlabel{sec:harisankar}{{11}{18}{Validation}{section.11}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {12}Discussion}{18}{section.12}\protected@file@percent }
-\newlabel{sec:discussion}{{12}{18}{Discussion}{section.12}{}}
-\@writefile{toc}{\contentsline {paragraph}{Strengths.}{18}{section*.37}\protected@file@percent }
+\citation{harisankar2025}
 \citation{nabarro1997}
+\newlabel{sec:harisankar}{{11}{19}{Validation}{section.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {12}Discussion}{19}{section.12}\protected@file@percent }
+\newlabel{sec:discussion}{{12}{19}{Discussion}{section.12}{}}
+\@writefile{toc}{\contentsline {paragraph}{Strengths}{19}{section*.78}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations}{19}{section*.79}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Outlook}{19}{section*.80}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Broader implications}{19}{section*.81}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {13}Conclusions}{19}{section.13}\protected@file@percent }
+\newlabel{sec:conclusions}{{13}{19}{Conclusions}{section.13}{}}
+\citation{meurer2017sympy}
 \bibstyle{elsarticle-num}
 \bibdata{OSET_references}
 \bibcite{taylor1934}{{1}{}{{}}{{}}}
@@ -319,11 +367,6 @@
 \bibcite{peierls1940}{{7}{}{{}}{{}}}
 \bibcite{nabarro1947}{{8}{}{{}}{{}}}
 \bibcite{eshelby1957}{{9}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {paragraph}{Limitations.}{19}{section*.38}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Outlook.}{19}{section*.39}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Broader implications.}{19}{section*.40}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {13}Conclusions}{19}{section.13}\protected@file@percent }
-\newlabel{sec:conclusions}{{13}{19}{Conclusions}{section.13}{}}
 \bibcite{hirth1982}{{10}{}{{}}{{}}}
 \bibcite{pad-part1}{{11}{}{{}}{{}}}
 \bibcite{padgleiter2014}{{12}{}{{}}{{}}}
@@ -352,5 +395,6 @@
 \bibcite{pad2018}{{35}{}{{}}{{}}}
 \bibcite{padbasariya2009}{{36}{}{{}}{{}}}
 \bibcite{vermeulen1995}{{37}{}{{}}{{}}}
+\bibcite{meurer2017sympy}{{38}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
 \gdef \@abspage@last{21}

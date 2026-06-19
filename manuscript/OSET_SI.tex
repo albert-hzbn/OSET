@@ -6,14 +6,17 @@
 %% A. Linda, K.A. Padmanabhan -- prepared for Acta Materialia
 %%
 %% This document collects, in full numerical detail, every comparison and
-%% validation result that is summarised in condensed form in the main text:
-%%   S1  Stacking-fault energy predictions across FCC metals
-%%   S2  Grain-boundary energy verification across crystal systems (FCC/BCC/HCP)
-%%   S3  Full validation against the original Padmanabhan et al. (1996) data
-%%   S4  Independent post-1996 literature validation; Unified Rate Equation
+%% validation result that is summarised in condensed form in the main text.
+%% Sections (and their figures) are ordered to match the sequence in which
+%% they are first cited from the main text, not by topic:
+%%   S1  Eshelby tensor component S_1313 (cited early, Sec. numeval)
+%%   S2  Stacking-fault energy predictions across crystal systems
+%%   S3  Grain-boundary energy verification across crystal systems (FCC/BCC/HCP)
+%%   S4  Supplementary derivation figures: hardening and occupation factor
+%%   S5  Full validation against the original Padmanabhan et al. (1996) data
+%%   S6  Independent post-1996 literature validation; Unified Rate Equation
 %%       applied across material classes
-%%   S5  Full 41-system comparison with Harisankar & Padmanabhan (2025)
-%%   S6  Supplementary derivation figures
+%%   S7  Full 41-system comparison with Harisankar & Padmanabhan (2025)
 %%
 %% Build: pdflatex -> pdflatex
 %% ============================================================================
@@ -57,6 +60,30 @@ numbers from the main text are written ``Eq.~(main)'' and table numbers
 here are prefixed ``S''.
 
 \tableofcontents
+
+% =============================================================================
+\section{Eshelby tensor component $S_{1313}$}
+\label{si:s1313}
+
+The shear constraint factor $\beta_1=1-2S_{1313}$ used throughout the
+main text (Eshelby tensor numerical evaluation section) depends on
+both the inclusion aspect ratio $\alpha=c/a$ and Poisson's ratio
+$\nu$. Figure~\ref{si:fig:s1313}
+plots this dependence explicitly across the full range of $\alpha$,
+marking the thin-disk limit and the $\alpha=1/2$ value adopted for
+the \OSTZ\ throughout this paper.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\linewidth]{fig_S1313.png}
+\caption{Eshelby oblate-spheroid shear component $S_{1313}$ as a
+function of aspect ratio $\alpha=c/a$, for several values of
+Poisson's ratio $\nu$ spanning the range relevant to metals. The
+thin-disk limit ($S_{1313}\to1/2$) and the aspect ratio
+$\alpha=0.5$ used throughout this paper (giving $\beta_1=1-2S_{1313}$)
+are marked.}
+\label{si:fig:s1313}
+\end{figure}
 
 % =============================================================================
 \section{Stacking-fault energy predictions across crystal systems}
@@ -240,6 +267,42 @@ rather than the isotropic $\alpha=1/2$ oblate-spheroid solution used
 throughout this paper.
 
 % =============================================================================
+\section{Supplementary derivation figures: hardening and occupation factor}
+\label{si:derivfigs}
+
+The two figures below illustrate intermediate steps underlying the
+\OSTZ\ Hamiltonian and rate-equation derivations of the main text
+(sinh flow law and Taylor-hardening sections): the magnitude of the
+error introduced by approximating the correct OSTZ occupation factor
+with a naive $\sinh$ form, and the comparison between the \OSET\
+linear (back-stress) hardening law and conventional Taylor
+($\sqrt{\rho}$, forest) hardening.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\linewidth]{fig_partition_vs_sinh.png}
+\caption{Left: relative OSTZ occupation predicted by the correct
+partition-function result $e^{2\Delta w/kT}$ versus the incorrect
+naive form $2\sinh(\Delta w/kT)$ sometimes used in the literature, as
+a function of the mechanical bias $\Delta w/kT$. Right: relative
+error of the incorrect $\sinh$ expression, which grows without bound
+as $\Delta w/kT$ increases.}
+\label{si:fig:partition}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.8\linewidth]{fig_Taylor_comparison.png}
+\caption{\OSET\ linear back-stress hardening ($\tau\propto\rho$)
+versus conventional Taylor forest hardening
+($\tau\propto\sqrt{\rho}$), illustrated for Cu ($z=6$). Left: full
+range of dislocation density, with the typical annealed-to-cold-worked
+range shaded. Right: high-density regime, where the two laws diverge
+most strongly.}
+\label{si:fig:taylor}
+\end{figure}
+
+% =============================================================================
 \section{Validation against Padmanabhan et al.\ (1996)}
 \label{si:1996}
 
@@ -255,6 +318,7 @@ discussed in more detail below the table.
 Padmanabhan et al.\ (1996) parameter set and experiments reported in
 that series.}
 \label{si:tab:1996}
+\renewcommand{\arraystretch}{1.35}
 \begin{tabular}{p{4.3cm}p{4.3cm}c}
 \toprule
 Claim & \OSET\ prediction & Agreement\\
@@ -270,6 +334,7 @@ Threshold-stress scaling $\tau_0\propto L^{-1/2}$ & predicted ratio 2.0 (Al-33Cu
 True activation energy $Q\sim80$--$120$~kJ/mol & $90$--$120$~kJ/mol & $\le30\%$\\
 \bottomrule
 \end{tabular}
+\renewcommand{\arraystretch}{1}
 \end{table}
 
 \paragraph{Rate-equation numerical example.}
@@ -303,6 +368,7 @@ stress, Lorentzian dislocation density) published after the original
 \caption{Post-1996 independent literature validation of \OSET\ across
 material classes.}
 \label{si:tab:post1996}
+\renewcommand{\arraystretch}{1.35}
 \begin{tabular}{p{3.6cm}p{4.6cm}c}
 \toprule
 \OSET\ claim & Key quantitative evidence & Agreement\\
@@ -317,6 +383,7 @@ Peierls stress~\cite{S_nabarro1997} & Fe exact; Cu within $2\times$ & exact (Fe)
 Lorentzian dislocation density~\cite{S_vermeulen1995} & Al at $\rho=10^{13}$~m$^{-2}$: shape parameter $M=0.16<0.5$ & Consistent (Lorentzian regime)\\
 \bottomrule
 \end{tabular}
+\renewcommand{\arraystretch}{1}
 \end{table}
 
 Figure~\ref{si:fig:rate} consolidates the three rows of
@@ -333,7 +400,8 @@ Left: predicted-to-measured strain-rate ratio
 $\dot\gamma_\text{pred}/\dot\gamma_\text{exp}$ for the three independent
 literature compilations of Table~\ref{si:tab:post1996} (markers:
 geometric mean of the quoted range; bars: full quoted range; $n$ =
-number of systems in each compilation). Right: the Al-12Si worked
+number of systems in each compilation; the dotted vertical line marks
+perfect agreement, ratio $=1$). Right: the Al-12Si worked
 example below, plotted against the typical superplastic strain-rate
 window $10^{-3}$--$10^{-1}$~s$^{-1}$ (green band); the prediction
 $0.16$~s$^{-1}$ sits just above the upper edge of this window.}
@@ -475,54 +543,7 @@ homologous temperature ($r=0.00$). Ice (\#37--38) is the only large outlier: its
 fitted $\gamma_B$ exceeds the true ice grain-boundary energy
 ($\approx0.065$\,J\,m$^{-2}$), so the \OSET\ value is in fact closer to reality.
 
-% =============================================================================
-\section{Supplementary derivation figures}
-\label{si:derivfigs}
-
-The three figures below illustrate intermediate steps and sensitivity
-checks underlying the main-text derivations: the dependence of the
-Eshelby $S_{1313}$ component on inclusion aspect ratio and Poisson's
-ratio, the comparison between the \OSET\ linear (back-stress)
-hardening law and conventional Taylor ($\sqrt{\rho}$, forest)
-hardening, and the magnitude of the error introduced by approximating
-the correct OSTZ occupation factor with a naive $\sinh$ form.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.8\linewidth]{fig_S1313.png}
-\caption{Eshelby oblate-spheroid shear component $S_{1313}$ as a
-function of aspect ratio $\alpha=c/a$, for several values of
-Poisson's ratio $\nu$ spanning the range relevant to metals. The
-thin-disk limit ($S_{1313}\to1/2$) and the aspect ratio
-$\alpha=0.5$ used throughout this paper (giving $\beta_1=1-2S_{1313}$)
-are marked.}
-\label{si:fig:s1313}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.8\linewidth]{fig_Taylor_comparison.png}
-\caption{\OSET\ linear back-stress hardening ($\tau\propto\rho$)
-versus conventional Taylor forest hardening
-($\tau\propto\sqrt{\rho}$), illustrated for Cu ($z=6$). Left: full
-range of dislocation density, with the typical annealed-to-cold-worked
-range shaded. Right: high-density regime, where the two laws diverge
-most strongly.}
-\label{si:fig:taylor}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.8\linewidth]{fig_partition_vs_sinh.png}
-\caption{Left: relative OSTZ occupation predicted by the correct
-partition-function result $e^{2\Delta w/kT}$ versus the incorrect
-naive form $2\sinh(\Delta w/kT)$ sometimes used in the literature, as
-a function of the mechanical bias $\Delta w/kT$. Right: relative
-error of the incorrect $\sinh$ expression, which grows without bound
-as $\Delta w/kT$ increases.}
-\label{si:fig:partition}
-\end{figure}
-
+\clearpage
 % =============================================================================
 \bibliographystyle{elsarticle-num}
 \bibliography{OSET_SI_references}

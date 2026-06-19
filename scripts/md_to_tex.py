@@ -415,7 +415,7 @@ def extract_header(md_text):
 if __name__ == '__main__':
     # Legacy converter for the extended markdown monograph (reports/).
     # The journal manuscript is now maintained directly in
-    # manuscript/OSET_ActaMaterialia.tex (Elsevier elsarticle).
+    # manuscript/OSET_manuscript.tex (Elsevier elsarticle).
     SRC = 'd:/Work/Others/Padmanabhan/reports/OSET_manuscript.md'
     DST = 'd:/Work/Others/Padmanabhan/reports/OSET_manuscript.tex'
 
