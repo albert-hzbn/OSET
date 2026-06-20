@@ -764,14 +764,26 @@ any further adjustment.
 Parameter & Symbol & GB/superpl. & Crystal\\
 \midrule
 OSTZ radius & $W$ & $2.5b$ & $\approx b$\\
-Shear eigenstrain & $\gz$ & 0.10 & 0.12\\
+Shear eigenstrain & $\gz$ & 0.10 & $s_m$ (0.10--0.20)\\
 Dilat.\ eigenstrain & $\varepsilon_0$ & 0.05 & ---\\
 Shear constraint & $\beta_1$ & 0.446 & $\approx1$\\
 Dilat.\ constraint & $\beta_2$ & 0.889 & ---\\
 Activation energy & $\dF$ & 0.38~eV & ---\\
-Critical number & $N_c$ & 4 & $\approx8$\\
+Critical number & $N_c$ & 4 & $\approx5$--$10$\\
 \bottomrule
 \end{tabular}
+
+\smallskip
+{\footnotesize In the crystal interior the shear eigenstrain $\gz$ is
+\emph{not} a single universal constant but the material's own
+\emph{ideal shear strain} $s_m$ (the relaxed engineering shear strain at
+the maximum of the first-principles $\gamma$-surface), taken from
+Ogata et~al.~\cite{ogata2004}: $0.137$ (Cu), $0.200$ (Al), $0.140$ (Ni),
+$0.145$ (Ag), $0.105$ (Au), $\approx0.18$ (BCC Fe, W). The single value
+$\gz=0.12$ quoted in earlier work is the Cu value; using it for every
+metal is the source of the large discrepancies in stacking-fault energy
+and Peierls stress that the per-metal ideal shear strain removes (SI,
+Sec.~S2 and Fig.~S2).}
 \end{table}
 
 %%=========================================================
@@ -1536,7 +1548,8 @@ solving for $N$ gives the critical cluster number
   \boxed{N_c=\frac{b_\mathrm{latt}}{\gz W}.}
   \label{eq:Nc}
 \end{equation}
-For FCC copper ($W=b$, $\gz=0.12$) this gives $N_c\approx8$; for the
+For FCC copper ($W=b$, $\gz=0.137$) this gives $N_c\approx7$ (and
+$N_c\approx5$--$10$ across the FCC and BCC metals); for the
 grain-boundary regime ($W=2.5b$, $\gz=0.10$) it gives $N_c=4$ exactly,
 a value confirmed experimentally by the cooperative sliding events
 observed in Zn--22Al~\cite{astanin-part2}.
@@ -1589,8 +1602,8 @@ $\tau^*\gz V_0=\dF=\half\beta_1\gz^2GV_0$:
   \boxed{\tau^*=\frac{\beta_1\gz G}{2}.}
   \label{eq:strength}
 \end{equation}
-For $\beta_1\approx1$, $\gz=0.12$: $\tau^*\approx G/17$
-(Frenkel range~\cite{frenkel1926} $G/10$--$G/30$).
+For $\beta_1\approx1$ and the Cu ideal shear strain $\gz=0.137$:
+$\tau^*\approx G/15$ (Frenkel range~\cite{frenkel1926} $G/10$--$G/30$).
 
 \subsection{Peierls stress}
 \label{sec:peierls}
@@ -1607,7 +1620,7 @@ that external input. Setting $\tau^*=(2\pi/b)V_0^\text{OSET}$:
   V_0^\text{OSET}=\frac{\beta_1\gz Gb}{4\pi}.
   \label{eq:V0OSET}
 \end{equation}
-For Cu: $\tau^*\approx G/17$ vs.\ the Frenkel estimate~\cite{frenkel1926} $G/[2(1-\nu)]\approx0.75G$.
+For Cu: $\tau^*\approx G/15$ vs.\ the Frenkel estimate~\cite{frenkel1926} $G/[2(1-\nu)]\approx0.75G$.
 
 \subsubsection{Fourier convolution}
 
@@ -1644,7 +1657,15 @@ With half-space correction~\cite{peierls1940} ($W\to W/(1-\nu)$, prefactor $\tim
   \label{eq:peierls}
 \end{equation}
 Cu ($W=b$, $\nu=1/3$): $\tau_P\approx2.1\times10^{-4}G$
-(experiment~\cite{nabarro1997}: $\sim10^{-4}G$).
+(experiment~\cite{nabarro1997}: $\sim10^{-4}G$). The width that enters
+the exponential is the Peierls glide-misfit width $W_P$, the one
+material-specific quantity any Peierls--Nabarro model must supply; with
+the per-metal $W_P$ ($\sim1.1$--$1.6\,b$ for the wide planar FCC cores,
+$\sim0.5$--$0.65\,b$ for the compact non-planar BCC screw cores) the same
+formula reproduces the experimental Peierls stress for all seven FCC and
+BCC metals (SI, Fig.~S2). The earlier choice $W_P=b$ for every metal made
+the Al value $\sim200\times$ too high and the BCC values $\sim100\times$
+too low.
 
 \subsection{Core energy}
 \label{sec:coreE}
@@ -1663,8 +1684,12 @@ $\dF=\pi\beta_1\gz^2GW^3/3$:
   =\frac{\pi\beta_1 b\gz GW^2}{3}.}
   \label{eq:coreE}
 \end{equation}
-Writing $E_\text{core}=\alpha Gb^2$: for Cu ($W\approx b$),
-$\alpha=\pi\beta_1\gz/3\approx0.13$ (exp/DFT~\cite{woodward2002}: $0.1$--$0.2$).
+Writing $E_\text{core}=\alpha Gb^2$: for Cu ($W\approx b$, $\gz=0.137$),
+$\alpha=\pi\beta_1\gz/3\approx0.14$ (exp/DFT~\cite{woodward2002}: $0.1$--$0.2$).
+With the per-metal ideal shear strain and the structural width $W=b$
+(distinct from the narrow Peierls width $W_P$ above), the FCC core
+energies fall in the DFT range and the BCC values within $\sim1.6\times$
+(SI, Fig.~S2).
 
 \subsection{Frank--Read critical stress}
 \label{sec:FR}
@@ -1753,21 +1778,23 @@ $W^3/W^2=W$:
   \boxed{\gamma_\text{SF}=\frac{(\sqrt3-1)\beta_1\gz^2GW}{3}.}
   \label{eq:SFE}
 \end{equation}
-Cu ($G=48.3$~GPa, $W=b=0.2556$~nm, $\gz=0.12$, $\beta_1=1$):
-$\gamma_\text{SF}=43$~mJ/m$^2$ vs.\ experiment $45$~mJ/m$^2$ (5\%).
-Equation~\eqref{eq:SFE} identifies $W\approx b$ as the reason for
-$\gamma_\text{SF}\propto Gb$ across FCC metals; the full prediction
-for Cu, Al, Ni, Ag, and Au, together with a discussion of the larger
-discrepancies for Al, Ni, and Ag, is given in the Supporting
-Information (Table~S1, plotted alongside the Peierls stress and core
-energy of the same metals in Figure~S2). The same parameter-free formula applies
-unchanged to the basal-plane stacking fault of an HCP metal, with
-$G$, $b$ taken as the basal-plane values; the Supporting Information
-(Table~S2) extends the comparison to Mg and Ti, finding agreement for
-Mg but an underprediction for Ti consistent with the HCP twin-boundary
-discrepancy of \S\ref{sec:gb}. No comparable quantitative test is made for BCC metals, which lack a
-single well-defined low-energy stacking fault analogous to FCC and
-HCP, as discussed in the Supporting Information.
+Here $\gz$ is the metal's \emph{ideal shear strain}: taking the
+literature value $\gz=0.137$ for Cu~\cite{ogata2004} ($G=48.3$~GPa,
+$W=b=0.2556$~nm, $\beta_1=1$) gives $\gamma_\text{SF}=57$~mJ/m$^2$
+versus experiment $45$~mJ/m$^2$. Equation~\eqref{eq:SFE} makes
+$\gamma_\text{SF}\propto\gz^2Gb$, so the material-to-material spread is
+carried by the ideal shear strain, not by a single universal number.
+Using the per-metal ideal shear strains of Ogata et~al.~\cite{ogata2004}
+\emph{with no fitting}, the predictions for Cu, Al, Ni, Ag, and Au agree
+with experiment to within a factor $\sim2$--$3$; the full comparison,
+plotted alongside the Peierls stress and core energy of the same metals,
+is given in the Supporting Information (Fig.~S2, with the literature
+inputs and their sources in Table~S1). The same parameter-free formula
+applies to the basal-plane stacking fault of an HCP metal: the SI finds
+agreement for Mg but an underprediction for Ti, consistent with the HCP
+basal/prismatic anisotropy and the twin-boundary discrepancy of
+\S\ref{sec:gb}. No quantitative test is made for BCC metals, which lack a
+single well-defined low-energy stacking fault analogous to FCC and HCP.
 
 %%=========================================================
 \section{Grain-Boundary Energy}

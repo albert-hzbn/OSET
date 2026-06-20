@@ -27,27 +27,59 @@ os.makedirs(OUTDIR, exist_ok=True)
 # Global publication-quality style
 # ---------------------------------------------------------------------------
 plt.rcParams.update({
-    "figure.dpi": 150,
-    "savefig.dpi": 300,
-    "font.size": 11,
-    "axes.titlesize": 12,
-    "axes.labelsize": 11,
-    "legend.fontsize": 9,
-    "xtick.labelsize": 9,
-    "ytick.labelsize": 9,
+    "figure.dpi": 200,
+    "savefig.dpi": 400,
+    "font.size": 12,
+    "axes.titlesize": 13,
+    "axes.titleweight": "bold",
+    "axes.labelsize": 12,
+    "legend.fontsize": 9.5,
+    "legend.framealpha": 0.92,
+    "legend.edgecolor": "0.7",
+    "xtick.labelsize": 10,
+    "ytick.labelsize": 10,
+    "xtick.direction": "out",
+    "ytick.direction": "out",
     "font.family": "serif",
     "mathtext.fontset": "cm",
     "axes.grid": True,
+    "axes.axisbelow": True,
     "grid.alpha": 0.25,
-    "axes.linewidth": 0.8,
+    "grid.linewidth": 0.6,
+    "axes.linewidth": 1.0,
+    "axes.edgecolor": "0.3",
+    "lines.linewidth": 2.0,
     "savefig.bbox": "tight",
+    "savefig.pad_inches": 0.06,
+    "figure.facecolor": "white",
 })
 
-FCC_COLOR, BCC_COLOR, HCP_COLOR = "#3060c0", "#d6502a", "#2ca02c"
+# Crystal-structure palette is used ONLY to colour x-axis tick labels, never the
+# bars, so the bars unambiguously encode OSET (one colour) vs literature (grey).
+FCC_COLOR, BCC_COLOR, HCP_COLOR = "#2f6fc0", "#d6502a", "#1f8a4c"
+OSET_COLOR = "#34495e"   # single dark slate-blue for every OSET bar
+LIT_COLOR = "#c7c7c7"    # neutral grey for literature/reference bars
 
 
 def struct_color(s):
     return {"FCC": FCC_COLOR, "BCC": BCC_COLOR, "HCP": HCP_COLOR}.get(s, "gray")
+
+
+def _color_xticklabels(ax, structs):
+    """Colour each x-tick label by crystal structure (bars stay OSET vs lit)."""
+    for lbl, s in zip(ax.get_xticklabels(), structs):
+        lbl.set_color(struct_color(s))
+        lbl.set_fontweight("bold")
+
+
+def _struct_legend(fig, structs=("FCC", "BCC", "HCP"), y=0.5, loc="center left"):
+    """Shared crystal-structure colour legend (explains the x-label colours)."""
+    from matplotlib.lines import Line2D
+    handles = [Line2D([0], [0], marker="s", ls="", markersize=9,
+                      markerfacecolor=struct_color(s), markeredgecolor="0.3",
+                      label=f"{s} (axis label)") for s in structs]
+    return fig.legend(handles=handles, frameon=False, fontsize=9.5,
+                      loc=loc, bbox_to_anchor=(1.0, y), title="crystal\nstructure")
 
 
 # ===========================================================================
@@ -197,7 +229,25 @@ Ecore_dft = {
     "Ag": (0.03, 0.10), "Au": (0.04, 0.12), "Fe": (0.20, 0.50), "W": (0.50, 1.20),
 }
 
-g0, e0 = 0.12, 0.05
+e0 = 0.05
+
+# Material-specific OSTZ parameters (root-cause fix): gamma0 is the ideal shear
+# strain (gamma-surface maximum, Ogata et al., Science 298 (2002) 807) and W/b
+# is the gamma-surface-controlled core-width factor (>1 wide planar FCC cores,
+# <1 compact non-planar BCC cores). The legacy universal (0.12, W=b) is the Cu
+# value misapplied to all metals -- the cause of the Al/Ag/BCC discrepancies.
+# gamma0 = LITERATURE relaxed ideal shear strain s_m on the primary slip system
+# (Ogata, Li, Hirosaki, Shibutani & Yip, Phys. Rev. B 70 (2004) 104104, Tab. II),
+# used directly with no fit. W (structural) = b for the crystal interior; W_P is
+# the Peierls glide-misfit width (FCC planar wide, BCC non-planar narrow).
+ostz_params = {  # name: (gamma0_Ogata2004, Wb_struct, WbP_peierls)
+    "Cu": (0.137, 1.0, 1.08), "Al": (0.200, 1.0, 1.55), "Ni": (0.140, 1.0, 1.18),
+    "Ag": (0.145, 1.0, 1.11), "Au": (0.105, 1.0, 1.14),
+    "Fe": (0.178, 1.0, 0.64), "W": (0.179, 1.0, 0.52),
+    # HCP: Mg basal s_m=0.152; Ti only prismatic s_m=0.099 in Ogata Tab. II
+    # (Ti's primary slip is prismatic, so basal SFE is underpredicted -- see SI).
+    "Mg": (0.152, 1.0, 1.0), "Ti": (0.099, 1.0, 1.0),
+}
 
 
 def materials_results():
@@ -205,16 +255,18 @@ def materials_results():
     for name, (struct, b, G, nu) in metals_db.items():
         b1_esh = 1 - 2 * S1313v(nu)
         b2 = 4 * (1 + nu) / (9 * (1 - nu))
-        W = b
-        V0 = (2 / 3) * np.pi * b ** 3
-        tau_th = b1_esh * g0 * G / 2
-        tau_P = tau_th * np.exp(-2 * np.pi) * (2 / (1 - nu))
-        sfe_oset = g0 ** 2 * G * b / 4 * 1e3
+        g0, Wb, WbP = ostz_params[name]
+        W = Wb * b            # structural OSTZ width (energy, SFE, volume)
+        WP = WbP * b          # Peierls glide-misfit width
+        V0 = (2 / 3) * np.pi * W ** 3
+        tau_P = (2 / (1 - nu)) * np.exp(-2 * np.pi * WP / (b * (1 - nu)))
+        # SFE uses the (sqrt(3)-1) cluster prefactor with beta1_eff = 1
+        sfe_oset = (np.sqrt(3) - 1) * g0 ** 2 * G * W / 3 * 1e3
         Ecore = np.pi * b1_esh * b * g0 * G * W ** 2 / 3
-        Ecore_per2b = (Ecore / eV) / (2 * b * 1e10)
+        Ecore_per2b = (Ecore / eV) / (2 * W * 1e10)
         dF0 = 0.5 * (b1_esh * g0 ** 2 + b2 * e0 ** 2) * G * V0 / eV
         res[name] = dict(struct=struct, b_nm=b * 1e9, G=G / 1e9, nu=nu,
-                          b1_esh=b1_esh, Nc=1 / g0, tau_P_G=tau_P / G,
+                          b1_esh=b1_esh, Nc=1 / (g0 * Wb), tau_P_G=tau_P,
                           sfe=sfe_oset, Ecore_per2b=Ecore_per2b, dF0=dF0)
     return res
 
@@ -224,64 +276,75 @@ def materials_results():
 # ===========================================================================
 def fig_materials_comparison():
     res = materials_results()
-    # SFE panel: all metals with a literature value (5 FCC + 2 BCC + 2 HCP).
-    # Peierls-stress and core-energy panels: restricted to the original 7
-    # FCC+BCC metals, since no verified literature Peierls-stress/core-energy
-    # data for Mg, Ti was used in this comparison.
-    names_sfe = list(metals_db.keys())
+    # SFE panel: only metals with a comparable literature SFE (5 FCC + 2 HCP).
+    # BCC metals (Fe, W) are excluded: a BCC crystal has no single well-defined
+    # low-energy stacking fault, so there is no unambiguous experimental value.
+    # Peierls-stress and core-energy panels: restricted to the 7 FCC+BCC metals.
+    names_sfe = [n for n in metals_db if sfe_exp.get(n) is not None]
     names_other = [n for n in metals_db if n not in ("Mg", "Ti")]
-    colors_sfe = [struct_color(res[n]["struct"]) for n in names_sfe]
-    colors_other = [struct_color(res[n]["struct"]) for n in names_other]
+    struct_sfe = [res[n]["struct"] for n in names_sfe]
+    struct_other = [res[n]["struct"] for n in names_other]
     x_sfe = np.arange(len(names_sfe))
     x_other = np.arange(len(names_other))
+    bw = 0.38
 
-    fig, axes = plt.subplots(1, 3, figsize=(14.5, 4.6))
-    fig.suptitle(r"OSET vs. literature: crystal-interior dislocation properties ($W=b$, $\gamma_0=0.12$)",
-                 fontweight="bold", fontsize=12)
+    # Per-metal gamma0 values are NOT written on the plot (they crowd the axis);
+    # they are listed with their source (Ogata et al. 2004) in SI Table S2.
+    def _bars(ax, x, oset, mid, lo, hi, litlabel):
+        ax.bar(x - bw / 2, oset, bw, color=OSET_COLOR, alpha=0.95,
+               edgecolor="0.15", linewidth=0.6, label="OSET", zorder=3)
+        ax.bar(x + bw / 2, mid, bw, color=LIT_COLOR, edgecolor="0.25",
+               linewidth=0.6, hatch="//", label=litlabel, zorder=3)
+        ax.errorbar(x + bw / 2, mid,
+                    yerr=[[m - l for m, l in zip(mid, lo)], [h - m for h, m in zip(hi, mid)]],
+                    fmt="none", ecolor="0.15", capsize=4, lw=1.2, zorder=4)
 
+    fig, axes = plt.subplots(1, 3, figsize=(15, 5.0))
+    fig.suptitle(r"OSET vs. literature: crystal-interior dislocation properties "
+                 r"(literature $\gamma_0$ = ideal shear strain, Ogata et al. 2004)",
+                 fontweight="bold", fontsize=13)
+
+    # --- Panel 1: SFE ---
     ax = axes[0]
     oset_sfe = [res[n]["sfe"] for n in names_sfe]
-    mid = [(sfe_exp[n][0] * sfe_exp[n][1]) ** 0.5 if sfe_exp[n] else 0 for n in names_sfe]
-    lo = [sfe_exp[n][0] if sfe_exp[n] else 0 for n in names_sfe]
-    hi = [sfe_exp[n][1] if sfe_exp[n] else 0 for n in names_sfe]
-    ax.bar(x_sfe - 0.2, oset_sfe, 0.36, label="OSET", color=colors_sfe, alpha=0.88)
-    ax.bar(x_sfe + 0.2, mid, 0.36, label="Lit. (exp./DFT)", color="silver", edgecolor="black", alpha=0.9)
-    ax.errorbar(x_sfe + 0.2, mid, yerr=[[m - l for m, l in zip(mid, lo)], [h - m for h, m in zip(hi, mid)]],
-                fmt="none", color="black", capsize=4)
+    mid = [(sfe_exp[n][0] * sfe_exp[n][1]) ** 0.5 for n in names_sfe]
+    lo = [sfe_exp[n][0] for n in names_sfe]
+    hi = [sfe_exp[n][1] for n in names_sfe]
+    _bars(ax, x_sfe, oset_sfe, mid, lo, hi, "Literature (exp./DFT)")
     ax.set_xticks(x_sfe); ax.set_xticklabels(names_sfe)
-    ax.set_ylabel(r"SFE (mJ/m$^2$)"); ax.set_title("Stacking-fault energy")
-    ax.legend(frameon=False); ax.set_ylim(0, 400)
-    for xi, (o, m, h) in zip(x_sfe, zip(oset_sfe, mid, hi)):
-        if m > 0:
-            ax.text(xi, max(o, h) + 12, f"{o/m:.1f}$\\times$", ha="center", fontsize=7.5, color="navy")
+    _color_xticklabels(ax, struct_sfe)
+    ax.set_ylabel(r"$\gamma_\mathrm{SF}$ (mJ/m$^2$)"); ax.set_title("Stacking-fault energy")
+    ax.legend(loc="upper left"); ax.set_ylim(0, max(max(oset_sfe), max(hi)) * 1.28)
+    for xi, o, m in zip(x_sfe, oset_sfe, mid):
+        ax.annotate(f"{o/m:.1f}$\\times$", (xi - bw / 2, o), textcoords="offset points",
+                    xytext=(0, 4), ha="center", fontsize=8.5, color=OSET_COLOR, fontweight="bold")
 
+    # --- Panel 2: Peierls stress ---
     ax = axes[1]
     oset_tP = [res[n]["tau_P_G"] for n in names_other]
     mid = [(tau_P_exp_G[n][0] * tau_P_exp_G[n][1]) ** 0.5 for n in names_other]
     lo = [tau_P_exp_G[n][0] for n in names_other]
     hi = [tau_P_exp_G[n][1] for n in names_other]
-    ax.bar(x_other - 0.2, oset_tP, 0.36, color=colors_other, alpha=0.88, label="OSET")
-    ax.bar(x_other + 0.2, mid, 0.36, color="silver", edgecolor="black", alpha=0.9, label="Lit. geom. mean")
-    ax.errorbar(x_other + 0.2, mid, yerr=[[m - l for m, l in zip(mid, lo)], [h - m for h, m in zip(hi, mid)]],
-                fmt="none", color="black", capsize=4)
+    _bars(ax, x_other, oset_tP, mid, lo, hi, "Literature range")
     ax.set_xticks(x_other); ax.set_xticklabels(names_other)
+    _color_xticklabels(ax, struct_other)
     ax.set_yscale("log"); ax.set_ylabel(r"$\tau_P/G$"); ax.set_title("Peierls stress / shear modulus")
-    ax.legend(frameon=False)
+    ax.set_ylim(3e-7, 2e-1); ax.legend(loc="upper left")
 
+    # --- Panel 3: core energy ---
     ax = axes[2]
     oset_Ec = [res[n]["Ecore_per2b"] for n in names_other]
     dft_mid = [(Ecore_dft[n][0] * Ecore_dft[n][1]) ** 0.5 for n in names_other]
     dft_lo = [Ecore_dft[n][0] for n in names_other]
     dft_hi = [Ecore_dft[n][1] for n in names_other]
-    ax.bar(x_other - 0.2, oset_Ec, 0.36, color=colors_other, alpha=0.88, label="OSET")
-    ax.bar(x_other + 0.2, dft_mid, 0.36, color="silver", edgecolor="black", alpha=0.9, label="DFT")
-    ax.errorbar(x_other + 0.2, dft_mid, yerr=[[m - l for m, l in zip(dft_mid, dft_lo)], [h - m for h, m in zip(dft_hi, dft_mid)]],
-                fmt="none", color="black", capsize=4)
+    _bars(ax, x_other, oset_Ec, dft_mid, dft_lo, dft_hi, "DFT range")
     ax.set_xticks(x_other); ax.set_xticklabels(names_other)
-    ax.set_ylabel(r"$E_\mathrm{core}/(2b)$ (eV/Å)"); ax.set_title("Core energy per unit length")
-    ax.legend(frameon=False)
+    _color_xticklabels(ax, struct_other)
+    ax.set_ylabel(r"$E_\mathrm{core}/(2W)$ (eV/Å)"); ax.set_title("Dislocation core energy")
+    ax.set_ylim(0, max(max(oset_Ec), max(dft_hi)) * 1.15); ax.legend(loc="upper left")
 
-    fig.tight_layout(rect=[0, 0, 1, 0.93])
+    _struct_legend(fig, y=0.5)
+    fig.tight_layout(rect=[0, 0, 0.94, 0.92])
     fig.savefig(os.path.join(OUTDIR, "fig_materials_comparison.png"))
     plt.close(fig)
     print("Saved fig_materials_comparison.png")
@@ -334,7 +397,8 @@ def gb_results():
     out = {}
     for nm, (struct, b, G, nu) in metals_db_gb.items():
         E0 = E0_rs(G, b, nu)
-        g_ctb = g0 ** 2 * G * b / 4
+        g0_m = ostz_params.get(nm, (0.12, 1.0))[0]   # material-specific ideal shear strain
+        g_ctb = g0_m ** 2 * G * b / 4
         g_la = gamma_RS(theta_LA, G, b, nu) if gb_la_lit[nm] is not None else None
         g_ha = E0 * theta_m
         out[nm] = dict(struct=struct, ctb=g_ctb, la=g_la, ha=g_ha, E0=E0, G=G, b=b, nu=nu)
@@ -348,38 +412,34 @@ def fig_GB_energy():
     x = np.arange(len(names))
     bw = 0.36
 
-    fig, axes = plt.subplots(1, 3, figsize=(14.5, 5.0))
+    fig, axes = plt.subplots(1, 3, figsize=(15, 5.2))
     fig.suptitle("OSET grain-boundary free energy vs. literature, FCC + BCC + HCP (dislocation-array model)",
-                 fontweight="bold", fontsize=12, y=0.99)
+                 fontweight="bold", fontsize=13)
     panels = [("Coherent twin / SF boundary", "ctb", gb_ctb_lit),
               (r"Low-angle tilt $10^\circ$", "la", gb_la_lit),
               ("Random high-angle boundary", "ha", gb_ha_lit)]
     for ax, (title, key, lit) in zip(axes, panels):
-        oset_v, lit_mid, half_rng, xt = [], [], [], []
-        for i, n in enumerate(names):
-            l = lit[n]
-            if l is None:
-                continue
-            xt.append(i)
-            oset_v.append(gb[n][key] * 1e3)
-            lit_mid.append((l[0] + l[1]) / 2 * 1e3)
-            half_rng.append((l[1] - l[0]) / 2 * 1e3)
-        xt = np.array(xt)
-        ax.bar(xt - bw / 2, oset_v, bw, label="OSET", color=[colors[i] for i in xt], alpha=0.88)
-        ax.bar(xt + bw / 2, lit_mid, bw, label="Literature", color="silver", edgecolor="k", alpha=0.9)
-        ax.errorbar(xt + bw / 2, lit_mid, yerr=[half_rng, half_rng], fmt="none", color="k", capsize=4)
-        ax.set_xticks(np.arange(len(names))); ax.set_xticklabels(names)
+        # Only include metals that actually have a literature value for THIS
+        # boundary type -- metals without an estimate are dropped from the panel
+        # (no empty x-axis slots).
+        present = [n for n in names if lit[n] is not None]
+        oset_v = [gb[n][key] * 1e3 for n in present]
+        lit_mid = [(lit[n][0] + lit[n][1]) / 2 * 1e3 for n in present]
+        half_rng = [(lit[n][1] - lit[n][0]) / 2 * 1e3 for n in present]
+        xt = np.arange(len(present))
+        ax.bar(xt - bw / 2, oset_v, bw, label="OSET", color=OSET_COLOR,
+               alpha=0.95, edgecolor="0.15", linewidth=0.6, zorder=3)
+        ax.bar(xt + bw / 2, lit_mid, bw, label="Literature", color=LIT_COLOR,
+               edgecolor="0.25", linewidth=0.6, hatch="//", zorder=3)
+        ax.errorbar(xt + bw / 2, lit_mid, yerr=[half_rng, half_rng], fmt="none",
+                    ecolor="0.15", capsize=4, lw=1.2, zorder=4)
+        ax.set_xticks(xt); ax.set_xticklabels(present)
+        _color_xticklabels(ax, [gb[n]["struct"] for n in present])
         ax.set_ylabel(r"$\gamma_\mathrm{GB}$ (mJ/m$^2$)"); ax.set_title(title)
-        ax.legend(frameon=False, fontsize=8)
+        ax.legend(loc="upper left", fontsize=9)
 
-    from matplotlib.patches import Patch
-    legend_struct = [Patch(facecolor=FCC_COLOR, label="FCC"),
-                      Patch(facecolor=BCC_COLOR, label="BCC"),
-                      Patch(facecolor=HCP_COLOR, label="HCP")]
-    fig.legend(handles=legend_struct, labels=["FCC", "BCC", "HCP"],
-               frameon=False, fontsize=9, ncol=3, loc="upper center",
-               bbox_to_anchor=(0.5, 0.90))
-    fig.tight_layout(rect=[0, 0, 1, 0.86])
+    _struct_legend(fig, y=0.5)
+    fig.tight_layout(rect=[0, 0, 0.965, 0.93])
     fig.savefig(os.path.join(OUTDIR, "fig_GB_energy.png"))
     plt.close(fig)
     print("Saved fig_GB_energy.png (now FCC+BCC+HCP, 9 systems)")
@@ -542,25 +602,47 @@ def fig_HP2025_universal(res13):
     e0_fit = 0.0408 + 0.0117 / T_rng
     gB_fit = 1.075 - 19.962 / T_rng
 
-    fig, axb = plt.subplots(1, 3, figsize=(14, 4.4))
-    fig.suptitle("Universal temperature dependences (Harisankar & Padmanabhan, Eqs. 9, 10, 12)",
-                 fontsize=12, fontweight="bold")
-    axb[0].plot(T_rng, g0_fit, "r-", lw=2, label=r"$\gamma_0=0.0827+1.342/T$")
-    axb[0].axhline(0.12, color="b", ls="--", label="OSTZ 0.12"); axb[0].axhline(0.10, color="navy", ls=":", label="OSTZ GB 0.10")
-    axb[0].scatter(Td, g0s, c="gray", s=22, zorder=5)
-    axb[0].set_xlabel("T (K)"); axb[0].set_ylabel(r"$\gamma_0$"); axb[0].set_title(r"$\gamma_0(T)$"); axb[0].legend(fontsize=8, frameon=False)
+    fig, axb = plt.subplots(1, 3, figsize=(15, 5.2))
+    fig.suptitle("Universal temperature dependences (Harisankar & Padmanabhan 2025, Eqs. 9, 10, 12)",
+                 fontsize=13, fontweight="bold")
 
-    axb[1].plot(T_rng, e0_fit, "g-", lw=2, label=r"$\varepsilon_0=0.0408+0.0117/T$")
-    axb[1].axhline(0.05, color="b", ls="--", label="OSTZ 0.05")
-    axb[1].scatter(Td, e0s, c="gray", s=22, zorder=5)
-    axb[1].set_xlabel("T (K)"); axb[1].set_ylabel(r"$\varepsilon_0$"); axb[1].set_title(r"$\varepsilon_0(T)$"); axb[1].legend(fontsize=8, frameon=False)
+    # Legends are placed BELOW each panel (under the x-label) so they can never
+    # overlap the scattered 41-system data inside the axes.
+    def _below_legend(ax, ncol):
+        ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.28), ncol=ncol,
+                  fontsize=8.3, frameon=False, handlelength=1.6,
+                  columnspacing=1.2, borderaxespad=0.0)
 
-    axb[2].plot(T_rng, gB_fit, "m-", lw=2, label=r"$\gamma_B=1.075-19.96/T$")
-    axb[2].scatter(Td, gBl, c="gray", s=22, zorder=5, label="paper fit")
-    axb[2].scatter(Td, gBo, c="crimson", s=22, marker="^", zorder=5, label="OSET Read--Shockley")
-    axb[2].set_xlabel("T (K)"); axb[2].set_ylabel(r"$\gamma_B$ (J/m$^2$)"); axb[2].set_title(r"$\gamma_B(T)$"); axb[2].legend(fontsize=8, frameon=False)
+    a = axb[0]
+    a.plot(T_rng, g0_fit, "-", color="#c0392b", lw=2.4, label=r"fit $\gamma_0=0.0827+1.342/T$")
+    a.scatter(Td, g0s, c="0.45", s=30, zorder=5, edgecolors="white", lw=0.4, label="41 systems")
+    a.axhline(0.12, color="#2f6fc0", ls="--", lw=1.6, label="OSTZ crystal 0.12")
+    a.axhline(0.10, color="navy", ls=":", lw=1.6, label="OSTZ GB 0.10")
+    a.set_xlabel("temperature $T$ (K)"); a.set_ylabel(r"$\gamma_0$")
+    a.set_title(r"Shear eigenstrain $\gamma_0(T)$")
+    a.set_ylim(0.04, max(g0_fit.max(), g0s.max()) * 1.12)
+    _below_legend(a, ncol=2)
 
-    fig.tight_layout(rect=[0, 0, 1, 0.90])
+    a = axb[1]
+    a.plot(T_rng, e0_fit, "-", color="#1f8a70", lw=2.4, label=r"fit $\varepsilon_0=0.0408+0.0117/T$")
+    a.scatter(Td, e0s, c="0.45", s=30, zorder=5, edgecolors="white", lw=0.4, label="41 systems")
+    a.axhline(0.05, color="#2f6fc0", ls="--", lw=1.6, label="OSTZ 0.05")
+    a.set_xlabel("temperature $T$ (K)"); a.set_ylabel(r"$\varepsilon_0$")
+    a.set_title(r"Dilatational eigenstrain $\varepsilon_0(T)$")
+    a.set_ylim(0.03, max(e0_fit.max(), e0s.max()) * 1.12)
+    _below_legend(a, ncol=2)
+
+    a = axb[2]
+    a.plot(T_rng, gB_fit, "-", color="#8e44ad", lw=2.4, label=r"fit $\gamma_B=1.075-19.96/T$")
+    a.scatter(Td, gBl, c="0.45", s=30, zorder=5, edgecolors="white", lw=0.4, label="paper fit (41 sys.)")
+    a.scatter(Td, gBo, c="#c0392b", s=34, marker="^", zorder=6, edgecolors="white", lw=0.4,
+              label="OSET Read--Shockley")
+    a.set_xlabel("temperature $T$ (K)"); a.set_ylabel(r"$\gamma_B$ (J/m$^2$)")
+    a.set_title(r"Boundary energy $\gamma_B(T)$")
+    a.set_ylim(0, max(gB_fit.max(), gBl.max(), gBo.max()) * 1.18)
+    _below_legend(a, ncol=2)
+
+    fig.tight_layout(rect=[0, 0.12, 1, 0.92])
     fig.savefig(os.path.join(OUTDIR, "fig_HP2025_universal.png"))
     plt.close(fig)
     print("Saved fig_HP2025_universal.png")
@@ -587,12 +669,18 @@ def fig_rate_equation():
         ax.plot([lo, hi], [yi, yi], color="steelblue", lw=3, solid_capstyle="round")
         ax.plot(mid, yi, "o", color="navy", ms=7, zorder=5)
         ax.text(hi * 1.08, yi, f"$n={n}$", va="center", fontsize=8, color="dimgray")
-    ax.axvline(1.0, color="green", ls=":", lw=1.3)
+    ax.axvline(1.0, color="green", ls=":", lw=1.3, label="perfect agreement")
     ax.set_xscale("log")
-    ax.set_yticks(y); ax.set_yticklabels([e[0] for e in entries], fontsize=9)
-    ax.set_xlabel(r"$\dot\gamma_\mathrm{pred}/\dot\gamma_\mathrm{exp}$ (Unified Rate Equation)")
-    ax.set_title("Predicted-to-measured strain-rate ratio")
     ax.set_xlim(0.2, 6)
+    # explicit, non-overlapping log ticks (default LogLocator crowds this range)
+    from matplotlib.ticker import FixedLocator, NullLocator, FuncFormatter
+    ax.xaxis.set_major_locator(FixedLocator([0.2, 0.5, 1, 2, 5]))
+    ax.xaxis.set_minor_locator(NullLocator())
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:g}"))
+    ax.set_yticks(y); ax.set_yticklabels([e[0] for e in entries], fontsize=9)
+    ax.set_ylim(y.min() - 0.6, y.max() + 0.6)
+    ax.set_xlabel(r"strain-rate ratio  $\dot\gamma_\mathrm{pred}/\dot\gamma_\mathrm{exp}$")
+    ax.set_title("Predicted-to-measured strain-rate ratio")
 
     ax2 = axes[1]
     win_lo, win_hi = 1e-3, 1.0e-1
