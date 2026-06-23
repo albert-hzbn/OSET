@@ -90,109 +90,124 @@ are marked.}
 \label{si:sfe}
 
 Eq.~(main, stacking-fault energy) gives
-$\gamma_\text{SF}=(\sqrt3-1)\beta_1\g^2GW/3$ with no adjustable
-parameters once $\g=0.12$, $W=b$, and $\beta_1^\text{eff}=1$ are fixed.
-Table~\ref{si:tab:sfe} gives the resulting prediction for five FCC
-metals alongside the experimental stacking-fault energy. Agreement is
-within $5\%$ for Cu; the larger discrepancies for Al, Ni, and Ag are
-discussed in the main text (Discussion section) and are attributed,
-respectively, to Al's anomalous near-free-electron screening and to
-the increasing role of $d$-electron bonding contributions not captured
-by the purely elastic \OSTZ\ eigenstrain.
+$\gamma_\text{SF}=(\sqrt3-1)\beta_1\g^2GW/3$. The shear eigenstrain
+$\g$ is the \emph{ideal (intrinsic) shear strain} of the material, that
+is, the relaxed engineering shear strain $s_m$ at the maximum of the
+first-principles shear stress--strain curve on the primary slip system.
+We take $\g$ directly from the DFT compilation of Ogata
+et~al.~\cite{S_ogata2004} (their Table~II), an independent source, with
+no fitting. An earlier version of this table instead fixed $\g=0.12$
+(the Cu value) for every metal; that single universal constant is the
+origin of the former large Al, Ni and Ag discrepancies. With the
+literature $\g$ and $W=b$ (and $\beta_1^\text{eff}=1$) the stacking-fault
+energy carries no adjustable parameter and reproduces experiment to
+within a factor of about $2$ to $3$ (Table~\ref{si:tab:sfe}). We do not
+tune $\g$ to improve the agreement. The residual scatter (Ag high, Al
+low) reflects a known limitation of the isotropic-elastic scaling
+$\gamma_\text{SF}\propto\g^2Gb$, which captures only part of the true
+spread: the measured Al/Ag SFE ratio (about $10$) exceeds what $\g^2$
+alone (about $1.9$) can supply, with the missing factor residing in the
+anisotropic $\gamma$-surface shape beyond the single-eigenstrain OSTZ.
+
+The numerical comparison itself, $\gamma_\text{SF}^\text{OSET}$ versus
+the experimental/DFT value for every metal, is shown in the left
+panel of Figure~\ref{si:fig:materials}, so we do not repeat it as a table.
+Table~\ref{si:tab:sfe} instead lists only the \emph{literature input
+values} that enter the prediction (the ideal shear strain $\g$) together
+with the comparison target and its source, so that every number used is
+traceable.
 
 \begin{table}[htbp]
 \centering
-\caption{Stacking-fault energy: \OSET\ prediction (no free parameters)
-versus experiment, for five FCC metals.}
+\caption{Literature inputs and comparison targets for the
+crystal-interior predictions of Figure~\ref{si:fig:materials}. The OSTZ
+eigenstrain $\g$ is the relaxed ideal shear strain $s_m$ on the primary
+slip system, taken directly (no fitting) from Ogata
+et~al.~2004~\cite{S_ogata2004}, Table~II. The stacking-fault energy
+target is the measured/DFT value with its source; $G$, $b$, $\nu$ are
+the same handbook values used throughout. BCC metals have no single
+well-defined stacking fault, so no SFE target is assigned.}
 \label{si:tab:sfe}
-\begin{tabular}{lccccc}
+\begin{tabular}{llccc l}
 \toprule
-Metal & $G$ (GPa) & $b$ (nm) & $\gamma_\text{SF}^\text{OSET}$ (mJ/m$^2$)
-  & $\gamma_\text{SF}^\text{exp}$ (mJ/m$^2$) & Agreement\\
+Metal & Struct. & Slip system & $\g$ (Ogata 2004) & $\gamma_\text{SF}$ target (mJ/m$^2$) & Source \\
 \midrule
-Cu & 48.3 & 0.256 & 43 & 45  & 5\%\\
-Al & 26.2 & 0.286 & 26 & 166 & $6.4\times$\\
-Ni & 76.0 & 0.249 & 67 & 125 & $1.9\times$\\
-Ag & 30.3 & 0.289 & 31 & 16  & $1.9\times$\\
-Au & 27.0 & 0.288 & 28 & 32  & 13\%\\
+Cu & FCC & $\{111\}\langle112\rangle$ & 0.137 & 45  & \cite{S_gallagher1970}\\
+Al & FCC & $\{111\}\langle112\rangle$ & 0.200 & 166 & \cite{S_gallagher1970}\\
+Ni & FCC & $\{111\}\langle112\rangle$ & 0.140 & 125 & \cite{S_gallagher1970}\\
+Ag & FCC & $\{111\}\langle112\rangle$ & 0.145 & 16  & \cite{S_gallagher1970}\\
+Au & FCC & $\{111\}\langle112\rangle$ & 0.105 & 32  & \cite{S_gallagher1970}\\
+Mg & HCP & basal $\{0001\}$           & 0.152 & 14--78 (DFT/exp.) & \cite{S_wang2014mg}\\
+Ti & HCP & prismatic $\{1\bar100\}$   & 0.099 & 259--327 (basal, DFT) & \cite{S_yu2016ti}\\
+Fe & BCC & $\{110\}\langle111\rangle$ & 0.178 & no single fault & n/a\\
+W  & BCC & $\{110\}\langle111\rangle$ & 0.179 & no single fault & n/a\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\paragraph{Extension to HCP basal-plane stacking faults.}
-The basal-plane stacking fault (I1/I2-type) of an HCP metal is the
-direct structural analogue of the FCC stacking fault, and the same
-parameter-free formula applies with $G$, $b$ taken as the basal-plane
-shear modulus and lattice translation vector. Table~\ref{si:tab:sfehcp}
-extends the comparison to Mg and Ti, using the identical $G$, $b$,
-$\nu$ values already used for the grain-boundary verification of
-\S\ref{si:gb}. For Mg, the DFT-computed I1 fault energy is
-$14.4$~mJ/m$^2$~\cite{S_wang2014mg}, while experimental estimates lie
-substantially higher, $50$--$78$~mJ/m$^2$~\cite{S_wang2014mg}; this
-large DFT-versus-experiment spread is itself a recognised difficulty
-in the HCP stacking-fault literature, not an artefact of the present
-comparison. For Ti, the basal I2 fault energy is cross-validated
-across five independent first-principles studies compiled
-in~\cite{S_yu2016ti} at $259$--$327$~mJ/m$^2$.
-
-\begin{table}[htbp]
-\centering
-\caption{Basal-plane stacking-fault energy: \OSET\ prediction (no free
-parameters, identical formula and $\g=0.12$ as Table~\ref{si:tab:sfe})
-versus literature, for two HCP metals.}
-\label{si:tab:sfehcp}
-\begin{tabular}{lccccc}
-\toprule
-Metal & $G$ (GPa) & $b$ (nm) & $\gamma_\text{SF}^\text{OSET}$ (mJ/m$^2$)
-  & $\gamma_\text{SF}^\text{lit}$ (mJ/m$^2$) & Agreement\\
-\midrule
-Mg & 17.0 & 0.320 & 20 & 14--78 (DFT--exp.) & within range\\
-Ti & 41.4 & 0.295 & 44 & 259--327 (DFT) & $5.9$--$7.4\times$\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The Mg prediction falls inside the wide literature range, close to
-the DFT value; the Ti prediction underpredicts the literature value
-by a factor consistent with the twin-boundary discrepancy already
-noted in \S\ref{si:gb}, reinforcing the same diagnosis: the isotropic
-oblate-spheroid approximation is less accurate for HCP basal-plane
-shear than for cubic-metal stacking faults.
+\paragraph{HCP basal-plane stacking faults.}
+The basal stacking fault (I1/I2-type) of an HCP metal is the direct
+structural analogue of the FCC fault, and the same parameter-free
+formula applies. For Mg, using its \emph{basal} ideal shear strain
+($s_m=0.152$) OSET gives $31$~mJ/m$^2$, inside the wide literature
+range ($14.4$~mJ/m$^2$ DFT to $50$--$78$~mJ/m$^2$
+experiment~\cite{S_wang2014mg}; this large DFT-versus-experiment spread
+is itself a recognised difficulty for HCP basal faults). For Ti the
+comparison is intrinsically mismatched: Ogata et~al.\ tabulate only the
+\emph{prismatic} ideal shear strain ($s_m=0.099$, Ti's actual easy-slip
+system), whereas the cross-validated literature value~\cite{S_yu2016ti}
+is the \emph{basal} I2 fault ($259$--$327$~mJ/m$^2$). Using the
+prismatic $\g$, OSET gives $29$~mJ/m$^2$ and underpredicts the basal
+fault by about $9\times$. This follows from the HCP basal/prismatic
+$\gamma$-surface anisotropy, which the isotropic oblate-spheroid
+approximation cannot represent.
 
 \paragraph{BCC metals: no comparable quantitative test.}
 Unlike FCC and HCP, a BCC crystal has no single, well-defined
-low-energy stacking fault to compare against: the relevant literature
+low-energy stacking fault to compare against. The relevant literature
 quantity is instead a \emph{generalized planar fault energy} (the
 energy along the full $\langle111\rangle$ displacement path on the
 $\{110\}$ or $\{112\}$ plane), whose reported value is sensitive to
 the choice of plane, the exchange-correlation functional, and the
 interatomic potential used, with different DFT studies disagreeing
-by a factor of 2 or more for the same metal. \OSET\ still yields a
-parameter-free prediction for Fe and W (Table~\ref{si:tab:sfe},
-Figure~\ref{si:fig:materials} -- $73$ and $159$~mJ/m$^2$
-respectively), but, given the absence of a literature quantity that
-is unambiguously the same physical observable, no quantitative
-agreement claim is made for BCC metals in this comparison; the
-existing Peierls-stress and grain-boundary verifications
-(\S\ref{si:gb}) remain the relevant BCC tests in this paper.
+by a factor of 2 or more for the same metal. Because there is no
+literature quantity that is unambiguously the same physical observable,
+\textbf{we do not report a BCC stacking-fault energy} and make no SFE
+agreement claim for BCC metals; the Peierls-stress, core-energy, and
+grain-boundary verifications (\S\ref{si:gb} and the main-text crystal-
+interior table) remain the relevant BCC tests in this paper.
 
-Figure~\ref{si:fig:materials} extends the comparison to the Peierls
-stress and the dislocation core energy, computed with the same
-parameter-free OSTZ inputs, against the original five FCC and two BCC
-metals (Mg and Ti are not included in these two panels, since no
-verified literature Peierls-stress or core-energy data for HCP metals
-was used in this study).
+The middle and right panels of Figure~\ref{si:fig:materials} extend the
+comparison to the Peierls stress and the dislocation core energy,
+computed with the same literature $\g$ (Mg and Ti are not included in
+these two panels, as no verified Peierls/core-energy data for HCP metals
+was used here). The Peierls glide-misfit width $W_P$ is the one
+material-specific width supplied (as in any Peierls--Nabarro model):
+$W_P/b\sim1.1$--$1.6$ for the wide planar FCC cores and $\sim0.5$--$0.65$
+for the compact non-planar BCC screw cores; the structural width that
+sets the core energy and OSTZ volume is $W=b$ throughout.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{fig_materials_comparison.png}
-\caption{\OSET\ predictions (crystal interior, $W=b$, $\g=0.12$)
-versus literature for the stacking-fault energy (now including two
-HCP metals), the Peierls stress (normalised by $G$), and the
-dislocation core energy per unit length (five FCC and two BCC
-metals). Error bars on the literature values span the quoted
-experimental/DFT range; Fe and W have no literature stacking-fault
-bar for the reason given in the text.}
+\caption{\OSET\ crystal-interior predictions versus literature, using the
+literature ideal shear strain $\g$ (Ogata et~al.~2004~\cite{S_ogata2004})
+with no fitting. \textbf{Left:} stacking-fault energy (FCC + two HCP
+metals; experimental/DFT targets from~\cite{S_gallagher1970,S_wang2014mg,S_yu2016ti},
+$\times$-labels give the OSET/target ratio). \textbf{Middle:} Peierls
+stress normalised by $G$, with the experimental band from low-temperature
+CRSS / kink-pair analysis~\cite{S_caillard2003}. \textbf{Right:}
+dislocation core energy per unit length, against the DFT range
+(\cite{S_frederiksen2003} for BCC). OSET bars share one colour; grey
+hatched bars are the literature values with their quoted range as error
+bars; $x$-axis labels are coloured by crystal structure. BCC metals carry
+no stacking-fault bar (no single well-defined fault). Ti is the one large
+outlier in the SFE panel because Ogata et~al.\ tabulate only its
+\emph{prismatic} ideal shear strain ($s_m=0.099$) whereas the literature
+target is the \emph{basal} fault; this basal/prismatic mismatch (not a
+free parameter) is why OSET underpredicts the Ti basal SFE $\sim9\times$
+(see text). The per-metal literature $\g$ inputs are listed in
+Table~\ref{si:tab:sfe}.}
 \label{si:fig:materials}
 \end{figure}
 
@@ -204,67 +219,46 @@ The main text (Grain-Boundary Energy section) derives two distinct
 grain-boundary objects from \OSTZ\ mechanics: a coherent twin/fault
 boundary, quadratic in the eigenstrain, and an incoherent low-/high-angle
 boundary, linear in $b$ through the Read--Shockley dislocation-array
-law (Eq.~(main, Read--Shockley)). Table~\ref{si:tab:gb} extends the
-verification of both predictions from the five FCC and two BCC metals
-considered in the main text to two hexagonal close-packed (HCP)
-metals, Mg and Ti, using the isotropic-elasticity approximation
-throughout ($G$, $\nu$ taken as the polycrystalline averages for each
-metal).
-
-\begin{table}[htbp]
-\centering
-\caption{Grain-boundary free energy: \OSET\ Read--Shockley/coherent-boundary
-predictions versus literature, extended to HCP metals.
-CTB = coherent twin/fault boundary; LA = low-angle ($10^\circ$) tilt
-boundary; HA = random high-angle boundary. Literature ranges for Mg
-and Ti are compiled from published DFT and MD twin-boundary and
-grain-boundary energy studies for hexagonal metals; LA data are
-not available for HCP metals at comparable resolution and are omitted.}
-\label{si:tab:gb}
-\begin{tabular}{lccccc}
-\toprule
-Metal & Struct.\ & $\gamma_\text{CTB}$ OSET & $\gamma_\text{CTB}$ lit.\ & $\gamma_\text{HA}$ OSET & $\gamma_\text{HA}$ lit.\\
- & & (mJ/m$^2$) & (mJ/m$^2$) & (mJ/m$^2$) & (mJ/m$^2$)\\
-\midrule
-Cu & FCC & 44 & 41--50   & 392  & 500--900\\
-Al & FCC & 27 & 130--175 & 239  & 300--600\\
-Ni & FCC & 68 & 110--140 & 545  & 700--1100\\
-Ag & FCC & 31 & 13--20   & 288  & 350--650\\
-Au & FCC & 28 & 28--36   & 290  & 350--650\\
-Fe & BCC & --- & --- & 598 & 800--1200\\
-W  & BCC & --- & --- & 1277 & 1000--2000\\
-Mg & HCP & 20 & 110--125 & 160 & 205--584\\
-Ti & HCP & 44 & 100--300 & 386 & 700--1000\\
-\bottomrule
-\end{tabular}
-\end{table}
+law (Eq.~(main, Read--Shockley)). The full comparison, covering coherent
+twin/fault (CTB), low-angle ($10^\circ$) tilt (LA), and random
+high-angle (HA) boundaries, is shown in Figure~\ref{si:fig:gb} for
+nine metals spanning FCC, BCC, and HCP, so we do not also tabulate it.
+The CTB column uses the literature ideal shear strain $\g$ of
+Table~\ref{si:tab:sfe} in $\gamma_\text{CTB}=\g^2Gb/4$; the LA and HA
+predictions use the Read--Shockley line energy $E_0=Gb/[4\pi(1-\nu)]$
+with $G$, $\nu$ the polycrystalline averages. The literature reference
+ranges are taken from the FCC grain-boundary energy
+survey~\cite{S_olmsted2009}, the twin- and grain-boundary compilation of
+Murr~\cite{S_murr1975}, and, for HCP metals, the DFT/MD twin-boundary
+values of~\cite{S_wang2014mg,S_yu2016ti}; each metal is only plotted in a
+panel where such a reference value exists.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{fig_GB_energy.png}
 \caption{Grain-boundary free energy from the OSET dislocation-array
-model versus literature, now spanning FCC, BCC, and HCP crystal
-systems (9 metals total). Bars: OSET prediction (coloured by crystal
-structure) vs.\ literature range (silver, error bars span the quoted
-range). Coherent twin/fault boundaries and random high-angle
-boundaries are shown for all nine metals; the low-angle tilt
-comparison is restricted to the seven cubic metals for which a
-dedicated literature compilation exists.}
+model versus literature, spanning FCC, BCC, and HCP crystal systems.
+OSET bars share one colour; grey hatched bars are the literature ranges
+(error bars span the quoted range); $x$-axis labels are coloured by
+crystal structure. Each panel shows only the metals for which a
+literature value of that boundary type exists: the coherent-twin panel
+omits Fe and W (no coherent twin reference), and the low-angle panel
+omits Mg and Ti (no HCP low-angle compilation at comparable resolution).
+Reference ranges from~\cite{S_olmsted2009,S_murr1975,S_wang2014mg,S_yu2016ti}.}
 \label{si:fig:gb}
 \end{figure}
 
-\paragraph{HCP metals.} The high-angle prediction for Ti lies within
-a factor of $2.2$ of the literature range, consistent with the cubic
-metals (all within $2\times$). The coherent twin-boundary prediction
-underpredicts the measured Mg and Ti $\{10\bar12\}$ twin-boundary
-energy by factors of $5.6$--$6.4$ and $2.3$--$6.8$ respectively, a
-larger discrepancy than for any cubic metal. This is consistent with
-the isotropic-elasticity approximation being less accurate for HCP
-twinning, which is a strongly anisotropic shear confined to a single
-crystallographic plane, than for the SFE of cubic metals; resolving
-it would require the genuinely anisotropic (hexagonal) Eshelby tensor
-rather than the isotropic $\alpha=1/2$ oblate-spheroid solution used
-throughout this paper.
+\paragraph{HCP metals.} Using the literature ideal shear strain $\g$,
+the OSET coherent-twin energy underpredicts the measured Mg and Ti
+$\{10\bar12\}$ twin-boundary energies by factors of about $3.5$ to $4$
+and about $3$ to $10$ respectively, a larger discrepancy than for any
+cubic metal, and consistent with the same HCP basal/prismatic anisotropy
+that affects the Ti stacking fault above. The high-angle predictions,
+which depend only on the Read--Shockley $Gb$ scale and not on $\g$, remain
+within a factor of about $2$ of the literature for all nine metals.
+Resolving the HCP twin discrepancy would require the anisotropic
+(hexagonal) Eshelby tensor rather than the isotropic $\alpha=1/2$
+oblate-spheroid solution used throughout this paper.
 
 % =============================================================================
 \section{Supplementary derivation figures: hardening and occupation factor}
@@ -330,7 +324,7 @@ Dilatational eigenstrain $\eps=0.05$ & $\delta V_\text{free}=\eps V_0\approx0.1\
 Critical cluster number $N_c=4$ & $b/(\g W)=0.3/(0.1\times0.75)=4.0$ & Exact (experimental)\\
 Activation energy $\dF=0.38$~eV & $\half(\beta_1\g^2+\beta_2\eps^2)GV_0=0.405$~eV & 6\%\\
 Rate equation (sinh form) & Eyring forward/backward kinetics & Exact\\
-Threshold-stress scaling $\tau_0\propto L^{-1/2}$ & predicted ratio 2.0 (Al-33Cu, two grain sizes) & $\le10\%$ (measured 1.8--2.1)\\
+Threshold-stress scaling $\tau_0\propto d^{-1/2}$ & predicted ratio 2.0 (Al-33Cu, two average grain sizes) & $\le10\%$ (measured 1.8--2.1)\\
 True activation energy $Q\sim80$--$120$~kJ/mol & $90$--$120$~kJ/mol & $\le30\%$\\
 \bottomrule
 \end{tabular}

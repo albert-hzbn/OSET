@@ -6,242 +6,161 @@
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
 \bibitem{taylor1934}
-G.~I. Taylor, The mechanism of plastic deformation of crystals. part i.\
-  theoretical, Proceedings of the Royal Society of London A 145 (1934)
-  362--387.
-\newblock \href {https://doi.org/10.1098/rspa.1934.0106}
-  {\path{doi:10.1098/rspa.1934.0106}}.
+G.~I. Taylor, The mechanism of plastic deformation of crystals. part i.\ theoretical, Proceedings of the Royal Society of London A 145 (1934) 362--387.
+\newblock \href {https://doi.org/10.1098/rspa.1934.0106} {\path{doi:10.1098/rspa.1934.0106}}.
 
 \bibitem{orowan1934}
-E.~Orowan, Zur kristallplastizit{\"a}t. i--iii, Zeitschrift f{\"u}r Physik 89
-  (1934) 605--659.
-\newblock \href {https://doi.org/10.1007/BF01341478}
-  {\path{doi:10.1007/BF01341478}}.
+E.~Orowan, Zur kristallplastizit{\"a}t. i--iii, Zeitschrift f{\"u}r Physik 89 (1934) 605--659.
+\newblock \href {https://doi.org/10.1007/BF01341478} {\path{doi:10.1007/BF01341478}}.
 
 \bibitem{polanyi1934}
-M.~Polanyi, {\"U}ber eine art gitterst{\"o}rung, die einen kristall plastisch
-  machen k{\"o}nnte, Zeitschrift f{\"u}r Physik 89 (1934) 660--664.
-\newblock \href {https://doi.org/10.1007/BF01341481}
-  {\path{doi:10.1007/BF01341481}}.
+M.~Polanyi, {\"U}ber eine art gitterst{\"o}rung, die einen kristall plastisch machen k{\"o}nnte, Zeitschrift f{\"u}r Physik 89 (1934) 660--664.
+\newblock \href {https://doi.org/10.1007/BF01341481} {\path{doi:10.1007/BF01341481}}.
 
 \bibitem{hall1951}
-E.~O. Hall, The deformation and ageing of mild steel: Iii discussion of
-  results, Proceedings of the Physical Society B 64 (1951) 747--753.
-\newblock \href {https://doi.org/10.1088/0370-1301/64/9/303}
-  {\path{doi:10.1088/0370-1301/64/9/303}}.
+E.~O. Hall, The deformation and ageing of mild steel: Iii discussion of results, Proceedings of the Physical Society B 64 (1951) 747--753.
+\newblock \href {https://doi.org/10.1088/0370-1301/64/9/303} {\path{doi:10.1088/0370-1301/64/9/303}}.
 
 \bibitem{petch1953}
-N.~J. Petch, The cleavage strength of polycrystals, Journal of the Iron and
-  Steel Institute 174 (1953) 25--28.
+N.~J. Petch, The cleavage strength of polycrystals, Journal of the Iron and Steel Institute 174 (1953) 25--28.
 
 \bibitem{volterra1907}
-V.~Volterra, Sur l'{\'e}quilibre des corps {\'e}lastiques multiplement
-  connexes, Annales Scientifiques de l'{\'E}cole Normale Sup{\'e}rieure 24
-  (1907) 401--517.
-\newblock \href {https://doi.org/10.24033/asens.583}
-  {\path{doi:10.24033/asens.583}}.
+V.~Volterra, Sur l'{\'e}quilibre des corps {\'e}lastiques multiplement connexes, Annales Scientifiques de l'{\'E}cole Normale Sup{\'e}rieure 24 (1907) 401--517.
+\newblock \href {https://doi.org/10.24033/asens.583} {\path{doi:10.24033/asens.583}}.
 
 \bibitem{peierls1940}
-R.~E. Peierls, The size of a dislocation, Proceedings of the Physical Society
-  52 (1940) 34--37.
-\newblock \href {https://doi.org/10.1088/0959-5309/52/1/305}
-  {\path{doi:10.1088/0959-5309/52/1/305}}.
+R.~E. Peierls, The size of a dislocation, Proceedings of the Physical Society 52 (1940) 34--37.
+\newblock \href {https://doi.org/10.1088/0959-5309/52/1/305} {\path{doi:10.1088/0959-5309/52/1/305}}.
 
 \bibitem{nabarro1947}
-F.~R.~N. Nabarro, Dislocations in a simple cubic lattice, Proceedings of the
-  Physical Society 59~(2) (1947) 256--272.
-\newblock \href {https://doi.org/10.1088/0959-5309/59/2/309}
-  {\path{doi:10.1088/0959-5309/59/2/309}}.
+F.~R.~N. Nabarro, Dislocations in a simple cubic lattice, Proceedings of the Physical Society 59~(2) (1947) 256--272.
+\newblock \href {https://doi.org/10.1088/0959-5309/59/2/309} {\path{doi:10.1088/0959-5309/59/2/309}}.
 
 \bibitem{eshelby1957}
-J.~D. Eshelby, The determination of the elastic field of an ellipsoidal
-  inclusion, and related problems, Proceedings of the Royal Society of London A
-  241 (1957) 376--396.
-\newblock \href {https://doi.org/10.1098/rspa.1957.0133}
-  {\path{doi:10.1098/rspa.1957.0133}}.
+J.~D. Eshelby, The determination of the elastic field of an ellipsoidal inclusion, and related problems, Proceedings of the Royal Society of London A 241 (1957) 376--396.
+\newblock \href {https://doi.org/10.1098/rspa.1957.0133} {\path{doi:10.1098/rspa.1957.0133}}.
 
 \bibitem{hirth1982}
-J.~P. Hirth, J.~Lothe, Theory of Dislocations, 2nd Edition, Wiley, New York,
-  1982.
+J.~P. Hirth, J.~Lothe, Theory of Dislocations, 2nd Edition, Wiley, New York, 1982.
 
 \bibitem{pad-part1}
-K.~A. Padmanabhan, J.~Schlipf, Model for grain boundary sliding and its
-  relevance to optimal structural superplasticity: Part 1 -- theory, Materials
-  Science and Technology 12~(5) (1996) 391--399.
-\newblock \href {https://doi.org/10.1179/026708396790165920}
-  {\path{doi:10.1179/026708396790165920}}.
+K.~A. Padmanabhan, J.~Schlipf, Model for grain boundary sliding and its relevance to optimal structural superplasticity: Part 1 -- theory, Materials Science and Technology 12~(5) (1996) 391--399.
+\newblock \href {https://doi.org/10.1179/026708396790165920} {\path{doi:10.1179/026708396790165920}}.
 
 \bibitem{padgleiter2014}
-K.~A. Padmanabhan, H.~Gleiter, On the structure of grain/interphase boundaries
-  and interfaces, Beilstein Journal of Nanotechnology 5 (2014) 1603--1615.
-\newblock \href {https://doi.org/10.3762/bjnano.5.172}
-  {\path{doi:10.3762/bjnano.5.172}}.
+K.~A. Padmanabhan, H.~Gleiter, On the structure of grain/interphase boundaries and interfaces, Beilstein Journal of Nanotechnology 5 (2014) 1603--1615.
+\newblock \href {https://doi.org/10.3762/bjnano.5.172} {\path{doi:10.3762/bjnano.5.172}}.
 
 \bibitem{paddivinski2024}
-K.~A. Padmanabhan, S.~V. Divinski, A mean field description of steady state
-  isotropic structural superplastic deformation, Materials Science and
-  Engineering A 908 (2024) 146713.
-\newblock \href {https://doi.org/10.1016/j.msea.2024.146713}
-  {\path{doi:10.1016/j.msea.2024.146713}}.
+K.~A. Padmanabhan, S.~V. Divinski, A mean field description of steady state isotropic structural superplastic deformation, Materials Science and Engineering A 908 (2024) 146713.
+\newblock \href {https://doi.org/10.1016/j.msea.2024.146713} {\path{doi:10.1016/j.msea.2024.146713}}.
+
+\bibitem{hahnpadmanabhan1997}
+H.~Hahn, K.~A. Padmanabhan, A model for the deformation of nanocrystalline materials, Philosophical Magazine B 76 (1997) 559--571.
 
 \bibitem{schiotz1998}
-J.~Schi{\o}tz, F.~D. Di~Tolla, K.~W. Jacobsen, Softening of nanocrystalline
-  metals at very small grain sizes, Nature 391 (1998) 561--563.
+J.~Schi{\o}tz, F.~D. Di~Tolla, K.~W. Jacobsen, Softening of nanocrystalline metals at very small grain sizes, Nature 391 (1998) 561--563.
 \newblock \href {https://doi.org/10.1038/35328} {\path{doi:10.1038/35328}}.
 
 \bibitem{argon1979}
-A.~S. Argon, Plastic deformation in metallic glasses, Acta Metallurgica 27
-  (1979) 47--58.
-\newblock \href {https://doi.org/10.1016/0001-6160(79)90055-5}
-  {\path{doi:10.1016/0001-6160(79)90055-5}}.
+A.~S. Argon, Plastic deformation in metallic glasses, Acta Metallurgica 27 (1979) 47--58.
+\newblock \href {https://doi.org/10.1016/0001-6160(79)90055-5} {\path{doi:10.1016/0001-6160(79)90055-5}}.
 
 \bibitem{falk-langer1998}
-M.~L. Falk, J.~S. Langer, Dynamics of viscoplastic deformation in amorphous
-  solids, Physical Review E 57 (1998) 7192--7205.
-\newblock \href {https://doi.org/10.1103/PhysRevE.57.7192}
-  {\path{doi:10.1103/PhysRevE.57.7192}}.
+M.~L. Falk, J.~S. Langer, Dynamics of viscoplastic deformation in amorphous solids, Physical Review E 57 (1998) 7192--7205.
+\newblock \href {https://doi.org/10.1103/PhysRevE.57.7192} {\path{doi:10.1103/PhysRevE.57.7192}}.
+
+\bibitem{padgleiter2012}
+K.~A. Padmanabhan, H.~Gleiter, A mechanism for the deformation of disordered states of matter, Current Opinion in Solid State and Materials Science 16~(5) (2012) 243--253.
+\newblock \href {https://doi.org/10.1016/j.cossms.2012.05.001} {\path{doi:10.1016/j.cossms.2012.05.001}}.
 
 \bibitem{mura1987}
-T.~Mura, Micromechanics of Defects in Solids, 2nd Edition, Kluwer, Dordrecht,
-  1987.
+T.~Mura, Micromechanics of Defects in Solids, 2nd Edition, Kluwer, Dordrecht, 1987.
 
 \bibitem{harisankar2025}
-K.~R. Harisankar, K.~A. Padmanabhan, On the origin of isotropic steady state
-  structural superplastic deformation, Materials Science and Engineering A 930
-  (2025) 148175.
-\newblock \href {https://doi.org/10.1016/j.msea.2025.148175}
-  {\path{doi:10.1016/j.msea.2025.148175}}.
+K.~R. Harisankar, K.~A. Padmanabhan, On the origin of isotropic steady state structural superplastic deformation, Materials Science and Engineering A 930 (2025) 148175.
+\newblock \href {https://doi.org/10.1016/j.msea.2025.148175} {\path{doi:10.1016/j.msea.2025.148175}}.
 
 \bibitem{wolf1990}
-D.~Wolf, Structure-energy correlation for grain boundaries in f.c.c.\ metals:
-  Iii. symmetrical tilt boundaries, Acta Metallurgica et Materialia 38 (1990)
-  781--790.
-\newblock \href {https://doi.org/10.1016/0956-7151(90)90030-K}
-  {\path{doi:10.1016/0956-7151(90)90030-K}}.
+D.~Wolf, Structure-energy correlation for grain boundaries in f.c.c.\ metals: {III}. symmetrical tilt boundaries, Acta Metallurgica et Materialia 38 (1990) 781--790.
+\newblock \href {https://doi.org/10.1016/0956-7151(90)90030-K} {\path{doi:10.1016/0956-7151(90)90030-K}}.
+
+\bibitem{ogata2004}
+S.~Ogata, J.~Li, N.~Hirosaki, Y.~Shibutani, S.~Yip, Ideal shear strain of metals and ceramics, Physical Review B 70 (2004) 104104.
+\newblock \href {https://doi.org/10.1103/PhysRevB.70.104104} {\path{doi:10.1103/PhysRevB.70.104104}}.
 
 \bibitem{bilby1963}
-B.~A. Bilby, A.~H. Cottrell, K.~H. Swinden, The spread of plastic yield from a
-  notch, Proceedings of the Royal Society of London A 272 (1963) 304--314.
-\newblock \href {https://doi.org/10.1098/rspa.1963.0055}
-  {\path{doi:10.1098/rspa.1963.0055}}.
+B.~A. Bilby, A.~H. Cottrell, K.~H. Swinden, The spread of plastic yield from a notch, Proceedings of the Royal Society of London A 272 (1963) 304--314.
+\newblock \href {https://doi.org/10.1098/rspa.1963.0055} {\path{doi:10.1098/rspa.1963.0055}}.
 
 \bibitem{rice1968}
-J.~R. Rice, A path independent integral and the approximate analysis of strain
-  concentration by notches and cracks, Journal of Applied Mechanics 35 (1968)
-  379--386.
-\newblock \href {https://doi.org/10.1115/1.3601206}
-  {\path{doi:10.1115/1.3601206}}.
+J.~R. Rice, A path independent integral and the approximate analysis of strain concentration by notches and cracks, Journal of Applied Mechanics 35 (1968) 379--386.
+\newblock \href {https://doi.org/10.1115/1.3601206} {\path{doi:10.1115/1.3601206}}.
 
 \bibitem{muskhelishvili1953}
 N.~I. Muskhelishvili, Singular Integral Equations, Noordhoff, Groningen, 1953.
 
 \bibitem{astanin-part2}
-V.~V. Astanin, S.~N. Faizova, K.~A. Padmanabhan, Model for grain boundary
-  sliding and its relevance to optimal structural superplasticity: Part 2 --
-  evidence for cooperative grain/interphase boundary sliding and plane
-  interface formation, Materials Science and Technology 12~(6) (1996) 489--496.
-\newblock \href {https://doi.org/10.1179/mst.1996.12.6.489}
-  {\path{doi:10.1179/mst.1996.12.6.489}}.
+V.~V. Astanin, S.~N. Faizova, K.~A. Padmanabhan, Model for grain boundary sliding and its relevance to optimal structural superplasticity: Part 2 -- evidence for cooperative grain/interphase boundary sliding and plane interface formation, Materials Science and Technology 12~(6) (1996) 489--496.
+\newblock \href {https://doi.org/10.1179/mst.1996.12.6.489} {\path{doi:10.1179/mst.1996.12.6.489}}.
 
 \bibitem{frenkel1926}
-J.~Frenkel, Zur theorie der elastizit{\"a}tsgrenze und der festigkeit
-  kristallinischer k{\"o}rper, Zeitschrift f{\"u}r Physik 37 (1926) 572--609.
-\newblock \href {https://doi.org/10.1007/BF01397292}
-  {\path{doi:10.1007/BF01397292}}.
+J.~Frenkel, Zur theorie der elastizit{\"a}tsgrenze und der festigkeit kristallinischer k{\"o}rper, Zeitschrift f{\"u}r Physik 37 (1926) 572--609.
+\newblock \href {https://doi.org/10.1007/BF01397292} {\path{doi:10.1007/BF01397292}}.
 
 \bibitem{nabarro1997}
-F.~R.~N. Nabarro, Theoretical and experimental estimates of the peierls stress,
-  Philosophical Magazine A 75 (1997) 703--711.
-\newblock \href {https://doi.org/10.1080/01418619708207197}
-  {\path{doi:10.1080/01418619708207197}}.
+F.~R.~N. Nabarro, Theoretical and experimental estimates of the peierls stress, Philosophical Magazine A 75 (1997) 703--711.
+\newblock \href {https://doi.org/10.1080/01418619708207197} {\path{doi:10.1080/01418619708207197}}.
 
 \bibitem{woodward2002}
-C.~Woodward, S.~I. Rao, Flexible ab initio boundary conditions: simulating
-  isolated dislocations in bcc mo and ta, Physical Review Letters 88 (2002)
-  216402.
-\newblock \href {https://doi.org/10.1103/PhysRevLett.88.216402}
-  {\path{doi:10.1103/PhysRevLett.88.216402}}.
+C.~Woodward, S.~I. Rao, Flexible ab initio boundary conditions: simulating isolated dislocations in bcc mo and ta, Physical Review Letters 88 (2002) 216402.
+\newblock \href {https://doi.org/10.1103/PhysRevLett.88.216402} {\path{doi:10.1103/PhysRevLett.88.216402}}.
 
 \bibitem{frank-read1950}
-F.~C. Frank, W.~T. Read, Multiplication processes for slow moving dislocations,
-  Physical Review 79 (1950) 722--723.
-\newblock \href {https://doi.org/10.1103/PhysRev.79.722}
-  {\path{doi:10.1103/PhysRev.79.722}}.
+F.~C. Frank, W.~T. Read, Multiplication processes for slow moving dislocations, Physical Review 79 (1950) 722--723.
+\newblock \href {https://doi.org/10.1103/PhysRev.79.722} {\path{doi:10.1103/PhysRev.79.722}}.
 
 \bibitem{readshockley1950}
-W.~T. Read, W.~Shockley, Dislocation models of crystal grain boundaries,
-  Physical Review 78 (1950) 275--289.
-\newblock \href {https://doi.org/10.1103/PhysRev.78.275}
-  {\path{doi:10.1103/PhysRev.78.275}}.
+W.~T. Read, W.~Shockley, Dislocation models of crystal grain boundaries, Physical Review 78 (1950) 275--289.
+\newblock \href {https://doi.org/10.1103/PhysRev.78.275} {\path{doi:10.1103/PhysRev.78.275}}.
 
 \bibitem{bragg1934}
-W.~L. Bragg, E.~J. Williams, The effect of thermal agitation on atomic
-  arrangement in alloys, Proceedings of the Royal Society of London A 145
-  (1934) 699--730.
-\newblock \href {https://doi.org/10.1098/rspa.1934.0132}
-  {\path{doi:10.1098/rspa.1934.0132}}.
+W.~L. Bragg, E.~J. Williams, The effect of thermal agitation on atomic arrangement in alloys, Proceedings of the Royal Society of London A 145 (1934) 699--730.
+\newblock \href {https://doi.org/10.1098/rspa.1934.0132} {\path{doi:10.1098/rspa.1934.0132}}.
 
 \bibitem{eyring1935}
-H.~Eyring, The activated complex in chemical reactions, Journal of Chemical
-  Physics 3 (1935) 107--115.
-\newblock \href {https://doi.org/10.1063/1.1749604}
-  {\path{doi:10.1063/1.1749604}}.
+H.~Eyring, The activated complex in chemical reactions, Journal of Chemical Physics 3 (1935) 107--115.
+\newblock \href {https://doi.org/10.1063/1.1749604} {\path{doi:10.1063/1.1749604}}.
 
 \bibitem{venkatesh-part4}
-T.~A. Venkatesh, K.~A. Padmanabhan, Model for grain boundary sliding and its
-  relevance to optimal structural superplasticity: Part 4 -- experimental
-  verification, Materials Science and Technology 12 (1996) 635--642.
+T.~A. Venkatesh, K.~A. Padmanabhan, Model for grain boundary sliding and its relevance to optimal structural superplasticity: Part 4 -- experimental verification, Materials Science and Technology 12 (1996) 635--642.
 
 \bibitem{orowan1940}
-E.~Orowan, Problems of plastic gliding, Proceedings of the Physical Society 52
-  (1940) 8--22.
-\newblock \href {https://doi.org/10.1088/0959-5309/52/1/303}
-  {\path{doi:10.1088/0959-5309/52/1/303}}.
+E.~Orowan, Problems of plastic gliding, Proceedings of the Physical Society 52 (1940) 8--22.
+\newblock \href {https://doi.org/10.1088/0959-5309/52/1/303} {\path{doi:10.1088/0959-5309/52/1/303}}.
 
 \bibitem{sripathi2014}
-S.~Sripathi, K.~A. Padmanabhan, On the experimental validation of a mesoscopic
-  grain boundary sliding-controlled flow model for structural superplasticity,
-  Journal of Materials Science 49 (2014) 199--210.
-\newblock \href {https://doi.org/10.1007/s10853-013-7693-y}
-  {\path{doi:10.1007/s10853-013-7693-y}}.
+S.~Sripathi, K.~A. Padmanabhan, On the experimental validation of a mesoscopic grain boundary sliding-controlled flow model for structural superplasticity, Journal of Materials Science 49 (2014) 199--210.
+\newblock \href {https://doi.org/10.1007/s10853-013-7693-y} {\path{doi:10.1007/s10853-013-7693-y}}.
 
 \bibitem{buenz2015}
-J.~Buenz, K.~A. Padmanabhan, G.~Wilde, On the applicability of a mesoscopic
-  interface sliding controlled model for understanding superplastic flow in
-  bulk metallic glasses, Intermetallics 60 (2015) 7--15.
-\newblock \href {https://doi.org/10.1016/j.intermet.2015.01.012}
-  {\path{doi:10.1016/j.intermet.2015.01.012}}.
+J.~Buenz, K.~A. Padmanabhan, G.~Wilde, On the applicability of a mesoscopic interface sliding controlled model for understanding superplastic flow in bulk metallic glasses, Intermetallics 60 (2015) 7--15.
+\newblock \href {https://doi.org/10.1016/j.intermet.2015.01.012} {\path{doi:10.1016/j.intermet.2015.01.012}}.
 
 \bibitem{pad2018}
-K.~A. Padmanabhan, M.~R. Basariya, A theory of steady state structural
-  superplasticity in different classes of materials: a materials-agnostic
-  analysis, Materials Science and Engineering A 744 (2019) 704--715.
-\newblock \href {https://doi.org/10.1016/j.msea.2018.11.039}
-  {\path{doi:10.1016/j.msea.2018.11.039}}.
+K.~A. Padmanabhan, M.~R. Basariya, A theory of steady state structural superplasticity in different classes of materials: a materials-agnostic analysis, Materials Science and Engineering A 744 (2019) 704--715.
+\newblock \href {https://doi.org/10.1016/j.msea.2018.11.039} {\path{doi:10.1016/j.msea.2018.11.039}}.
 
 \bibitem{padbasariya2009}
-K.~A. Padmanabhan, M.~R. Basariya, Mesoscopic grain boundary sliding as the
-  rate controlling process for high strain rate superplastic deformation,
-  Materials Science and Engineering A 527 (2009) 225--234.
-\newblock \href {https://doi.org/10.1016/j.msea.2009.07.059}
-  {\path{doi:10.1016/j.msea.2009.07.059}}.
+K.~A. Padmanabhan, M.~R. Basariya, Mesoscopic grain boundary sliding as the rate controlling process for high strain rate superplastic deformation, Materials Science and Engineering A 527 (2009) 225--234.
+\newblock \href {https://doi.org/10.1016/j.msea.2009.07.059} {\path{doi:10.1016/j.msea.2009.07.059}}.
 
 \bibitem{vermeulen1995}
-A.~C. Vermeulen, T.~H. de~Keijser, E.~J. Mittemeijer, Changes in the densities
-  of dislocations on distinct slip systems during stress relaxation in thin
-  aluminium layers: the interpretation of x-ray diffraction line broadening and
-  line shift, Journal of Applied Physics 77 (1995) 5026--5049.
-\newblock \href {https://doi.org/10.1063/1.359300}
-  {\path{doi:10.1063/1.359300}}.
+A.~C. Vermeulen, T.~H. de~Keijser, E.~J. Mittemeijer, Changes in the densities of dislocations on distinct slip systems during stress relaxation in thin aluminium layers: the interpretation of x-ray diffraction line broadening and line shift, Journal of Applied Physics 77 (1995) 5026--5049.
+\newblock \href {https://doi.org/10.1063/1.359300} {\path{doi:10.1063/1.359300}}.
 
 \bibitem{meurer2017sympy}
-A.~Meurer, C.~P. Smith, M.~Paprocki, O.~{\v{C}}ert{\'i}k, S.~B. Kirpichev,
-  M.~Rocklin, A.~Kumar, S.~Ivanov, J.~K. Moore, S.~Singh, T.~Rathnayake,
-  S.~Vig, B.~E. Granger, R.~P. Muller, F.~Bonazzi, H.~Gupta, S.~Vats,
-  F.~Johansson, F.~Pedregosa, M.~J. Curry, A.~R. Terrel, {\v{S}}.~Rou{\v{c}}ka,
-  A.~Saboo, I.~Fernando, S.~Kulal, R.~Cimrman, A.~Scopatz, Sympy: symbolic
-  computing in python, PeerJ Computer Science 3 (2017) e103.
-\newblock \href {https://doi.org/10.7717/peerj-cs.103}
-  {\path{doi:10.7717/peerj-cs.103}}.
+A.~Meurer, C.~P. Smith, M.~Paprocki, O.~{\v{C}}ert{\'i}k, S.~B. Kirpichev, M.~Rocklin, A.~Kumar, S.~Ivanov, J.~K. Moore, S.~Singh, T.~Rathnayake, S.~Vig, B.~E. Granger, R.~P. Muller, F.~Bonazzi, H.~Gupta, S.~Vats, F.~Johansson, F.~Pedregosa, M.~J. Curry, A.~R. Terrel, {\v{S}}.~Rou{\v{c}}ka, A.~Saboo, I.~Fernando, S.~Kulal, R.~Cimrman, A.~Scopatz, Sympy: symbolic computing in python, PeerJ Computer Science 3 (2017) e103.
+\newblock \href {https://doi.org/10.7717/peerj-cs.103} {\path{doi:10.7717/peerj-cs.103}}.
 
 \end{thebibliography}

@@ -5,6 +5,18 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{S_ogata2004}
+S.~Ogata, J.~Li, N.~Hirosaki, Y.~Shibutani, S.~Yip, Ideal shear strain of
+  metals and ceramics, Physical Review B 70 (2004) 104104.
+\newblock \href {https://doi.org/10.1103/PhysRevB.70.104104}
+  {\path{doi:10.1103/PhysRevB.70.104104}}.
+
+\bibitem{S_gallagher1970}
+P.~C.~J. Gallagher, The influence of alloying, temperature, and related effects
+  on the stacking fault energy, Metallurgical Transactions 1 (1970) 2429--2461.
+\newblock \href {https://doi.org/10.1007/BF03038370}
+  {\path{doi:10.1007/BF03038370}}.
+
 \bibitem{S_wang2014mg}
 W.~Y. Wang, S.~L. Shang, Y.~Wang, Z.-G. Mei, K.~A. Darling, L.~J. Kecskes,
   S.~N. Mathaudhu, X.~D. Hui, Z.-K. Liu, Effects of alloying elements on
@@ -16,6 +28,28 @@ W.~Y. Wang, S.~L. Shang, Y.~Wang, Z.-G. Mei, K.~A. Darling, L.~J. Kecskes,
 \bibitem{S_yu2016ti}
 A.~Yu, First-principles calculations of stacking fault energy in titanium
   alloys, SCIREA Journal of Physics 1~(1) (2016).
+
+\bibitem{S_caillard2003}
+D.~Caillard, J.~L. Martin, Thermally Activated Mechanisms in Crystal
+  Plasticity, Pergamon, Oxford, 2003.
+
+\bibitem{S_frederiksen2003}
+S.~L. Frederiksen, K.~W. Jacobsen, Density functional theory studies of screw
+  dislocation core structures in bcc metals, Philosophical Magazine 83 (2003)
+  365--375.
+\newblock \href {https://doi.org/10.1080/0141861021000034568}
+  {\path{doi:10.1080/0141861021000034568}}.
+
+\bibitem{S_olmsted2009}
+D.~L. Olmsted, S.~M. Foiles, E.~A. Holm, Survey of computed grain boundary
+  properties in face-centered cubic metals: I. grain boundary energy, Acta
+  Materialia 57 (2009) 3694--3703.
+\newblock \href {https://doi.org/10.1016/j.actamat.2009.04.007}
+  {\path{doi:10.1016/j.actamat.2009.04.007}}.
+
+\bibitem{S_murr1975}
+L.~E. Murr, Interfacial Phenomena in Metals and Alloys, Addison-Wesley,
+  Reading, MA, 1975.
 
 \bibitem{S_pad-part1}
 K.~A. Padmanabhan, J.~Schlipf, Model for grain boundary sliding and its
@@ -33,7 +67,7 @@ S.~Sripathi, K.~A. Padmanabhan, On the experimental validation of a mesoscopic
 
 \bibitem{S_wolf1990}
 D.~Wolf, Structure-energy correlation for grain boundaries in f.c.c.\ metals:
-  Iii. symmetrical tilt boundaries, Acta Metallurgica et Materialia 38 (1990)
+  {III}. symmetrical tilt boundaries, Acta Metallurgica et Materialia 38 (1990)
   781--790.
 \newblock \href {https://doi.org/10.1016/0956-7151(90)90030-K}
   {\path{doi:10.1016/0956-7151(90)90030-K}}.

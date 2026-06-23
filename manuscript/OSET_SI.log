@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.10)  19 JUN 2026 15:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.10)  23 JUN 2026 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -427,82 +427,82 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 65.
 
-<figures/fig_S1313.png, id=40, 452.4102pt x 293.1753pt>
+<figures/fig_S1313.png, id=40, 445.54456pt x 285.64717pt>
 File: figures/fig_S1313.png Graphic file (type png)
 <use figures/fig_S1313.png>
 Package pdftex.def Info: figures/fig_S1313.png  used on input line 78.
-(pdftex.def)             Requested size: 375.80544pt x 243.53226pt.
+(pdftex.def)             Requested size: 375.80544pt x 240.94011pt.
 [1
 
 {c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./figures/f
 ig_S1313.png>]
-<figures/fig_materials_comparison.png, id=78, 1037.3154pt x 328.1058pt>
+<figures/fig_materials_comparison.png, id=92, 1194.80377pt x 349.96747pt>
 File: figures/fig_materials_comparison.png Graphic file (type png)
 <use figures/fig_materials_comparison.png>
 Package pdftex.def Info: figures/fig_materials_comparison.png  used on input li
-ne 188.
-(pdftex.def)             Requested size: 469.75502pt x 148.58246pt.
-<figures/fig_GB_energy.png, id=80, 1037.3154pt x 360.1455pt>
+ne 192.
+(pdftex.def)             Requested size: 469.75502pt x 137.59215pt.
+<figures/fig_GB_energy.png, id=113, 1194.80377pt x 364.06012pt>
 File: figures/fig_GB_energy.png Graphic file (type png)
 <use figures/fig_GB_energy.png>
-Package pdftex.def Info: figures/fig_GB_energy.png  used on input line 244.
-(pdftex.def)             Requested size: 469.75502pt x 163.0916pt.
+Package pdftex.def Info: figures/fig_GB_energy.png  used on input line 238.
+(pdftex.def)             Requested size: 469.75502pt x 143.13277pt.
  [3{c:/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [4 <
-./figures/fig_materials_comparison.png>]
-<figures/fig_partition_vs_sinh.png, id=100, 749.6808pt x 279.2031pt>
+./figures/fig_materials_comparison.png> <./figures/fig_GB_energy.png>]
+<figures/fig_partition_vs_sinh.png, id=140, 741.4902pt x 271.37386pt>
 File: figures/fig_partition_vs_sinh.png Graphic file (type png)
 <use figures/fig_partition_vs_sinh.png>
 Package pdftex.def Info: figures/fig_partition_vs_sinh.png  used on input line 
-283.
-(pdftex.def)             Requested size: 375.80544pt x 139.96332pt.
-<figures/fig_Taylor_comparison.png, id=101, 749.199pt x 305.943pt>
+277.
+(pdftex.def)             Requested size: 375.80544pt x 137.54167pt.
+<figures/fig_Taylor_comparison.png, id=141, 741.30952pt x 298.29442pt>
 File: figures/fig_Taylor_comparison.png Graphic file (type png)
 <use figures/fig_Taylor_comparison.png>
 Package pdftex.def Info: figures/fig_Taylor_comparison.png  used on input line 
-295.
-(pdftex.def)             Requested size: 375.80544pt x 153.46127pt.
+289.
+(pdftex.def)             Requested size: 375.80544pt x 151.22235pt.
 
-Underfull \hbox (badness 1910) in paragraph at lines 326--326
+Underfull \hbox (badness 1910) in paragraph at lines 320--320
 []\OT1/cmr/m/n/10.95 Shear con-straint $\OML/cmm/m/it/10.95 ^^L[] \OT1/cmr/m/n/
 10.95 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
 []$\OT1/cmr/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 2\OML/cmm/m/
 it/10.95 S[] \OT1/cmr/m/n/10.95 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
+Underfull \hbox (badness 10000) in paragraph at lines 321--321
 []\OT1/cmr/m/n/10.95 Dilatational con-straint
  []
 
 
-Underfull \hbox (badness 1953) in paragraph at lines 327--327
+Underfull \hbox (badness 1953) in paragraph at lines 321--321
 []$\OT1/cmr/m/n/10.95 4(1 + \OML/cmm/m/it/10.95 ^^W\OT1/cmr/m/n/10.95 )\OML/cmm
 /m/it/10.95 =\OT1/cmr/m/n/10.95 [9(1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.9
 5 ^^W\OT1/cmr/m/n/10.95 )] =
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 328--328
+Underfull \hbox (badness 1009) in paragraph at lines 322--322
 []\OT1/cmr/m/n/10.95 Shear eigen-strain $\OML/cmm/m/it/10.95 ^^M[] \OT1/cmr/m/n
 /10.95 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
 []\OT1/cmr/m/n/10.95 Dilatational eigen-strain
  []
 
 
-Underfull \hbox (badness 2865) in paragraph at lines 330--330
+Underfull \hbox (badness 2865) in paragraph at lines 324--324
 []\OT1/cmr/m/n/10.95 Critical clus-ter num-ber
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 330--330
+Underfull \hbox (badness 1521) in paragraph at lines 324--324
 []$\OML/cmm/m/it/10.95 b=\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^M[]W\OT1/cmr
 /m/n/10.95 ) = 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 =\
 OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 1 \OMS/cmsy/m/n/10.
@@ -510,79 +510,79 @@ OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 1 \OMS/cmsy/m/n/10.
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 331--331
+Underfull \hbox (badness 4660) in paragraph at lines 325--325
 []$[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^L[]^^M[] \OT1/cmr/m/n/10.95 + \O
 ML/cmm/m/it/10.95 ^^L[]"[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 GV[] \OT1/cmr
 /m/n/10.95 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--333
+Underfull \hbox (badness 10000) in paragraph at lines 327--327
 []\OT1/cmr/m/n/10.95 Threshold-stress scal-ing
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 334--334
+Underfull \hbox (badness 6016) in paragraph at lines 328--328
 []\OT1/cmr/m/n/10.95 True ac-ti-va-tion en-ergy
  []
 
-[5 <./figures/fig_GB_energy.png>] [6 <./figures/fig_partition_vs_sinh.png> <./f
-igures/fig_Taylor_comparison.png>] [7]
-Underfull \hbox (badness 1303) in paragraph at lines 376--376
+[5 <./figures/fig_partition_vs_sinh.png>] [6 <./figures/fig_Taylor_comparison.p
+ng>]
+Underfull \hbox (badness 1303) in paragraph at lines 370--370
 []\OT1/cmr/m/n/10.95 Rate equa-tion valid
  []
 
 
-Underfull \hbox (badness 2495) in paragraph at lines 379--379
+Underfull \hbox (badness 2495) in paragraph at lines 373--373
 []$[]\OML/cmm/m/it/10.95 =[] \OT1/cmr/m/n/10.95 = 1\OML/cmm/m/it/10.95 :\OT1/cm
 r/m/n/10.95 1$--$2\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 5$, 8
  []
 
 
-Underfull \hbox (badness 2556) in paragraph at lines 380--380
+Underfull \hbox (badness 2556) in paragraph at lines 374--374
 []\OT1/cmr/m/n/10.95 Valid for nanocrys-
  []
 
 
-Underfull \hbox (badness 4205) in paragraph at lines 380--380
+Underfull \hbox (badness 4205) in paragraph at lines 374--374
 \OT1/cmr/m/n/10.95 mea-sured $5 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmr/m/n/10.95 10[]
 $--$2 \OMS/cmsy/m/n/10.95 ^^B
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--381
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
 []\OT1/cmr/m/n/10.95 High-strain-rate su-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--383
+Underfull \hbox (badness 10000) in paragraph at lines 377--377
 []\OT1/cmr/m/n/10.95 Lorentzian dis-lo-ca-
  []
 
-<figures/fig_rate_equation.png, id=141, 786.0567pt x 297.5115pt>
+<figures/fig_rate_equation.png, id=174, 790.99515pt x 291.79013pt>
 File: figures/fig_rate_equation.png Graphic file (type png)
 <use figures/fig_rate_equation.png>
-Package pdftex.def Info: figures/fig_rate_equation.png  used on input line 397.
+Package pdftex.def Info: figures/fig_rate_equation.png  used on input line 391.
 
-(pdftex.def)             Requested size: 469.75502pt x 177.80008pt.
-[8]
-<figures/fig_HP2025_comparison.png, id=167, 1000.6986pt x 638.6259pt>
+(pdftex.def)             Requested size: 469.75502pt x 173.29002pt.
+[7] [8 <./figures/fig_rate_equation.png>]
+<figures/fig_HP2025_comparison.png, id=209, 1016.47755pt x 631.45912pt>
 File: figures/fig_HP2025_comparison.png Graphic file (type png)
 <use figures/fig_HP2025_comparison.png>
 Package pdftex.def Info: figures/fig_HP2025_comparison.png  used on input line 
-447.
-(pdftex.def)             Requested size: 469.75502pt x 299.7839pt.
-<figures/fig_HP2025_universal.png, id=168, 1001.4213pt x 314.3745pt>
+441.
+(pdftex.def)             Requested size: 469.75502pt x 291.82365pt.
+<figures/fig_HP2025_universal.png, id=210, 1071.58342pt x 272.27722pt>
 File: figures/fig_HP2025_universal.png Graphic file (type png)
 <use figures/fig_HP2025_universal.png>
 Package pdftex.def Info: figures/fig_HP2025_universal.png  used on input line 4
-61.
-(pdftex.def)             Requested size: 469.75502pt x 147.4682pt.
- [9 <./figures/fig_rate_equation.png>] [10 <./figures/fig_HP2025_comparison.png
-> <./figures/fig_HP2025_universal.png>] [11] [12] (./OSET_SI.bbl) [13
+55.
+(pdftex.def)             Requested size: 469.75502pt x 119.3578pt.
+ [9 <./figures/fig_HP2025_comparison.png>] [10] [11 <./figures/fig_HP2025_unive
+rsal.png>] (./OSET_SI.bbl [12
 
-]
-(./OSET_SI.aux)
+])
+[13] (./OSET_SI.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
@@ -591,13 +591,13 @@ Package rerunfilecheck Info: File `OSET_SI.out' has not changed.
 (rerunfilecheck)             Checksum: E6CBBFADFCFCF388F270D6DBA588439C;2188.
  ) 
 Here is how much of TeX's memory you used:
- 10531 strings out of 467167
- 160377 string characters out of 5413691
- 621989 words of memory out of 5000000
- 39618 multiletter control sequences out of 15000+600000
+ 10539 strings out of 467167
+ 160539 string characters out of 5413691
+ 618841 words of memory out of 5000000
+ 39622 multiletter control sequences out of 15000+600000
  637637 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,13n,79p,788b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,13n,79p,1416b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2026
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2026/texmf-d
@@ -613,10 +613,10 @@ type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm10
 95.pfb>
-Output written on OSET_SI.pdf (13 pages, 2025806 bytes).
+Output written on OSET_SI.pdf (13 pages, 3138397 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
+ 346 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
