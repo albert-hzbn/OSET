@@ -1,136 +1,181 @@
-\begin{thebibliography}{10}
-\expandafter\ifx\csname url\endcsname\relax
-  \def\url#1{\texttt{#1}}\fi
-\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
-\expandafter\ifx\csname href\endcsname\relax
-  \def\href#1#2{#2} \def\path#1{#1}\fi
-
-\bibitem{S_ogata2004}
-S.~Ogata, J.~Li, N.~Hirosaki, Y.~Shibutani, S.~Yip, Ideal shear strain of
-  metals and ceramics, Physical Review B 70 (2004) 104104.
-\newblock \href {https://doi.org/10.1103/PhysRevB.70.104104}
-  {\path{doi:10.1103/PhysRevB.70.104104}}.
-
-\bibitem{S_gallagher1970}
-P.~C.~J. Gallagher, The influence of alloying, temperature, and related effects
-  on the stacking fault energy, Metallurgical Transactions 1 (1970) 2429--2461.
-\newblock \href {https://doi.org/10.1007/BF03038370}
-  {\path{doi:10.1007/BF03038370}}.
-
-\bibitem{S_wang2014mg}
-W.~Y. Wang, S.~L. Shang, Y.~Wang, Z.-G. Mei, K.~A. Darling, L.~J. Kecskes,
-  S.~N. Mathaudhu, X.~D. Hui, Z.-K. Liu, Effects of alloying elements on
-  stacking fault energies and electronic structures of binary mg alloys: a
-  first-principles study, Materials Research Letters 2~(1) (2014) 29--36.
-\newblock \href {https://doi.org/10.1080/21663831.2013.858085}
-  {\path{doi:10.1080/21663831.2013.858085}}.
-
-\bibitem{S_yu2016ti}
-A.~Yu, First-principles calculations of stacking fault energy in titanium
-  alloys, SCIREA Journal of Physics 1~(1) (2016).
-
-\bibitem{S_caillard2003}
-D.~Caillard, J.~L. Martin, Thermally Activated Mechanisms in Crystal
-  Plasticity, Pergamon, Oxford, 2003.
-
-\bibitem{S_frederiksen2003}
-S.~L. Frederiksen, K.~W. Jacobsen, Density functional theory studies of screw
-  dislocation core structures in bcc metals, Philosophical Magazine 83 (2003)
-  365--375.
-\newblock \href {https://doi.org/10.1080/0141861021000034568}
-  {\path{doi:10.1080/0141861021000034568}}.
-
-\bibitem{S_olmsted2009}
-D.~L. Olmsted, S.~M. Foiles, E.~A. Holm, Survey of computed grain boundary
-  properties in face-centered cubic metals: I. grain boundary energy, Acta
-  Materialia 57 (2009) 3694--3703.
-\newblock \href {https://doi.org/10.1016/j.actamat.2009.04.007}
-  {\path{doi:10.1016/j.actamat.2009.04.007}}.
-
-\bibitem{S_murr1975}
-L.~E. Murr, Interfacial Phenomena in Metals and Alloys, Addison-Wesley,
-  Reading, MA, 1975.
-
-\bibitem{S_pad-part1}
-K.~A. Padmanabhan, J.~Schlipf, Model for grain boundary sliding and its
-  relevance to optimal structural superplasticity: Part 1 -- theory, Materials
-  Science and Technology 12~(5) (1996) 391--399.
-\newblock \href {https://doi.org/10.1179/026708396790165920}
-  {\path{doi:10.1179/026708396790165920}}.
-
-\bibitem{S_sripathi2014}
-S.~Sripathi, K.~A. Padmanabhan, On the experimental validation of a mesoscopic
-  grain boundary sliding-controlled flow model for structural superplasticity,
-  Journal of Materials Science 49 (2014) 199--210.
-\newblock \href {https://doi.org/10.1007/s10853-013-7693-y}
-  {\path{doi:10.1007/s10853-013-7693-y}}.
-
-\bibitem{S_wolf1990}
-D.~Wolf, Structure-energy correlation for grain boundaries in f.c.c.\ metals:
-  {III}. symmetrical tilt boundaries, Acta Metallurgica et Materialia 38 (1990)
-  781--790.
-\newblock \href {https://doi.org/10.1016/0956-7151(90)90030-K}
-  {\path{doi:10.1016/0956-7151(90)90030-K}}.
-
-\bibitem{S_argon1979}
-A.~S. Argon, Plastic deformation in metallic glasses, Acta Metallurgica 27
-  (1979) 47--58.
-\newblock \href {https://doi.org/10.1016/0001-6160(79)90055-5}
-  {\path{doi:10.1016/0001-6160(79)90055-5}}.
-
-\bibitem{S_falklanger1998}
-M.~L. Falk, J.~S. Langer, Dynamics of viscoplastic deformation in amorphous
-  solids, Physical Review E 57 (1998) 7192--7205.
-\newblock \href {https://doi.org/10.1103/PhysRevE.57.7192}
-  {\path{doi:10.1103/PhysRevE.57.7192}}.
-
-\bibitem{S_buenz2015}
-J.~Buenz, K.~A. Padmanabhan, G.~Wilde, On the applicability of a mesoscopic
-  interface sliding controlled model for understanding superplastic flow in
-  bulk metallic glasses, Intermetallics 60 (2015) 7--15.
-\newblock \href {https://doi.org/10.1016/j.intermet.2015.01.012}
-  {\path{doi:10.1016/j.intermet.2015.01.012}}.
-
-\bibitem{S_pad2018}
-K.~A. Padmanabhan, M.~R. Basariya, A theory of steady state structural
-  superplasticity in different classes of materials: a materials-agnostic
-  analysis, Materials Science and Engineering A 744 (2019) 704--715.
-\newblock \href {https://doi.org/10.1016/j.msea.2018.11.039}
-  {\path{doi:10.1016/j.msea.2018.11.039}}.
-
-\bibitem{S_padbasariya2009}
-K.~A. Padmanabhan, M.~R. Basariya, Mesoscopic grain boundary sliding as the
-  rate controlling process for high strain rate superplastic deformation,
-  Materials Science and Engineering A 527 (2009) 225--234.
-\newblock \href {https://doi.org/10.1016/j.msea.2009.07.059}
-  {\path{doi:10.1016/j.msea.2009.07.059}}.
-
-\bibitem{S_nabarro1997}
-F.~R.~N. Nabarro, Theoretical and experimental estimates of the peierls stress,
-  Philosophical Magazine A 75 (1997) 703--711.
-\newblock \href {https://doi.org/10.1080/01418619708207197}
-  {\path{doi:10.1080/01418619708207197}}.
-
-\bibitem{S_vermeulen1995}
-A.~C. Vermeulen, T.~H. de~Keijser, E.~J. Mittemeijer, Changes in the densities
-  of dislocations on distinct slip systems during stress relaxation in thin
-  aluminium layers: the interpretation of x-ray diffraction line broadening and
-  line shift, Journal of Applied Physics 77 (1995) 5026--5049.
-\newblock \href {https://doi.org/10.1063/1.359300}
-  {\path{doi:10.1063/1.359300}}.
-
-\bibitem{S_padsripathihahn2014}
-K.~A. Padmanabhan, S.~Sripathi, H.~Hahn, H.~Gleiter, Inverse hall--petch effect
-  in quasi- and nanocrystalline materials, Materials Letters 133 (2014)
-  151--154.
-\newblock \href {https://doi.org/10.1016/j.matlet.2014.06.153}
-  {\path{doi:10.1016/j.matlet.2014.06.153}}.
-
-\bibitem{S_harisankar2025}
-K.~R. Harisankar, K.~A. Padmanabhan, On the origin of isotropic steady state
-  structural superplastic deformation, Materials Science and Engineering A 930
-  (2025) 148175.
-\newblock \href {https://doi.org/10.1016/j.msea.2025.148175}
-  {\path{doi:10.1016/j.msea.2025.148175}}.
+\begin{thebibliography}{19}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Argon(1979)}]{S_argon1979}
+\bibinfo{author}{Argon, A.S.}, \bibinfo{year}{1979}.
+\newblock \bibinfo{title}{Plastic deformation in metallic glasses}.
+\newblock \bibinfo{journal}{Acta Metallurgica} \bibinfo{volume}{27},
+  \bibinfo{pages}{47--58}.
+\newblock \DOIprefix\doi{10.1016/0001-6160(79)90055-5}.
+%Type = Article
+\bibitem[{Buenz et~al.(2015)Buenz, Padmanabhan and Wilde}]{S_buenz2015}
+\bibinfo{author}{Buenz, J.}, \bibinfo{author}{Padmanabhan, K.A.},
+  \bibinfo{author}{Wilde, G.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{On the applicability of a mesoscopic interface
+  sliding controlled model for understanding superplastic flow in bulk metallic
+  glasses}.
+\newblock \bibinfo{journal}{Intermetallics} \bibinfo{volume}{60},
+  \bibinfo{pages}{7--15}.
+\newblock \DOIprefix\doi{10.1016/j.intermet.2015.01.012}.
+%Type = Book
+\bibitem[{Caillard and Martin(2003)}]{S_caillard2003}
+\bibinfo{author}{Caillard, D.}, \bibinfo{author}{Martin, J.L.},
+  \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Thermally Activated Mechanisms in Crystal
+  Plasticity}.
+\newblock \bibinfo{publisher}{Pergamon}, \bibinfo{address}{Oxford}.
+%Type = Article
+\bibitem[{Falk and Langer(1998)}]{S_falklanger1998}
+\bibinfo{author}{Falk, M.L.}, \bibinfo{author}{Langer, J.S.},
+  \bibinfo{year}{1998}.
+\newblock \bibinfo{title}{Dynamics of viscoplastic deformation in amorphous
+  solids}.
+\newblock \bibinfo{journal}{Physical Review E} \bibinfo{volume}{57},
+  \bibinfo{pages}{7192--7205}.
+\newblock \DOIprefix\doi{10.1103/PhysRevE.57.7192}.
+%Type = Article
+\bibitem[{Frederiksen and Jacobsen(2003)}]{S_frederiksen2003}
+\bibinfo{author}{Frederiksen, S.L.}, \bibinfo{author}{Jacobsen, K.W.},
+  \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Density functional theory studies of screw
+  dislocation core structures in bcc metals}.
+\newblock \bibinfo{journal}{Philosophical Magazine} \bibinfo{volume}{83},
+  \bibinfo{pages}{365--375}.
+\newblock \DOIprefix\doi{10.1080/0141861021000034568}.
+%Type = Article
+\bibitem[{Gallagher(1970)}]{S_gallagher1970}
+\bibinfo{author}{Gallagher, P.C.J.}, \bibinfo{year}{1970}.
+\newblock \bibinfo{title}{The influence of alloying, temperature, and related
+  effects on the stacking fault energy}.
+\newblock \bibinfo{journal}{Metallurgical Transactions} \bibinfo{volume}{1},
+  \bibinfo{pages}{2429--2461}.
+\newblock \DOIprefix\doi{10.1007/BF03038370}.
+%Type = Article
+\bibitem[{Harisankar and Padmanabhan(2025)}]{S_harisankar2025}
+\bibinfo{author}{Harisankar, K.R.}, \bibinfo{author}{Padmanabhan, K.A.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{On the origin of isotropic steady state structural
+  superplastic deformation}.
+\newblock \bibinfo{journal}{Materials Science and Engineering A}
+  \bibinfo{volume}{930}, \bibinfo{pages}{148175}.
+\newblock \DOIprefix\doi{10.1016/j.msea.2025.148175}.
+%Type = Book
+\bibitem[{Murr(1975)}]{S_murr1975}
+\bibinfo{author}{Murr, L.E.}, \bibinfo{year}{1975}.
+\newblock \bibinfo{title}{Interfacial Phenomena in Metals and Alloys}.
+\newblock \bibinfo{publisher}{Addison-Wesley}, \bibinfo{address}{Reading, MA}.
+%Type = Article
+\bibitem[{Nabarro(1997)}]{S_nabarro1997}
+\bibinfo{author}{Nabarro, F.R.N.}, \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{Theoretical and experimental estimates of the peierls
+  stress}.
+\newblock \bibinfo{journal}{Philosophical Magazine A} \bibinfo{volume}{75},
+  \bibinfo{pages}{703--711}.
+\newblock \DOIprefix\doi{10.1080/01418619708207197}.
+%Type = Article
+\bibitem[{Ogata et~al.(2004)Ogata, Li, Hirosaki, Shibutani and
+  Yip}]{S_ogata2004}
+\bibinfo{author}{Ogata, S.}, \bibinfo{author}{Li, J.},
+  \bibinfo{author}{Hirosaki, N.}, \bibinfo{author}{Shibutani, Y.},
+  \bibinfo{author}{Yip, S.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Ideal shear strain of metals and ceramics}.
+\newblock \bibinfo{journal}{Physical Review B} \bibinfo{volume}{70},
+  \bibinfo{pages}{104104}.
+\newblock \DOIprefix\doi{10.1103/PhysRevB.70.104104}.
+%Type = Article
+\bibitem[{Olmsted et~al.(2009)Olmsted, Foiles and Holm}]{S_olmsted2009}
+\bibinfo{author}{Olmsted, D.L.}, \bibinfo{author}{Foiles, S.M.},
+  \bibinfo{author}{Holm, E.A.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Survey of computed grain boundary properties in
+  face-centered cubic metals: I. grain boundary energy}.
+\newblock \bibinfo{journal}{Acta Materialia} \bibinfo{volume}{57},
+  \bibinfo{pages}{3694--3703}.
+\newblock \DOIprefix\doi{10.1016/j.actamat.2009.04.007}.
+%Type = Article
+\bibitem[{Padmanabhan and Basariya(2009)}]{S_padbasariya2009}
+\bibinfo{author}{Padmanabhan, K.A.}, \bibinfo{author}{Basariya, M.R.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Mesoscopic grain boundary sliding as the rate
+  controlling process for high strain rate superplastic deformation}.
+\newblock \bibinfo{journal}{Materials Science and Engineering A}
+  \bibinfo{volume}{527}, \bibinfo{pages}{225--234}.
+\newblock \DOIprefix\doi{10.1016/j.msea.2009.07.059}.
+%Type = Article
+\bibitem[{Padmanabhan and Basariya(2019)}]{S_pad2018}
+\bibinfo{author}{Padmanabhan, K.A.}, \bibinfo{author}{Basariya, M.R.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{A theory of steady state structural superplasticity
+  in different classes of materials: a materials-agnostic analysis}.
+\newblock \bibinfo{journal}{Materials Science and Engineering A}
+  \bibinfo{volume}{744}, \bibinfo{pages}{704--715}.
+\newblock \DOIprefix\doi{10.1016/j.msea.2018.11.039}.
+%Type = Article
+\bibitem[{Padmanabhan and Schlipf(1996)}]{S_pad-part1}
+\bibinfo{author}{Padmanabhan, K.A.}, \bibinfo{author}{Schlipf, J.},
+  \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{Model for grain boundary sliding and its relevance to
+  optimal structural superplasticity: Part 1 -- theory}.
+\newblock \bibinfo{journal}{Materials Science and Technology}
+  \bibinfo{volume}{12}, \bibinfo{pages}{391--399}.
+\newblock \DOIprefix\doi{10.1179/026708396790165920}.
+%Type = Article
+\bibitem[{Sripathi and Padmanabhan(2014)}]{S_sripathi2014}
+\bibinfo{author}{Sripathi, S.}, \bibinfo{author}{Padmanabhan, K.A.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{On the experimental validation of a mesoscopic grain
+  boundary sliding-controlled flow model for structural superplasticity}.
+\newblock \bibinfo{journal}{Journal of Materials Science} \bibinfo{volume}{49},
+  \bibinfo{pages}{199--210}.
+\newblock \DOIprefix\doi{10.1007/s10853-013-7693-y}.
+%Type = Article
+\bibitem[{Vermeulen et~al.(1995)Vermeulen, de~Keijser and
+  Mittemeijer}]{S_vermeulen1995}
+\bibinfo{author}{Vermeulen, A.C.}, \bibinfo{author}{de~Keijser, T.H.},
+  \bibinfo{author}{Mittemeijer, E.J.}, \bibinfo{year}{1995}.
+\newblock \bibinfo{title}{Changes in the densities of dislocations on distinct
+  slip systems during stress relaxation in thin aluminium layers: the
+  interpretation of x-ray diffraction line broadening and line shift}.
+\newblock \bibinfo{journal}{Journal of Applied Physics} \bibinfo{volume}{77},
+  \bibinfo{pages}{5026--5049}.
+\newblock \DOIprefix\doi{10.1063/1.359300}.
+%Type = Article
+\bibitem[{Wang et~al.(2014)Wang, Shang, Wang, Mei, Darling, Kecskes, Mathaudhu,
+  Hui and Liu}]{S_wang2014mg}
+\bibinfo{author}{Wang, W.Y.}, \bibinfo{author}{Shang, S.L.},
+  \bibinfo{author}{Wang, Y.}, \bibinfo{author}{Mei, Z.G.},
+  \bibinfo{author}{Darling, K.A.}, \bibinfo{author}{Kecskes, L.J.},
+  \bibinfo{author}{Mathaudhu, S.N.}, \bibinfo{author}{Hui, X.D.},
+  \bibinfo{author}{Liu, Z.K.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Effects of alloying elements on stacking fault
+  energies and electronic structures of binary mg alloys: a first-principles
+  study}.
+\newblock \bibinfo{journal}{Materials Research Letters} \bibinfo{volume}{2},
+  \bibinfo{pages}{29--36}.
+\newblock \DOIprefix\doi{10.1080/21663831.2013.858085}.
+%Type = Article
+\bibitem[{Wolf(1990)}]{S_wolf1990}
+\bibinfo{author}{Wolf, D.}, \bibinfo{year}{1990}.
+\newblock \bibinfo{title}{Structure-energy correlation for grain boundaries in
+  f.c.c.\ metals: {III}. symmetrical tilt boundaries}.
+\newblock \bibinfo{journal}{Acta Metallurgica et Materialia}
+  \bibinfo{volume}{38}, \bibinfo{pages}{781--790}.
+\newblock \DOIprefix\doi{10.1016/0956-7151(90)90030-K}.
+%Type = Article
+\bibitem[{Yu(2016)}]{S_yu2016ti}
+\bibinfo{author}{Yu, A.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{First-principles calculations of stacking fault
+  energy in titanium alloys}.
+\newblock \bibinfo{journal}{SCIREA Journal of Physics} \bibinfo{volume}{1}.
 
 \end{thebibliography}

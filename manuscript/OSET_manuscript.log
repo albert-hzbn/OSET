@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.10)  25 JUN 2026 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.10)  25 JUN 2026 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -478,29 +478,29 @@ File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
 LaTeX Info: Redefining \microtypesetup on input line 3065.
 )
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 29.
+h' as default language. on input line 31.
 
 (./OSET_manuscript.aux)
 \openout1 = `OSET_manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 (c:/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -567,19 +567,19 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 29.
-Package hyperref Info: Link coloring OFF on input line 29.
+or `english'. on input line 31.
+Package hyperref Info: Link coloring OFF on input line 31.
  (./OSET_manuscript.out) (./OSET_manuscript.out)
 \@outlinefile=\write4
 \openout4 = `OSET_manuscript.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 29.
-Package microtype Info: Applying patch `item' on input line 29.
-Package microtype Info: Applying patch `toc' on input line 29.
-Package microtype Info: Applying patch `eqnum' on input line 29.
-Package microtype Info: Applying patch `footnote' on input line 29.
-Package microtype Info: Applying patch `verbatim' on input line 29.
-LaTeX Info: Redefining \microtypesetup on input line 29.
+LaTeX Info: Redefining \microtypecontext on input line 31.
+Package microtype Info: Applying patch `item' on input line 31.
+Package microtype Info: Applying patch `toc' on input line 31.
+Package microtype Info: Applying patch `eqnum' on input line 31.
+Package microtype Info: Applying patch `footnote' on input line 31.
+Package microtype Info: Applying patch `verbatim' on input line 31.
+LaTeX Info: Redefining \microtypesetup on input line 31.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -595,7 +595,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
 
 
 (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -604,7 +604,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (c:/texlive/2026/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
 
 
 (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -613,43 +613,43 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (c:/texlive/2026/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Calculating math sizes for size <> on input line 90.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 87.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
-(Font)              size <5> substituted on input line 90.
+(Font)              size <5> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 90.
+(Font)              size <5> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 90.
+(Font)              size <5> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
-(Font)              size <5> substituted on input line 90.
+(Font)              size <5> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
-(Font)              size <5> substituted on input line 90.
+(Font)              size <5> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
-(Font)              size <5> substituted on input line 90.
+(Font)              size <5> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
-(Font)              size <5> substituted on input line 90.
+(Font)              size <5> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
-(Font)              size <5> substituted on input line 90.
+(Font)              size <5> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
-(Font)              size <5> substituted on input line 90.
+(Font)              size <5> substituted on input line 87.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
@@ -657,35 +657,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 141.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cnotenum' on input line 141.
+(hyperref)                removing `\cnotenum' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 141.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@corref' on input line 141.
+(hyperref)                removing `\@corref' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 141.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cnotenum' on input line 141.
+(hyperref)                removing `\cnotenum' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 141.
+(hyperref)                removing `\<def>-command' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@corref' on input line 141.
+(hyperref)                removing `\@corref' on input line 138.
 
 [1{c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/202
 6/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -694,144 +694,150 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ] [2]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 300.
+(Font)              using `T1/cmr/m/scsl' instead on input line 297.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 348.
+(hyperref)                removing `math shift' on input line 345.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 348.
+(hyperref)                removing `subscript' on input line 345.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 348.
+(hyperref)                removing `math shift' on input line 345.
 
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 419.
+(hyperref)                removing `math shift' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 419.
+(hyperref)                removing `subscript' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 419.
+(hyperref)                removing `subscript' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 419.
+(hyperref)                removing `subscript' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 419.
+(hyperref)                removing `\alpha' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 419.
+(hyperref)                removing `superscript' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 419.
+(hyperref)                removing `math shift' on input line 416.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 454.
+(hyperref)                removing `math shift' on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 454.
+(hyperref)                removing `\alpha' on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 454.
+(hyperref)                removing `math shift' on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 454.
+(hyperref)                removing `math shift' on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nu' on input line 454.
+(hyperref)                removing `\nu' on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 454.
+(hyperref)                removing `math shift' on input line 451.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 512.
+(hyperref)                removing `math shift' on input line 509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 512.
+(hyperref)                removing `\beta' on input line 509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 512.
+(hyperref)                removing `subscript' on input line 509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 512.
+(hyperref)                removing `math shift' on input line 509.
 
 [4]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 564.
+(hyperref)                removing `math shift' on input line 561.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\beta' on input line 564.
+(hyperref)                removing `\beta' on input line 561.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 564.
+(hyperref)                removing `subscript' on input line 561.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 564.
+(hyperref)                removing `math shift' on input line 561.
 
 [5]
-Overfull \hbox (7.26215pt too wide) in paragraph at lines 774--787
+Overfull \hbox (7.26215pt too wide) in paragraph at lines 771--784
  [][] 
  []
 
 [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1195
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
 []|\T1/cmr/m/n/9 (+20) Stress de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1201
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1186
 []|\T1/cmr/m/n/9 (+20) Thermal
  []
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 1207.
+(Font)              using `T1/cmr/m/scsl' instead on input line 1192.
 
 [9]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 1252.
+(Font)              using `T1/cmr/m/scsl' instead on input line 1237.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 1373.
+(Font)              using `T1/cmr/m/scsl' instead on input line 1358.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1373.
+(hyperref)                removing `math shift' on input line 1358.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1373.
+(hyperref)                removing `math shift' on input line 1358.
 
-[10] [11] [12]
-Overfull \hbox (2.51947pt too wide) in paragraph at lines 1658--1666
+[10]
+Overfull \hbox (16.65941pt too wide) in paragraph at lines 1393--1403
+\T1/cmr/m/n/10 (-20) This is ex-actly the Peierls--Nabarro dis-place-ment pro-f
+ile ([]Peierls[],
+ []
+
+[11] [12]
+Overfull \hbox (2.51947pt too wide) in paragraph at lines 1643--1651
 \OML/cmm/m/it/10 Gb[]=\OT1/cmr/m/n/10 (-20) [4\OML/cmm/m/it/10 ^^Y\OT1/cmr/m/n/
 10 (-20) (1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^W\OT1/cmr/m/n/10 (-20) )]$\
 T1/cmr/m/n/10 (-20) . Max-i-mum slope: $\OML/cmm/m/it/10 ^^\[] \OT1/cmr/m/n/10 
@@ -841,10 +847,10 @@ T1/cmr/m/n/10 (-20) . Max-i-mum slope: $\OML/cmm/m/it/10 ^^\[] \OT1/cmr/m/n/10
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 1759.
+(Font)              using `T1/cmr/m/scsl' instead on input line 1744.
 
 
-Overfull \hbox (2.21611pt too wide) in paragraph at lines 1761--1763
+Overfull \hbox (2.21611pt too wide) in paragraph at lines 1746--1748
 []\T1/cmr/m/n/10 (-20) Setting $\OML/cmm/m/it/10 N[]^^M[]W \OT1/cmr/m/n/10 (-20
 ) = \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 b[]\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 (-
 20) = \OML/cmm/m/it/10 N[]^^M[]W=[]$\T1/cmr/m/n/10 (-20) : $\OML/cmm/m/it/10 N[
@@ -852,7 +858,7 @@ Overfull \hbox (2.21611pt too wide) in paragraph at lines 1761--1763
  []
 
 [13]
-Overfull \hbox (5.23872pt too wide) in paragraph at lines 1786--1789
+Overfull \hbox (5.23872pt too wide) in paragraph at lines 1771--1774
 \T1/cmr/m/n/10 (-20) Substituting $\OT1/cmr/m/n/10 (-20) ^^A\OML/cmm/m/it/10 F[
 ] \OT1/cmr/m/n/10 (-20) = \OML/cmm/m/it/10 ^^Y^^L[]^^M[]GW[]=\OT1/cmr/m/n/10 (-
 20) 3$ \T1/cmr/m/n/10 (-20) and can-celling $\OML/cmm/m/it/10 W[]=W[] \OT1/cmr/
@@ -860,117 +866,105 @@ m/n/10 (-20) =
  []
 
 [14]
-Overfull \hbox (1.22595pt too wide) in paragraph at lines 1926--1930
+Overfull \hbox (1.22595pt too wide) in paragraph at lines 1918--1922
 \T1/cmr/m/n/10 (-20) even-tu-ally re-placed by the disorder-averaged value, $\O
 T1/cmr/m/n/10 (-20) ^^A\OML/cmm/m/it/10 F[] \OMS/cmsy/m/n/10 !
  []
 
-[15]
-Overfull \hbox (13.55301pt too wide) in paragraph at lines 2082--2085
- []\T1/cmr/m/it/10 (-20) Step 2 (Eyring for-ward/backward rates).[] \T1/cmr/m/n
-/10 (-20) Fol-low-ing Eyring [[]],
- []
-
+[15] [16]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/scsl' instead on input line 2143.
+(Font)              using `T1/cmr/m/scsl' instead on input line 2135.
 
-[16]
-Underfull \hbox (badness 3492) in paragraph at lines 2252--2253
+
+Underfull \hbox (badness 3492) in paragraph at lines 2244--2245
 []|\T1/cmr/m/n/9 (+20) Eshelby oblate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2256--2256
+Underfull \hbox (badness 10000) in paragraph at lines 2248--2248
 []|\T1/cmr/m/n/9 (+20) Core en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2257--2257
+Underfull \hbox (badness 10000) in paragraph at lines 2249--2249
 []|\T1/cmr/m/n/9 (+20) Core
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2258--2258
+Underfull \hbox (badness 10000) in paragraph at lines 2250--2250
 []|\T1/cmr/m/n/9 (+20) Burgers
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2259--2259
+Underfull \hbox (badness 10000) in paragraph at lines 2251--2251
 []|\T1/cmr/m/n/9 (+20) Thermal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2263--2263
+Underfull \hbox (badness 10000) in paragraph at lines 2255--2255
 []|\T1/cmr/m/n/9 (+20) GB plas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2263--2263
+Underfull \hbox (badness 10000) in paragraph at lines 2255--2255
 []|\T1/cmr/m/n/9 (+20) DSC needed,
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 2263--2263
+Underfull \hbox (badness 2726) in paragraph at lines 2255--2255
 \T1/cmr/m/n/9 (+20) which has no
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2263--2263
+Underfull \hbox (badness 10000) in paragraph at lines 2255--2255
 \T1/cmr/m/n/9 (+20) ex-per-i-men-tal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2264--2264
+Underfull \hbox (badness 10000) in paragraph at lines 2256--2256
 []|\T1/cmr/m/n/9 (+20) Quantum
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2264--2264
+Underfull \hbox (badness 10000) in paragraph at lines 2256--2256
 \T1/cmr/m/n/9 (+20) rep-re-sen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2264--2264
+Underfull \hbox (badness 10000) in paragraph at lines 2256--2256
 []|\T1/cmr/m/n/9 (+20) Topological
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2264--2265
+Underfull \hbox (badness 10000) in paragraph at lines 2256--2257
 []|\T1/cmr/m/n/9 (+20) Point-particle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2264--2265
+Underfull \hbox (badness 10000) in paragraph at lines 2256--2257
 \T1/cmr/m/n/9 (+20) Schrödinger
  []
 
 [17] [18] [19]
-Overfull \hbox (20.79617pt too wide) in paragraph at lines 2572--2580
+Overfull \hbox (20.79617pt too wide) in paragraph at lines 2564--2572
 \T1/cmr/m/n/10 (-20) crys-talline dis-lo-ca-tion core, a metallic-glass shear-t
 ransformation
  []
 
-
-Overfull \hbox (7.62093pt too wide) in paragraph at lines 2592--2596
+[20]
+Overfull \hbox (7.62093pt too wide) in paragraph at lines 2584--2588
 []\T1/cmr/m/n/10 (-20) Dislocations emerge as \T1/cmr/m/sc/10 (-20) ostz \T1/cm
 r/m/n/10 (-20) col-lec-tives: dipole Eq. [],
  []
 
 
-Overfull \hbox (5.4287pt too wide) in paragraph at lines 2602--2605
+Overfull \hbox (5.4287pt too wide) in paragraph at lines 2594--2597
 []\T1/cmr/m/n/10 (-20) The \T1/cmr/m/sc/10 (-20) ostz \T1/cmr/m/n/10 (-20) Hami
 l-to-nian [] yields the sinh flow law []
  []
 
-(./OSET_manuscript.bbl [20]
-Underfull \hbox (badness 1776) in paragraph at lines 170--174
-[]\T1/cmr/m/n/10 (+20) F. R. N. Nabarro, The-o-ret-i-cal and ex-per-i-men-
- []
-
-[21]) [22
-
-] (./OSET_manuscript.aux)
+(./OSET_manuscript.bbl [21]) [22] (./OSET_manuscript.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
@@ -980,17 +974,20 @@ L3 programming layer <2026-05-26>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.5pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `OSET_manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 2A52BE13CE6D5FEDE7CC00F7A3722A44;14319.
  ) 
 Here is how much of TeX's memory you used:
- 19498 strings out of 467167
- 364046 string characters out of 5413691
- 821333 words of memory out of 5000000
- 47833 multiletter control sequences out of 15000+600000
- 667996 words of font info for 308 fonts, out of 8000000 for 9000
+ 19503 strings out of 467167
+ 364076 string characters out of 5413691
+ 822420 words of memory out of 5000000
+ 47842 multiletter control sequences out of 15000+600000
+ 667302 words of font info for 306 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,16n,80p,1012b,1280s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,16n,80p,1012b,1191s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2026/texmf-di
@@ -1007,30 +1004,29 @@ fonts/cm/cmr9.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><
 c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive
 /2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2026/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2026/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msam10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm
--super/sfbx1000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfc
-c0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb>
-<c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texliv
-e/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><c:/texlive/2026/tex
-mf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texlive/2026/texmf-dist/fo
-nts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2026/texmf-dist/fonts/type1/
-public/cm-super/sfrm0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-
-super/sfrm0900.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm
-1000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><
-c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsc1000.pfb><c:/texlive
-/2026/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb><c:/texlive/2026/texm
-f-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive/2026/texmf-dist/fon
-ts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/p
-ublic/cm-super/sfti1000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-s
-uper/sftt0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1
-000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfxc1000.pfb>
-Output written on OSET_manuscript.pdf (22 pages, 794426 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2026/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2026/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2026/texmf-dist/fonts/type1
+/public/cm-super/sfbx1000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm
+-super/sfcc0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfc
+c0900.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb>
+<c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><c:/texliv
+e/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2026/tex
+mf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2026/texmf-dist/fo
+nts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2026/texmf-dist/fonts/type1/
+public/cm-super/sfrm1000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-
+super/sfrm1440.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfsc
+1000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti0600.pfb><
+c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb><c:/texlive
+/2026/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2026/texm
+f-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texlive/2026/texmf-dist/fon
+ts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/p
+ublic/cm-super/sftt1000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-s
+uper/sfxc1000.pfb>
+Output written on OSET_manuscript.pdf (22 pages, 774342 bytes).
 PDF statistics:
- 1136 PDF objects out of 1200 (max. 8388607)
- 1019 compressed objects within 11 object streams
- 309 named destinations out of 1000 (max. 500000)
- 71177 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1221 PDF objects out of 1440 (max. 8388607)
+ 1107 compressed objects within 12 object streams
+ 308 named destinations out of 1000 (max. 500000)
+ 69129 words of extra memory for PDF output out of 74296 (max. 10000000)
 

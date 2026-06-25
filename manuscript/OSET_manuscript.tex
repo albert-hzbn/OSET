@@ -1,9 +1,10 @@
 %% ============================================================
-%% Oblate Spheroid Excitation Theory (OSET): Acta Materialia
+%% Oblate Spheroid Excitation Theory (OSET): International Journal of Plasticity
 %% Two-column (elsarticle 5p), full derivations retained
+%% Author-year (elsarticle-harv) citation style
 %% pdflatex -> bibtex -> pdflatex -> pdflatex
 %% ============================================================
-\documentclass[5p,sort&compress]{elsarticle}
+\documentclass[5p]{elsarticle}
 
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{mathtools}
@@ -16,7 +17,8 @@
 \usepackage{microtype}
 
 \graphicspath{{figures/}}
-\journal{Acta Materialia}
+\journal{International Journal of Plasticity}
+\biboptions{authoryear}
 
 \newcommand{\OSTZ}{\textsc{ostz}}
 \newcommand{\OSET}{\textsc{oset}}
@@ -29,7 +31,7 @@
 \begin{document}
 \begin{frontmatter}
 
-\title{Oblate Spheroid Excitation Theory (\OSET): A Unified,
+\title{Oblate Spheroid Excitation Theory: A Unified,
   Lattice-Free Foundation for Plastic Deformation from Which
   Dislocations Emerge as Collective Excitations}
 
@@ -48,38 +50,33 @@
   city={Chennai}, postcode={600\,025}, country={India}}
 
 \begin{abstract}
-Dislocation theory has underpinned crystal plasticity for nearly a
-century, yet its central object, a topological line defect defined
-through a Burgers circuit in a Bravais lattice, cannot describe
-plastic flow in grain boundaries, metallic glasses, ceramics,
-polymers, or nanocrystals approaching the glass transition,
-because no periodic lattice is available there. We propose the
-\emph{Oblate Spheroid Excitation Theory} (\OSET), in which the
-elementary carrier of plastic deformation in any solid, crystalline
-or not, is a shear-eigenstrained oblate spheroid, the
-oblate-spheroidal transformation zone (\OSTZ), treated exactly within
-Eshelby's inclusion theory. The \OSTZ\ requires no lattice and has a
-finite, non-singular activation energy and stress field that is
-intrinsically thermally activated rather than appended afterwards.
-Three results are proved: a single \OSTZ\ produces a non-singular
-elastic dipole rather than a dislocation's singular field; a
-co-planar chain of $N$ \OSTZ s is mathematically identical to a
-Peierls--Nabarro dislocation, with both its core width and its
-Burgers vector fixed by \OSTZ\ geometry; and a genuine lattice
-dislocation nucleates only once the chain reaches a critical length
-set by the host lattice. Dislocations therefore emerge as a
-collective, large-$N$ limit of \OSET\ rather than being assumed as an
-independent entity, and the theoretical shear strength, Peierls
-stress, dislocation core energy, Frank--Read critical stress, and
-stacking-fault energy all follow as derived, parameter-free
-quantities. \OSET\ is validated against grain-boundary-sliding data, independent literature spanning
-metals, ceramics, and bulk metallic glasses, and a recent 41-system
-compilation, reproducing the fitted dilatational eigenstrain to
-within 2\% and the shear eigenstrain to within 15\% with no
-adjustable parameters. Because classical dislocation theory emerges
-from \OSET\ but \OSET\ does not require dislocations, in our view,
-\OSET\ provides a more fundamental and more broadly applicable foundation
-for plastic deformation across material classes.
+Dislocation theory has underpinned crystal plasticity for a
+century, yet its lattice-dependent definition cannot describe plastic
+flow in grain boundaries, glasses, ceramics, or nanocrystals near the
+glass transition, where no periodic lattice exists. We propose the
+\emph{Oblate Spheroid Excitation Theory} (\OSET): the elementary
+carrier of plastic deformation, in any solid, is a shear-eigenstrained
+oblate spheroid, the oblate-spheroidal transformation zone (\OSTZ),
+treated within Eshelby's inclusion theory. The \OSTZ\ requires
+no lattice and has a finite, non-singular, intrinsically thermally
+activated energy and stress field. Three results are proved: a
+single \OSTZ\ produces a non-singular elastic dipole, not a
+dislocation's singular field; a co-planar chain of $N$ \OSTZ s is
+mathematically identical to a Peierls--Nabarro dislocation, core
+width and Burgers vector fixed by \OSTZ\ geometry; and a genuine
+dislocation nucleates only once the chain reaches a host-lattice-set
+critical length. Dislocations emerge as a collective,
+large-$N$ limit of \OSET\ rather than an assumed entity,
+and the theoretical shear strength, Peierls stress, core energy,
+Frank--Read critical stress, and stacking-fault energy follow as
+derived, parameter-free quantities. \OSET\ is validated against
+grain-boundary-sliding data, independent literature spanning metals,
+ceramics, and bulk glasses, and a recent 41-system compilation,
+reproducing the fitted dilatational and shear eigenstrains to within
+2\% and 15\%, respectively. Because classical dislocation
+theory emerges from \OSET\ but \OSET\ does not require dislocations,
+it provides, in our view, a more fundamental, broadly applicable
+foundation for plastic deformation across material classes.
 \end{abstract}
 
 \begin{keyword}
@@ -95,24 +92,24 @@ superplasticity
 
 The dislocation is, by a wide margin, the most successful concept in
 the theory of slightly defective crystal plasticity. Since its independent introduction
-by Taylor, Orowan, and Polanyi in 1934~\cite{taylor1934,orowan1934,polanyi1934}
+by Taylor, Orowan, and Polanyi in 1934~\citep{taylor1934,orowan1934,polanyi1934}
 to explain why real crystals yield at stresses orders of magnitude
 below the theoretical shear strength, the dislocation has provided
 the microscopic basis for strain hardening, the Hall--Petch average
-grain-size dependence of strength~\cite{hall1951,petch1953}, creep, fatigue, and
+grain-size dependence of strength~\citep{hall1951,petch1953}, creep, fatigue, and
 fracture in essentially every crystalline engineering alloy. Its
 mathematical foundation was laid by Volterra's elastic continuum
-construction of a line defect~\cite{volterra1907} decades before its
+construction of a line defect~\citep{volterra1907} decades before its
 physical role was understood, and was subsequently refined by the
-Peierls--Nabarro model~\cite{peierls1940,nabarro1947}, which regularised
+Peierls--Nabarro model~\citep{peierls1940,nabarro1947}, which regularised
 the otherwise singular core by spreading the displacement
 discontinuity over a finite width, and by Eshelby's general theory of
-elastic inclusions~\cite{eshelby1957}, which placed the energetics of
+elastic inclusions~\citep{eshelby1957}, which placed the energetics of
 lattice defects on a rigorous continuum-mechanical footing. Eight
 decades of refinement have made dislocation theory, enriched by
 kink-pair nucleation, climb, cross-slip, and forest-hardening models,
 the standard language in which crystal plasticity is presently taught,
-computed, and engineered~\cite{hirth1982}.
+computed, and engineered~\citep{hirth1982}.
 
 That success rests, however, on a definition that is fundamentally
 topological rather than physical. The dislocation is specified by
@@ -147,8 +144,8 @@ boundary is conventionally described through DSC
 high-angle boundary the DSC lattice is commensurate with the two
 adjoining crystals only in a statistical sense, so the underlying
 reference lattice that R1 demands is simply not available; this is
-precisely the regime in which Padmanabhan and
-co-workers~\cite{pad-part1,padgleiter2014,paddivinski2024} introduced a
+precisely the regime in which
+\citet{pad-part1,padgleiter2014,paddivinski2024} introduced a
 phenomenological rate equation, built around an empirical
 boundary-sliding eigenstrain, that successfully predicts superplastic
 flow without ever invoking a dislocation explicitly. In nanocrystalline
@@ -160,12 +157,12 @@ Hall--Petch effect. This softening was reported experimentally and
 given an early phenomenological explanation, in terms of a
 grain-boundary-sliding-controlled flow process, well before it was
 reproduced in atomistic
-simulation~\cite{hahnpadmanabhan1997,schiotz1998}, because a grain too small to
+simulation~\citep{hahnpadmanabhan1997,schiotz1998}, because a grain too small to
 host an extended dislocation network cannot be described by a theory
 whose elementary unit is a dislocation line. In metallic glasses there
 is no lattice at all, and yet the material deforms plastically; the
 accepted microscopic picture is the shear-transformation zone
-(STZ)~\cite{argon1979,falk-langer1998}, a local, thermally activated
+(STZ)~\citep{argon1979,falk-langer1998}, a local, thermally activated
 rearrangement of a cluster of atoms that bears no resemblance to a
 topological line defect. Ceramics and semicrystalline polymers present
 further intermediate cases: wherever dislocation glide is restricted
@@ -174,12 +171,12 @@ absence of a usable reference lattice (R1) again forces boundary- and
 free-volume-mediated mechanisms to dominate the observed plasticity.
 
 The existing remedies for these failures are mechanism-specific rather
-than unified. STZ theory~\cite{argon1979,falk-langer1998} supplies a
+than unified. STZ theory~\citep{argon1979,falk-langer1998} supplies a
 phenomenological activation volume and energy for amorphous flow but
 does not derive either from an explicit elastic inclusion, so it
 offers no route back to dislocation quantities such as the Peierls
-stress or stacking-fault energy. The Padmanabhan et al.\ grain-boundary
-sliding theory~\cite{pad-part1} is, in the present context, the
+stress or stacking-fault energy. The grain-boundary
+sliding theory of \citet{pad-part1} is, in the present context, the
 closest predecessor to this work: it identifies the elementary
 boundary-sliding event with an oblate-spheroidal region of grain
 boundary atomic ensembles and obtains a
@@ -190,9 +187,9 @@ and the theory was never connected back to the dislocation quantities
 of single-crystal plasticity. The general idea that deformation in
 disordered or sub-dislocation-scale regions might require an
 elementary unit smaller than a lattice dislocation was raised by
-Padmanabhan and Gleiter in an earlier
-review~\cite{padgleiter2012} and revisited in the context of
-grain/interphase boundary structure~\cite{padgleiter2014}, but in
+\citet{padgleiter2012} in an earlier
+review and revisited in the context of
+grain/interphase boundary structure~\citep{padgleiter2014}, but in
 neither case was the idea developed into a quantitative theory with
 derivable, parameter-free observables. What is missing, in short, is a single
 elementary excitation that (i) requires no crystal lattice for its
@@ -213,7 +210,7 @@ configuration when thermally or mechanically activated. Modelling
 this region as an Eshelby oblate spheroid, rather than as a sphere or
 a flat crack, is the key geometric choice of the theory: the shape is
 thin enough to localise shear near a glide plane, yet smooth enough
-that Eshelby's inclusion theory~\cite{eshelby1957,mura1987} yields an
+that Eshelby's inclusion theory~\citep{eshelby1957,mura1987} yields an
 exact, closed-form, and non-singular stress and energy. \OSET\
 requires exactly three material inputs, the \OSTZ\ radius $W$, the
 shear eigenstrain $\gz$, and the shear modulus $G$ of the host, and
@@ -243,7 +240,7 @@ rate equation and a Taylor-hardening law (\S\ref{sec:stat}). Sections
 material classes, state its novel testable predictions, and validate
 it quantitatively against the original 1996 Padmanabhan et al.\ data
 set, subsequent independent literature, and the 41-system compilation
-of Harisankar and Padmanabhan~\cite{harisankar2025}.
+of \citet{harisankar2025}.
 
 %%=========================================================
 \section{The Fundamental Entity: the \OSTZ}
@@ -258,7 +255,7 @@ thermally or mechanically activated. Modelling it as an
 \emph{oblate spheroid} rather than a sphere or a flat crack is the
 key geometric choice of this paper: it is thin enough to represent a
 localized shear event confined near a boundary or free-volume site,
-yet smooth enough that Eshelby's inclusion theory~\cite{eshelby1957}
+yet smooth enough that Eshelby's inclusion theory~\citep{eshelby1957}
 gives an exact, closed-form, non-singular stress and energy. The
 next two subsections fix this geometry and then derive its
 energetics from first principles.
@@ -306,7 +303,7 @@ what determines how much elastic energy is stored when the \OSTZ\
 activates (\S\ref{sec:energy}). For an arbitrary inclusion shape this
 would require solving an elasticity boundary-value problem
 numerically; the entire point of choosing an \emph{ellipsoid} is that
-Eshelby's inclusion theorem~\cite{eshelby1957} gives the answer in
+Eshelby's inclusion theorem~\citep{eshelby1957} gives the answer in
 closed form. The theorem states that the strain and stress inside a
 homogeneous ellipsoidal inclusion are \emph{uniform} (independent of
 position within the inclusion):
@@ -325,7 +322,7 @@ Since the \OSTZ\ eigenstrain (Eq.~\eqref{eq:eigenstrain}) is a pure
 $13$-shear, only the single component $S_{1313}$ is needed; for the
 general ellipsoid this component is built from two auxiliary shape
 integrals, $I_\alpha$ and $I_{\alpha\beta}$, that depend only on the
-semi-axes~\cite{mura1987}:
+semi-axes~\citep{mura1987}:
 \begin{equation}
   S_{1313}=\frac{(1+\alpha^2)I_{13}+(1-2\nu)(I_1+I_3)}{16\pi(1-\nu)},
   \label{eq:S1313}
@@ -526,7 +523,7 @@ tensor satisfies:
   S_{ijkk}^\text{sphere}=\frac{1+\nu}{3(1-\nu)}\delta_{ij}.
   \label{eq:Sijkk}
 \end{equation}
-This follows from the known sphere values~\cite{mura1987}
+This follows from the known sphere values~\citep{mura1987}
 $S_{1111}=(7-5\nu)/[15(1-\nu)]$,
 $S_{1122}=(5\nu-1)/[15(1-\nu)]$, summing:
 $S_{1111}+S_{1122}+S_{1133}=(1+\nu)/[3(1-\nu)]$. Full derivation
@@ -539,7 +536,7 @@ For $\nu=1/3$: $\beta_2=4(4/3)/[9(2/3)]=0.889$.
 
 Two formulas for $\beta_2$ exist: (a) exact oblate formula
 $\beta_2^\text{oblate}=1-S_{3333}(1-2\nu)/[2(1-\nu)]=0.816$;
-(b) spherical dilatation approximation $\beta_2^\text{sphere}=0.889$~\cite{pad-part1}.
+(b) spherical dilatation approximation $\beta_2^\text{sphere}=0.889$~\citep{pad-part1}.
 They differ by $\sim9\%$ at $\nu=1/3$;
 since $\beta_2\varepsilon_0^2\ll\beta_1\gz^2$, the difference is
 $<2\%$ of $\dF$ and inconsequential.
@@ -578,7 +575,7 @@ for $\alpha=0.5$, $\nu=0.28$--$0.44$.
 \textbf{(b) Padmanabhan et al.\ effective value:} $\beta_1^\text{eff}\approx1$.
 
 \paragraph{Physical reconciliation} OSTZs at grain boundaries are embedded
-in GB material with $G_\text{GB}\approx G/2$ (GB softening~\cite{wolf1990}):
+in GB material with $G_\text{GB}\approx G/2$ (GB softening~\citep{wolf1990}):
 $\beta_1^\text{eff}=\beta_1^\text{Esh}\times G/G_\text{GB}
 \approx0.45\times2=0.90\approx1$.
 
@@ -784,18 +781,6 @@ Activation energy & $\dF$ & 0.38~eV & ---\\
 Critical number & $N_c$ & 4 & $\approx5$--$10$\\
 \bottomrule
 \end{tabular}
-
-\smallskip
-{\footnotesize In the crystal interior the shear eigenstrain $\gz$ is
-\emph{not} a single universal constant but the material's own
-\emph{ideal shear strain} $s_m$ (the relaxed engineering shear strain at
-the maximum of the first-principles $\gamma$-surface), taken from
-Ogata et~al.~\cite{ogata2004}: $0.137$ (Cu), $0.200$ (Al), $0.140$ (Ni),
-$0.145$ (Ag), $0.105$ (Au), $\approx0.18$ (BCC Fe, W). The single value
-$\gz=0.12$ quoted in earlier work is the Cu value; using it for every
-metal is the source of the large discrepancies in stacking-fault energy
-and Peierls stress that the per-metal ideal shear strain removes (SI,
-Sec.~S2 and Fig.~S2).}
 \end{table}
 
 %%=========================================================
@@ -828,7 +813,7 @@ The force monopole vanishes:
 vanishes by the divergence theorem.) The leading far-field term is
 therefore the \emph{force-dipole} at order $r^{-3}$.
 
-The full multipole expansion~\cite{mura1987} is
+The full multipole expansion~\citep{mura1987} is
 \begin{multline}
   \sigma_{ij}(\mathbf r)=
   \underbrace{F_k\mathcal G_{ijk}}_{\text{monopole }r^{-2}}
@@ -838,7 +823,7 @@ The full multipole expansion~\cite{mura1987} is
   \label{eq:multipole}
 \end{multline}
 Since $F_k=0$, the leading nonzero term is the dipole. The moment
-tensor~\cite{mura1987} is
+tensor~\citep{mura1987} is
 \begin{equation}
   M_{kl}=C_{ijkl}\varepsilon^*_{ij}V_0\;\Rightarrow\;
   M_{13}=M_{31}=G\gz V_0,
@@ -851,7 +836,7 @@ separated by the OSTZ diameter $2W$.
 \label{sec:stepA}
 
 The elastic displacement due to a unit point force at the origin in an
-infinite isotropic medium (Kelvin--Somigliana solution~\cite{mura1987}):
+infinite isotropic medium (Kelvin--Somigliana solution~\citep{mura1987}):
 \begin{equation}
   \mathcal G_{ij}(\mathbf r)=A\!\left[\frac{(3-4\nu)\delta_{ij}}{r}
   +\frac{x_ix_j}{r^3}\right],\quad A=\frac{1}{16\pi G(1-\nu)}.
@@ -886,7 +871,7 @@ $\partial x_i/\partial x_l=\delta_{il}$, $\partial(r^{-3})/\partial x_l=-3x_l/r^
 \label{sec:stepB}
 
 For an Eshelby eigenstrain inclusion, the far-field exterior
-displacement is~\cite{eshelby1957,mura1987} $u_i=-M_{kl}\partial_l\mathcal G_{ik}$.
+displacement is~\citep{eshelby1957,mura1987} $u_i=-M_{kl}\partial_l\mathcal G_{ik}$.
 With $M_{13}=M_{31}=G\gz V_0$ (all other components zero),
 the only nonzero contributions are $(k,l)=(1,3)$ and $(3,1)$.
 
@@ -1238,7 +1223,7 @@ phenomenological core width that is normally fitted to experiment.
 \subsubsection{Step A: 2D dislocation density (BCS compliance)}
 \label{sec:stepA-BCS}
 
-The Bilby--Cottrell--Swinden (BCS) compliance~\cite{bilby1963}
+The Bilby--Cottrell--Swinden (BCS) compliance~\citep{bilby1963}
 $\delta u_1=2(1-\nu)\sigma_{13}/G$ relates local slip to traction.
 \paragraph{Physical basis} A shear traction $\sigma_{13}$ on the
 glide plane produces a local slip increment $\delta u_1$ smaller
@@ -1246,9 +1231,9 @@ than the naive estimate $\sigma_{13}/G$ by a factor $(1-\nu)$,
 because the surrounding half-space elastically constrains the
 opening of the slip increment in Poisson-ratio fashion; the factor
 can be obtained from the J-integral analysis of a shear
-crack~\cite{rice1968} or, equivalently, from the dislocation-density
+crack~\citep{rice1968} or, equivalently, from the dislocation-density
 relation $\sigma=G\rho/[2(1-\nu)]$ of the \PN\
-model~\cite{hirth1982}.
+model~\citep{hirth1982}.
 \paragraph{Applicability to the \OSTZ\ $r^{-3}$ field} Three features
 justify using the planar BCS compliance here even though it was
 derived for smooth slip distributions: (i)~the \OSTZ\ field decays
@@ -1345,7 +1330,7 @@ The Lorentzian is the unique non-negative distribution integrating to
 $\beff$ with width $W$ and reducing to a Dirac delta as $W\to0$.
 Both \OSET\ and the P--N model are governed by the same
 Cauchy--Hilbert Green's operator of planar
-elasticity~\cite{muskhelishvili1953,bilby1963}: the singular
+elasticity~\citep{muskhelishvili1953,bilby1963}: the singular
 integral kernel $1/(x-x')$ that relates a planar dislocation
 density to the shear stress it produces (Eq.~\eqref{eq:conv} below)
 is the Cauchy kernel of the Hilbert transform, and the Lorentzian is
@@ -1406,7 +1391,7 @@ Setting $b\equiv N\beff$ and $\zeta\equiv W$:
   U(x)=\frac{b}{2}+\frac{b}{\pi}\arctan\frac{x}{\zeta}.
   \label{eq:PNprofile}
 \end{equation}
-This is exactly the \PN\ displacement profile~\cite{peierls1940,nabarro1947},
+This is exactly the \PN\ displacement profile~\citep{peierls1940,nabarro1947},
 obtained there from an entirely different starting point, the
 variational minimisation of elastic self-energy against a sinusoidal
 misfit potential. \textit{Limits:} as $x\to-\infty$, $U\to0$ (no slip
@@ -1564,7 +1549,7 @@ For FCC copper ($W=b$, $\gz=0.137$) this gives $N_c\approx7$ (and
 $N_c\approx5$--$10$ across the FCC and BCC metals); for the
 grain-boundary regime ($W=2.5b$, $\gz=0.10$) it gives $N_c=4$ exactly,
 a value confirmed experimentally by the cooperative sliding events
-observed in Zn--22Al~\cite{astanin-part2}.
+observed in Zn--22Al~\citep{astanin-part2}.
 
 This single parameter also explains, without further assumptions,
 why dislocations do not form in amorphous materials. In a
@@ -1615,7 +1600,7 @@ $\tau^*\gz V_0=\dF=\half\beta_1\gz^2GV_0$:
   \label{eq:strength}
 \end{equation}
 For $\beta_1\approx1$ and the Cu ideal shear strain $\gz=0.137$:
-$\tau^*\approx G/15$ (Frenkel range~\cite{frenkel1926} $G/10$--$G/30$).
+$\tau^*\approx G/15$ (Frenkel range~\citep{frenkel1926} $G/10$--$G/30$).
 
 \subsection{Peierls stress}
 \label{sec:peierls}
@@ -1632,7 +1617,7 @@ that external input. Setting $\tau^*=(2\pi/b)V_0^\text{OSET}$:
   V_0^\text{OSET}=\frac{\beta_1\gz Gb}{4\pi}.
   \label{eq:V0OSET}
 \end{equation}
-For Cu: $\tau^*\approx G/15$ vs.\ the Frenkel estimate~\cite{frenkel1926} $G/[2(1-\nu)]\approx0.75G$.
+For Cu: $\tau^*\approx G/15$ vs.\ the Frenkel estimate~\citep{frenkel1926} $G/[2(1-\nu)]\approx0.75G$.
 
 \subsubsection{Fourier convolution}
 
@@ -1662,14 +1647,14 @@ the fact that the glide plane is a free (or bounded) surface rather
 than embedded in an infinite medium.
 Barrier: $\Delta E_P=2Ae^{-2\pi W/b}$ with $A=Gb^2/[4\pi(1-\nu)]$.
 Maximum slope: $\tau_P=(2\pi A/b^2)e^{-2\pi W/b}=G e^{-2\pi W/b}/[2(1-\nu)]$.
-With half-space correction~\cite{peierls1940} ($W\to W/(1-\nu)$, prefactor $\times2$):
+With half-space correction~\citep{peierls1940} ($W\to W/(1-\nu)$, prefactor $\times2$):
 \begin{equation}
   \boxed{\tau_P=\frac{2G}{1-\nu}
   \exp\!\left(-\frac{2\pi W}{b(1-\nu)}\right).}
   \label{eq:peierls}
 \end{equation}
 For Cu ($W=b$, $\nu=1/3$): $\tau_P\approx2.1\times10^{-4}G$
-(experiment~\cite{nabarro1997}: $\sim10^{-4}G$). The width that enters
+(experiment~\citep{nabarro1997}: $\sim10^{-4}G$). The width that enters
 the exponential is the Peierls glide-misfit width $W_P$, the one
 material-specific quantity any Peierls--Nabarro model must supply; with
 the per-metal $W_P$ ($\sim1.1$--$1.6\,b$ for the wide planar FCC cores,
@@ -1697,7 +1682,7 @@ $\dF=\pi\beta_1\gz^2GW^3/3$:
   \label{eq:coreE}
 \end{equation}
 Writing $E_\text{core}=\alpha Gb^2$: for Cu ($W\approx b$, $\gz=0.137$),
-$\alpha=\pi\beta_1\gz/3\approx0.14$ (exp/DFT~\cite{woodward2002}: $0.1$--$0.2$).
+$\alpha=\pi\beta_1\gz/3\approx0.14$ (exp/DFT~\citep{woodward2002}: $0.1$--$0.2$).
 With the per-metal ideal shear strain and the structural width $W=b$
 (distinct from the narrow Peierls width $W_P$ above), the FCC core
 energies fall in the DFT range and the BCC values within $\sim1.6\times$
@@ -1706,7 +1691,7 @@ energies fall in the DFT range and the BCC values within $\sim1.6\times$
 \subsection{Frank--Read critical stress}
 \label{sec:FR}
 
-Following Frank \& Read~\cite{frank-read1950}:
+Following \citet{frank-read1950}:
 
 \paragraph{Step~1 (line tension)}
 The line tension $T$ is the dislocation's elastic self-energy per
@@ -1790,13 +1775,20 @@ $W^3/W^2=W$:
   \boxed{\gamma_\text{SF}=\frac{(\sqrt3-1)\beta_1\gz^2GW}{3}.}
   \label{eq:SFE}
 \end{equation}
-Here $\gz$ is the metal's \emph{ideal shear strain}: taking the
-literature value $\gz=0.137$ for Cu~\cite{ogata2004} ($G=48.3$~GPa,
+Here $\gz$ is \emph{not} a single universal constant but the metal's
+own \emph{ideal shear strain} $s_m$ (the relaxed engineering shear
+strain at the maximum of the first-principles $\gamma$-surface), taken
+from \citet{ogata2004}: $0.137$ (Cu), $0.200$ (Al), $0.140$ (Ni),
+$0.145$ (Ag), $0.105$ (Au), $\approx0.18$ (BCC Fe, W); the single value
+$\gz=0.12$ used in earlier work is simply the Cu value, and using it
+for every metal is the source of the large discrepancies in
+stacking-fault energy and Peierls stress that the per-metal value
+removes. Taking $\gz=0.137$ for Cu~\citep{ogata2004} ($G=48.3$~GPa,
 $W=b=0.2556$~nm, $\beta_1=1$) gives $\gamma_\text{SF}=57$~mJ/m$^2$
 versus experiment $45$~mJ/m$^2$. Equation~\eqref{eq:SFE} makes
 $\gamma_\text{SF}\propto\gz^2Gb$, so the material-to-material spread is
 carried by the ideal shear strain, not by a single universal number.
-Using the per-metal ideal shear strains of Ogata et~al.~\cite{ogata2004}
+Using the per-metal ideal shear strains of \citet{ogata2004}
 \emph{with no fitting}, the predictions for Cu, Al, Ni, Ag, and Au agree
 with experiment to within a factor $\sim2$--$3$; the full comparison,
 plotted alongside the Peierls stress and core energy of the same metals,
@@ -1840,7 +1832,7 @@ In \OSET\ each dislocation is an $N_c$-\OSTZ\ chain; summing the elastic
 dipole fields reproduces the classical dislocation line energy
 $E_d=(Gb^2/4\pi(1-\nu))\ln(R/r_0)$. Dividing by $D$ with
 $R\sim D/2$ ($\ln(R/r_0)\to A-\ln\theta$) yields the
-Read--Shockley law~\cite{readshockley1950}:
+Read--Shockley law~\citep{readshockley1950}:
 \begin{align}
   \gamma_\text{GB}(\theta)&=E_0\,\theta(A-\ln\theta),
     \label{eq:RS}\\
@@ -1935,8 +1927,8 @@ eigenstrain $\gz$ over volume $V_0$, the work done by the net driving
 stress is $W_\mathrm{mech}=(\tau-\tau_0)\gz V_0$, where $\tau_0$ is
 the threshold back-stress that must first be overcome to nucleate
 the mesoscopic cooperative interface between two neighbouring grains,
-$\tau_0\propto d^{-1/2}$~\cite{pad-part1}, with $d$ throughout this
-paper the average grain size, as in~\cite{pad-part1}; $\tau_0$ is therefore
+$\tau_0\propto d^{-1/2}$~\citep{pad-part1}, with $d$ throughout this
+paper the average grain size, as in~\citep{pad-part1}; $\tau_0$ is therefore
 distinct from the elastic interaction stress of Term~3 below. Because
 this work \emph{lowers} the energy required to activate the site once
 $\tau>\tau_0$, it enters the Hamiltonian with a negative sign and is
@@ -2011,7 +2003,7 @@ next subsection.
 
 \paragraph{The linearisation step}
 Write $n_i=\bar n+\delta n_i$. Expand $n_in_j$ and drop
-$\delta n_i\delta n_j$ (Bragg--Williams approximation~\cite{bragg1934}):
+$\delta n_i\delta n_j$ (Bragg--Williams approximation~\citep{bragg1934}):
 \begin{equation}
   n_in_j\approx n_i\bar n+n_j\bar n-\bar n^2.
   \label{eq:BW}
@@ -2079,7 +2071,7 @@ strain increment:
 \end{equation}
 
 \paragraph{Step~2 (Eyring forward/backward rates)}
-Following Eyring~\cite{eyring1935}, who bases his arguments on
+Following \citet{eyring1935}, who bases his arguments on
 Transition Rate Theory, bias $\Delta w=(\tau-\tau_0)\gz V_0/2$.
 Forward barrier $\dF-\Delta w$; reverse $\dF+\Delta w$:
 \begin{equation}
@@ -2110,7 +2102,7 @@ Multiply by $\delta\gamma_{0,\text{macro}}=\gz W/d$:
   e^{-\dF/kT}.}
   \label{eq:rate}
 \end{equation}
-Identical to Padmanabhan et al.\ (1996, Eq.~8)~\cite{pad-part1}.
+Identical to Eq.~8 of \citet{pad-part1}.
 
 \subsubsection{Comparison: partition-function route}
 
@@ -2129,7 +2121,7 @@ latter.
 \subsubsection{Connection to Padmanabhan et al.\ (1996)}
 
 With $\Delta w=(\tau-\tau_0)\gz V_0/2$ and $(2W\gz/d)\dot w=\dot\gz$,
-Eq.~(8) of~\cite{pad-part1} is recovered exactly.
+Eq.~(8) of~\citep{pad-part1} is recovered exactly.
 Including a lognormal disorder distribution $f(\dF)$:
 \begin{multline}
   \dot\gz=\frac{2W\gz\nu_0}{d}\int_0^\infty f(\dF)\\
@@ -2137,7 +2129,7 @@ Including a lognormal disorder distribution $f(\dF)$:
   e^{-\dF/kT}\,\mathrm d(\dF).
   \label{eq:rateDisorder}
 \end{multline}
-Universal lognormal parameter $\bar A=5.6021$~\cite{venkatesh-part4};
+Universal lognormal parameter $\bar A=5.6021$~\citep{venkatesh-part4};
 CV$=14.8\%$; range $[0.28,0.52]$~eV.
 
 \subsection{\OSTZ\ interaction as the origin of Taylor hardening}
@@ -2158,7 +2150,7 @@ substituting $V_0=(2\pi/3)W^3$:
   \label{eq:Taylorhardening}
 \end{equation}
 \OSET\ predicts hardening \emph{linear} in $\rho_\text{disl}$
-(stage-I regime). The classical Taylor $\sqrt\rho$ law~\cite{taylor1934} requires
+(stage-I regime). The classical Taylor $\sqrt\rho$ law~\citep{taylor1934} requires
 the additional geometric forest-obstacle argument
 ($\tau_c=Gb/L$, $L\propto\rho^{-1/2}$, with $L$ here the
 forest-obstacle spacing, not to be confused with the average grain
@@ -2258,7 +2250,7 @@ Core width & Fitted & $\zeta=W$\\
 Burgers vector $b$ & Input & $N_c\gz W$\\
 Thermal activation & Appended & Intrinsic\\
 $\tau_P$ & $W$ fitted & Eq.~\eqref{eq:peierls}\\
-$\tau^*$ & Frenkel sep. & Eq.~\eqref{eq:strength}\\
+$\tau^*$ & Frenkel separation & Eq.~\eqref{eq:strength}\\
 SFE & Fitted & Eq.~\eqref{eq:SFE}\\
 GB plasticity & DSC needed, which has no experimental support & Natural\\
 Quantum representation & Topological field theory & Point-particle Schr\"odinger equation (\S\ref{sec:quantum})\\
@@ -2378,15 +2370,15 @@ is enough to span the full range of material classes encountered in
 plasticity. In a perfect crystal, where $\dF\gg kT$, individual
 \OSTZ\ activations are rare and the lattice forces them to act in
 cooperative clusters of exactly $N_c$, so the classical Orowan
-equation~\cite{orowan1940} is recovered as the large-cluster limit
+equation~\citep{orowan1940} is recovered as the large-cluster limit
 of the unified rate law. At a grain boundary or in a superplastic alloy, by contrast,
 \OSTZ s nucleate at free-volume sites with $N\ll N_c$, and the
 resulting rate equation reduces directly to Eq.~(39) of
-Padmanabhan et al.~\cite{pad-part1}. In a metallic glass there is no
+\citet{pad-part1}. In a metallic glass there is no
 periodic lattice to enforce any particular cluster size at all, so
 $N_c$ is undefined and deformation proceeds through individual
 \OSTZ\ activations, exactly the shear-transformation-zone
-picture~\cite{argon1979,falk-langer1998}: at low temperature this
+picture~\citep{argon1979,falk-langer1998}: at low temperature this
 produces localised deformation, with shear bands forming as
 percolating paths of activated \OSTZ s, while at high temperature
 the activations are dense enough that flow becomes homogeneous.
@@ -2425,7 +2417,7 @@ where $\tau_0^*=\tau_0\sqrt{1+\rho_{G\gz}\sigma_G\sigma_{\gz}}$ and
   \label{eq:Theta}
 \end{equation}
 In the crystal limit $\Theta\to N_c$ (Orowan); in the glass/GB limit
-$\Theta\to1$ (Padmanabhan et al.~\cite{pad-part1}, Eq.~(39)).
+$\Theta\to1$ (\citet{pad-part1}, Eq.~(39)).
 
 %%=========================================================
 \section{Validation}
@@ -2434,8 +2426,8 @@ $\Theta\to1$ (Padmanabhan et al.~\cite{pad-part1}, Eq.~(39)).
 \OSET\ is validated below at three increasingly independent levels:
 against the original 1996 Padmanabhan et al.\ parameter set, against
 literature published independently after 1996, and against the
-recent 41-system compilation of Harisankar and
-Padmanabhan~\cite{harisankar2025}. Full numerical tables underlying
+recent 41-system compilation of
+\citet{harisankar2025}. Full numerical tables underlying
 every comparison summarised here are given in the Supporting
 Information.
 
@@ -2448,10 +2440,10 @@ eigenstrain $\varepsilon_0$ is likewise consistent with the
 underlying free-volume picture: for $W=2.5b$, the predicted free
 volume per activation, $\delta V_\text{free}=\varepsilon_0
 V_0\approx0.1\,\Omega$ per grain-boundary atom, confirms the
-molecular-dynamics estimate of Wolf~\cite{wolf1990}. The critical
+molecular-dynamics estimate of \citet{wolf1990}. The critical
 cluster number is reproduced exactly as well: $N_c=b/(\gz
 W)=0.3/(0.1\times0.75)=4.0$, matching the cooperative cluster size
-of $N=4$ measured experimentally in Zn--22Al~\cite{astanin-part2}.
+of $N=4$ measured experimentally in Zn--22Al~\citep{astanin-part2}.
 The full rate equation, evaluated for Al-12Si at $773$~K with
 $d=10\;\mu$m and $\tau-\tau_0=5$~MPa, predicts
 $\dot\gz=0.16$~s$^{-1}$, just above the upper edge of the typical
@@ -2464,29 +2456,29 @@ Supporting Information gives the complete claim-by-claim breakdown).
 
 Independent literature published after the original 1996 papers
 provides a broader test of the same rate equation and parameter
-set. Sripathi and Padmanabhan~\cite{sripathi2014} applied it to 33
+set. \citet{sripathi2014} applied it to 33
 distinct material systems and obtained correlation coefficients of
 $R=0.89$--$1.00$ throughout, and in doing so introduced an
 alternative $\beta_1$ convention that is fully reconciled with the
 one used here once the corresponding $\gz$ is rescaled. The canonical
 value $\gz=0.10$ is itself supported by four independent methods,
-spanning molecular dynamics~\cite{wolf1990}, bubble-raft analogue
+spanning molecular dynamics~\citep{wolf1990}, bubble-raft analogue
 experiments, shear-band initiation in metallic
-glasses~\cite{argon1979}, and shear-transformation-zone
-theory~\cite{falk-langer1998}. The same framework extends to bulk
-metallic glasses~\cite{buenz2015}, nanocrystalline
-nickel~\cite{pad2018}, and 8 further high-strain-rate superplastic
-alloy and composite systems~\cite{padbasariya2009}, in every case to
+glasses~\citep{argon1979}, and shear-transformation-zone
+theory~\citep{falk-langer1998}. The same framework extends to bulk
+metallic glasses~\citep{buenz2015}, nanocrystalline
+nickel~\citep{pad2018}, and 8 further high-strain-rate superplastic
+alloy and composite systems~\citep{padbasariya2009}, in every case to
 within a factor of $2$--$2.5$; the stresses underlying these last two
 comparisons were affected by a since-corrected shear/tensile
-conversion error~\cite{padsripathihahn2014}, so the broader,
+conversion error~\citep{sripathi2014}, so the broader,
 already-corrected 33-system validation above is the more reliable
 cross-material test. The Peierls stress formula of
 \S\ref{sec:peierls} is exact for Fe and within a factor of 2 for Cu
 when compared against the compilation of
-Nabarro~\cite{nabarro1997}, and the Lorentzian dislocation-density
+\citet{nabarro1997}, and the Lorentzian dislocation-density
 profile of \S\ref{sec:lorentzian} matches X-ray diffraction
-line-profile data for Al~\cite{vermeulen1995} (Table~S5 in the
+line-profile data for Al~\citep{vermeulen1995} (Table~S5 in the
 Supporting Information gives the complete comparison, and
 Figure~S6 there consolidates the bulk-metallic-glass,
 nanocrystalline-Ni, and high-strain-rate-alloy comparisons into a
@@ -2495,8 +2487,8 @@ example above).
 
 \label{sec:harisankar}
 Table~S6 of the Supporting Information compares \OSET\ against the
-mean of the semi-empirical constants fitted by Harisankar and
-Padmanabhan~\cite{harisankar2025} across all 41 systems in their
+mean of the semi-empirical constants fitted by
+\citet{harisankar2025} across all 41 systems in their
 compilation, with the full system-by-system breakdown given there in
 Table~S7 and the system-by-system distributions plotted in
 Figure~S7. Four findings emerge. The
@@ -2542,7 +2534,7 @@ anomalously high stacking-fault energy that can only be matched by
 inflating the eigenstrain to $\gz\approx0.30$, a symptom of its
 nearly-free-electron band structure rather than a failure of the
 elastic framework. In BCC metals the Peierls stress is
-underpredicted by a factor of $10$--$100\times$~\cite{nabarro1997},
+underpredicted by a factor of $10$--$100\times$~\citep{nabarro1997},
 because the true BCC dislocation core is narrower than the lattice
 spacing ($W<b$); using $W=0.2b$ instead of $W\approx b$ recovers the
 experimental value. Finally, the activation energy ratio
@@ -2630,12 +2622,11 @@ notebook (Eshelby tensor integrals, the dipole and glide-plane stress
 fields, the stacking-fault and Read--Shockley energy derivations, the
 \OSTZ\ Hamiltonian and mean-field rate equation, and others) is
 checked independently using the symbolic mathematics library
-SymPy~\cite{meurer2017sympy}, alongside NumPy/SciPy for the numerical
-cross-checks. The notebook, the figure-generation scripts, and the
-\LaTeX\ source of this article and its Supporting Information are
-available at \url{https://github.com/albert-hzbn/OSET}.
+SymPy~\citep{meurer2017sympy}, alongside NumPy/SciPy for the numerical
+cross-checks. The notebook is available at
+\url{https://github.com/albert-hzbn/OSET_derivations}.
 
-\bibliographystyle{elsarticle-num}
+\bibliographystyle{elsarticle-harv}
 \bibliography{OSET_references}
 
 \end{document}

@@ -29,19 +29,19 @@ os.makedirs(OUTDIR, exist_ok=True)
 plt.rcParams.update({
     "figure.dpi": 200,
     "savefig.dpi": 400,
-    "font.size": 12,
-    "axes.titlesize": 13,
+    "font.size": 13,
+    "axes.titlesize": 14.5,
     "axes.titleweight": "bold",
-    "axes.labelsize": 12,
-    "legend.fontsize": 9.5,
+    "axes.labelsize": 13,
+    "legend.fontsize": 10.5,
     "legend.framealpha": 0.92,
     "legend.edgecolor": "0.7",
-    "xtick.labelsize": 10,
-    "ytick.labelsize": 10,
+    "xtick.labelsize": 11,
+    "ytick.labelsize": 11,
     "xtick.direction": "out",
     "ytick.direction": "out",
     "font.family": "serif",
-    "mathtext.fontset": "cm",
+    "mathtext.fontset": "dejavuserif",
     "axes.grid": True,
     "axes.axisbelow": True,
     "grid.alpha": 0.25,
@@ -78,7 +78,7 @@ def _struct_legend(fig, structs=("FCC", "BCC", "HCP"), y=0.5, loc="center left")
     handles = [Line2D([0], [0], marker="s", ls="", markersize=9,
                       markerfacecolor=struct_color(s), markeredgecolor="0.3",
                       label=f"{s} (axis label)") for s in structs]
-    return fig.legend(handles=handles, frameon=False, fontsize=9.5,
+    return fig.legend(handles=handles, frameon=False, fontsize=11,
                       loc=loc, bbox_to_anchor=(1.0, y), title="crystal\nstructure")
 
 
@@ -108,16 +108,18 @@ def fig_S1313():
         S_vals = [S1313v(nu_v, a) for a in alpha_arr]
         label = f"$\\nu={nu_v:.3g}$" if abs(nu_v - 1 / 3) > 0.001 else "$\\nu=1/3$"
         ax.plot(alpha_arr, S_vals, color=col, lw=1.8, label=label)
-    ax.axhline(0.5, ls="--", color="gray", lw=1.0, label="thin-disk limit (1/2)")
-    ax.axvline(0.5, ls=":", color="black", lw=1.0, label=r"OSTZ $\alpha=0.5$")
+    ax.axhline(0.5, ls="--", color="gray", lw=2.2, label="thin-disk limit (1/2)")
+    ax.axvline(0.5, ls=":", color="black", lw=2.2, label=r"OSTZ $\alpha=0.5$")
     ax.set_xlabel(r"Aspect ratio $\alpha=c/a$")
     ax.set_ylabel(r"$S_{1313}$")
     ax.set_title(r"Eshelby tensor component $S_{1313}$ for an oblate spheroid")
-    ax.legend(frameon=False, loc="upper right")
+    ax.set_ylim(top=0.565)
+    ax.legend(frameon=True, loc="upper right", facecolor="white",
+              framealpha=0.92, edgecolor="0.7")
     fig.tight_layout()
-    fig.savefig(os.path.join(OUTDIR, "fig_S1313.png"))
+    fig.savefig(os.path.join(OUTDIR, "fig_S1313.pdf"))
     plt.close(fig)
-    print("Saved fig_S1313.png")
+    print("Saved fig_S1313.pdf")
 
 
 # ===========================================================================
@@ -139,8 +141,9 @@ def fig_Taylor():
     ax.set_xlabel(r"Dislocation density $\rho$ (m$^{-2}$)")
     ax.set_ylabel("Flow-stress increment (MPa)")
     ax.set_title("OSET vs. Taylor hardening (Cu, $z=6$)")
-    ax.legend(frameon=False, fontsize=8)
-    ax.set_ylim(1e-3, 1e5)
+    ax.legend(frameon=True, fontsize=10.5, loc="lower right",
+              facecolor="white", framealpha=0.92, edgecolor="0.7")
+    ax.set_ylim(1e-3, 2e8)
 
     ax2 = axes[1]
     rho_hi = np.logspace(14, 17, 300)
@@ -149,11 +152,11 @@ def fig_Taylor():
     ax2.set_xlabel(r"$\rho$ ($\times10^{15}\,\mathrm{m}^{-2}$)")
     ax2.set_ylabel("Flow-stress increment (MPa)")
     ax2.set_title("High-density regime")
-    ax2.legend(frameon=False)
+    ax2.legend(frameon=False, loc="upper left")
     fig.tight_layout()
-    fig.savefig(os.path.join(OUTDIR, "fig_Taylor_comparison.png"))
+    fig.savefig(os.path.join(OUTDIR, "fig_Taylor_comparison.pdf"))
     plt.close(fig)
-    print("Saved fig_Taylor_comparison.png")
+    print("Saved fig_Taylor_comparison.pdf")
 
 
 # ===========================================================================
@@ -178,9 +181,9 @@ def fig_partition():
     ax2.set_ylabel("relative error")
     ax2.set_title("Error of the incorrect sinh expression")
     fig.tight_layout()
-    fig.savefig(os.path.join(OUTDIR, "fig_partition_vs_sinh.png"))
+    fig.savefig(os.path.join(OUTDIR, "fig_partition_vs_sinh.pdf"))
     plt.close(fig)
-    print("Saved fig_partition_vs_sinh.png")
+    print("Saved fig_partition_vs_sinh.pdf")
 
 
 # ===========================================================================
@@ -302,7 +305,7 @@ def fig_materials_comparison():
     fig, axes = plt.subplots(1, 3, figsize=(15, 5.0))
     fig.suptitle(r"OSET vs. literature: crystal-interior dislocation properties "
                  r"(literature $\gamma_0$ = ideal shear strain, Ogata et al. 2004)",
-                 fontweight="bold", fontsize=13)
+                 fontweight="bold", fontsize=14.5)
 
     # --- Panel 1: SFE ---
     ax = axes[0]
@@ -317,7 +320,7 @@ def fig_materials_comparison():
     ax.legend(loc="upper left"); ax.set_ylim(0, max(max(oset_sfe), max(hi)) * 1.28)
     for xi, o, m in zip(x_sfe, oset_sfe, mid):
         ax.annotate(f"{o/m:.1f}$\\times$", (xi - bw / 2, o), textcoords="offset points",
-                    xytext=(0, 4), ha="center", fontsize=8.5, color=OSET_COLOR, fontweight="bold")
+                    xytext=(0, 4), ha="center", fontsize=10, color=OSET_COLOR, fontweight="bold")
 
     # --- Panel 2: Peierls stress ---
     ax = axes[1]
@@ -345,9 +348,9 @@ def fig_materials_comparison():
 
     _struct_legend(fig, y=0.5)
     fig.tight_layout(rect=[0, 0, 0.94, 0.92])
-    fig.savefig(os.path.join(OUTDIR, "fig_materials_comparison.png"))
+    fig.savefig(os.path.join(OUTDIR, "fig_materials_comparison.pdf"))
     plt.close(fig)
-    print("Saved fig_materials_comparison.png")
+    print("Saved fig_materials_comparison.pdf")
 
 
 # ===========================================================================
@@ -414,7 +417,7 @@ def fig_GB_energy():
 
     fig, axes = plt.subplots(1, 3, figsize=(15, 5.2))
     fig.suptitle("OSET grain-boundary free energy vs. literature, FCC + BCC + HCP (dislocation-array model)",
-                 fontweight="bold", fontsize=13)
+                 fontweight="bold", fontsize=14.5)
     panels = [("Coherent twin / SF boundary", "ctb", gb_ctb_lit),
               (r"Low-angle tilt $10^\circ$", "la", gb_la_lit),
               ("Random high-angle boundary", "ha", gb_ha_lit)]
@@ -436,13 +439,13 @@ def fig_GB_energy():
         ax.set_xticks(xt); ax.set_xticklabels(present)
         _color_xticklabels(ax, [gb[n]["struct"] for n in present])
         ax.set_ylabel(r"$\gamma_\mathrm{GB}$ (mJ/m$^2$)"); ax.set_title(title)
-        ax.legend(loc="upper left", fontsize=9)
+        ax.legend(loc="upper left", fontsize=10.5)
 
     _struct_legend(fig, y=0.5)
     fig.tight_layout(rect=[0, 0, 0.965, 0.93])
-    fig.savefig(os.path.join(OUTDIR, "fig_GB_energy.png"))
+    fig.savefig(os.path.join(OUTDIR, "fig_GB_energy.pdf"))
     plt.close(fig)
-    print("Saved fig_GB_energy.png (now FCC+BCC+HCP, 9 systems)")
+    print("Saved fig_GB_energy.pdf (now FCC+BCC+HCP, 9 systems)")
     return gb
 
 
@@ -537,59 +540,59 @@ def fig_HP2025_comparison():
     ratG = gBl / gBo
     Th = np.array([r["T"] / r["Tm"] for r in res13])
 
-    fig, ax = plt.subplots(2, 3, figsize=(14, 9))
-    fig.suptitle("OSTZ theory vs. Harisankar & Padmanabhan (2025) -- 41 systems", fontsize=13, fontweight="bold")
+    fig, ax = plt.subplots(2, 3, figsize=(14, 9.6))
+    fig.suptitle("OSTZ theory vs. Harisankar & Padmanabhan (2025) -- 41 systems", fontsize=14.5, fontweight="bold")
 
     a0 = ax[0, 0]
     a0.hist(g0s, bins=14, color="steelblue", alpha=0.78, edgecolor="k")
     a0.axvline(0.12, color="red", ls="--", lw=2, label="OSTZ crystal 0.12")
     a0.axvline(0.10, color="darkorange", ls="--", lw=2, label="OSTZ GB 0.10")
     a0.axvline(g0s.mean(), color="navy", lw=2, label=f"mean {g0s.mean():.3f}")
-    a0.set_xlabel(r"$\gamma_0$"); a0.set_ylabel("count"); a0.set_title(r"$\gamma_0$ distribution"); a0.legend(fontsize=8, frameon=False)
+    a0.set_xlabel(r"$\gamma_0$"); a0.set_ylabel("count"); a0.set_title(r"$\gamma_0$ distribution"); a0.legend(fontsize=9.5, frameon=False)
 
     a1 = ax[0, 1]
     a1.hist(e0s, bins=12, color="teal", alpha=0.78, edgecolor="k")
     a1.axvline(0.05, color="red", ls="--", lw=2, label="OSTZ 0.05")
     a1.axvline(e0s.mean(), color="navy", lw=2, label=f"mean {e0s.mean():.3f}")
-    a1.set_xlabel(r"$\varepsilon_0$"); a1.set_ylabel("count"); a1.set_title(r"$\varepsilon_0$ distribution"); a1.legend(fontsize=8, frameon=False)
+    a1.set_xlabel(r"$\varepsilon_0$"); a1.set_ylabel("count"); a1.set_title(r"$\varepsilon_0$ distribution"); a1.legend(fontsize=9.5, frameon=False)
 
     a2 = ax[0, 2]
     a2.scatter(dF0s, Qs, c="purple", alpha=0.75, s=48, edgecolors="k", lw=0.5)
     lim = max(dF0s.max(), Qs.max()) * 1.1
     a2.plot([0, lim], [0, lim], "k--", lw=1, label="1:1")
-    a2.plot([0, lim], [0, 4 * lim], "gray", ls=":", lw=1, label=r"$Q=4\Delta F_0$")
+    a2.plot([0, lim], [0, 4 * lim], "gray", ls=":", lw=2, label=r"$Q=4\Delta F_0$")
     a2.set_xlabel(r"$\Delta F_0$ OSTZ (eV)"); a2.set_ylabel(r"$Q$ paper (eV)")
-    a2.set_title(r"Activation energy ($Q/\Delta F_0\approx4$)"); a2.legend(fontsize=8, frameon=False)
+    a2.set_title(r"Activation energy ($Q/\Delta F_0\approx4$)"); a2.legend(fontsize=9.5, frameon=False)
 
     a3 = ax[1, 0]
     a3.scatter(gBo, gBl, c="crimson", alpha=0.75, s=48, edgecolors="k", lw=0.5)
     lim = max(gBl.max(), gBo.max()) * 1.1
     a3.plot([0, lim], [0, lim], "k--", lw=1, label="1:1")
     for fac, ls in [(2, "--"), (5, ":")]:
-        a3.plot([0, lim], [0, fac * lim], "gray", lw=0.8, ls=ls, label=f"{fac}$\\times$")
+        a3.plot([0, lim], [0, fac * lim], "gray", lw=1.8, ls=ls, label=f"{fac}$\\times$")
     a3.set_xlabel(r"$\gamma_B$ OSET Read--Shockley (J/m$^2$)"); a3.set_ylabel(r"$\gamma_B$ paper (J/m$^2$)")
-    a3.set_title("GB energy: dislocation-array model"); a3.legend(fontsize=8, frameon=False)
+    a3.set_title("GB energy: dislocation-array model"); a3.legend(fontsize=9.5, frameon=False)
 
     a4 = ax[1, 1]
     a4.scatter(gBe, gBl, c="green", alpha=0.75, s=48, edgecolors="k", lw=0.5)
     lim = max(gBl.max(), gBe.max()) * 1.1
     a4.plot([0, lim], [0, lim], "k--", lw=1, label="1:1")
     a4.set_xlabel(r"measured HAGB energy (J/m$^2$)"); a4.set_ylabel(r"$\gamma_B$ paper fit (J/m$^2$)")
-    a4.set_title("Paper's $\\gamma_B$ vs. experiment"); a4.legend(frameon=False)
+    a4.set_title("Paper's $\\gamma_B$ vs. experiment"); a4.legend(fontsize=10.5, frameon=False)
 
     a5 = ax[1, 2]
     m20 = ratG < 20
     a5.scatter(Th[m20], ratG[m20], c="darkorange", alpha=0.78, s=48, edgecolors="k", lw=0.5, label="metals/ceramics")
     a5.scatter(Th[~m20], ratG[~m20], c="cornflowerblue", alpha=0.85, s=58, marker="X", edgecolors="k", lw=0.5, label="ice (anomalous)")
     a5.axhline(np.median(ratG[m20]), color="red", ls="--", lw=1.5, label=f"median {np.median(ratG[m20]):.1f}$\\times$")
-    a5.axhline(1.0, color="green", ls=":", lw=1, label="perfect agreement")
+    a5.axhline(1.0, color="green", ls=":", lw=2, label="perfect agreement")
     a5.set_xlabel(r"homologous temperature $T/T_m$"); a5.set_ylabel(r"$\gamma_B$ ratio (paper / OSET)")
-    a5.set_title("Ratio is a constant offset (correct $Gb$ scaling)"); a5.legend(fontsize=7, frameon=False)
+    a5.set_title("Ratio is a constant offset (correct $Gb$ scaling)"); a5.legend(fontsize=9, frameon=False)
 
     fig.tight_layout(rect=[0, 0, 1, 0.95])
-    fig.savefig(os.path.join(OUTDIR, "fig_HP2025_comparison.png"))
+    fig.savefig(os.path.join(OUTDIR, "fig_HP2025_comparison.pdf"))
     plt.close(fig)
-    print("Saved fig_HP2025_comparison.png")
+    print("Saved fig_HP2025_comparison.pdf")
     return res13
 
 
@@ -602,15 +605,15 @@ def fig_HP2025_universal(res13):
     e0_fit = 0.0408 + 0.0117 / T_rng
     gB_fit = 1.075 - 19.962 / T_rng
 
-    fig, axb = plt.subplots(1, 3, figsize=(15, 5.2))
+    fig, axb = plt.subplots(1, 3, figsize=(15, 6.8))
     fig.suptitle("Universal temperature dependences (Harisankar & Padmanabhan 2025, Eqs. 9, 10, 12)",
-                 fontsize=13, fontweight="bold")
+                 fontsize=14.5, fontweight="bold")
 
     # Legends are placed BELOW each panel (under the x-label) so they can never
     # overlap the scattered 41-system data inside the axes.
     def _below_legend(ax, ncol):
-        ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.28), ncol=ncol,
-                  fontsize=8.3, frameon=False, handlelength=1.6,
+        ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.24), ncol=ncol,
+                  fontsize=10, frameon=False, handlelength=1.6,
                   columnspacing=1.2, borderaxespad=0.0)
 
     a = axb[0]
@@ -642,10 +645,10 @@ def fig_HP2025_universal(res13):
     a.set_ylim(0, max(gB_fit.max(), gBl.max(), gBo.max()) * 1.18)
     _below_legend(a, ncol=2)
 
-    fig.tight_layout(rect=[0, 0.12, 1, 0.92])
-    fig.savefig(os.path.join(OUTDIR, "fig_HP2025_universal.png"))
+    fig.tight_layout(rect=[0, 0.10, 1, 0.93])
+    fig.savefig(os.path.join(OUTDIR, "fig_HP2025_universal.pdf"))
     plt.close(fig)
-    print("Saved fig_HP2025_universal.png")
+    print("Saved fig_HP2025_universal.pdf")
 
 
 # ===========================================================================
@@ -660,7 +663,8 @@ def fig_rate_equation():
         (r"Nanocrystalline Ni", 0.4, 1.6, 1, "pad2018"),
         (r"High-rate Al/composite alloys (8 systems)", 0.5, 2.0, 8, "padbasariya2009"),
     ]
-    fig, axes = plt.subplots(1, 2, figsize=(11, 4.2), gridspec_kw={"width_ratios": [1.3, 1]})
+    fig, axes = plt.subplots(1, 2, figsize=(13.5, 4.4),
+                              gridspec_kw={"width_ratios": [1.3, 1], "wspace": 0.32})
 
     ax = axes[0]
     y = np.arange(len(entries))[::-1]
@@ -668,7 +672,7 @@ def fig_rate_equation():
         mid = (lo * hi) ** 0.5
         ax.plot([lo, hi], [yi, yi], color="steelblue", lw=3, solid_capstyle="round")
         ax.plot(mid, yi, "o", color="navy", ms=7, zorder=5)
-        ax.text(hi * 1.08, yi, f"$n={n}$", va="center", fontsize=8, color="dimgray")
+        ax.text(hi * 1.08, yi, f"$n={n}$", va="center", fontsize=10.5, color="0.25")
     ax.axvline(1.0, color="green", ls=":", lw=1.3, label="perfect agreement")
     ax.set_xscale("log")
     ax.set_xlim(0.2, 6)
@@ -677,10 +681,10 @@ def fig_rate_equation():
     ax.xaxis.set_major_locator(FixedLocator([0.2, 0.5, 1, 2, 5]))
     ax.xaxis.set_minor_locator(NullLocator())
     ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:g}"))
-    ax.set_yticks(y); ax.set_yticklabels([e[0] for e in entries], fontsize=9)
+    ax.set_yticks(y); ax.set_yticklabels([e[0] for e in entries], fontsize=10.5)
     ax.set_ylim(y.min() - 0.6, y.max() + 0.6)
     ax.set_xlabel(r"strain-rate ratio  $\dot\gamma_\mathrm{pred}/\dot\gamma_\mathrm{exp}$")
-    ax.set_title("Predicted-to-measured strain-rate ratio")
+    ax.set_title("Predicted-to-measured strain-rate ratio", fontsize=13.5)
 
     ax2 = axes[1]
     win_lo, win_hi = 1e-3, 1.0e-1
@@ -693,14 +697,14 @@ def fig_rate_equation():
     ax2.set_xlim(-1, 1)
     ax2.set_xticks([0]); ax2.set_xticklabels(["Al-12Si"])
     ax2.set_ylabel(r"$\dot\gamma$ (s$^{-1}$)")
-    ax2.set_title("Worked example (773 K, $d{=}10\\,\\mu$m)")
-    ax2.legend(frameon=False, fontsize=7.5, loc="lower left")
+    ax2.set_title("Worked example (773 K, $d{=}10\\,\\mu$m)", fontsize=13.5)
+    ax2.legend(frameon=False, fontsize=9.5, loc="lower left")
 
-    fig.suptitle("Unified Rate Equation applied across material classes", fontweight="bold", fontsize=12)
+    fig.suptitle("Unified Rate Equation applied across material classes", fontweight="bold", fontsize=14.5)
     fig.tight_layout(rect=[0, 0, 1, 0.90])
-    fig.savefig(os.path.join(OUTDIR, "fig_rate_equation.png"))
+    fig.savefig(os.path.join(OUTDIR, "fig_rate_equation.pdf"))
     plt.close(fig)
-    print("Saved fig_rate_equation.png (new)")
+    print("Saved fig_rate_equation.pdf (new)")
 
 
 # ===========================================================================

@@ -28,6 +28,7 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage[hidelinks]{hyperref}
+\usepackage{natbib}
 
 \graphicspath{{figures/}}
 
@@ -75,7 +76,7 @@ the \OSTZ\ throughout this paper.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.8\linewidth]{fig_S1313.png}
+\includegraphics[width=0.8\linewidth]{fig_S1313.pdf}
 \caption{Eshelby oblate-spheroid shear component $S_{1313}$ as a
 function of aspect ratio $\alpha=c/a$, for several values of
 Poisson's ratio $\nu$ spanning the range relevant to metals. The
@@ -94,8 +95,8 @@ $\gamma_\text{SF}=(\sqrt3-1)\beta_1\g^2GW/3$. The shear eigenstrain
 $\g$ is the \emph{ideal (intrinsic) shear strain} of the material, that
 is, the relaxed engineering shear strain $s_m$ at the maximum of the
 first-principles shear stress--strain curve on the primary slip system.
-We take $\g$ directly from the DFT compilation of Ogata
-et~al.~\cite{S_ogata2004} (their Table~II), an independent source, with
+We take $\g$ directly from the DFT compilation of
+\citet{S_ogata2004} (their Table~II), an independent source, with
 no fitting. An earlier version of this table instead fixed $\g=0.12$
 (the Cu value) for every metal; that single universal constant is the
 origin of the former large Al, Ni and Ag discrepancies. With the
@@ -122,8 +123,8 @@ traceable.
 \caption{Literature inputs and comparison targets for the
 crystal-interior predictions of Figure~\ref{si:fig:materials}. The OSTZ
 eigenstrain $\g$ is the relaxed ideal shear strain $s_m$ on the primary
-slip system, taken directly (no fitting) from Ogata
-et~al.~2004~\cite{S_ogata2004}, Table~II. The stacking-fault energy
+slip system, taken directly (no fitting) from
+\citet{S_ogata2004}, Table~II. The stacking-fault energy
 target is the measured/DFT value with its source; $G$, $b$, $\nu$ are
 the same handbook values used throughout. BCC metals have no single
 well-defined stacking fault, so no SFE target is assigned.}
@@ -132,13 +133,13 @@ well-defined stacking fault, so no SFE target is assigned.}
 \toprule
 Metal & Struct. & Slip system & $\g$ (Ogata 2004) & $\gamma_\text{SF}$ target (mJ/m$^2$) & Source \\
 \midrule
-Cu & FCC & $\{111\}\langle112\rangle$ & 0.137 & 45  & \cite{S_gallagher1970}\\
-Al & FCC & $\{111\}\langle112\rangle$ & 0.200 & 166 & \cite{S_gallagher1970}\\
-Ni & FCC & $\{111\}\langle112\rangle$ & 0.140 & 125 & \cite{S_gallagher1970}\\
-Ag & FCC & $\{111\}\langle112\rangle$ & 0.145 & 16  & \cite{S_gallagher1970}\\
-Au & FCC & $\{111\}\langle112\rangle$ & 0.105 & 32  & \cite{S_gallagher1970}\\
-Mg & HCP & basal $\{0001\}$           & 0.152 & 14--78 (DFT/exp.) & \cite{S_wang2014mg}\\
-Ti & HCP & prismatic $\{1\bar100\}$   & 0.099 & 259--327 (basal, DFT) & \cite{S_yu2016ti}\\
+Cu & FCC & $\{111\}\langle112\rangle$ & 0.137 & 45  & \citep{S_gallagher1970}\\
+Al & FCC & $\{111\}\langle112\rangle$ & 0.200 & 166 & \citep{S_gallagher1970}\\
+Ni & FCC & $\{111\}\langle112\rangle$ & 0.140 & 125 & \citep{S_gallagher1970}\\
+Ag & FCC & $\{111\}\langle112\rangle$ & 0.145 & 16  & \citep{S_gallagher1970}\\
+Au & FCC & $\{111\}\langle112\rangle$ & 0.105 & 32  & \citep{S_gallagher1970}\\
+Mg & HCP & basal $\{0001\}$           & 0.152 & 14--78 (DFT/exp.) & \citep{S_wang2014mg}\\
+Ti & HCP & prismatic $\{1\bar100\}$   & 0.099 & 259--327 (basal, DFT) & \citep{S_yu2016ti}\\
 Fe & BCC & $\{110\}\langle111\rangle$ & 0.178 & no single fault & n/a\\
 W  & BCC & $\{110\}\langle111\rangle$ & 0.179 & no single fault & n/a\\
 \bottomrule
@@ -151,11 +152,11 @@ structural analogue of the FCC fault, and the same parameter-free
 formula applies. For Mg, using its \emph{basal} ideal shear strain
 ($s_m=0.152$) OSET gives $31$~mJ/m$^2$, inside the wide literature
 range ($14.4$~mJ/m$^2$ DFT to $50$--$78$~mJ/m$^2$
-experiment~\cite{S_wang2014mg}; this large DFT-versus-experiment spread
+experiment~\citep{S_wang2014mg}; this large DFT-versus-experiment spread
 is itself a recognised difficulty for HCP basal faults). For Ti the
 comparison is intrinsically mismatched: Ogata et~al.\ tabulate only the
 \emph{prismatic} ideal shear strain ($s_m=0.099$, Ti's actual easy-slip
-system), whereas the cross-validated literature value~\cite{S_yu2016ti}
+system), whereas the cross-validated literature value~\citep{S_yu2016ti}
 is the \emph{basal} I2 fault ($259$--$327$~mJ/m$^2$). Using the
 prismatic $\g$, OSET gives $29$~mJ/m$^2$ and underpredicts the basal
 fault by about $9\times$. This follows from the HCP basal/prismatic
@@ -189,16 +190,16 @@ sets the core energy and OSTZ volume is $W=b$ throughout.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{fig_materials_comparison.png}
+\includegraphics[width=\linewidth]{fig_materials_comparison.pdf}
 \caption{\OSET\ crystal-interior predictions versus literature, using the
-literature ideal shear strain $\g$ (Ogata et~al.~2004~\cite{S_ogata2004})
+literature ideal shear strain $\g$ \citep{S_ogata2004}
 with no fitting. \textbf{Left:} stacking-fault energy (FCC + two HCP
-metals; experimental/DFT targets from~\cite{S_gallagher1970,S_wang2014mg,S_yu2016ti},
+metals; experimental/DFT targets from~\citep{S_gallagher1970,S_wang2014mg,S_yu2016ti},
 $\times$-labels give the OSET/target ratio). \textbf{Middle:} Peierls
 stress normalised by $G$, with the experimental band from low-temperature
-CRSS / kink-pair analysis~\cite{S_caillard2003}. \textbf{Right:}
+CRSS / kink-pair analysis~\citep{S_caillard2003}. \textbf{Right:}
 dislocation core energy per unit length, against the DFT range
-(\cite{S_frederiksen2003} for BCC). OSET bars share one colour; grey
+(\citep{S_frederiksen2003} for BCC). OSET bars share one colour; grey
 hatched bars are the literature values with their quoted range as error
 bars; $x$-axis labels are coloured by crystal structure. BCC metals carry
 no stacking-fault bar (no single well-defined fault). Ti is the one large
@@ -228,14 +229,14 @@ Table~\ref{si:tab:sfe} in $\gamma_\text{CTB}=\g^2Gb/4$; the LA and HA
 predictions use the Read--Shockley line energy $E_0=Gb/[4\pi(1-\nu)]$
 with $G$, $\nu$ the polycrystalline averages. The literature reference
 ranges are taken from the FCC grain-boundary energy
-survey~\cite{S_olmsted2009}, the twin- and grain-boundary compilation of
-Murr~\cite{S_murr1975}, and, for HCP metals, the DFT/MD twin-boundary
-values of~\cite{S_wang2014mg,S_yu2016ti}; each metal is only plotted in a
+survey~\citep{S_olmsted2009}, the twin- and grain-boundary compilation of
+\citet{S_murr1975}, and, for HCP metals, the DFT/MD twin-boundary
+values of~\citep{S_wang2014mg,S_yu2016ti}; each metal is only plotted in a
 panel where such a reference value exists.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{fig_GB_energy.png}
+\includegraphics[width=\linewidth]{fig_GB_energy.pdf}
 \caption{Grain-boundary free energy from the OSET dislocation-array
 model versus literature, spanning FCC, BCC, and HCP crystal systems.
 OSET bars share one colour; grey hatched bars are the literature ranges
@@ -244,7 +245,7 @@ crystal structure. Each panel shows only the metals for which a
 literature value of that boundary type exists: the coherent-twin panel
 omits Fe and W (no coherent twin reference), and the low-angle panel
 omits Mg and Ti (no HCP low-angle compilation at comparable resolution).
-Reference ranges from~\cite{S_olmsted2009,S_murr1975,S_wang2014mg,S_yu2016ti}.}
+Reference ranges from~\citep{S_olmsted2009,S_murr1975,S_wang2014mg,S_yu2016ti}.}
 \label{si:fig:gb}
 \end{figure}
 
@@ -274,7 +275,7 @@ linear (back-stress) hardening law and conventional Taylor
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.8\linewidth]{fig_partition_vs_sinh.png}
+\includegraphics[width=0.8\linewidth]{fig_partition_vs_sinh.pdf}
 \caption{Left: relative OSTZ occupation predicted by the correct
 partition-function result $e^{2\Delta w/kT}$ versus the incorrect
 naive form $2\sinh(\Delta w/kT)$ sometimes used in the literature, as
@@ -286,7 +287,7 @@ as $\Delta w/kT$ increases.}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.8\linewidth]{fig_Taylor_comparison.png}
+\includegraphics[width=0.8\linewidth]{fig_Taylor_comparison.pdf}
 \caption{\OSET\ linear back-stress hardening ($\tau\propto\rho$)
 versus conventional Taylor forest hardening
 ($\tau\propto\sqrt{\rho}$), illustrated for Cu ($z=6$). Left: full
@@ -301,8 +302,8 @@ most strongly.}
 \label{si:1996}
 
 Table~\ref{si:tab:1996} lists every quantitative claim checked against
-the original 1996 Padmanabhan and Schlipf grain-boundary sliding
-theory~\cite{S_pad-part1} and its companion papers, together with the
+the original grain-boundary sliding
+theory of \citet{S_pad-part1} and its companion papers, together with the
 \OSET\ prediction and the resulting agreement. Several entries are
 discussed in more detail below the table.
 
@@ -367,31 +368,29 @@ material classes.}
 \toprule
 \OSET\ claim & Key quantitative evidence & Agreement\\
 \midrule
-Rate equation valid across 33 systems~\cite{S_sripathi2014} & $R=0.89$--$1.00$ across all 33 systems & $\le6.3\times$ worst case\\
-$\g=0.10$ from four independent methods & MD~\cite{S_wolf1990} $0.08$--$0.12$; bubble-raft; STZ shear-band onset~\cite{S_argon1979} $0.08$--$0.14$; STZ theory~\cite{S_falklanger1998} $0.10$ & Consistent\\
-$\beta_1$ convention reconciled~\cite{S_sripathi2014} & $0.446\times0.01=0.00446\approx1.779\times0.0025=0.00445$ & Exact\\
-Valid for bulk metallic glasses~\cite{S_buenz2015} & $\dot\varepsilon_\text{pred}/\dot\varepsilon_\text{exp}=1.1$--$2.5$, 8 BMG systems & $\le2.5\times$\\
-Valid for nanocrystalline Ni~\cite{S_pad2018} & predicted $8\times10^{-4}\,\mathrm{s}^{-1}$ vs.\ measured $5\times10^{-4}$--$2\times10^{-3}\,\mathrm{s}^{-1}$ & $\le2\times$\\
-High-strain-rate superplasticity~\cite{S_padbasariya2009} & 8 alloy/composite systems, all within $2\times$ & $\le2\times$\\
-Peierls stress~\cite{S_nabarro1997} & Fe exact; Cu within $2\times$ & exact (Fe), $2\times$ (Cu)\\
-Lorentzian dislocation density~\cite{S_vermeulen1995} & Al at $\rho=10^{13}$~m$^{-2}$: shape parameter $M=0.16<0.5$ & Consistent (Lorentzian regime)\\
+Rate equation valid across 33 systems~\citep{S_sripathi2014} & $R=0.89$--$1.00$ across all 33 systems & $\le6.3\times$ worst case\\
+$\g=0.10$ from four independent methods & MD~\citep{S_wolf1990} $0.08$--$0.12$; bubble-raft; STZ shear-band onset~\citep{S_argon1979} $0.08$--$0.14$; STZ theory~\citep{S_falklanger1998} $0.10$ & Consistent\\
+$\beta_1$ convention reconciled~\citep{S_sripathi2014} & $0.446\times0.01=0.00446\approx1.779\times0.0025=0.00445$ & Exact\\
+Valid for bulk metallic glasses~\citep{S_buenz2015} & $\dot\varepsilon_\text{pred}/\dot\varepsilon_\text{exp}=1.1$--$2.5$, 8 BMG systems & $\le2.5\times$\\
+Valid for nanocrystalline Ni~\citep{S_pad2018} & predicted $8\times10^{-4}\,\mathrm{s}^{-1}$ vs.\ measured $5\times10^{-4}$--$2\times10^{-3}\,\mathrm{s}^{-1}$ & $\le2\times$\\
+High-strain-rate superplasticity~\citep{S_padbasariya2009} & 8 alloy/composite systems, all within $2\times$ & $\le2\times$\\
+Peierls stress~\citep{S_nabarro1997} & Fe exact; Cu within $2\times$ & exact (Fe), $2\times$ (Cu)\\
+Lorentzian dislocation density~\citep{S_vermeulen1995} & Al at $\rho=10^{13}$~m$^{-2}$: shape parameter $M=0.16<0.5$ & Consistent (Lorentzian regime)\\
 \bottomrule
 \end{tabular}
 \renewcommand{\arraystretch}{1}
 \end{table}
 
 \paragraph{A caveat on the nanocrystalline-Ni and high-strain-rate rows.}
-The stress values reported in~\cite{S_pad2018,S_padbasariya2009} were
+The stress values reported in~\citep{S_pad2018,S_padbasariya2009} were
 later found to contain an inadvertent shear/tensile stress-conversion
 error: the relation $\tau/\sqrt3=\sigma$ was used in place of the
 correct von~Mises equivalence $\sigma/\sqrt3=\tau$, introducing a
 factor-of-3 error into the stress entering those computations. This was
-identified while validating the rate equation against
-Sripathi's data and corrected in the companion
-work of Padmanabhan, Sripathi, Hahn and
-Gleiter~\cite{S_padsripathihahn2014}. The agreement quoted above for
+identified and corrected by
+\citet{S_sripathi2014}. The agreement quoted above for
 these two rows should therefore be read with this caveat; the broader
-33-system validation of~\cite{S_sripathi2014} (Table~\ref{si:tab:post1996},
+33-system validation of~\citep{S_sripathi2014} (Table~\ref{si:tab:post1996},
 first row) already incorporates the correction and is the more
 reliable cross-material test of the Unified Rate Equation.
 
@@ -403,7 +402,7 @@ parity plot, alongside the Al-12Si worked example detailed below.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{fig_rate_equation.png}
+\includegraphics[width=\linewidth]{fig_rate_equation.pdf}
 \caption{Unified Rate Equation applied across material classes.
 Left: predicted-to-measured strain-rate ratio
 $\dot\gamma_\text{pred}/\dot\gamma_\text{exp}$ for the three independent
@@ -423,7 +422,7 @@ $0.16$~s$^{-1}$ sits just above the upper edge of this window.}
 
 Table~\ref{si:tab:hpsummary} gives the mean-level comparison between
 the parameter-free \OSET\ predictions and the semi-empirical constants
-fitted by Harisankar and Padmanabhan~\cite{S_harisankar2025} across
+fitted by \citet{S_harisankar2025} across
 all 41 systems; Table~\ref{si:tab:hp} below gives the complete
 system-by-system breakdown underlying that summary.
 
@@ -453,7 +452,7 @@ with the \OSET\ predictions.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{fig_HP2025_comparison.png}
+\includegraphics[width=\linewidth]{fig_HP2025_comparison.pdf}
 \caption{\OSET\ versus Harisankar and Padmanabhan (2025) across all 41
 systems. Top row: distributions of the fitted shear eigenstrain
 $\g$ and dilatational eigenstrain $\eps$ against the \OSET\
@@ -467,7 +466,7 @@ experimental value where available.}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\linewidth]{fig_HP2025_universal.png}
+\includegraphics[width=\linewidth]{fig_HP2025_universal.pdf}
 \caption{Universal temperature dependences reported by Harisankar \&
 Padmanabhan (2025) for the fitted shear eigenstrain $\g(T)$,
 dilatational eigenstrain $\eps(T)$, and grain-boundary energy
@@ -486,7 +485,7 @@ $=\gamma_B^{\mathrm{lit}}/\gamma_B^{\mathrm{OSET}}$.
 \renewcommand{\arraystretch}{0.95}
 \begin{longtable}{rlccccccc}
 \caption{Full 41-system comparison: \OSET\ (parameter-free) versus the
-semi-empirical constants of Harisankar and Padmanabhan~\cite{S_harisankar2025}.}
+semi-empirical constants of \citet{S_harisankar2025}.}
 \label{si:tab:hp}\\
 \toprule
 \# & System & $\g$ & $\eps$ & $\dF$ & $Q$ & $\gamma_B^{\mathrm{lit}}$ &
@@ -554,7 +553,7 @@ fitted $\gamma_B$ exceeds the true ice grain-boundary energy
 
 \clearpage
 % =============================================================================
-\bibliographystyle{elsarticle-num}
+\bibliographystyle{elsarticle-harv}
 \bibliography{OSET_SI_references}
 
 \end{document}
