@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{48}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -29,6 +29,16 @@
   \bibinfo{volume}{12}, \bibinfo{pages}{489--496}.
 \newblock \DOIprefix\doi{10.1179/mst.1996.12.6.489}.
 %Type = Article
+\bibitem[{Barai and Weng(2009)}]{baraiweng2009}
+\bibinfo{author}{Barai, P.}, \bibinfo{author}{Weng, G.J.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Mechanics of very fine-grained nanocrystalline
+  materials with contributions from grain interior, {GB} zone, and
+  grain-boundary sliding}.
+\newblock \bibinfo{journal}{International Journal of Plasticity}
+  \bibinfo{volume}{25}, \bibinfo{pages}{2410--2434}.
+\newblock \DOIprefix\doi{10.1016/j.ijplas.2009.04.001}.
+%Type = Article
 \bibitem[{Bilby et~al.(1963)Bilby, Cottrell and Swinden}]{bilby1963}
 \bibinfo{author}{Bilby, B.A.}, \bibinfo{author}{Cottrell, A.H.},
   \bibinfo{author}{Swinden, K.H.}, \bibinfo{year}{1963}.
@@ -36,6 +46,15 @@
 \newblock \bibinfo{journal}{Proceedings of the Royal Society of London A}
   \bibinfo{volume}{272}, \bibinfo{pages}{304--314}.
 \newblock \DOIprefix\doi{10.1098/rspa.1963.0055}.
+%Type = Article
+\bibitem[{Borodin et~al.(2020)Borodin, Mayer and Gutkin}]{borodin2020coupled}
+\bibinfo{author}{Borodin, E.N.}, \bibinfo{author}{Mayer, A.E.},
+  \bibinfo{author}{Gutkin, M.Y.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Coupled model for grain rotation, dislocation
+  plasticity and grain boundary sliding in fine-grained solids}.
+\newblock \bibinfo{journal}{International Journal of Plasticity}
+  \bibinfo{volume}{134}, \bibinfo{pages}{102776}.
+\newblock \DOIprefix\doi{10.1016/j.ijplas.2020.102776}.
 %Type = Article
 \bibitem[{Bragg and Williams(1934)}]{bragg1934}
 \bibinfo{author}{Bragg, W.L.}, \bibinfo{author}{Williams, E.J.},
@@ -55,6 +74,15 @@
 \newblock \bibinfo{journal}{Intermetallics} \bibinfo{volume}{60},
   \bibinfo{pages}{7--15}.
 \newblock \DOIprefix\doi{10.1016/j.intermet.2015.01.012}.
+%Type = Article
+\bibitem[{Dunstan and Bushby(2014)}]{dunstanbushby2014}
+\bibinfo{author}{Dunstan, D.J.}, \bibinfo{author}{Bushby, A.J.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Grain size dependence of the strength of metals: the
+  {Hall-Petch} effect does not scale as the inverse square root of grain size}.
+\newblock \bibinfo{journal}{International Journal of Plasticity}
+  \bibinfo{volume}{53}, \bibinfo{pages}{56--65}.
+\newblock \DOIprefix\doi{10.1016/j.ijplas.2013.07.004}.
 %Type = Article
 \bibitem[{Eshelby(1957)}]{eshelby1957}
 \bibinfo{author}{Eshelby, J.D.}, \bibinfo{year}{1957}.
@@ -129,6 +157,28 @@
 \newblock \bibinfo{edition}{2nd} ed., \bibinfo{publisher}{Wiley},
   \bibinfo{address}{New York}.
 %Type = Article
+\bibitem[{Kalidindi(2001)}]{kalidindi2001}
+\bibinfo{author}{Kalidindi, S.R.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Modeling anisotropic strain hardening and deformation
+  textures in low stacking fault energy fcc metals}.
+\newblock \bibinfo{journal}{International Journal of Plasticity}
+  \bibinfo{volume}{17}, \bibinfo{pages}{837--860}.
+\newblock \DOIprefix\doi{10.1016/s0749-6419(00)00071-1}.
+%Type = Article
+\bibitem[{Li et~al.(2024)Li, Xiang, Aitken, Chen, Xu, Yang, Pei, Wang, Li,
+  Vastola, Gao and Zhang}]{li2024hpihp}
+\bibinfo{author}{Li, W.}, \bibinfo{author}{Xiang, M.}, \bibinfo{author}{Aitken,
+  Z.H.}, \bibinfo{author}{Chen, S.}, \bibinfo{author}{Xu, Y.},
+  \bibinfo{author}{Yang, X.}, \bibinfo{author}{Pei, Q.}, \bibinfo{author}{Wang,
+  J.}, \bibinfo{author}{Li, X.}, \bibinfo{author}{Vastola, G.},
+  \bibinfo{author}{Gao, H.}, \bibinfo{author}{Zhang, Y.W.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Unraveling the {Hall-Petch} to inverse {Hall-Petch}
+  transition in nanocrystalline high entropy alloys under shock loading}.
+\newblock \bibinfo{journal}{International Journal of Plasticity}
+  \bibinfo{volume}{178}, \bibinfo{pages}{104010}.
+\newblock \DOIprefix\doi{10.1016/j.ijplas.2024.104010}.
+%Type = Article
 \bibitem[{Meurer et~al.(2017)Meurer, Smith, Paprocki, {\v{C}}ert{\'i}k,
   Kirpichev, Rocklin, Kumar, Ivanov, Moore, Singh, Rathnayake, Vig, Granger,
   Muller, Bonazzi, Gupta, Vats, Johansson, Pedregosa, Curry, Terrel,
@@ -200,6 +250,15 @@
 \newblock \bibinfo{journal}{Proceedings of the Physical Society}
   \bibinfo{volume}{52}, \bibinfo{pages}{8--22}.
 \newblock \DOIprefix\doi{10.1088/0959-5309/52/1/303}.
+%Type = Article
+\bibitem[{Ovid'ko and Sheinerman(2017)}]{ovidko2017triple}
+\bibinfo{author}{Ovid'ko, I.A.}, \bibinfo{author}{Sheinerman, A.G.},
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Grain boundary sliding, triple junction disclinations
+  and strain hardening in ultrafine-grained and nanocrystalline metals}.
+\newblock \bibinfo{journal}{International Journal of Plasticity}
+  \bibinfo{volume}{96}, \bibinfo{pages}{227--241}.
+\newblock \DOIprefix\doi{10.1016/j.ijplas.2017.05.005}.
 %Type = Article
 \bibitem[{Padmanabhan and Basariya(2009)}]{padbasariya2009}
 \bibinfo{author}{Padmanabhan, K.A.}, \bibinfo{author}{Basariya, M.R.},
@@ -362,5 +421,16 @@
 \newblock \bibinfo{journal}{Physical Review Letters} \bibinfo{volume}{88},
   \bibinfo{pages}{216402}.
 \newblock \DOIprefix\doi{10.1103/PhysRevLett.88.216402}.
+%Type = Article
+\bibitem[{Xu et~al.(2020)Xu, Mianroodi, Hunter, Svendsen and
+  Beyerlein}]{xu2020disregistry}
+\bibinfo{author}{Xu, S.}, \bibinfo{author}{Mianroodi, J.R.},
+  \bibinfo{author}{Hunter, A.}, \bibinfo{author}{Svendsen, B.},
+  \bibinfo{author}{Beyerlein, I.J.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Comparative modeling of the disregistry and peierls
+  stress for dissociated edge and screw dislocations in {Al}}.
+\newblock \bibinfo{journal}{International Journal of Plasticity}
+  \bibinfo{volume}{129}, \bibinfo{pages}{102689}.
+\newblock \DOIprefix\doi{10.1016/j.ijplas.2020.102689}.
 
 \end{thebibliography}

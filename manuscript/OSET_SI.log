@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.10)  25 JUN 2026 15:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.10)  25 JUN 2026 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -638,24 +638,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--378
 \OT1/cmr/m/n/10.95 tion den-sity ([]Ver-
  []
 
-<figures/fig_rate_equation.pdf, id=689, 994.16983pt x 321.09625pt>
+<figures/fig_rate_equation.pdf, id=690, 994.16983pt x 321.09625pt>
 File: figures/fig_rate_equation.pdf Graphic file (type pdf)
 <use figures/fig_rate_equation.pdf>
-Package pdftex.def Info: figures/fig_rate_equation.pdf  used on input line 405.
+Package pdftex.def Info: figures/fig_rate_equation.pdf  used on input line 410.
 
 (pdftex.def)             Requested size: 469.75502pt x 151.71877pt.
 [7 <./figures/fig_rate_equation.pdf>] [8]
-<figures/fig_HP2025_comparison.pdf, id=823, 1038.9158pt x 673.9264pt>
+<figures/fig_HP2025_comparison.pdf, id=826, 1038.9158pt x 673.9264pt>
 File: figures/fig_HP2025_comparison.pdf Graphic file (type pdf)
 <use figures/fig_HP2025_comparison.pdf>
 Package pdftex.def Info: figures/fig_HP2025_comparison.pdf  used on input line 
-455.
+460.
 (pdftex.def)             Requested size: 469.75502pt x 304.71402pt.
-<figures/fig_HP2025_universal.pdf, id=824, 1051.47517pt x 386.31406pt>
+<figures/fig_HP2025_universal.pdf, id=827, 1051.47517pt x 386.31406pt>
 File: figures/fig_HP2025_universal.pdf Graphic file (type pdf)
 <use figures/fig_HP2025_universal.pdf>
 Package pdftex.def Info: figures/fig_HP2025_universal.pdf  used on input line 4
-69.
+74.
 (pdftex.def)             Requested size: 469.75502pt x 172.58415pt.
  [9] [10] [11 <./figures/fig_HP2025_comparison.pdf> <./figures/fig_HP2025_unive
 rsal.pdf>] (./OSET_SI.bbl [12
@@ -696,10 +696,10 @@ type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm10
 95.pfb>
-Output written on OSET_SI.pdf (13 pages, 484539 bytes).
+Output written on OSET_SI.pdf (13 pages, 484787 bytes).
 PDF statistics:
- 1197 PDF objects out of 1200 (max. 8388607)
- 429 compressed objects within 5 object streams
+ 1200 PDF objects out of 1200 (max. 8388607)
+ 432 compressed objects within 5 object streams
  61 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,5 +9,5 @@
 \contentsline {paragraph}{Rate-equation numerical example.}{5}{section*.5}%
 \contentsline {paragraph}{Lognormal disorder distribution.}{7}{section*.6}%
 \contentsline {section}{\numberline {S6}Independent post-1996 literature validation}{7}{section.6}%
-\contentsline {paragraph}{A caveat on the nanocrystalline-Ni and high-strain-rate rows.}{7}{section*.7}%
+\contentsline {paragraph}{A caveat on the high-strain-rate row.}{7}{section*.7}%
 \contentsline {section}{\numberline {S7}Comparison with Harisankar and Padmanabhan (2025): 41 systems}{9}{section.7}%

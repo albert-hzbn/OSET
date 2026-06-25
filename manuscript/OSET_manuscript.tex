@@ -96,14 +96,16 @@ by Taylor, Orowan, and Polanyi in 1934~\citep{taylor1934,orowan1934,polanyi1934}
 to explain why real crystals yield at stresses orders of magnitude
 below the theoretical shear strength, the dislocation has provided
 the microscopic basis for strain hardening, the Hall--Petch average
-grain-size dependence of strength~\citep{hall1951,petch1953}, creep, fatigue, and
+grain-size dependence of
+strength~\citep{hall1951,petch1953,dunstanbushby2014}, creep, fatigue, and
 fracture in essentially every crystalline engineering alloy. Its
 mathematical foundation was laid by Volterra's elastic continuum
 construction of a line defect~\citep{volterra1907} decades before its
 physical role was understood, and was subsequently refined by the
 Peierls--Nabarro model~\citep{peierls1940,nabarro1947}, which regularised
 the otherwise singular core by spreading the displacement
-discontinuity over a finite width, and by Eshelby's general theory of
+discontinuity over a finite width and remains an active area of
+core-structure modelling~\citep{xu2020disregistry}, and by Eshelby's general theory of
 elastic inclusions~\citep{eshelby1957}, which placed the energetics of
 lattice defects on a rigorous continuum-mechanical footing. Eight
 decades of refinement have made dislocation theory, enriched by
@@ -148,12 +150,15 @@ precisely the regime in which
 \citet{pad-part1,padgleiter2014,paddivinski2024} introduced a
 phenomenological rate equation, built around an empirical
 boundary-sliding eigenstrain, that successfully predicts superplastic
-flow without ever invoking a dislocation explicitly. In nanocrystalline
+flow without ever invoking a dislocation explicitly, a regime more
+recently also addressed by coupling grain rotation and dislocation
+plasticity directly to grain-boundary
+sliding~\citep{borodin2020coupled}. In nanocrystalline
 metals with average grain size $d<10b$, standard dislocation-based hardening
 theory predicts a continued increase in strength with decreasing grain
 size that is not observed experimentally; instead, below a critical
 size the flow stress falls with further grain refinement, the inverse
-Hall--Petch effect. This softening was reported experimentally and
+Hall--Petch effect~\citep{ovidko2017triple,li2024hpihp}. This softening was reported experimentally and
 given an early phenomenological explanation, in terms of a
 grain-boundary-sliding-controlled flow process, well before it was
 reproduced in atomistic
@@ -184,7 +189,11 @@ rate equation in excellent agreement with experiment, but its
 activation energy is expressed in terms of Eshelby constraint factors
 that were assumed rather than derived from the underlying $I$-integrals,
 and the theory was never connected back to the dislocation quantities
-of single-crystal plasticity. The general idea that deformation in
+of single-crystal plasticity. Composite models that partition a
+nanocrystal into grain-interior and grain-boundary-zone
+contributions~\citep{baraiweng2009} capture the same physical
+separation phenomenologically, again without a single elementary
+excitation common to both zones. The general idea that deformation in
 disordered or sub-dislocation-scale regions might require an
 elementary unit smaller than a lattice dislocation was raised by
 \citet{padgleiter2012} in an earlier
@@ -1787,7 +1796,10 @@ removes. Taking $\gz=0.137$ for Cu~\citep{ogata2004} ($G=48.3$~GPa,
 $W=b=0.2556$~nm, $\beta_1=1$) gives $\gamma_\text{SF}=57$~mJ/m$^2$
 versus experiment $45$~mJ/m$^2$. Equation~\eqref{eq:SFE} makes
 $\gamma_\text{SF}\propto\gz^2Gb$, so the material-to-material spread is
-carried by the ideal shear strain, not by a single universal number.
+carried by the ideal shear strain, not by a single universal number,
+consistent with the strong sensitivity of strain hardening and
+deformation texture to stacking-fault energy found in low-SFE
+FCC metals~\citep{kalidindi2001}.
 Using the per-metal ideal shear strains of \citet{ogata2004}
 \emph{with no fitting}, the predictions for Cu, Al, Ni, Ag, and Au agree
 with experiment to within a factor $\sim2$--$3$; the full comparison,
@@ -2469,11 +2481,12 @@ theory~\citep{falk-langer1998}. The same framework extends to bulk
 metallic glasses~\citep{buenz2015}, nanocrystalline
 nickel~\citep{pad2018}, and 8 further high-strain-rate superplastic
 alloy and composite systems~\citep{padbasariya2009}, in every case to
-within a factor of $2$--$2.5$; the stresses underlying these last two
-comparisons were affected by a since-corrected shear/tensile
-conversion error~\citep{sripathi2014}, so the broader,
-already-corrected 33-system validation above is the more reliable
-cross-material test. The Peierls stress formula of
+within a factor of $2$--$2.5$; the stresses underlying the last of
+these comparisons were affected by a since-corrected shear/tensile
+conversion error~\citep{sripathi2014}, whereas the nanocrystalline-Ni
+study, published after that correction, is unaffected, so the
+broader, already-corrected 33-system validation above is the more
+reliable cross-material test. The Peierls stress formula of
 \S\ref{sec:peierls} is exact for Fe and within a factor of 2 for Cu
 when compared against the compilation of
 \citet{nabarro1997}, and the Lorentzian dislocation-density
