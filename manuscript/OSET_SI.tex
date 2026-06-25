@@ -56,8 +56,8 @@ This document collects, in full numerical detail, every quantitative
 comparison and validation result referenced in the main text. The main
 text states the headline agreement for each claim and refers to the
 corresponding table here for the complete underlying numbers; equation
-numbers from the main text are written ``Eq.~(main)'' and table numbers
-here are prefixed ``S''.
+numbers from the main text are given explicitly (e.g.\ ``Eq.~60 of the
+main text'') and table numbers here are prefixed ``S''.
 
 \tableofcontents
 
@@ -89,7 +89,7 @@ are marked.}
 \section{Stacking-fault energy predictions across crystal systems}
 \label{si:sfe}
 
-Eq.~(main, stacking-fault energy) gives
+Eq.~60 of the main text (stacking-fault energy) gives
 $\gamma_\text{SF}=(\sqrt3-1)\beta_1\g^2GW/3$. The shear eigenstrain
 $\g$ is the \emph{ideal (intrinsic) shear strain} of the material, that
 is, the relaxed engineering shear strain $s_m$ at the maximum of the
@@ -219,7 +219,7 @@ The main text (Grain-Boundary Energy section) derives two distinct
 grain-boundary objects from \OSTZ\ mechanics: a coherent twin/fault
 boundary, quadratic in the eigenstrain, and an incoherent low-/high-angle
 boundary, linear in $b$ through the Read--Shockley dislocation-array
-law (Eq.~(main, Read--Shockley)). The full comparison, covering coherent
+law (Eq.~61 of the main text). The full comparison, covering coherent
 twin/fault (CTB), low-angle ($10^\circ$) tilt (LA), and random
 high-angle (HA) boundaries, is shown in Figure~\ref{si:fig:gb} for
 nine metals spanning FCC, BCC, and HCP, so we do not also tabulate it.
@@ -301,7 +301,7 @@ most strongly.}
 \label{si:1996}
 
 Table~\ref{si:tab:1996} lists every quantitative claim checked against
-the original 1996 Padmanabhan \& Schlipf grain-boundary sliding
+the original 1996 Padmanabhan and Schlipf grain-boundary sliding
 theory~\cite{S_pad-part1} and its companion papers, together with the
 \OSET\ prediction and the resulting agreement. Several entries are
 discussed in more detail below the table.
@@ -380,6 +380,21 @@ Lorentzian dislocation density~\cite{S_vermeulen1995} & Al at $\rho=10^{13}$~m$^
 \renewcommand{\arraystretch}{1}
 \end{table}
 
+\paragraph{A caveat on the nanocrystalline-Ni and high-strain-rate rows.}
+The stress values reported in~\cite{S_pad2018,S_padbasariya2009} were
+later found to contain an inadvertent shear/tensile stress-conversion
+error: the relation $\tau/\sqrt3=\sigma$ was used in place of the
+correct von~Mises equivalence $\sigma/\sqrt3=\tau$, introducing a
+factor-of-3 error into the stress entering those computations. This was
+identified while validating the rate equation against
+Sripathi's data and corrected in the companion
+work of Padmanabhan, Sripathi, Hahn and
+Gleiter~\cite{S_padsripathihahn2014}. The agreement quoted above for
+these two rows should therefore be read with this caveat; the broader
+33-system validation of~\cite{S_sripathi2014} (Table~\ref{si:tab:post1996},
+first row) already incorporates the correction and is the more
+reliable cross-material test of the Unified Rate Equation.
+
 Figure~\ref{si:fig:rate} consolidates the three rows of
 Table~\ref{si:tab:post1996} that test the full Unified Rate Equation
 (bulk metallic glasses, nanocrystalline Ni, and high-strain-rate
@@ -403,7 +418,7 @@ $0.16$~s$^{-1}$ sits just above the upper edge of this window.}
 \end{figure}
 
 % =============================================================================
-\section{Comparison with Harisankar \& Padmanabhan (2025): 41 systems}
+\section{Comparison with Harisankar and Padmanabhan (2025): 41 systems}
 \label{si:numerics}
 
 Table~\ref{si:tab:hpsummary} gives the mean-level comparison between
@@ -415,7 +430,7 @@ system-by-system breakdown underlying that summary.
 \begin{table}[htbp]
 \centering
 \caption{Mean-level comparison of \OSET\ (parameter-free) with the
-semi-empirical fit of Harisankar \& Padmanabhan (2025), $n=41$ systems.}
+semi-empirical fit of Harisankar and Padmanabhan (2025), $n=41$ systems.}
 \label{si:tab:hpsummary}
 \begin{tabular}{lccc}
 \toprule
@@ -439,7 +454,7 @@ with the \OSET\ predictions.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{fig_HP2025_comparison.png}
-\caption{\OSET\ versus Harisankar \& Padmanabhan (2025) across all 41
+\caption{\OSET\ versus Harisankar and Padmanabhan (2025) across all 41
 systems. Top row: distributions of the fitted shear eigenstrain
 $\g$ and dilatational eigenstrain $\eps$ against the \OSET\
 parameter-free values, and the correlation between the \OSET\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.10)  23 JUN 2026 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.10)  25 JUN 2026 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -946,19 +946,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 2264--2265
  []
 
 [17] [18] [19]
-Overfull \hbox (20.79617pt too wide) in paragraph at lines 2568--2576
+Overfull \hbox (20.79617pt too wide) in paragraph at lines 2572--2580
 \T1/cmr/m/n/10 (-20) crys-talline dis-lo-ca-tion core, a metallic-glass shear-t
 ransformation
  []
 
 
-Overfull \hbox (7.62093pt too wide) in paragraph at lines 2588--2592
+Overfull \hbox (7.62093pt too wide) in paragraph at lines 2592--2596
 []\T1/cmr/m/n/10 (-20) Dislocations emerge as \T1/cmr/m/sc/10 (-20) ostz \T1/cm
 r/m/n/10 (-20) col-lec-tives: dipole Eq. [],
  []
 
 
-Overfull \hbox (5.4287pt too wide) in paragraph at lines 2598--2601
+Overfull \hbox (5.4287pt too wide) in paragraph at lines 2602--2605
 []\T1/cmr/m/n/10 (-20) The \T1/cmr/m/sc/10 (-20) ostz \T1/cmr/m/n/10 (-20) Hami
 l-to-nian [] yields the sinh flow law []
  []
@@ -984,13 +984,13 @@ Package rerunfilecheck Info: File `OSET_manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 2A52BE13CE6D5FEDE7CC00F7A3722A44;14319.
  ) 
 Here is how much of TeX's memory you used:
- 19494 strings out of 467167
- 363941 string characters out of 5413691
- 821317 words of memory out of 5000000
- 47830 multiletter control sequences out of 15000+600000
+ 19498 strings out of 467167
+ 364046 string characters out of 5413691
+ 821333 words of memory out of 5000000
+ 47833 multiletter control sequences out of 15000+600000
  667996 words of font info for 308 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,16n,80p,1012b,1284s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,16n,80p,1012b,1280s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2026
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2026/texmf-di
@@ -1027,10 +1027,10 @@ ts/type1/public/cm-super/sfti0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/p
 ublic/cm-super/sfti1000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-s
 uper/sftt0800.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1
 000.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfxc1000.pfb>
-Output written on OSET_manuscript.pdf (22 pages, 794122 bytes).
+Output written on OSET_manuscript.pdf (22 pages, 794426 bytes).
 PDF statistics:
- 1132 PDF objects out of 1200 (max. 8388607)
- 1015 compressed objects within 11 object streams
- 308 named destinations out of 1000 (max. 500000)
+ 1136 PDF objects out of 1200 (max. 8388607)
+ 1019 compressed objects within 11 object streams
+ 309 named destinations out of 1000 (max. 500000)
  71177 words of extra memory for PDF output out of 74296 (max. 10000000)
 

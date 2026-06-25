@@ -1,12 +1,13 @@
 \contentsline {section}{\numberline {S1}Eshelby tensor component $S_{1313}$}{1}{section.1}%
 \contentsline {section}{\numberline {S2}Stacking-fault energy predictions across crystal systems}{1}{section.2}%
 \contentsline {paragraph}{HCP basal-plane stacking faults.}{2}{section*.2}%
-\contentsline {paragraph}{BCC metals: no comparable quantitative test.}{2}{section*.3}%
+\contentsline {paragraph}{BCC metals: no comparable quantitative test.}{3}{section*.3}%
 \contentsline {section}{\numberline {S3}Grain-boundary energy verification across crystal systems}{3}{section.3}%
-\contentsline {paragraph}{HCP metals.}{5}{section*.4}%
-\contentsline {section}{\numberline {S4}Supplementary derivation figures: hardening and occupation factor}{5}{section.4}%
-\contentsline {section}{\numberline {S5}Validation against Padmanabhan et al.\ (1996)}{5}{section.5}%
-\contentsline {paragraph}{Rate-equation numerical example.}{5}{section*.5}%
-\contentsline {paragraph}{Lognormal disorder distribution.}{7}{section*.6}%
-\contentsline {section}{\numberline {S6}Independent post-1996 literature validation}{7}{section.6}%
-\contentsline {section}{\numberline {S7}Comparison with Harisankar \& Padmanabhan (2025): 41 systems}{7}{section.7}%
+\contentsline {paragraph}{HCP metals.}{4}{section*.4}%
+\contentsline {section}{\numberline {S4}Supplementary derivation figures: hardening and occupation factor}{4}{section.4}%
+\contentsline {section}{\numberline {S5}Validation against Padmanabhan et al.\ (1996)}{6}{section.5}%
+\contentsline {paragraph}{Rate-equation numerical example.}{6}{section*.5}%
+\contentsline {paragraph}{Lognormal disorder distribution.}{6}{section*.6}%
+\contentsline {section}{\numberline {S6}Independent post-1996 literature validation}{6}{section.6}%
+\contentsline {paragraph}{A caveat on the nanocrystalline-Ni and high-strain-rate rows.}{6}{section*.7}%
+\contentsline {section}{\numberline {S7}Comparison with Harisankar and Padmanabhan (2025): 41 systems}{9}{section.7}%
