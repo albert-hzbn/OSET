@@ -1,47 +1,47 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+This is BibTeX, Version 0.99e (TeX Live 2026)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: OSET_manuscript.aux
 The style file: elsarticle-harv.bst
 Database file #1: OSET_references.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 48 entries,
+You've used 65 entries,
             2990 wiz_defined-function locations,
-            957 strings with 13878 characters,
-and the built_in function-call counts, 31924 in all, are:
-= -- 2535
-> -- 1088
-< -- 38
-+ -- 446
-- -- 372
-* -- 3483
-:= -- 4611
-add.period$ -- 186
-call.type$ -- 48
-change.case$ -- 363
-chr.to.int$ -- 48
-cite$ -- 48
-duplicate$ -- 2362
-empty$ -- 2406
-format.name$ -- 516
-if$ -- 5939
-int.to.chr$ -- 1
+            1062 strings with 17894 characters,
+and the built_in function-call counts, 45107 in all, are:
+= -- 3476
+> -- 1746
+< -- 41
++ -- 704
+- -- 606
+* -- 5086
+:= -- 6537
+add.period$ -- 254
+call.type$ -- 65
+change.case$ -- 526
+chr.to.int$ -- 64
+cite$ -- 65
+duplicate$ -- 3283
+empty$ -- 3283
+format.name$ -- 807
+if$ -- 8330
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 462
-newline$ -- 297
-num.names$ -- 192
-pop$ -- 735
+missing$ -- 659
+newline$ -- 399
+num.names$ -- 260
+pop$ -- 1034
 preamble$ -- 1
-purify$ -- 316
+purify$ -- 462
 quote$ -- 0
-skip$ -- 685
+skip$ -- 920
 stack$ -- 0
-substring$ -- 1599
-swap$ -- 1728
+substring$ -- 2098
+swap$ -- 2487
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 423
+type$ -- 576
 warning$ -- 0
-while$ -- 226
+while$ -- 294
 width$ -- 0
-write$ -- 769
+write$ -- 1041

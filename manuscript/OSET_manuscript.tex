@@ -97,7 +97,7 @@ to explain why real crystals yield at stresses orders of magnitude
 below the theoretical shear strength, the dislocation has provided
 the microscopic basis for strain hardening, the Hall--Petch average
 grain-size dependence of
-strength~\citep{hall1951,petch1953,dunstanbushby2014}, creep, fatigue, and
+strength~\citep{hall1951,petch1953,dunstanbushby2014,zhang2020hallpetch}, creep, fatigue, and
 fracture in essentially every crystalline engineering alloy. Its
 mathematical foundation was laid by Volterra's elastic continuum
 construction of a line defect~\citep{volterra1907} decades before its
@@ -111,7 +111,7 @@ lattice defects on a rigorous continuum-mechanical footing. Eight
 decades of refinement have made dislocation theory, enriched by
 kink-pair nucleation, climb, cross-slip, and forest-hardening models,
 the standard language in which crystal plasticity is presently taught,
-computed, and engineered~\citep{hirth1982}.
+computed, and engineered~\citep{hirth1982,mcdowell2025thermo}.
 
 That success rests, however, on a definition that is fundamentally
 topological rather than physical. The dislocation is specified by
@@ -153,12 +153,15 @@ boundary-sliding eigenstrain, that successfully predicts superplastic
 flow without ever invoking a dislocation explicitly, a regime more
 recently also addressed by coupling grain rotation and dislocation
 plasticity directly to grain-boundary
-sliding~\citep{borodin2020coupled}. In nanocrystalline
+sliding~\citep{borodin2020coupled,huang2022sliding,hua2022sliding,huang2024triple,du2025superplastic}, and
+documented experimentally in nanocrystalline multiphase networks exhibiting
+anomalously low-temperature, high-strain-rate
+superplasticity~\citep{wang2023superplast,zhang2023heanano}. In nanocrystalline
 metals with average grain size $d<10b$, standard dislocation-based hardening
 theory predicts a continued increase in strength with decreasing grain
 size that is not observed experimentally; instead, below a critical
 size the flow stress falls with further grain refinement, the inverse
-Hall--Petch effect~\citep{ovidko2017triple,li2024hpihp}. This softening was reported experimentally and
+Hall--Petch effect~\citep{ovidko2017triple,li2024hpihp,han2022nchp,li2024ita,ma2024nanocrystalline,cappola2024nc}. This softening was reported experimentally and
 given an early phenomenological explanation, in terms of a
 grain-boundary-sliding-controlled flow process, well before it was
 reproduced in atomistic
@@ -167,7 +170,7 @@ host an extended dislocation network cannot be described by a theory
 whose elementary unit is a dislocation line. In metallic glasses there
 is no lattice at all, and yet the material deforms plastically; the
 accepted microscopic picture is the shear-transformation zone
-(STZ)~\citep{argon1979,falk-langer1998}, a local, thermally activated
+(STZ)~\citep{argon1979,falk-langer1998,zhu2024stz}, a local, thermally activated
 rearrangement of a cluster of atoms that bears no resemblance to a
 topological line defect. Ceramics and semicrystalline polymers present
 further intermediate cases: wherever dislocation glide is restricted
@@ -191,7 +194,7 @@ that were assumed rather than derived from the underlying $I$-integrals,
 and the theory was never connected back to the dislocation quantities
 of single-crystal plasticity. Composite models that partition a
 nanocrystal into grain-interior and grain-boundary-zone
-contributions~\citep{baraiweng2009} capture the same physical
+contributions~\citep{baraiweng2009,li2021eshelby} capture the same physical
 separation phenomenologically, again without a single elementary
 excitation common to both zones. The general idea that deformation in
 disordered or sub-dislocation-scale regions might require an
@@ -1669,7 +1672,10 @@ material-specific quantity any Peierls--Nabarro model must supply; with
 the per-metal $W_P$ ($\sim1.1$--$1.6\,b$ for the wide planar FCC cores,
 $\sim0.5$--$0.65\,b$ for the compact non-planar BCC screw cores) the same
 formula reproduces the experimental Peierls stress for all seven FCC and
-BCC metals (SI, Fig.~S2). The earlier choice $W_P=b$ for every metal made
+BCC metals (SI, Fig.~S2); recent studies confirm substantial
+composition-dependent fluctuations in Peierls stress even within a single
+alloy class~\citep{liu2026peierls}, a trend the per-metal $W_P$
+parametrisation naturally absorbs. The earlier choice $W_P=b$ for every metal made
 the Al value $\sim200\times$ too high and the BCC values $\sim100\times$
 too low.
 
@@ -1799,7 +1805,7 @@ $\gamma_\text{SF}\propto\gz^2Gb$, so the material-to-material spread is
 carried by the ideal shear strain, not by a single universal number,
 consistent with the strong sensitivity of strain hardening and
 deformation texture to stacking-fault energy found in low-SFE
-FCC metals~\citep{kalidindi2001}.
+FCC metals~\citep{kalidindi2001,you2023sfe}.
 Using the per-metal ideal shear strains of \citet{ogata2004}
 \emph{with no fitting}, the predictions for Cu, Al, Ni, Ag, and Au agree
 with experiment to within a factor $\sim2$--$3$; the full comparison,
@@ -1870,7 +1876,10 @@ stacking faults. Treating a high-angle boundary as being made up of
 dislocations is, admittedly, open to the same objection levelled at
 classical grain-boundary dislocation models: at the spacing
 $D=b/\theta$ of a high-angle boundary, a discrete, lattice-defined
-Volterra dislocation is no longer a meaningful object. The
+Volterra dislocation is no longer a meaningful object; recent
+computational studies of disconnection-mediated grain boundary
+migration and shear coupling reinforce this
+point~\citep{dang2025gb}. The
 $N_c$-\OSTZ-chain construction of \S\ref{sec:emergence} reconciles
 this: the Read--Shockley energy of Eq.~\eqref{eq:RS} requires only
 the chain quantities $b=N_c\gz W$ and $E_0=Gb/4\pi(1-\nu)$, neither of
@@ -2624,6 +2633,17 @@ comparably quantitative design rule currently exists.
 \textbf{A.~Linda:} Methodology, Formal analysis, Writing.
 \textbf{K.A.~Padmanabhan:} Conceptualization, Physical description of
 the problem, Supervision, Review.
+
+\section*{Declaration of use of AI in the creation of content}
+AI-assisted tools (Claude, Anthropic) were used during preparation of
+this manuscript for language editing and literature search assistance
+in the written sections, and for LaTeX formatting and figure generation
+scripts. The Python/SymPy derivation notebook
+(\url{https://github.com/albert-hzbn/OSET_derivations}) was developed
+by the authors; AI tools assisted with code formatting and debugging
+but not with any symbolic derivation or numerical result. All scientific
+content, theoretical derivations, and results are entirely the authors'
+own work.
 
 \section*{Competing interests}
 None.
