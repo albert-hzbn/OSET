@@ -1,10 +1,10 @@
 %% ============================================================
 %% Oblate Spheroid Excitation Theory (OSET): International Journal of Plasticity
-%% Two-column (elsarticle 5p), full derivations retained
+%% One-column (elsarticle 3p), full derivations retained
 %% Author-year (elsarticle-harv) citation style
 %% pdflatex -> bibtex -> pdflatex -> pdflatex
 %% ============================================================
-\documentclass[5p]{elsarticle}
+\documentclass[3p]{elsarticle}
 
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{mathtools}
@@ -826,14 +826,14 @@ vanishes by the divergence theorem.) The leading far-field term is
 therefore the \emph{force-dipole} at order $r^{-3}$.
 
 The full multipole expansion~\citep{mura1987} is
-\begin{multline}
+\begin{equation}
   \sigma_{ij}(\mathbf r)=
   \underbrace{F_k\mathcal G_{ijk}}_{\text{monopole }r^{-2}}
   +\underbrace{M_{kl}\partial_l\mathcal G_{ijk}}_{\text{dipole }r^{-3}}
-  \\+\underbrace{Q_{klm}\partial_l\partial_m\mathcal G_{ijk}}_{r^{-4}}
+  +\underbrace{Q_{klm}\partial_l\partial_m\mathcal G_{ijk}}_{r^{-4}}
   +\cdots
   \label{eq:multipole}
-\end{multline}
+\end{equation}
 Since $F_k=0$, the leading nonzero term is the dipole. The moment
 tensor~\citep{mura1987} is
 \begin{equation}
@@ -870,14 +870,13 @@ $\partial x_i/\partial x_l=\delta_{il}$, $\partial(r^{-3})/\partial x_l=-3x_l/r^
 \]
 
 \paragraph{Combined result}
-\begin{align}
+\begin{equation}
   \frac{\partial\mathcal G_{ij}}{\partial x_l}
-  =A\Bigl[&-\frac{(3-4\nu)\delta_{ij}x_l}{r^3}
+  =A\!\left[-\frac{(3-4\nu)\delta_{ij}x_l}{r^3}
     +\frac{\delta_{il}x_j+\delta_{jl}x_i}{r^3}
-    \notag\\
-  &-\frac{3x_lx_ix_j}{r^5}\Bigr].
+    -\frac{3x_lx_ix_j}{r^5}\right].
   \label{eq:dG}
-\end{align}
+\end{equation}
 
 \subsection{Step B: Displacement from the moment tensor}
 \label{sec:stepB}
@@ -902,11 +901,11 @@ Substituting Eq.~\eqref{eq:dG} (with $\delta_{13}=0$):
 Adding term by term, the $\delta_{i1}x_3$ coefficient is
 $1-(3-4\nu)=4\nu-2=2(2\nu-1)$ (same for $\delta_{i3}x_1$),
 and the $r^{-5}$ terms add to give $-6Ax_1x_3x_i/r^5$:
-\begin{multline}
-  u_i=-G\gz V_0 A\Bigl[\frac{2(2\nu-1)(\delta_{i1}x_3+\delta_{i3}x_1)}{r^3}
-  \\-\frac{6x_1x_3x_i}{r^5}\Bigr].
+\begin{equation}
+  u_i=-G\gz V_0 A\left[\frac{2(2\nu-1)(\delta_{i1}x_3+\delta_{i3}x_1)}{r^3}
+  -\frac{6x_1x_3x_i}{r^5}\right].
   \label{eq:ui}
-\end{multline}
+\end{equation}
 
 Components relevant to $\sigma_{13}$:
 \begin{align}
@@ -938,21 +937,19 @@ $\partial_3(x_3/r^5)=(r^2-5x_3^2)/r^7$; likewise for $x_1$.
 
 \paragraph{Computing $\partial_3u_1$}
 Differentiating Eq.~\eqref{eq:u1} with respect to $x_3$:
-\begin{align}
-  \partial_3u_1&=-G\gz V_0 A\Bigl[\frac{2(2\nu-1)(r^2-3x_3^2)}{r^5}
-    \notag\\
-  &\phantom{=-G\gz V_0 A\Bigl[}\;-\frac{6x_1^2(r^2-5x_3^2)}{r^7}\Bigr].
+\begin{equation}
+  \partial_3u_1=-G\gz V_0 A\left[\frac{2(2\nu-1)(r^2-3x_3^2)}{r^5}
+    -\frac{6x_1^2(r^2-5x_3^2)}{r^7}\right].
     \label{eq:du1dx3}
-\end{align}
+\end{equation}
 
 \paragraph{Computing $\partial_1u_3$}
 By the same procedure (swap $x_1\leftrightarrow x_3$):
-\begin{align}
-  \partial_1u_3&=-G\gz V_0 A\Bigl[\frac{2(2\nu-1)(r^2-3x_1^2)}{r^5}
-    \notag\\
-  &\phantom{=-G\gz V_0 A\Bigl[}\;-\frac{6x_3^2(r^2-5x_1^2)}{r^7}\Bigr].
+\begin{equation}
+  \partial_1u_3=-G\gz V_0 A\left[\frac{2(2\nu-1)(r^2-3x_1^2)}{r^5}
+    -\frac{6x_3^2(r^2-5x_1^2)}{r^7}\right].
     \label{eq:du3dx1}
-\end{align}
+\end{equation}
 
 \paragraph{Summing and converting to unit vectors $\hat r_i=x_i/r$}
 $1/r^5$ group:
@@ -961,13 +958,13 @@ $1/r^7$ group, expanding $(x_1^2+x_3^2)r^2-10x_1^2x_3^2$:
 $[-6(\hat r_1^2+\hat r_3^2)+60\hat r_1^2\hat r_3^2]/r^3$.
 Collecting the $(\hat r_1^2+\hat r_3^2)$ terms:
 $-6(2\nu-1)-6=-12\nu$ (verify: $12\nu-6+6=12\nu$). Hence:
-\begin{multline}
+\begin{equation}
   \partial_3u_1+\partial_1u_3=
-  -G\gz V_0 A\cdot\frac{1}{r^3}\\
-  \times\bigl[4(2\nu-1)-12\nu(\hat r_1^2+\hat r_3^2)
+  -\frac{G\gz V_0 A}{r^3}
+  \bigl[4(2\nu-1)-12\nu(\hat r_1^2+\hat r_3^2)
   +60\hat r_1^2\hat r_3^2\bigr].
   \label{eq:gradsum}
-\end{multline}
+\end{equation}
 
 \subsection{Step D: Angular tensor and far-field formula}
 \label{sec:stepD}
@@ -1185,7 +1182,7 @@ the paper:
 \caption{Single \OSTZ\ vs.\ Volterra dislocation.}
 \label{tab:compare1}
 \renewcommand{\arraystretch}{1.35}
-\begin{tabular}{p{1.6cm}p{2.3cm}p{2.3cm}}
+\begin{tabular}{p{2.8cm}p{4.0cm}p{4.0cm}}
 \toprule
 Property & Single \OSTZ & Volterra\\
 \midrule
@@ -2005,11 +2002,11 @@ pair $(i,j)$ and $(j,i)$ separately,
 \paragraph{Full Hamiltonian}
 Adding the three terms gives the total energy of an arbitrary
 occupation configuration $\{n_i\}$:
-\begin{multline}
-  \mathcal H=\sum_i\!\left[\Delta F_{0,i}-(\tau-\tau_0)\gz V_0\right]n_i\\
+\begin{equation}
+  \mathcal H=\sum_i\!\left[\Delta F_{0,i}-(\tau-\tau_0)\gz V_0\right]n_i
   -\half\sum_{i\ne j}J_{ij}\,n_in_j.
   \label{eq:Hamiltonian}
-\end{multline}
+\end{equation}
 This is formally identical to a \emph{random-field Ising model} in a
 uniform external field $h=(\tau-\tau_0)\gz V_0$, with quenched random
 self-energies $\Delta F_{0,i}$ playing the role of site disorder and
@@ -2108,12 +2105,12 @@ Using $e^{a+b}=e^a\cdot e^b$:
 \end{align*}
 
 \paragraph{Step~4 ($e^x-e^{-x}=2\sinh x$)}
-\begin{multline}
-  \dot N_\text{net}=\Gamma^+-\Gamma^-\\
+\begin{equation}
+  \dot N_\text{net}=\Gamma^+-\Gamma^-
   =2\nu_0\sinh\!\left[\frac{(\tau-\tau_0)\gz V_0}{2kT}\right]
   e^{-\dF/kT}.
   \label{eq:Nnet}
-\end{multline}
+\end{equation}
 
 \paragraph{Step~5 (macroscopic rate)}
 Multiply by $\delta\gamma_{0,\text{macro}}=\gz W/d$:
@@ -2144,12 +2141,12 @@ latter.
 With $\Delta w=(\tau-\tau_0)\gz V_0/2$ and $(2W\gz/d)\dot w=\dot\gz$,
 Eq.~(8) of~\citep{pad-part1} is recovered exactly.
 Including a lognormal disorder distribution $f(\dF)$:
-\begin{multline}
-  \dot\gz=\frac{2W\gz\nu_0}{d}\int_0^\infty f(\dF)\\
-  \times\sinh\!\left[\frac{(\tau-\tau_0)\gz V_0}{2kT}\right]
+\begin{equation}
+  \dot\gz=\frac{2W\gz\nu_0}{d}\int_0^\infty f(\dF)
+  \sinh\!\left[\frac{(\tau-\tau_0)\gz V_0}{2kT}\right]
   e^{-\dF/kT}\,\mathrm d(\dF).
   \label{eq:rateDisorder}
-\end{multline}
+\end{equation}
 Universal lognormal parameter $\bar A=5.6021$~\citep{venkatesh-part4};
 CV$=14.8\%$; range $[0.28,0.52]$~eV.
 
@@ -2258,7 +2255,7 @@ Dislocations occupy one branch of the \OSTZ\ tree. \OSET\ is the root.
 \caption{Classical dislocation theory vs.\ \OSET.}
 \label{tab:comparison}
 \renewcommand{\arraystretch}{1.35}
-\begin{tabular}{p{1.5cm}p{2.2cm}p{2.3cm}}
+\begin{tabular}{p{2.5cm}p{3.8cm}p{4.5cm}}
 \toprule
 Property & Classical & \OSET\\
 \midrule
@@ -2422,13 +2419,13 @@ GB limit $N\to1$. The equation below restores both effects,
 combining the \OSTZ\ partition function (\S\ref{sec:stat}) with
 disorder-field theory (activation energy variance $\sigma_F^2$)
 and crystalline crossover $\Theta$:
-\begin{multline}
+\begin{equation}
   \dot\gz=\frac{2W\bar\gz\nu_0}{d}
-  \sinh\!\left[\frac{(\tau-\tau_0^*)\bar\gz V_0}{2kT}\right]\\
-  \times\exp\!\!\left(-\frac{\Delta\bar F_0}{kT}
+  \sinh\!\left[\frac{(\tau-\tau_0^*)\bar\gz V_0}{2kT}\right]
+  \exp\!\!\left(-\frac{\Delta\bar F_0}{kT}
   +\frac{\sigma_F^2}{2(kT)^2}\right)\Theta(N_c,T,d),
   \label{eq:rateUnified}
-\end{multline}
+\end{equation}
 where $\tau_0^*=\tau_0\sqrt{1+\rho_{G\gz}\sigma_G\sigma_{\gz}}$ and
 \begin{equation}
   \Theta=\begin{cases}
@@ -2636,14 +2633,9 @@ the problem, Supervision, Review.
 
 \section*{Declaration of use of AI in the creation of content}
 AI-assisted tools (Claude, Anthropic) were used during preparation of
-this manuscript for language editing and literature search assistance
-in the written sections, and for LaTeX formatting and figure generation
-scripts. The Python/SymPy derivation notebook
-(\url{https://github.com/albert-hzbn/OSET_derivations}) was developed
-by the authors; AI tools assisted with code formatting and debugging
-but not with any symbolic derivation or numerical result. All scientific
-content, theoretical derivations, and results are entirely the authors'
-own work.
+this manuscript for language editing, literature search assistance, and
+LaTeX formatting. All scientific content, theoretical derivations, and
+results are entirely the authors' own work.
 
 \section*{Competing interests}
 None.
